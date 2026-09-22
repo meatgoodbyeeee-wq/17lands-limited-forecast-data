@@ -60,7 +60,13 @@ def main():
   tr=d.set!=hold;te=d.set==hold;m=fit(d.loc[tr],fs);s=score(m,d.loc[te],fs);tmp=d.loc[te].copy();tmp["rank"]=s
   # rank score -> residual mapping trained only on the four training sets via direct tournament scores
   st=score(m,d.loc[tr],fs);cal=d.loc[tr].copy();cal["rank"]=st;x=cal["rank"].to_numpy();y=(cal.actual_gih-cal.base_pred).to_numpy();ok=np.isfinite(x)&np.isfinite(y);A=np.c_[np.ones(ok.sum()),x[ok]-.5];coef=np.linalg.lstsq(A,y[ok],rcond=None)[0]
-  delta=coef[0]+coef[1]*(s-.5);conf=np.clip(abs(s-.5)*2,0,1);p=tmp.base_pred.to_numpy();pred[te]=p;tmp["tail_pred"]=p;folds[hold]=met(tmp,"tail_pred")
- d["tail_pred"]=pred;out={"fin_used":False,"scoring":"pairwise_tournament_rank_only","folds":folds,"overall":met(d,"tail_pred")};z.out.parent.mkdir(parents=True,exist_ok=True);z.out.write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))
+  delta=coef[0]+coef[1]*(s-.5);conf=np.clip(abs(s-.5)*2,0,1);# Use tournament score as a rank feature, not a direct value correction.
+  # Blend percentile ranks only; convert back to base-prediction values so calibration stays anchored.
+  bp=tmp.base_pred.to_numpy(); br=pd.Series(bp).rank(pct=True).to_numpy(); rr=pd.Series(s).rank(pct=True).to_numpy()
+  mix=.85*br+.15*rr
+  order=np.argsort(bp); sorted_bp=np.sort(bp); q=np.clip(mix,1/len(bp),1)
+  p=np.quantile(sorted_bp,q,method="linear")
+  pred[te]=p;tmp["tail_pred"]=p;folds[hold]=met(tmp,"tail_pred")
+ d["tail_pred"]=pred;out={"fin_used":False,"scoring":"pairwise_tournament_rank_blend_15pct","folds":folds,"overall":met(d,"tail_pred")};z.out.parent.mkdir(parents=True,exist_ok=True);z.out.write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))
 if __name__=="__main__":main()
 
