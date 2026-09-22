@@ -82,12 +82,8 @@ def card_features(c):
     f["stats_per_mv"]=((f["power"]+f["toughness"])/mv) if f["power"] is not None and f["toughness"] is not None else None
     return f
 
-EXTRA_SETS={"STX":["STA"],"BRO":["BRR"],"MOM":["MUL"],"WOE":["WOT"],"LCI":["LCC"],"OTJ":["OTP","BIG"],"MH3":["M3C"]}
-
 def fetch_set(code):
-    codes=[code]+EXTRA_SETS.get(code,[])
-    query=" OR ".join(f"e:{x.lower()}" for x in codes)
-    url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote("("+query+")")
+    url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote(f"e:{code.lower()}")
     out=[]
     while url:
         d=get_json(url); out += [card_features(c) for c in d["data"] if not c.get("digital") or "arena" in c.get("games",[])]
