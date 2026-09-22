@@ -5,7 +5,8 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 import pandas as pd
 
-BASE="https://17lands-public.s3.amazonaws.com/analysis_data/game_data"\n# Historical training expansion; FIN remains isolated by downstream model guards.
+BASE="https://17lands-public.s3.amazonaws.com/analysis_data/game_data"
+# Historical training expansion; FIN remains isolated by downstream model guards.
 FMT="PremierDraft"
 
 def url_for(s): return f"{BASE}/game_data_public.{s}.{FMT}.csv.gz"
