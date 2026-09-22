@@ -50,6 +50,16 @@ jobs:
         run: python scripts/audit_prediction_compression.py --input model_out/dev_feature_table.csv --out model_out/prediction_compression_audit.json
       - name: Audit tail semantics FIN-blind
         run: python scripts/audit_tail_semantics.py --input model_out/dev_feature_table.csv --out model_out/tail_semantics_audit.json
+      - name: Test isolated semantic features FIN-blind
+        run: |
+          cp scripts/build_dev_features.py /tmp/build_all.py
+          for v in cast flex tribal another; do
+            cp experiments/build_dev_features_semantic_${v}.py scripts/build_dev_features.py
+            python scripts/build_dev_features.py --actuals data/dev_actuals.csv --out model_out/dev_feature_${v}.csv
+            python scripts/train_text_ensemble_loso.py --input model_out/dev_feature_${v}.csv --out model_out/text_${v}.json
+          done
+          cp /tmp/build_all.py scripts/build_dev_features.py
+
       - name: Tune structured model FIN-blind
         run: python scripts/tune_structured_loso.py --input model_out/dev_feature_table.csv --out model_out/structured_tuning.json
       - name: Tune ensemble FIN-blind
