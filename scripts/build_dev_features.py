@@ -84,27 +84,6 @@ def fetch_set(code):
     return pd.DataFrame(out).drop_duplicates("name")
 
 
-def add_environment_interactions(feat):
-    """Card x set interactions using only the preview card pool; no gameplay outcomes."""
-    x=feat.copy()
-    creatures=x[x["type_creature"]==1].copy()
-    if creatures.empty: return x
-    # Evasion value falls when the environment contains many natural flying/reach blockers.
-    blocker=((creatures["kw_flying"]==1)|(creatures["kw_reach"]==1)).mean()
-    x["env_evasion_open_lane"]=x["evasion"]*(1-float(blocker))
-    # Interaction coverage proxy: destroy/exile/bounce covers all creatures; damage spells parse fixed damage when possible.
-    toughness=creatures["toughness"].dropna().to_numpy(float)
-    def removal_coverage(r):
-        if not r["interaction"]: return None
-        tl=str(r["oracle_text"]).lower()
-        if "destroy target" in tl or "exile target" in tl or "return target" in tl:return 1.0
-        m=re.search(r"deals? (\\d+) damage",tl)
-        if m and len(toughness):return float((toughness<=float(m.group(1))).mean())
-        return None
-    x["env_interaction_coverage"]=x.apply(removal_coverage,axis=1)
-    x["env_interaction_efficiency"]=x["env_interaction_coverage"]/x["mv"].clip(lower=1)
-    return x
-
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--actuals",type=Path,required=True); ap.add_argument("--out",type=Path,default=Path("model_out/dev_feature_table.csv"))
     a=ap.parse_args(); actual=pd.read_csv(a.actuals)
@@ -114,7 +93,7 @@ def main():
     if bad: raise SystemExit(f"Refusing non-development sets (FIN must remain untouched): {sorted(bad)}")
     rows=[]
     for s in sorted(sets):
-        feat=add_environment_interactions(fetch_set(s)); x=actual[actual["set"].str.upper()==s].copy()
+        feat=fetch_set(s); x=actual[actual["set"].str.upper()==s].copy()
         m=x.merge(feat,on="name",how="inner"); rows.append(m)
         print(s,len(x),len(m))
     out=pd.concat(rows,ignore_index=True)
