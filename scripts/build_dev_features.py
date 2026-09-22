@@ -30,12 +30,28 @@ def card_features(c):
     def num(x):
         try:return float(x)
         except:return None
-    f={"name":c["name"],"collector_number":c.get("collector_number"),"mv":float(c.get("cmc") or 0),
+    f={"name":c["name"],"collector_number":c.get("collector_number"),"oracle_text":text,"type_line":typ,"mv":float(c.get("cmc") or 0),
        "rarity_ord":RARITY.get(c.get("rarity"),-1),"n_colors":len(colors),"mana_symbols":mana.count("{"),
        "oracle_len":len(text),"oracle_lines":text.count("\n")+bool(text),"power":num(power),"toughness":num(toughness)}
     for w in TYPE_WORDS:f["type_"+w.lower()]=int(w.lower() in typ.lower())
     for k in KEYWORDS:f["kw_"+k.replace(" ","_")]=int(k in text.lower())
     for col in "WUBRG":f["color_"+col]=int(col in colors)
+    # Pre-release structural features aimed at identifying weak/strong tails.
+    mv=max(f["mv"],1.0)
+    f["is_multicolor"]=int(len(colors)>1)
+    f["is_colorless"]=int(len(colors)==0)
+    f["has_x_cost"]=int("{X}" in mana.upper())
+    f["is_aura"]=int("aura" in typ.lower())
+    f["is_equipment"]=int("equipment" in typ.lower())
+    f["is_vehicle"]=int("vehicle" in typ.lower())
+    f["has_etb"]=int(("enters" in text.lower()) or ("enter the battlefield" in text.lower()))
+    f["has_eot"]=int("until end of turn" in text.lower())
+    f["targets_creature"]=int("target creature" in text.lower())
+    f["keyword_count"]=sum(f["kw_"+k.replace(" ","_")] for k in KEYWORDS)
+    f["ability_sentences"]=text.count(".")+text.count(";")
+    f["power_per_mv"]=(f["power"]/mv) if f["power"] is not None else None
+    f["toughness_per_mv"]=(f["toughness"]/mv) if f["toughness"] is not None else None
+    f["stats_per_mv"]=((f["power"]+f["toughness"])/mv) if f["power"] is not None and f["toughness"] is not None else None
     return f
 
 def fetch_set(code):
