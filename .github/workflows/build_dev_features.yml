@@ -6,6 +6,7 @@ on:
       - scripts/build_dev_features.py
       - scripts/train_text_ensemble_loso.py
       - scripts/audit_common_power_creep.py
+      - scripts/audit_prediction_compression.py
       - scripts/tune_structured_loso.py
       - scripts/tune_ensemble_loso.py
       - scripts/train_tail_tournament_loso.py
@@ -43,6 +44,8 @@ jobs:
         run: python scripts/build_dev_features.py --actuals dev_actuals.csv --out model_out/dev_feature_table.csv
       - name: Audit common power creep excluding MH3 baseline
         run: python scripts/audit_common_power_creep.py --input model_out/dev_feature_table.csv --out model_out/common_power_creep_audit.csv
+      - name: Audit prediction compression FIN-blind
+        run: python scripts/audit_prediction_compression.py --input model_out/dev_feature_table.csv --out model_out/prediction_compression_audit.json
       - name: Tune structured model FIN-blind
         run: python scripts/tune_structured_loso.py --input model_out/dev_feature_table.csv --out model_out/structured_tuning.json
       - name: Tune ensemble FIN-blind
