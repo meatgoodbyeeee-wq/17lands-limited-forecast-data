@@ -51,14 +51,6 @@ def card_features(c):
     f["is_aura"]=int("aura" in typ.lower())
     f["is_equipment"]=int("equipment" in typ.lower())
     f["is_vehicle"]=int("vehicle" in typ.lower())
-    # Tail-error audit found these sparse mechanics systematically under/overpredicted OOF.
-    # Interactions let the tree model distinguish efficient keyworded permanents without post-release data.
-    f["lifelink_creature"]=int(f["kw_lifelink"] and f["type_creature"])
-    f["reach_creature"]=int(f["kw_reach"] and f["type_creature"])
-    f["lifelink_efficiency"]=(f["kw_lifelink"]*f["power"]/mv) if f["power"] is not None else None
-    f["reach_toughness_efficiency"]=(f["kw_reach"]*f["toughness"]/mv) if f["toughness"] is not None else None
-    f["equipment_efficiency"]=f["is_equipment"]/mv
-    f["vehicle_efficiency"]=f["is_vehicle"]/mv
     f["has_etb"]=int(("enters" in text.lower()) or ("enter the battlefield" in text.lower()))
     f["has_eot"]=int("until end of turn" in text.lower())
     f["targets_creature"]=int("target creature" in text.lower())
