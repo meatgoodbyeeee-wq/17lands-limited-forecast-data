@@ -24,10 +24,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p training_artifacts
-          for SET in BLB DSK FDN DFT TDM; do
-            gh run download 35677195972 -n "${SET}-28d" -D "training_artifacts/${SET}"
-          done
-          python - <<'PY'
+          for SET in KHM STX AFR MID VOW NEO SNC DMU BRO ONE MOM LTR WOE LCI MKM OTJ MH3 BLB DSK FDN DFT TDM; do\n            gh run download 35692015171 -n "${SET}-28d" -D "training_artifacts/${SET}"\n          done\n          python - <<'PY'
           import pandas as pd, glob
           fs=glob.glob("training_artifacts/*/*_gih_28d.csv")
           if len(fs) != 22: raise SystemExit(f"Expected 22 development files, got {len(fs)}: {fs}")
