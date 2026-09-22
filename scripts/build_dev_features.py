@@ -17,7 +17,7 @@ KEYWORDS=["flying","first strike","double strike","deathtouch","haste","hexproof
 RARITY={"common":0,"uncommon":1,"rare":2,"mythic":3}
 
 def get_json(url):
-    req=urllib.request.Request(url,headers={"User-Agent":"LimitedForecastResearch/2.0"})
+    req=urllib.request.Request(url,headers={"User-Agent":"LimitedForecastResearch/2.0","Accept":"application/json"})
     with urllib.request.urlopen(req,timeout=60) as r: return json.load(r)
 
 def card_features(c):
@@ -39,7 +39,7 @@ def card_features(c):
     return f
 
 def fetch_set(code):
-    url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote(f"set:{code.lower()}")
+    url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote(f"e:{code.lower()}")
     out=[]
     while url:
         d=get_json(url); out += [card_features(c) for c in d["data"] if not c.get("digital") or "arena" in c.get("games",[])]
