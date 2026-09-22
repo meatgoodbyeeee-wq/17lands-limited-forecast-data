@@ -16,10 +16,16 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m pip install pandas numpy scipy
-      - name: Run FIN-blind LOSO evaluation
+      - name: Download training artifacts only
         env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: python scripts/fin_blind_experiment.py --repo ${{ github.repository }} --run-id 35677195972 --out-dir model_out
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p training_artifacts
+          for SET in BLB DSK FDN DFT TDM; do
+            gh run download 35677195972 -n "${SET}-28d" -D "training_artifacts/${SET}"
+          done
+      - name: Run FIN-blind LOSO evaluation
+        run: python scripts/fin_blind_experiment.py --local-dir training_artifacts --out-dir model_out
       - uses: actions/upload-artifact@v4
         with:
           name: fin-blind-model-report
