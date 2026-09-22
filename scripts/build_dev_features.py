@@ -4,7 +4,7 @@
 FIN is deliberately rejected: this builder is for development sets only.
 Outputs numeric, pre-release-available card features suitable for LOSO modeling.
 """
-import argparse, json, re, urllib.parse, urllib.request
+import argparse, json, re, time, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 import pandas as pd
 
@@ -18,7 +18,14 @@ RARITY={"common":0,"uncommon":1,"rare":2,"mythic":3}
 
 def get_json(url):
     req=urllib.request.Request(url,headers={"User-Agent":"LimitedForecastResearch/2.0","Accept":"application/json"})
-    with urllib.request.urlopen(req,timeout=60) as r: return json.load(r)
+    for attempt in range(8):
+        try:
+            with urllib.request.urlopen(req,timeout=60) as r: return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 7: raise
+            retry=e.headers.get("Retry-After")
+            time.sleep(float(retry) if retry else min(2**attempt,30))
+    raise RuntimeError("unreachable")
 
 def card_features(c):
     faces=c.get("card_faces") or []
