@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""FIN-blind LOSO text + structured ensemble. Development sets only.\nTwo-head value plus within-set rank experiment."""
+"""FIN-blind LOSO text + structured ensemble. Development sets only.\nWord TF-IDF production baseline."""
 import argparse,json
 import numpy as np,pandas as pd
 from scipy.stats import spearmanr
@@ -10,7 +10,6 @@ from sklearn.linear_model import Ridge
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import ExtraTreesRegressor
-from sklearn.ensemble import ExtraTreesClassifier
 DEV={"BLB","DSK","FDN","DFT","TDM"}
 DROP={"set","name","oracle_text","type_line","gih_games","gih_wins","actual_gih","gih_wr_pct","window_start","window_end","collector_number"}
 def met(y,p,k=30):
@@ -28,21 +27,10 @@ def main():
   txt=d["oracle_text"].fillna("")+" TYPE "+d["type_line"].fillna("")
   text=make_pipeline(TfidfVectorizer(ngram_range=(1,2),min_df=3,max_features=12000,sublinear_tf=True),Ridge(alpha=20))
   text.fit(txt[tr],y); px=text.predict(txt[te])
-  # Two-head experiment: absolute GIH value + independent within-set percentile rank.
+  # Fixed conservative blend; no holdout-set tuning.
   raw=.7*pt+.3*px
   center=float(np.mean(y))
-  value_pred=center+1.25*(raw-center)
-  # Rank head learns each training card's percentile inside its own set.
-  rank_y=d.loc[tr].groupby("set")["actual_gih"].rank(pct=True)
-  rank_tree=make_pipeline(SimpleImputer(strategy="median"),ExtraTreesRegressor(n_estimators=600,min_samples_leaf=12,max_features=.8,n_jobs=-1,random_state=20260923))
-  rank_tree.fit(d.loc[tr,nums],rank_y); rt=rank_tree.predict(d.loc[te,nums])
-  rank_text=make_pipeline(TfidfVectorizer(ngram_range=(1,2),min_df=3,max_features=12000,sublinear_tf=True),Ridge(alpha=20))
-  rank_text.fit(txt[tr],rank_y); rx=rank_text.predict(txt[te])
-  rank_score=.7*rt+.3*rx
-  # Preserve the calibrated value distribution but reorder it partly by the independent rank head.
-  vr=pd.Series(value_pred).rank(pct=True).to_numpy(); rr=pd.Series(rank_score).rank(pct=True).to_numpy()
-  mixed_rank=.8*vr+.2*rr
-  p=np.quantile(np.sort(value_pred),np.clip(mixed_rank,1/len(value_pred),1),method="linear")
+  p=center+1.25*(raw-center)
   pred[te]=p; chosen[hold]=met(d.loc[te,"actual_gih"].to_numpy(),p)
  out={"fin_used":False,"folds":chosen,"overall":met(d["actual_gih"].to_numpy(),pred)}
  open(a.out,"w").write(json.dumps(out,indent=2)); print(json.dumps(out,indent=2))
