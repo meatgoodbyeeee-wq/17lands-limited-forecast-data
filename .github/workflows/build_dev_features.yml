@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - scripts/build_dev_features.py
+      - scripts/train_text_ensemble_loso.py
       - .github/workflows/build_dev_features.yml
 permissions:
   actions: read
