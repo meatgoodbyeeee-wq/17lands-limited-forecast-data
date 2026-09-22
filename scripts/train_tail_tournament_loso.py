@@ -15,7 +15,7 @@ def met(d,col,k=30):
 def pairs(d,fs,tail=.15,gap=.35,cap=6000,seed=20260922):
  rng=np.random.default_rng(seed);xx=[];yy=[];ww=[]
  for _,g in d.groupby("set"):
-  g=g.dropna(subset=["actual_gih"]+fs).copy();g["q"]=g.actual_gih.rank(pct=True);X=g[fs].to_numpy(float);q=g.q.to_numpy();y=g.actual_gih.to_numpy();cand=[]
+  g=g.dropna(subset=["actual_gih"]).copy();g[fs]=g[fs].replace([np.inf,-np.inf],np.nan);g[fs]=g[fs].fillna(g[fs].median(numeric_only=True)).fillna(0);g["q"]=g.actual_gih.rank(pct=True);X=g[fs].to_numpy(float);q=g.q.to_numpy();y=g.actual_gih.to_numpy();cand=[]
   for i in range(len(g)):
    for j in range(i+1,len(g)):
     gp=abs(q[i]-q[j]); ti=q[i]<=tail or q[i]>=1-tail;tj=q[j]<=tail or q[j]>=1-tail
@@ -29,7 +29,7 @@ def fit(d,fs):
 def score(m,d,fs):
  out=pd.Series(np.nan,index=d.index)
  for _,ix in d.groupby("set").groups.items():
-  ix=list(ix);X=d.loc[ix,fs].to_numpy(float);ok=np.isfinite(X).all(1);pos=np.flatnonzero(ok);X=X[ok]
+  ix=list(ix);X=d.loc[ix,fs].replace([np.inf,-np.inf],np.nan).copy();X=X.fillna(X.median(numeric_only=True)).fillna(0).to_numpy(float);pos=np.arange(len(X))
   if len(X)<2:continue
   sc=[]
   for i in range(len(X)):
