@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/build_dev_features.py
       - scripts/train_text_ensemble_loso.py
+      - scripts/audit_common_power_creep.py
       - scripts/train_tail_tournament_loso.py
       - .github/workflows/build_dev_features.yml
 permissions:
@@ -38,6 +39,8 @@ jobs:
           PY
       - name: Build pre-release features
         run: python scripts/build_dev_features.py --actuals dev_actuals.csv --out model_out/dev_feature_table.csv
+      - name: Audit common power creep excluding MH3 baseline
+        run: python scripts/audit_common_power_creep.py --input model_out/dev_feature_table.csv --out model_out/common_power_creep_audit.csv
       - name: Run FIN-blind text ensemble LOSO
         run: python scripts/train_text_ensemble_loso.py --input model_out/dev_feature_table.csv --out model_out/text_ensemble_loso.json
       - name: Run FIN-blind tail tournament LOSO
