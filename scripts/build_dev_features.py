@@ -68,25 +68,6 @@ def card_features(c):
     evasion=int(any(x in tl for x in ["flying","menace","can't be blocked","cannot be blocked"]))
     f["evasion"]=evasion
     f["evasion_power_efficiency"]=(evasion*f["power"]/mv) if f["power"] is not None else None
-    # Liability / friction features: patterns that often make Limited cards underperform despite appealing text.
-    f["requires_sacrifice"]=int("sacrifice a " in tl or "sacrifice another" in tl)
-    f["requires_discard"]=int(bool(re.search(r"discard (a|one|two) card",tl)))
-    f["additional_cost"]=int("additional cost" in tl)
-    f["only_as_sorcery"]=int("only as a sorcery" in tl)
-    f["once_each_turn"]=int("only once each turn" in tl or "once each turn" in tl)
-    f["attack_block_condition"]=int("attacking" in tl or "blocking" in tl or "attacks" in tl or "blocks" in tl)
-    f["setup_if_unless"]=int((" if " in (" "+tl)) or ("unless " in tl))
-    f["graveyard_dependency"]=int("from your graveyard" in tl or "in your graveyard" in tl)
-    f["other_permanent_dependency"]=int("another creature" in tl or "another permanent" in tl)
-    f["self_only"]=int("target creature you control" in tl or "creature you control gets" in tl)
-    f["temporary_effect"]=int("until end of turn" in tl)
-    f["tap_cost"]=int(bool(re.search(r"\\{t\\}:",tl)))
-    f["mana_ability_cost"]=int(bool(re.search(r"\\{[1-9xwubrgc]+\\}[^.]{0,12}:",tl)))
-    friction=(f["requires_sacrifice"]+f["requires_discard"]+f["additional_cost"]+f["only_as_sorcery"]+
-              f["attack_block_condition"]+f["setup_if_unless"]+f["graveyard_dependency"]+
-              f["other_permanent_dependency"])
-    f["friction_count"]=friction
-    f["friction_per_mv"]=friction/mv
     card_adv=int(bool(re.search(r"draw (two|three|x|that many) cards",tl)) or ("create" in tl and "token" in tl and f["has_etb"]))
     evasion=int(any(x in tl for x in ["flying","menace","can't be blocked","cannot be blocked"]))
     f["power_per_mv"]=(f["power"]/mv) if f["power"] is not None else None
