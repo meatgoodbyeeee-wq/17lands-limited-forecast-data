@@ -63,6 +63,12 @@ def card_features(c):
     f["interaction_condition_count"]=sum(int(x in tl) for x in conditional_words) if interaction else 0
     f["clean_interaction"]=int(interaction and f["interaction_condition_count"]==0)
     card_adv=int(bool(re.search(r"draw (two|three|x|that many) cards",tl)) or ("create" in tl and "token" in tl and f["has_etb"]))
+    f["card_advantage"]=card_adv
+    f["card_advantage_per_mv"]=card_adv/mv
+    evasion=int(any(x in tl for x in ["flying","menace","can't be blocked","cannot be blocked"]))
+    f["evasion"]=evasion
+    f["evasion_power_efficiency"]=(evasion*f["power"]/mv) if f["power"] is not None else None
+    card_adv=int(bool(re.search(r"draw (two|three|x|that many) cards",tl)) or ("create" in tl and "token" in tl and f["has_etb"]))
     evasion=int(any(x in tl for x in ["flying","menace","can't be blocked","cannot be blocked"]))
     f["power_per_mv"]=(f["power"]/mv) if f["power"] is not None else None
     f["toughness_per_mv"]=(f["toughness"]/mv) if f["toughness"] is not None else None
