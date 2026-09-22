@@ -1,0 +1,37 @@
+name: Build FIN-blind model features
+on:
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas
+      - name: Download development actuals only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p training_artifacts
+          for SET in BLB DSK FDN DFT TDM; do
+            gh run download 35677195972 -n "${SET}-28d" -D "training_artifacts/${SET}"
+          done
+          python - <<'PY'
+          import pandas as pd, glob
+          fs=glob.glob("training_artifacts/*/*_gih_28d.csv")
+          d=pd.concat([pd.read_csv(f) for f in fs],ignore_index=True)
+          assert "FIN" not in set(d["set"].str.upper())
+          d.to_csv("dev_actuals.csv",index=False)
+          print(d.groupby("set").size())
+          PY
+      - name: Build pre-release features
+        run: python scripts/build_dev_features.py --actuals dev_actuals.csv --out model_out/dev_feature_table.csv
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fin-blind-dev-feature-table
+          path: model_out/
