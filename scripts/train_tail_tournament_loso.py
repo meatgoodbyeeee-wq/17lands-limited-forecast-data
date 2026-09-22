@@ -49,9 +49,9 @@ def main():
  txt=d["oracle_text"].fillna("")+" TYPE "+d["type_line"].fillna("")
  for hold in sorted(d["set"].unique()):
   tr=d.set!=hold;te=d.set==hold
-  m0=make_pipeline(SimpleImputer(strategy="median"),ExtraTreesRegressor(n_estimators=600,min_samples_leaf=12,max_features=.8,n_jobs=-1,random_state=20260922))
+  m0=make_pipeline(SimpleImputer(strategy="median"),ExtraTreesRegressor(n_estimators=600,min_samples_leaf=8,max_features=.6,n_jobs=-1,random_state=20260922))
   m0.fit(d.loc[tr,fs],d.loc[tr,"actual_gih"]);pt=m0.predict(d.loc[te,fs])
-  mt=make_pipeline(TfidfVectorizer(ngram_range=(1,2),min_df=3,max_features=12000,sublinear_tf=True),Ridge(alpha=20))
+  mt=make_pipeline(TfidfVectorizer(ngram_range=(1,2),min_df=3,max_features=12000,sublinear_tf=True),Ridge(alpha=10))
   mt.fit(txt[tr],d.loc[tr,"actual_gih"]);px=mt.predict(txt[te])
   raw=.7*pt+.3*px;center=float(d.loc[tr,"actual_gih"].mean());base[te]=center+1.25*(raw-center)
  d["base_pred"]=base
