@@ -107,6 +107,10 @@ def main():
         m=x.merge(feat,on="name",how="inner"); rows.append(m)
         print(s,len(x),len(m))
     out=pd.concat(rows,ignore_index=True)
+    # Product-family metadata for era/power-creep work. MH3 is a supplemental
+    # straight-to-Modern set and must not define the premier-set chronological baseline.
+    out["is_supplemental_power_set"] = out["set"].str.upper().isin({"MH3"}).astype(int)
+    out["is_premier_set"] = 1 - out["is_supplemental_power_set"]
     a.out.parent.mkdir(parents=True,exist_ok=True); out.to_csv(a.out,index=False)
     print("wrote",a.out,len(out),"rows",len(out.columns),"columns")
 if __name__=="__main__": main()
