@@ -32,3 +32,4 @@ def main():
  out={"fin_used":False,"folds":chosen,"overall":met(d["actual_gih"].to_numpy(),pred)}
  open(a.out,"w").write(json.dumps(out,indent=2)); print(json.dumps(out,indent=2))
 if __name__=="__main__":main()
+
