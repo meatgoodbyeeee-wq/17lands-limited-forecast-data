@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install pandas
+      - run: pip install pandas scipy scikit-learn
       - name: Download development actuals only
         env:
           GH_TOKEN: ${{ github.token }}
@@ -36,6 +36,8 @@ jobs:
           PY
       - name: Build pre-release features
         run: python scripts/build_dev_features.py --actuals dev_actuals.csv --out model_out/dev_feature_table.csv
+      - name: Run FIN-blind text ensemble LOSO
+        run: python scripts/train_text_ensemble_loso.py --input model_out/dev_feature_table.csv --out model_out/text_ensemble_loso.json
       - uses: actions/upload-artifact@v4
         with:
           name: fin-blind-dev-feature-table
