@@ -107,15 +107,6 @@ def main():
         m=x.merge(feat,on="name",how="inner"); rows.append(m)
         print(s,len(x),len(m))
     out=pd.concat(rows,ignore_index=True)
-    # Power-creep normalization: express card efficiency relative to its own set+rarity baseline.
-    # These are spoiler-visible and prevent old commons from defining the absolute modern power baseline.
-    rel_cols=["stats_per_mv","power_per_mv","toughness_per_mv","interaction_per_mv","card_advantage_per_mv","oracle_len","keyword_count"]
-    for col in rel_cols:
-        if col in out.columns:
-            grp=out.groupby(["set","rarity_ord"])[col]
-            mu=grp.transform("mean"); sd=grp.transform("std").replace(0,pd.NA)
-            out["rel_"+col]=out[col]-mu
-            out["z_"+col]=(out[col]-mu)/sd
     a.out.parent.mkdir(parents=True,exist_ok=True); out.to_csv(a.out,index=False)
     print("wrote",a.out,len(out),"rows",len(out.columns),"columns")
 if __name__=="__main__": main()
