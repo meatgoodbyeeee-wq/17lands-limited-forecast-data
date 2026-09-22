@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        set: [BLB, DSK, FDN, DFT, TDM, FIN]
+        set: [ZNR, KHM, STX, AFR, MID, VOW, NEO, SNC, DMU, BRO, ONE, MOM, LTR, WOE, LCI, MKM, OTJ, MH3, BLB, DSK, FDN, DFT, TDM, FIN]
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
