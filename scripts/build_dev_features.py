@@ -82,8 +82,12 @@ def card_features(c):
     f["stats_per_mv"]=((f["power"]+f["toughness"])/mv) if f["power"] is not None and f["toughness"] is not None else None
     return f
 
+EXTRA_SETS={"STX":["STA"],"BRO":["BRR"],"MOM":["MUL"],"WOE":["WOT"],"LCI":["LCC"],"OTJ":["OTP","BIG"],"MH3":["M3C"]}
+
 def fetch_set(code):
-    url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote(f"e:{code.lower()}")
+    codes=[code]+EXTRA_SETS.get(code,[])
+    query=" OR ".join(f"e:{x.lower()}" for x in codes)
+    url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote("("+query+")")
     out=[]
     while url:
         d=get_json(url); out += [card_features(c) for c in d["data"] if not c.get("digital") or "arena" in c.get("games",[])]
@@ -102,26 +106,7 @@ def main():
     rows=[]
     for s in sorted(sets):
         feat=fetch_set(s); x=actual[actual["set"].str.upper()==s].copy()
-        creature_density=float(feat["type_creature"].mean())
-        interaction_density=float(feat["interaction"].mean())
-        clean_interaction_density=float(feat["clean_interaction"].mean())
-        cheap_interaction_density=float(feat["cheap_interaction"].mean())
-        evasion_density=float(feat["evasion"].mean())
-        mean_creature_stats=float(feat.loc[feat["type_creature"]==1,"stats_per_mv"].mean())
-        m=x.merge(feat,on="name",how="inner")
-        m["env_creature_density"]=creature_density
-        m["env_interaction_density"]=interaction_density
-        m["env_clean_interaction_density"]=clean_interaction_density
-        m["env_cheap_interaction_density"]=cheap_interaction_density
-        m["env_evasion_density"]=evasion_density
-        m["env_mean_creature_stats_per_mv"]=mean_creature_stats
-        m["x_interaction_vs_creatures"]=m["interaction"]*creature_density
-        m["x_clean_interaction_vs_creatures"]=m["clean_interaction"]*creature_density
-        m["x_cheap_interaction_vs_creatures"]=m["cheap_interaction"]*creature_density
-        m["x_evasion_vs_interaction"]=m["evasion"]*(1.0-interaction_density)
-        m["x_evasion_vs_evasion_density"]=m["evasion"]*(1.0-evasion_density)
-        m["x_body_vs_env_body"]=m["stats_per_mv"]-mean_creature_stats
-        rows.append(m)
+        m=x.merge(feat,on="name",how="inner"); rows.append(m)
         print(s,len(x),len(m))
     out=pd.concat(rows,ignore_index=True)
     a.out.parent.mkdir(parents=True,exist_ok=True); out.to_csv(a.out,index=False)
