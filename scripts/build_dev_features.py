@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build a FIN-blind feature table from Scryfall bulk/card API metadata + 17Lands aggregates.
 
+Note: keep source edits as real multiline text; never encode source newlines as literal backslash-n sequences.
+
 FIN is deliberately rejected: this builder is for development sets only.
 Outputs numeric, pre-release-available card features suitable for LOSO modeling.
 """
