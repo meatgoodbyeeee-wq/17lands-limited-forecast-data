@@ -82,6 +82,11 @@ def card_features(c):
     f["power_per_mv"]=(f["power"]/mv) if f["power"] is not None else None
     f["toughness_per_mv"]=(f["toughness"]/mv) if f["toughness"] is not None else None
     f["stats_per_mv"]=((f["power"]+f["toughness"])/mv) if f["power"] is not None and f["toughness"] is not None else None
+    # Semantic candidates selected by FIN-blind OOF residual audit.
+    f["semantic_cast_trigger"]=int(bool(re.search(r"when you cast|whenever you cast",tl)))
+    f["semantic_flexible_target"]=int(bool(re.search(r"any target|target (creature or planeswalker|permanent|nonland permanent)",tl)))
+    f["semantic_tribal_dependency"]=int(bool(re.search(r"creature type|shares? a creature type",tl)))
+    f["semantic_another_dependency"]=int(bool(re.search(r"another .* you control",tl)))
     return f
 
 def fetch_set(code):
