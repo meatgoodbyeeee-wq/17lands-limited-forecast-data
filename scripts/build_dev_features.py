@@ -59,8 +59,7 @@ def card_features(c):
     f["interaction"]=interaction
     f["interaction_per_mv"]=interaction/mv
     f["cheap_interaction"]=int(interaction and f["mv"]<=3)
-    f["expensive_interaction"]=int(interaction and f["mv"]>=5)\n    conditional_words=["if ","unless ","only ","with power ","with toughness ","mana value ","that was dealt","attacking","blocking","tapped"]
-    f["interaction_condition_count"]=sum(int(x in tl) for x in conditional_words) if interaction else 0
+    conditional_words=["if ","unless ","only ","with power ","with toughness ","mana value ","that was dealt","attacking","blocking","tapped"]\n    f["interaction_condition_count"]=sum(int(x in tl) for x in conditional_words) if interaction else 0
     f["clean_interaction"]=int(interaction and f["interaction_condition_count"]==0)
     card_adv=int(bool(re.search(r"draw (two|three|x|that many) cards",tl)) or ("create" in tl and "token" in tl and f["has_etb"]))
     f["card_advantage"]=card_adv
