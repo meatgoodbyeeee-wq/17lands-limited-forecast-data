@@ -1,0 +1,33 @@
+name: Aggregate 17Lands 28d
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/aggregate_17lands.py"
+      - ".github/workflows/aggregate.yml"
+
+jobs:
+  aggregate:
+    strategy:
+      fail-fast: false
+      matrix:
+        set: [BLB, DSK, FDN, DFT, TDM, FIN]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pandas
+      - name: Aggregate
+        run: python scripts/aggregate_17lands.py --set ${{ matrix.set }} --out-dir out
+      - name: Upload compact results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.set }}-28d
+          path: |
+            out/${{ matrix.set }}_gih_28d.csv
+            out/${{ matrix.set }}_manifest.json
+          retention-days: 30
