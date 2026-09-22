@@ -39,13 +39,21 @@ def score(m,d,fs):
 def main():
  a=argparse.ArgumentParser();a.add_argument("--input",type=Path,required=True);a.add_argument("--out",type=Path,required=True);z=a.parse_args();d=pd.read_csv(z.input);assert REQ<=set(d);d["set"]=d["set"].str.upper();assert "FIN" not in set(d["set"]);d.actual_gih=norm(d.actual_gih)
  fs=[c for c in d.select_dtypes(include=[np.number]).columns if c not in {"actual_gih","gih_games","gih_wins","gih_wr_pct"} and not c.startswith("color_")]
- # Recreate the same FIN-blind 1.25x structured base prediction inside each LOSO fold.
+ # Recreate the exact FIN-blind 1.25x text+structured base used by the main model.
  from sklearn.ensemble import ExtraTreesRegressor
  from sklearn.impute import SimpleImputer
  from sklearn.pipeline import make_pipeline
+ from sklearn.feature_extraction.text import TfidfVectorizer
+ from sklearn.linear_model import Ridge
  base=np.full(len(d),np.nan)
+ txt=d["oracle_text"].fillna("")+" TYPE "+d["type_line"].fillna("")
  for hold in sorted(d["set"].unique()):
-  tr=d.set!=hold;te=d.set==hold;m0=make_pipeline(SimpleImputer(strategy="median"),ExtraTreesRegressor(n_estimators=600,min_samples_leaf=12,max_features=.8,n_jobs=-1,random_state=20260922));m0.fit(d.loc[tr,fs],d.loc[tr,"actual_gih"]);raw=m0.predict(d.loc[te,fs]);center=float(d.loc[tr,"actual_gih"].mean());base[te]=center+1.25*(raw-center)
+  tr=d.set!=hold;te=d.set==hold
+  m0=make_pipeline(SimpleImputer(strategy="median"),ExtraTreesRegressor(n_estimators=600,min_samples_leaf=12,max_features=.8,n_jobs=-1,random_state=20260922))
+  m0.fit(d.loc[tr,fs],d.loc[tr,"actual_gih"]);pt=m0.predict(d.loc[te,fs])
+  mt=make_pipeline(TfidfVectorizer(ngram_range=(1,2),min_df=3,max_features=12000,sublinear_tf=True),Ridge(alpha=20))
+  mt.fit(txt[tr],d.loc[tr,"actual_gih"]);px=mt.predict(txt[te])
+  raw=.7*pt+.3*px;center=float(d.loc[tr,"actual_gih"].mean());base[te]=center+1.25*(raw-center)
  d["base_pred"]=base
  pred=np.full(len(d),np.nan); folds={}
  for hold in sorted(d["set"].unique()):
