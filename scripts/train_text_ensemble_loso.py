@@ -10,7 +10,7 @@ from sklearn.linear_model import Ridge
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import ExtraTreesRegressor
-DEV={"BLB","DSK","FDN","DFT","TDM"}
+DEV={"KHM","STX","AFR","MID","VOW","NEO","SNC","DMU","BRO","ONE","MOM","LTR","WOE","LCI","MKM","OTJ","MH3","BLB","DSK","FDN","DFT","TDM"}
 DROP={"set","name","oracle_text","type_line","gih_games","gih_wins","actual_gih","gih_wr_pct","window_start","window_end","collector_number"}
 def met(y,p,k=30):
  o=np.argsort(y); q=np.argsort(p); return {"mae_pp":float(np.mean(abs(y-p))*100),"spearman":float(spearmanr(y,p).statistic),"top30":len(set(o[-k:])&set(q[-k:]))/k,"bottom30":len(set(o[:k])&set(q[:k]))/k,"sd_ratio":float(np.std(p)/np.std(y))}
