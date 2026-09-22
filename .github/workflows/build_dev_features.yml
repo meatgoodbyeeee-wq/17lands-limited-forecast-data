@@ -7,6 +7,7 @@ on:
       - scripts/train_text_ensemble_loso.py
       - scripts/audit_common_power_creep.py
       - scripts/audit_prediction_compression.py
+      - scripts/audit_tail_semantics.py
       - scripts/tune_structured_loso.py
       - scripts/tune_ensemble_loso.py
       - scripts/tune_decompression_loso.py
@@ -47,6 +48,8 @@ jobs:
         run: python scripts/audit_common_power_creep.py --input model_out/dev_feature_table.csv --out model_out/common_power_creep_audit.csv
       - name: Audit prediction compression FIN-blind
         run: python scripts/audit_prediction_compression.py --input model_out/dev_feature_table.csv --out model_out/prediction_compression_audit.json
+      - name: Audit tail semantics FIN-blind
+        run: python scripts/audit_tail_semantics.py --input model_out/dev_feature_table.csv --out model_out/tail_semantics_audit.json
       - name: Tune structured model FIN-blind
         run: python scripts/tune_structured_loso.py --input model_out/dev_feature_table.csv --out model_out/structured_tuning.json
       - name: Tune ensemble FIN-blind
