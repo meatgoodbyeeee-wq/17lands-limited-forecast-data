@@ -5,7 +5,7 @@ import numpy as np,pandas as pd
 from scipy.stats import spearmanr
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.metrics import mean_absolute_error
-REQ={"set","name","actual_gih","base_pred"}
+REQ={"set","name","actual_gih"}
 def norm(x):
  x=pd.to_numeric(x,errors="coerce"); return x/100 if x.dropna().median()>1.5 else x
 def met(d,col,k=30):
@@ -37,8 +37,16 @@ def score(m,d,fs):
   out.loc[list(np.asarray(ix,dtype=object)[pos])]=sc
  return out.to_numpy()
 def main():
- a=argparse.ArgumentParser();a.add_argument("--input",type=Path,required=True);a.add_argument("--out",type=Path,required=True);z=a.parse_args();d=pd.read_csv(z.input);assert REQ<=set(d);d["set"]=d["set"].str.upper();assert "FIN" not in set(d["set"]);d.actual_gih=norm(d.actual_gih);d.base_pred=norm(d.base_pred)
- fs=[c for c in d.select_dtypes(include=[np.number]).columns if c not in {"actual_gih","base_pred","gih_games","gih_wins"} and not c.startswith("color_")]
+ a=argparse.ArgumentParser();a.add_argument("--input",type=Path,required=True);a.add_argument("--out",type=Path,required=True);z=a.parse_args();d=pd.read_csv(z.input);assert REQ<=set(d);d["set"]=d["set"].str.upper();assert "FIN" not in set(d["set"]);d.actual_gih=norm(d.actual_gih)
+ fs=[c for c in d.select_dtypes(include=[np.number]).columns if c not in {"actual_gih","gih_games","gih_wins","gih_wr_pct"} and not c.startswith("color_")]
+ # Recreate the same FIN-blind 1.25x structured base prediction inside each LOSO fold.
+ from sklearn.ensemble import ExtraTreesRegressor
+ from sklearn.impute import SimpleImputer
+ from sklearn.pipeline import make_pipeline
+ base=np.full(len(d),np.nan)
+ for hold in sorted(d["set"].unique()):
+  tr=d.set!=hold;te=d.set==hold;m0=make_pipeline(SimpleImputer(strategy="median"),ExtraTreesRegressor(n_estimators=600,min_samples_leaf=12,max_features=.8,n_jobs=-1,random_state=20260922));m0.fit(d.loc[tr,fs],d.loc[tr,"actual_gih"]);raw=m0.predict(d.loc[te,fs]);center=float(d.loc[tr,"actual_gih"].mean());base[te]=center+1.25*(raw-center)
+ d["base_pred"]=base
  pred=np.full(len(d),np.nan); folds={}
  for hold in sorted(d["set"].unique()):
   tr=d.set!=hold;te=d.set==hold;m=fit(d.loc[tr],fs);s=score(m,d.loc[te],fs);tmp=d.loc[te].copy();tmp["rank"]=s
