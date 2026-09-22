@@ -1,6 +1,10 @@
 name: Build FIN-blind model features
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - scripts/build_dev_features.py
+      - .github/workflows/build_dev_features.yml
 permissions:
   actions: read
   contents: read
@@ -24,8 +28,9 @@ jobs:
           python - <<'PY'
           import pandas as pd, glob
           fs=glob.glob("training_artifacts/*/*_gih_28d.csv")
+          if len(fs) != 5: raise SystemExit(f"Expected 5 development files, got {len(fs)}: {fs}")
           d=pd.concat([pd.read_csv(f) for f in fs],ignore_index=True)
-          assert "FIN" not in set(d["set"].str.upper())
+          if "FIN" in set(d["set"].str.upper()): raise SystemExit("FIN contamination detected")
           d.to_csv("dev_actuals.csv",index=False)
           print(d.groupby("set").size())
           PY
