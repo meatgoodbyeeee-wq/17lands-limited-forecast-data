@@ -84,6 +84,35 @@ def fetch_set(code):
     return pd.DataFrame(out).drop_duplicates("name")
 
 
+
+def add_synergy_supply_features(feat):
+    """Card-demand x set-supply features available from the full preview card pool."""
+    x=feat.copy()
+    tl=x["oracle_text"].fillna("").str.lower()
+    typ=x["type_line"].fillna("").str.lower()
+    # Demand: only cards that explicitly care about the resource receive the environment signal.
+    demand_grave=(tl.str.contains("graveyard")|tl.str.contains("from your graveyard")).astype(int)
+    demand_sac=(tl.str.contains("sacrifice")|tl.str.contains("whenever you sacrifice")).astype(int)
+    demand_art=(tl.str.contains("artifact")).astype(int)
+    demand_ench=(tl.str.contains("enchantment")).astype(int)
+    demand_token=(tl.str.contains("token")).astype(int)
+    demand_creature=(tl.str.contains("creature card")|tl.str.contains("creatures you control")).astype(int)
+    # Supply proxies from card text/type only; no gameplay outcomes.
+    grave_supply=(tl.str.contains("mill")|tl.str.contains("surveil")|tl.str.contains("discard")|tl.str.contains("put")&tl.str.contains("graveyard")).mean()
+    sac_fodder=((tl.str.contains("create")&tl.str.contains("token"))|tl.str.contains("when this creature dies")|tl.str.contains("when ~ dies")).mean()
+    art_supply=(typ.str.contains("artifact")|(tl.str.contains("create")&tl.str.contains("artifact"))).mean()
+    ench_supply=typ.str.contains("enchantment").mean()
+    token_supply=(tl.str.contains("create")&tl.str.contains("token")).mean()
+    creature_supply=typ.str.contains("creature").mean()
+    x["syn_graveyard_supply"]=demand_grave*float(grave_supply)
+    x["syn_sacrifice_supply"]=demand_sac*float(sac_fodder)
+    x["syn_artifact_supply"]=demand_art*float(art_supply)
+    x["syn_enchantment_supply"]=demand_ench*float(ench_supply)
+    x["syn_token_supply"]=demand_token*float(token_supply)
+    x["syn_creature_supply"]=demand_creature*float(creature_supply)
+    x["syn_demand_count"]=demand_grave+demand_sac+demand_art+demand_ench+demand_token+demand_creature
+    return x
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--actuals",type=Path,required=True); ap.add_argument("--out",type=Path,default=Path("model_out/dev_feature_table.csv"))
     a=ap.parse_args(); actual=pd.read_csv(a.actuals)
@@ -93,7 +122,7 @@ def main():
     if bad: raise SystemExit(f"Refusing non-development sets (FIN must remain untouched): {sorted(bad)}")
     rows=[]
     for s in sorted(sets):
-        feat=fetch_set(s); x=actual[actual["set"].str.upper()==s].copy()
+        feat=add_synergy_supply_features(fetch_set(s)); x=actual[actual["set"].str.upper()==s].copy()
         m=x.merge(feat,on="name",how="inner"); rows.append(m)
         print(s,len(x),len(m))
     out=pd.concat(rows,ignore_index=True)
