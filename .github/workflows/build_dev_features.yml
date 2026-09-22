@@ -60,6 +60,16 @@ jobs:
           done
           cp /tmp/build_all.py scripts/build_dev_features.py
 
+      - name: Summarize isolated semantic results
+        run: |
+          python - <<'PY'
+          import json
+          for v in ["cast","flex","tribal","another"]:
+              with open(f"model_out/text_{v}.json") as fh:
+                  x=json.load(fh)["overall"]
+              print(f"SEMANTIC_RESULT {v} MAE={x['mae_pp']:.9f} SPEARMAN={x['spearman']:.9f} SD={x['sd_ratio']:.9f}")
+          PY
+
       - name: Tune structured model FIN-blind
         run: python scripts/tune_structured_loso.py --input model_out/dev_feature_table.csv --out model_out/structured_tuning.json
       - name: Tune ensemble FIN-blind
