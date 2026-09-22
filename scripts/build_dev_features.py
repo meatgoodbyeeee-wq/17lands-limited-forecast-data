@@ -49,6 +49,28 @@ def card_features(c):
     f["targets_creature"]=int("target creature" in text.lower())
     f["keyword_count"]=sum(f["kw_"+k.replace(" ","_")] for k in KEYWORDS)
     f["ability_sentences"]=text.count(".")+text.count(";")
+    # Limited-specific semantic features, all available before release.
+    tl=text.lower()
+    f["sem_removal_destroy"]=int(bool(re.search(r"destroy target|destroy all|destroy each",tl)))
+    f["sem_removal_exile"]=int(bool(re.search(r"exile target|exile all|exile each",tl)))
+    f["sem_damage_target"]=int("damage to target" in tl or bool(re.search(r"deals? [^.]*(damage) to (any target|target creature|target permanent)",tl)))
+    f["sem_bounce"]=int(bool(re.search(r"return target .* to (its|their) owner.?s hand",tl)))
+    f["sem_tap_freeze"]=int("tap target" in tl and ("doesn't untap" in tl or "does not untap" in tl))
+    f["sem_combat_trick"]=int("until end of turn" in tl and ("target creature" in tl or "target attacking" in tl or "target blocking" in tl))
+    f["sem_draw_cards"]=int(bool(re.search(r"draw (a|one|two|three|x|that many) card",tl)))
+    f["sem_impulse_draw"]=int("exile" in tl and ("you may play" in tl or "you may cast" in tl))
+    f["sem_loot"]=int("draw" in tl and "discard" in tl)
+    f["sem_token_maker"]=int("create" in tl and "token" in tl)
+    f["sem_reanimate"]=int(("return target" in tl or "return a" in tl) and "graveyard" in tl and "battlefield" in tl)
+    f["sem_recursion_hand"]=int("graveyard" in tl and "to your hand" in tl)
+    f["sem_evasion"]=int(any(x in tl for x in ["flying","menace","can't be blocked","cannot be blocked"]))
+    f["sem_protection"]=int(any(x in tl for x in ["hexproof","indestructible","protection from","phase out"]))
+    f["sem_ramp"]=int(("add {" in tl) or ("search your library" in tl and "land" in tl))
+    f["sem_cost_reduction"]=int("costs {" in tl and " less to cast" in tl)
+    f["sem_repeatable"]=int(":" in text)
+    f["sem_sac_outlet"]=int("sacrifice" in tl and ":" in text)
+    f["sem_etb_value"]=int(f["has_etb"] and any(x in tl for x in ["draw","destroy","exile","damage","create","return target","surveil","scry"]))
+    f["sem_two_for_one_proxy"]=int(sum([f["sem_draw_cards"],f["sem_token_maker"],f["sem_reanimate"],f["sem_etb_value"]])>=2)
     f["power_per_mv"]=(f["power"]/mv) if f["power"] is not None else None
     f["toughness_per_mv"]=(f["toughness"]/mv) if f["toughness"] is not None else None
     f["stats_per_mv"]=((f["power"]+f["toughness"])/mv) if f["power"] is not None and f["toughness"] is not None else None
