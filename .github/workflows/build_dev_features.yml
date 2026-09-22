@@ -55,7 +55,7 @@ jobs:
           cp scripts/build_dev_features.py /tmp/build_all.py
           for v in cast flex tribal another; do
             cp experiments/build_dev_features_semantic_${v}.py scripts/build_dev_features.py
-            python scripts/build_dev_features.py --actuals data/dev_actuals.csv --out model_out/dev_feature_${v}.csv
+            python scripts/build_dev_features.py --actuals dev_actuals.csv --out model_out/dev_feature_${v}.csv
             python scripts/train_text_ensemble_loso.py --input model_out/dev_feature_${v}.csv --out model_out/text_${v}.json
           done
           cp /tmp/build_all.py scripts/build_dev_features.py
