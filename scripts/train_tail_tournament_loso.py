@@ -47,3 +47,4 @@ def main():
   delta=coef[0]+coef[1]*(s-.5);conf=np.clip(abs(s-.5)*2,0,1);p=tmp.base_pred.to_numpy()+.5*conf*delta;pred[te]=p;tmp["tail_pred"]=p;folds[hold]=met(tmp,"tail_pred")
  d["tail_pred"]=pred;out={"fin_used":False,"scoring":"pairwise_tournament","folds":folds,"overall":met(d,"tail_pred")};z.out.parent.mkdir(parents=True,exist_ok=True);z.out.write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))
 if __name__=="__main__":main()
+
