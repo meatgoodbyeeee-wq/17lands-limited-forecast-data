@@ -93,7 +93,7 @@ def add_environment_interactions(feat):
     blocker=((creatures["kw_flying"]==1)|(creatures["kw_reach"]==1)).mean()
     x["env_evasion_open_lane"]=x["evasion"]*(1-float(blocker))
     # Interaction coverage proxy: destroy/exile/bounce covers all creatures; damage spells parse fixed damage when possible.
-    toughness=t.to_numpy(float)
+    toughness=creatures["toughness"].dropna().to_numpy(float)
     def removal_coverage(r):
         if not r["interaction"]: return None
         tl=str(r["oracle_text"]).lower()
