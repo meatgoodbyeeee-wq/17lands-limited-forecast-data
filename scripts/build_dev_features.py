@@ -83,6 +83,51 @@ def fetch_set(code):
         url=d.get("next_page") if d.get("has_more") else None
     return pd.DataFrame(out).drop_duplicates("name")
 
+
+def add_environment_interactions(feat):
+    """Card x set interactions using only the preview card pool; no gameplay outcomes."""
+    x=feat.copy()
+    creatures=x[x["type_creature"]==1].copy()
+    if creatures.empty: return x
+    p=creatures["power"].dropna(); t=creatures["toughness"].dropna()
+    # Battlefield benchmarks from the actual card pool.
+    med_p=float(p.median()) if len(p) else 0.0
+    med_t=float(t.median()) if len(t) else 0.0
+    x["env_power_vs_median"]=x["power"]-med_p
+    x["env_toughness_vs_median"]=x["toughness"]-med_t
+    # Percentile of raw body among creatures at similar mana value (+/-1).
+    def body_pct(r):
+        if r["type_creature"]!=1 or pd.isna(r["power"]) or pd.isna(r["toughness"]): return None
+        pool=creatures[(creatures["mv"]>=max(0,r["mv"]-1))&(creatures["mv"]<=r["mv"]+1)].dropna(subset=["power","toughness"])
+        if pool.empty:return None
+        body=r["power"]+r["toughness"]; return float(((pool["power"]+pool["toughness"])<=body).mean())
+    x["env_body_percentile"]=x.apply(body_pct,axis=1)
+    # Approximate combat: fraction of similarly-costed creatures this creature can kill/survive.
+    def combat(r):
+        if r["type_creature"]!=1 or pd.isna(r["power"]) or pd.isna(r["toughness"]): return pd.Series([None,None,None])
+        pool=creatures[(creatures["mv"]>=max(0,r["mv"]-1))&(creatures["mv"]<=r["mv"]+1)].dropna(subset=["power","toughness"])
+        if pool.empty:return pd.Series([None,None,None])
+        kill=float((r["power"]>=pool["toughness"]).mean())
+        survive=float((r["toughness"]>pool["power"]).mean())
+        dominate=float(((r["power"]>=pool["toughness"])&(r["toughness"]>pool["power"])).mean())
+        return pd.Series([kill,survive,dominate])
+    x[["env_combat_kill","env_combat_survive","env_combat_dominate"]]=x.apply(combat,axis=1)
+    # Evasion value falls when the environment contains many natural flying/reach blockers.
+    blocker=((creatures["kw_flying"]==1)|(creatures["kw_reach"]==1)).mean()
+    x["env_evasion_open_lane"]=x["evasion"]*(1-float(blocker))
+    # Interaction coverage proxy: destroy/exile/bounce covers all creatures; damage spells parse fixed damage when possible.
+    toughness=t.to_numpy(float)
+    def removal_coverage(r):
+        if not r["interaction"]: return None
+        tl=str(r["oracle_text"]).lower()
+        if "destroy target" in tl or "exile target" in tl or "return target" in tl:return 1.0
+        m=re.search(r"deals? (\\d+) damage",tl)
+        if m and len(toughness):return float((toughness<=float(m.group(1))).mean())
+        return None
+    x["env_interaction_coverage"]=x.apply(removal_coverage,axis=1)
+    x["env_interaction_efficiency"]=x["env_interaction_coverage"]/x["mv"].clip(lower=1)
+    return x
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--actuals",type=Path,required=True); ap.add_argument("--out",type=Path,default=Path("model_out/dev_feature_table.csv"))
     a=ap.parse_args(); actual=pd.read_csv(a.actuals)
@@ -92,7 +137,7 @@ def main():
     if bad: raise SystemExit(f"Refusing non-development sets (FIN must remain untouched): {sorted(bad)}")
     rows=[]
     for s in sorted(sets):
-        feat=fetch_set(s); x=actual[actual["set"].str.upper()==s].copy()
+        feat=add_environment_interactions(fetch_set(s)); x=actual[actual["set"].str.upper()==s].copy()
         m=x.merge(feat,on="name",how="inner"); rows.append(m)
         print(s,len(x),len(m))
     out=pd.concat(rows,ignore_index=True)
