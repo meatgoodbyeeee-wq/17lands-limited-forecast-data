@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""FIN-blind LOSO text + structured ensemble. Development sets only."""
+"""FIN-blind LOSO text + structured ensemble. Development sets only.\nWord + character TF-IDF experiment."""
 import argparse,json
 import numpy as np,pandas as pd
 from scipy.stats import spearmanr
