@@ -39,7 +39,7 @@ def card_features(c):
     return f
 
 def fetch_set(code):
-    url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote(f"e:{code.lower()} game:arena")
+    url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote(f"set:{code.lower()}")
     out=[]
     while url:
         d=get_json(url); out += [card_features(c) for c in d["data"] if not c.get("digital") or "arena" in c.get("games",[])]
