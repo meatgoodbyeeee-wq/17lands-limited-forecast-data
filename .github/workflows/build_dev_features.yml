@@ -9,6 +9,7 @@ on:
       - scripts/audit_prediction_compression.py
       - scripts/tune_structured_loso.py
       - scripts/tune_ensemble_loso.py
+      - scripts/tune_decompression_loso.py
       - scripts/train_tail_tournament_loso.py
       - .github/workflows/build_dev_features.yml
 permissions:
@@ -50,6 +51,8 @@ jobs:
         run: python scripts/tune_structured_loso.py --input model_out/dev_feature_table.csv --out model_out/structured_tuning.json
       - name: Tune ensemble FIN-blind
         run: python scripts/tune_ensemble_loso.py --input model_out/dev_feature_table.csv --out model_out/ensemble_tuning.json
+      - name: Tune wide decompression FIN-blind
+        run: python scripts/tune_decompression_loso.py --input model_out/dev_feature_table.csv --out model_out/decompression_tuning.json
       - name: Run FIN-blind text ensemble LOSO
         run: python scripts/train_text_ensemble_loso.py --input model_out/dev_feature_table.csv --out model_out/text_ensemble_loso.json
       - name: Run FIN-blind tail tournament LOSO
