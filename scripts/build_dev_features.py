@@ -75,46 +75,13 @@ def card_features(c):
     f["stats_per_mv"]=((f["power"]+f["toughness"])/mv) if f["power"] is not None and f["toughness"] is not None else None
     return f
 
-def add_set_context(feat):
-    """Add pre-release-only set context and card-vs-set relative features."""
-    x=feat.copy()
-    n=max(len(x),1)
-    def mean(col):
-        return float(pd.to_numeric(x[col],errors="coerce").mean()) if col in x else 0.0
-    # Card-pool environment descriptors; no 17Lands outcomes are used here.
-    ctx={
-        "ctx_mean_mv":mean("mv"),
-        "ctx_creature_density":mean("type_creature"),
-        "ctx_interaction_density":mean("interaction"),
-        "ctx_cheap_interaction_density":mean("cheap_interaction"),
-        "ctx_card_advantage_density":mean("card_advantage"),
-        "ctx_evasion_density":mean("evasion"),
-        "ctx_multicolor_density":mean("is_multicolor"),
-        "ctx_token_density":mean("kw_token"),
-        "ctx_sacrifice_density":mean("kw_sacrifice"),
-        "ctx_graveyard_density":mean("kw_graveyard"),
-        "ctx_artifact_density":mean("type_artifact"),
-        "ctx_enchantment_density":mean("type_enchantment"),
-    }
-    for k,v in ctx.items(): x[k]=v
-    # Relative-to-environment features are more transferable than set constants alone.
-    x["rel_mv"]=pd.to_numeric(x["mv"],errors="coerce")-ctx["ctx_mean_mv"]
-    x["rel_power_eff"]=pd.to_numeric(x["power_per_mv"],errors="coerce")-mean("power_per_mv")
-    x["rel_toughness_eff"]=pd.to_numeric(x["toughness_per_mv"],errors="coerce")-mean("toughness_per_mv")
-    x["rel_stats_eff"]=pd.to_numeric(x["stats_per_mv"],errors="coerce")-mean("stats_per_mv")
-    x["interaction_scarcity"]=pd.to_numeric(x["interaction"],errors="coerce")*(1.0-ctx["ctx_interaction_density"])
-    x["cheap_interaction_scarcity"]=pd.to_numeric(x["cheap_interaction"],errors="coerce")*(1.0-ctx["ctx_cheap_interaction_density"])
-    x["evasion_scarcity"]=pd.to_numeric(x["evasion"],errors="coerce")*(1.0-ctx["ctx_evasion_density"])
-    x["card_advantage_scarcity"]=pd.to_numeric(x["card_advantage"],errors="coerce")*(1.0-ctx["ctx_card_advantage_density"])
-    return x
-
 def fetch_set(code):
     url="https://api.scryfall.com/cards/search?q="+urllib.parse.quote(f"e:{code.lower()}")
     out=[]
     while url:
         d=get_json(url); out += [card_features(c) for c in d["data"] if not c.get("digital") or "arena" in c.get("games",[])]
         url=d.get("next_page") if d.get("has_more") else None
-    return add_set_context(pd.DataFrame(out).drop_duplicates("name"))
+    return pd.DataFrame(out).drop_duplicates("name")
 
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--actuals",type=Path,required=True); ap.add_argument("--out",type=Path,default=Path("model_out/dev_feature_table.csv"))
