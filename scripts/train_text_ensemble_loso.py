@@ -4,7 +4,7 @@ import argparse,json
 import numpy as np,pandas as pd
 from scipy.stats import spearmanr
 from sklearn.compose import ColumnTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.pipeline import FeatureUnion
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import Ridge
 from sklearn.pipeline import make_pipeline
@@ -25,7 +25,10 @@ def main():
   tree=make_pipeline(SimpleImputer(strategy="median"),ExtraTreesRegressor(n_estimators=600,min_samples_leaf=12,max_features=.8,n_jobs=-1,random_state=20260922))
   tree.fit(d.loc[tr,nums],y); pt=tree.predict(d.loc[te,nums])
   txt=d["oracle_text"].fillna("")+" TYPE "+d["type_line"].fillna("")
-  text=make_pipeline(TfidfVectorizer(ngram_range=(1,2),min_df=3,max_features=12000,sublinear_tf=True),Ridge(alpha=20))
+  text=make_pipeline(FeatureUnion([
+   ("word",TfidfVectorizer(ngram_range=(1,2),min_df=3,max_features=12000,sublinear_tf=True)),
+   ("char",TfidfVectorizer(analyzer="char_wb",ngram_range=(3,5),min_df=3,max_features=12000,sublinear_tf=True))
+  ]),Ridge(alpha=20))
   text.fit(txt[tr],y); px=text.predict(txt[te])
   # Fixed conservative blend; no holdout-set tuning.
   raw=.7*pt+.3*px
