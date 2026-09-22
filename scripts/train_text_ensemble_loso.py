@@ -28,7 +28,10 @@ def main():
   text=make_pipeline(TfidfVectorizer(ngram_range=(1,2),min_df=3,max_features=12000,sublinear_tf=True),Ridge(alpha=20))
   text.fit(txt[tr],y); px=text.predict(txt[te])
   # Fixed conservative blend; no holdout-set tuning.
-  raw=.7*pt+.3*px\n  center=float(np.mean(y))\n  p=center+1.25*(raw-center)\n  pred[te]=p; chosen[hold]=met(d.loc[te,"actual_gih"].to_numpy(),p)
+  raw=.7*pt+.3*px
+  center=float(np.mean(y))
+  p=center+1.25*(raw-center)
+  pred[te]=p; chosen[hold]=met(d.loc[te,"actual_gih"].to_numpy(),p)
  out={"fin_used":False,"folds":chosen,"overall":met(d["actual_gih"].to_numpy(),pred)}
  open(a.out,"w").write(json.dumps(out,indent=2)); print(json.dumps(out,indent=2))
 if __name__=="__main__":main()
