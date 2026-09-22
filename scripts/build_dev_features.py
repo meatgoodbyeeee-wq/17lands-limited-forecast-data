@@ -59,16 +59,11 @@ def card_features(c):
     f["interaction"]=interaction
     f["interaction_per_mv"]=interaction/mv
     f["cheap_interaction"]=int(interaction and f["mv"]<=3)
-    f["expensive_interaction"]=int(interaction and f["mv"]>=5)
     conditional_words=["if ","unless ","only ","with power ","with toughness ","mana value ","that was dealt","attacking","blocking","tapped"]
     f["interaction_condition_count"]=sum(int(x in tl) for x in conditional_words) if interaction else 0
     f["clean_interaction"]=int(interaction and f["interaction_condition_count"]==0)
     card_adv=int(bool(re.search(r"draw (two|three|x|that many) cards",tl)) or ("create" in tl and "token" in tl and f["has_etb"]))
-    f["card_advantage"]=card_adv
-    f["card_advantage_per_mv"]=card_adv/mv
     evasion=int(any(x in tl for x in ["flying","menace","can't be blocked","cannot be blocked"]))
-    f["evasion"]=evasion
-    f["evasion_power_efficiency"]=(evasion*f["power"]/mv) if f["power"] is not None else None
     f["power_per_mv"]=(f["power"]/mv) if f["power"] is not None else None
     f["toughness_per_mv"]=(f["toughness"]/mv) if f["toughness"] is not None else None
     f["stats_per_mv"]=((f["power"]+f["toughness"])/mv) if f["power"] is not None and f["toughness"] is not None else None
