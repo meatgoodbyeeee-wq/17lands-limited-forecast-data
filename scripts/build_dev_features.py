@@ -8,7 +8,7 @@ import argparse, json, re, urllib.parse, urllib.request
 from pathlib import Path
 import pandas as pd
 
-DEV_SETS={"BLB","DSK","FDN","DFT","TDM"}
+DEV_SETS={"KHM","STX","AFR","MID","VOW","NEO","SNC","DMU","BRO","ONE","MOM","LTR","WOE","LCI","MKM","OTJ","MH3","BLB","DSK","FDN","DFT","TDM"}
 TYPE_WORDS=["Creature","Instant","Sorcery","Artifact","Enchantment","Planeswalker","Land"]
 KEYWORDS=["flying","first strike","double strike","deathtouch","haste","hexproof","lifelink",
           "menace","reach","trample","vigilance","ward","draw","discard","destroy","exile",
