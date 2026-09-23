@@ -71,6 +71,22 @@ jobs:
                   x=json.load(fh)["overall"]
               print(f"SEMANTIC_RESULT {v} MAE={x['mae_pp']:.9f} SPEARMAN={x['spearman']:.9f} SD={x['sd_ratio']:.9f}")
           PY
+      - name: Test isolated ability-quality features FIN-blind
+        run: |
+          cp scripts/build_dev_features.py /tmp/build_quality_all.py
+          for v in immediate etbcard selfcontained repeatable broadremoval; do
+            cp experiments/build_dev_features_quality_${v}.py scripts/build_dev_features.py
+            python scripts/build_dev_features.py --actuals dev_actuals.csv --out model_out/dev_quality_${v}.csv
+            python scripts/train_text_ensemble_loso.py --input model_out/dev_quality_${v}.csv --out model_out/quality_${v}.json
+          done
+          cp /tmp/build_quality_all.py scripts/build_dev_features.py
+          python - <<'PY'
+          import json
+          for v in ["immediate","etbcard","selfcontained","repeatable","broadremoval"]:
+              with open(f"model_out/quality_{v}.json") as fh:
+                  x=json.load(fh)["overall"]
+              print(f"QUALITY_RESULT {v} MAE={x['mae_pp']:.9f} SPEARMAN={x['spearman']:.9f} SD={x['sd_ratio']:.9f}")
+          PY
       - name: Tune structured model FIN-blind
         run: python scripts/tune_structured_loso.py --input model_out/dev_feature_table.csv --out model_out/structured_tuning.json
       - name: Tune ensemble FIN-blind
