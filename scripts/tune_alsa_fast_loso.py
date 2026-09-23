@@ -7,6 +7,7 @@ from scipy.stats import spearmanr
 from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import make_pipeline
+from sklearn.neighbors import NearestNeighbors
 DROP={"actual_gih","gih_wr","gih_wr_pct","gih_games","gih_wins","actual_alsa","collector_number"}
 def cols(d):
     return [c for c in d.columns if c not in DROP|{"set","name","oracle_text","type_line","window_start","window_end","rarity"} and pd.api.types.is_numeric_dtype(d[c])]
@@ -24,7 +25,20 @@ def main():
     d=f.merge(y,on=["set","name"],how="inner"); base=cols(d)
     # Rarity is known pre-release. Add one-hot rarity interactions without splitting into small models.
     rarity=pd.get_dummies(d.get("rarity",pd.Series("unknown",index=d.index)).fillna("unknown").astype(str),prefix="rarity",dtype=float)
-    X=pd.concat([d[base].reset_index(drop=True),rarity.reset_index(drop=True)],axis=1)
+    X0=pd.concat([d[base].reset_index(drop=True),rarity.reset_index(drop=True)],axis=1)
+    # Historical-card analog ALSA: computed strictly inside each LOSO fold.
+    # Similarity uses only pre-release numeric/card metadata; the held-out set never enters the neighbor DB.
+    analog=np.full(len(d),np.nan)
+    analog_med=np.full(len(d),np.nan)
+    simcols=[c for c in base if c not in {"year"}]
+    A=SimpleImputer(strategy="median").fit_transform(d[simcols])
+    scale=np.nanstd(A,axis=0); scale[scale==0]=1; A=A/scale
+    for hold in sorted(d["set"].unique()):
+      tr=(d["set"]!=hold).to_numpy(); te=~tr
+      nn=NearestNeighbors(n_neighbors=min(12,int(tr.sum())),metric="euclidean").fit(A[tr])
+      dist,ix=nn.kneighbors(A[te]); vals=d.loc[tr,"actual_alsa"].to_numpy()[ix]
+      w=1/(dist+0.15); analog[te]=(vals*w).sum(axis=1)/w.sum(axis=1); analog_med[te]=np.median(vals,axis=1)
+    X=pd.concat([X0,pd.DataFrame({"alsa_analog12":analog,"alsa_analog12_median":analog_med})],axis=1)
     yy=d.actual_alsa.to_numpy(float); results=[]
     for name,kw in candidates():
       p=np.full(len(d),np.nan); floors=np.full(len(d),np.nan)
