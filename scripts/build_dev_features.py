@@ -86,6 +86,12 @@ def card_features(c):
     f["semantic_cast_trigger"]=int(bool(re.search(r"when you cast|whenever you cast",tl)))
     f["semantic_flexible_target"]=int(bool(re.search(r"any target|target (creature or planeswalker|permanent|nonland permanent)",tl)))
     f["semantic_tribal_dependency"]=int(bool(re.search(r"creature type|shares? a creature type",tl)))
+    # Ability-quality candidates from FIN-blind residual audit.
+    f["quality_immediate_removal"]=int(bool(re.search(r"when .* enters.*(destroy|exile|deals? .* damage)|enters.*(destroy|exile|deals? .* damage)",tl)))
+    f["quality_etb_card_value"]=int(bool(re.search(r"when .* enters.*draw .* card|enters.*draw .* card",tl)))
+    f["quality_self_contained_value"]=int(bool(re.search(r"enters.*(draw|create|destroy|exile|return target|deals? .* damage)|when .* enters.*(draw|create|destroy|exile|return target|deals? .* damage)",tl)))
+    f["quality_repeatable_card_value"]=int(bool(re.search(r"whenever .* draw|whenever .* create .* token|at the beginning of .* draw|at the beginning of .* create .* token",tl)))
+    f["quality_broad_removal"]=int(bool(re.search(r"destroy target (creature|permanent)|exile target (creature|permanent)|deals? .* damage to any target|any target",tl)))
     return f
 
 def fetch_set(code):
