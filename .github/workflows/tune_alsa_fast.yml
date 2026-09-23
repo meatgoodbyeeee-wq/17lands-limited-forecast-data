@@ -1,0 +1,38 @@
+name: Fast FIN-blind ALSA tuning
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/tune_alsa_fast_loso.py
+      - .github/workflows/tune_alsa_fast.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  tune:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas scipy scikit-learn
+      - name: Download cached FIN-blind development artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 35835189360 -n fin-blind-dev-feature-table -D cached
+      - name: Verify FIN absent
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          for f in ["cached/dev_feature_table.csv","cached/dev_alsa_actuals.csv"]:
+              d=pd.read_csv(f)
+              assert "FIN" not in set(d["set"].astype(str).str.upper()), f
+          print("FIN_USED=false")
+          PY
+      - name: Run ALSA-only candidate sweep
+        run: python scripts/tune_alsa_fast_loso.py --features cached/dev_feature_table.csv --alsa cached/dev_alsa_actuals.csv --out alsa_fast_results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: alsa-fast-results
+          path: alsa_fast_results.json
