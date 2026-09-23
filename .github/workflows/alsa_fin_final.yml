@@ -1,0 +1,52 @@
+name: ALSA FIN final holdout
+on:
+  push:
+    paths:
+      - scripts/finalize_alsa_fin.py
+      - .github/workflows/alsa_fin_final.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  final:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas scipy scikit-learn
+      - name: Download locked development artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 35835189360 -n fin-blind-dev-feature-table -D model_out
+      - name: Download FIN game aggregate only after model lock
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 35692015171 -n FIN-28d -D fin_artifact
+      - name: Build FIN card features without admitting FIN to dev builder
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          from pathlib import Path
+          import scripts.build_dev_features as b
+          a=pd.read_csv('fin_artifact/FIN_gih_28d.csv')
+          feat=b.fetch_set('FIN')
+          x=a.rename(columns={'card_name':'name'}).merge(feat,on='name',how='inner')
+          x['is_supplemental_power_set']=0; x['is_premier_set']=1
+          x.to_csv('model_out/fin_feature_table.csv',index=False)
+          print('FIN_FEATURES',len(x))
+          PY
+      - name: Fetch FIN ALSA once for final scoring
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          from scripts.fetch_alsa_actuals import fetch
+          x=fetch('FIN'); pd.DataFrame(x).to_csv('model_out/fin_alsa_actuals.csv',index=False); print('FIN_ALSA',len(x))
+          PY
+      - name: Score locked pooled ALSA model on FIN
+        run: python scripts/finalize_alsa_fin.py --dev-features model_out/dev_feature_table.csv --dev-alsa model_out/dev_alsa_actuals.csv --fin-features model_out/fin_feature_table.csv --fin-alsa model_out/fin_alsa_actuals.csv --out model_out/alsa_fin_final.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: alsa-fin-final
+          path: model_out/alsa_fin_final.json
