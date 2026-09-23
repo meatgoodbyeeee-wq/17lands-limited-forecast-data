@@ -86,7 +86,6 @@ def card_features(c):
     f["semantic_cast_trigger"]=int(bool(re.search(r"when you cast|whenever you cast",tl)))
     f["semantic_flexible_target"]=int(bool(re.search(r"any target|target (creature or planeswalker|permanent|nonland permanent)",tl)))
     f["semantic_tribal_dependency"]=int(bool(re.search(r"creature type|shares? a creature type",tl)))
-    f["semantic_another_dependency"]=int(bool(re.search(r"another .* you control",tl)))
     return f
 
 def fetch_set(code):
