@@ -61,28 +61,35 @@ def main():
     if not added: raise SystemExit("ALSA semantic rarity interactions produced zero columns")
     print("ALSA_SEMANTIC_AUDIT",json.dumps({"semantic_columns":sem,"interaction_count":len(added),"active_values":int(semdf.to_numpy().sum())}))
     yy=d.actual_alsa.to_numpy(float); results=[]
-    for name,kw in candidates():
-      p=np.full(len(d),np.nan); floors=np.full(len(d),np.nan)
-      for hold in sorted(d["set"].unique()):
-        tr=(d["set"]!=hold).to_numpy(); te=~tr
-        m=make_pipeline(SimpleImputer(strategy="median"),HistGradientBoostingRegressor(**kw))
-        m.fit(Xuse.loc[tr],d.loc[tr,"actual_alsa"]); p[te]=m.predict(Xuse.loc[te]); floors[te]=float(d.loc[tr,"actual_alsa"].min())
-      ok=np.isfinite(p)&np.isfinite(yy)
-      mae=float(np.mean(np.abs(p[ok]-yy[ok]))); sp=float(spearmanr(yy[ok],p[ok]).statistic)
-      per={s:float(np.mean(np.abs(p[(d["set"]==s)&ok]-yy[(d["set"]==s)&ok]))) for s in sorted(d["set"].unique())}
-      rmae={}
-      if "rarity" in d.columns:
-        for r in sorted(d["rarity"].dropna().astype(str).unique()):
-          z=(d["rarity"].astype(str)==r).to_numpy()&ok
-          if z.any(): rmae[r]=float(np.mean(np.abs(p[z]-yy[z])))
-      z={"name":ablation_name+"__"+name,"mae":mae,"spearman":sp,"pred_min":float(p[ok].min()),"pred_max":float(p[ok].max()),"pred_le_1":int((p[ok]<=1).sum()),"pred_lt_1_05":int((p[ok]<1.05).sum()),"rarity_mae":rmae,"set_mae":per}
-      if z["pred_min"]>1.0:
-        z["variant"]="raw"; results.append(z); print("ALSA_SWEEP",name,"raw MAE",mae,"SPEARMAN",sp,"MIN",z["pred_min"])
-      # Fold-local empirical floor: learned only from each training fold, never FIN or held-out set.
-      pf=np.maximum(p,floors+1e-6); okf=np.isfinite(pf)&np.isfinite(yy)
-      zf=dict(z); zf.update(name=ablation_name+"__"+name+"_foldfloor",variant="foldfloor",mae=float(np.mean(np.abs(pf[okf]-yy[okf]))),spearman=float(spearmanr(yy[okf],pf[okf]).statistic),pred_min=float(pf[okf].min()),pred_max=float(pf[okf].max()),pred_le_1=int((pf[okf]<=1).sum()),pred_lt_1_05=int((pf[okf]<1.05).sum()))
-      if zf["pred_min"]>1.0:
-        results.append(zf); print("ALSA_SWEEP",zf["name"],"MAE",zf["mae"],"SPEARMAN",zf["spearman"],"MIN",zf["pred_min"])
+    feature_sets=[("semantic_full",X)]
+    for drop_sem in sem:
+      drop_cols=[drop_sem]+[c for c in X.columns if c.startswith(drop_sem+"_x_")]
+      feature_sets.append(("without_"+drop_sem,X.drop(columns=drop_cols)))
+    print("ALSA_ABLATION_AUDIT",json.dumps({"variants":[n for n,_ in feature_sets],"semantic_count":len(sem)}))
+    cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
+    for ablation_name,Xuse in feature_sets:
+      for name,kw in cand:
+        p=np.full(len(d),np.nan); floors=np.full(len(d),np.nan)
+        for hold in sorted(d["set"].unique()):
+          tr=(d["set"]!=hold).to_numpy(); te=~tr
+          m=make_pipeline(SimpleImputer(strategy="median"),HistGradientBoostingRegressor(**kw))
+          m.fit(Xuse.loc[tr],d.loc[tr,"actual_alsa"]); p[te]=m.predict(Xuse.loc[te]); floors[te]=float(d.loc[tr,"actual_alsa"].min())
+        ok=np.isfinite(p)&np.isfinite(yy)
+        mae=float(np.mean(np.abs(p[ok]-yy[ok]))); sp=float(spearmanr(yy[ok],p[ok]).statistic)
+        per={s:float(np.mean(np.abs(p[(d["set"]==s)&ok]-yy[(d["set"]==s)&ok]))) for s in sorted(d["set"].unique())}
+        rmae={}
+        if "rarity" in d.columns:
+          for r in sorted(d["rarity"].dropna().astype(str).unique()):
+            z=(d["rarity"].astype(str)==r).to_numpy()&ok
+            if z.any(): rmae[r]=float(np.mean(np.abs(p[z]-yy[z])))
+        z={"name":ablation_name+"__"+name,"mae":mae,"spearman":sp,"pred_min":float(p[ok].min()),"pred_max":float(p[ok].max()),"pred_le_1":int((p[ok]<=1).sum()),"pred_lt_1_05":int((p[ok]<1.05).sum()),"rarity_mae":rmae,"set_mae":per}
+        if z["pred_min"]>1.0:
+          z["variant"]="raw"; results.append(z); print("ALSA_SWEEP",name,"raw MAE",mae,"SPEARMAN",sp,"MIN",z["pred_min"])
+        # Fold-local empirical floor: learned only from each training fold, never FIN or held-out set.
+        pf=np.maximum(p,floors+1e-6); okf=np.isfinite(pf)&np.isfinite(yy)
+        zf=dict(z); zf.update(name=ablation_name+"__"+name+"_foldfloor",variant="foldfloor",mae=float(np.mean(np.abs(pf[okf]-yy[okf]))),spearman=float(spearmanr(yy[okf],pf[okf]).statistic),pred_min=float(pf[okf].min()),pred_max=float(pf[okf].max()),pred_le_1=int((pf[okf]<=1).sum()),pred_lt_1_05=int((pf[okf]<1.05).sum()))
+        if zf["pred_min"]>1.0:
+          results.append(zf); print("ALSA_SWEEP",zf["name"],"MAE",zf["mae"],"SPEARMAN",zf["spearman"],"MIN",zf["pred_min"])
     if not results: raise SystemExit("No candidate satisfies mandatory pred_min > 1.0")
     results.sort(key=lambda z:(z["mae"],-z["spearman"]))
     a.out.parent.mkdir(parents=True,exist_ok=True); a.out.write_text(json.dumps({"fin_used":False,"n":len(d),"results":results},indent=2),encoding="utf-8")
