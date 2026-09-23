@@ -1,0 +1,39 @@
+name: FRA Public Game Data daily
+on:
+  schedule:
+    - cron: '23 17 * * *'
+  push:
+    paths:
+      - '.github/workflows/fra-public-game-daily.yml'
+      - 'scripts/fra_public_game_daily.py'
+permissions:
+  contents: write
+concurrency:
+  group: fra-public-game-daily
+  cancel-in-progress: false
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify dataset handling
+        run: python -m unittest discover -s scripts -p test_fra_public_game_daily.py
+      - name: Check official Public Game Data and aggregate
+        env:
+          FRA_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/fra_public_game_daily.py
+      - name: Save status and successfully aggregated observations
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add live/fra-public-game.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Update FRA Public Game Data status'
+          git pull --rebase origin main
+          git push origin HEAD:main
