@@ -40,11 +40,26 @@ def main():
       w=1/(dist+0.15); analog[te]=(vals*w).sum(axis=1)/w.sum(axis=1); analog_med[te]=np.median(vals,axis=1)
     # Analog experiment did not improve LOSO; keep it computed for audit but do not feed it to the next model.
     X=X0
-    # ALSA-specific perceived-strength interactions: rarity changes how obvious power signals affect pick behavior.
-    sem=[c for c in X.columns if c.startswith("alsa_sem_") or c.startswith("quality_")]
+    # ALSA-specific perceived-strength semantics generated directly from oracle/type text.
+    txt=d.get("oracle_text",pd.Series("",index=d.index)).fillna("").astype(str).str.lower()
+    typ=d.get("type_line",pd.Series("",index=d.index)).fillna("").astype(str).str.lower()
+    semdf=pd.DataFrame(index=d.index)
+    semdf["alsa_sem_removal"]=txt.str.contains(r"destroy target|exile target|deals? \\d+ damage to target|target creature gets -").astype(float)
+    semdf["alsa_sem_draw"]=txt.str.contains(r"draw (a|one|two|three|\\d+) cards?").astype(float)
+    semdf["alsa_sem_evasion"]=(txt.str.contains(r"flying|menace|trample|can't be blocked")|typ.str.contains("vehicle")).astype(float)
+    semdf["alsa_sem_repeatable"]=txt.str.contains(r"at the beginning of|whenever|: draw|: create|: target").astype(float)
+    semdf["alsa_sem_sweeper"]=txt.str.contains(r"all creatures|each creature|all other creatures").astype(float)
+    semdf["alsa_sem_dependency"]=txt.str.contains(r"if you control|for each|as long as|another .* you control|cards? in your graveyard").astype(float)
+    semdf["alsa_sem_narrow"]=txt.str.contains(r"artifact or enchantment|nonbasic land|creature with flying|from a graveyard").astype(float)
+    semdf["alsa_sem_creature"]=typ.str.contains("creature").astype(float)
+    if int(semdf.to_numpy().sum())==0: raise SystemExit("ALSA semantic generation produced zero active values")
+    X=pd.concat([X0,semdf.reset_index(drop=True)],axis=1)
+    sem=list(semdf.columns); added=[]
     for c in sem:
       for r in rarity.columns:
-        X[f"{c}_x_{r}"]=X[c].to_numpy()*rarity[r].to_numpy()
+        n=f"{c}_x_{r}"; X[n]=X[c].to_numpy()*rarity[r].to_numpy(); added.append(n)
+    if not added: raise SystemExit("ALSA semantic rarity interactions produced zero columns")
+    print("ALSA_SEMANTIC_AUDIT",json.dumps({"semantic_columns":sem,"interaction_count":len(added),"active_values":int(semdf.to_numpy().sum())}))
     yy=d.actual_alsa.to_numpy(float); results=[]
     for name,kw in candidates():
       p=np.full(len(d),np.nan); floors=np.full(len(d),np.nan)
