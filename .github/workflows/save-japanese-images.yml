@@ -1,0 +1,35 @@
+name: Save official Japanese FRA images
+on:
+  push:
+    paths:
+      - 'assets/fra/ja/manifest.json'
+      - 'scripts/download-japanese-images.py'
+      - '.github/workflows/save-japanese-images.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: save-official-japanese-images
+  cancel-in-progress: false
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download and verify official images
+        run: python scripts/download-japanese-images.py
+      - name: Save verified images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/fra/ja
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Save verified official Japanese FRA card images"
+          git pull --rebase origin main
+          git push origin HEAD:main
