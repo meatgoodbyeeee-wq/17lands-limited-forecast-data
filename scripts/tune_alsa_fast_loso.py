@@ -69,18 +69,24 @@ def main():
     yy=d.actual_alsa.to_numpy(float); results=[]
     repeat_cols=["alsa_sem_repeatable"]+[c for c in X.columns if c.startswith("alsa_sem_repeatable_x_")]
     Xbase=X.drop(columns=repeat_cols)
+    sem_pairs=[
+      ("removal_draw","alsa_sem_removal","alsa_sem_draw"),
+      ("removal_evasion","alsa_sem_removal","alsa_sem_evasion"),
+      ("draw_evasion","alsa_sem_draw","alsa_sem_evasion"),
+      ("removal_narrow","alsa_sem_removal","alsa_sem_narrow"),
+    ]
     feature_sets=[("baseline_without_repeatable",Xbase)]
-    broad_cols=["alsa_sem_removal"]+[c for c in Xbase.columns if c.startswith("alsa_sem_removal_x_")]
-    Xsplit=Xbase.drop(columns=broad_cols).copy()
-    for c in removal_split.columns:
-      Xsplit[c]=removal_split[c].to_numpy()
-      for r in rarity.columns:
-        Xsplit[f"{c}_x_{r}"]=Xsplit[c].to_numpy()*rarity[r].to_numpy()
-    feature_sets.append(("removal_split4",Xsplit))
-    for c in removal_split.columns:
-      drop_cols=[c]+[n for n in Xsplit.columns if n.startswith(c+"_x_")]
-      feature_sets.append(("removal_split_without_"+c.replace("alsa_removal_",""),Xsplit.drop(columns=drop_cols)))
-    print("ALSA_REMOVAL_AUDIT",json.dumps({"subtypes":list(removal_split.columns),"active_values":{c:int(removal_split[c].sum()) for c in removal_split.columns},"variants":[n for n,_ in feature_sets]}))
+    interaction_audit={}
+    for name,a_sem,b_sem in sem_pairs:
+      Xi=Xbase.copy(); col="alsa_pair_"+name
+      Xi[col]=semdf[a_sem].to_numpy()*semdf[b_sem].to_numpy()
+      interaction_audit[name]=int(Xi[col].sum())
+      feature_sets.append(("pair_"+name,Xi))
+    Xall=Xbase.copy()
+    for name,a_sem,b_sem in sem_pairs:
+      Xall["alsa_pair_"+name]=semdf[a_sem].to_numpy()*semdf[b_sem].to_numpy()
+    feature_sets.append(("pair_all4",Xall))
+    print("ALSA_INTERACTION_AUDIT",json.dumps({"active_values":interaction_audit,"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
