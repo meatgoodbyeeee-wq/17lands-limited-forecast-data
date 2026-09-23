@@ -38,7 +38,13 @@ def main():
       nn=NearestNeighbors(n_neighbors=min(12,int(tr.sum())),metric="euclidean").fit(A[tr])
       dist,ix=nn.kneighbors(A[te]); vals=d.loc[tr,"actual_alsa"].to_numpy()[ix]
       w=1/(dist+0.15); analog[te]=(vals*w).sum(axis=1)/w.sum(axis=1); analog_med[te]=np.median(vals,axis=1)
-    # Analog experiment did not improve LOSO; keep it computed for audit but do not feed it to the next model.\n    X=X0\n    # ALSA-specific perceived-strength interactions: rarity changes how obvious power signals affect pick behavior.\n    sem=[c for c in X.columns if c.startswith("alsa_sem_") or c.startswith("quality_")]\n    for c in sem:\n      for r in rarity.columns:\n        X[f"{c}_x_{r}"]=X[c].to_numpy()*rarity[r].to_numpy()
+    # Analog experiment did not improve LOSO; keep it computed for audit but do not feed it to the next model.
+    X=X0
+    # ALSA-specific perceived-strength interactions: rarity changes how obvious power signals affect pick behavior.
+    sem=[c for c in X.columns if c.startswith("alsa_sem_") or c.startswith("quality_")]
+    for c in sem:
+      for r in rarity.columns:
+        X[f"{c}_x_{r}"]=X[c].to_numpy()*rarity[r].to_numpy()
     yy=d.actual_alsa.to_numpy(float); results=[]
     for name,kw in candidates():
       p=np.full(len(d),np.nan); floors=np.full(len(d),np.nan)
