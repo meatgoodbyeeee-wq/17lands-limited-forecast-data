@@ -27,7 +27,7 @@ def main():
     X=pd.concat([d[base].reset_index(drop=True),rarity.reset_index(drop=True)],axis=1)
     yy=d.actual_alsa.to_numpy(float); results=[]
     for name,kw in candidates():
-      p=np.full(len(d),np.nan)
+      p=np.full(len(d),np.nan); floors=np.full(len(d),np.nan)
       for hold in sorted(d["set"].unique()):
         tr=(d["set"]!=hold).to_numpy(); te=~tr
         m=make_pipeline(SimpleImputer(strategy="median"),HistGradientBoostingRegressor(**kw))
@@ -41,8 +41,15 @@ def main():
           z=(d["rarity"].astype(str)==r).to_numpy()&ok
           if z.any(): rmae[r]=float(np.mean(np.abs(p[z]-yy[z])))
       z={"name":name,"mae":mae,"spearman":sp,"pred_min":float(p[ok].min()),"pred_max":float(p[ok].max()),"pred_le_1":int((p[ok]<=1).sum()),"pred_lt_1_05":int((p[ok]<1.05).sum()),"rarity_mae":rmae,"set_mae":per}
-      if z["pred_min"]>1.0:\n        z["variant"]="raw"; results.append(z); print("ALSA_SWEEP",name,"raw MAE",mae,"SPEARMAN",sp,"MIN",z["pred_min"])\n      # Fold-local empirical floor: learned only from each training fold, never FIN or held-out set.\n      pf=np.maximum(p,floors+1e-6); okf=np.isfinite(pf)&np.isfinite(yy)\n      zf=dict(z); zf.update(name=name+"_foldfloor",variant="foldfloor",mae=float(np.mean(np.abs(pf[okf]-yy[okf]))),spearman=float(spearmanr(yy[okf],pf[okf]).statistic),pred_min=float(pf[okf].min()),pred_max=float(pf[okf].max()),pred_le_1=int((pf[okf]<=1).sum()),pred_lt_1_05=int((pf[okf]<1.05).sum()))\n      if zf["pred_min"]>1.0:\n        results.append(zf); print("ALSA_SWEEP",zf["name"],"MAE",zf["mae"],"SPEARMAN",zf["spearman"],"MIN",zf["pred_min"])
-    if not results: raise SystemExit("No candidate satisfies mandatory pred_min > 1.0")\n    results.sort(key=lambda z:(z["mae"],-z["spearman"]))
+      if z["pred_min"]>1.0:
+        z["variant"]="raw"; results.append(z); print("ALSA_SWEEP",name,"raw MAE",mae,"SPEARMAN",sp,"MIN",z["pred_min"])
+      # Fold-local empirical floor: learned only from each training fold, never FIN or held-out set.
+      pf=np.maximum(p,floors+1e-6); okf=np.isfinite(pf)&np.isfinite(yy)
+      zf=dict(z); zf.update(name=name+"_foldfloor",variant="foldfloor",mae=float(np.mean(np.abs(pf[okf]-yy[okf]))),spearman=float(spearmanr(yy[okf],pf[okf]).statistic),pred_min=float(pf[okf].min()),pred_max=float(pf[okf].max()),pred_le_1=int((pf[okf]<=1).sum()),pred_lt_1_05=int((pf[okf]<1.05).sum()))
+      if zf["pred_min"]>1.0:
+        results.append(zf); print("ALSA_SWEEP",zf["name"],"MAE",zf["mae"],"SPEARMAN",zf["spearman"],"MIN",zf["pred_min"])
+    if not results: raise SystemExit("No candidate satisfies mandatory pred_min > 1.0")
+    results.sort(key=lambda z:(z["mae"],-z["spearman"]))
     a.out.parent.mkdir(parents=True,exist_ok=True); a.out.write_text(json.dumps({"fin_used":False,"n":len(d),"results":results},indent=2),encoding="utf-8")
     print("FIN_USED=false"); print("ALSA_BEST",json.dumps(results[0]))
 if __name__=="__main__": main()
