@@ -13,6 +13,8 @@ on:
       - scripts/tune_ensemble_loso.py
       - scripts/tune_decompression_loso.py
       - scripts/train_tail_tournament_loso.py
+      - scripts/fetch_alsa_actuals.py
+      - scripts/train_alsa_loso.py
       - .github/workflows/build_dev_features.yml
 permissions:
   actions: read
@@ -45,6 +47,10 @@ jobs:
           PY
       - name: Build pre-release features
         run: python scripts/build_dev_features.py --actuals dev_actuals.csv --out model_out/dev_feature_table.csv
+      - name: Fetch FIN-blind ALSA actuals
+        run: python scripts/fetch_alsa_actuals.py --sets KHM STX AFR MID VOW NEO SNC DMU BRO ONE MOM LTR WOE LCI MKM OTJ MH3 BLB DSK FDN DFT TDM --out model_out/dev_alsa_actuals.csv
+      - name: Compare ALSA baseline rarity and semantic models
+        run: python scripts/train_alsa_loso.py --features model_out/dev_feature_table.csv --alsa model_out/dev_alsa_actuals.csv --out model_out/alsa_loso.json
       - name: Audit common power creep excluding MH3 baseline
         run: python scripts/audit_common_power_creep.py --input model_out/dev_feature_table.csv --out model_out/common_power_creep_audit.csv
       - name: Audit prediction compression FIN-blind
