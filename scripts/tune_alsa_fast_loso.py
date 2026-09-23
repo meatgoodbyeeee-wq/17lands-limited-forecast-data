@@ -44,7 +44,7 @@ def main():
     txt=d.get("oracle_text",pd.Series("",index=d.index)).fillna("").astype(str).str.lower()
     typ=d.get("type_line",pd.Series("",index=d.index)).fillna("").astype(str).str.lower()
     semdf=pd.DataFrame(index=d.index)
-    semdf["alsa_sem_removal"]=txt.str.contains(r"destroy target|exile target|deals? \\d+ damage to target|target creature gets -").astype(float)
+    semdf["alsa_sem_removal"]=txt.str.contains(r"destroy target|exile target|deals? [0-9]+ damage to target|target creature gets -").astype(float)
     semdf["alsa_sem_draw"]=txt.str.contains(r"draw (a|one|two|three|\\d+) cards?").astype(float)
     semdf["alsa_sem_evasion"]=(txt.str.contains(r"flying|menace|trample|can't be blocked")|typ.str.contains("vehicle")).astype(float)
     semdf["alsa_sem_repeatable"]=txt.str.contains(r"at the beginning of|whenever|: draw|: create|: target").astype(float)
@@ -63,7 +63,7 @@ def main():
     # Focused follow-up: prior ablation found repeatable harmful; split removal into subtypes.
     removal_split=pd.DataFrame(index=d.index)
     removal_split["alsa_removal_destroy_exile"]=txt.str.contains(r"destroy target|exile target").astype(float)
-    removal_split["alsa_removal_damage"]=txt.str.contains(r"deals? \\d+ damage to target").astype(float)
+    removal_split["alsa_removal_damage"]=txt.str.contains(r"deals? [0-9]+ damage to target").astype(float)
     removal_split["alsa_removal_debuff"]=txt.str.contains(r"target creature gets -").astype(float)
     removal_split["alsa_removal_bounce"]=txt.str.contains(r"return target").astype(float)
     yy=d.actual_alsa.to_numpy(float); results=[]
