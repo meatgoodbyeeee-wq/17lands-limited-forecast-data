@@ -70,6 +70,31 @@ jobs:
               print(f"SEMANTIC_RESULT {v} MAE={x['mae_pp']:.9f} SPEARMAN={x['spearman']:.9f} SD={x['sd_ratio']:.9f}")
           PY
 
+      - name: Test semantic subsets without rebuilding features
+        run: |
+          python - <<'PY'
+          import itertools, json, subprocess, pandas as pd
+          src="model_out/dev_feature_table.csv"
+          d=pd.read_csv(src)
+          cols=["semantic_cast_trigger","semantic_flexible_target","semantic_tribal_dependency","semantic_another_dependency"]
+          rows=[]
+          for r in range(0,5):
+              for keep in itertools.combinations(cols,r):
+                  drop=[x for x in cols if x not in keep]
+                  x=d.drop(columns=drop)
+                  tag="none" if not keep else "__".join(k.replace("semantic_","") for k in keep)
+                  path=f"model_out/subset_{tag}.csv"
+                  out=f"model_out/subset_{tag}.json"
+                  x.to_csv(path,index=False)
+                  subprocess.run(["python","scripts/train_text_ensemble_loso.py","--input",path,"--out",out],check=True,stdout=subprocess.DEVNULL)
+                  z=json.load(open(out))["overall"]
+                  rows.append({"tag":tag,**z})
+                  print(f"SUBSET_RESULT {tag} MAE={z['mae_pp']:.9f} SPEARMAN={z['spearman']:.9f} SD={z['sd_ratio']:.9f}")
+          rows.sort(key=lambda z:(z["mae_pp"],-z["spearman"]))
+          print("SUBSET_BEST",json.dumps(rows[0],sort_keys=True))
+          json.dump(rows,open("model_out/semantic_subset_results.json","w"),indent=2)
+          PY
+
       - name: Tune structured model FIN-blind
         run: python scripts/tune_structured_loso.py --input model_out/dev_feature_table.csv --out model_out/structured_tuning.json
       - name: Tune ensemble FIN-blind
