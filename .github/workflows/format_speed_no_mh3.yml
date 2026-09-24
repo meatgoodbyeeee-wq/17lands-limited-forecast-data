@@ -1,0 +1,38 @@
+name: Format Speed No MH3
+on:
+  push:
+    branches:
+      - deck-color-analysis-20260924
+    paths:
+      - analysis/format_speed_no_mh3.py
+      - .github/workflows/format_speed_no_mh3.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: meatgoodbyeeee-wq/limited-forecast-pages
+          path: pages
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy==2.5.3 pandas==3.0.6 scikit-learn==1.9.1
+      - name: Reuse FIN-blind feature artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p devfeat
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D devfeat
+          test -f devfeat/dev_feature_table.csv
+      - run: python analysis/format_speed_no_mh3.py devfeat/dev_feature_table.csv pages/data/target.json.gz speed_no_mh3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: format-speed-no-mh3
+          path: speed_no_mh3/
+          retention-days: 30
