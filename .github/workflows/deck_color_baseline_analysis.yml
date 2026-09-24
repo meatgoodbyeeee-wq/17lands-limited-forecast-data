@@ -1,0 +1,35 @@
+name: Deck Color Baseline Analysis
+on:
+  push:
+    branches:
+      - deck-color-analysis-20260924
+    paths:
+      - analysis/deck_color_baseline.py
+      - .github/workflows/deck_color_baseline_analysis.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas scipy scikit-learn
+      - name: Reuse FIN-blind feature artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p model_in
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D model_in
+          test -f model_in/dev_feature_table.csv
+      - name: Run B0 and B1 only
+        run: python analysis/deck_color_baseline.py model_in/dev_feature_table.csv model_out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deck-color-baseline-results
+          path: model_out/
+          retention-days: 30
