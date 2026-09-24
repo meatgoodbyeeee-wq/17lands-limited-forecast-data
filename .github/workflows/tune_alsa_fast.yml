@@ -23,7 +23,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           s=Path("scripts/tune_alsa_fast_loso.py").read_text()
-          required=["ALSA_NEXT_AUDIT","pair_removal_draw_plus_dependency_creature"]
+          required=["ALSA_NEXT_AUDIT","pair_removal_draw_plus_removal_narrow"]
           missing=[x for x in required if x not in s]
           if missing:
               raise SystemExit("Missing expected audit wiring: "+", ".join(missing))
