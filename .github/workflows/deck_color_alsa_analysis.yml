@@ -1,0 +1,40 @@
+name: Deck Color ALSA Analysis
+on:
+  push:
+    branches:
+      - deck-color-analysis-20260924
+    paths:
+      - analysis/deck_color_alsa.py
+      - .github/workflows/deck_color_alsa_analysis.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  alsa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy==2.5.3 pandas==3.0.6 scipy==1.18.1 scikit-learn==1.9.1
+      - name: Reuse FIN-blind artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p model_in b2_in baseline_in
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D model_in
+          gh run download 35956684123 -n deck-color-b2-results -D b2_in
+          gh run download 35950793143 -n deck-color-baseline-results -D baseline_in
+          test -f model_in/dev_feature_table.csv
+          test -f model_in/dev_alsa_actuals.csv
+          test -f b2_in/card_gih_oof_for_deck_color.csv
+          test -f baseline_in/deck_color_actuals_28cal.csv
+      - name: Validate fixed ALSA signal
+        run: python analysis/deck_color_alsa.py model_in/dev_feature_table.csv model_in/dev_alsa_actuals.csv b2_in/card_gih_oof_for_deck_color.csv baseline_in/deck_color_actuals_28cal.csv model_out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deck-color-alsa-results
+          path: model_out/
+          retention-days: 30
