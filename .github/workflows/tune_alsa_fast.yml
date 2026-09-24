@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/tune_alsa_fast_loso.py
       - .github/workflows/tune_alsa_fast.yml
+      - scripts/tune_alsa_fast_loso.py
 permissions:
   actions: read
   contents: read
@@ -36,3 +37,4 @@ jobs:
         with:
           name: alsa-fast-results
           path: alsa_fast_results.json
+

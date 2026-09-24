@@ -44,7 +44,7 @@ def main():
     txt=d.get("oracle_text",pd.Series("",index=d.index)).fillna("").astype(str).str.lower()
     typ=d.get("type_line",pd.Series("",index=d.index)).fillna("").astype(str).str.lower()
     semdf=pd.DataFrame(index=d.index)
-    semdf["alsa_sem_removal"]=txt.str.contains(r"destroy target|exile target|deals? \\d+ damage to target|target creature gets -").astype(float)
+    semdf["alsa_sem_removal"]=txt.str.contains(r"destroy target|exile target|target creature gets -").astype(float)
     semdf["alsa_sem_draw"]=txt.str.contains(r"draw (a|one|two|three|\\d+) cards?").astype(float)
     semdf["alsa_sem_evasion"]=(txt.str.contains(r"flying|menace|trample|can't be blocked")|typ.str.contains("vehicle")).astype(float)
     semdf["alsa_sem_repeatable"]=txt.str.contains(r"at the beginning of|whenever|: draw|: create|: target").astype(float)
@@ -61,11 +61,13 @@ def main():
     if not added: raise SystemExit("ALSA semantic rarity interactions produced zero columns")
     print("ALSA_SEMANTIC_AUDIT",json.dumps({"semantic_columns":sem,"interaction_count":len(added),"active_values":int(semdf.to_numpy().sum())}))
     yy=d.actual_alsa.to_numpy(float); results=[]
-    feature_sets=[("semantic_full",X)]
-    for drop_sem in sem:
-      drop_cols=[drop_sem]+[c for c in X.columns if c.startswith(drop_sem+"_x_")]
-      feature_sets.append(("without_"+drop_sem,X.drop(columns=drop_cols)))
-    print("ALSA_ABLATION_AUDIT",json.dumps({"variants":[n for n,_ in feature_sets],"semantic_count":len(sem)}))
+    repeat_cols=["alsa_sem_repeatable"]+[c for c in X.columns if c.startswith("alsa_sem_repeatable_x_")]
+    Xbase=X.drop(columns=repeat_cols)
+    # Adopted semantic model: remove repeatable and add removal x draw interaction.
+    pair=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_draw"].to_numpy()
+    Xpair=Xbase.copy(); Xpair["alsa_pair_removal_draw"]=pair
+    feature_sets=[("pair_removal_draw",Xpair)]
+    print("ALSA_ADOPTED_MODEL",json.dumps({"removal_draw_active_values":int(pair.sum()),"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
