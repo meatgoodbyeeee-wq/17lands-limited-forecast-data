@@ -5,7 +5,6 @@ on:
     paths:
       - scripts/tune_alsa_fast_loso.py
       - .github/workflows/tune_alsa_fast.yml
-      - scripts/tune_alsa_fast_loso.py
 permissions:
   actions: read
   contents: read
@@ -18,6 +17,17 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install pandas scipy scikit-learn
+      - name: Validate tuning script syntax and audit wiring
+        run: |
+          python -m py_compile scripts/tune_alsa_fast_loso.py
+          python - <<'PY'
+          from pathlib import Path
+          s=Path("scripts/tune_alsa_fast_loso.py").read_text()
+          required=["ALSA_NEXT_AUDIT","pair_removal_draw_plus_dependency_creature"]
+          missing=[x for x in required if x not in s]
+          if missing:
+              raise SystemExit("Missing expected audit wiring: "+", ".join(missing))
+          PY
       - name: Download cached FIN-blind development artifact
         env:
           GH_TOKEN: ${{ github.token }}
