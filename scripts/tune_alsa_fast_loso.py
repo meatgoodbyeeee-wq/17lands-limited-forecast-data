@@ -67,13 +67,15 @@ def main():
     pair=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_draw"].to_numpy()
     Xpair=Xbase.copy(); Xpair["alsa_pair_removal_draw"]=pair
     feature_sets=[("pair_removal_draw",Xpair)]
-    # Focused interaction audit under the adopted baseline.
-    removal_evasion=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_evasion"].to_numpy()
-    draw_evasion=semdf["alsa_sem_draw"].to_numpy()*semdf["alsa_sem_evasion"].to_numpy()
-    Xre=Xpair.copy(); Xre["alsa_pair_removal_evasion"]=removal_evasion
-    Xde=Xpair.copy(); Xde["alsa_pair_draw_evasion"]=draw_evasion
-    feature_sets.extend([("pair_removal_draw_plus_removal_evasion",Xre),("pair_removal_draw_plus_draw_evasion",Xde)])
-    print("ALSA_NEXT_AUDIT",json.dumps({"removal_draw_active_values":int(pair.sum()),"removal_evasion_active_values":int(removal_evasion.sum()),"draw_evasion_active_values":int(draw_evasion.sum()),"variants":[n for n,_ in feature_sets]}))
+    # Residual-guided semantic audit under the adopted baseline.
+    sacrifice=txt.str.contains(r"sacrifice (a|another|one|target)").astype(float).to_numpy()
+    counterspell=txt.str.contains(r"counter target").astype(float).to_numpy()
+    damage=txt.str.contains(r"deals? [0-9x]+ damage to any target|deals? [0-9x]+ damage to target").astype(float).to_numpy()
+    Xs=Xpair.copy(); Xs["alsa_sem_sacrifice"]=sacrifice
+    Xc=Xpair.copy(); Xc["alsa_sem_counterspell"]=counterspell
+    Xd=Xpair.copy(); Xd["alsa_sem_damage"]=damage
+    feature_sets.extend([("pair_removal_draw_plus_sacrifice",Xs),("pair_removal_draw_plus_counterspell",Xc),("pair_removal_draw_plus_damage",Xd)])
+    print("ALSA_NEXT_AUDIT",json.dumps({"removal_draw_active_values":int(pair.sum()),"sacrifice_active_values":int(sacrifice.sum()),"counterspell_active_values":int(counterspell.sum()),"damage_active_values":int(damage.sum()),"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
