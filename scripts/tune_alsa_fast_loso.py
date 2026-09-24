@@ -71,7 +71,15 @@ def main():
     Xadopt=Xpair.copy(); Xadopt["alsa_sem_mana_fix"]=mana_fix
     feature_sets=[("pair_removal_draw_plus_mana_fix",Xadopt)]
     print("ALSA_ADOPTED_MODEL",json.dumps({"removal_draw_active_values":int(pair.sum()),"mana_fix_active_values":int(mana_fix.sum()),"variants":[n for n,_ in feature_sets]}))
-    cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
+    # Small FIN-blind retune around the adopted model; includes the current production baseline.
+    cand=[
+      ("hist_squared_error_lr0.04_l22",dict(loss="squared_error",max_iter=250,learning_rate=.04,l2_regularization=2,random_state=20260923)),
+      ("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923)),
+      ("hist_squared_error_lr0.08_l22",dict(loss="squared_error",max_iter=250,learning_rate=.08,l2_regularization=2,random_state=20260923)),
+      ("hist_squared_error_lr0.06_l24",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=4,random_state=20260923)),
+      ("hist_squared_error_lr0.06_l28",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=8,random_state=20260923)),
+      ("hist_squared_error_lr0.04_l28",dict(loss="squared_error",max_iter=250,learning_rate=.04,l2_regularization=8,random_state=20260923)),
+    ]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
         p=np.full(len(d),np.nan); floors=np.full(len(d),np.nan)
