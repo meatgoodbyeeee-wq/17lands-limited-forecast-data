@@ -67,11 +67,13 @@ def main():
     pair=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_draw"].to_numpy()
     Xpair=Xbase.copy(); Xpair["alsa_pair_removal_draw"]=pair
     feature_sets=[("pair_removal_draw",Xpair)]
-    # Focused next audit: narrow is useful alone; test whether its signal is concentrated on removal cards.
-    removal_narrow=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_narrow"].to_numpy()
-    Xrn=Xpair.copy(); Xrn["alsa_pair_removal_narrow"]=removal_narrow
-    feature_sets.append(("pair_removal_draw_plus_removal_narrow",Xrn))
-    print("ALSA_NEXT_AUDIT",json.dumps({"removal_draw_active_values":int(pair.sum()),"removal_narrow_active_values":int(removal_narrow.sum()),"variants":[n for n,_ in feature_sets]}))
+    # Focused interaction audit under the adopted baseline.
+    removal_evasion=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_evasion"].to_numpy()
+    draw_evasion=semdf["alsa_sem_draw"].to_numpy()*semdf["alsa_sem_evasion"].to_numpy()
+    Xre=Xpair.copy(); Xre["alsa_pair_removal_evasion"]=removal_evasion
+    Xde=Xpair.copy(); Xde["alsa_pair_draw_evasion"]=draw_evasion
+    feature_sets.extend([("pair_removal_draw_plus_removal_evasion",Xre),("pair_removal_draw_plus_draw_evasion",Xde)])
+    print("ALSA_NEXT_AUDIT",json.dumps({"removal_draw_active_values":int(pair.sum()),"removal_evasion_active_values":int(removal_evasion.sum()),"draw_evasion_active_values":int(draw_evasion.sum()),"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
