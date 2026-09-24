@@ -67,7 +67,11 @@ def main():
     pair=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_draw"].to_numpy()
     Xpair=Xbase.copy(); Xpair["alsa_pair_removal_draw"]=pair
     feature_sets=[("pair_removal_draw",Xpair)]
-    # Small next-step audit: test whether dependency adds value only on creature cards.\n    dep_creature=semdf["alsa_sem_dependency"].to_numpy()*semdf["alsa_sem_creature"].to_numpy()\n    Xdc=Xpair.copy(); Xdc["alsa_pair_dependency_creature"]=dep_creature\n    feature_sets.append(("pair_removal_draw_plus_dependency_creature",Xdc))\n    print("ALSA_NEXT_AUDIT",json.dumps({"removal_draw_active_values":int(pair.sum()),"dependency_creature_active_values":int(dep_creature.sum()),"variants":[n for n,_ in feature_sets]}))
+    # Small next-step audit: test whether dependency adds value only on creature cards.
+    dep_creature=semdf["alsa_sem_dependency"].to_numpy()*semdf["alsa_sem_creature"].to_numpy()
+    Xdc=Xpair.copy(); Xdc["alsa_pair_dependency_creature"]=dep_creature
+    feature_sets.append(("pair_removal_draw_plus_dependency_creature",Xdc))
+    print("ALSA_NEXT_AUDIT",json.dumps({"removal_draw_active_values":int(pair.sum()),"dependency_creature_active_values":int(dep_creature.sum()),"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
