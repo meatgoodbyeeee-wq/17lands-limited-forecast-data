@@ -67,15 +67,17 @@ def main():
     pair=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_draw"].to_numpy()
     Xpair=Xbase.copy(); Xpair["alsa_pair_removal_draw"]=pair
     feature_sets=[("pair_removal_draw",Xpair)]
-    # Residual-guided audit: top remaining systematic groups.
-    fight_bite=txt.str.contains(r"(target creature you control|it) (fights|deals damage equal to its power)").astype(float).to_numpy()
-    attack_trigger=txt.str.contains(r"whenever .* attacks|whenever you attack").astype(float).to_numpy()
-    mana_fix=txt.str.contains(r"add one mana of any color|search your library for a basic land|basic land card").astype(float).to_numpy()
-    Xf=Xpair.copy(); Xf["alsa_sem_fight_bite"]=fight_bite
-    Xa=Xpair.copy(); Xa["alsa_sem_attack_trigger"]=attack_trigger
-    Xm=Xpair.copy(); Xm["alsa_sem_mana_fix"]=mana_fix
-    feature_sets.extend([("pair_removal_draw_plus_fight_bite",Xf),("pair_removal_draw_plus_attack_trigger",Xa),("pair_removal_draw_plus_mana_fix",Xm)])
-    print("ALSA_NEXT_AUDIT",json.dumps({"removal_draw_active_values":int(pair.sum()),"fight_bite_active_values":int(fight_bite.sum()),"attack_trigger_active_values":int(attack_trigger.sum()),"mana_fix_active_values":int(mana_fix.sum()),"variants":[n for n,_ in feature_sets]}))
+    # Robustness audit for the promising mana-fixing semantic.
+    mana_any=txt.str.contains(r"add one mana of any color").astype(float).to_numpy()
+    mana_search=txt.str.contains(r"search your library for (a|up to one|one) basic land").astype(float).to_numpy()
+    mana_basic_ref=txt.str.contains(r"basic land card").astype(float).to_numpy()
+    mana_core=np.maximum(mana_any,mana_search)
+    mana_fix=np.maximum(mana_core,mana_basic_ref)
+    variants=[("mana_any",mana_any),("mana_search",mana_search),("mana_basic_ref",mana_basic_ref),("mana_core",mana_core),("mana_fix",mana_fix)]
+    for name,v in variants:
+      Xv=Xpair.copy(); Xv["alsa_sem_"+name]=v
+      feature_sets.append(("pair_removal_draw_plus_"+name,Xv))
+    print("ALSA_NEXT_AUDIT",json.dumps({"removal_draw_active_values":int(pair.sum()),"mana_any_active_values":int(mana_any.sum()),"mana_search_active_values":int(mana_search.sum()),"mana_basic_ref_active_values":int(mana_basic_ref.sum()),"mana_core_active_values":int(mana_core.sum()),"mana_fix_active_values":int(mana_fix.sum()),"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
