@@ -69,17 +69,11 @@ def main():
     yy=d.actual_alsa.to_numpy(float); results=[]
     repeat_cols=["alsa_sem_repeatable"]+[c for c in X.columns if c.startswith("alsa_sem_repeatable_x_")]
     Xbase=X.drop(columns=repeat_cols)
-    # Confirm the small removal×draw gain without broadening the search.
-    # Baseline + the candidate, then remove its rarity interactions one at a time.
+    # Focused robustness check for the validated removal-draw interaction.
     pair=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_draw"].to_numpy()
-    feature_sets=[("baseline_without_repeatable",Xbase)]
     Xpair=Xbase.copy(); Xpair["alsa_pair_removal_draw"]=pair
-    feature_sets.append(("pair_removal_draw",Xpair))
-    for r in rarity.columns:
-      Xi=Xpair.copy(); col="alsa_pair_removal_draw_x_"+r
-      Xi[col]=pair*rarity[r].to_numpy()
-      feature_sets.append(("pair_removal_draw_x_"+r,Xi))
-    print("ALSA_REMOVAL_DRAW_AUDIT",json.dumps({"active_values":int(pair.sum()),"variants":[n for n,_ in feature_sets]}))
+    feature_sets=[("baseline_without_repeatable",Xbase),("pair_removal_draw",Xpair)]
+    print("ALSA_REMOVAL_DRAW_ROBUSTNESS",json.dumps({"active_values":int(pair.sum()),"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
