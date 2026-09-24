@@ -1,0 +1,33 @@
+name: Deck Composition Pilot
+on:
+  push:
+    branches:
+      - deck-color-analysis-20260924
+    paths:
+      - analysis/extract_deck_composition_pilot.py
+      - .github/workflows/deck_composition_pilot.yml
+permissions:
+  contents: read
+jobs:
+  extract:
+    strategy:
+      fail-fast: false
+      matrix:
+        set: [ONE, DMU, SNC]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas
+      - name: Extract unique pure-two-color builds
+        run: python analysis/extract_deck_composition_pilot.py --set ${{ matrix.set }} --out-dir out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deck-composition-pilot-${{ matrix.set }}
+          path: |
+            out/${{ matrix.set }}_pure2_deck_composition_28d.csv
+            out/${{ matrix.set }}_pure2_deck_composition_manifest.json
+          retention-days: 30
