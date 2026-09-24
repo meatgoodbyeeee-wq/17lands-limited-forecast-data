@@ -1,0 +1,23 @@
+name: Current FRA Deck Color Table
+on:
+  push:
+    branches:
+      - deck-color-analysis-20260924
+    paths:
+      - analysis/current_fra_deck_color_table.py
+      - .github/workflows/current_fra_deck_color_table.yml
+permissions:
+  contents: read
+jobs:
+  table:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: meatgoodbyeeee-wq/limited-forecast-pages
+          path: pages
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python analysis/current_fra_deck_color_table.py pages/public/forecast.json.gz
