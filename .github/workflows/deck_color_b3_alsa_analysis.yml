@@ -1,0 +1,40 @@
+name: Deck Color B3 ALSA Analysis
+on:
+  push:
+    branches:
+      - deck-color-analysis-20260924
+    paths:
+      - analysis/deck_color_b3_alsa.py
+      - .github/workflows/deck_color_b3_alsa_analysis.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  b3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas scipy scikit-learn
+      - name: Reuse prior artifacts only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p feature_in b2_in baseline_in
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D feature_in
+          gh run download 35951199245 -n deck-color-b2-results -D b2_in
+          gh run download 35950793143 -n deck-color-baseline-results -D baseline_in
+          test -f feature_in/dev_feature_table.csv
+          test -f feature_in/dev_alsa_actuals.csv
+          test -f b2_in/card_gih_oof_for_deck_color.csv
+          test -f baseline_in/deck_color_actuals_28cal.csv
+      - name: Run predicted ALSA availability test
+        run: python analysis/deck_color_b3_alsa.py feature_in/dev_feature_table.csv feature_in/dev_alsa_actuals.csv b2_in/card_gih_oof_for_deck_color.csv baseline_in/deck_color_actuals_28cal.csv model_out_b3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deck-color-b3-alsa-results
+          path: model_out_b3/
+          retention-days: 30
