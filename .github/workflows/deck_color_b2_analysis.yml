@@ -1,0 +1,37 @@
+name: Deck Color B2 Analysis
+on:
+  push:
+    branches:
+      - deck-color-analysis-20260924
+    paths:
+      - analysis/deck_color_b2.py
+      - .github/workflows/deck_color_b2_analysis.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  b2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas scipy scikit-learn
+      - name: Reuse FIN-blind feature artifact and B0/B1 actuals
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p model_in baseline_in
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D model_in
+          gh run download 35950793143 -n deck-color-baseline-results -D baseline_in
+          test -f model_in/dev_feature_table.csv
+          test -f baseline_in/deck_color_actuals_28cal.csv
+      - name: Run nested B2 only
+        run: python analysis/deck_color_b2.py model_in/dev_feature_table.csv baseline_in/deck_color_actuals_28cal.csv model_out_b2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deck-color-b2-results
+          path: model_out_b2/
+          retention-days: 30
