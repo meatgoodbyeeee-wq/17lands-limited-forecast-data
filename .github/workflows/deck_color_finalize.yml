@@ -1,0 +1,35 @@
+name: Deck Color Finalize
+on:
+  push:
+    branches:
+      - deck-color-analysis-20260924
+    paths:
+      - analysis/deck_color_finalize.py
+      - .github/workflows/deck_color_finalize.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy==2.5.3 pandas==3.0.6 scipy==1.18.1 scikit-learn==1.9.1
+      - name: Reuse deck color baseline artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p baseline_in
+          gh run download 35950793143 -n deck-color-baseline-results -D baseline_in
+          test -f baseline_in/deck_color_baseline_predictions.csv
+      - name: Finalize robust model
+        run: python analysis/deck_color_finalize.py baseline_in/deck_color_baseline_predictions.csv model_out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deck-color-final-results
+          path: model_out/
+          retention-days: 30
