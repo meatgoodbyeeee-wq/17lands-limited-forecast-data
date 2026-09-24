@@ -60,20 +60,14 @@ def main():
         n=f"{c}_x_{r}"; X[n]=X[c].to_numpy()*rarity[r].to_numpy(); added.append(n)
     if not added: raise SystemExit("ALSA semantic rarity interactions produced zero columns")
     print("ALSA_SEMANTIC_AUDIT",json.dumps({"semantic_columns":sem,"interaction_count":len(added),"active_values":int(semdf.to_numpy().sum())}))
-    # Focused follow-up: prior ablation found repeatable harmful; split removal into subtypes.
-    removal_split=pd.DataFrame(index=d.index)
-    removal_split["alsa_removal_destroy_exile"]=txt.str.contains(r"destroy target|exile target").astype(float)
-    removal_split["alsa_removal_damage"]=txt.str.contains(r"deals? [0-9]+ damage to target").astype(float)
-    removal_split["alsa_removal_debuff"]=txt.str.contains(r"target creature gets -").astype(float)
-    removal_split["alsa_removal_bounce"]=txt.str.contains(r"return target").astype(float)
     yy=d.actual_alsa.to_numpy(float); results=[]
     repeat_cols=["alsa_sem_repeatable"]+[c for c in X.columns if c.startswith("alsa_sem_repeatable_x_")]
     Xbase=X.drop(columns=repeat_cols)
-    # Focused robustness check for the validated removal-draw interaction.
+    # Adopted semantic model: remove repeatable and add removal x draw interaction.
     pair=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_draw"].to_numpy()
     Xpair=Xbase.copy(); Xpair["alsa_pair_removal_draw"]=pair
-    feature_sets=[("baseline_without_repeatable",Xbase),("pair_removal_draw",Xpair)]
-    print("ALSA_REMOVAL_DRAW_ROBUSTNESS",json.dumps({"active_values":int(pair.sum()),"variants":[n for n,_ in feature_sets]}))
+    feature_sets=[("pair_removal_draw",Xpair)]
+    print("ALSA_ADOPTED_MODEL",json.dumps({"removal_draw_active_values":int(pair.sum()),"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
