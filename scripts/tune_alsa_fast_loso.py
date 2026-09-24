@@ -69,24 +69,17 @@ def main():
     yy=d.actual_alsa.to_numpy(float); results=[]
     repeat_cols=["alsa_sem_repeatable"]+[c for c in X.columns if c.startswith("alsa_sem_repeatable_x_")]
     Xbase=X.drop(columns=repeat_cols)
-    sem_pairs=[
-      ("removal_draw","alsa_sem_removal","alsa_sem_draw"),
-      ("removal_evasion","alsa_sem_removal","alsa_sem_evasion"),
-      ("draw_evasion","alsa_sem_draw","alsa_sem_evasion"),
-      ("removal_narrow","alsa_sem_removal","alsa_sem_narrow"),
-    ]
+    # Confirm the small removal×draw gain without broadening the search.
+    # Baseline + the candidate, then remove its rarity interactions one at a time.
+    pair=semdf["alsa_sem_removal"].to_numpy()*semdf["alsa_sem_draw"].to_numpy()
     feature_sets=[("baseline_without_repeatable",Xbase)]
-    interaction_audit={}
-    for name,a_sem,b_sem in sem_pairs:
-      Xi=Xbase.copy(); col="alsa_pair_"+name
-      Xi[col]=semdf[a_sem].to_numpy()*semdf[b_sem].to_numpy()
-      interaction_audit[name]=int(Xi[col].sum())
-      feature_sets.append(("pair_"+name,Xi))
-    Xall=Xbase.copy()
-    for name,a_sem,b_sem in sem_pairs:
-      Xall["alsa_pair_"+name]=semdf[a_sem].to_numpy()*semdf[b_sem].to_numpy()
-    feature_sets.append(("pair_all4",Xall))
-    print("ALSA_INTERACTION_AUDIT",json.dumps({"active_values":interaction_audit,"variants":[n for n,_ in feature_sets]}))
+    Xpair=Xbase.copy(); Xpair["alsa_pair_removal_draw"]=pair
+    feature_sets.append(("pair_removal_draw",Xpair))
+    for r in rarity.columns:
+      Xi=Xpair.copy(); col="alsa_pair_removal_draw_x_"+r
+      Xi[col]=pair*rarity[r].to_numpy()
+      feature_sets.append(("pair_removal_draw_x_"+r,Xi))
+    print("ALSA_REMOVAL_DRAW_AUDIT",json.dumps({"active_values":int(pair.sum()),"variants":[n for n,_ in feature_sets]}))
     cand=[("hist_squared_error_lr0.06_l22",dict(loss="squared_error",max_iter=250,learning_rate=.06,l2_regularization=2,random_state=20260923))]
     for ablation_name,Xuse in feature_sets:
       for name,kw in cand:
