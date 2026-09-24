@@ -26,10 +26,12 @@ jobs:
           s=Path("scripts/tune_alsa_fast_loso.py").read_text()
           tree=ast.parse(s)
           strings={n.value for n in ast.walk(tree) if isinstance(n, ast.Constant) and isinstance(n.value,str)}
-          if "ALSA_NEXT_AUDIT" not in strings:
-              raise SystemExit("ALSA_NEXT_AUDIT is not executable Python")
-          if not any(x.startswith("pair_removal_draw_plus_") for x in strings):
-              raise SystemExit("No executable ALSA candidate variant found")
+          if "ALSA_ADOPTED_MODEL" not in strings:
+              raise SystemExit("ALSA_ADOPTED_MODEL is not executable Python")
+          required={"pair_removal_draw_plus_mana_fix","alsa_sem_mana_fix"}
+          missing=sorted(required-strings)
+          if missing:
+              raise SystemExit("Missing adopted ALSA wiring: "+", ".join(missing))
           bad=[line for line in s.splitlines() if line.lstrip().startswith("#") and "\\n" in line]
           if bad:
               raise SystemExit("Literal backslash-n found inside comment")
