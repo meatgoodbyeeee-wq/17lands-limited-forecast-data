@@ -47,7 +47,7 @@ def row_flags(t):
     lifegain=flag(t,pat=r"gain[s]? (?:\d+|x|that much|life equal|an amount of) life|lifelink")
     repeat=flag(t,pat=r"at the beginning of (?:your|each) (?:upkeep|end step)|once each turn|the first time .* each turn|whenever .* (?:draw|cast|enters|dies|attacks|gain|discard|sacrifice)|\{t\}:")
     return {
-      "m_banked_value":flag(t,["foretell","disturb","unearth","adventure","plot","impending","harmonize","renew"],r"you may (?:cast|play) .* from exile|until the end of your next turn"),
+      "f_progressive":flag(t,["level up","transform","case","solve","unlock","descend","collect evidence","finality counter","oil counter","lore counter"],r"put .* counter"),\n      "m_banked_value":flag(t,["foretell","disturb","unearth","adventure","plot","impending","harmonize","renew"],r"you may (?:cast|play) .* from exile|until the end of your next turn"),
       "m_progress_engine":flag(t,["venture into the dungeon","the ring tempts","oil counter","proliferate","case","solve","start your engines","max speed","exhaust"],r"put .* counter .* (?:each|whenever)|at the beginning of your upkeep .* counter"),
       "m_resource_extension":flag(t,["learn","lesson","foretell","disturb","blood token","unearth","adventure","plot","offspring","manifest dread","room","impending","harmonize","renew"],r"from your graveyard|you may cast .* from exile|you may play .* from exile"),
       "m_graveyard_engine":flag(t,["disturb","unearth","descend","collect evidence","forage","manifest dread","threshold","renew","harmonize"],r"from your graveyard|in your graveyard|cards? in your graveyard"),
