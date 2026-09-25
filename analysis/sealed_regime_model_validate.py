@@ -13,7 +13,7 @@ ORDER="WUBRG"
 def card_quality(feature_csv,gih_csv):
     f=pd.read_csv(feature_csv)
     p=pd.read_csv(gih_csv)
-    d=f[f.set.isin(SETS)].merge(p,on=["set","name"],how="inner")
+    d=f[f.set.isin(SETS)].merge(p[["set","name","pred_sealed_gih_oof"]],on=["set","name"],how="inner")
     if "FIN" in set(d.set.astype(str).str.upper()): raise SystemExit("FIN guard")
     return d
 
