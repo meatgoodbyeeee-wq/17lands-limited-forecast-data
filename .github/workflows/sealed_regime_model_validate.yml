@@ -1,0 +1,38 @@
+name: Validate Sealed Regime Models
+on:
+  push:
+    branches: [deck-color-analysis-20260924]
+    paths:
+      - analysis/sealed_regime_model_validate.py
+      - .github/workflows/sealed_regime_model_validate.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy==2.5.3 pandas==3.0.6 scipy==1.16.2 scikit-learn==1.9.1
+      - name: Download inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p devfeat sealed_gih sealed_regimes
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D devfeat
+          gh run download 36106874662 -n sealed-two-color-validation -D sealed_gih
+          gh run download 36111500008 -n sealed-regime-aggregates -D sealed_regimes
+          test -f devfeat/dev_feature_table.csv
+          test -f sealed_gih/sealed_gih_oof_allcards.csv
+          test -f sealed_regimes/sealed_regime_actuals.csv
+      - name: Validate split models
+        run: python analysis/sealed_regime_model_validate.py devfeat/dev_feature_table.csv sealed_gih/sealed_gih_oof_allcards.csv sealed_regimes/sealed_regime_actuals.csv sealed_regime_model
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sealed-regime-model-validation
+          path: sealed_regime_model/
+          retention-days: 30
