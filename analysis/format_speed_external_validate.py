@@ -59,17 +59,22 @@ def row_flags(t):
       "m_repeatable_value":int(repeat or flag(t,["venture into the dungeon","the ring tempts","oil counter","proliferate","case","solve","start your engines","max speed","exhaust"]))
     }
 
+PAIRS={"WU":["W","U"],"WB":["W","B"],"WR":["W","R"],"WG":["W","G"],"UB":["U","B"],"UR":["U","R"],"UG":["U","G"],"BR":["B","R"],"BG":["B","G"],"RG":["R","G"]}
+def colors(c):
+    faces=c.get("card_faces") or []
+    return set(c.get("colors") or [z for x in faces for z in x.get("colors",[])])
+
 def external_features(code):
     cards,released=fetch_set(code)
     use=[c for c in cards if c.get("rarity") in {"common","uncommon"} and "land" not in typ(c)]
-    vals=[]; mechs=[]
+    vals=[]; mechs=[]; card_colors=[]
     for c in use:
         t=txt(c); ty=typ(c); mv=cmc(c)
         creature=int("creature" in ty)
         interaction=int(bool(re.search(r"destroy target|exile target|target creature gets -|deals? [^.]*damage to (any target|target creature|target permanent)|return target .* to (its|their) owner.?s hand",t)))
         ca=int(bool(re.search(r"draw (two|three|x|that many) cards",t)) or ("create" in t and "token" in t and ("enters" in t or "enter the battlefield" in t)))
         ev=int(any(x in t for x in ["flying","menace","can't be blocked","cannot be blocked"]))
-        vals.append((mv,creature,int(interaction and mv<=3),ca,ev)); mechs.append(row_flags(t))
+        vals.append((mv,creature,int(interaction and mv<=3),ca,ev)); mechs.append(row_flags(t)); card_colors.append(colors(c))
     a=np.array(vals,float); cr=a[a[:,1]==1]
     out={"set":code,"release_date":released,"year_num":(pd.Timestamp(released,tz="UTC")-ORIGIN).days/365.25,
          "mean_mv":float(a[:,0].mean()),"cheap_creature_share":float((cr[:,0]<=2).mean()),
@@ -77,6 +82,22 @@ def external_features(code):
     md=pd.DataFrame(mechs)
     for c in md.columns:out[c+"_share"]=float(md[c].mean())
     return out
+
+def hist_progress_pairmax(dev):
+    d=dev[(dev["set"]!="MH3") & dev["rarity_ord"].isin([0,1]) & dev["type_land"].eq(0)].copy()
+    rows=[]
+    for ss,g in d.groupby("set"):
+        flags=g.oracle_text.fillna("").str.lower().apply(lambda t: row_flags(t)["f_progressive"]).to_numpy(float)
+        pv=[]
+        for pair,cs in PAIRS.items():
+            mask=np.ones(len(g),dtype=bool)
+            for col in "WUBRG":
+                if col not in cs: mask &= g["color_"+col].fillna(0).to_numpy()==0
+            ncol=g[["color_"+col for col in "WUBRG"]].fillna(0).sum(axis=1).to_numpy()
+            mask &= ncol>0
+            if mask.any(): pv.append(float(flags[mask].mean()))
+        rows.append({"set":ss,"f_progressive_pairmax":max(pv) if pv else 0.0})
+    return pd.DataFrame(rows)
 
 def hist_mechanics(dev):
     d=dev[(dev["set"]!="MH3") & dev["rarity_ord"].isin([0,1]) & dev["type_land"].eq(0)].copy()
@@ -125,7 +146,7 @@ def main(dev_csv,no_mh3_json,out):
         hist.append({"set":s,"start_date":pd.to_datetime(g.window_start.iloc[0]),"year_num":(pd.to_datetime(g.window_start.iloc[0])-ORIGIN).days/365.25,
           "mean_mv":float(g.mv.mean()),"cheap_creature_share":float((cr.mv<=2).mean()),"cheap_interaction_share":float(g.cheap_interaction.mean()),
           "card_advantage_share":float(g.card_advantage.mean()),"evasion_share":float(g.evasion.mean()),"turns":targets[s]})
-    hist=pd.DataFrame(hist).merge(hist_mechanics(dev),on="set")
+    hist=pd.DataFrame(hist).merge(hist_mechanics(dev),on="set").merge(hist_progress_pairmax(dev),on="set")
     ext=pd.DataFrame([external_features(s) for s in EXT_TARGETS])
     ext["actual"]=ext.set.map(EXT_TARGETS)
 
@@ -134,11 +155,11 @@ def main(dev_csv,no_mh3_json,out):
     pred_life=pred_year+life_correction(hist,ext,alpha=100)
     rows=[]
     for i,r in ext.iterrows():
-        rows.append({"set":r["set"],"actual":r["actual"],"base5":float(pred_base[i]),"base5_year":float(pred_year[i]),"base5_year_lifegain":float(pred_life[i])})
+        rows.append({"set":r["set"],"actual":r["actual"],"base5":float(pred_base[i]),"base5_progress":float(pred_progress[i]),"base5_progress_race":float(pred_progress_race[i]),"base5_year":float(pred_year[i]),"base5_year_lifegain":float(pred_life[i])})
     outp=Path(out);outp.mkdir(parents=True,exist_ok=True)
     pd.DataFrame(rows).to_csv(outp/"external_speed_predictions.csv",index=False)
     metrics={}
-    for k in ["base5","base5_year","base5_year_lifegain"]:
+    for k in ["base5","base5_progress","base5_progress_race","base5_year","base5_year_lifegain"]:
         metrics[k]={"mae":float(np.mean([abs(x[k]-x["actual"]) for x in rows]))}
     report={"fin_used":False,"mh3_used":False,"external_targets":EXT_TARGETS,"rows":rows,"metrics":metrics,
             "external_features":ext.to_dict("records")}
