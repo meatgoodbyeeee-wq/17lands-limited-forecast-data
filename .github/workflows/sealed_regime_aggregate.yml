@@ -1,0 +1,34 @@
+name: Aggregate Sealed Regimes
+on:
+  push:
+    branches: [deck-color-analysis-20260924]
+    paths:
+      - analysis/sealed_regime_aggregate.py
+      - .github/workflows/sealed_regime_aggregate.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas==3.0.6
+      - name: Reuse FIN-blind feature artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p devfeat
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D devfeat
+          test -f devfeat/dev_feature_table.csv
+      - name: Aggregate regimes
+        run: python analysis/sealed_regime_aggregate.py devfeat/dev_feature_table.csv sealed_regimes
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sealed-regime-aggregates
+          path: sealed_regimes/
+          retention-days: 30
