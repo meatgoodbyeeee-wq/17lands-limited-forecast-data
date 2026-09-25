@@ -1,0 +1,41 @@
+name: Format Speed Playability Weighted
+on:
+  push:
+    branches: [deck-color-analysis-20260924]
+    paths:
+      - analysis/format_speed_playability_weighted.py
+      - analysis/format_speed_mechanism_effects.py
+      - analysis/deck_color_alsa.py
+      - .github/workflows/format_speed_playability_weighted.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: meatgoodbyeeee-wq/limited-forecast-pages
+          path: pages
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy==2.5.3 pandas==3.0.6 scipy==1.16.2 scikit-learn==1.9.1
+      - name: Reuse FIN-blind feature artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p devfeat
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D devfeat
+          test -f devfeat/dev_feature_table.csv
+          test -f devfeat/dev_alsa_actuals.csv
+      - name: Validate playability weighting
+        run: python analysis/format_speed_playability_weighted.py devfeat/dev_feature_table.csv devfeat/dev_alsa_actuals.csv pages/data/target.json.gz pages/public/forecast.json.gz speed_playability
+      - uses: actions/upload-artifact@v4
+        with:
+          name: format-speed-playability-weighted
+          path: speed_playability/
+          retention-days: 30
