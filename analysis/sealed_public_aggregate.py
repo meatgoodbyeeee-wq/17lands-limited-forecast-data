@@ -32,15 +32,19 @@ def main(feature_csv,outdir):
         names=[c[len("opening_hand_"):] for c in oh]
         drmap={c[len("drawn_"):]:c for c in dr}
         common=[n for n in names if n in drmap]
-        use=["game_time","main_colors","splash_colors","won"]+[f"opening_hand_{n}" for n in common]+[drmap[n] for n in common]
+        timecol="game_time" if "game_time" in hdr else ("draft_time" if "draft_time" in hdr else None)
+        basecols=["main_colors","splash_colors","won"]
+        if timecol: basecols=[timecol]+basecols
+        use=basecols+[f"opening_hand_{n}" for n in common]+[drmap[n] for n in common]
 
         gih_n={n:0.0 for n in common}; gih_w={n:0.0 for n in common}
         pair_n={p:0 for p in PAIRS};pair_w={p:0 for p in PAIRS}
         nrows=0;nwindow=0
         for ch in pd.read_csv(fn,usecols=use,chunksize=1500,low_memory=False):
             nrows+=len(ch)
-            gt=pd.to_datetime(ch["game_time"],utc=True,errors="coerce")
-            ch=ch[(gt>=st)&(gt<en)].copy()
+            if timecol:
+                gt=pd.to_datetime(ch[timecol],utc=True,errors="coerce")
+                ch=ch[(gt>=st)&(gt<en)].copy()
             nwindow+=len(ch)
             if ch.empty:continue
             won=pd.to_numeric(ch["won"],errors="coerce").fillna(0).to_numpy(float)
