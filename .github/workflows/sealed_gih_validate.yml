@@ -1,0 +1,41 @@
+name: Validate Sealed GIH
+on:
+  push:
+    branches: [deck-color-analysis-20260924]
+    paths:
+      - analysis/sealed_gih_validate.py
+      - .github/workflows/sealed_gih_validate.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: meatgoodbyeeee-wq/limited-forecast-pages
+          path: pages
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy==2.5.3 pandas==3.0.6 scipy==1.16.2 scikit-learn==1.9.1
+      - name: Download inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p devfeat sealed_agg
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D devfeat
+          gh run download 36106288518 -n sealed-public-aggregates -D sealed_agg
+          test -f devfeat/dev_feature_table.csv
+          test -f sealed_agg/sealed_card_actuals.csv
+          gunzip -c pages/data/target.json.gz > pages/data/target.json
+      - name: Validate sealed GIH
+        run: python analysis/sealed_gih_validate.py devfeat/dev_feature_table.csv sealed_agg/sealed_card_actuals.csv pages/data/target.json sealed_gih
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sealed-gih-validation
+          path: sealed_gih/
+          retention-days: 30
