@@ -1,0 +1,34 @@
+name: Sealed GIH Decompression Extend
+on:
+  push:
+    branches: [deck-color-analysis-20260924]
+    paths:
+      - analysis/sealed_gih_decompression_extend.py
+      - .github/workflows/sealed_gih_decompression_extend.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy==2.5.3 pandas==3.0.6 scipy==1.16.2 scikit-learn==1.9.1
+      - name: Download inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p devfeat sealed_agg
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D devfeat
+          gh run download 36106288518 -n sealed-public-aggregates -D sealed_agg
+      - name: Extend decompression
+        run: python analysis/sealed_gih_decompression_extend.py devfeat/dev_feature_table.csv sealed_agg/sealed_card_actuals.csv sealed_decomp
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sealed-gih-decompression-extend
+          path: sealed_decomp/
+          retention-days: 30
