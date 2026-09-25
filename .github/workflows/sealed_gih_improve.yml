@@ -1,0 +1,38 @@
+name: Improve Sealed GIH
+on:
+  push:
+    branches: [deck-color-analysis-20260924]
+    paths:
+      - analysis/sealed_gih_improve.py
+      - .github/workflows/sealed_gih_improve.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy==2.5.3 pandas==3.0.6 scipy==1.16.2 scikit-learn==1.9.1
+      - name: Download inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p devfeat sealed_agg draft_oof
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D devfeat
+          gh run download 36106288518 -n sealed-public-aggregates -D sealed_agg
+          gh run download 35956684123 -n deck-color-b2-results -D draft_oof
+          test -f devfeat/dev_feature_table.csv
+          test -f sealed_agg/sealed_card_actuals.csv
+          test -f draft_oof/card_gih_oof_for_deck_color.csv
+      - name: Audit and improve Sealed GIH
+        run: python analysis/sealed_gih_improve.py devfeat/dev_feature_table.csv sealed_agg/sealed_card_actuals.csv draft_oof/card_gih_oof_for_deck_color.csv sealed_gih_improve
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sealed-gih-improvement
+          path: sealed_gih_improve/
+          retention-days: 30
