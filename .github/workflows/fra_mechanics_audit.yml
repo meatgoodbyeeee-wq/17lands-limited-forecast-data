@@ -1,0 +1,30 @@
+name: FRA Mechanics Audit
+on:
+  push:
+    branches: [deck-color-analysis-20260924]
+    paths:
+      - analysis/fra_mechanics_audit.py
+      - .github/workflows/fra_mechanics_audit.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: meatgoodbyeeee-wq/limited-forecast-pages
+          path: pages
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas==3.0.6
+      - name: Reuse FIN-blind feature artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p devfeat
+          gh run download 35835189360 -n fin-blind-dev-feature-table -D devfeat
+      - run: python analysis/fra_mechanics_audit.py devfeat/dev_feature_table.csv pages/data/target.json.gz
