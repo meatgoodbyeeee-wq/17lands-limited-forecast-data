@@ -157,6 +157,8 @@ def main(dev_csv,no_mh3_json,out):
     ext["actual"]=ext.set.map(EXT_TARGETS)
 
     pred_base=fit_predict(hist,ext,BASE)
+    pred_progress=fit_predict(hist,ext,BASE+["f_progressive_pairmax"])
+    pred_progress_race=fit_predict(hist,ext,BASE+["f_progressive_pairmax","m_race_buffer_share"])
     pred_year=fit_predict(hist,ext,BASE+["year_num"])
     pred_life=pred_year+life_correction(hist,ext,alpha=100)
     rows=[]
