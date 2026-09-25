@@ -23,5 +23,5 @@ for w,n in fc.items():
     p=(n+.5)/(FN+1); q=(hc[w]+.5)/(HN+1)
     import math
     arr.append((math.log(p/q),n,hc[w],w))
-print("FRA_CU_NONLAND",FN)
+\nsetup=[]\nfor c in fra:\n    tx=(c.get("oracle_text") or "").lower()\n    if re.search(r"\\b(prepared|prep|heartwood|landcycling)\\b",tx): setup.append(c.get("name"))\nprint("FRA_CU_NONLAND",FN)\nprint("FRA_SETUP_COUNT",len(setup))\nprint("FRA_SETUP_CARDS",json.dumps(setup,ensure_ascii=False))
 print("TOP_TERMS",json.dumps([{"term":w,"fra_cards":n,"hist_cards":h,"log_ratio":round(sc,3)} for sc,n,h,w in sorted(arr,reverse=True)[:50]],ensure_ascii=False))
