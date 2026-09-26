@@ -1,0 +1,47 @@
+name: GIH 21-set research audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_gih_21set.py
+      - .github/workflows/gih_21set_research.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas scipy scikit-learn
+      - name: Download 21 development actuals excluding FIN and MH3
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p training_artifacts
+          for SET in KHM STX AFR MID VOW NEO SNC DMU BRO ONE MOM LTR WOE LCI MKM OTJ BLB DSK FDN DFT TDM; do
+            gh run download 35692015171 -n "${SET}-28d" -D "training_artifacts/${SET}"
+          done
+          python - <<'PY'
+          import glob, pandas as pd
+          fs=glob.glob("training_artifacts/*/*_gih_28d.csv")
+          if len(fs) != 21:
+              raise SystemExit(f"Expected 21 files, got {len(fs)}")
+          d=pd.concat([pd.read_csv(f) for f in fs],ignore_index=True)
+          sets=set(d["set"].str.upper())
+          if "FIN" in sets or "MH3" in sets:
+              raise SystemExit("FIN/MH3 contamination")
+          d.to_csv("dev_actuals_21.csv",index=False)
+          print(sorted(sets))
+          PY
+      - name: Build pre-release features
+        run: python scripts/build_dev_features.py --actuals dev_actuals_21.csv --out model_out/dev_feature_21.csv
+      - name: Run 21-set baseline and residual audit
+        run: python scripts/audit_gih_21set.py --input model_out/dev_feature_21.csv --out model_out/gih_21set_audit.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gih-21set-research-audit
+          path: model_out/gih_21set_audit.json
