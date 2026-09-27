@@ -1,0 +1,65 @@
+name: GIH 21-set snapshot (preserve inputs + baseline OOF)
+# Research only. FIN is never downloaded. MH3 is preserved for reproducibility of the
+# adopted 22-set production model but is excluded by scripts/gih21_research.py.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/gih21_snapshot.yml
+permissions:
+  actions: read
+  contents: write
+concurrency:
+  group: gih21-research
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas scipy scikit-learn
+      - name: Preserve compact 28-day actuals (22 non-FIN sets) from run 35692015171
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/compact_28d
+          for SET in KHM STX AFR MID VOW NEO SNC DMU BRO ONE MOM LTR WOE LCI MKM OTJ MH3 BLB DSK FDN DFT TDM; do
+            gh run download 35692015171 -n "${SET}-28d" -D "data/compact_28d"
+          done
+          ls data/compact_28d
+          python - <<'PY'
+          import glob, pandas as pd
+          fs = sorted(glob.glob("data/compact_28d/*_gih_28d.csv"))
+          if len(fs) != 22: raise SystemExit(f"Expected 22 files, got {len(fs)}")
+          if any("FIN" in f.upper().split("/")[-1] for f in fs): raise SystemExit("FIN file present")
+          d = pd.concat([pd.read_csv(f) for f in fs], ignore_index=True)
+          if "FIN" in set(d["set"].str.upper()): raise SystemExit("FIN contamination")
+          d.to_csv("dev_actuals_22.csv", index=False)
+          print(d.groupby("set").size())
+          PY
+      - name: Fetch finished 21-set audit (run 36226176884)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p research/gih_21set
+          gh run download 36226176884 -n gih-21set-research-audit -D research/gih_21set/audit_run_36226176884
+      - name: Build and freeze pre-release feature table (Scryfall)
+        run: |
+          python scripts/build_dev_features.py --actuals dev_actuals_22.csv --out dev_feature_22.csv
+          mkdir -p data/features && gzip -c dev_feature_22.csv > data/features/dev_feature_22.csv.gz
+      - name: Baseline OOF on 21 sets (FIN/MH3 excluded)
+        run: python scripts/gih21_research.py oof --features data/features/dev_feature_22.csv.gz --out-dir research/gih_21set/baseline
+      - name: Commit snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/compact_28d data/features research/gih_21set
+          git commit -m "Preserve 28d compact actuals, frozen features and 21-set baseline OOF (run ${{ github.run_id }})"
+          git pull --rebase origin main
+          git push origin HEAD:main
