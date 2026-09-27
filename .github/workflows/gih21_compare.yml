@@ -1,0 +1,41 @@
+name: GIH 21-set candidate comparison
+# Research only: baseline vs C1 (condition/efficiency) vs C2 (ability x environment), same 21-set LOSO.
+# FIN never loaded; MH3 rows are dropped by scripts/gih21_research.py. Pages repo untouched.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/gih21_compare.yml
+permissions:
+  contents: write
+concurrency:
+  group: gih21-research
+  cancel-in-progress: false
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas scipy scikit-learn
+      - name: Freeze booster card pools for the 21 research sets (Scryfall spoiler data)
+        run: |
+          if [ ! -f data/features/set_pools_21.csv.gz ]; then
+            python scripts/gih21_research.py pools --out data/features/set_pools_21.csv.gz
+          fi
+      - name: Compare baseline / C1 / C2 / C1+C2 (3 seeds each)
+        working-directory: scripts
+        run: python gih21_research.py compare --features ../data/features/dev_feature_22.csv.gz --pools ../data/features/set_pools_21.csv.gz --out-dir ../research/gih_21set/compare
+      - name: Commit results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/features/set_pools_21.csv.gz research/gih_21set/compare
+          git commit -m "21-set GIH candidate comparison results (run ${{ github.run_id }})"
+          git pull --rebase origin main
+          git push origin HEAD:main

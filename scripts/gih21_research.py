@@ -49,14 +49,14 @@ def numeric_cols(d, extra_drop=()):
             and pd.api.types.is_numeric_dtype(d[c])]
 
 
-def loso(d, nums, text_col="__text"):
+def loso(d, nums, text_col="__text", seed=SEED):
     pred = np.full(len(d), np.nan)
     for hold in sorted(set(d["set"])):
         tr = (d["set"] != hold).to_numpy(); te = ~tr
         y = d.loc[tr, "actual_gih"]
         tree = make_pipeline(SimpleImputer(strategy="median"),
                              ExtraTreesRegressor(n_estimators=600, min_samples_leaf=8, max_features=.6,
-                                                 n_jobs=-1, random_state=SEED))
+                                                 n_jobs=-1, random_state=seed))
         tree.fit(d.loc[tr, nums], y); pt = tree.predict(d.loc[te, nums])
         text = make_pipeline(TfidfVectorizer(ngram_range=(1,2), min_df=3, max_features=12000, sublinear_tf=True),
                              Ridge(alpha=10))
@@ -159,12 +159,65 @@ def cmd_oof(a):
     print(json.dumps({k: out[k] for k in ("pooled","within_set_mean","n_features")}, indent=2))
 
 
+def cmd_pools(a):
+    from gih21_candidates import fetch_pool
+    frames = [fetch_pool(s) for s in sorted(RESEARCH_SETS)]
+    p = pd.concat(frames, ignore_index=True)
+    a.out.parent.mkdir(parents=True, exist_ok=True)
+    p.to_csv(a.out, index=False, compression="gzip")
+    print(p.groupby(["set", "rarity"]).size().unstack(fill_value=0))
+
+
+def summarize(d, p):
+    ws, fs = within_set(d, p)
+    return {"pooled": pooled_metrics(d["actual_gih"].to_numpy(), p), "within_set_mean": ws,
+            "per_set": fs.to_dict(orient="records")}
+
+
+def cmd_compare(a):
+    from gih21_candidates import add_c1, add_c2, prepare_pools
+    d = load(a.features); d["__text"] = text_of(d)
+    base_nums = numeric_cols(d)
+    d["__colors"] = [[c for c in "WUBRG" if r.get("color_" + c, 0) == 1] for r in d[[f"color_{c}" for c in "WUBRG"]].to_dict("records")]
+    pools = prepare_pools(pd.read_csv(a.pools))
+    if set(pools["set"]) != RESEARCH_SETS:
+        raise SystemExit("pool sets mismatch")
+    c1 = add_c1(d); c2 = add_c2(d, pools)
+    d = pd.concat([d, c1, c2], axis=1)
+    configs = {"baseline": base_nums, "C1_condition_efficiency": base_nums + list(c1.columns),
+               "C2_ability_x_environment": base_nums + list(c2.columns),
+               "C1+C2": base_nums + list(c1.columns) + list(c2.columns)}
+    seeds = [SEED, SEED + 1, SEED + 2]
+    res = {"fin_used": False, "mh3_used": False, "seeds": seeds, "c1_columns": list(c1.columns),
+           "c2_columns": list(c2.columns), "configs": {}}
+    oof = d[["set", "name", "rarity_ord", "actual_gih"]].copy()
+    for name, nums in configs.items():
+        runs = []
+        for sd in seeds:
+            p = loso(d, nums, seed=sd)
+            runs.append(summarize(d, p))
+            if sd == SEED:
+                oof[f"pred_{name}"] = p
+            print(name, sd, round(runs[-1]["pooled"]["mae_pp"], 5), round(runs[-1]["within_set_mean"]["spearman"], 5), flush=True)
+        res["configs"][name] = {"n_features": len(nums), "runs": runs}
+    cov = {c: {"n_nonzero": int((d[c].fillna(0) != 0).sum())} for c in list(c1.columns) + list(c2.columns)}
+    cov.update({"c2_dep_card_count": int((d["c2_dep_count"] > 0).sum())})
+    res["coverage"] = cov
+    a.out_dir.mkdir(parents=True, exist_ok=True)
+    (a.out_dir / "compare.json").write_text(json.dumps(res, indent=2, default=float))
+    oof.to_csv(a.out_dir / "compare_oof_seed20260922.csv.gz", index=False, compression="gzip")
+    d[["set", "name"] + list(c1.columns) + list(c2.columns)].to_csv(a.out_dir / "candidate_features.csv.gz", index=False, compression="gzip")
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     o = sub.add_parser("oof"); o.add_argument("--features", required=True); o.add_argument("--out-dir", type=Path, required=True)
+    q = sub.add_parser("pools"); q.add_argument("--out", type=Path, required=True)
+    c = sub.add_parser("compare"); c.add_argument("--features", required=True); c.add_argument("--pools", required=True)
+    c.add_argument("--out-dir", type=Path, required=True)
     a = ap.parse_args()
-    {"oof": cmd_oof}[a.cmd](a)
+    {"oof": cmd_oof, "pools": cmd_pools, "compare": cmd_compare}[a.cmd](a)
 
 
 if __name__ == "__main__":
