@@ -1,0 +1,36 @@
+{
+  "set": "BRO",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.BRO.PremierDraft.csv.gz",
+  "sha256": "5cfd6046d106727523345cf2779251187f1e6f4677cbc73ee6ca00ad414a1a52",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2022-11-15T16:38:19+00:00",
+  "window_end": "2022-12-13T16:38:19+00:00",
+  "last_draft_time_in_window": "2022-12-13T16:37:05+00:00",
+  "has_user_wr_bucket": true,
+  "has_user_n_games_bucket": true,
+  "group_games": {
+    "all": 542693,
+    "all_h0": 273317,
+    "all_h1": 269376,
+    "top60n50": 124224,
+    "top60n50_h0": 62787,
+    "top60n50_h1": 61437,
+    "top56n50": 231504,
+    "top64n50": 45678,
+    "top60": 152422
+  },
+  "group_game_win_rate": {
+    "all": 0.5547685339593472,
+    "all_h0": 0.555168540559131,
+    "all_h1": 0.5543626752197671,
+    "top60n50": 0.6366000128799588,
+    "top60n50_h0": 0.6361667224106902,
+    "top60n50_h1": 0.637042824356658,
+    "top56n50": 0.6100110581242657,
+    "top64n50": 0.6692499671614344,
+    "top60": 0.6431027017097269
+  },
+  "cards_output": 313,
+  "min_gih_games": 500
+}
