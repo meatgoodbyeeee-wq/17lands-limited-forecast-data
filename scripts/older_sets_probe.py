@@ -13,6 +13,9 @@ import urllib.request
 from pathlib import Path
 
 BASE = "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.{}.{}.csv.gz"
+OTHER = {"draft": "https://17lands-public.s3.amazonaws.com/analysis_data/draft_data/draft_data_public.{}.{}.csv.gz",
+         "replay": "https://17lands-public.s3.amazonaws.com/analysis_data/replay_data/replay_data_public.{}.{}.csv.gz"}
+OLD = ["M20", "ELD", "THB", "IKO", "M21", "ZNR", "AKR", "KLR", "KTK"]
 SETS = ["KTK", "FRF", "DTK", "ORI", "BFZ", "OGW", "SOI", "EMN", "KLD", "AER", "AKH", "HOU", "XLN", "RIX", "DOM", "M19",
         "GRN", "RNA", "WAR", "M20", "ELD", "THB", "IKO", "M21", "ZNR", "AKR", "KLR", "SIR", "HBG", "YMID", "YNEO", "Y22",
         "LTR", "KTK", "OTP", "DSK", "PIO", "Cube", "CUBE"]
@@ -20,9 +23,9 @@ FORMATS = ["PremierDraft", "QuickDraft", "TradDraft"]
 UA = {"User-Agent": "SakiyomiResearch/1.0"}
 
 
-def head(code, fmt):
+def head(code, fmt, base=BASE):
     try:
-        req = urllib.request.Request(BASE.format(code, fmt), method="HEAD", headers=UA)
+        req = urllib.request.Request(base.format(code, fmt), method="HEAD", headers=UA)
         with urllib.request.urlopen(req, timeout=60) as r:
             return {"exists": True, "bytes": int(r.headers.get("Content-Length") or 0), "last_modified": r.headers.get("Last-Modified")}
     except urllib.error.HTTPError as e:
@@ -54,6 +57,12 @@ def main():
                     h["header_error"] = repr(e)[:200]
             out[s][fmt] = h
         print(s, {f: (v.get("exists"), v.get("bytes")) for f, v in out[s].items()}, flush=True)
+    for kind, base in OTHER.items():
+        for s in OLD:
+            for fmt in FORMATS:
+                h = head(s, fmt, base)
+                out.setdefault(f"{kind}:{s}", {})[fmt] = h
+            print(kind, s, {f: out[f"{kind}:{s}"][f].get("exists") for f in FORMATS}, flush=True)
     Path("research/older_sets").mkdir(parents=True, exist_ok=True)
     Path("research/older_sets/probe.json").write_text(json.dumps(out, indent=2))
 
