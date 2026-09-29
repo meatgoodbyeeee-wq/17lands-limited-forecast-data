@@ -1,0 +1,55 @@
+name: Colour-hoser metrics (AFR, SNC, MOM)
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/hoser-metrics]
+    paths:
+      - research/hoser_metrics/hoser_split.py
+      - .github/workflows/hoser_metrics.yml
+permissions:
+  contents: write
+concurrency:
+  group: hoser-metrics
+  cancel-in-progress: false
+jobs:
+  split:
+    strategy:
+      fail-fast: false
+      matrix:
+        set: [AFR, SNC, MOM]
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - run: python research/hoser_metrics/hoser_split.py --set ${{ matrix.set }} --out-dir out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hoser-${{ matrix.set }}
+          path: out/${{ matrix.set }}_hoser.json
+          retention-days: 30
+  collect:
+    needs: split
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hoser-metrics
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: hoser-*
+          merge-multiple: true
+          path: research/hoser_metrics/data
+      - name: Commit results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/hoser_metrics/data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Colour-hoser metrics (AFR, SNC, MOM)'
+          git pull --rebase origin research/hoser-metrics
+          git push origin HEAD:research/hoser-metrics
