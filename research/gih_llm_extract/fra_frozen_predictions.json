@@ -1,0 +1,38 @@
+{
+  "frozen_at_utc": "2026-09-29T09:34:22.794816+00:00",
+  "fin_used": false,
+  "mh3_used": false,
+  "fra_outcomes_used": false,
+  "train_sets": [
+    "AFR",
+    "BLB",
+    "BRO",
+    "DFT",
+    "DMU",
+    "DSK",
+    "FDN",
+    "KHM",
+    "LCI",
+    "LTR",
+    "MID",
+    "MKM",
+    "MOM",
+    "NEO",
+    "ONE",
+    "OTJ",
+    "SNC",
+    "STX",
+    "TDM",
+    "VOW",
+    "WOE"
+  ],
+  "seeds": [
+    20260922,
+    20260923,
+    20260924
+  ],
+  "n_cards": 290,
+  "file": "fra_frozen_predictions.csv",
+  "sha256": "771c8ef81363f4fab13c16be9c0d743e5bb7068562939b69dc1b8b76b9287989",
+  "note": "Both arms fit on all 21 research sets; seed-averaged. Compare against FRA 28-day Public Data when available."
+}
