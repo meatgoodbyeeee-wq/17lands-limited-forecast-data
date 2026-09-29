@@ -1,0 +1,36 @@
+{
+  "set": "AFR",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.AFR.PremierDraft.csv.gz",
+  "sha256": "7425106c1de2c59a52d43e63600b0831d2b32cb49eae22ec2a5f3013e9b406fe",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2021-07-08T16:06:42+00:00",
+  "window_end": "2021-08-05T16:06:42+00:00",
+  "last_draft_time_in_window": "2021-08-05T16:06:32+00:00",
+  "has_user_wr_bucket": false,
+  "has_user_n_games_bucket": true,
+  "group_games": {
+    "all": 308279,
+    "all_h0": 153641,
+    "all_h1": 154638,
+    "top60n50": 0,
+    "top60n50_h0": 0,
+    "top60n50_h1": 0,
+    "top56n50": 0,
+    "top64n50": 0,
+    "top60": 0
+  },
+  "group_game_win_rate": {
+    "all": 0.5499563706901864,
+    "all_h0": 0.5500615070196107,
+    "all_h1": 0.5498519122078661,
+    "top60n50": null,
+    "top60n50_h0": null,
+    "top60n50_h1": null,
+    "top56n50": null,
+    "top64n50": null,
+    "top60": null
+  },
+  "cards_output": 254,
+  "min_gih_games": 500
+}
