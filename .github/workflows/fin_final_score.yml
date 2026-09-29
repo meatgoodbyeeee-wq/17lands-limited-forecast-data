@@ -1,0 +1,52 @@
+name: FIN final check - one-time GIH score
+# Runs once: downloads the FIN Premier Draft Public Game Data, aggregates it (28 days, >= 500 GIH games)
+# and scores the arms locked in research/fin_final/PLAN.md. Results are committed whatever they are.
+on:
+  push:
+    branches: [research/fin-final]
+    paths:
+      - .github/workflows/fin_final_score.yml
+permissions:
+  contents: write
+concurrency:
+  group: fin-final-score
+  cancel-in-progress: false
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas==3.0.2 numpy==2.4.4 scipy==1.17.1 scikit-learn==1.8.0
+      - name: Refuse a second run
+        run: test ! -e research/fin_final/fin_result.json
+      - name: Aggregate FIN (counts only are printed)
+        run: |
+          set -o pipefail
+          python research/fin_final/fin_aggregate.py --out-dir fin_out 2>&1 | tee -a run.log
+          cp fin_out/FIN_case6_28d.csv fin_out/FIN_case6_manifest.json research/fin_final/data/
+      - name: Score the locked arms once
+        run: |
+          set -o pipefail
+          python research/fin_final/fin_final.py score --aggregate research/fin_final/data/FIN_case6_28d.csv 2>&1 | grep -v -i warning | tee -a run.log
+      - name: Commit results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/fin_final/data research/fin_final/fin_result.json research/fin_final/fin_predictions.csv.gz
+          git commit -m 'FIN final check: one-time score'
+          git pull --rebase origin research/fin-final
+          git push origin HEAD:research/fin-final
+      - name: Record failure log
+        if: failure()
+        run: |
+          tail -n 60 run.log > research/fin_final/run_failure.log || echo "no log" > research/fin_final/run_failure.log
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/fin_final/run_failure.log
+          git commit -m 'FIN final check: run failed (log tail)'
+          git pull --rebase origin research/fin-final
+          git push origin HEAD:research/fin-final
