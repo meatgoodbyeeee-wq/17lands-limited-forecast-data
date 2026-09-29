@@ -1,0 +1,33 @@
+name: FIN final check - card texts and features (Scryfall only)
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/fin-final]
+    paths:
+      - research/fin_final/fin_cards.py
+      - .github/workflows/fin_final_cards.yml
+permissions:
+  contents: write
+concurrency:
+  group: fin-final-cards
+  cancel-in-progress: false
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - run: python research/fin_final/fin_cards.py
+      - name: Commit FIN card texts and features
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/fin_final/data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'FIN card texts and features (Scryfall only)'
+          git pull --rebase origin research/fin-final
+          git push origin HEAD:research/fin-final
