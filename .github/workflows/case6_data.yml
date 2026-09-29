@@ -1,0 +1,67 @@
+name: Case 6 data (overall + top-player GIH, new-set features)
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/case6]
+    paths:
+      - scripts/case6_aggregate.py
+      - scripts/case6_features.py
+      - .github/workflows/case6_data.yml
+permissions:
+  contents: write
+concurrency:
+  group: case6-data
+  cancel-in-progress: false
+jobs:
+  aggregate:
+    strategy:
+      fail-fast: false
+      matrix:
+        set: [KHM, STX, AFR, MID, VOW, NEO, SNC, DMU, BRO, ONE, MOM, LTR, WOE, LCI, MKM, OTJ, BLB, DSK, FDN, DFT, TDM,
+              EOE, TLA, ECL, TMT, SOS, MSH, HOB]
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - run: python scripts/case6_aggregate.py --set ${{ matrix.set }} --out-dir out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: case6-${{ matrix.set }}
+          path: |
+            out/${{ matrix.set }}_case6_28d.csv
+            out/${{ matrix.set }}_case6_manifest.json
+          retention-days: 30
+  collect:
+    needs: aggregate
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/case6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: case6-*
+          merge-multiple: true
+          path: research/case6/data
+      - name: Build new-set features (Scryfall)
+        run: python scripts/case6_features.py --aggregates research/case6/data --sets EOE TLA ECL TMT SOS MSH HOB --out research/case6/data/new_feature_table.csv.gz
+      - name: Commit data to the research branch
+        run: |
+          ls -la research/case6/data
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/case6/data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Case 6 aggregates and new-set features'
+          git pull --rebase origin research/case6
+          git push origin HEAD:research/case6
