@@ -1,0 +1,36 @@
+{
+  "set": "FIN",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.FIN.PremierDraft.csv.gz",
+  "sha256": "f6452e622976f66dd5420c55741da5b246c7e8d25d63c080e728635e1741a6a6",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2025-06-10T15:31:17+00:00",
+  "window_end": "2025-07-08T15:31:17+00:00",
+  "last_draft_time_in_window": "2025-07-08T15:31:04+00:00",
+  "has_user_wr_bucket": true,
+  "has_user_n_games_bucket": true,
+  "group_games": {
+    "all": 686290,
+    "all_h0": 343837,
+    "all_h1": 342453,
+    "top60n50": 142036,
+    "top60n50_h0": 71825,
+    "top60n50_h1": 70211,
+    "top56n50": 294905,
+    "top64n50": 48112,
+    "top60": 160781
+  },
+  "group_game_win_rate": {
+    "all": 0.5576738696469422,
+    "all_h0": 0.5586513376978045,
+    "all_h1": 0.5566924512268837,
+    "top60n50": 0.6415697428820862,
+    "top60n50_h0": 0.6438844413505047,
+    "top60n50_h1": 0.6392018344703821,
+    "top56n50": 0.6129329784167783,
+    "top64n50": 0.6734494512803458,
+    "top60": 0.6454183019137834
+  },
+  "cards_output": 345,
+  "min_gih_games": 500
+}
