@@ -1,0 +1,32 @@
+name: Case 6 probe (sets and columns)
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/case6]
+    paths:
+      - scripts/case6_probe.py
+      - .github/workflows/case6_probe.yml
+permissions:
+  contents: write
+concurrency:
+  group: case6-branch-writes
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/case6_probe.py
+      - name: Commit probe result to the research branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/case6/probe.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Case 6 probe result'
+          git pull --rebase origin research/case6
+          git push origin HEAD:research/case6
