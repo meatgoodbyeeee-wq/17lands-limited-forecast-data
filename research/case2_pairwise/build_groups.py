@@ -39,7 +39,7 @@ def main():
             p = [keys[i] for i in rng.permutation(len(keys))]
             chunks = [p[i:i + SIZE] for i in range(0, len(p), SIZE)]
             if len(chunks) > 1 and len(chunks[-1]) < SIZE:
-                chunks[-2] += chunks.pop()
+                last = chunks.pop(); chunks[-1] = chunks[-1] + last
             groups += [(s, rep, ch) for ch in chunks]
     order = rng.permutation(len(groups))
     out = [{"gid": f"G{j+1:04d}", "set": groups[i][0], "rep": groups[i][1], "keys": groups[i][2]} for j, i in enumerate(order)]
