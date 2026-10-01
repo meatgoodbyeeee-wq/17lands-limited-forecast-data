@@ -1,0 +1,33 @@
+name: FRA early 17Lands snapshot (user-requested check)
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/fra-early-check]
+    paths: ['.github/workflows/fra_early_fetch.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/fra-early-check
+      - name: Fetch card and colour ratings (one request each)
+        run: |
+          set -e
+          END=$(date -u +%Y-%m-%d)
+          mkdir -p research/fra_early/raw
+          UA="sakiyomi-research/1.0 (github.com/meatgoodbyeeee-wq)"
+          curl -fsS -A "$UA" "https://www.17lands.com/card_ratings/data?expansion=FRA&format=PremierDraft&start_date=2026-09-29&end_date=${END}" -o research/fra_early/raw/card_ratings.json
+          sleep 5
+          curl -fsS -A "$UA" "https://www.17lands.com/color_ratings/data?expansion=FRA&event_type=PremierDraft&start_date=2026-09-29&end_date=${END}&combine_splash=false" -o research/fra_early/raw/color_ratings.json
+          echo "{\"fetched_at\": \"$(date -u +%FT%TZ)\", \"start_date\": \"2026-09-29\", \"end_date\": \"${END}\"}" > research/fra_early/raw/meta.json
+          ls -la research/fra_early/raw
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add research/fra_early/raw
+          git commit -m "FRA early 17Lands snapshot (card + colour ratings)"
+          git push
