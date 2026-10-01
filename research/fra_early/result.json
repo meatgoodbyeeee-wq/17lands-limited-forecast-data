@@ -1,0 +1,309 @@
+{
+ "fetched": {
+  "fetched_at": "2026-10-01T06:44:19Z",
+  "start_date": "2026-09-29",
+  "end_date": "2026-10-01"
+ },
+ "n_forecast": 290,
+ "unmatched_forecast": [],
+ "gih": {
+  "n_cards": 171,
+  "median_games": 1056.0,
+  "obs_mean": 55.68981309356726,
+  "pred_mean": 55.70819560233918,
+  "mean_offset_pred_minus_obs": 0.018382508771929398,
+  "mae_raw": 2.154531736842105,
+  "mae_offset_removed": 2.1542956987791113,
+  "spearman": 0.5219178970865264,
+  "pearson": 0.5179181618733326,
+  "sampling_se_median_pp": 1.5291603260526445,
+  "range80_coverage_raw": 0.7543859649122807,
+  "range80_coverage_offset_removed": 0.7485380116959064,
+  "expected_mae_if_backtest_quality_plus_noise": 2.699904066763568,
+  "by_rarity": {
+   "common": {
+    "n": 64,
+    "mae_offset_removed": 1.6820409542214911,
+    "mean_bias": -0.19604811814693057
+   },
+   "land": {
+    "n": 10,
+    "mae_offset_removed": 1.7168271017543852,
+    "mean_bias": 0.10833729122807068
+   },
+   "rare": {
+    "n": 9,
+    "mae_offset_removed": 3.6105988343079938,
+    "mean_bias": -2.6851266198830412
+   },
+   "uncommon": {
+    "n": 88,
+    "mae_offset_removed": 2.398525941985646,
+    "mean_bias": 0.4048846162280707
+   }
+  }
+ },
+ "alsa": {
+  "n_cards": 271,
+  "mae": 0.7973848084667318,
+  "spearman": 0.7970647714587092,
+  "backtest_mae": 0.9508
+ },
+ "deck_color": {
+  "rows": [
+   {
+    "pair": "UB",
+    "pred": 55.841,
+    "pred_rank": 1,
+    "obs": 56.784,
+    "games": 4739,
+    "in_range80": true,
+    "obs_rank": 3,
+    "obs_delta": 1.189,
+    "pred_delta": 0.481
+   },
+   {
+    "pair": "RG",
+    "pred": 55.809,
+    "pred_rank": 2,
+    "obs": 57.285,
+    "games": 5642,
+    "in_range80": true,
+    "obs_rank": 2,
+    "obs_delta": 1.69,
+    "pred_delta": 0.449
+   },
+   {
+    "pair": "BR",
+    "pred": 55.657,
+    "pred_rank": 3,
+    "obs": 54.67,
+    "games": 4882,
+    "in_range80": true,
+    "obs_rank": 7,
+    "obs_delta": -0.925,
+    "pred_delta": 0.297
+   },
+   {
+    "pair": "UG",
+    "pred": 55.6,
+    "pred_rank": 4,
+    "obs": 53.377,
+    "games": 1377,
+    "in_range80": true,
+    "obs_rank": 10,
+    "obs_delta": -2.218,
+    "pred_delta": 0.24
+   },
+   {
+    "pair": "BG",
+    "pred": 55.462,
+    "pred_rank": 5,
+    "obs": 56.458,
+    "games": 2129,
+    "in_range80": true,
+    "obs_rank": 4,
+    "obs_delta": 0.864,
+    "pred_delta": 0.102
+   },
+   {
+    "pair": "UR",
+    "pred": 55.42,
+    "pred_rank": 6,
+    "obs": 56.333,
+    "games": 3971,
+    "in_range80": true,
+    "obs_rank": 5,
+    "obs_delta": 0.739,
+    "pred_delta": 0.06
+   },
+   {
+    "pair": "WU",
+    "pred": 55.162,
+    "pred_rank": 7,
+    "obs": 58.362,
+    "games": 5166,
+    "in_range80": false,
+    "obs_rank": 1,
+    "obs_delta": 2.768,
+    "pred_delta": -0.199
+   },
+   {
+    "pair": "WB",
+    "pred": 54.968,
+    "pred_rank": 8,
+    "obs": 53.419,
+    "games": 2501,
+    "in_range80": true,
+    "obs_rank": 9,
+    "obs_delta": -2.176,
+    "pred_delta": -0.392
+   },
+   {
+    "pair": "WG",
+    "pred": 54.869,
+    "pred_rank": 9,
+    "obs": 54.998,
+    "games": 5162,
+    "in_range80": true,
+    "obs_rank": 6,
+    "obs_delta": -0.597,
+    "pred_delta": -0.491
+   },
+   {
+    "pair": "WR",
+    "pred": 54.814,
+    "pred_rank": 10,
+    "obs": 54.262,
+    "games": 2980,
+    "in_range80": true,
+    "obs_rank": 8,
+    "obs_delta": -1.333,
+    "pred_delta": -0.546
+   }
+  ],
+  "spearman": 0.34545454545454546,
+  "mae_raw": 1.2969160764238026,
+  "mae_delta": 1.2711622962285802,
+  "range80_coverage": 0.9,
+  "obs_spread_sd": 1.6952122677757069,
+  "pred_spread_sd": 0.3836828380223114
+ },
+ "largest_misses": [
+  {
+   "name": "Way of the Mentor",
+   "rarity": "uncommon",
+   "colors": "W",
+   "gih_pred": 56.17,
+   "gih_obs": 46.9,
+   "gih_n": 597,
+   "err_c": 9.25
+  },
+  {
+   "name": "Gallia, the Merrymaker",
+   "rarity": "uncommon",
+   "colors": "R",
+   "gih_pred": 54.44,
+   "gih_obs": 45.67,
+   "gih_n": 727,
+   "err_c": 8.76
+  },
+  {
+   "name": "Simulacrum Shaper",
+   "rarity": "rare",
+   "colors": "G",
+   "gih_pred": 56.9,
+   "gih_obs": 65.19,
+   "gih_n": 543,
+   "err_c": -8.31
+  },
+  {
+   "name": "Way of the Deathbringer",
+   "rarity": "uncommon",
+   "colors": "B",
+   "gih_pred": 56.46,
+   "gih_obs": 49.06,
+   "gih_n": 695,
+   "err_c": 7.38
+  },
+  {
+   "name": "Sphinx of False Conclusions",
+   "rarity": "rare",
+   "colors": "U",
+   "gih_pred": 59.34,
+   "gih_obs": 66.67,
+   "gih_n": 585,
+   "err_c": -7.34
+  },
+  {
+   "name": "Lich's Relic",
+   "rarity": "rare",
+   "colors": "B",
+   "gih_pred": 58.06,
+   "gih_obs": 64.75,
+   "gih_n": 556,
+   "err_c": -6.71
+  },
+  {
+   "name": "Primal Witchstalker",
+   "rarity": "uncommon",
+   "colors": "BG",
+   "gih_pred": 56.89,
+   "gih_obs": 63.57,
+   "gih_n": 796,
+   "err_c": -6.7
+  },
+  {
+   "name": "Break Under Pressure",
+   "rarity": "uncommon",
+   "colors": "B",
+   "gih_pred": 55.63,
+   "gih_obs": 62.08,
+   "gih_n": 1337,
+   "err_c": -6.47
+  },
+  {
+   "name": "Mabel, Valley Hero",
+   "rarity": "uncommon",
+   "colors": "WR",
+   "gih_pred": 55.34,
+   "gih_obs": 49.18,
+   "gih_n": 547,
+   "err_c": 6.14
+  },
+  {
+   "name": "Recursive Recruitment",
+   "rarity": "uncommon",
+   "colors": "UB",
+   "gih_pred": 56.92,
+   "gih_obs": 63.03,
+   "gih_n": 1312,
+   "err_c": -6.14
+  },
+  {
+   "name": "Kiora of Fire and Ashes",
+   "rarity": "uncommon",
+   "colors": "R",
+   "gih_pred": 58.94,
+   "gih_obs": 64.53,
+   "gih_n": 1452,
+   "err_c": -5.61
+  },
+  {
+   "name": "Tether Technician",
+   "rarity": "common",
+   "colors": "R",
+   "gih_pred": 55.41,
+   "gih_obs": 49.81,
+   "gih_n": 775,
+   "err_c": 5.59
+  },
+  {
+   "name": "Command the Stage",
+   "rarity": "uncommon",
+   "colors": "R",
+   "gih_pred": 55.15,
+   "gih_obs": 49.59,
+   "gih_n": 615,
+   "err_c": 5.53
+  },
+  {
+   "name": "Kiora of Salt and Sand",
+   "rarity": "uncommon",
+   "colors": "UG",
+   "gih_pred": 54.89,
+   "gih_obs": 49.62,
+   "gih_n": 532,
+   "err_c": 5.25
+  },
+  {
+   "name": "Blazing Crescendo",
+   "rarity": "common",
+   "colors": "R",
+   "gih_pred": 53.17,
+   "gih_obs": 58.18,
+   "gih_n": 593,
+   "err_c": -5.03
+  }
+ ]
+}
