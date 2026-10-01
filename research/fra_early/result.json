@@ -1,52 +1,57 @@
 {
  "fetched": {
-  "fetched_at": "2026-10-01T06:44:19Z",
+  "fetched_at": "2026-10-01T09:33:21Z",
   "start_date": "2026-09-29",
   "end_date": "2026-10-01"
  },
  "n_forecast": 290,
  "unmatched_forecast": [],
  "gih": {
-  "n_cards": 171,
-  "median_games": 1056.0,
-  "obs_mean": 55.68981309356726,
-  "pred_mean": 55.70819560233918,
-  "mean_offset_pred_minus_obs": 0.018382508771929398,
-  "mae_raw": 2.154531736842105,
-  "mae_offset_removed": 2.1542956987791113,
-  "spearman": 0.5219178970865264,
-  "pearson": 0.5179181618733326,
-  "sampling_se_median_pp": 1.5291603260526445,
-  "range80_coverage_raw": 0.7543859649122807,
-  "range80_coverage_offset_removed": 0.7485380116959064,
-  "expected_mae_if_backtest_quality_plus_noise": 2.699904066763568,
+  "n_cards": 247,
+  "median_games": 2243.0,
+  "obs_mean": 56.2724511214575,
+  "pred_mean": 56.05481840890688,
+  "mean_offset_pred_minus_obs": -0.21763271255060743,
+  "mae_raw": 2.2464054736842103,
+  "mae_offset_removed": 2.2496099218148133,
+  "spearman": 0.5993155242839329,
+  "pearson": 0.665983828617004,
+  "sampling_se_median_pp": 1.0445487161936182,
+  "range80_coverage_raw": 0.8218623481781376,
+  "range80_coverage_offset_removed": 0.8137651821862348,
+  "expected_mae_if_backtest_quality_plus_noise": 2.5972385978979426,
   "by_rarity": {
    "common": {
-    "n": 64,
-    "mae_offset_removed": 1.6820409542214911,
-    "mean_bias": -0.19604811814693057
+    "n": 71,
+    "mae_offset_removed": 1.729151627644409,
+    "mean_bias": -0.007064836745167926
    },
    "land": {
     "n": 10,
-    "mae_offset_removed": 1.7168271017543852,
-    "mean_bias": 0.10833729122807068
+    "mae_offset_removed": 1.3956860574898797,
+    "mean_bias": -0.4269420874493927
+   },
+   "mythic": {
+    "n": 16,
+    "mae_offset_removed": 3.967441643724696,
+    "mean_bias": -3.2637704124493943
    },
    "rare": {
-    "n": 9,
-    "mae_offset_removed": 3.6105988343079938,
-    "mean_bias": -2.6851266198830412
+    "n": 49,
+    "mae_offset_removed": 2.3975814752540696,
+    "mean_bias": -0.2745651854085752
    },
    "uncommon": {
-    "n": 88,
-    "mae_offset_removed": 2.398525941985646,
-    "mean_bias": 0.4048846162280707
+    "n": 101,
+    "mae_offset_removed": 2.356103623401611,
+    "mean_bias": 0.697475692748627
    }
   }
  },
  "alsa": {
-  "n_cards": 271,
-  "mae": 0.7973848084667318,
-  "spearman": 0.7970647714587092,
+  "n_cards": 286,
+  "mae": 0.8504656917073804,
+  "spearman": 0.7788722308592574,
   "backtest_mae": 0.9508
  },
  "deck_color": {
@@ -171,139 +176,139 @@
  },
  "largest_misses": [
   {
-   "name": "Way of the Mentor",
-   "rarity": "uncommon",
-   "colors": "W",
-   "gih_pred": 56.17,
-   "gih_obs": 46.9,
-   "gih_n": 597,
-   "err_c": 9.25
-  },
-  {
-   "name": "Gallia, the Merrymaker",
-   "rarity": "uncommon",
-   "colors": "R",
-   "gih_pred": 54.44,
-   "gih_obs": 45.67,
-   "gih_n": 727,
-   "err_c": 8.76
-  },
-  {
-   "name": "Simulacrum Shaper",
-   "rarity": "rare",
-   "colors": "G",
-   "gih_pred": 56.9,
-   "gih_obs": 65.19,
-   "gih_n": 543,
-   "err_c": -8.31
-  },
-  {
-   "name": "Way of the Deathbringer",
+   "name": "Way of the Necromancer",
    "rarity": "uncommon",
    "colors": "B",
-   "gih_pred": 56.46,
-   "gih_obs": 49.06,
-   "gih_n": 695,
-   "err_c": 7.38
+   "gih_pred": 55.22,
+   "gih_obs": 43.0,
+   "gih_n": 586,
+   "err_c": 12.43
   },
   {
-   "name": "Sphinx of False Conclusions",
-   "rarity": "rare",
+   "name": "Ajani Unrelenting",
+   "rarity": "mythic",
+   "colors": "R",
+   "gih_pred": 62.62,
+   "gih_obs": 73.08,
+   "gih_n": 821,
+   "err_c": -10.25
+  },
+  {
+   "name": "Arni, Renowned Champion",
+   "rarity": "uncommon",
+   "colors": "R",
+   "gih_pred": 55.55,
+   "gih_obs": 46.45,
+   "gih_n": 549,
+   "err_c": 9.32
+  },
+  {
+   "name": "Garruk, Veiled Butcher",
+   "rarity": "mythic",
+   "colors": "B",
+   "gih_pred": 61.48,
+   "gih_obs": 70.6,
+   "gih_n": 711,
+   "err_c": -8.9
+  },
+  {
+   "name": "The Theorist, Jace Beleren",
+   "rarity": "mythic",
    "colors": "U",
-   "gih_pred": 59.34,
-   "gih_obs": 66.67,
-   "gih_n": 585,
-   "err_c": -7.34
+   "gih_pred": 61.36,
+   "gih_obs": 69.48,
+   "gih_n": 734,
+   "err_c": -7.9
+  },
+  {
+   "name": "Uldaros Theorix",
+   "rarity": "mythic",
+   "colors": "UB",
+   "gih_pred": 61.12,
+   "gih_obs": 69.0,
+   "gih_n": 671,
+   "err_c": -7.66
+  },
+  {
+   "name": "Winter, Team Player",
+   "rarity": "uncommon",
+   "colors": "R",
+   "gih_pred": 53.21,
+   "gih_obs": 45.94,
+   "gih_n": 862,
+   "err_c": 7.48
   },
   {
    "name": "Lich's Relic",
    "rarity": "rare",
    "colors": "B",
    "gih_pred": 58.06,
-   "gih_obs": 64.75,
-   "gih_n": 556,
-   "err_c": -6.71
-  },
-  {
-   "name": "Primal Witchstalker",
-   "rarity": "uncommon",
-   "colors": "BG",
-   "gih_pred": 56.89,
-   "gih_obs": 63.57,
-   "gih_n": 796,
-   "err_c": -6.7
-  },
-  {
-   "name": "Break Under Pressure",
-   "rarity": "uncommon",
-   "colors": "B",
-   "gih_pred": 55.63,
-   "gih_obs": 62.08,
-   "gih_n": 1337,
-   "err_c": -6.47
-  },
-  {
-   "name": "Mabel, Valley Hero",
-   "rarity": "uncommon",
-   "colors": "WR",
-   "gih_pred": 55.34,
-   "gih_obs": 49.18,
-   "gih_n": 547,
-   "err_c": 6.14
-  },
-  {
-   "name": "Recursive Recruitment",
-   "rarity": "uncommon",
-   "colors": "UB",
-   "gih_pred": 56.92,
-   "gih_obs": 63.03,
-   "gih_n": 1312,
-   "err_c": -6.14
-  },
-  {
-   "name": "Kiora of Fire and Ashes",
-   "rarity": "uncommon",
-   "colors": "R",
-   "gih_pred": 58.94,
-   "gih_obs": 64.53,
-   "gih_n": 1452,
-   "err_c": -5.61
-  },
-  {
-   "name": "Tether Technician",
-   "rarity": "common",
-   "colors": "R",
-   "gih_pred": 55.41,
-   "gih_obs": 49.81,
-   "gih_n": 775,
-   "err_c": 5.59
+   "gih_obs": 64.8,
+   "gih_n": 1503,
+   "err_c": -6.53
   },
   {
    "name": "Command the Stage",
    "rarity": "uncommon",
    "colors": "R",
    "gih_pred": 55.15,
-   "gih_obs": 49.59,
-   "gih_n": 615,
-   "err_c": 5.53
+   "gih_obs": 48.85,
+   "gih_n": 1429,
+   "err_c": 6.52
   },
   {
-   "name": "Kiora of Salt and Sand",
+   "name": "Loot, the Anomaly",
    "rarity": "uncommon",
-   "colors": "UG",
-   "gih_pred": 54.89,
-   "gih_obs": 49.62,
-   "gih_n": 532,
-   "err_c": 5.25
+   "colors": "B",
+   "gih_pred": 53.77,
+   "gih_obs": 47.61,
+   "gih_n": 544,
+   "err_c": 6.38
   },
   {
-   "name": "Blazing Crescendo",
+   "name": "Murmuring Volume",
    "rarity": "common",
-   "colors": "R",
-   "gih_pred": 53.17,
-   "gih_obs": 58.18,
-   "gih_n": 593,
-   "err_c": -5.03
+   "colors": "",
+   "gih_pred": 50.67,
+   "gih_obs": 57.11,
+   "gih_n": 2889,
+   "err_c": -6.22
+  },
+  {
+   "name": "Sphinx of False Conclusions",
+   "rarity": "rare",
+   "colors": "U",
+   "gih_pred": 59.34,
+   "gih_obs": 65.74,
+   "gih_n": 1649,
+   "err_c": -6.18
+  },
+  {
+   "name": "Whiplash Wordsmith",
+   "rarity": "common",
+   "colors": "BR",
+   "gih_pred": 54.3,
+   "gih_obs": 48.58,
+   "gih_n": 1939,
+   "err_c": 5.93
+  },
+  {
+   "name": "Denzilore Fatehold",
+   "rarity": "mythic",
+   "colors": "WU",
+   "gih_pred": 57.33,
+   "gih_obs": 63.24,
+   "gih_n": 729,
+   "err_c": -5.69
+  },
+  {
+   "name": "Recursive Recruitment",
+   "rarity": "uncommon",
+   "colors": "UB",
+   "gih_pred": 56.92,
+   "gih_obs": 62.79,
+   "gih_n": 3770,
+   "err_c": -5.65
   }
  ]
 }

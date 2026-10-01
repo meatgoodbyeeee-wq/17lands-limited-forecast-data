@@ -16,7 +16,7 @@ jobs:
       - name: Fetch card and colour ratings (one request each)
         run: |
           set -e
-          END=$(date -u +%Y-%m-%d)
+          END=$(date -u -d tomorrow +%Y-%m-%d)
           mkdir -p research/fra_early/raw
           UA="sakiyomi-research/1.0 (github.com/meatgoodbyeeee-wq)"
           curl -fsS -A "$UA" "https://www.17lands.com/card_ratings/data?expansion=FRA&format=PremierDraft&start_date=2026-09-29&end_date=${END}" -o research/fra_early/raw/card_ratings.json
