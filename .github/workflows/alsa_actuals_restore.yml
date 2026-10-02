@@ -40,6 +40,9 @@ jobs:
       - run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add research/alsa_feature/data
-          git commit -m 'Restore dev ALSA actuals (21 research sets)'
-          git push origin HEAD:research/alsa-feature
+          git status --short | head
+          git check-ignore -v research/alsa_feature/data/dev_alsa_actuals.csv || true
+          git add -f research/alsa_feature/data 2>&1 || true
+          git commit -m 'Restore dev ALSA actuals (21 research sets)' 2>&1 || true
+          git log --oneline -2
+          git push origin HEAD:research/alsa-feature 2>&1 || echo PUSHFAIL
