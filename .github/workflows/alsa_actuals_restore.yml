@@ -18,7 +18,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh run download 35835189360 -n fin-blind-dev-feature-table -D cached
       - run: |
-          python3 - <<'PY' 2>&1 | tail -20
+          python3 - <<'PY' > py.txt 2>&1 || true
           import os, traceback
           import pandas as pd
           try:
@@ -36,7 +36,8 @@ jobs:
               traceback.print_exc()
               raise
           PY
-          ls -la cached research/alsa_feature/data || true
+          echo "::warning::PY $(tail -12 py.txt | tr '\n' ' ' | cut -c1-900)"
+          echo "::warning::LS $(ls cached | tr '\n' ' ')"
       - run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
