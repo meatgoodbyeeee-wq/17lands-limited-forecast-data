@@ -1,0 +1,51 @@
+name: Restore dev ALSA actuals from stored artifact
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/alsa-feature]
+    paths: ['.github/workflows/alsa_actuals_restore.yml']
+permissions:
+  contents: write
+  actions: read
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/alsa-feature
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 35835189360 -n fin-blind-dev-feature-table -D cached
+      - run: |
+          pip install -q pandas
+          python3 - <<'PY' > py.txt 2>&1 || true
+          import os, traceback
+          import pandas as pd
+          try:
+              y = pd.read_csv("cached/dev_alsa_actuals.csv")
+              print("cols", list(y.columns), y.shape)
+              assert "FIN" not in set(y["set"].astype(str).str.upper())
+              y = y[y["set"] != "MH3"]
+              print(y.groupby("set").size().to_dict())
+              os.makedirs("research/alsa_feature/data", exist_ok=True)
+              y.to_csv("research/alsa_feature/data/dev_alsa_actuals.csv", index=False)
+              f = pd.read_csv("cached/dev_feature_table.csv")
+              g = pd.read_csv("data/features/dev_feature_22.csv.gz")
+              print("feature cols equal:", list(f.columns) == list(g.columns), f.shape, g.shape)
+          except Exception:
+              traceback.print_exc()
+              raise
+          PY
+          echo "::warning::PY $(tail -12 py.txt | tr '\n' ' ' | cut -c1-900)"
+          echo "::warning::LS $(ls cached | tr '\n' ' ')"
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git status --short | head
+          git check-ignore -v research/alsa_feature/data/dev_alsa_actuals.csv || true
+          git add -f research/alsa_feature/data 2>&1 || true
+          git commit -m 'Restore dev ALSA actuals (21 research sets)' 2>&1 || true
+          git log --oneline -2
+          git push origin HEAD:research/alsa-feature > push.txt 2>&1 || echo "::error::PUSHFAIL $(tr '\n' ' ' < push.txt | cut -c1-600)"
+          git status --short | head -5 > st.txt; echo "::warning::STATUS $(tr '\n' ' ' < st.txt) LOG $(git log --oneline -2 | tr '\n' ' ')"
