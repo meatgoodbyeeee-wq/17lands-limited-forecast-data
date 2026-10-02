@@ -21,13 +21,14 @@ def norm(s):
 
 def aggregate(s, path, days, chunksize):
     h = header(path)
-    for k in ("draft_time", "won", "main_colors", "splash_colors", "draft_id"):
+    for k in ("draft_time", "won", "main_colors", "draft_id"):
         if k not in h:
-            raise RuntimeError(f"missing {k}")
+            raise RuntimeError(f"missing {k}; header starts {h[:15]}")
+    has_splash = "splash_colors" in h
     cards = sorted({col[len(p):] for col in h for p in PREFIXES if col.startswith(p)})
     pos = {c: i for i, c in enumerate(cards)}
     percol = {p: [(f"{p}{c}", pos[c]) for c in cards if f"{p}{c}" in h] for p in PREFIXES}
-    usecols = ["draft_time", "won", "main_colors", "splash_colors", "draft_id"] + [c for p in PREFIXES for c, _ in percol[p]]
+    usecols = ["draft_time", "won", "main_colors", "draft_id"] + (["splash_colors"] if has_splash else []) + [c for p in PREFIXES for c, _ in percol[p]]
     start, end = first_window(path, days, chunksize)
     G = np.zeros((len(GROUPS), len(cards)), np.int64)
     W = np.zeros((len(GROUPS), len(cards)), np.int64)
@@ -40,7 +41,7 @@ def aggregate(s, path, days, chunksize):
         c = c.loc[m]
         won = c["won"].astype(str).str.strip().str.lower().isin(["true", "1", "1.0"]).to_numpy()
         main = c["main_colors"].map(norm).to_numpy()
-        spl = (c["splash_colors"].map(norm) != "").to_numpy()
+        spl = (c["splash_colors"].map(norm) != "").to_numpy() if has_splash else np.zeros(len(c), bool)
         half = (pd.util.hash_pandas_object(c["draft_id"].astype(str), index=False).to_numpy() % 2).astype(int)
         key = pd.DataFrame({"main": main, "splash": spl, "half": half, "won": won})
         for (mc, sp, hf), g in key.groupby(["main", "splash", "half"]):
@@ -69,7 +70,8 @@ def aggregate(s, path, days, chunksize):
             r[f"{g}_games"] = int(G[k, i]); r[f"{g}_wins"] = int(W[k, i])
         rows.append(r)
     man = {"set": s, "source_url": url_for(s), "sha256": sha256_file(path), "window_start": start.isoformat(),
-           "window_end": end.isoformat(), "games": int(pairs["games"].sum()), "cards": len(rows)}
+           "window_end": end.isoformat(), "games": int(pairs["games"].sum()), "cards": len(rows),
+           "has_splash_column": has_splash}
     return pairs, pd.DataFrame(rows), man
 
 

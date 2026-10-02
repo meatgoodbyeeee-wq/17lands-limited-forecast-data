@@ -1,6 +1,11 @@
 name: Deck pair data (28 sets)
 on:
   workflow_dispatch:
+    inputs:
+      sets:
+        description: JSON list of sets
+        required: false
+        default: ''
   push:
     branches: [research/deck-pair]
     paths:
@@ -16,8 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        set: [KHM, STX, AFR, MID, VOW, NEO, SNC, DMU, BRO, ONE, MOM, LTR, WOE, LCI, MKM, OTJ, BLB, DSK, FDN, DFT, TDM,
-              EOE, TLA, ECL, TMT, SOS, MSH, HOB]
+        set: ${{ fromJSON(inputs.sets != '' && inputs.sets || '["KHM","STX","AFR","MID","VOW","NEO","SNC","DMU","BRO","ONE","MOM","LTR","WOE","LCI","MKM","OTJ","BLB","DSK","FDN","DFT","TDM","EOE","TLA","ECL","TMT","SOS","MSH","HOB"]') }}
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
