@@ -54,10 +54,13 @@ def fits(colors, pair):
 def main():
     cards = load_cards()
     sets = sorted(cards['set'].unique())
+    # KHM and STX public files have no main_colors/splash_colors column, so they cannot give pair WRs
     missing = [s for s in sets if not (DATA / f'{s}_pairs.csv').exists()]
-    assert not missing, missing
+    assert set(missing) <= {'KHM', 'STX'}, missing
+    cards = cards[~cards['set'].isin(missing)]
+    sets = [s for s in sets if s not in missing]
     pt = pair_table(sets)
-    res = {'sets': len(sets)}
+    res = {'sets': len(sets), 'excluded_no_deck_colours': missing}
 
     # M1
     se = np.sqrt(0.25 / pt['games']) * 100
