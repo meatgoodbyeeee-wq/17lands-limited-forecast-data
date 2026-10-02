@@ -1,0 +1,70 @@
+name: Deck pair data (28 sets)
+on:
+  workflow_dispatch:
+    inputs:
+      sets:
+        description: JSON list of sets
+        required: false
+        default: ''
+  push:
+    branches: [research/deck-pair]
+    paths:
+      - scripts/deck_pair_aggregate.py
+      - .github/workflows/deck_pair_data.yml
+permissions:
+  contents: write
+concurrency:
+  group: deck-pair-data
+  cancel-in-progress: false
+jobs:
+  aggregate:
+    strategy:
+      fail-fast: false
+      matrix:
+        set: ${{ fromJSON(inputs.sets != '' && inputs.sets || '["KHM","STX","AFR","MID","VOW","NEO","SNC","DMU","BRO","ONE","MOM","LTR","WOE","LCI","MKM","OTJ","BLB","DSK","FDN","DFT","TDM","EOE","TLA","ECL","TMT","SOS","MSH","HOB"]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - run: |
+          python scripts/deck_pair_aggregate.py --set ${{ matrix.set }} --out-dir out 2> err.txt || { echo "::error::$(tail -c 900 err.txt | tr '\n' ' ')"; exit 1; }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deckpair-${{ matrix.set }}
+          path: |
+            out/${{ matrix.set }}_pairs.csv
+            out/${{ matrix.set }}_cardpair.csv.gz
+            out/${{ matrix.set }}_pair_manifest.json
+          retention-days: 30
+  collect:
+    needs: aggregate
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/deck-pair
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: deckpair-*
+          merge-multiple: true
+          path: research/deck_pair/data
+      - name: Commit data to the research branch
+        run: |
+          ls -la research/deck_pair/data
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/deck_pair/data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Deck pair aggregates (28 sets)'
+          git pull --rebase origin research/deck-pair
+          git push origin HEAD:research/deck-pair
