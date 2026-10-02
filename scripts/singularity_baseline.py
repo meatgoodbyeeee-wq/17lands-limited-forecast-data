@@ -87,7 +87,7 @@ def norm_series(s):
 
 def pass1(path, header, chunksize):
     cols = [c for c in P1_COLS if c in header]
-    for need in ("draft_time", "won", "num_turns", "main_colors"):
+    for need in ("draft_time", "won", "main_colors"):
         if need not in cols:
             raise RuntimeError(f"required column missing: {need}")
     flags = {c: (c in header) for c in P1_COLS}
@@ -108,7 +108,10 @@ def pass1(path, header, chunksize):
             onp = c["on_play"].str.strip().str.lower().isin(TRUE).astype(np.int64)
         else:
             onp = pd.Series(0, index=c.index, dtype=np.int64)
-        turns = pd.to_numeric(c["num_turns"], errors="coerce")
+        if flags["num_turns"]:
+            turns = pd.to_numeric(c["num_turns"], errors="coerce")
+        else:
+            turns = pd.Series(np.nan, index=c.index)
         tn = turns.notna().astype(np.int64)
         t = turns.fillna(0.0)
         if flags["num_mulligans"]:
@@ -289,6 +292,11 @@ def main():
         return
     try:
         run(s, raw, a, a.out_dir)
+    except Exception:
+        import traceback
+        (a.out_dir / f"{s}_sets.json").write_text(json.dumps({"set": s, "status": "error",
+                                                              "error": traceback.format_exc()[-3000:]}))
+        raise
     finally:
         raw.unlink(missing_ok=True)
 
