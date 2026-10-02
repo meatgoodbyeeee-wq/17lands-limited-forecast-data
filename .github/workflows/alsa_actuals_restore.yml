@@ -1,0 +1,39 @@
+name: Restore dev ALSA actuals from stored artifact
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/alsa-feature]
+    paths: ['.github/workflows/alsa_actuals_restore.yml']
+permissions:
+  contents: write
+  actions: read
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/alsa-feature
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 35835189360 -n fin-blind-dev-feature-table -D cached
+      - run: |
+          python3 - <<'PY'
+          import pandas as pd
+          y = pd.read_csv("cached/dev_alsa_actuals.csv")
+          assert "FIN" not in set(y["set"].astype(str).str.upper())
+          y = y[y["set"] != "MH3"]
+          print(y.groupby("set").size().to_dict())
+          import os
+          os.makedirs("research/alsa_feature/data", exist_ok=True)
+          y.to_csv("research/alsa_feature/data/dev_alsa_actuals.csv", index=False)
+          f = pd.read_csv("cached/dev_feature_table.csv")
+          g = pd.read_csv("data/features/dev_feature_22.csv.gz")
+          print("feature table cols equal:", list(f.columns) == list(g.columns), f.shape, g.shape)
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/alsa_feature/data
+          git commit -m 'Restore dev ALSA actuals (21 research sets)'
+          git push origin HEAD:research/alsa-feature
