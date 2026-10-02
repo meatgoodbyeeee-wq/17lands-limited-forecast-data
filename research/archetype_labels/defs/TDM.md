@@ -1,0 +1,6 @@
+WBG Abzan - Endure/+1/+1 counters and Spirit tokens, counter payoffs (Stalwart Successor, Felothar), midrange value; Hollowmurk/Barrensteppe Siege Abzan modes (https://draftsim.com/mtg-tdm-draft-guide/)
+WUR Jeskai - Flurry (second spell each turn), prowess and noncreature/cheap spells, tempo aggro-midrange with Monk tokens (https://draftsim.com/mtg-tdm-draft-guide/)
+UBG Sultai - Graveyard value: renew, surveil/mill, cards leaving graveyard payoffs, grindy midrange (https://draftsim.com/mtg-tdm-draft-guide/)
+WBR Mardu - Mobilize Warrior tokens and aggressive attacking, go-wide with reach (https://draftsim.com/mtg-tdm-draft-guide/)
+URG Temur - Big creatures (power 4+), ramp, Dragons/stompy with harmonize; 4-5 colour Dragon piles (https://draftsim.com/mtg-tdm-draft-guide/)
+(Note: all five are three-colour clans; Draftsim also mentions two-colour aggro decks BR/RW/WB/GB/URB but they are not official set archetypes and are not used.)

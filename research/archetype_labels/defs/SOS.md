@@ -1,0 +1,5 @@
+WR Lorehold - Flashback/graveyard: cast spells from graveyard, Spirit tokens, effects when cards leave your graveyard (https://magic.wizards.com/en/news/feature/secrets-of-strixhaven-prerelease-guide ; https://draftsim.com/mtg-sos-draft-guide/)
+WB Silverquill - Repartee aggro: bonuses when you cast an instant/sorcery that targets a creature; tricks and removal (https://magic.wizards.com/en/news/feature/secrets-of-strixhaven-prerelease-guide)
+UR Prismari - Opus spellcasting: instants/sorceries with bonus when 5+ mana spent; big spells, tempo/control (https://magic.wizards.com/en/news/feature/secrets-of-strixhaven-prerelease-guide)
+UG Quandrix - Increment: +1/+1 counters when you cast spells with mana value above power/toughness; Fractals, ramp (https://magic.wizards.com/en/news/feature/secrets-of-strixhaven-prerelease-guide)
+BG Witherbloom - Infusion lifegain: payoffs if you gained life this turn, Pest tokens (https://magic.wizards.com/en/news/feature/secrets-of-strixhaven-prerelease-guide)
