@@ -30,7 +30,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install pandas numpy
-      - run: python scripts/deck_pair_aggregate.py --set ${{ matrix.set }} --out-dir out
+      - run: |
+          python scripts/deck_pair_aggregate.py --set ${{ matrix.set }} --out-dir out 2> err.txt || { echo "::error::$(tail -c 900 err.txt | tr '\n' ' ')"; exit 1; }
       - uses: actions/upload-artifact@v4
         with:
           name: deckpair-${{ matrix.set }}

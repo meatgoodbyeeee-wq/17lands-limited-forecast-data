@@ -86,7 +86,14 @@ def main():
     WR = wrc.loc[d['set']].values / 100
     sh_a = d[[f'{p}_games' for p in PAIRS]].fillna(0).values.astype(float)
     sh_a = sh_a / np.maximum(sh_a.sum(1, keepdims=True), 1)
-    sh_b = np.array([[1.0 if (fits(c, p) if c else True) else 0.0 for p in PAIRS] for c in d['colors']])
+    def share_b(c):
+        if not c:
+            return [1.0] * len(PAIRS)
+        w = [1.0 if fits(c, p) else 0.0 for p in PAIRS]
+        if sum(w) == 0:  # three or more colours: the pairs inside the card's colours
+            w = [1.0 if all(x in c for x in p) else 0.0 for p in PAIRS]
+        return w
+    sh_b = np.array([share_b(c) for c in d['colors']])
     sh_b = sh_b / sh_b.sum(1, keepdims=True)
     d['b_A'] = (sh_a * WR).sum(1)
     d['b_B'] = (sh_b * WR).sum(1)
