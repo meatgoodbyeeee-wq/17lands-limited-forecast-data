@@ -1,0 +1,5 @@
+WU Humans (Draw Two) - Recruit (discard nonland cards to make creature tokens) and draw-matters payoffs like Bard the Bowman; Humans (https://magic.wizards.com/en/news/feature/the-hobbit-prerelease-guide ; https://draftsim.com/mtg-hob-draft-archetypes/)
+BR Goblins (Amass) - Amass Goblins makes growing Army tokens; sacrifice/drain and Goblin payoffs (https://magic.wizards.com/en/news/feature/the-hobbit-prerelease-guide ; https://draftsim.com/mtg-hob-draft-archetypes/)
+BG Wolves (Ferocious) - Ramp into creatures with power 4 or greater; ferocious payoffs, Wolves (https://magic.wizards.com/en/news/feature/the-hobbit-prerelease-guide ; https://draftsim.com/mtg-hob-draft-archetypes/)
+RW Dwarves (Storied) - Storied: control three+ artifacts/legendaries/Sagas for an enduring story; legendary Dwarves (https://magic.wizards.com/en/news/feature/the-hobbit-prerelease-guide ; https://draftsim.com/mtg-hob-draft-archetypes/)
+GU Elves (Landfall) - Landfall triggers, Elves, and creature disruption building to big threats (https://magic.wizards.com/en/news/feature/the-hobbit-prerelease-guide ; https://draftsim.com/mtg-hob-draft-archetypes/)
