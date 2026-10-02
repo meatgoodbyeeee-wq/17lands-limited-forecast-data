@@ -45,4 +45,5 @@ jobs:
           git add -f research/alsa_feature/data 2>&1 || true
           git commit -m 'Restore dev ALSA actuals (21 research sets)' 2>&1 || true
           git log --oneline -2
-          git push origin HEAD:research/alsa-feature 2>&1 || echo PUSHFAIL
+          git push origin HEAD:research/alsa-feature > push.txt 2>&1 || echo "::error::PUSHFAIL $(tr '\n' ' ' < push.txt | cut -c1-600)"
+          git status --short | head -5 > st.txt; echo "::warning::STATUS $(tr '\n' ' ' < st.txt) LOG $(git log --oneline -2 | tr '\n' ' ')"
