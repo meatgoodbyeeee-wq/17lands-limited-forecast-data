@@ -12,6 +12,7 @@ Data status: `live/fra-public-game.json`, updated daily by `.github/workflows/fr
 | 4 | Colour-hoser mixture (5 hosers) | branch `research/hoser-metrics`: `research/hoser_mixture/fra_frozen.csv` (`adjusted` vs `published`) | `published` | Per-card comparison only; Rule H already failed | `research/hoser_mixture/RESULTS.md` on that branch |
 | 5 | Production forecast itself | Pages `data/adopted-gih-fra.json.gz` (`gih-c3-28set-20260929`) and range `data/gih-range-fra.json` | – | Report MAE, Spearman, 80% range coverage | Pages repo |
 | 6 | **C4 finer card effects (Rule F passed on 28 sets)** | `research/c4_fine_effects/fra_frozen_predictions.csv` (sha256 in the `.json`), columns `pred_B` vs `pred_A` (= production) | `pred_A` | B beats A on MAE and within-set Spearman (indicative, one set) | `research/c4_fine_effects/RESULTS.md` |
+| 7 | **C5 atomic effect tags (Rule F5 passed on 28 sets)** | `research/c5_atomic_effects/fra_frozen_predictions.csv` (sha256 in the `.json`), columns `pred_B5` vs `pred_B` and `pred_A` | `pred_B`, `pred_A` | B5 beats B and A on MAE and within-set Spearman (indicative, one set) | `research/c5_atomic_effects/RESULTS.md` |
 
 Case 2 sha256 at freeze: `9d1d0e692764f91f353913b775647cceb4db881c389a5e8f19f9cfdfd65d309b`.
 
