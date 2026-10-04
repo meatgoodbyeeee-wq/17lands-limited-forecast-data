@@ -272,24 +272,28 @@ def describe():
     d = o.merge(f, on='key', how='left').dropna(subset=[f'c5_{TAGS[0]}'])
     P = (d[[f'c5_{t}' for t in TAGS]].to_numpy() > 0)
     r = d['res'].to_numpy()
+    r0 = float(r.mean())
+    r = r - r0   # centred on the overall mean residual
     sd = float(r.std())
     S = matrix(PAIRS)
     rows = []
     for i in range(len(TAGS)):
         for j in range(i + 1, len(TAGS)):
             m = P[:, i] & P[:, j]
-            if m.sum() >= 30:
+            if m.sum() >= 1:
                 rows.append({'a': TAGS[i], 'b': TAGS[j], 'n': int(m.sum()), 'weight': int(S[i, j]),
                              'mean_res_pp': float(r[m].mean()), 'z': float(r[m].mean() / (sd / np.sqrt(m.sum())))})
-    t = pd.DataFrame(rows)
+    t_all = pd.DataFrame(rows)
+    t = t_all[t_all.n >= 30]
     sm = {}
     for name, g in (('positive', t[t.weight > 0]), ('negative', t[t.weight < 0]), ('unlisted', t[t.weight == 0])):
         sm[name] = {'pairs': int(len(g)), 'mean_res_pp_weighted': float(np.average(g['mean_res_pp'], weights=g['n'])) if len(g) else None,
                     'share_pairs_res_gt0': float((g['mean_res_pp'] > 0).mean()) if len(g) else None}
-    named = t[t.apply(lambda x: (x.a, x.b) in {('DT', 'FS'), ('DT', 'MN'), ('LL', 'FL'), ('LL', 'MN'), ('FL', 'EQ'), ('TK', 'AN'), ('RM', 'SK'), ('RC', 'SA'), ('SW', 'TK')}, axis=1)]
-    out = {'residual_sd_pp': sd, 'n_cards': int(len(d)), 'summary': sm, 'named': named.to_dict('records'),
+    NAMED = {frozenset(p) for p in [('DT', 'FS'), ('DT', 'MN'), ('LL', 'FL'), ('LL', 'MN'), ('FL', 'EQ'), ('TK', 'AN'), ('RM', 'SK'), ('RC', 'SA'), ('SW', 'TK'), ('SW', 'PC'), ('CS', 'HS')]}
+    named = t_all[t_all.apply(lambda x: frozenset((x.a, x.b)) in NAMED, axis=1)]
+    out = {'overall_mean_residual_pp': r0, 'residual_sd_pp': sd, 'n_cards': int(len(d)), 'summary': sm, 'named': named.to_dict('records'),
            'top5_positive_listed': t[t.weight > 0].nlargest(5, 'z').to_dict('records'), 'top5_negative_listed': t[t.weight < 0].nsmallest(5, 'z').to_dict('records')}
-    t.to_csv(HERE / 'pair_residuals.csv', index=False)
+    t_all.to_csv(HERE / 'pair_residuals.csv', index=False)
     json.dump(out, open(HERE / 'describe.json', 'w'), indent=1)
     print(json.dumps(out, indent=1))
 
