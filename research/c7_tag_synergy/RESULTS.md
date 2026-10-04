@@ -16,6 +16,6 @@ Descriptive check (not used by any model): for the 213 tag pairs with ≥ 30 car
 
 Reading
 - Direction of the examples is mostly right (positive residuals for flying + lifelink etc.), but B5 already captures most of it, and the leftover is small and of the same size for pairs the table does not list.
-- Good-combination cards are few: only about half of the cards carry any listed pair and most carry one; the model has little data on specific combinations, so a hand-written table cannot add much beyond the tags themselves.
+- Good-combination cards are few: only 32% of cards carry any listed good pair and 12% carry a combined weight of 2 or more; the model has little data on specific combinations, so a hand-written table cannot add much beyond the tags themselves.
 - Not tested: pair effects learned from data (1,653 possible pairs on ~7,000 cards would need strong shrinkage), and synergy at the deck level (colour-pair strength), where card tags have not helped either.
 - Pages and production unchanged; B5 stays the best card model; nothing new frozen for FRA.
