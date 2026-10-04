@@ -13,7 +13,7 @@ These are keyword-level facts in the rules text, so they are set by fixed text r
 ## Arms (28 sets, leave one set out, production model, seeds 20260922–24)
 - A production (2.392 pp), B = A + C4 (2.353), B5 = A + C4 + C5 (2.292).
 - **B6 = B5 + 16 gap tags.** Candidate for the decision is B6 vs B5.
-- Reported only: A + C5 + gap tags without C4; B5 + gap tags with at most the 8 tags whose prevalence is ≥ 1%.
+- Reported only: A + C5 + gap tags without C4; B5 + gap tags with only the tags whose prevalence is ≥ 1% (10 of 16; the first draft said 8, a miscount corrected before any scoring).
 
 ## Rule F6 (B6 vs B5)
 Supported if (1) pooled MAE lower, (2) mean within-set Spearman higher, (3) lower MAE in ≥ 15 of 28 sets, (4) MAE gain > 0.01 pp. If not supported, B5 stays the best card model and the gap tags are not carried forward. If supported, freeze FRA predictions of B6 next to A, B, B5. Adoption is the user's decision.
