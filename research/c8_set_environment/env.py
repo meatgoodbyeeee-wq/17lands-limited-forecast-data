@@ -1,13 +1,13 @@
 """C8 step 2: card x set-environment features from the step-1 profiles (no AI, no outcomes).
 
   python3 env.py features      -> c8_features.csv.gz (real environment + wrong-environment control)
-  python3 env.py arm <B8|B8_removal|B8_combat|B8_wrongenv>
+  python3 env.py arm <B8|B8_removal|B8_combat|B8_perf|B8_wrongenv>
   python3 env.py evaluate
 
 Every other card of the same set is weighted by the expected number of copies a drafter sees per 3 packs
 (booster layout by rarity, as in C7c). The card itself is excluded from its own environment.
 """
-import glob, json, sys
+import glob, json, re, sys
 from pathlib import Path
 import numpy as np, pandas as pd
 
@@ -18,9 +18,12 @@ import c7c  # noqa: E402
 c5, e = c7c.c5, c7c.e
 
 FEAT = ['ans_w', 'ans_share', 'ans_cheap_share', 'reach_share', 'reach_threat_share',
-        'atk_survive', 'blk_kill', 'blk_survive', 'stat_rank_mv', 'set_removal_density']
+        'atk_survive', 'blk_kill', 'blk_survive', 'stat_rank_mv', 'set_removal_density',
+        'blockable_share', 'trick_flip', 'protect_env', 'token_sweep_risk', 'lifegain_env', 'aura_risk']
 REMOVAL_F = FEAT[:5] + ['set_removal_density']
-COMBAT_F = FEAT[5:9]
+COMBAT_F = FEAT[5:9] + ['blockable_share']
+PERF_F = ['trick_flip', 'protect_env', 'token_sweep_risk', 'lifegain_env', 'aura_risk']
+SINGLE_KINDS = {'dmg', 'destroy', 'exile', 'shrink', 'bite', 'pacify'}
 NA = -1.0
 KIND_BASE = {'dmg': 1.0, 'shrink': 1.0, 'destroy': 1.0, 'exile': 1.0, 'bite': 0.7, 'edict': 0.25, 'bounce': 0.25, 'pacify': 0.7, 'tap': 0.15}
 COLOR = {'white': 'W', 'blue': 'U', 'black': 'B', 'red': 'R', 'green': 'G'}
@@ -167,6 +170,40 @@ def set_features(g, w):
         si = recs[i]['power'] + recs[i]['toughness']
         so = np.array([recs[o]['power'] + recs[o]['toughness'] for o in same]); wo = w[same]
         out['stat_rank_mv'][i] = float(((so < si) * wo).sum() + 0.5 * ((so == si) * wo).sum()) / wo.sum()
+    # ---- performance x environment
+    def wmed(x, wt):
+        o = np.argsort(x); x, wt = x[o], wt[o]
+        c = np.cumsum(wt)
+        return float(x[np.searchsorted(c, c[-1] / 2)]) if c[-1] > 0 else float(np.median(x))
+    P = np.array([r['power'] if is_cr[k] else 0.0 for k, r in enumerate(recs)])
+    T = np.array([r['toughness'] if is_cr[k] else 0.0 for k, r in enumerate(recs)])
+    wc = w * is_cr
+    single = np.array([any(x['scope'] == 'single' and x['kind'] in SINGLE_KINDS for x in r['effs']) for r in recs])
+    sweep = np.array([any(x['scope'] != 'single' and x['kind'] in ('dmg', 'shrink', 'destroy', 'exile') for x in r['effs']) for r in recs])
+    for i in range(n):
+        r = recs[i]
+        mask = np.arange(n) != i
+        wcm = wc * mask
+        tot_c = wcm.sum()
+        if is_cr[i] and tot_c:
+            out['blockable_share'][i] = float(sum(wcm[o] for o in idx if o != i and can_block(r, recs[o])) / tot_c)
+        if (r['trick_p'] or r['trick_t']) and tot_c:
+            Pm, Tm = wmed(P[is_cr & mask], w[is_cr & mask]), wmed(T[is_cr & mask], w[is_cr & mask])
+            kill = ((T > Pm) & (T <= Pm + r['trick_p']) & is_cr & mask) * w
+            save = ((P >= Tm) & (P < Tm + r['trick_t']) & is_cr & mask) * w
+            out['trick_flip'][i] = float((kill.sum() + save.sum()) / tot_c)
+        sr = float((w * single * mask).sum())
+        if r['protect']:
+            out['protect_env'][i] = sr
+        if 'Aura' in r['type_line'] and re.search(r'enchant creature', str(r['btext']).lower()):
+            out['aura_risk'][i] = sr
+        if r['token_n']:
+            out['token_sweep_risk'][i] = float(r['token_n'] * (w * sweep * mask).sum())
+        if r['lifegain_n'] and tot_c:
+            cheap_cr = is_cr & mask & (np.array([x['mv'] for x in recs]) <= 3)
+            agg = float((w * cheap_cr * P).sum() / max((w * cheap_cr).sum(), 1e-9))
+            evas = float((wcm * np.array([x['kw_flying'] or x['kw_menace'] or x['kw_trample'] for x in recs])).sum() / tot_c)
+            out['lifegain_env'][i] = float(r['lifegain_n'] * (agg + evas))
     return pd.DataFrame(out, index=g.index)
 
 
@@ -225,7 +262,8 @@ def load_pool():
 def arm_nums(name, base, cols):
     b5 = c5.arm_nums('B5', base, cols)
     return {'B8': b5 + FEATC, 'B8_removal': b5 + [f'c8_{f}' for f in REMOVAL_F],
-            'B8_combat': b5 + [f'c8_{f}' for f in COMBAT_F], 'B8_wrongenv': b5 + FEATW}[name]
+            'B8_combat': b5 + [f'c8_{f}' for f in COMBAT_F], 'B8_perf': b5 + [f'c8_{f}' for f in PERF_F],
+            'B8_wrongenv': b5 + FEATW}[name]
 
 
 def run_arm(name):
@@ -268,6 +306,8 @@ def evaluate():
         m = arms['B5'].assign(k=key(arms['B5'])).merge(arms['B8'].assign(k=key(arms['B8']))[['k', 'pred']].rename(columns={'pred': 'p8'}), on='k')
         res['by_rarity'] = {int(q): {'B5': float((g['pred'] - g['actual_gih']).abs().mean() * 100),
                                      'B8': float((g['p8'] - g['actual_gih']).abs().mean() * 100)} for q, g in m.groupby('rarity_ord')}
+        rm = m[m['rarity_ord'] >= 2]
+        res['rare_mythic_mae'] = {'B5': float((rm['pred'] - rm['actual_gih']).abs().mean() * 100), 'B8': float((rm['p8'] - rm['actual_gih']).abs().mean() * 100)}
         res['per_set'] = {s: {'B5': per['B5'][s], 'B8': per['B8'][s]} for s in per['B8']}
     json.dump(res, open(HERE / 'result.json', 'w'), indent=1)
     print(json.dumps({k: v for k, v in res.items() if k != 'per_set'}, indent=1))
