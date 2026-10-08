@@ -169,8 +169,9 @@ def main():
     r = pd.read_csv(HERE / 'review_profiles.csv', encoding='utf-8-sig')
     r = r[[c for c in r.columns if c != 'その他の性能']]
     def summ(row):
-        return ' / '.join(f'{JA[k]}={row[k]}' if not isinstance(row[k], (int,)) or row[k] not in (0, 1) else JA[k]
-                          for k in PERF if row[k])
+        flags = {'loot', 'protect', 'counterspell', 'ramp', 'land_search', 'recur_hand', 'recur_bf', 'evasion_grant', 'mana_sink',
+                 'etb', 'dies_trigger', 'attack_trigger', 'enters_tapped', 'self_sacrifice', 'symmetric', 'cost_reduction', 'modal'}
+        return ' / '.join(JA[k] if k in flags else f'{JA[k]}={int(row[k])}' for k in PERF if row[k])
     r.insert(r.columns.get_loc('本文'), 'その他の性能', f.apply(summ, axis=1).to_numpy())
     r.to_csv(HERE / 'review_profiles.csv', index=False, encoding='utf-8-sig')
     for k, v in cov.items():
