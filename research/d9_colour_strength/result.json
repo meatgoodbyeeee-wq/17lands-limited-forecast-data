@@ -1,0 +1,85 @@
+{
+ "F0": {
+  "spearman_mean": 0.3503342088509726,
+  "mae_pp": 1.7788665384615383,
+  "sets_better_than_F0": 0
+ },
+ "F0_B5": {
+  "spearman_mean": 0.37622377622377623,
+  "mae_pp": 1.768644396645834,
+  "sets_better_than_F0": 14
+ },
+ "D_B5": {
+  "spearman_mean": 0.45734265734265733,
+  "mae_pp": 1.711480921970198,
+  "sets_better_than_F0": 18
+ },
+ "P9": {
+  "spearman_mean": 0.4037296037296037,
+  "mae_pp": 1.7553739524910488,
+  "sets_better_than_F0": 14
+ },
+ "P_only": {
+  "spearman_mean": 0.17435897435897435,
+  "mae_pp": 1.9335815557272444,
+  "sets_better_than_F0": 8
+ },
+ "single_feature_spearman": {
+  "P1": 0.02191142191142191,
+  "P2": 0.10163170163170164,
+  "P3": 0.151810325239756,
+  "P4": 0.07402155013982639,
+  "P5": 0.15850815850815847,
+  "P6": 0.08484848484848485,
+  "P7": 0.1594405594405594
+ },
+ "rule_p9": {
+  "spearman_gt_M1": false,
+  "spearman_gt_D_B5": false,
+  "mae_lt_F0": true,
+  "sets": false,
+  "pass": false
+ },
+ "card": {
+  "B5": {
+   "pooled_mae_pp": 2.290861525245367,
+   "spearman_mean": 0.6068104580389115,
+   "rare_mythic_mae_pp": 2.995234228272916
+  },
+  "B9_P9": {
+   "pooled_mae_pp": 2.289984719814147,
+   "spearman_mean": 0.606386266099446,
+   "sets_lower_mae_vs_B5": 12,
+   "mae_gain_vs_B5_pp": 0.0008768054312198181,
+   "rare_mythic_mae_pp": 2.997256622760088
+  },
+  "B9_F0_B5s": {
+   "pooled_mae_pp": 2.291225832304288,
+   "spearman_mean": 0.607388080896089,
+   "sets_lower_mae_vs_B5": 14,
+   "mae_gain_vs_B5_pp": -0.0003643070589212094,
+   "rare_mythic_mae_pp": 2.9998265269085738
+  },
+  "B9_D_B5": {
+   "pooled_mae_pp": 2.2876189516274454,
+   "spearman_mean": 0.6082372647730669,
+   "sets_lower_mae_vs_B5": 13,
+   "mae_gain_vs_B5_pp": 0.0032425736179213516,
+   "rare_mythic_mae_pp": 2.9964192386972948
+  },
+  "B9_oracle": {
+   "pooled_mae_pp": 2.211426631130789,
+   "spearman_mean": 0.638191773290959,
+   "sets_lower_mae_vs_B5": 22,
+   "mae_gain_vs_B5_pp": 0.07943489411457794,
+   "rare_mythic_mae_pp": 2.9471925511104544
+  }
+ },
+ "rule_f9": {
+  "mae": true,
+  "spearman": false,
+  "sets": false,
+  "gain": false,
+  "pass": false
+ }
+}
