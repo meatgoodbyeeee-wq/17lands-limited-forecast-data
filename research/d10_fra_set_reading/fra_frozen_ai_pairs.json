@@ -1,0 +1,11 @@
+{
+ "rule": "D10: pred_AI (mean of 3 readers) vs pred_D_B5 and F0_A; within-set Spearman over 10 FRA pairs against the centred 28-day pair win rate; also the mean of within-set z-scores of pred_AI and pred_D_B5. Indicative.",
+ "agreement_spearman": {
+  "r1-r2": 0.927,
+  "r1-r3": 0.806,
+  "r2-r3": 0.782,
+  "AI_vs_D_B5": -0.006,
+  "AI_vs_F0_A": 0.115
+ },
+ "sha256": "03d987042cf32763095e0889b565fcbd267846eae39230e26c021dca0068dfbd"
+}
