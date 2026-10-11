@@ -91,12 +91,15 @@ def run_arm(name):
     nums = {'B12': b10 + C11 + [FLAG], 'shuffled': b10 + C11 + [FLAG], 'payonly': b10 + ['c11_pay', FLAG]}[name]
     seeds = SEEDS if name == 'B12' else SEEDS[:1]
     pred = np.full(len(pool), np.nan)
+    ck = HERE / f'ckpt_{name}'; ck.mkdir(exist_ok=True)
     for s in sorted(pool['set'].unique()):
         te = (pool['set'] == s).to_numpy(); ps = []
+        if (ck / f'{s}.npy').exists():
+            pred[te] = np.load(ck / f'{s}.npy'); print(name, s, 'cached', flush=True); continue
         for sd in seeds:
             c, t, x = e.parts(pool[~te], pool[te], nums, sd)
             ps.append(c + 1.25 * (.7 * t + .3 * x - c))
-        pred[te] = np.mean(ps, axis=0)
+        pred[te] = np.mean(ps, axis=0); np.save(ck / f'{s}.npy', pred[te])
         print(name, s, flush=True)
     pool[['set', 'name', 'rarity_ord', 'actual_gih']].assign(pred=pred).to_csv(HERE / f'oof_{name}.csv.gz', index=False, compression='gzip')
     json.dump({'n_features': len(nums), 'seeds': seeds}, open(HERE / f'meta_{name}.json', 'w'))
