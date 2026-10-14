@@ -1,0 +1,1050 @@
+SET LIST: 256 cards of one Limited set. Line format: #id | rarity (C common, U uncommon, R rare, M mythic) and freq = expected number of copies of that card a drafter sees in 3 packs | mana value and colours | type line | P/T, then rules text. Names are hidden (~ = the card itself).
+
+#13 | U freq 0.11 | MV 3 B | Creature — Spirit | 2/3
+Menace (This creature can't be blocked except by two or more creatures.)
+Whenever this creature attacks, return target creature card with mana value X or less from your graveyard to the battlefield, where X is the number of modified creatures you control. (Equipment, Auras you control, and counters are modifications.)
+
+#18 | U freq 0.11 | MV 3 W | Artifact — Vehicle | 3/4
+Whenever this Vehicle attacks, return target creature or Vehicle card with mana value 2 or less from your graveyard to your hand.
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#24 | U freq 0.11 | MV 5 G | Creature — Spirit | 4/4
+Reach
+When this creature enters, look at the top five cards of your library. You may reveal a creature or enchantment card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. If you didn't put a card into your hand this way, you gain 4 life.
+
+#40 | R freq 0.05 | MV 4 B | Legendary Creature — Ogre Demon | 4/4
+{B}, Sacrifice a creature: Scry 2.
+{2}{R}, {T}: Exile the top card of your library. You may play that card this turn. When you exile a nonland card this way, ~ deals damage equal to the exiled card's mana value to any target.
+
+#41 | U freq 0.11 | MV 3 colourless | Artifact Creature — Insect | 2/3
+When this creature enters, you gain 2 life.
+When this creature leaves the battlefield, draw a card.
+
+#52 | U freq 0.11 | MV 2 colourless | Artifact — Vehicle | 2/2
+Flash
+Flying
+When this Vehicle enters, tap up to one target creature.
+Crew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#57 | R freq 0.05 | MV 3 B | Sorcery
+Choose one. If you control an artifact and an enchantment as you cast this spell, you may choose both instead.
+• Exile target creature or planeswalker.
+• Return target creature or planeswalker card from your graveyard to your hand.
+
+#66 | C freq 0.26 | MV 4 U | Creature — Human Ninja | 2/2
+Ninjutsu {2}{U} ({2}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+When this creature enters, return up to one target creature to its owner's hand.
+
+#95 | R freq 0.05 | MV 5 G | Creature — Insect Ninja | 6/5
+Ninjutsu {3}{G} ({3}{G}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Whenever this creature deals combat damage to a player, return target permanent card from your graveyard to your hand.
+
+#97 | C freq 0.26 | MV 2 B | Creature — Human Ninja | 1/2
+Flying
+{3}{B}: This creature gets +2/+2 until end of turn.
+
+#128 | U freq 0.11 | MV 0 colourless | Land
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a Pilot or Vehicle spell.
+{3}, {T}: Target Vehicle becomes an artifact creature until end of turn.
+
+#150 | R freq 0.05 | MV 3 W | Artifact Creature — Equipment Kirin | 3/2
+Flying
+Equipped creature has flying and "You can't lose the game and your opponents can't win the game."
+Reconfigure {5} ({5}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#156 | U freq 0.11 | MV 2 UB | Creature — Rat Ninja | 2/2
+Ninjutsu {U}{B} ({U}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Ninjutsu abilities you activate cost {1} less to activate.
+Other Ninja and Rogue creatures you control get +1/+1.
+
+#183 | M freq 0.03 | MV 4 U | Legendary Planeswalker — Tezzeret
+The first activated ability of an artifact you activate each turn costs {2} less to activate.
++1: Draw two cards. Then discard two cards unless you discard an artifact card.
+−2: Target artifact becomes an artifact creature. If it isn't a Vehicle, it has base power and toughness 4/4.
+−6: You get an emblem with "Whenever an artifact you control becomes tapped, draw a card."
+
+#198 | R freq 0.05 | MV 4 W | Legendary Creature — Dragon Spirit | 3/3
+Flash
+Flying
+When ~ enters, another target permanent gains indestructible for as long as you control ~.
+{W}{U}{B}{R}{G}: ~ gets +5/+5 until end of turn.
+
+#208 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {G} or {U}.
+
+#232 | C freq 0.26 | MV 1 U | Instant
+Counter target noncreature spell unless its controller pays {2}.
+
+#244 | C freq 0.26 | MV 4 colourless | Artifact Creature — Construct | 2/4
+When this creature enters, for each kind of counter on target permanent, put another counter of that kind on it or remove one from it.
+
+#248 | C freq 0.26 | MV 3 B | Artifact Creature — Human Rogue | 1/4
+{T}: Create a Treasure token. Activate only if a creature died this turn. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#260 | U freq 0.11 | MV 1 R | Instant
+~ deals X damage to target creature or planeswalker. If you controlled a modified creature as you cast this spell, it deals X plus 2 damage instead. (Equipment, Auras you control, and counters are modifications.)
+
+#274 | C freq 0.26 | MV 1 U | Artifact
+{T}, Tap an untapped artifact or creature you control: Add {C}.
+Channel — {4}{U}, Discard this card: The owner of target nonland permanent puts it on their choice of the top or bottom of their library.
+
+#366 | C freq 0.26 | MV 2 W | Artifact — Equipment
+Whenever a Samurai or Warrior you control attacks alone, you may pay {1}. When you do, attach this Equipment to it.
+Equipped creature gets +2/+1.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)
+
+#464 | C freq 0.26 | MV 3 R | Creature — Human Samurai | 2/3
+Menace (This creature can't be blocked except by two or more creatures.)
+Whenever a Samurai or Warrior you control attacks alone, the next spell you cast this turn costs {1} less to cast.
+
+#490 | C freq 0.26 | MV 1 W | Instant
+Choose one —
+• Put a +1/+1 counter on target creature or Vehicle. Untap it.
+• Return target permanent you control to its owner's hand.
+
+#507 | U freq 0.11 | MV 1 R | Artifact Creature — Human Samurai | 2/2
+Haste
+At the beginning of your end step, return this creature to its owner's hand.
+Channel — {1}{R}, Discard this card: Draw a card.
+
+#542 | C freq 0.26 | MV 3 B | Artifact Creature — Equipment Insect | 2/2
+Whenever this creature or equipped creature attacks, it gets +2/+0 until end of turn.
+Reconfigure {2} ({2}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#555 | R freq 0.05 | MV 4 WR | Legendary Creature — Human Samurai | 3/3
+First strike
+Whenever a Samurai or Warrior you control attacks alone, untap it. If it's the first combat phase of the turn, there is an additional combat phase after this phase.
+
+#569 | U freq 0.11 | MV 3 BG | Enchantment Creature — Cat Beast | 2/1
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, return target permanent card from your graveyard to your hand.
+If this creature would die, exile it instead.
+
+#592 | R freq 0.05 | MV 3 U | Legendary Creature — Moonfolk Wizard | 2/3
+Whenever one or more noncreature permanents are returned to hand, draw a card. This ability triggers only once each turn.
+{X}{W}, Return a land you control to its owner's hand: Return target artifact or enchantment card with mana value X or less from your graveyard to the battlefield. Activate only as a sorcery.
+
+#625 | U freq 0.11 | MV 1 colourless | Artifact — Equipment
+{2}: Until end of turn, equipped creature gets +X/+0, where X is the number of times this ability has resolved this turn.
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+
+#628 | U freq 0.11 | MV 3 U | Artifact Creature — Equipment Octopus | 2/2
+Whenever this creature or equipped creature deals combat damage to a player, draw a card.
+Reconfigure {2} ({2}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#658 | U freq 0.11 | MV 2 G | Creature — Turtle Ninja | 1/3
+Ninjutsu {1}{G}
+This creature enters with a deathtouch counter on it.
+Whenever this creature deals combat damage to a player, you may remove a deathtouch counter from it. When you do, exile target artifact or enchantment that player controls.
+
+#688 | U freq 0.11 | MV 4 R | Legendary Creature — Human Samurai | 3/3
+Trample
+Whenever a Samurai or Warrior you control attacks alone, you may cast target artifact card from your graveyard this turn.
+
+#704 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {U} or {B}.
+
+#714 | C freq 0.26 | MV 3 R | Instant
+Creatures you control get +2/+0 until end of turn. If you control a modified creature, draw a card. (Equipment, Auras you control, and counters are modifications.)
+
+#744 | U freq 0.11 | MV 3 B | Sorcery
+All creatures get -2/-2 until end of turn. If a creature would die this turn, exile it instead.
+
+#776 | R freq 0.05 | MV 1 colourless | Legendary Artifact — Equipment
+Whenever equipped creature dies, exile it.
+Equipped creature gets +2/+0.
+As long as a card exiled with ~ has flying, equipped creature has flying. The same is true for first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, menace, protection, reach, trample, and vigilance.
+Equip {1}
+
+#790 | R freq 0.05 | MV 2 G | Creature — Spirit | 2/2
+Trample
+Whenever you cast an enchantment spell, put a +1/+1 counter on this creature.
+At the beginning of each end step, if an enchantment was put into your graveyard from the battlefield this turn, you may return this card from your graveyard to your hand.
+
+#820 | C freq 0.26 | MV 3 W | Enchantment — Aura
+Enchant permanent
+Enchanted permanent can't attack, block, or crew Vehicles. Its activated abilities can't be activated unless they're mana abilities.
+
+#842 | U freq 0.11 | MV 1 W | Artifact Creature — Fox Pilot | 2/1
+This creature crews Vehicles as though its power were 2 greater.
+
+#849 | C freq 0.26 | MV 4 W | Instant
+Choose one —
+• Exile target creature with power 4 or greater.
+• Exile target enchantment.
+
+#913 | U freq 0.11 | MV 3 U | Artifact Creature — Human Ninja | 2/4
+Ninjutsu {1}{U} ({1}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Whenever this creature deals combat damage to a player, you may put an artifact card with mana value less than or equal to that damage from your hand onto the battlefield.
+
+#916 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped. As it enters, choose a color.
+{T}: Add one mana of the chosen color.
+
+#940 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {R} or {W}.
+
+#993 | U freq 0.11 | MV 2 U | Instant
+Counter target creature spell. Put a +1/+1 counter on up to one target creature you control.
+
+#1005 | U freq 0.11 | MV 4 U | Creature — Human Ninja | 3/4
+As long as this creature is tapped, it's a Human Citizen with base power and toughness 1/1 and can't be blocked.
+{2}{U}: Untap this creature.
+
+#1020 | C freq 0.26 | MV 5 colourless | Artifact Creature — Construct | 3/2
+When this creature enters, you may search your library for an Aura or Shrine card, reveal it, put it into your hand, then shuffle.
+
+#1021 | U freq 0.11 | MV 4 W | Legendary Enchantment Creature — Shrine | 1/3
+Vigilance
+At the beginning of your end step, you may pay {1}. If you do, create a 1/1 colorless Spirit creature token for each Shrine you control.
+
+#1061 | R freq 0.05 | MV 3 WB | Legendary Creature — Rat Pilot | 4/3
+At the beginning of combat on your turn, return target Vehicle card from your graveyard to the battlefield. It gains haste. Return it to its owner's hand at the beginning of your next end step.
+
+#1075 | U freq 0.11 | MV 3 WU | Artifact — Vehicle | 3/4
+Whenever one or more Vehicles you control attack, create a 1/1 colorless Pilot creature token with "This token crews Vehicles as though its power were 2 greater."
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#1080 | C freq 0.26 | MV 2 colourless | Artifact Creature — Artificer | 1/3
+{T}: Add {C}. Spend this mana only to activate an ability or cast an artifact spell.
+
+#1106 | C freq 0.26 | MV 2 B | Artifact Creature — Insect | 1/1
+When this creature enters, each opponent discards a card.
+
+#1110 | M freq 0.03 | MV 3 G | Legendary Creature — Spirit | 3/3
+Reach
+Modified creatures you control have trample. (Equipment, Auras you control, and counters are modifications.)
+Whenever a modified creature you control deals combat damage to a player, search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
+
+#1111 | C freq 0.26 | MV 1 R | Artifact
+When this artifact enters or leaves the battlefield, exile the top card of your library. Until end of turn, you may play that card.
+{2}{R}, Sacrifice this artifact: Create a 2/2 white Samurai creature token with vigilance. Activate only as a sorcery.
+
+#1149 | C freq 0.26 | MV 2 G | Creature — Snake Ninja | 2/1
+Ninjutsu {1}{G} ({1}{G}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Whenever this creature deals combat damage to a player, put a +1/+1 counter on target creature you control that doesn't have a +1/+1 counter on it.
+
+#1153 | C freq 0.26 | MV 5 B | Creature — Spirit | 3/3
+When this creature enters, choose one —
+• Return up to one target Ninja or Rogue creature card from your graveyard to your hand.
+• Put target creature card from your graveyard on top of your library.
+
+#1157 | C freq 0.26 | MV 6 G | Enchantment Creature — Dog | 6/5
+Trample
+Channel — {2}{G}, Discard this card: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
+
+#1185 | R freq 0.05 | MV 0 colourless | Legendary Land
+{T}: Add {W}.
+Channel — {2}{W}, Discard this card: It deals 4 damage to target attacking or blocking creature. This ability costs {1} less to activate for each legendary creature you control.
+
+#1218 | U freq 0.11 | MV 2 G | Enchantment
+Landfall — Whenever a land you control enters, put a +1/+1 counter on target creature or Vehicle you control.
+Channel — {X}{G}{G}, Discard this card: Put X +1/+1 counters on target land you control. It becomes a 0/0 green Spirit creature with haste. It's still a land.
+
+#1231 | U freq 0.11 | MV 2 W | Sorcery
+Destroy up to one target artifact, enchantment, or tapped creature. Then if you control an artifact and an enchantment, create a 2/2 white Samurai creature token with vigilance.
+
+#1247 | C freq 0.26 | MV 2 R | Enchantment Creature — Goblin Warrior | 2/1
+Whenever a nontoken modified creature you control dies, create a 1/1 colorless Spirit creature token. (Equipment, Auras you control, and counters are modifications.)
+
+#1364 | C freq 0.26 | MV 2 R | Artifact Creature — Human Artificer | 2/2
+Whenever another artifact you control enters, this creature gets +1/+0 until end of turn.
+
+#1396 | M freq 0.03 | MV 5 UG | Legendary Planeswalker — Tamiyo
+Compleated ({G/U/P} can be paid with {G}, {U}, or 2 life. If life was paid, this planeswalker enters with two fewer loyalty counters.)
++1: Tap up to one target artifact or creature. It doesn't untap during its controller's next untap step.
+−X: Exile target nonland permanent card with mana value X from your graveyard. Create a token that's a copy of that card.
+−7: Create ~'s Notebook, a legendary colorless Book artifact token with "Spells you cast cost {2} less to cast" and "{T}: Draw a card."
+
+#1413 | R freq 0.05 | MV 5 U | Sorcery
+Gain control of target artifact or creature. Untap it.
+
+#1438 | C freq 0.26 | MV 3 G | Creature — Snake Samurai | 2/3
+This creature enters with a +1/+1 counter on it if you control a modified creature. (Equipment, Auras you control, and counters are modifications.)
+
+#1452 | C freq 0.26 | MV 3 B | Sorcery
+Target player discards two cards. Ninjas and Rogues you control gain menace until end of turn. (They can't be blocked except by two or more creatures.)
+
+#1473 | C freq 0.26 | MV 4 R | Enchantment — Aura
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets +2/+2 and has menace. (It can't be blocked except by two or more creatures.)
+When this Aura leaves the battlefield, create a 2/2 red Spirit creature token with menace.
+
+#1485 | U freq 0.11 | MV 7 UG | Enchantment Creature — Turtle | 6/5
+Flying, ward {2}
+Channel — {2}{G}, Discard this card: Return target card from your graveyard to your hand.
+Channel — {1}{U}, Discard this card: Return target creature to its owner's hand.
+
+#1544 | M freq 0.03 | MV 3 UB | Legendary Planeswalker — Kaito
+At the beginning of your end step, if ~ entered this turn, he phases out.
++1: Draw a card. Then discard a card unless you attacked this turn.
+−2: Create a 1/1 blue Ninja creature token with "This token can't be blocked."
+−7: You get an emblem with "Whenever a creature you control deals combat damage to a player, search your library for a blue or black creature card, put it onto the battlefield, then shuffle."
+
+#1547 | C freq 0.26 | MV 3 colourless | Artifact
+{T}: Add one mana of any color.
+{1}, {T}, Tap another untapped artifact you control: Draw a card, then discard a card.
+
+#1561 | C freq 0.26 | MV 3 B | Instant
+Choose one —
+• Target opponent exiles a creature they control.
+• Target opponent exiles an enchantment they control.
+
+#1627 | R freq 0.05 | MV 1 B | Instant
+As an additional cost to cast this spell, you may exile any number of black cards from your hand. This spell costs {2} less to cast for each card exiled this way.
+~ deals X damage to target creature or planeswalker and you gain X life.
+
+#1657 | C freq 0.26 | MV 3 W | Artifact — Vehicle | 3/2
+Flying
+Crew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#1727 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {W} or {B}.
+
+#1852 | U freq 0.11 | MV 2 B | Creature — Human Ninja | 2/1
+Ninjutsu {1}{B} ({1}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Whenever this creature deals combat damage to a player, you may discard a creature card. When you do, destroy target creature or planeswalker that player controls.
+
+#1884 | C freq 0.26 | MV 2 W | Instant
+~ deals 4 damage to target attacking or blocking creature.
+
+#1962 | C freq 0.26 | MV 2 U | Enchantment — Aura
+Flash
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets -3/-0 and loses flying.
+
+#1981 | C freq 0.26 | MV 2 G | Instant
+Target creature you control deals damage equal to its power to target creature or planeswalker you don't control.
+
+#2010 | C freq 0.26 | MV 2 W | Enchantment Creature — Dog | 1/1
+When this creature enters, draw a card.
+
+#2045 | C freq 0.26 | MV 4 W | Creature — Fox Samurai | 2/3
+When this creature enters or dies, put a +1/+1 counter on target creature or Vehicle you control.
+
+#2055 | C freq 0.26 | MV 2 R | Sorcery
+Destroy up to one target artifact. Put a +1/+1 counter on up to one target creature.
+
+#2095 | C freq 0.26 | MV 1 R | Instant
+Target creature gets +1/+0 and gains first strike until end of turn. (It deals combat damage before creatures without first strike.)
+
+#2098 | C freq 0.26 | MV 1 G | Enchantment Creature — Snake Ninja | 1/1
+Deathtouch
+
+#2120 | C freq 0.26 | MV 6 B | Creature — Ogre Ninja | 5/5
+Ninjutsu {3}{B} ({3}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+
+#2137 | C freq 0.26 | MV 2 U | Instant
+As an additional cost to cast this spell, tap an untapped artifact you control or pay {1}.
+Counter target spell.
+
+#2200 | R freq 0.05 | MV 1 U | Creature — Human Ninja | 1/1
+Ninjutsu {2}{U}{U} ({2}{U}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Flying
+When this creature enters from your hand, if it's attacking, create a token that's a copy of another target attacking creature. The token enters tapped and attacking.
+
+#2220 | R freq 0.05 | MV 4 WUR | Legendary Creature — Kirin Spirit | 4/4
+Flying, trample
+Spells you cast cost {1} less to cast for each target.
+Spells your opponents cast cost {1} more to cast for each target.
+
+#2222 | C freq 0.26 | MV 6 W | Sorcery
+Create three 2/2 white Samurai creature tokens with vigilance. Scry 3.
+
+#2261 | U freq 0.11 | MV 3 W | Legendary Creature — Human Samurai | 3/2
+Vigilance
+Whenever a Samurai or Warrior you control attacks alone, you may cast target enchantment card from your graveyard this turn.
+
+#2267 | U freq 0.11 | MV 3 G | Enchantment — Aura
+Enchant artifact or creature
+When this Aura enters, if enchanted permanent is a creature with the greatest power among creatures on the battlefield, draw a card.
+As long as enchanted permanent is a creature, it gets +2/+1.
+
+#2281 | C freq 0.26 | MV 2 colourless | Artifact
+When this artifact enters, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle.
+{2}, {T}, Sacrifice this artifact: Put a +1/+1 counter on target creature. Activate only as a sorcery.
+
+#2298 | R freq 0.05 | MV 2 WG | Legendary Creature — Human Druid | 1/3
+{T}: Put a lore counter on each Saga you control. Activate only as a sorcery.
+When ~ dies, choose up to one —
+• Return target Saga or enchantment creature you control to its owner's hand.
+• Return target Saga card from your graveyard to your hand.
+
+#2299 | U freq 0.11 | MV 3 G | Artifact Creature — Equipment Spider | 1/4
+Reach
+Equipped creature gets +1/+4 and has reach.
+Reconfigure {4} ({4}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#2307 | C freq 0.26 | MV 3 G | Enchantment Creature — Human Monk | 3/2
+{5}{G}: Put a +1/+1 counter on target enchantment creature. It gains trample until end of turn.
+
+#2419 | C freq 0.26 | MV 1 colourless | Artifact Creature — Construct | 0/0
+This creature enters with a +1/+1 counter on it.
+When this creature dies, if it had counters on it, put those counters on target creature you control.
+
+#2423 | U freq 0.11 | MV 2 B | Artifact Creature — Equipment Leech | 2/2
+Lifelink
+Equipped creature has lifelink.
+Reconfigure {4} ({4}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#2457 | U freq 0.11 | MV 5 U | Creature — Moonfolk Artificer | 3/4
+Flying
+Whenever a nontoken artifact you control enters, you may pay {1}{U}. If you do, create a token that's a copy of that artifact.
+
+#2466 | C freq 0.26 | MV 3 G | Instant
+Choose one or both —
+• Return target creature card from your graveyard to your hand.
+• Return target enchantment card from your graveyard to your hand.
+
+#2659 | C freq 0.26 | MV 4 B | Artifact Creature — Rat Ninja | 3/2
+Ninjutsu {1}{B} ({1}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Lifelink
+
+#2664 | C freq 0.26 | MV 3 U | Artifact Creature — Moonfolk Wizard | 1/4
+Flying
+Whenever this creature becomes tapped, scry 1.
+
+#2677 | R freq 0.05 | MV 4 colourless | Artifact — Vehicle | 5/5
+Menace
+When this Vehicle enters, it deals damage equal to twice the number of Vehicles you control to target creature or planeswalker an opponent controls.
+Crew 4
+
+#2689 | C freq 0.26 | MV 1 W | Sorcery
+Destroy target artifact with mana value 3 or less. You gain 3 life.
+
+#2750 | C freq 0.26 | MV 4 G | Enchantment — Aura
+Enchant land you control
+Enchanted land is a 4/5 green Spirit creature with vigilance and haste. It's still a land.
+If enchanted land would be destroyed, instead sacrifice this Aura and that land gains indestructible until end of turn.
+
+#2805 | C freq 0.26 | MV 2 colourless | Artifact Creature — Frog | 2/1
+When this creature leaves the battlefield, you may pay {2}. If you do, draw a card.
+
+#2814 | C freq 0.26 | MV 3 U | Creature — Moonfolk Samurai | 3/4
+Defender
+Modified creatures you control can attack as though they didn't have defender. (Equipment, Auras you control, and counters are modifications.)
+
+#2871 | U freq 0.11 | MV 3 G | Instant
+Choose one —
+• Put two +1/+1 counters on target creature you control.
+• Put two lore counters on target Saga you control. The next time one or more enchantment creatures you control enter this turn, each enters with two additional +1/+1 counters on it.
+
+#2882 | M freq 0.03 | MV 2 B | Artifact Creature — Equipment Demon | 3/1
+Menace
+Equipped creature has base power and toughness 5/5, has menace, and is a black Demon in addition to its other colors and types.
+Reconfigure {2}{B}{B} ({2}{B}{B}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#2892 | C freq 0.26 | MV 2 W | Creature — Fox Pilot | 2/2
+Whenever a Vehicle you control attacks, choose one —
+• That Vehicle gains first strike until end of turn.
+• Untap this creature.
+
+#2899 | R freq 0.05 | MV 2 WR | Sorcery
+Create X 2/2 white Samurai creature tokens with vigilance. They gain menace and haste until end of turn.
+Each opponent creates X minus one 2/2 white Samurai creature tokens with vigilance.
+
+#2900 | U freq 0.11 | MV 4 colourless | Artifact Creature — Construct | 2/1
+When this creature enters, put a +1/+1 counter on target creature you control.
+{4}, {T}: Draw a card. This ability costs {1} less to activate for each modified creature you control. (Equipment, Auras you control, and counters are modifications.)
+
+#2913 | U freq 0.11 | MV 3 U | Creature — Human Ninja | 3/2
+Ninjutsu {1}{U} ({1}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Whenever one or more Ninja or Rogue creatures you control deal combat damage to a player, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#2976 | R freq 0.05 | MV 3 UB | Legendary Creature — Human Ninja | 2/4
+Whenever you activate a ninjutsu ability, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order. This ability triggers only once each turn.
+Each creature card in your hand has ninjutsu {2}{U}{B}.
+
+#2997 | M freq 0.03 | MV 4 R | Legendary Creature — Dragon Spirit | 4/4
+Flying, trample
+When ~ dies, choose one —
+• Exile the top two cards of your library. Until the end of your next turn, you may play those cards.
+• Create three Treasure tokens.
+
+#3010 | C freq 0.26 | MV 3 G | Sorcery
+Exile target artifact or enchantment.
+
+#3021 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {B} or {R}.
+
+#3066 | R freq 0.05 | MV 2 U | Legendary Artifact Creature — Equipment Jellyfish | 0/4
+You may look at the top card of your library any time.
+As long as ~ is attached to a creature, you may play lands and cast spells from the top of your library.
+Reconfigure {2}{U} ({2}{U}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#3079 | M freq 0.03 | MV 4 W | Legendary Planeswalker
+Flash
+As long as ~ entered this turn, you may activate her loyalty abilities any time you could cast an instant.
++1: Put a +1/+1 counter on up to one target creature. It gains first strike until end of turn.
+−1: Create a 2/2 white Samurai creature token with vigilance.
+−2: Exile target tapped creature. You gain 2 life.
+
+#3083 | C freq 0.26 | MV 4 U | Enchantment — Aura
+Flash
+Enchant artifact, creature, or planeswalker
+When this Aura enters, tap enchanted permanent. If it's an Equipment, unattach it.
+Enchanted permanent loses all abilities and doesn't untap during its controller's untap step.
+
+#3092 | C freq 0.26 | MV 3 colourless | Artifact Creature — Drone | 1/1
+Flying
+When this creature enters, create a 1/1 colorless Spirit creature token.
+
+#3100 | U freq 0.11 | MV 1 R | Artifact Creature — Equipment Rabbit | 1/1
+Haste
+Equipped creature gets +1/+1 and has haste.
+Reconfigure {R} ({R}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#3108 | C freq 0.26 | MV 1 B | Enchantment — Aura
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets -1/-1 and can't block.
+Enchanted permanent has "At the beginning of your upkeep, you lose 1 life."
+
+#3132 | C freq 0.26 | MV 3 U | Instant
+Until end of turn, target creature or Vehicle becomes an artifact creature with base power and toughness 4/5.
+Draw a card.
+
+#3143 | C freq 0.26 | MV 3 W | Creature — Human Samurai | 3/2
+Whenever a Samurai or Warrior you control attacks alone, tap target creature you don't control.
+
+#3203 | R freq 0.05 | MV 6 W | Sorcery
+Choose one or more —
+• Exile all artifacts.
+• Exile all creatures.
+• Exile all enchantments.
+• Exile all graveyards.
+
+#3220 | C freq 0.26 | MV 7 U | Artifact Creature — Crab | 5/7
+Ward {3} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)
+Channel — {2}{U}, Discard this card: Counter target spell or ability unless its controller pays {3}.
+
+#3243 | C freq 0.26 | MV 4 U | Artifact — Vehicle | 6/6
+Crew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#3251 | C freq 0.26 | MV 4 B | Creature — Spirit | 3/4
+When this creature enters, if you control an artifact and an enchantment, you draw a card and you gain 1 life.
+
+#3253 | C freq 0.26 | MV 1 W | Instant
+Target creature gets +2/+2 until end of turn. If it's an enchantment creature or legendary creature, instead put a +1/+1 counter on it and it gets +1/+1 until end of turn.
+
+#3279 | U freq 0.11 | MV 3 R | Legendary Enchantment Creature — Shrine | 2/2
+First strike
+At the beginning of your end step, you may pay {1}. When you do, ~ deals X damage to target player or planeswalker, where X is the number of Shrines you control.
+
+#3295 | C freq 0.26 | MV 1 R | Enchantment — Aura
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets +2/+1.
+
+#3341 | R freq 0.05 | MV 3 B | Creature — Human Ninja | 3/3
+Ninjutsu {2}{B}
+This creature enters with a menace counter on it.
+Whenever this creature deals combat damage to a player, you may remove a menace counter from it. When you do, that player reveals their hand and you choose a nonland card from it. Exile that card.
+
+#3369 | M freq 0.03 | MV 5 W | Legendary Creature — Dragon Spirit | 5/4
+Flying, vigilance
+When ~ dies, choose one —
+• Look at the top seven cards of your library. Put any number of nonland permanent cards with total mana value 4 or less from among them onto the battlefield. Put the rest on the bottom of your library in a random order.
+• Put two +1/+1 counters on each permanent you control that's a creature or Vehicle.
+
+#3377 | U freq 0.11 | MV 3 RG | Enchantment
+This enchantment enters with four +1/+1 counters on it.
+Modified creatures you control have haste. (Equipment, Auras you control, and counters are modifications.)
+Remove a +1/+1 counter from this enchantment: Put a +1/+1 counter on target creature you control. Activate only as a sorcery and only once each turn.
+
+#3384 | C freq 0.26 | MV 2 B | Instant
+Until end of turn, target creature gets +1/+0 and gains lifelink and "When this creature dies, return it to the battlefield tapped under its owner's control."
+
+#3418 | C freq 0.26 | MV 2 U | Enchantment Creature — Human Ninja | 2/1
+Ninjutsu {U} ({U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Whenever this creature deals combat damage to a player, you may draw a card. If you do, discard a card unless this creature entered this turn.
+
+#3425 | R freq 0.05 | MV 1 R | Instant
+As an additional cost to cast this spell, you may exile any number of red cards from your hand. This spell costs {2} less to cast for each card exiled this way.
+Exile the top X cards of your library. You may play up to two of those cards until the end of your next turn.
+
+#3481 | U freq 0.11 | MV 4 W | Instant
+Up to two target creatures each get +2/+2 until end of turn. If you control an artifact and an enchantment, those creatures also gain lifelink until end of turn.
+
+#3491 | R freq 0.05 | MV 0 colourless | Legendary Land
+{T}: Add {G}.
+Channel — {1}{G}, Discard this card: Destroy target artifact, enchantment, or nonbasic land an opponent controls. That player may search their library for a land card with a basic land type, put it onto the battlefield, then shuffle. This ability costs {1} less to activate for each legendary creature you control.
+
+#3494 | C freq 0.26 | MV 3 R | Artifact Creature — Ogre Warrior | 4/1
+When this creature enters, target creature can't block this turn.
+
+#3532 | R freq 0.05 | MV 3 B | Legendary Creature — Human Ninja | 3/3
+Whenever you cast an enchantment spell, if you don't control a creature named Keimi, create Keimi, a legendary 3/3 black and green Frog creature token with "Whenever you cast an enchantment spell, each opponent loses 1 life and you gain 1 life."
+{1}{G/U}: ~ and target Frog you control can't be blocked this turn except by creatures with flying or reach.
+
+#3587 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {U} or {R}.
+
+#3639 | U freq 0.11 | MV 2 UR | Artifact Creature — Goblin Artificer | 2/2
+Flying
+Artifact spells you cast cost {1} less to cast.
+
+#3643 | U freq 0.11 | MV 4 U | Sorcery
+As an additional cost to cast this spell, sacrifice an artifact or creature.
+Search your library for an Equipment or Vehicle card, put that card onto the battlefield, then shuffle. If it has mana value less than the sacrificed permanent's mana value, scry 2.
+
+#3692 | R freq 0.05 | MV 2 R | Artifact Creature — Equipment Lizard | 1/1
+Double strike
+Equipped creature has double strike.
+Reconfigure {2} ({2}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#3696 | U freq 0.11 | MV 1 B | Enchantment Creature — Human Citizen | 1/2
+{1}{B}, Sacrifice an artifact or creature: Draw a card.
+
+#3791 | C freq 0.26 | MV 5 U | Artifact Creature — Moonfolk Rogue | 3/5
+Channel — {3}{U}, Discard this card: Tap up to two target creatures you don't control. Those creatures don't untap during their controller's next untap step.
+
+#3824 | U freq 0.11 | MV 2 U | Artifact — Vehicle | 3/4
+Flying
+Whenever this Vehicle becomes crewed, up to one other target Vehicle you control becomes an artifact creature until end of turn.
+Crew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#3880 | R freq 0.05 | MV 2 G | Legendary Enchantment Creature — Snake Druid | 1/3
+{1}{G}, {T}, Return ~ to its owner's hand: Reveal the top four cards of your library. You may put a land card from among them onto the battlefield tapped. Put the rest into your graveyard.
+Channel — {X}{X}{G}{G}, Discard this card: Return X target nonlegendary cards from your graveyard to your hand.
+
+#3921 | C freq 0.26 | MV 1 G | Instant
+Target permanent you control gains hexproof and indestructible until end of turn. You gain 2 life. (A permanent with hexproof and indestructible can't be the target of spells or abilities your opponents control. Damage and effects that say "destroy" don't destroy it.)
+
+#3967 | U freq 0.11 | MV 5 WR | Creature — Human Samurai | 4/3
+Haste
+Whenever a Samurai or Warrior you control attacks alone, it gets +1/+0 until end of turn for each Samurai or Warrior you control.
+
+#4064 | U freq 0.11 | MV 2 R | Artifact
+Whenever this artifact or another artifact you control enters, put a charge counter on this artifact.
+{4}, Sacrifice this artifact: It deals damage equal to the number of charge counters on it to target player and that much damage to up to one target creature.
+
+#4097 | R freq 0.05 | MV 1 U | Instant
+As an additional cost to cast this spell, you may exile any number of blue cards from your hand. This spell costs {2} less to cast for each card exiled this way.
+Up to X target creatures phase out. (While they're phased out, they're treated as though they don't exist. Each one phases in before its controller untaps during their next untap step.)
+
+#4113 | U freq 0.11 | MV 2 G | Sorcery
+Target creature you control deals damage equal to its power to each of X target creatures and/or planeswalkers.
+
+#4273 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {W} or {U}.
+
+#4279 | U freq 0.11 | MV 2 colourless | Artifact Creature — Construct | 1/1
+Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+Whenever you cast an artifact spell, put a +1/+1 counter on this creature.
+
+#4287 | U freq 0.11 | MV 3 B | Creature — Spirit | 2/2
+Flying
+When this creature enters, draw a card if a creature died this turn. Otherwise, each player sacrifices a creature of their choice.
+
+#4324 | R freq 0.05 | MV 2 G | Enchantment Creature — Snake Druid | 2/2
+Other enchantment creatures you control get +1/+1.
+{G}, {T}: Copy target activated or triggered ability you control from an enchantment source. You may choose new targets for the copy. (Mana abilities can't be targeted.)
+
+#4331 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {B} or {G}.
+
+#4389 | U freq 0.11 | MV 2 R | Creature — Human Samurai | 1/3
+This creature gets +2/+0 for each other modified creature you control. (Equipment, Auras you control, and counters are modifications.)
+
+#4417 | U freq 0.11 | MV 3 U | Instant
+Draw three cards. Then discard two cards unless you discard an artifact card.
+
+#4434 | C freq 0.26 | MV 2 G | Enchantment Creature — Snake Archer | 3/3
+Defender, reach
+Channel — {4}{G}, Discard this card: Destroy target creature with flying.
+
+#4483 | R freq 0.05 | MV 2 colourless | Artifact — Vehicle | 4/4
+This Vehicle enters with three charge counters on it.
+{2}, {T}, Remove a charge counter from this Vehicle: Draw a card. Then if there are no charge counters on this Vehicle, create a Treasure token and a 1/1 colorless Pilot creature token with "This token crews Vehicles as though its power were 2 greater."
+Crew 3
+
+#4499 | U freq 0.11 | MV 3 W | Enchantment
+When this enchantment enters, exile up to one target artifact or creature until this enchantment leaves the battlefield.
+Channel — {1}{W}, Discard this card: Exile target artifact or creature. Return it to the battlefield under its owner's control at the beginning of the next end step.
+
+#4554 | U freq 0.11 | MV 3 U | Instant
+Look at the top five cards of your library. Exile one of them face down and put the rest on the bottom of your library in a random order. You may cast the exiled card without paying its mana cost if it's an instant spell with mana value 2 or less. If you don't, put that card into your hand.
+
+#4577 | C freq 0.26 | MV 2 W | Enchantment Creature — Human Samurai | 2/1
+Whenever a Samurai or Warrior you control attacks alone, it gets +1/+1 until end of turn.
+
+#4583 | C freq 0.26 | MV 2 U | Instant
+Exile target artifact or creature, then return it to the battlefield under its owner's control with a +1/+1 counter on it.
+
+#4613 | R freq 0.05 | MV 2 B | Artifact — Vehicle | 4/3
+Whenever this Vehicle attacks, you may sacrifice another artifact or creature. If you do, put a +1/+1 counter on this Vehicle and it gains menace until end of turn.
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#4621 | U freq 0.11 | MV 2 U | Enchantment — Aura
+Enchant artifact or creature
+When this Aura enters, put X +1/+1 counters on enchanted permanent.
+As long as enchanted permanent is a creature, it has base power and toughness 1/1.
+
+#4635 | C freq 0.26 | MV 1 B | Instant
+Destroy target creature that was dealt damage this turn.
+Draw a card.
+
+#4667 | C freq 0.26 | MV 4 G | Creature — Spirit | 4/3
+When this creature enters, you may return an enchantment you control to its owner's hand. If you do, you gain 3 life.
+
+#4685 | C freq 0.26 | MV 6 R | Artifact Creature — Boar | 5/4
+Trample, haste
+Channel — {1}{R}, Discard this card: Target creature gets +3/+1 and gains trample until end of turn.
+
+#4703 | R freq 0.05 | MV 3 WR | Legendary Creature — Human Samurai | 3/3
+Haste
+Whenever ~ deals combat damage to a player, if it doesn't have an indestructible counter on it, put an indestructible counter on it.
+Whenever combat damage is dealt to you, remove an indestructible counter from ~.
+
+#4705 | U freq 0.11 | MV 8 colourless | Artifact Creature — Construct | 8/8
+This spell costs {1} less to cast for each modified creature you control. (Equipment, Auras you control, and counters are modifications.)
+Trample
+This creature has hexproof as long as it's untapped. (It can't be the target of spells or abilities your opponents control.)
+
+#4709 | U freq 0.11 | MV 2 W | Creature — Fox Samurai | 2/2
+Whenever a Samurai or Warrior you control attacks alone, it gains lifelink until end of turn.
+Sacrifice this creature: Another target creature you control gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#4764 | R freq 0.05 | MV 2 R | Legendary Creature — Goblin Samurai | 2/2
+{R}: Creatures you control gain haste until end of turn.
+{3}{R}{R}: Create a 5/5 red Dragon Spirit creature token with flying. Activate only if you control an attacking modified creature. (Equipment, Auras you control, and counters are modifications.)
+
+#4771 | U freq 0.11 | MV 2 G | Instant
+Target creature gets +X/+X until end of turn, where X is the greatest mana value among permanents you control. Untap it.
+
+#4792 | U freq 0.11 | MV 3 colourless | Artifact Creature — Construct | 3/3
+Defender
+When this creature enters, target player mills three cards. (They put the top three cards of their library into their graveyard.)
+{3}: Put target card from a graveyard on the bottom of its owner's library.
+
+#4800 | U freq 0.11 | MV 2 G | Creature — Snake Druid | 1/1
+{T}: Add {G}.
+As long as this creature is modified, it has "{T}: Add {G}{G}." (Equipment, Auras you control, and counters are modifications.)
+
+#4802 | C freq 0.26 | MV 2 G | Creature — Human Samurai | 2/2
+Whenever this creature blocks or becomes blocked, it gets +1/+1 until end of turn.
+
+#4846 | C freq 0.26 | MV 3 B | Sorcery
+Target opponent reveals their hand. You may choose a nonland card from it. If you do, that player discards that card. If you don't, put two +1/+1 counters on a creature or Vehicle you control.
+
+#4899 | U freq 0.11 | MV 3 colourless | Artifact Creature — Construct | 0/4
+Trample
+This creature gets +1/+0 for each artifact and/or enchantment card in your graveyard.
+
+#4902 | R freq 0.05 | MV 7 W | Sorcery
+Return all artifact and enchantment cards from your graveyard to the battlefield.
+
+#4993 | M freq 0.03 | MV 5 B | Legendary Creature — Dragon Spirit | 5/5
+Flying, menace
+When ~ dies, choose one —
+• Each opponent discards two cards and loses 2 life.
+• Put target non-Dragon creature card from a graveyard onto the battlefield under your control. You lose 2 life.
+
+#5033 | U freq 0.11 | MV 2 BR | Artifact
+Whenever one or more artifacts you control leave the battlefield during your turn, create a 1/1 colorless Construct artifact creature token. This ability triggers only once each turn.
+{T}, Sacrifice an artifact: This artifact deals 1 damage to each opponent. You gain 1 life.
+
+#5051 | R freq 0.05 | MV 0 colourless | Legendary Land
+{T}: Add {U}.
+Channel — {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.
+
+#5060 | R freq 0.05 | MV 5 G | Sorcery
+Create two 4/5 green Spirit creature tokens. For each of them, put your choice of a reach counter, a vigilance counter, or a trample counter on it.
+
+#5078 | M freq 0.03 | MV 5 WB | Enchantment
+At the beginning of your end step, choose target permanent card in your graveyard. You may sacrifice a permanent that shares a card type with the chosen card. If you do, return the chosen card from your graveyard to the battlefield and it gains "If this permanent would leave the battlefield, exile it instead of putting it anywhere else."
+
+#5169 | C freq 0.26 | MV 2 R | Creature — Goblin Samurai | 1/3
+Whenever a Samurai or Warrior you control attacks alone, you may discard a card. If you do, draw a card.
+
+#5179 | C freq 0.26 | MV 4 U | Creature — Fish | 3/3
+Flying
+Whenever an artifact you control enters, you may draw a card. If you do, discard a card.
+
+#5201 | C freq 0.26 | MV 3 colourless | Artifact — Vehicle | 4/3
+Vigilance
+Crew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#5214 | U freq 0.11 | MV 3 R | Instant
+~ deals 2 damage to any target and 1 damage to each nonartifact creature target opponent controls.
+
+#5249 | R freq 0.05 | MV 5 B | Sorcery
+Target opponent sacrifices a creature of their choice. If they can't, they lose 2 life and you draw a card. Then repeat this process for an enchantment and a planeswalker.
+
+#5264 | U freq 0.11 | MV 2 R | Enchantment
+Whenever a creature you control attacks alone, exile the top card of your library. You may play that card this turn.
+
+#5277 | R freq 0.05 | MV 1 W | Instant
+As an additional cost to cast this spell, you may exile any number of white cards from your hand. This spell costs {2} less to cast for each card exiled this way.
+Exile target artifact, creature, or enchantment with mana value X or less.
+
+#5305 | C freq 0.26 | MV 4 B | Enchantment — Aura
+Enchant artifact or creature you control
+When this Aura enters, destroy target creature or planeswalker an opponent controls.
+As long as enchanted permanent is a creature, it gets +1/+1.
+
+#5318 | U freq 0.11 | MV 4 B | Legendary Enchantment Creature — Shrine | 2/2
+Deathtouch
+At the beginning of your end step, you may pay {1}. When you do, destroy target creature with toughness X or less, where X is the number of Shrines you control.
+
+#5336 | C freq 0.26 | MV 2 U | Artifact
+{1}{U}, Sacrifice this artifact: Draw two cards.
+Channel — {U}, Discard this card: Draw a card.
+
+#5361 | U freq 0.11 | MV 2 U | Legendary Enchantment Creature — Shrine | 0/4
+Flying
+At the beginning of your end step, you may pay {1}. When you do, target player mills X cards, where X is the number of Shrines you control. (To mill a card, a player puts the top card of their library into their graveyard.)
+
+#5388 | R freq 0.05 | MV 4 R | Creature — Spirit | 3/3
+Haste
+Whenever this creature attacks, put a +1/+1 counter on target creature you control. Then this creature deals X damage to each opponent, where X is the number of modified creatures you control other than this creature. (Equipment, Auras you control, and counters are modifications.)
+
+#5397 | U freq 0.11 | MV 7 W | Enchantment Creature — Human Samurai | 4/4
+Affinity for enchantments (This spell costs {1} less to cast for each enchantment you control.)
+Flying
+
+#5398 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {R} or {G}.
+
+#5476 | R freq 0.05 | MV 3 WBR | Legendary Creature — Human Samurai | 3/4
+If a creature attacking causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.
+
+#5635 | U freq 0.11 | MV 4 R | Artifact Creature — Goblin Archer | 2/3
+Reach
+When this creature enters, it deals 2 damage to any target.
+Channel — {1}{R}, Discard this card: It deals 2 damage to any target.
+
+#5693 | R freq 0.05 | MV 2 W | Artifact Creature — Equipment Cat | 1/1
+{W}: Exile target card from a graveyard. If it was a permanent card, put a +1/+1 counter on this permanent.
+Equipped creature gets +1/+1 for each +1/+1 counter on this Equipment.
+Reconfigure {2} ({2}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#5702 | C freq 0.26 | MV 2 R | Instant
+~ deals 3 damage to target creature or planeswalker. ~ also deals 2 damage to that permanent's controller if you control a modified creature. (Equipment, Auras you control, and counters are modifications.)
+
+#5704 | C freq 0.26 | MV 2 B | Instant
+As an additional cost to cast this spell, sacrifice an artifact or creature.
+You gain life equal to the sacrificed permanent's mana value. Draw two cards.
+
+#5728 | U freq 0.11 | MV 5 B | Sorcery
+Return target creature or Vehicle card from your graveyard to the battlefield. Then put two +1/+1 counters on that permanent if you control an artifact and an enchantment.
+
+#5734 | C freq 0.26 | MV 2 U | Artifact Creature — Equipment Beast | 2/1
+Ward {2} (Whenever this permanent becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+Equipped creature gets +2/+1 and has ward {2}.
+Reconfigure {4} ({4}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#5768 | U freq 0.11 | MV 2 colourless | Artifact Creature — Construct | 2/1
+Whenever you discard a card, you may exile that card from your graveyard. If you do, you may play that card this turn.
+
+#5771 | M freq 0.03 | MV 10 R | Sorcery
+As an additional cost to cast this spell, you may tap any number of untapped creatures you control. This spell costs {1} less to cast for each creature tapped this way.
+~ deals 10 damage to any target.
+
+#5775 | M freq 0.03 | MV 3 B | Legendary Creature — Rat Ninja | 3/2
+Ninjutsu {3}{B} ({3}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Whenever ~ deals combat damage to a player, exile the top card of each player's library. Until end of turn, you may play one of those cards. If you cast a spell this way, pay life equal to its mana value rather than paying its mana cost.
+
+#5785 | U freq 0.11 | MV 1 G | Creature — Spirit | 1/1
+Whenever you cast an enchantment spell, put a +1/+1 counter on target creature.
+
+#5874 | R freq 0.05 | MV 2 colourless | Artifact — Vehicle | 2/4
+{5}, Exile this Vehicle and four other artifact creatures and/or Vehicles you control: Create Mechtitan, a legendary 10/10 Construct artifact creature token with flying, vigilance, trample, lifelink, and haste that's all colors. When that token leaves the battlefield, return all cards exiled with this Vehicle except this card to the battlefield tapped under their owners' control.
+Crew 2
+
+#5895 | U freq 0.11 | MV 0 colourless | Land
+As this land enters, choose a creature type.
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type or activate an ability of a creature source of the chosen type.
+
+#5899 | C freq 0.26 | MV 3 G | Enchantment — Aura
+Enchant land
+When this Aura enters, put a +1/+1 counter on target creature or Vehicle you control.
+Enchanted land has "{T}: Add two mana of any one color."
+
+#5925 | M freq 0.03 | MV 7 U | Legendary Creature — Phyrexian Praetor | 5/5
+Whenever you cast an artifact, instant, or sorcery spell, copy that spell. You may choose new targets for the copy. This ability triggers only once each turn. (A copy of a permanent spell becomes a token.)
+Whenever an opponent casts an artifact, instant, or sorcery spell, counter that spell. This ability triggers only once each turn.
+
+#5964 | U freq 0.11 | MV 0 colourless | Land
+{T}: Add {C}.
+{2}, {T}, Sacrifice this land: Draw a card if you control an artifact. Draw a card if you control an enchantment.
+
+#5984 | M freq 0.03 | MV 5 G | Legendary Creature — Dragon Spirit | 4/4
+Flying, deathtouch
+When ~ dies, choose one —
+• Search your library for up to three land cards, reveal them, put them into your hand, then shuffle.
+• Create an X/X green Spirit creature token, where X is the number of lands you control.
+
+#5986 | U freq 0.11 | MV 4 B | Instant
+This spell costs {1} less to cast if you control an artifact and {1} less to cast if you control an enchantment.
+Destroy target creature or planeswalker.
+
+#5988 | C freq 0.26 | MV 3 G | Enchantment — Aura
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets +1/+3 and has reach and "{T}: Add {G}{G}."
+Channel — {1}{G}, Discard this card: Create a 1/1 green Human Monk creature token with "{T}: Add {G}."
+
+#5997 | U freq 0.11 | MV 2 G | Legendary Enchantment Creature — Shrine | 1/1
+Trample
+At the beginning of your end step, you may pay {1}. When you do, put a +1/+1 counter on target Shrine for each Shrine you control.
+
+#6006 | R freq 0.05 | MV 0 colourless | Legendary Land
+{T}: Add {B}.
+Channel — {3}{B}, Discard this card: Mill three cards, then return a creature or planeswalker card from your graveyard to your hand. This ability costs {1} less to activate for each legendary creature you control.
+
+#6011 | C freq 0.26 | MV 1 W | Creature — Fox Warrior | 1/1
+Flying
+{3}{W}, {T}: Tap target creature.
+
+#6047 | U freq 0.11 | MV 5 WB | Legendary Creature — Human Advisor | 4/4
+Whenever ~ enters or attacks, if you control an artifact and an enchantment, create a 2/2 white Samurai creature token with vigilance.
+
+#6054 | U freq 0.11 | MV 3 W | Creature — Fox Ninja | 2/2
+Ninjutsu {3}{W} ({3}{W}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Double strike
+
+#6093 | R freq 0.05 | MV 3 R | Creature — Goblin Artificer | 3/3
+{T}, Sacrifice an artifact with mana value X: Return target artifact card with mana value less than X from your graveyard to the battlefield. It gains haste until end of turn.
+
+#6097 | C freq 0.26 | MV 5 R | Creature — Spirit | 3/6
+When this creature enters, return target artifact card with mana value 3 or less from your graveyard to the battlefield. It gains haste. Sacrifice it at the beginning of the next end step.
+
+#6123 | U freq 0.11 | MV 2 R | Creature — Goblin Artificer | 2/2
+At the beginning of combat on your turn, you may pay {1} and sacrifice an artifact. If you do, create a 3/1 red Construct artifact creature token with haste.
+
+#6166 | C freq 0.26 | MV 1 R | Instant
+As an additional cost to cast this spell, you may sacrifice an artifact.
+~ deals 2 damage to target creature or planeswalker. If this spell's additional cost was paid, ~ deals 4 damage instead.
+
+#6175 | C freq 0.26 | MV 4 R | Artifact Creature — Human Warrior | 3/4
+{1}, Sacrifice another artifact: This creature gets +2/+1 until end of turn.
+
+#6182 | C freq 0.26 | MV 3 W | Enchantment Creature — Fox Monk | 2/3
+Lifelink (Damage dealt by this creature also causes you to gain that much life.)
+
+#6185 | C freq 0.26 | MV 1 R | Artifact Creature — Equipment Monkey | 1/1
+Equipped creature gets +1/+1.
+Whenever this creature or equipped creature becomes blocked, it deals 1 damage to defending player.
+Reconfigure {2} ({2}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#6233 | C freq 0.26 | MV 5 W | Enchantment Creature — Human Samurai | 4/4
+Vigilance (Attacking doesn't cause this creature to tap.)
+Channel — {2}, Discard this card: Search your library for a basic Plains card, reveal it, put it into your hand, then shuffle. You gain 2 life.
+
+#6263 | U freq 0.11 | MV 2 B | Artifact Creature — Rat Ninja | 3/1
+Ninjutsu {1}{B} ({1}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+When this creature enters, target creature you control gains deathtouch and lifelink until end of turn.
+
+#6323 | C freq 0.26 | MV 2 B | Instant
+Target creature gets -2/-2 until end of turn. It gets an additional -1/-1 until end of turn for each modified creature you controlled as you cast this spell. (Equipment, Auras you control, and counters are modifications.)
+
+#6360 | R freq 0.05 | MV 3 U | Artifact — Vehicle | 4/3
+Flying
+Whenever this Vehicle becomes crewed for the first time each turn, until end of turn, this Vehicle becomes a copy of target nonlegendary creature that crewed it this turn, except it's 4/3, it's a Vehicle artifact in addition to its other types, and it has flying.
+Crew 1
+
+#6368 | U freq 0.11 | MV 7 U | Instant
+Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)
+Look at the top seven cards of your library. You may reveal up to two artifact cards from among them and put them into your hand. Put the rest on the bottom of your library in a random order.
+
+#6388 | C freq 0.26 | MV 4 G | Enchantment Creature — Human Druid | 3/3
+When this creature enters, put a +1/+1 counter on target creature you control.
+Channel — {2}{G}, Discard this card: Put a +1/+1 counter on each of up to two target creatures you control.
+
+#6395 | M freq 0.03 | MV 6 U | Legendary Creature — Dragon Spirit | 6/6
+Flying, ward {3}
+When ~ dies, choose one —
+• Return any number of target nonland permanents with total mana value 6 or less to their owners' hands.
+• Mill six cards, then return up to two instant and/or sorcery cards from your graveyard to your hand.
+
+#6438 | C freq 0.26 | MV 4 G | Enchantment — Aura
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets +3/+3 and has reach.
+Channel — {1}{G}, Discard this card: Target creature gets +3/+3 and gains reach until end of turn.
+
+#6454 | C freq 0.26 | MV 1 G | Sorcery
+Look at the top four cards of your library. You may reveal an enchantment or land card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+
+#6470 | C freq 0.26 | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {G} or {W}.
+
+#6488 | R freq 0.05 | MV 2 W | Legendary Creature — Fox Advisor | 2/2
+Whenever an Aura you control enters, if you cast it, you may search your library for an Aura card with mana value less than or equal to that Aura and with a different name than each Aura you control, put that card onto the battlefield attached to ~, then shuffle.
+
+#6591 | U freq 0.11 | MV 3 B | Artifact — Equipment
+Equipped creature gets +4/+0.
+Whenever this Equipment becomes attached to a creature, tap that creature.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#6598 | C freq 0.26 | MV 7 colourless | Artifact — Vehicle | 7/7
+Trample, haste
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#6611 | C freq 0.26 | MV 1 colourless | Artifact — Equipment
+Equipped creature has "{1}, {T}, Sacrifice ~: ~ deals 3 damage to any target."
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+
+#6630 | U freq 0.11 | MV 3 W | Enchantment — Aura
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets +1/+1 for each creature and/or Vehicle you control.
+Channel — {2}{W}, Discard this card: Create two 1/1 colorless Pilot creature tokens with "This token crews Vehicles as though its power were 2 greater."
+
+#6651 | U freq 0.11 | MV 2 WG | Enchantment Creature — Human Monk | 2/2
+Lifelink
+Enchantment spells you cast cost {1} less to cast.
+
+#6692 | R freq 0.05 | MV 0 colourless | Legendary Land
+{T}: Add {R}.
+Channel — {3}{R}, Discard this card: Create two 1/1 colorless Spirit creature tokens. They gain haste until end of turn. This ability costs {1} less to activate for each legendary creature you control.
+
+#6725 | R freq 0.05 | MV 2 R | Artifact Creature — Equipment Ogre | 2/2
+Equipped creature gets +2/+2.
+Whenever this creature or equipped creature deals combat damage to a player, you may sacrifice it. If you do, discard your hand, then draw three cards.
+Reconfigure {3} ({3}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#6736 | R freq 0.05 | MV 5 UB | Legendary Creature — Human Ninja | 4/4
+When ~ enters, exile target card other than a basic land card from an opponent's graveyard. Search that player's graveyard, hand, and library for any number of cards with the same name as that card and exile them. Then that player shuffles. For as long as you control ~, you may play one of the exiled cards, and you may spend mana as though it were mana of any color to cast it.
+
+#6752 | C freq 0.26 | MV 3 B | Creature — Rat Samurai | 3/2
+This creature has deathtouch as long as you control an artifact.
+This creature has menace as long as you control an enchantment. (It can't be blocked except by two or more creatures.)
+
+#6848 | C freq 0.26 | MV 2 R | Enchantment — Aura
+Enchant land you control
+Enchanted land is a 3/3 red Spirit creature with haste. It's still a land.
+If enchanted land would be destroyed, instead sacrifice this Aura and that land gains indestructible until end of turn.
+
+#6860 | C freq 0.26 | MV 1 U | Artifact Creature — Moonfolk Rogue | 1/1
+Flying
+When this creature enters, tap target permanent.
+
+#6961 | R freq 0.05 | MV 5 W | Sorcery
+Return target permanent card from your graveyard to the battlefield, then distribute four +1/+1 counters among any number of creatures and/or Vehicles target player controls.
+
+#6977 | U freq 0.11 | MV 3 R | Artifact Creature — Equipment Boar | 3/2
+Trample
+Equipped creature gets +3/+2 and has trample.
+Reconfigure {5} ({5}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+TARGET CARDS (judge exactly these, in this order): #592 #2220 #3532 #790 #4097 #2298 #5476 #183 #4902 #6488 #5078 #3066 #3203 #2055 #5874 #4764 #4324 #555 #2677 #3425 #2899 #6093 #6368 #5925 #1061 #6047 #2976 #4705
