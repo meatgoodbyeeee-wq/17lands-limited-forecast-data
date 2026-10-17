@@ -1,0 +1,112 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#1900 | R | MV 3 colourless | Artifact
+Whenever you discard a card, choose one that hasn't been chosen this turn —
+• Draw a card.
+• Create a Treasure token.
+• Each opponent loses 3 life.
+
+#738 | C | MV 2 R | Instant
+~ deals 3 damage to any target.
+
+#5310 | C | MV 4 R | Instant
+Choose one —
+• Destroy target Vehicle.
+• ~ deals 6 damage to target creature or planeswalker.
+
+#3616 | U | MV 3 UR | Instant
+~ deals 5 damage to target creature or planeswalker. Draw a card, then discard a card.
+
+#4325 | R | MV 4 UR | Legendary Creature — Shark Pirate | 5/4
+Ward—{2}, Pay 2 life.
+Whenever you discard one or more cards, target creature gets +2/+0 until end of turn for each card discarded this way. Whenever that creature deals combat damage to a player this turn, you draw a card.
+
+#6170 | U | MV 3 UR | Artifact — Vehicle | 3/3
+Menace
+Whenever you attack, draw a card, then discard a card.
+Crew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#458 | M | MV 4 R | Legendary Planeswalker — Chandra
+At the beginning of combat on your turn, choose up to one target Vehicle you control. Until end of turn, it becomes an artifact creature and gains haste.
++2: You may sacrifice an artifact or discard a card. If you do, draw a card.
+0: Create a 3/2 colorless Vehicle artifact token with crew 1.
+−7: You get an emblem with "Whenever an artifact you control enters, this emblem deals 3 damage to any target."
+
+#6173 | U | MV 1 R | Creature — Goblin Artificer | 2/1
+Exhaust — {2}{R}: Discard up to two cards, then draw that many cards. Put a +1/+1 counter on this creature. (Activate each exhaust ability only once.)
+
+#6559 | C | MV 2 R | Enchantment
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+When this enchantment enters, you may discard a card. If you do, draw two cards.
+Max speed — Sacrifice this enchantment: Creatures and Vehicles you control gain haste until end of turn.
+
+#5861 | C | MV 5 R | Creature — Shark Pirate | 4/5
+Reach
+Discard a card: Draw a card. Activate only as a sorcery and only once each turn.
+
+#5861 | C | MV 5 R | Creature — Shark Pirate | 4/5
+Reach
+Discard a card: Draw a card. Activate only as a sorcery and only once each turn.
+
+#3020 | C | MV 3 U | Creature — Octopus Pirate | 2/3
+Vigilance
+Exhaust — {1}{U}: Draw a card, then discard a card. Put a +1/+1 counter on this creature. (Activate each exhaust ability only once.)
+
+#1358 | R | MV 3 U | Artifact — Vehicle | 4/4
+Flying
+Whenever you draw your second card each turn, create a 1/1 colorless Thopter artifact creature token with flying.
+Crew 2
+
+#6761 | C | MV 2 R | Creature — Human Warrior | 3/1
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+Max speed — {T}: Add {R}{R}.
+
+#106 | C | MV 2 R | Creature — Goblin Warrior | 2/1
+Haste
+Exhaust — {3}{R}: Put two +1/+1 counters on this creature. (Activate each exhaust ability only once.)
+
+#4181 | C | MV 1 R | Creature — Goblin Pilot | 1/1
+This creature saddles Mounts and crews Vehicles as though its power were 2 greater.
+When this creature dies, it deals 1 damage to any target.
+
+#3842 | U | MV 2 U | Artifact Creature — Robot | 2/1
+Flying
+{U}, Sacrifice this creature: Counter target instant or sorcery spell unless its controller pays {3}.
+
+#2479 | C | MV 4 U | Creature — Vedalken Artificer | 3/2
+When this creature enters, create a 1/1 colorless Thopter artifact creature token with flying.
+
+#2479 | C | MV 4 U | Creature — Vedalken Artificer | 3/2
+When this creature enters, create a 1/1 colorless Thopter artifact creature token with flying.
+
+#2572 | C | MV 3 U | Creature — Spirit Scout | 2/2
+Flying
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+Max speed — {3}, Exile this card from your graveyard: Draw a card.
+
+#6582 | U | MV 4 R | Creature — Minotaur Pilot | 3/3
+Whenever this creature saddles a Mount or crews a Vehicle during your main phase, that Mount or Vehicle gets +2/+0 and gains trample until end of turn.
+
+#4340 | C | MV 2 U | Sorcery
+Tap target creature or Vehicle, then put three stun counters on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#1848 | C | MV 5 colourless | Artifact — Vehicle | 4/4
+Flying
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+TARGET card: #1900
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 1900 MV 3
+3616 MV 3 AFTER loots; discard triggers the artifact
+6170 MV 3 AFTER attack loot; discard triggers the artifact
+458 MV 4 AFTER +2 discards; discard triggers the artifact
+6173 MV 1 AFTER exhaust discards cards; discard triggers the artifact
+6559 MV 2 AFTER ETB discard; discard triggers the artifact
+5861 MV 5 AFTER discard outlet; discard triggers the artifact
+3020 MV 3 AFTER exhaust loot; discard triggers the artifact
+1848 MV 5 AFTER cycling discards; discard triggers the artifact
+4340 MV 2 AFTER cycling discards; discard triggers the artifact

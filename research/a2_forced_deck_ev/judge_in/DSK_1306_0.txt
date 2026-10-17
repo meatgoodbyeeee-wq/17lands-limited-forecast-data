@@ -1,0 +1,98 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#1306 | M | MV 11 B | Enchantment — Room // Enchantment — Room
+Whenever a creature you control dies, each opponent loses 1 life and you gain 1 life.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) When you unlock this door, return all creature cards from your graveyard to the battlefield.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+
+#4539 | C | MV 5 B | Enchantment Creature — Nightmare | 5/5
+Whenever this creature attacks, if defending player controls no Glimmer creatures, it gains menace and deathtouch until end of turn. (A creature with menace can't be blocked except by two or more creatures.)
+
+#6800 | C | MV 3 B | Creature — Human Cleric | 4/1
+Delirium — {2}{B}{B}: Return this card from your graveyard to the battlefield with a finality counter on it. Activate only if there are four or more card types among cards in your graveyard and only as a sorcery. (If a creature with a finality counter on it would die, exile it instead.)
+
+#6800 | C | MV 3 B | Creature — Human Cleric | 4/1
+Delirium — {2}{B}{B}: Return this card from your graveyard to the battlefield with a finality counter on it. Activate only if there are four or more card types among cards in your graveyard and only as a sorcery. (If a creature with a finality counter on it would die, exile it instead.)
+
+#6952 | C | MV 2 B | Instant
+~ deals 2 damage to target creature. You gain 2 life.
+
+#6952 | C | MV 2 B | Instant
+~ deals 2 damage to target creature. You gain 2 life.
+
+#976 | R | MV 8 B | Enchantment — Room // Enchantment — Room
+At the beginning of your end step, draw a card. If you control a Demon, each opponent loses 2 life and you gain 2 life. Otherwise, you lose 2 life.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) When you unlock this door, create a 6/6 black Demon creature token with flying.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+
+#3087 | U | MV 1 B | Creature — Human Cleric | 1/1
+{3}{B}, Sacrifice this creature: Return target creature card from your graveyard to the battlefield. Activate only as a sorcery.
+
+#6261 | C | MV 2 B | Creature — Rat | 1/1
+When this creature dies, manifest dread. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+
+#101 | U | MV 5 B | Instant
+Choose one —
+• Return target creature card from your graveyard to the battlefield.
+• Destroy target creature.
+
+#6231 | C | MV 2 B | Instant
+Target creature gets +2/+2 and gains lifelink until end of turn.
+
+#2285 | R | MV 2 W | Creature — Human Survivor | 2/2
+Survival — At the beginning of your second main phase, if this creature is tapped, put a flying, lifelink, or +1/+1 counter on it.
+Whenever this creature or another creature you control dies, if it had counters on it, put those counters on up to one target creature.
+
+#6145 | C | MV 2 W | Creature — Human Survivor | 2/2
+Survival — At the beginning of your second main phase, if this creature is tapped, put a flying counter on it. This ability triggers only once.
+
+#5039 | C | MV 2 W | Enchantment Creature — Nightmare | 2/2
+Vigilance
+Whenever this creature attacks, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#1468 | U | MV 3 W | Creature — Human Survivor | 3/3
+Survival — At the beginning of your second main phase, if this creature is tapped, draw a card if you control a Glimmer creature. If you don't control a Glimmer creature, create a 1/1 white Glimmer enchantment creature token.
+
+#2013 | U | MV 3 W | Artifact Creature — Toy | 4/3
+Double strike
+This creature enters with two -1/-1 counters on it if you cast it from your hand.
+
+#1487 | C | MV 3 W | Creature — Human Soldier | 2/4
+Whenever this creature attacks, another target creature you control gets +1/+0 and gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#5445 | U | MV 4 W | Creature — Kor Survivor | 3/4
+Survival — At the beginning of your second main phase, if this creature is tapped, return target creature card with mana value 3 or less from your graveyard to your hand.
+
+#2370 | C | MV 4 W | Creature — Spirit | 2/4
+Flying
+When this creature enters, target creature gets +2/+4 until end of turn.
+
+#4509 | U | MV 2 W | Enchantment — Aura
+Enchant creature you control
+When this Aura enters, exile target nonland permanent an opponent controls until this Aura leaves the battlefield.
+Enchanted creature gets +1/+0 and has lifelink and ward {2}.
+
+#5401 | C | MV 4 W | Creature — Human | 2/2
+When this creature enters, manifest dread. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+
+#3125 | C | MV 6 W | Creature — Spirit | 4/5
+Flying
+Plainscycling {2} ({2}, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)
+
+#1487 | C | MV 3 W | Creature — Human Soldier | 2/4
+Whenever this creature attacks, another target creature you control gets +1/+0 and gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#1315 | C | MV 0 colourless | Land
+This land enters tapped unless a player has 13 or less life.
+{T}: Add {W} or {B}.
+
+TARGET card: #1306
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 1306 MV 11
+5039 MV 2 BEFORE surveil fills graveyard
+6261 MV 2 EITHER dies: fills graveyard, drains
+3087 MV 1 EITHER sacrifices itself, drains
+5401 MV 4 BEFORE manifest dread fills graveyard
+3125 MV 6 BEFORE plainscycling discards creature

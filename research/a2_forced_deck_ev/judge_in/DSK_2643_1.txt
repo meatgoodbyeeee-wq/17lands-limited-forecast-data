@@ -1,0 +1,101 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2643 | M | MV 3 R | Legendary Enchantment
+Delirium — If a source you control would deal noncombat damage to a permanent or player while there are four or more card types among cards in your graveyard, it deals double that damage instead.
+When ~ enters, it deals X damage to each of up to X target creatures.
+
+#1072 | C | MV 1 B | Enchantment Creature — Nightmare | 1/1
+When this creature dies, it deals 1 damage to any target and you gain 1 life.
+
+#4054 | C | MV 3 B | Instant
+Destroy target creature.
+
+#4054 | C | MV 3 B | Instant
+Destroy target creature.
+
+#4900 | C | MV 4 B | Creature — Human Assassin | 3/3
+Deathtouch
+This creature enters with a +1/+1 counter on it if a creature died this turn.
+
+#6261 | C | MV 2 B | Creature — Rat | 1/1
+When this creature dies, manifest dread. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+
+#6534 | U | MV 2 B | Artifact Creature — Scarecrow | 2/2
+Lifelink
+Delirium — At the beginning of your end step, if there are four or more card types among cards in your graveyard, each opponent may sacrifice a nonland permanent of their choice or discard a card. Then this creature deals damage equal to its power to each opponent who didn't sacrifice a permanent or discard a card this way.
+
+#6534 | U | MV 2 B | Artifact Creature — Scarecrow | 2/2
+Lifelink
+Delirium — At the beginning of your end step, if there are four or more card types among cards in your graveyard, each opponent may sacrifice a nonland permanent of their choice or discard a card. Then this creature deals damage equal to its power to each opponent who didn't sacrifice a permanent or discard a card this way.
+
+#6800 | C | MV 3 B | Creature — Human Cleric | 4/1
+Delirium — {2}{B}{B}: Return this card from your graveyard to the battlefield with a finality counter on it. Activate only if there are four or more card types among cards in your graveyard and only as a sorcery. (If a creature with a finality counter on it would die, exile it instead.)
+
+#4539 | C | MV 5 B | Enchantment Creature — Nightmare | 5/5
+Whenever this creature attacks, if defending player controls no Glimmer creatures, it gains menace and deathtouch until end of turn. (A creature with menace can't be blocked except by two or more creatures.)
+
+#4981 | R | MV 6 B | Creature — Demon | 6/6
+Flying
+When this creature enters, if it was cast, each player exiles all but the bottom six cards of their library face down.
+At the beginning of your upkeep, draw a card.
+
+#4994 | U | MV 2 B | Enchantment
+Flash
+When this enchantment enters, target creature an opponent controls gets -3/-3 until end of turn.
+Creatures your opponents control can be the targets of spells and abilities as though they didn't have hexproof. Ward abilities of those creatures don't trigger.
+
+#1947 | U | MV 6 B | Creature — Demon | 5/4
+Flying
+When this creature enters, you may discard any number of cards. When you do, up to that many target creatures each get -2/-2 until end of turn.
+
+#5081 | C | MV 3 B | Enchantment Creature — Horror | 3/2
+Flash
+Whenever this creature attacks, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#1980 | C | MV 4 B | Creature — Human Cleric | 2/2
+When this creature enters, each player discards a card. If you discarded a card this way, draw a card.
+
+#4038 | C | MV 5 R | Instant
+~ deals 6 damage to target creature.
+Delirium — If there are four or more card types among cards in your graveyard, exile the top card of your library. You may play it until the end of your next turn.
+
+#4038 | C | MV 5 R | Instant
+~ deals 6 damage to target creature.
+Delirium — If there are four or more card types among cards in your graveyard, exile the top card of your library. You may play it until the end of your next turn.
+
+#4065 | C | MV 2 R | Instant
+~ deals 3 damage to target creature or planeswalker. If that creature or planeswalker would die this turn, exile it instead.
+
+#1351 | U | MV 5 R | Creature — Human Clown Berserker | 4/4
+Haste
+Whenever you attack, create a 1/1 red Gremlin creature token.
+
+#2387 | C | MV 4 R | Creature — Human Warrior | 2/4
+Whenever you attack, target attacking creature gets +1/+0 and gains first strike until end of turn.
+
+#2387 | C | MV 4 R | Creature — Human Warrior | 2/4
+Whenever you attack, target attacking creature gets +1/+0 and gains first strike until end of turn.
+
+#6836 | C | MV 1 R | Artifact Creature — Monkey Toy | 1/1
+Haste
+When this creature dies, exile the top card of your library. You may play it until the end of your next turn.
+
+#4068 | U | MV 2 BR | Enchantment
+When this enchantment enters, you may sacrifice another enchantment or creature. If you do, draw two cards.
+When you sacrifice this enchantment, manifest dread. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+
+TARGET card: #2643
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2643 MV 3
+5081 MV 3 BEFORE surveil fills graveyard types
+1980 MV 4 BEFORE discard fills graveyard types
+6261 MV 2 BEFORE dies, manifest dread fills graveyard
+1072 MV 1 EITHER enchantment type; doubled ping
+4054 MV 3 BEFORE instant fills graveyard type
+4038 MV 5 BEFORE instant type, delirium payoff
+4065 MV 2 BEFORE instant fills graveyard type
+4068 MV 2 BEFORE sacrificed enchantment fills graveyard
+1947 MV 6 BEFORE discards cards to graveyard
+6534 MV 2 AFTER noncombat damage gets doubled

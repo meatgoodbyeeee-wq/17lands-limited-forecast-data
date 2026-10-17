@@ -1,0 +1,99 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4564 | M | MV 7 colourless | Artifact Creature — Wizard | 4/3
+Prototype {1}{U}{U} — 2/1 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+When this creature enters, if you cast it, exile target instant or sorcery card with mana value less than or equal to this creature's power from your graveyard. Copy that card. You may cast the copy without paying its mana cost.
+
+#5342 | U | MV 2 B | Instant
+Destroy target nonartifact creature.
+
+#792 | C | MV 2 B | Sorcery
+As an additional cost to cast this spell, sacrifice an artifact or creature.
+Destroy target creature or planeswalker.
+
+#792 | C | MV 2 B | Sorcery
+As an additional cost to cast this spell, sacrifice an artifact or creature.
+Destroy target creature or planeswalker.
+
+#1277 | C | MV 1 B | Instant
+Target creature gets -2/-2 until end of turn.
+
+#566 | C | MV 5 B | Instant
+This spell costs {1} less to cast for each creature card in your graveyard.
+Exile target creature or planeswalker.
+
+#566 | C | MV 5 B | Instant
+This spell costs {1} less to cast for each creature card in your graveyard.
+Exile target creature or planeswalker.
+
+#2833 | U | MV 3 B | Sorcery
+Choose one —
+• You draw two cards and you lose 2 life.
+• Creatures your opponents control get -1/-1 until end of turn.
+
+#2315 | C | MV 2 U | Instant
+Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+Draw a card.
+
+#5695 | C | MV 3 U | Instant
+Draw two cards, then discard a card. Create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+
+#6636 | C | MV 5 U | Instant
+Target nonland permanent's owner puts it on their choice of the top or bottom of their library. Scry 2.
+
+#2320 | C | MV 3 U | Instant
+Choose one —
+• Counter target spell.
+• Tap up to two target creatures.
+
+#4268 | C | MV 4 U | Creature — Human Wizard | 3/3
+Whenever you draw your second card each turn, put a +1/+1 counter on this creature.
+
+#277 | C | MV 4 U | Creature — Human Soldier | 2/5
+{2}: This creature gets +1/-1 until end of turn.
+
+#1855 | C | MV 2 B | Creature — Phyrexian Human | 2/1
+Whenever you sacrifice another permanent, put a +1/+1 counter on this creature.
+
+#3011 | R | MV 2 colourless | Artifact Creature — Zombie | 3/1
+This creature can't block.
+{4}{B}{B}: Return this card from your graveyard to the battlefield with a +1/+1 counter on it. This ability costs {4} less to activate if an opponent controls four or more nonbasic lands.
+
+#4115 | C | MV 2 colourless | Artifact Creature — Dog | 2/1
+When this creature enters, you may discard a card. If you do, draw a card.
+Unearth {1}{R} ({1}{R}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#2874 | U | MV 3 colourless | Artifact Creature — Thopter | 2/1
+Flying
+Unearth {2} ({2}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#7010 | C | MV 4 colourless | Artifact Creature — Soldier | 3/1
+When this creature enters, create a 1/1 colorless Soldier artifact creature token.
+Unearth {2}{W} ({2}{W}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#3891 | C | MV 4 colourless | Artifact Creature — Construct | 2/3
+When this creature enters, create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+
+#2527 | C | MV 5 colourless | Artifact Creature — Construct | 4/4
+When this creature leaves the battlefield, you gain 2 life.
+Unearth {3}{W} ({3}{W}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#4105 | U | MV 9 colourless | Artifact Creature — Shapeshifter | 7/7
+Prototype {2}{U}{U} — 3/3 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+You may have this creature enter as a copy of an artifact or creature you control, except it's an artifact creature in addition to its other types, and its power and toughness are equal to this creature's power and toughness.
+
+#6124 | U | MV 6 colourless | Artifact Creature — Shapeshifter | 5/5
+{1}: Until end of turn, this creature gets -1/-1 and gains your choice of flying, vigilance, deathtouch, or haste.
+
+TARGET card: #4564
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 4564 MV 7
+5342 MV 2 BEFORE instant in graveyard to copy
+792 MV 2 BEFORE sorcery in graveyard to copy
+1277 MV 1 BEFORE instant in graveyard to copy
+2833 MV 3 BEFORE sorcery in graveyard (needs power 3+)
+2315 MV 2 BEFORE instant in graveyard to copy
+5695 MV 3 BEFORE instant in graveyard (needs power 3+)
+2320 MV 3 BEFORE instant in graveyard (needs power 3+)

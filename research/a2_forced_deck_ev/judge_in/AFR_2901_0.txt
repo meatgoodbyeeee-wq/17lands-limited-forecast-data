@@ -1,0 +1,119 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2901 | R | MV 2 UB | Enchantment — Class
+(Gain the next level as a sorcery to add its ability.)
+Whenever a creature you control deals combat damage to a player, exile the top card of that player's library face down. You may look at it for as long as it remains exiled.
+{1}{U}{B}: Level 2
+Creatures you control have menace.
+{2}{U}{B}: Level 3
+You may play cards exiled with this Class, and you may spend mana as though it were mana of any color to cast those spells.
+
+#4640 | C | MV 2 U | Creature — Elf Wizard | 2/1
+Search the Room — {5}{U}: Roll a d20.
+1—9 | Draw a card.
+10—20 | Look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+
+#1976 | U | MV 3 U | Creature — Cat Beast | 3/2
+When this creature enters, venture into the dungeon. (Enter the first room or advance to the next room.)
+Displacement — {3}{U}: Return this creature to its owner's hand.
+
+#3957 | C | MV 3 B | Creature — Vampire | 2/3
+When this creature enters, each opponent loses 2 life and you gain 2 life.
+
+#3917 | C | MV 3 B | Creature — Snake Rogue | 2/2
+Deathtouch
+Whenever this creature deals combat damage to a player, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#4808 | U | MV 3 B | Creature — Dwarf Citizen | 1/4
+When this creature enters, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+{1}{B}, Sacrifice another creature or a Treasure: Draw a card.
+
+#1763 | C | MV 4 U | Creature — Djinn | 3/3
+Flying
+When this creature enters, roll a d20.
+1—9 | Scry 1.
+10—19 | Scry 2.
+20 | Scry 3.
+
+#1763 | C | MV 4 U | Creature — Djinn | 3/3
+Flying
+When this creature enters, roll a d20.
+1—9 | Scry 1.
+10—19 | Scry 2.
+20 | Scry 3.
+
+#1763 | C | MV 4 U | Creature — Djinn | 3/3
+Flying
+When this creature enters, roll a d20.
+1—9 | Scry 1.
+10—19 | Scry 2.
+20 | Scry 3.
+
+#213 | C | MV 4 B | Creature — Manticore | 2/1
+Flash
+Flying
+Tail Spikes — When this creature enters, destroy target creature an opponent controls that was dealt damage this turn.
+
+#4081 | C | MV 4 B | Creature — Skeleton | 4/3
+When this creature dies, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#4081 | C | MV 4 B | Creature — Skeleton | 4/3
+When this creature dies, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#5450 | C | MV 4 U | Creature — Human Rogue | 2/5
+Whenever this creature deals combat damage to a player, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#4729 | C | MV 5 B | Creature — Human Warlock | 4/4
+Circle of Death — {5}{B}: Roll a d20.
+1—9 | Each opponent loses 2 life.
+10—19 | Each opponent loses 2 life and you gain 2 life.
+20 | Each opponent loses 2 life and you gain 2 life. Create two Treasure tokens. (They're artifacts with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#3827 | C | MV 5 U | Creature — Giant Warrior | 4/5
+Ward {3} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)
+
+#4046 | U | MV 3 U | Sorcery
+Choose target creature an opponent controls, then roll a d20.
+1—9 | Return it to its owner's hand.
+10—19 | Its owner puts it on their choice of the top or bottom of their library.
+20 | Gain control of it until the end of your next turn.
+
+#4046 | U | MV 3 U | Sorcery
+Choose target creature an opponent controls, then roll a d20.
+1—9 | Return it to its owner's hand.
+10—19 | Its owner puts it on their choice of the top or bottom of their library.
+20 | Gain control of it until the end of your next turn.
+
+#2617 | C | MV 6 B | Instant
+Target creature gets -11/-11 until end of turn.
+
+#2617 | C | MV 6 B | Instant
+Target creature gets -11/-11 until end of turn.
+
+#5236 | C | MV 2 U | Instant
+Target creature gets -2/-0 until end of turn.
+Draw a card.
+
+#2803 | C | MV 2 B | Artifact — Equipment
+When this Equipment enters, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+Equipped creature can't be blocked as long as its power is 3 or less.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#5100 | U | MV 1 B | Artifact — Equipment
+Whenever equipped creature attacks, it gains deathtouch until end of turn.
+Whenever equipped creature attacks alone, defending player loses 2 life and you gain 2 life.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#3565 | C | MV 3 U | Instant
+Choose one —
+• Foil Their Scheme — Counter target spell.
+• Learn Their Secrets — Draw two cards, then discard two cards.
+
+TARGET card: #2901
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2901 MV 2
+1763 MV 4 EITHER flying connects for triggers
+213 MV 4 EITHER flash flier connects
+2803 MV 2 EITHER makes low-power creature unblockable

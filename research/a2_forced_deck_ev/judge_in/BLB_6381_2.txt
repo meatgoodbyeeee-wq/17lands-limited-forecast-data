@@ -1,0 +1,97 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#6381 | R | MV 2 BR | Legendary Creature — Lizard Mercenary | 3/2
+Ward—Pay 2 life.
+Other creatures you control enter with an additional +1/+1 counter on them for each opponent who lost life this turn.
+Whenever you cast a Lizard spell, ~ deals 1 damage to target opponent.
+
+#667 | U | MV 2 BR | Creature — Lizard Warlock | 2/1
+At the beginning of your second main phase, if an opponent lost life this turn, exile the top two cards of your library. Choose one of them. Until end of turn, you may play that card.
+
+#3104 | C | MV 2 R | Creature — Lizard Warlock | 2/1
+Offspring {2} (You may pay an additional {2} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)
+When this creature dies, it deals 1 damage to target player.
+
+#3104 | C | MV 2 R | Creature — Lizard Warlock | 2/1
+Offspring {2} (You may pay an additional {2} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)
+When this creature dies, it deals 1 damage to target player.
+
+#3272 | C | MV 1 B | Creature — Lizard Rogue | 1/1
+Menace (This creature can't be blocked except by two or more creatures.)
+{1}{B}: This creature gets +1/+1 until end of turn.
+
+#4914 | C | MV 2 B | Creature — Lizard Assassin | 1/3
+Whenever this creature attacks, defending player loses 1 life and you gain 1 life.
+
+#6754 | U | MV 2 R | Creature — Raccoon Rogue | 2/1
+First strike
+Whenever this creature attacks, add {R}. Until end of turn, you don't lose this mana as steps and phases end.
+
+#6597 | C | MV 3 B | Creature — Rat Squirrel | 3/2
+Deathtouch
+When this creature enters, you may mill two cards. (You may put the top two cards of your library into your graveyard.)
+
+#5784 | C | MV 2 R | Creature — Mouse Citizen | 2/2
+Valiant — Whenever this creature becomes the target of a spell or ability you control for the first time each turn, you may discard a card. If you do, draw a card.
+
+#691 | U | MV 2 R | Creature — Otter Wizard | 2/2
+Offspring {2} (You may pay an additional {2} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)
+Whenever you cast a noncreature spell, this creature deals 1 damage to each opponent.
+
+#3052 | U | MV 3 B | Creature — Bat Warrior | 1/3
+Flying, deathtouch
+Whenever you gain or lose life during your turn, Bats you control get +1/+0 and gain deathtouch until end of turn. This ability triggers only once each turn.
+
+#5625 | C | MV 3 colourless | Artifact Creature — Shapeshifter | 2/3
+Changeling (This card is every creature type.)
+Reach
+{2}: Put target card from your graveyard on the bottom of your library.
+
+#5076 | C | MV 2 R | Creature — Raccoon Bard | 2/2
+{T}: Target creature you control gains haste until end of turn. Activate only as a sorcery.
+
+#766 | C | MV 5 R | Instant
+~ deals 6 damage to target creature and 2 damage to up to one target creature token.
+
+#766 | C | MV 5 R | Instant
+~ deals 6 damage to target creature and 2 damage to up to one target creature token.
+
+#5322 | C | MV 2 B | Instant
+Target creature gets -2/-2 until end of turn. Create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this token: You gain 3 life.")
+
+#5322 | C | MV 2 B | Instant
+Target creature gets -2/-2 until end of turn. Create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this token: You gain 3 life.")
+
+#6420 | U | MV 3 B | Instant
+Gift a card (You may promise an opponent a gift as you cast this spell. If you do, they draw a card before its other effects.)
+Target opponent sacrifices a creature with the greatest power among creatures they control. If the gift was promised, return target creature card from your graveyard to your hand.
+
+#5862 | U | MV 2 R | Sorcery
+~ deals 1 damage to any target.
+Draw a card.
+
+#1545 | C | MV 3 B | Sorcery
+Surveil 2, then draw two cards. You lose 2 life. (To surveil 2, look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+
+#4634 | C | MV 3 B | Sorcery
+Target opponent discards two cards. Then if you control a Rat, surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+
+#4634 | C | MV 3 B | Sorcery
+Target opponent discards two cards. Then if you control a Rat, surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+
+#4477 | C | MV 3 B | Instant
+Affinity for Lizards (This spell costs {1} less to cast for each Lizard you control.)
+Target creature gets +2/+0 and gains lifelink and indestructible until end of turn.
+
+TARGET card: #6381
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 6381 MV 2
+667 MV 2 AFTER Lizard cast pings; counter bonus
+3104 MV 2 AFTER Lizard cast pings; counter bonus
+3272 MV 1 AFTER Lizard cast pings; counter bonus
+4914 MV 2 AFTER Lizard cast pings; attack life loss
+5625 MV 3 AFTER changeling counts as Lizard spell
+691 MV 2 EITHER noncreature spells ping opponent
+5862 MV 2 EITHER opponent life loss before creatures enter

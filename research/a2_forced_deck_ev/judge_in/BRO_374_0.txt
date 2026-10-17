@@ -1,0 +1,100 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#374 | R | MV 1 G | Creature — Wurm | 1/1
+This creature has deathtouch as long as you control three or more artifacts.
+Whenever an artifact you control enters, you gain 1 life. If this is the first time this ability has resolved this turn, put a +1/+1 counter on this creature.
+
+#2683 | U | MV 1 G | Sorcery
+Choose one —
+• Search your library for a basic land card, reveal it, put it into your hand, then shuffle.
+• Target creature you control fights target creature you don't control. (Each deals damage equal to its power to the other.)
+
+#4411 | C | MV 2 G | Sorcery
+Target creature you control gets +1/+2 until end of turn. It fights target creature you don't control. (Each deals damage equal to its power to the other.)
+
+#243 | C | MV 7 colourless | Artifact Creature — Golem | 6/5
+Prototype {3}{G} — 3/3 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+When this creature enters, you gain life equal to its power.
+
+#6243 | U | MV 7 colourless | Artifact Creature — Wurm | 4/6
+Prototype {2}{G}{G} — 2/5 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+Whenever this creature attacks, target attacking creature gets +X/+0 until end of turn, where X is this creature's power.
+
+#6243 | U | MV 7 colourless | Artifact Creature — Wurm | 4/6
+Prototype {2}{G}{G} — 2/5 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+Whenever this creature attacks, target attacking creature gets +X/+0 until end of turn, where X is this creature's power.
+
+#6793 | C | MV 3 G | Creature — Human Scout | 3/2
+When this creature enters, create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+
+#1676 | C | MV 6 G | Creature — Treefolk Druid | 5/5
+Trample
+When this creature enters, target creature gets +X/+X until end of turn, where X is the number of creature cards in your graveyard.
+
+#3482 | C | MV 2 G | Creature — Faerie | 2/2
+This creature can't be blocked by artifact creatures.
+{7}: Put two +1/+1 counters on this creature.
+
+#2990 | C | MV 3 G | Creature — Beast | 4/2
+When this creature dies, mill four cards. (Put the top four cards of your library into your graveyard.)
+
+#3118 | C | MV 10 colourless | Artifact Creature — Construct | 10/10
+Prototype {3}{G}{G} — 3/5 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+Reach, trample
+
+#4250 | C | MV 2 G | Instant
+Put a +1/+1 counter on target creature you control. It gains reach, trample, hexproof, and indestructible until end of turn. (It can't be the target of spells or abilities your opponents control. Damage and effects that say "destroy" don't destroy it.)
+
+#4778 | C | MV 4 G | Sorcery
+Exile target artifact, enchantment, or creature with flying.
+
+#5373 | C | MV 2 R | Creature — Human Soldier | 3/1
+Reach
+
+#1789 | C | MV 7 colourless | Artifact Creature — Construct | 6/4
+Prototype {2}{R} — 3/2 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+Haste
+
+#6967 | C | MV 4 R | Instant
+Choose one —
+• Create two 1/1 colorless Soldier artifact creature tokens.
+• Creatures you control get +2/+0 until end of turn.
+
+#5825 | C | MV 3 R | Creature — Minotaur | 2/3
+{1}, Sacrifice an artifact: This creature gets +1/+1 until end of turn and deals 1 damage to each opponent.
+
+#2877 | C | MV 3 R | Creature — Human Soldier | 3/1
+When this creature dies, create a 1/1 colorless Soldier artifact creature token.
+
+#2877 | C | MV 3 R | Creature — Human Soldier | 3/1
+When this creature dies, create a 1/1 colorless Soldier artifact creature token.
+
+#2866 | C | MV 3 R | Creature — Human Artificer | 2/1
+When this creature enters, mill three cards. You may put an artifact card from among the cards milled this way into your hand. If you don't, put a +1/+1 counter on this creature. (To mill a card, put the top card of your library into your graveyard.)
+
+#7010 | C | MV 4 colourless | Artifact Creature — Soldier | 3/1
+When this creature enters, create a 1/1 colorless Soldier artifact creature token.
+Unearth {2}{W} ({2}{W}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#3891 | C | MV 4 colourless | Artifact Creature — Construct | 2/3
+When this creature enters, create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+
+#1331 | C | MV 5 colourless | Artifact Creature — Assembly-Worker | 4/4
+{3}: This creature gets +2/+2 until end of turn. If you control creatures named Mine Worker and Tower Worker, put two +1/+1 counters on this creature instead. Activate only once each turn.
+
+TARGET card: #374
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 374 MV 1
+243 MV 7 EITHER artifact for deathtouch/trigger
+6243 MV 7 EITHER artifact for deathtouch/trigger
+6793 MV 3 EITHER makes Powerstone artifact
+3118 MV 10 EITHER artifact for deathtouch/trigger
+1789 MV 7 EITHER artifact for deathtouch/trigger
+6967 MV 4 EITHER makes artifact Soldier tokens
+2877 MV 3 EITHER dies into artifact Soldier token
+2866 MV 3 EITHER can fetch artifact card
+7010 MV 4 EITHER artifact plus artifact token
+3891 MV 4 EITHER artifact plus Powerstone
+1331 MV 5 EITHER artifact for deathtouch/trigger

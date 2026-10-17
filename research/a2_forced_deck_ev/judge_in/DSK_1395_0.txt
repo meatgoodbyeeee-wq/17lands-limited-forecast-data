@@ -1,0 +1,100 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#1395 | M | MV 4 B | Legendary Enchantment
+When ~ enters, each player sacrifices X creatures of their choice.
+Whenever a creature you control dies, you may pay 3 life. If you do, return that card under your control with a finality counter on it.
+Whenever a creature an opponent controls dies, they may pay 3 life. If they don't, return that card under your control with a finality counter on it.
+
+#6231 | C | MV 2 B | Instant
+Target creature gets +2/+2 and gains lifelink until end of turn.
+
+#4054 | C | MV 3 B | Instant
+Destroy target creature.
+
+#2132 | C | MV 3 B | Enchantment — Aura
+Enchant creature
+When this Aura enters, look at target player's hand. You may choose a nonland card from it. That player discards that card.
+When enchanted creature is dealt damage, destroy it.
+
+#5081 | C | MV 3 B | Enchantment Creature — Horror | 3/2
+Flash
+Whenever this creature attacks, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#5081 | C | MV 3 B | Enchantment Creature — Horror | 3/2
+Flash
+Whenever this creature attacks, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#4312 | C | MV 7 B | Enchantment — Room // Enchantment — Room
+When you unlock this door, you draw two cards and you lose 2 life.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) Whenever a creature you control attacks alone, it gets +1/+0 and gains deathtouch until end of turn.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+
+#3034 | U | MV 2 B | Creature — Human Survivor | 3/1
+This creature can't be blocked by Glimmers.
+Survival — At the beginning of your second main phase, if this creature is tapped, you may search your library for a card, put it into your graveyard, then shuffle.
+
+#3105 | C | MV 2 B | Creature — Leech | 2/2
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, each opponent loses 1 life.
+
+#3105 | C | MV 2 B | Creature — Leech | 2/2
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, each opponent loses 1 life.
+
+#3105 | C | MV 2 B | Creature — Leech | 2/2
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, each opponent loses 1 life.
+
+#316 | C | MV 3 W | Enchantment
+Ward {2} (Whenever this enchantment becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+When this enchantment enters, exile target artifact, creature, or enchantment an opponent controls until this enchantment leaves the battlefield.
+
+#316 | C | MV 3 W | Enchantment
+Ward {2} (Whenever this enchantment becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+When this enchantment enters, exile target artifact, creature, or enchantment an opponent controls until this enchantment leaves the battlefield.
+
+#4618 | U | MV 1 W | Instant
+Destroy target creature. Its controller manifests dread. (That player looks at the top two cards of their library, then puts one onto the battlefield face down as a 2/2 creature and the other into their graveyard. If it's a creature card, it can be turned face up any time for its mana cost.)
+
+#1244 | C | MV 5 W | Instant
+This spell costs {3} less to cast if it targets a tapped creature.
+Destroy target creature.
+
+#4509 | U | MV 2 W | Enchantment — Aura
+Enchant creature you control
+When this Aura enters, exile target nonland permanent an opponent controls until this Aura leaves the battlefield.
+Enchanted creature gets +1/+0 and has lifelink and ward {2}.
+
+#2370 | C | MV 4 W | Creature — Spirit | 2/4
+Flying
+When this creature enters, target creature gets +2/+4 until end of turn.
+
+#2370 | C | MV 4 W | Creature — Spirit | 2/4
+Flying
+When this creature enters, target creature gets +2/+4 until end of turn.
+
+#3473 | C | MV 3 W | Creature — Human Doctor | 3/3
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, this creature gains lifelink until end of turn.
+
+#3473 | C | MV 3 W | Creature — Human Doctor | 3/3
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, this creature gains lifelink until end of turn.
+
+#1468 | U | MV 3 W | Creature — Human Survivor | 3/3
+Survival — At the beginning of your second main phase, if this creature is tapped, draw a card if you control a Glimmer creature. If you don't control a Glimmer creature, create a 1/1 white Glimmer enchantment creature token.
+
+#1487 | C | MV 3 W | Creature — Human Soldier | 2/4
+Whenever this creature attacks, another target creature you control gets +1/+0 and gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#5039 | C | MV 2 W | Enchantment Creature — Nightmare | 2/2
+Vigilance
+Whenever this creature attacks, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#1315 | C | MV 0 colourless | Land
+This land enters tapped unless a player has 13 or less life.
+{T}: Add {W} or {B}.
+
+TARGET card: #1395
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 1395 MV 4
+4054 MV 3 AFTER kills creatures, triggers returns
+4618 MV 1 AFTER kills creature, triggers return
+1244 MV 5 AFTER kills creature, triggers return

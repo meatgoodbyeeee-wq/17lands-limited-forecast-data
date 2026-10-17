@@ -1,0 +1,105 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4308 | R | MV 3 W | Enchantment
+Whenever one or more creatures you control with mana value 3 or less enter, draw a card. This ability triggers only once each turn.
+
+#2917 | R | MV 3 W | Sorcery
+Look at the top seven cards of your library. Put up to X artifact and/or creature cards with mana value 3 or less from among them onto the battlefield. Put the rest on the bottom of your library in a random order.
+
+#1189 | C | MV 3 W | Creature — Human Cleric Soldier | 1/4
+Lifelink
+
+#1189 | C | MV 3 W | Creature — Human Cleric Soldier | 1/4
+Lifelink
+
+#3575 | C | MV 2 W | Creature — Human Soldier | 1/2
+Flash
+Flying
+{5}: Creatures you control get +1/+1 until end of turn.
+
+#4545 | C | MV 2 W | Creature — Human Artificer | 2/1
+When this creature dies, create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+
+#1178 | U | MV 4 W | Legendary Creature — Human Artificer | 3/3
+Whenever ~ or another legendary creature you control enters, return target artifact card from your graveyard to your hand.
+
+#5582 | C | MV 3 W | Enchantment — Aura
+Enchant creature
+When this Aura enters, scry 2.
+Enchanted creature can't attack or block, and its activated abilities can't be activated.
+
+#3035 | R | MV 3 WR | Legendary Creature — Human Noble | 2/3
+{4}, {T}: Discard all the cards in your hand, then draw that many cards. You may choose an artifact or creature card with mana value 1 you discarded this way, then do the same for artifact or creature cards with mana values 2 and 3. Return those cards to the battlefield. Activate only as a sorcery.
+
+#5373 | C | MV 2 R | Creature — Human Soldier | 3/1
+Reach
+
+#5825 | C | MV 3 R | Creature — Minotaur | 2/3
+{1}, Sacrifice an artifact: This creature gets +1/+1 until end of turn and deals 1 damage to each opponent.
+
+#2866 | C | MV 3 R | Creature — Human Artificer | 2/1
+When this creature enters, mill three cards. You may put an artifact card from among the cards milled this way into your hand. If you don't, put a +1/+1 counter on this creature. (To mill a card, put the top card of your library into your graveyard.)
+
+#6967 | C | MV 4 R | Instant
+Choose one —
+• Create two 1/1 colorless Soldier artifact creature tokens.
+• Creatures you control get +2/+0 until end of turn.
+
+#7017 | C | MV 2 R | Enchantment — Aura
+Enchant creature
+As long as you control enchanted creature, it gets +2/+2. Otherwise, it can't block.
+
+#4115 | C | MV 2 colourless | Artifact Creature — Dog | 2/1
+When this creature enters, you may discard a card. If you do, draw a card.
+Unearth {1}{R} ({1}{R}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#2874 | U | MV 3 colourless | Artifact Creature — Thopter | 2/1
+Flying
+Unearth {2} ({2}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#1789 | C | MV 7 colourless | Artifact Creature — Construct | 6/4
+Prototype {2}{R} — 3/2 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+Haste
+
+#7010 | C | MV 4 colourless | Artifact Creature — Soldier | 3/1
+When this creature enters, create a 1/1 colorless Soldier artifact creature token.
+Unearth {2}{W} ({2}{W}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#3891 | C | MV 4 colourless | Artifact Creature — Construct | 2/3
+When this creature enters, create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+
+#3891 | C | MV 4 colourless | Artifact Creature — Construct | 2/3
+When this creature enters, create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+
+#6520 | U | MV 1 colourless | Artifact Creature — Soldier | 1/2
+Protection from multicolored (This creature can't be blocked, targeted, dealt damage, enchanted, or equipped by anything multicolored.)
+Whenever a nonbasic land an opponent controls enters, you gain 1 life.
+
+#4901 | C | MV 5 colourless | Artifact Creature — Juggernaut | 5/3
+Trample
+This creature attacks each combat if able.
+Unearth {5}{R} ({5}{R}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)
+
+#3956 | C | MV 2 R | Enchantment
+When this enchantment enters, you may discard a card. If you do, draw two cards.
+{1}, Sacrifice this enchantment: Creatures you control gain haste until end of turn.
+
+TARGET card: #4308
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 4308 MV 3
+2917 MV 3 AFTER puts MV3 or less creatures onto battlefield
+1189 MV 3 AFTER creature MV3 or less enters, draws
+3575 MV 2 AFTER creature MV3 or less enters, draws
+4545 MV 2 AFTER creature MV3 or less enters, draws
+3035 MV 3 AFTER creature MV3 or less enters, draws
+5373 MV 2 AFTER creature MV3 or less enters, draws
+5825 MV 3 AFTER creature MV3 or less enters, draws
+2866 MV 3 AFTER creature MV3 or less enters, draws
+4115 MV 2 AFTER creature MV3 or less enters, draws
+2874 MV 3 AFTER creature MV3 or less enters, draws
+1789 MV 7 AFTER prototype MV3 creature enters, draws
+6520 MV 1 AFTER creature MV3 or less enters, draws
+6967 MV 4 AFTER makes Soldier tokens (MV0)
+7010 MV 4 AFTER ETB creates MV0 Soldier token

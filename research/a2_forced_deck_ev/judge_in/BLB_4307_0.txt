@@ -1,0 +1,102 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4307 | R | MV 1 G | Creature — Frog Warrior | 1/1
+Trample
+Whenever another Frog, Rabbit, Raccoon, or Squirrel you control enters, put a +1/+1 counter on this creature.
+
+#2455 | R | MV 1 G | Creature — Frog Warrior | 2/2
+At the beginning of your upkeep, return another creature you control to its owner's hand. If you do, put a +1/+1 counter on this creature. Otherwise, you may return this creature to its owner's hand.
+
+#2089 | C | MV 1 W | Creature — Rabbit Mouse | 1/1
+{1}, {T}: Target creature gets +1/+1 until end of turn. Activate only as a sorcery.
+
+#2089 | C | MV 1 W | Creature — Rabbit Mouse | 1/1
+{1}, {T}: Target creature gets +1/+1 until end of turn. Activate only as a sorcery.
+
+#6309 | C | MV 2 W | Creature — Rabbit Cleric | 2/2
+{3}{W}: Creatures you control get +1/+1 until end of turn.
+
+#2087 | U | MV 2 WG | Creature — Rabbit Soldier
+Trample
+~'s power and toughness are each equal to the number of creatures you control.
+
+#1436 | U | MV 2 G | Creature — Frog Druid | 2/3
+Whenever this creature or another creature you control leaves the battlefield without dying, put a +1/+1 counter on target creature you control.
+
+#2172 | C | MV 2 G | Creature — Squirrel Raccoon | 2/2
+When this creature enters, create a Food token.
+Whenever you expend 4, this creature gets +1/+1 until end of turn. (You expend 4 as you spend your fourth total mana to cast spells during a turn.)
+
+#2172 | C | MV 2 G | Creature — Squirrel Raccoon | 2/2
+When this creature enters, create a Food token.
+Whenever you expend 4, this creature gets +1/+1 until end of turn. (You expend 4 as you spend your fourth total mana to cast spells during a turn.)
+
+#1802 | C | MV 2 W | Creature — Mouse Soldier | 3/1
+Valiant — Whenever this creature becomes the target of a spell or ability you control for the first time each turn, it gets +0/+2 until end of turn.
+{1}, Sacrifice this creature: Destroy target artifact or enchantment.
+
+#1802 | C | MV 2 W | Creature — Mouse Soldier | 3/1
+Valiant — Whenever this creature becomes the target of a spell or ability you control for the first time each turn, it gets +0/+2 until end of turn.
+{1}, Sacrifice this creature: Destroy target artifact or enchantment.
+
+#196 | U | MV 3 G | Creature — Squirrel Druid | 3/2
+When this creature enters, you may forage. When you do, return target permanent card from your graveyard to your hand. (To forage, exile three cards from your graveyard or sacrifice a Food.)
+
+#5528 | C | MV 3 W | Creature — Rabbit Soldier | 3/2
+Offspring {1} (You may pay an additional {1} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)
+When this creature enters, target creature you control gets +1/+1 until end of turn.
+
+#2971 | C | MV 4 G | Creature — Frog Rabbit | 3/4
+When this creature enters, until end of turn, target creature you control gains vigilance and gets +X/+X, where X is the number of creatures you control.
+
+#3373 | C | MV 4 G | Creature — Raccoon Warrior | 4/4
+Offspring {2} (You may pay an additional {2} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)
+This creature can't be blocked by creatures with power 2 or less.
+
+#3649 | C | MV 4 G | Creature — Squirrel Archer | 2/4
+Reach
+When this creature enters, you may forage. If you do, draw a card. (To forage, exile three cards from your graveyard or sacrifice a Food.)
+
+#6893 | C | MV 5 WG | Creature — Rabbit Citizen | 3/2
+When this creature enters, create two 1/1 white Rabbit creature tokens.
+
+#868 | C | MV 5 W | Creature — Bird Scout | 3/4
+Flying
+When this creature enters, put a +1/+1 counter on target creature you control without flying.
+
+#1031 | U | MV 3 W | Sorcery
+Create three 1/1 white Rabbit creature tokens.
+
+#6968 | C | MV 3 W | Enchantment
+When this enchantment enters, exile target nonland permanent an opponent controls until this enchantment leaves the battlefield.
+
+#1419 | C | MV 2 W | Artifact — Food
+When this artifact enters and when you sacrifice it, create a 1/1 white Rabbit creature token and scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+{2}, {T}, Sacrifice this artifact: You gain 3 life.
+
+#1760 | C | MV 1 G | Instant
+Target creature gets +1/+3 and gains reach until end of turn. Untap it.
+
+#3207 | C | MV 4 G | Instant
+Affinity for Frogs (This spell costs {1} less to cast for each Frog you control.)
+Target creature you control deals damage equal to twice its power to target creature you don't control.
+
+TARGET card: #4307
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 4307 MV 1
+2455 MV 1 AFTER Frog entering adds counter
+2089 MV 1 AFTER Rabbit entering adds counter
+6309 MV 2 AFTER Rabbit entering adds counter
+2087 MV 2 AFTER Rabbit entering adds counter
+1436 MV 2 AFTER Frog entering adds counter
+2172 MV 2 AFTER Squirrel Raccoon adds counter
+196 MV 3 AFTER Squirrel entering adds counter
+5528 MV 3 AFTER Rabbit entering, offspring adds more
+2971 MV 4 AFTER Frog Rabbit adds counter
+3373 MV 4 AFTER Raccoon entering, offspring adds more
+3649 MV 4 AFTER Squirrel entering adds counter
+6893 MV 5 AFTER Rabbit plus two Rabbit tokens
+1031 MV 3 AFTER Three Rabbit tokens enter
+1419 MV 2 AFTER Food makes Rabbit tokens twice

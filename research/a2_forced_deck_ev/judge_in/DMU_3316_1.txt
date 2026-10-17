@@ -1,0 +1,96 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#3316 | M | MV 4 U | Enchantment
+Whenever you cast a spell that targets only a single artifact or creature you control, create a token that's a copy of that artifact or creature, except it's not legendary.
+
+#1266 | R | MV 4 UB | Legendary Creature — Phyrexian Human Wizard | 3/2
+Flash
+When ~ enters, choose up to one —
+• Counter target spell, activated ability, or triggered ability. Its controller draws a card.
+• Destroy another target creature or planeswalker. Its controller draws a card.
+
+#1319 | U | MV 1 U | Instant
+Kicker {2}{B} (You may pay an additional {2}{B} as you cast this spell.)
+Return target creature or planeswalker you don't control to its owner's hand. If this spell was kicked, put that permanent on the bottom of its owner's library instead.
+
+#6856 | C | MV 2 U | Sorcery
+Tap target creature and put three stun counters on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+Scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+
+#6237 | C | MV 4 U | Creature — Human Pirate | 3/2
+Flying
+When this creature dies, look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.
+
+#6834 | C | MV 3 U | Creature — Merfolk Rogue | 3/2
+Domain — When this creature enters, look at the top X cards of your library, where X is the number of basic land types among lands you control. You may put one of those cards on top of your library. Put the rest on the bottom of your library in a random order.
+
+#1695 | U | MV 4 U | Creature — Human Wizard | 3/3
+When this creature enters, you may search your library for an instant or sorcery card with mana value 1, reveal it, put it into your hand, then shuffle.
+
+#3033 | C | MV 2 U | Instant
+Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+
+#1889 | C | MV 2 U | Creature — Illusion | 2/1
+Vigilance
+This creature can't be blocked as long as you've cast an instant or sorcery spell this turn.
+
+#255 | R | MV 1 B | Creature — Human | 1/1
+{B}: This creature becomes a Human Cleric with base power and toughness 2/2.
+{1}{B}: If this creature is a Cleric, put a deathtouch counter on it and it becomes a Phyrexian Human Cleric with base power and toughness 3/3.
+{1}{B}{B}: If this creature is a Phyrexian, put a +1/+1 counter on it, then you draw a card and you lose 1 life.
+
+#4769 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, sacrifice a creature.
+Destroy target creature.
+
+#1501 | C | MV 2 B | Instant
+Target creature gains deathtouch and indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#2789 | C | MV 2 B | Instant
+Kicker {1}{U} (You may pay an additional {1}{U} as you cast this spell.)
+Target creature gets -2/-2 until end of turn. If this spell was kicked, that creature gets an additional -1/-1 until end of turn for each instant and sorcery card in your graveyard.
+
+#461 | C | MV 4 B | Creature — Shade | 2/2
+Flying
+{1}{B}: This creature gets +1/+1 until end of turn.
+
+#6422 | C | MV 3 B | Creature — Spirit Cleric | 3/1
+When this creature enters, mill three cards. (Put the top three cards of your library into your graveyard.)
+{4}{B}, Exile this card from your graveyard: Return another target creature card from your graveyard to your hand.
+
+#6422 | C | MV 3 B | Creature — Spirit Cleric | 3/1
+When this creature enters, mill three cards. (Put the top three cards of your library into your graveyard.)
+{4}{B}, Exile this card from your graveyard: Return another target creature card from your graveyard to your hand.
+
+#5103 | C | MV 2 B | Creature — Phyrexian Human | 2/2
+Whenever a creature you control dies, scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+
+#4814 | C | MV 2 B | Creature — Phyrexian Goblin | 2/1
+When this creature dies, target creature an opponent controls gets -1/-1 until end of turn.
+
+#3571 | C | MV 3 B | Creature — Nightmare Wall | 2/4
+Defender
+{2}{B}, Sacrifice a creature: You gain 1 life and draw a card.
+
+#3534 | U | MV 4 B | Creature — Leech Horror
+Kicker {U} (You may pay an additional {U} as you cast this spell.)
+As this creature enters, if it was kicked, mill four cards. (To mill a card, put the top card of your library into your graveyard.)
+~'s power and toughness are each equal to the greatest mana value among cards in your graveyard.
+
+#2718 | C | MV 3 colourless | Artifact Creature — Construct | 3/2
+When this creature enters, scry 2. (Look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)
+
+#2718 | C | MV 3 colourless | Artifact Creature — Construct | 3/2
+When this creature enters, scry 2. (Look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)
+
+#6815 | U | MV 4 B | Sorcery
+Kicker {2}{W} (You may pay an additional {2}{W} as you cast this spell.)
+Return target creature card from your graveyard to the battlefield. If this spell was kicked, you gain life equal to that card's mana value. Otherwise, you lose that much life.
+Exile ~.
+
+TARGET card: #3316
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 3316 MV 4
+1501 MV 2 AFTER targets own creature, copies it

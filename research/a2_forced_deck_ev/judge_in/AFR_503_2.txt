@@ -1,0 +1,103 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#503 | R | MV 4 W | Enchantment
+At the beginning of your end step, exile up to one target artifact or creature you control, then return that card to the battlefield under its owner's control.
+
+#77 | C | MV 5 W | Creature — Angel | 3/3
+Flying
+Whenever this creature attacks, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#77 | C | MV 5 W | Creature — Angel | 3/3
+Flying
+Whenever this creature attacks, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#3792 | C | MV 5 W | Creature — Orc Knight | 4/4
+Beacon of Hope — When this creature enters, creatures you control get +1/+1 and gain vigilance until end of turn.
+
+#4431 | U | MV 2 W | Instant
+Target creature or planeswalker an opponent controls phases out. If that permanent is black, exile it instead. (If it phases out, treat it and anything attached to it as though they don't exist until its controller's next turn.)
+
+#2931 | U | MV 1 W | Artifact
+When this artifact enters, exile target nonland permanent an opponent controls with mana value 2 or less until this artifact leaves the battlefield.
+
+#1680 | C | MV 2 W | Artifact
+When this artifact enters, draw a card.
+{W}, {T}, Sacrifice this artifact: You gain 3 life.
+
+#2569 | C | MV 2 W | Instant
+Choose one —
+• Rouse the Party — Creatures you control get +1/+1 until end of turn.
+• Set Off Traps — This spell deals 5 damage to target attacking creature.
+
+#2053 | U | MV 3 W | Artifact — Equipment
+Equipped creature gets +3/+3 and has ward {1}. (Whenever equipped creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {1}.)
+Equip {3}. This ability costs {1} less to activate for each other Equipment you control. ({3}: Attach to target creature you control. Equip only as a sorcery.)
+
+#1311 | C | MV 4 B | Sorcery
+Destroy target creature or planeswalker. Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#2617 | C | MV 6 B | Instant
+Target creature gets -11/-11 until end of turn.
+
+#5153 | C | MV 3 B | Enchantment — Aura
+Enchant creature
+When this Aura enters, venture into the dungeon. (Enter the first room or advance to the next room.)
+Enchanted creature gets -2/-2. It gets -5/-5 instead as long as you've completed a dungeon.
+
+#5119 | U | MV 5 B | Creature — Elf Spider | 4/3
+Reach
+Whenever this creature deals combat damage to a player, create a 2/1 black Spider creature token with reach and menace.
+
+#6822 | C | MV 6 B | Creature — Beholder | 6/5
+When this creature enters, choose one —
+• Antimagic Cone — Each opponent sacrifices an enchantment of their choice.
+• Fear Ray — Creatures you control gain menace until end of turn. (A creature with menace can't be blocked except by two or more creatures.)
+
+#3957 | C | MV 3 B | Creature — Vampire | 2/3
+When this creature enters, each opponent loses 2 life and you gain 2 life.
+
+#3917 | C | MV 3 B | Creature — Snake Rogue | 2/2
+Deathtouch
+Whenever this creature deals combat damage to a player, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#5667 | C | MV 5 B | Creature — Zombie Ogre | 3/5
+At the beginning of your end step, if a creature died this turn, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#5667 | C | MV 5 B | Creature — Zombie Ogre | 3/5
+At the beginning of your end step, if a creature died this turn, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#4729 | C | MV 5 B | Creature — Human Warlock | 4/4
+Circle of Death — {5}{B}: Roll a d20.
+1—9 | Each opponent loses 2 life.
+10—19 | Each opponent loses 2 life and you gain 2 life.
+20 | Each opponent loses 2 life and you gain 2 life. Create two Treasure tokens. (They're artifacts with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#4081 | C | MV 4 B | Creature — Skeleton | 4/3
+When this creature dies, venture into the dungeon. (Enter the first room or advance to the next room.)
+
+#2859 | C | MV 1 B | Creature — Zombie | 1/1
+When this creature dies, choose one —
+• Target creature an opponent controls gets -1/-1 until end of turn.
+• Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5699 | C | MV 2 B | Creature — Tiefling Rogue | 1/3
+Whenever this creature deals combat damage to a player, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#3233 | C | MV 2 B | Creature — Elf Warlock | 2/2
+When this creature enters, if mana from a Treasure was spent to cast it, you draw a card and you lose 1 life.
+
+#696 | R | MV 0 colourless | Land
+If you control two or more other lands, this land enters tapped.
+{T}: Add {W}.
+{4}{W}: This land becomes a 3/4 white Dragon creature with flying until end of turn. It's still a land.
+
+TARGET card: #503
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 503 MV 4
+1680 MV 2 EITHER Artifact ETB draws card when blinked
+2931 MV 1 EITHER Blink re-exiles opposing permanent
+3792 MV 5 EITHER Blink repeats team pump ETB
+6822 MV 6 EITHER Blink repeats sacrifice/menace ETB
+3957 MV 3 EITHER Blink repeats drain ETB

@@ -1,0 +1,109 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#6783 | R | MV 4 WG | Legendary Creature — Human Knight | 4/2
+When ~ enters, you may search your library for a Mount or Vehicle card, reveal it, put it into your hand, then shuffle.
+If one or more +1/+1 counters would be put on a creature or Vehicle you control, that many plus one +1/+1 counters are put on it instead.
+
+#6716 | C | MV 2 W | Sorcery
+Choose one —
+• ~ deals X damage to target creature, where X is the number of permanents you control that are creatures and/or Vehicles.
+• Destroy target artifact.
+
+#400 | C | MV 2 W | Creature — Cat Scout | 2/2
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+During your turn, this creature has first strike.
+Max speed — {3}, Exile this card from your graveyard: Draw a card.
+
+#5063 | C | MV 3 W | Creature — Human Artificer | 3/3
+{3}{W}: Put a +1/+1 counter on target Mount or Vehicle.
+
+#5380 | C | MV 5 W | Artifact — Vehicle | 5/4
+When this Vehicle enters, create a 1/1 colorless Thopter artifact creature token with flying.
+Crew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#4291 | C | MV 3 W | Artifact Creature — Robot Artificer | 2/4
+Artifact spells you cast cost {1} less to cast.
+
+#3968 | C | MV 2 G | Creature — Lizard Mount | 2/1
+Deathtouch
+Whenever this creature attacks while saddled, it gets +0/+3 until end of turn.
+Saddle 2 (Tap any number of other creatures you control with total power 2 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+
+#5021 | C | MV 2 G | Creature — Human Knight | 2/2
+{4}{G}: Look at the top three cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+
+#4306 | C | MV 3 G | Creature — Mole | 2/3
+When this creature enters, mill three cards, then you may return a land card from your graveyard to your hand. (To mill three cards, put the top three cards of your library into your graveyard.)
+
+#4306 | C | MV 3 G | Creature — Mole | 2/3
+When this creature enters, mill three cards, then you may return a land card from your graveyard to your hand. (To mill three cards, put the top three cards of your library into your graveyard.)
+
+#1063 | C | MV 4 G | Creature — Wurm | 4/4
+Reach, trample
+Exhaust — {6}{G}: Put three +1/+1 counters on this creature. (Activate each exhaust ability only once.)
+
+#1704 | C | MV 5 G | Creature — Cat Mount | 4/4
+Vigilance
+Whenever this creature attacks while saddled, it gets +2/+2 until end of turn.
+Saddle 1 (Tap any number of other creatures you control with total power 1 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+
+#5477 | C | MV 6 G | Creature — Dinosaur | 6/6
+Reach
+When this creature enters, you gain 4 life.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#3 | C | MV 2 colourless | Artifact Creature — Zombie Cat | 2/1
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+Max speed — This creature gets +1/+2.
+
+#1249 | C | MV 2 colourless | Artifact Creature — Turtle | 3/1
+Defender
+When this creature enters, if an opponent controls more lands than you, you create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#161 | C | MV 3 colourless | Artifact Creature — Thopter | 2/1
+Flying, vigilance
+{2}, {T}, Sacrifice this creature: Destroy another target artifact. Activate only as a sorcery.
+
+#2652 | C | MV 3 colourless | Artifact Creature — Construct | 2/2
+Exhaust — {3}: Put a +1/+1 counter on this creature. Create a 1/1 colorless Thopter artifact creature token with flying. (Activate each exhaust ability only once.)
+
+#5614 | C | MV 4 colourless | Artifact Creature — Construct | 3/4
+Whenever this creature enters or attacks, exile up to one target card from a graveyard. You gain 1 life.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#1848 | C | MV 5 colourless | Artifact — Vehicle | 4/4
+Flying
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#1848 | C | MV 5 colourless | Artifact — Vehicle | 4/4
+Flying
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#615 | C | MV 1 colourless | Artifact
+{3}, {T}, Sacrifice this artifact: It deals 3 damage to target creature.
+{6}, {T}, Sacrifice this artifact: Destroy target creature or Vehicle.
+
+#3753 | C | MV 2 colourless | Artifact
+When this artifact enters, draw a card.
+{2}, {T}: Target Mount you control becomes saddled until end of turn. Activate only as a sorcery.
+{2}, {T}: Target Vehicle you control becomes an artifact creature until end of turn.
+
+#2477 | U | MV 4 colourless | Artifact
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+When this artifact enters, draw two cards, then discard a card.
+Max speed — Spells you cast cost {1} less to cast.
+
+TARGET card: #6783
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 6783 MV 4
+3968 MV 2 AFTER Mount tutor target
+5380 MV 5 AFTER Vehicle tutor target
+1704 MV 5 AFTER Mount tutor target
+1848 MV 5 AFTER Vehicle tutor target
+5063 MV 3 EITHER puts counters on Mount/Vehicle
+1063 MV 4 EITHER exhaust counters get +1
+2652 MV 3 EITHER exhaust counter gets +1

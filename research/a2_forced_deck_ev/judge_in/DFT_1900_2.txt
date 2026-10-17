@@ -1,0 +1,109 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#1900 | R | MV 3 colourless | Artifact
+Whenever you discard a card, choose one that hasn't been chosen this turn —
+• Draw a card.
+• Create a Treasure token.
+• Each opponent loses 3 life.
+
+#738 | C | MV 2 R | Instant
+~ deals 3 damage to any target.
+
+#6173 | U | MV 1 R | Creature — Goblin Artificer | 2/1
+Exhaust — {2}{R}: Discard up to two cards, then draw that many cards. Put a +1/+1 counter on this creature. (Activate each exhaust ability only once.)
+
+#5861 | C | MV 5 R | Creature — Shark Pirate | 4/5
+Reach
+Discard a card: Draw a card. Activate only as a sorcery and only once each turn.
+
+#6298 | R | MV 5 R | Legendary Creature — Goblin Artificer | /5
+~'s power is equal to the greatest mana value among artifacts you control.
+Whenever ~ enters or attacks, choose target artifact card in your graveyard. You may sacrifice an artifact. If you do, return the chosen card to the battlefield.
+
+#106 | C | MV 2 R | Creature — Goblin Warrior | 2/1
+Haste
+Exhaust — {3}{R}: Put two +1/+1 counters on this creature. (Activate each exhaust ability only once.)
+
+#3020 | C | MV 3 U | Creature — Octopus Pirate | 2/3
+Vigilance
+Exhaust — {1}{U}: Draw a card, then discard a card. Put a +1/+1 counter on this creature. (Activate each exhaust ability only once.)
+
+#3020 | C | MV 3 U | Creature — Octopus Pirate | 2/3
+Vigilance
+Exhaust — {1}{U}: Draw a card, then discard a card. Put a +1/+1 counter on this creature. (Activate each exhaust ability only once.)
+
+#4340 | C | MV 2 U | Sorcery
+Tap target creature or Vehicle, then put three stun counters on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#6722 | C | MV 4 U | Instant
+Target nonland permanent's owner puts it on their choice of the top or bottom of their library.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#3867 | C | MV 4 U | Creature — Seal Pirate | 3/4
+Cycling {1}{U} ({1}{U}, Discard this card: Draw a card.)
+When you cycle this card, target creature or Vehicle an opponent controls gets -3/-0 until end of turn.
+
+#3867 | C | MV 4 U | Creature — Seal Pirate | 3/4
+Cycling {1}{U} ({1}{U}, Discard this card: Draw a card.)
+When you cycle this card, target creature or Vehicle an opponent controls gets -3/-0 until end of turn.
+
+#4025 | C | MV 5 U | Artifact — Vehicle | 3/2
+Flying
+When this Vehicle enters, draw two cards.
+Crew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#3409 | C | MV 3 U | Enchantment — Aura
+Enchant creature or Vehicle
+When this Aura enters, tap enchanted permanent.
+Enchanted permanent loses all abilities and doesn't untap during its controller's untap step.
+
+#2479 | C | MV 4 U | Creature — Vedalken Artificer | 3/2
+When this creature enters, create a 1/1 colorless Thopter artifact creature token with flying.
+
+#2479 | C | MV 4 U | Creature — Vedalken Artificer | 3/2
+When this creature enters, create a 1/1 colorless Thopter artifact creature token with flying.
+
+#2572 | C | MV 3 U | Creature — Spirit Scout | 2/2
+Flying
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+Max speed — {3}, Exile this card from your graveyard: Draw a card.
+
+#2572 | C | MV 3 U | Creature — Spirit Scout | 2/2
+Flying
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+Max speed — {3}, Exile this card from your graveyard: Draw a card.
+
+#2572 | C | MV 3 U | Creature — Spirit Scout | 2/2
+Flying
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+Max speed — {3}, Exile this card from your graveyard: Draw a card.
+
+#6698 | U | MV 5 U | Artifact Creature — Robot Artificer | 3/4
+Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)
+Flying
+
+#615 | C | MV 1 colourless | Artifact
+{3}, {T}, Sacrifice this artifact: It deals 3 damage to target creature.
+{6}, {T}, Sacrifice this artifact: Destroy target creature or Vehicle.
+
+#615 | C | MV 1 colourless | Artifact
+{3}, {T}, Sacrifice this artifact: It deals 3 damage to target creature.
+{6}, {T}, Sacrifice this artifact: Destroy target creature or Vehicle.
+
+#3753 | C | MV 2 colourless | Artifact
+When this artifact enters, draw a card.
+{2}, {T}: Target Mount you control becomes saddled until end of turn. Activate only as a sorcery.
+{2}, {T}: Target Vehicle you control becomes an artifact creature until end of turn.
+
+TARGET card: #1900
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 1900 MV 3
+6173 MV 1 AFTER exhaust discards cards; discard triggers the artifact
+5861 MV 5 AFTER discard outlet; discard triggers the artifact
+3020 MV 3 AFTER exhaust loot; discard triggers the artifact
+4340 MV 2 AFTER cycling discards; discard triggers the artifact
+6722 MV 4 AFTER cycling discards; discard triggers the artifact
+3867 MV 4 AFTER cycling discards; discard triggers the artifact

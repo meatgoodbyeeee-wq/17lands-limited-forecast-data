@@ -1,0 +1,103 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#1395 | M | MV 4 B | Legendary Enchantment
+When ~ enters, each player sacrifices X creatures of their choice.
+Whenever a creature you control dies, you may pay 3 life. If you do, return that card under your control with a finality counter on it.
+Whenever a creature an opponent controls dies, they may pay 3 life. If they don't, return that card under your control with a finality counter on it.
+
+#4312 | C | MV 7 B | Enchantment — Room // Enchantment — Room
+When you unlock this door, you draw two cards and you lose 2 life.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) Whenever a creature you control attacks alone, it gets +1/+0 and gains deathtouch until end of turn.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+
+#3034 | U | MV 2 B | Creature — Human Survivor | 3/1
+This creature can't be blocked by Glimmers.
+Survival — At the beginning of your second main phase, if this creature is tapped, you may search your library for a card, put it into your graveyard, then shuffle.
+
+#6757 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, sacrifice a creature or enchantment.
+Exile target creature.
+
+#5081 | C | MV 3 B | Enchantment Creature — Horror | 3/2
+Flash
+Whenever this creature attacks, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#3105 | C | MV 2 B | Creature — Leech | 2/2
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, each opponent loses 1 life.
+
+#3105 | C | MV 2 B | Creature — Leech | 2/2
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, each opponent loses 1 life.
+
+#4054 | C | MV 3 B | Instant
+Destroy target creature.
+
+#4900 | C | MV 4 B | Creature — Human Assassin | 3/3
+Deathtouch
+This creature enters with a +1/+1 counter on it if a creature died this turn.
+
+#6231 | C | MV 2 B | Instant
+Target creature gets +2/+2 and gains lifelink until end of turn.
+
+#4038 | C | MV 5 R | Instant
+~ deals 6 damage to target creature.
+Delirium — If there are four or more card types among cards in your graveyard, exile the top card of your library. You may play it until the end of your next turn.
+
+#1460 | U | MV 2 R | Instant
+As an additional cost to cast this spell, sacrifice a creature or enchantment or pay {2}.
+~ deals 5 damage to target creature. If that creature would die this turn, exile it instead.
+
+#1770 | M | MV 3 R | Creature — Spirit | 3/3
+Haste
+Whenever this creature is dealt damage, it deals that much damage to any other target. If a player is dealt damage this way, they can't gain life for the rest of the game.
+
+#5598 | R | MV 2 R | Enchantment Creature — Nightmare | 2/3
+When this creature enters, discard a card, then draw a card.
+Delirium — Whenever this creature attacks for the first time each turn, if there are four or more card types among cards in your graveyard, untap target creature. After this phase, there is an additional combat phase.
+
+#2748 | U | MV 4 R | Creature — Spirit | 2/3
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, this creature gets +2/+0 until end of turn.
+When this creature dies, it deals damage equal to its power to any target.
+
+#5781 | U | MV 3 R | Enchantment Creature — Nightmare | 4/2
+Haste
+This creature must be blocked if able.
+
+#5828 | C | MV 5 R | Creature — Human Assassin | 4/4
+When this creature enters, you may sacrifice another creature or enchantment. When you do, this creature deals 2 damage to any target.
+
+#3483 | C | MV 4 R | Creature — Human Berserker | 5/3
+Reach
+{2}{R}, Sacrifice a land: Draw a card.
+
+#4804 | U | MV 4 R | Creature — Human Warrior | 4/3
+Menace (This creature can't be blocked except by two or more creatures.)
+{1}, Sacrifice another creature or enchantment: Exile the top card of your library. You may play it this turn.
+
+#4179 | U | MV 3 R | Sorcery
+Gain control of target creature until end of turn. Untap it. It gains haste until end of turn. You may discard a card. If you do, draw a card.
+
+#2168 | C | MV 2 R | Creature — Mutant | 2/2
+Delirium — Whenever this creature attacks while there are four or more card types among cards in your graveyard, it gets +2/+0 and gains menace until end of turn. (It can't be blocked except by two or more creatures.)
+
+#1904 | C | MV 2 R | Artifact Creature — Toy | 2/2
+{1}, {T}: Target creature with power 2 or less can't be blocked this turn.
+
+#5275 | U | MV 3 colourless | Artifact Creature — Toy | 2/4
+Whenever this creature attacks, you may have it get +4/+0 until end of turn. If you do, sacrifice it at the beginning of the next end step.
+
+#4672 | C | MV 0 colourless | Land
+This land enters tapped unless a player has 13 or less life.
+{T}: Add {B} or {R}.
+
+TARGET card: #1395
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 1395 MV 4
+4054 MV 3 AFTER kills creature, triggers return
+4038 MV 5 AFTER burn kills creature
+1460 MV 2 AFTER sacrifice cost kills own creature
+6757 MV 1 AFTER sacrifice cost kills own creature
+4804 MV 4 AFTER repeatable sacrifice outlet
+5828 MV 5 AFTER sacrifice enabler
+5275 MV 3 AFTER sacrifices itself, triggers return
