@@ -1,0 +1,117 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#90 | R | MV 0 colourless | Land
+{T}: Add {C}.
+{1}, {T}: Add one mana of any color.
+{T}: Put a +1/+1 counter on target creature. Activate only as a sorcery and only if you've cast an instant or sorcery spell this turn.
+
+#5989 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {R} or {W}.
+{4}, {T}: Scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+
+#5989 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {R} or {W}.
+{4}, {T}: Scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+
+#5438 | C | MV 1 W | Creature — Human Wizard | 0/0
+This creature enters with a +1/+1 counter on it.
+When this creature dies, put its counters on target creature you control.
+
+#2402 | C | MV 2 W | Creature — Human Wizard | 2/2
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature gets +1/+0 until end of turn.
+
+#2402 | C | MV 2 W | Creature — Human Wizard | 2/2
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature gets +1/+0 until end of turn.
+
+#1141 | R | MV 2 W | Creature — Spirit Cleric | 1/3
+Flying
+Whenever a permanent entering causes a triggered ability to trigger, counter that ability unless its controller pays {2}.
+
+#3427 | C | MV 2 R | Creature — Human Shaman | 2/1
+{5}, Exile this card from your graveyard: Create a tapped 3/2 red and white Spirit creature token.
+
+#2152 | C | MV 2 W | Creature — Spirit Soldier | 1/4
+
+
+#6795 | C | MV 3 WR | Creature — Kor Shaman | 2/2
+First strike
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature gets +1/+0 until end of turn.
+
+#6286 | R | MV 3 W | Creature — Human Cleric | 3/1
+Flying
+When this creature enters, look at target opponent's hand. You may exile a nonland card from it. For as long as that card remains exiled, its owner may play it. A spell cast this way costs {2} more to cast.
+
+#2450 | C | MV 3 R | Creature — Wolf | 2/2
+Haste
+{T}, Exile an instant or sorcery card from your graveyard: Put a +1/+1 counter on this creature.
+
+#356 | C | MV 4 W | Creature — Bird Cleric | 2/3
+Flying
+At the beginning of combat on your turn, target creature you control gets +1/+0 and gains vigilance until end of turn.
+
+#3516 | R | MV 4 WR | Creature — Dwarf Cleric | 2/4
+Instant and sorcery spells you control have lifelink.
+At the beginning of your upkeep, exile an instant or sorcery card at random from your graveyard. You may cast it this turn. If a spell cast this way would be put into your graveyard, exile it instead.
+
+#4548 | R | MV 4 WR | Creature — Human Cleric | 2/3
+Attacking creatures you control have double strike.
+
+#1597 | C | MV 5 WR | Creature — Sloth Beast | 4/4
+Vigilance
+Menace (This creature can't be blocked except by two or more creatures.)
+
+#5046 | C | MV 5 W | Creature — Spirit Cleric | 2/2
+Flying
+When this creature enters, return target creature card with mana value 3 or less from your graveyard to your hand.
+
+#6487 | C | MV 3 R | Instant
+This spell can't be countered. (This includes by the ward ability.)
+~ deals 4 damage to target creature or planeswalker.
+
+#6786 | U | MV 3 R | Sorcery
+~ deals 3 damage to any target.
+Learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)
+
+#423 | C | MV 4 W | Instant
+Choose one —
+• Creatures you control get +1/+1 until end of turn.
+• Destroy target creature with power 4 or greater.
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5646 | C | MV 3 R | Instant
+Target creature gets +3/+1 and gains trample until end of turn.
+Learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)
+
+#2598 | U | MV 2 W | Instant
+When you cast this spell, copy it for each other instant and sorcery spell you've cast this turn. You may choose new targets for the copies.
+Put a +1/+1 counter on target creature. It gains vigilance until end of turn.
+
+#1506 | C | MV 1 WR | Instant
+Target creature gets +1/+0 until end of turn. When that creature dies this turn, create a 3/2 red and white Spirit creature token.
+
+#2517 | C | MV 2 W | Instant
+Target creature you control gets +2/+2 and gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)
+
+TARGET card: #90
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 90 MV 0
+6487 MV 3 BEFORE instant cast enables activation
+6786 MV 3 BEFORE sorcery cast enables activation
+423 MV 4 BEFORE instant cast enables activation
+4761 MV 2 BEFORE instant cast enables activation
+5646 MV 3 BEFORE instant cast enables activation
+2598 MV 2 BEFORE instant cast enables activation
+1506 MV 1 BEFORE instant cast enables activation
+2517 MV 2 BEFORE instant cast enables activation
+3516 MV 4 BEFORE casts instants/sorceries from graveyard at upkeep

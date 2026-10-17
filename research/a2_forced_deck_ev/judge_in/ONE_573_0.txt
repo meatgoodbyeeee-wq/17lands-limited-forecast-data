@@ -1,0 +1,105 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#573 | M | MV 4 WR | Legendary Planeswalker — Nahiri
+Compleated ({R/W/P} can be paid with {R}, {W}, or 2 life. If life was paid, this planeswalker enters with two fewer loyalty counters.)
++1: Until your next turn, up to one target creature attacks a player each combat if able.
++1: Discard a card, then draw a card.
+0: Exile target creature or Equipment card with mana value less than ~'s loyalty from your graveyard. Create a token that's a copy of it. That token gains haste. Exile it at the beginning of the next end step.
+
+#1798 | U | MV 3 R | Instant
+Affinity for Equipment (This spell costs {1} less to cast for each Equipment you control.)
+~ deals 5 damage to target creature or planeswalker. That permanent loses indestructible until end of turn.
+
+#4114 | R | MV 3 R | Artifact
+At the beginning of combat on your turn, put an oil counter on this artifact, then create an X/1 red Phyrexian Horror creature token with trample and haste, where X is the number of oil counters on this artifact. Sacrifice that token at the beginning of the next end step.
+
+#3060 | C | MV 1 R | Instant
+~ deals 2 damage to target creature. If that creature has toxic, ~ deals 4 damage to that creature instead.
+
+#2743 | C | MV 3 R | Instant
+~ deals 3 damage to any target. Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+
+#2743 | C | MV 3 R | Instant
+~ deals 3 damage to any target. Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+
+#4031 | C | MV 5 R | Sorcery
+Choose one or both —
+• ~ deals 5 damage to target creature or planeswalker.
+• Destroy target Equipment.
+
+#3769 | U | MV 1 R | Creature — Phyrexian Goblin Warrior | 1/1
+Whenever this creature deals combat damage to a player, you may sacrifice it. If you do, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+When this creature dies, it deals damage equal to its power to any target.
+
+#194 | U | MV 1 R | Creature — Phyrexian Goblin Warrior | 0/1
+Trample
+This creature gets +1/+0 for each oil counter on it.
+When this creature enters and whenever another creature or artifact you control is put into a graveyard from the battlefield, put an oil counter on this creature.
+
+#4076 | C | MV 2 R | Artifact Creature — Phyrexian Beast | 2/2
+When this creature enters, you may sacrifice a creature. When you do, destroy target artifact an opponent controls.
+
+#3893 | C | MV 2 R | Artifact — Equipment
+For Mirrodin! (When this Equipment enters, create a 2/2 red Rebel creature token, then attach this to it.)
+Equipped creature gets +1/-1.
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+
+#6412 | C | MV 2 B | Instant
+Exile target creature if it has mana value 3 or less.
+Corrupted — Exile that creature instead if its controller has three or more poison counters.
+
+#6412 | C | MV 2 B | Instant
+Exile target creature if it has mana value 3 or less.
+Corrupted — Exile that creature instead if its controller has three or more poison counters.
+
+#4950 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, pay {4} or sacrifice an artifact or creature.
+Destroy target creature or planeswalker.
+
+#4950 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, pay {4} or sacrifice an artifact or creature.
+Destroy target creature or planeswalker.
+
+#5603 | U | MV 2 B | Instant
+Choose one —
+• Each opponent sacrifices a nontoken creature of their choice.
+• Each opponent sacrifices a creature token of their choice.
+• Each opponent sacrifices a planeswalker of their choice.
+
+#4964 | C | MV 3 B | Creature — Phyrexian Imp | 2/2
+Flying
+Corrupted — As long as an opponent has three or more poison counters, this creature has deathtouch and lifelink.
+
+#3308 | C | MV 4 B | Creature — Phyrexian Warrior | 4/1
+When this creature dies, look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.
+
+#5095 | C | MV 5 B | Creature — Phyrexian Horror | 4/4
+When this creature enters or dies, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+
+#3299 | U | MV 3 B | Artifact Creature — Phyrexian Construct | 3/2
+When this creature enters, you may pay 2 life. When you do, target creature gets -1/-1 until end of turn.
+
+#4135 | C | MV 6 B | Creature — Phyrexian Cleric | 5/5
+Deathtouch
+When this creature enters, each opponent discards a card. For each opponent who can't, you gain 4 life.
+
+#1017 | C | MV 2 B | Creature — Phyrexian Skeleton | 2/2
+Corrupted — {2}{B}: Return this card from your graveyard to the battlefield tapped. You lose 1 life. Activate only if an opponent has three or more poison counters.
+
+#3451 | M | MV 3 colourless | Artifact — Equipment
+Equipped creature gets +2/+2 and has protection from red and from green.
+Whenever equipped creature deals combat damage to a player, exile the top two cards of your library. You may play those cards this turn. You may play an additional land this turn.
+Equip {2}
+
+TARGET card: #573
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 573 MV 4
+4076 MV 2 BEFORE sacrifice a creature fills graveyard
+4950 MV 1 BEFORE sacrifice cost fills graveyard
+448 MV 3 BEFORE sacrifices creatures to graveyard
+3308 MV 4 BEFORE dies, mills two to graveyard
+3769 MV 1 BEFORE creature that dies into graveyard
+2743 MV 3 AFTER proliferate adds loyalty
+5095 MV 5 AFTER proliferate adds loyalty

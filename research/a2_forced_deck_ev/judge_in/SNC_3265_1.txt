@@ -1,0 +1,102 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#3265 | M | MV 3 WUB | Legendary Creature — Sphinx Demon | 1/4
+Flying, ward {1}
+Whenever you attack, target attacking creature connives X, where X is the number of attacking creatures. (Draw X cards, then discard X cards. Put a +1/+1 counter on that creature for each nonland card discarded this way.)
+
+#211 | R | MV 2 UB | Creature — Bird Assassin | 1/1
+Flying
+As long as there are five or more mana values among cards in your graveyard, this creature gets +2/+2 and has deathtouch.
+When this creature dies, mill two cards, then draw a card.
+
+#1304 | U | MV 4 WUB | Legendary Creature — Octopus Advisor | 3/4
+Whenever you draw a card, target opponent loses 1 life and you gain 1 life.
+
+#5843 | C | MV 3 WU | Creature — Angel Advisor | 2/3
+Flying
+When this creature enters, choose target creature you don't control and tap it. If you control a creature with a counter on it, the chosen creature doesn't untap during its controller's next untap step.
+
+#6297 | C | MV 2 W | Creature — Bird Citizen | 1/1
+Flying, lifelink
+{3}{W}: You and target opponent each draw a card.
+
+#6080 | C | MV 2 W | Creature — Human Citizen | 1/1
+When this creature enters, put a +1/+1 counter on target creature.
+
+#724 | R | MV 2 B | Creature — Human Warrior | 3/2
+Blitz—{2}{B}{B}, Pay 2 life. (If you cast this spell for its blitz cost, it gains haste and "When this creature dies, draw a card." Sacrifice it at the beginning of the next end step.)
+You may cast this card from your graveyard using its blitz ability.
+
+#3122 | C | MV 2 B | Creature — Human Advisor | 1/1
+When this creature enters, target opponent discards a card.
+
+#3413 | C | MV 3 W | Creature — Angel Cleric | 2/1
+Flying
+When this creature enters, you gain 1 life and draw a card.
+
+#1052 | C | MV 3 U | Creature — Human Rogue | 0/3
+Flash
+When this creature enters, it connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)
+
+#5749 | C | MV 2 U | Creature — Human Soldier | 2/1
+When this creature dies, put a shield counter on target creature you control. (If it would be dealt damage or destroyed, remove a shield counter from it instead.)
+
+#3303 | C | MV 4 B | Creature — Octopus Rogue | 3/1
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, it connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)
+
+#1269 | C | MV 4 W | Creature — Elf Druid | 3/2
+Alliance — Whenever another creature you control enters, put a +1/+1 counter on this creature.
+
+#1269 | C | MV 4 W | Creature — Elf Druid | 3/2
+Alliance — Whenever another creature you control enters, put a +1/+1 counter on this creature.
+
+#1548 | C | MV 4 W | Creature — Human Soldier | 2/2
+This creature enters with a shield counter on it. (If it would be dealt damage or destroyed, remove a shield counter from it instead.)
+During your turn, this creature gets +2/+0.
+
+#5337 | C | MV 3 colourless | Artifact Creature — Cat | 3/2
+When this creature enters, scry 1.
+
+#6942 | U | MV 7 B | Creature — Horror | 5/4
+As an additional cost to cast this spell, sacrifice a creature, discard a card, or pay 4 life.
+When this creature enters, each opponent sacrifices a creature of their choice, discards a card, and loses 4 life.
+
+#4054 | C | MV 3 B | Instant
+Destroy target creature.
+
+#6891 | C | MV 2 B | Sorcery
+Choose two target creatures controlled by the same player. That player sacrifices one of them of their choice.
+
+#6901 | C | MV 4 B | Instant
+Target creature gets -3/-3 until end of turn. Target player mills three cards. (They put the top three cards of their library into their graveyard.)
+
+#3411 | U | MV 3 W | Instant
+This spell costs {2} less to cast if it targets a red creature.
+~ deals 4 damage to target attacking or blocking creature and you gain 2 life.
+
+#2025 | C | MV 2 W | Enchantment — Aura
+Enchant creature
+Enchanted creature can't attack or block and has "{7}: ~'s controller sacrifices it and draws a card. Activate only as a sorcery."
+
+#7004 | C | MV 5 B | Sorcery
+Casualty 2 (As you cast this spell, you may sacrifice a creature with power 2 or greater. When you do, copy this spell.)
+Create a 4/3 black Ogre Warrior creature token.
+
+#5905 | C | MV 0 colourless | Land
+When this land enters, sacrifice it. When you do, search your library for a basic Plains, Island, or Swamp card, put it onto the battlefield tapped, then shuffle and you gain 1 life.
+
+#2705 | C | MV 0 colourless | Land
+When this land enters, sacrifice it. When you do, search your library for a basic Island, Swamp, or Mountain card, put it onto the battlefield tapped, then shuffle and you gain 1 life.
+
+TARGET card: #3265
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 3265 MV 3
+211 MV 2 BEFORE flying attacker
+5843 MV 3 BEFORE flying attacker
+6297 MV 2 BEFORE flying attacker
+3413 MV 3 BEFORE flying attacker
+724 MV 2 BEFORE blitz haste attacker
+1269 MV 4 BEFORE attacker, grows from counters

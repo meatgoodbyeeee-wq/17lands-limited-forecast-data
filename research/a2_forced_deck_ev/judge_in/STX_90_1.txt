@@ -1,0 +1,110 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#90 | R | MV 0 colourless | Land
+{T}: Add {C}.
+{1}, {T}: Add one mana of any color.
+{T}: Put a +1/+1 counter on target creature. Activate only as a sorcery and only if you've cast an instant or sorcery spell this turn.
+
+#5438 | C | MV 1 W | Creature — Human Wizard | 0/0
+This creature enters with a +1/+1 counter on it.
+When this creature dies, put its counters on target creature you control.
+
+#5438 | C | MV 1 W | Creature — Human Wizard | 0/0
+This creature enters with a +1/+1 counter on it.
+When this creature dies, put its counters on target creature you control.
+
+#2402 | C | MV 2 W | Creature — Human Wizard | 2/2
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature gets +1/+0 until end of turn.
+
+#2152 | C | MV 2 W | Creature — Spirit Soldier | 1/4
+
+
+#3078 | C | MV 2 B | Creature — Human Warlock | 2/1
+Whenever this creature attacks, you may pay 2 life. If you do, it gains flying until end of turn.
+
+#863 | U | MV 2 WB | Creature — Human Warlock | 2/2
+Magecraft — Whenever you cast or copy an instant or sorcery spell, target creature gets +1/+0 until end of turn.
+
+#2563 | C | MV 3 WB | Creature — Vampire Cleric | 3/1
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature gains your choice of flying or lifelink until end of turn.
+
+#4023 | C | MV 3 B | Creature — Human Warlock | 2/3
+When this creature dies, if it had a +1/+1 counter on it, draw a card.
+
+#4023 | C | MV 3 B | Creature — Human Warlock | 2/3
+When this creature dies, if it had a +1/+1 counter on it, draw a card.
+
+#356 | C | MV 4 W | Creature — Bird Cleric | 2/3
+Flying
+At the beginning of combat on your turn, target creature you control gets +1/+0 and gains vigilance until end of turn.
+
+#2941 | C | MV 4 B | Creature — Troll Warlock | 3/3
+{1}, Sacrifice another creature: Put a +1/+1 counter on target creature. Activate only as a sorcery.
+
+#4390 | C | MV 4 WB | Creature — Human Warlock | 0/0
+Deathtouch
+This creature enters with two +1/+1 counters on it.
+When this creature dies, put its counters on target creature you control.
+
+#4390 | C | MV 4 WB | Creature — Human Warlock | 0/0
+Deathtouch
+This creature enters with two +1/+1 counters on it.
+When this creature dies, put its counters on target creature you control.
+
+#4390 | C | MV 4 WB | Creature — Human Warlock | 0/0
+Deathtouch
+This creature enters with two +1/+1 counters on it.
+When this creature dies, put its counters on target creature you control.
+
+#6737 | M | MV 5 WB | Legendary Creature — Elder Dragon | 2/5
+Flying, double strike
+At the beginning of combat on your turn, you may choose two. Each mode must target a different player.
+• Target player creates a 2/1 white and black Inkling creature token with flying.
+• Target player draws a card and loses 1 life.
+• Target player puts a +1/+1 counter on each creature they control.
+
+#5046 | C | MV 5 W | Creature — Spirit Cleric | 2/2
+Flying
+When this creature enters, return target creature card with mana value 3 or less from your graveyard to your hand.
+
+#2244 | U | MV 1 W | Enchantment — Aura
+Enchant nonland permanent
+Enchanted permanent can't attack or block, and its activated abilities can't be activated.
+{3}: Destroy this Aura. Only your opponents may activate this ability and only as a sorcery.
+
+#5271 | U | MV 3 B | Instant
+Choose one —
+• Target player sacrifices a creature or planeswalker of their choice.
+• Create a 2/1 white and black Inkling creature token with flying.
+
+#423 | C | MV 4 W | Instant
+Choose one —
+• Creatures you control get +1/+1 until end of turn.
+• Destroy target creature with power 4 or greater.
+
+#3869 | U | MV 3 W | Sorcery — Lesson
+Exile target nonland permanent. Its controller creates a 3/2 red and white Spirit creature token.
+
+#2481 | C | MV 6 WB | Sorcery
+Exile target creature. Exile up to one target instant or sorcery card from a graveyard.
+Learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)
+
+#2517 | C | MV 2 W | Instant
+Target creature you control gets +2/+2 and gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)
+
+#5002 | C | MV 1 B | Instant
+Choose one —
+• Put a +1/+1 counter on target creature.
+• Target creature gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+TARGET card: #90
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 90 MV 0
+5271 MV 3 BEFORE instant cast enables activation
+423 MV 4 BEFORE instant cast enables activation
+3869 MV 3 BEFORE sorcery cast enables activation
+2481 MV 6 BEFORE sorcery cast enables activation
+2517 MV 2 BEFORE instant cast enables activation
+5002 MV 1 BEFORE instant cast enables activation

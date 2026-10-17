@@ -1,0 +1,108 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#3347 | M | MV 7 UBR | Legendary Creature — Vampire Demon Noble | 6/6
+When ~ enters, target opponent discards half the cards in their hand, rounded down.
+Whenever ~ attacks, defending player mills half their library, rounded down.
+When ~ dies, target opponent sacrifices half the nonland permanents they control of their choice, rounded down.
+
+#3755 | U | MV 3 UBR | Creature — Vampire Rogue | 3/3
+When this creature enters, exile up to one target creature card from a graveyard. If a card is put into exile this way, look at the top three cards of your library, then put one of those cards into your hand and the rest into your graveyard.
+
+#4835 | U | MV 2 UB | Instant
+Draw two cards. Then discard a card unless there are five or more mana values among cards in your graveyard.
+
+#2195 | C | MV 1 R | Sorcery
+~ deals 3 damage to target creature or planeswalker.
+
+#3507 | U | MV 3 R | Instant
+Players can't gain life this turn. Damage can't be prevented this turn. ~ deals 3 damage to any target. (Shield counters don't prevent this damage as they're removed.)
+
+#6891 | C | MV 2 B | Sorcery
+Choose two target creatures controlled by the same player. That player sacrifices one of them of their choice.
+
+#6901 | C | MV 4 B | Instant
+Target creature gets -3/-3 until end of turn. Target player mills three cards. (They put the top three cards of their library into their graveyard.)
+
+#4361 | C | MV 3 B | Creature — Vampire Assassin | 1/2
+Flying
+Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)
+
+#4116 | U | MV 3 B | Creature — Human Assassin | 1/1
+When this creature enters, it connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)
+When this creature dies, target creature an opponent controls gets -X/-X until end of turn, where X is this creature's power.
+
+#5128 | C | MV 3 B | Creature — Human Citizen | 3/1
+{4}{U/R}, Exile this card from your graveyard: Draw two cards, then discard a card.
+
+#5128 | C | MV 3 B | Creature — Human Citizen | 3/1
+{4}{U/R}, Exile this card from your graveyard: Draw two cards, then discard a card.
+
+#6766 | C | MV 5 B | Creature — Ogre Warrior | 4/4
+When this creature dies, create a tapped 2/2 black Rogue creature token.
+Blitz {3}{B} (If you cast this spell for its blitz cost, it gains haste and "When this creature dies, draw a card." Sacrifice it at the beginning of the next end step.)
+
+#7004 | C | MV 5 B | Sorcery
+Casualty 2 (As you cast this spell, you may sacrifice a creature with power 2 or greater. When you do, copy this spell.)
+Create a 4/3 black Ogre Warrior creature token.
+
+#4517 | U | MV 2 R | Creature — Lizard Rogue | 3/1
+When this creature dies, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+Blitz {2}{R} (If you cast this spell for its blitz cost, it gains haste and "When this creature dies, draw a card." Sacrifice it at the beginning of the next end step.)
+
+#2960 | C | MV 3 R | Creature — Human Wizard | 2/1
+When this creature enters, choose one —
+• Create a 1/1 green and white Citizen creature token.
+• Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#2635 | C | MV 1 R | Artifact Creature — Treasure Dog | 1/1
+First strike
+Menace (This creature can't be blocked except by two or more creatures.)
+{T}, Sacrifice this creature: Add one mana of any color.
+
+#2635 | C | MV 1 R | Artifact Creature — Treasure Dog | 1/1
+First strike
+Menace (This creature can't be blocked except by two or more creatures.)
+{T}, Sacrifice this creature: Add one mana of any color.
+
+#6038 | C | MV 2 R | Creature — Lizard Citizen | 2/2
+{1}{B/G}: This creature gains deathtouch until end of turn.
+
+#4676 | C | MV 2 R | Creature — Devil Warrior | 1/2
+Menace (This creature can't be blocked except by two or more creatures.)
+Whenever this creature attacks, target creature gets +1/+0 until end of turn.
+Blitz {1}{R} (If you cast this spell for its blitz cost, it gains haste and "When this creature dies, draw a card." Sacrifice it at the beginning of the next end step.)
+
+#3205 | C | MV 5 R | Creature — Human Warrior | 4/5
+Reach (This creature can block creatures with flying.)
+Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)
+
+#1376 | R | MV 4 R | Artifact — Vehicle | 5/5
+Trample
+Whenever this Vehicle deals combat damage to a player, create a Treasure token for each artifact they control.
+Crew 3
+
+#1050 | C | MV 4 B | Instant
+Scry 2, then draw two cards. You lose 2 life.
+
+#3029 | C | MV 1 U | Enchantment — Aura
+Enchant creature
+Enchanted creature loses all abilities and is a green and white Citizen creature with base power and toughness 1/1 named Legitimate Businessperson. (It loses all other colors, card types, creature types, and names.)
+
+#3361 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {U} or {B}.
+{2}{U}{B}, {T}, Sacrifice this land: Draw a card.
+
+#3388 | C | MV 0 colourless | Land
+When this land enters, sacrifice it. When you do, search your library for a basic Swamp, Mountain, or Forest card, put it onto the battlefield tapped, then shuffle and you gain 1 life.
+
+TARGET card: #3347
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 3347 MV 7
+2960 MV 3 BEFORE Treasure for mana and fixing
+2635 MV 1 BEFORE sacrifice for any color mana
+4517 MV 2 BEFORE Treasure when it dies, fixing
+3361 MV 0 BEFORE provides blue and black
+3388 MV 0 BEFORE fetches Swamp or Mountain

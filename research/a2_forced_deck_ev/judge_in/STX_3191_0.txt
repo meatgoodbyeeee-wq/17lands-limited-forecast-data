@@ -1,0 +1,105 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#3191 | R | MV 4 U | Creature — Human Wizard | 2/2
+Magecraft — Whenever you cast or copy an instant or sorcery spell, draw a card.
+
+#6487 | C | MV 3 R | Instant
+This spell can't be countered. (This includes by the ward ability.)
+~ deals 4 damage to target creature or planeswalker.
+
+#6487 | C | MV 3 R | Instant
+This spell can't be countered. (This includes by the ward ability.)
+~ deals 4 damage to target creature or planeswalker.
+
+#6065 | C | MV 5 R | Sorcery
+~ deals 5 damage to target creature. Excess damage is dealt to that creature's controller instead.
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5646 | C | MV 3 R | Instant
+Target creature gets +3/+1 and gains trample until end of turn.
+Learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)
+
+#2835 | C | MV 3 U | Creature — Bird Wizard | 2/2
+Flying
+When this creature enters, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.
+
+#1494 | C | MV 5 U | Instant
+This spell costs {2} less to cast if it targets an attacking creature.
+Put target creature into its owner's library second from the top.
+
+#3350 | C | MV 5 colourless | Sorcery — Lesson
+Exile target nonland permanent. Its controller draws a card.
+
+#3350 | C | MV 5 colourless | Sorcery — Lesson
+Exile target nonland permanent. Its controller draws a card.
+
+#6494 | C | MV 2 UR | Creature — Orc Wizard | 3/3
+Defender
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature can attack this turn as though it didn't have defender.
+
+#6494 | C | MV 2 UR | Creature — Orc Wizard | 3/3
+Defender
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature can attack this turn as though it didn't have defender.
+
+#6494 | C | MV 2 UR | Creature — Orc Wizard | 3/3
+Defender
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature can attack this turn as though it didn't have defender.
+
+#2079 | U | MV 2 UR | Creature — Human Shaman | 2/2
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature can't be blocked this turn. If that spell has mana value 5 or greater, put a +1/+1 counter on this creature.
+
+#4190 | C | MV 2 U | Creature — Merfolk Wizard | 1/3
+{1}{U}, {T}: Draw a card, then discard a card.
+
+#466 | C | MV 3 U | Creature — Human Wizard | 2/3
+As long as you control eight or more lands, this creature gets +1/+0 and can't be blocked.
+
+#2450 | C | MV 3 R | Creature — Wolf | 2/2
+Haste
+{T}, Exile an instant or sorcery card from your graveyard: Put a +1/+1 counter on this creature.
+
+#1812 | C | MV 3 R | Creature — Dwarf Shaman | 1/2
+Double strike
+
+#431 | C | MV 4 R | Creature — Spirit Dwarf | 1/5
+Reach
+{2}, {T}, Sacrifice this creature: Return target instant or sorcery card from your graveyard to your hand. Activate only as a sorcery.
+
+#4235 | C | MV 5 UR | Creature — Ogre Shaman | 3/4
+Haste
+{T}: Scry 1.
+
+#4235 | C | MV 5 UR | Creature — Ogre Shaman | 3/4
+Haste
+{T}: Scry 1.
+
+#171 | U | MV 3 UR | Legendary Creature — Orc Shaman | 1/4
+{2}, Return ~ to its owner's hand: Copy target instant or sorcery spell you control. You may choose new targets for the copy.
+
+#1387 | C | MV 4 colourless | Artifact Creature — Gargoyle | 2/1
+Flying
+When this creature enters, put up to one target instant or sorcery card from your graveyard on top of your library.
+
+#3771 | R | MV 0 colourless | Land
+As this land enters, you may reveal an Island or Mountain card from your hand. If you don't, this land enters tapped.
+{T}: Add {U} or {R}.
+
+#3771 | R | MV 0 colourless | Land
+As this land enters, you may reveal an Island or Mountain card from your hand. If you don't, this land enters tapped.
+{T}: Add {U} or {R}.
+
+TARGET card: #3191
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 3191 MV 4
+6487 MV 3 AFTER cast triggers magecraft draw
+6065 MV 5 AFTER cast triggers magecraft draw
+4761 MV 2 AFTER cast triggers magecraft draw
+5646 MV 3 AFTER cast triggers magecraft draw
+1494 MV 5 AFTER cast triggers magecraft draw
+3350 MV 5 AFTER cast triggers magecraft draw
+171 MV 3 AFTER copies spell, triggers magecraft

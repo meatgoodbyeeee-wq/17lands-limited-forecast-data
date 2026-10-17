@@ -1,0 +1,115 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#1865 | M | MV 3 W | Artifact
+{W}, {T}, Untap a tapped creature you control: Create a 1/1 green and white Citizen creature token.
+{W}{W}, {T}, Untap two tapped creatures you control: Draw a card.
+{W}{W}{W}{W}{W}, {T}, Untap fifteen tapped creatures you control: You win the game.
+
+#1905 | U | MV 2 W | Creature — Human Rogue | 1/1
+Double strike
+Whenever this creature becomes the target of a spell you control, it connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)
+
+#3413 | C | MV 3 W | Creature — Angel Cleric | 2/1
+Flying
+When this creature enters, you gain 1 life and draw a card.
+
+#3413 | C | MV 3 W | Creature — Angel Cleric | 2/1
+Flying
+When this creature enters, you gain 1 life and draw a card.
+
+#5213 | U | MV 3 W | Creature — Elf Wizard | 2/1
+Alliance — Whenever another creature you control enters, scry 1. If this is the second time this ability has resolved this turn, draw a card instead.
+
+#6080 | C | MV 2 W | Creature — Human Citizen | 1/1
+When this creature enters, put a +1/+1 counter on target creature.
+
+#2642 | C | MV 5 W | Creature — Bird Citizen | 3/3
+Flying
+When this creature enters, you gain 1 life for each other creature you control.
+
+#5463 | U | MV 5 W | Creature — Human Warrior | 3/5
+Whenever this creature attacks, this creature and up to one other target creature you control both gain your choice of first strike or lifelink until end of turn.
+
+#1875 | U | MV 2 U | Creature — Faerie Rogue | 1/2
+Flash (You may cast this spell any time you could cast an instant.)
+Flying
+Whenever you draw your second card each turn, put a +1/+1 counter on this creature.
+
+#1875 | U | MV 2 U | Creature — Faerie Rogue | 1/2
+Flash (You may cast this spell any time you could cast an instant.)
+Flying
+Whenever you draw your second card each turn, put a +1/+1 counter on this creature.
+
+#216 | C | MV 4 U | Creature — Bird Rogue | 2/3
+Flying
+When this creature enters, it connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)
+
+#1195 | U | MV 5 U | Creature — Octopus Rogue | 3/2
+When this creature enters, it connives. When it connives this way, return up to one target nonland permanent to its owner's hand. (To have a creature connive, draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)
+
+#1566 | C | MV 3 U | Creature — Bird Citizen | 2/2
+Flying
+{1}{W/B}: This creature gains lifelink until end of turn.
+
+#5843 | C | MV 3 WU | Creature — Angel Advisor | 2/3
+Flying
+When this creature enters, choose target creature you don't control and tap it. If you control a creature with a counter on it, the chosen creature doesn't untap during its controller's next untap step.
+
+#4753 | C | MV 5 WUG | Creature — Cat Citizen | 4/4
+When this creature enters, target creature an opponent controls can't attack or block until your next turn.
+{2}, Exile this card from your hand: Target land gains "{T}: Add {G}, {W}, or {U}" until this card is cast from exile. You may cast this card for as long as it remains exiled.
+
+#4753 | C | MV 5 WUG | Creature — Cat Citizen | 4/4
+When this creature enters, target creature an opponent controls can't attack or block until your next turn.
+{2}, Exile this card from your hand: Target land gains "{T}: Add {G}, {W}, or {U}" until this card is cast from exile. You may cast this card for as long as it remains exiled.
+
+#5697 | U | MV 3 WUG | Legendary Creature — Human Soldier | 2/3
+When ~ enters, exile any number of other target creatures controlled by different players until ~ leaves the battlefield. When an exiled card enters under your control this way, put two +1/+1 counters on it.
+
+#6240 | U | MV 3 WUG | Creature — Human Citizen | 2/1
+Double strike
+This creature enters with a shield counter on it. (If it would be dealt damage or destroyed, remove a shield counter from it instead.)
+
+#5022 | R | MV 3 G | Creature — Plant Dinosaur | 4/4
+Vigilance (Attacking doesn't cause this creature to tap.)
+When this creature enters, search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
+This creature can't attack or block unless you control seven or more lands.
+
+#1974 | R | MV 5 G | Creature — Rhino Warrior | 5/3
+Trample
+When this creature enters, you gain 3 life.
+When this creature dies, create a 4/4 green Rhino Warrior creature token.
+Blitz {4}{G}{G} (If you cast this spell for its blitz cost, it gains haste and "When this creature dies, draw a card." Sacrifice it at the beginning of the next end step.)
+
+#3411 | U | MV 3 W | Instant
+This spell costs {2} less to cast if it targets a red creature.
+~ deals 4 damage to target attacking or blocking creature and you gain 2 life.
+
+#3411 | U | MV 3 W | Instant
+This spell costs {2} less to cast if it targets a red creature.
+~ deals 4 damage to target attacking or blocking creature and you gain 2 life.
+
+#330 | C | MV 2 G | Instant
+Target creature you control fights target creature you don't control. (Each deals damage equal to its power to the other.)
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5196 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {G} or {W}.
+{2}{G}{W}, {T}, Sacrifice this land: Draw a card.
+
+#5905 | C | MV 0 colourless | Land
+When this land enters, sacrifice it. When you do, search your library for a basic Plains, Island, or Swamp card, put it onto the battlefield tapped, then shuffle and you gain 1 life.
+
+TARGET card: #1865
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 1865 MV 3
+5735 MV 2 BEFORE untaps creature or land on attack
+6410 MV 1 BEFORE cheap creature to tap and untap
+1905 MV 2 BEFORE creature to tap and untap
+3413 MV 3 BEFORE creature to tap and untap
+5213 MV 3 BEFORE creature to tap and untap
+6080 MV 2 BEFORE creature to tap and untap
+6297 MV 2 BEFORE creature to tap and untap

@@ -1,0 +1,119 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#5925 | M | MV 7 U | Legendary Creature — Phyrexian Praetor | 5/5
+Whenever you cast an artifact, instant, or sorcery spell, copy that spell. You may choose new targets for the copy. This ability triggers only once each turn. (A copy of a permanent spell becomes a token.)
+Whenever an opponent casts an artifact, instant, or sorcery spell, counter that spell. This ability triggers only once each turn.
+
+#183 | M | MV 4 U | Legendary Planeswalker — Tezzeret
+The first activated ability of an artifact you activate each turn costs {2} less to activate.
++1: Draw two cards. Then discard two cards unless you discard an artifact card.
+−2: Target artifact becomes an artifact creature. If it isn't a Vehicle, it has base power and toughness 4/4.
+−6: You get an emblem with "Whenever an artifact you control becomes tapped, draw a card."
+
+#66 | C | MV 4 U | Creature — Human Ninja | 2/2
+Ninjutsu {2}{U} ({2}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+When this creature enters, return up to one target creature to its owner's hand.
+
+#628 | U | MV 3 U | Artifact Creature — Equipment Octopus | 2/2
+Whenever this creature or equipped creature deals combat damage to a player, draw a card.
+Reconfigure {2} ({2}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#6860 | C | MV 1 U | Artifact Creature — Moonfolk Rogue | 1/1
+Flying
+When this creature enters, tap target permanent.
+
+#1962 | C | MV 2 U | Enchantment — Aura
+Flash
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets -3/-0 and loses flying.
+
+#1962 | C | MV 2 U | Enchantment — Aura
+Flash
+Enchant artifact or creature
+As long as enchanted permanent is a creature, it gets -3/-0 and loses flying.
+
+#5734 | C | MV 2 U | Artifact Creature — Equipment Beast | 2/1
+Ward {2} (Whenever this permanent becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+Equipped creature gets +2/+1 and has ward {2}.
+Reconfigure {4} ({4}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#5179 | C | MV 4 U | Creature — Fish | 3/3
+Flying
+Whenever an artifact you control enters, you may draw a card. If you do, discard a card.
+
+#3791 | C | MV 5 U | Artifact Creature — Moonfolk Rogue | 3/5
+Channel — {3}{U}, Discard this card: Tap up to two target creatures you don't control. Those creatures don't untap during their controller's next untap step.
+
+#3220 | C | MV 7 U | Artifact Creature — Crab | 5/7
+Ward {3} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)
+Channel — {2}{U}, Discard this card: Counter target spell or ability unless its controller pays {3}.
+
+#4287 | U | MV 3 B | Creature — Spirit | 2/2
+Flying
+When this creature enters, draw a card if a creature died this turn. Otherwise, each player sacrifices a creature of their choice.
+
+#4287 | U | MV 3 B | Creature — Spirit | 2/2
+Flying
+When this creature enters, draw a card if a creature died this turn. Otherwise, each player sacrifices a creature of their choice.
+
+#542 | C | MV 3 B | Artifact Creature — Equipment Insect | 2/2
+Whenever this creature or equipped creature attacks, it gets +2/+0 until end of turn.
+Reconfigure {2} ({2}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#4635 | C | MV 1 B | Instant
+Destroy target creature that was dealt damage this turn.
+Draw a card.
+
+#97 | C | MV 2 B | Creature — Human Ninja | 1/2
+Flying
+{3}{B}: This creature gets +2/+2 until end of turn.
+
+#3251 | C | MV 4 B | Creature — Spirit | 3/4
+When this creature enters, if you control an artifact and an enchantment, you draw a card and you gain 1 life.
+
+#5305 | C | MV 4 B | Enchantment — Aura
+Enchant artifact or creature you control
+When this Aura enters, destroy target creature or planeswalker an opponent controls.
+As long as enchanted permanent is a creature, it gets +1/+1.
+
+#57 | R | MV 3 B | Sorcery
+Choose one. If you control an artifact and an enchantment as you cast this spell, you may choose both instead.
+• Exile target creature or planeswalker.
+• Return target creature or planeswalker card from your graveyard to your hand.
+
+#1153 | C | MV 5 B | Creature — Spirit | 3/3
+When this creature enters, choose one —
+• Return up to one target Ninja or Rogue creature card from your graveyard to your hand.
+• Put target creature card from your graveyard on top of your library.
+
+#41 | U | MV 3 colourless | Artifact Creature — Insect | 2/3
+When this creature enters, you gain 2 life.
+When this creature leaves the battlefield, draw a card.
+
+#2805 | C | MV 2 colourless | Artifact Creature — Frog | 2/1
+When this creature leaves the battlefield, you may pay {2}. If you do, draw a card.
+
+#4846 | C | MV 3 B | Sorcery
+Target opponent reveals their hand. You may choose a nonland card from it. If you do, that player discards that card. If you don't, put two +1/+1 counters on a creature or Vehicle you control.
+
+#704 | C | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {U} or {B}.
+
+TARGET card: #5925
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 5925 MV 7
+628 MV 3 AFTER artifact spell cast after target
+6860 MV 1 AFTER artifact spell cast after target
+5734 MV 2 AFTER artifact spell cast after target
+3791 MV 5 AFTER artifact spell cast after target
+3220 MV 7 AFTER artifact spell cast after target
+542 MV 3 AFTER artifact spell cast after target
+4635 MV 1 AFTER instant spell cast after target
+57 MV 3 AFTER sorcery spell cast after target
+41 MV 3 AFTER artifact spell cast after target
+2805 MV 2 AFTER artifact spell cast after target
+4846 MV 3 AFTER sorcery spell cast after target

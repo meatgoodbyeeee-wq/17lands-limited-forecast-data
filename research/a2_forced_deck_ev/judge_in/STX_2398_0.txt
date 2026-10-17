@@ -1,0 +1,108 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2398 | R | MV 4 UR | Creature — Orc Wizard | 4/4
+Magecraft — Whenever you cast or copy an instant or sorcery spell, choose target creature you control. Until end of turn, it gains "If this creature would leave the battlefield, exile it instead of putting it anywhere else" and "When this creature is put into exile, create a 4/4 blue and red Elemental creature token." (Each instance of that ability triggers separately.)
+
+#6779 | U | MV 4 UR | Creature — Djinn Wizard | 2/4
+Flying
+Whenever this creature attacks, the next instant or sorcery spell you cast this turn costs {X} less to cast, where X is this creature's power as this ability resolves.
+
+#6494 | C | MV 2 UR | Creature — Orc Wizard | 3/3
+Defender
+Magecraft — Whenever you cast or copy an instant or sorcery spell, this creature can attack this turn as though it didn't have defender.
+
+#530 | R | MV 2 UR | Sorcery
+Exile the top X cards of your library. For each land card exiled this way, create a Treasure token. For each blue card exiled this way, draw a card. For each red card exiled this way, ~ deals 1 damage to each opponent.
+
+#287 | C | MV 3 UR | Creature — Bird Shaman | 2/2
+Flying
+Instant and sorcery spells you cast with mana value 5 or greater cost {1} less to cast.
+
+#171 | U | MV 3 UR | Legendary Creature — Orc Shaman | 1/4
+{2}, Return ~ to its owner's hand: Copy target instant or sorcery spell you control. You may choose new targets for the copy.
+
+#3773 | C | MV 5 UR | Sorcery — Lesson
+Create a 4/4 blue and red Elemental creature token.
+
+#2835 | C | MV 3 U | Creature — Bird Wizard | 2/2
+Flying
+When this creature enters, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.
+
+#2835 | C | MV 3 U | Creature — Bird Wizard | 2/2
+Flying
+When this creature enters, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.
+
+#3367 | U | MV 3 U | Instant
+Return target spell or permanent with mana value 1 or greater to its owner's hand.
+Learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)
+
+#2436 | R | MV 1 U | Sorcery
+If X is 1, scry 1, then draw a card.
+If X is 2, you may choose a player. They return a creature they control to its owner's hand.
+If X is 3, create a 4/4 blue and red Elemental creature token.
+If X is 4 or more, do all of the above.
+
+#2315 | C | MV 2 U | Instant
+Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+Draw a card.
+
+#2315 | C | MV 2 U | Instant
+Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+Draw a card.
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5646 | C | MV 3 R | Instant
+Target creature gets +3/+1 and gains trample until end of turn.
+Learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)
+
+#6487 | C | MV 3 R | Instant
+This spell can't be countered. (This includes by the ward ability.)
+~ deals 4 damage to target creature or planeswalker.
+
+#632 | U | MV 5 R | Creature — Minotaur Shaman | 3/4
+Whenever this creature attacks, you may put an instant or sorcery card from your graveyard on the bottom of your library. If you do, exile the top two cards of your library. You may play those cards this turn.
+
+#2450 | C | MV 3 R | Creature — Wolf | 2/2
+Haste
+{T}, Exile an instant or sorcery card from your graveyard: Put a +1/+1 counter on this creature.
+
+#431 | C | MV 4 R | Creature — Spirit Dwarf | 1/5
+Reach
+{2}, {T}, Sacrifice this creature: Return target instant or sorcery card from your graveyard to your hand. Activate only as a sorcery.
+
+#3427 | C | MV 2 R | Creature — Human Shaman | 2/1
+{5}, Exile this card from your graveyard: Create a tapped 3/2 red and white Spirit creature token.
+
+#4513 | C | MV 2 R | Creature — Spirit Warrior | 2/2
+{T}: Attacking Spirits get +1/+0 until end of turn.
+
+#3793 | C | MV 2 colourless | Artifact Creature — Golem | 2/1
+When this creature enters, you may search your library for a basic land card, reveal it, then shuffle and put that card on top.
+
+#5404 | C | MV 3 U | Instant
+Draw a card.
+Learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)
+
+#3466 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {U} or {R}.
+{4}, {T}: Scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+
+TARGET card: #2398
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2398 MV 4
+530 MV 2 AFTER cast triggers magecraft
+3773 MV 5 AFTER cast triggers magecraft
+3367 MV 3 AFTER cast triggers magecraft
+2436 MV 1 AFTER cast triggers magecraft
+2315 MV 2 AFTER cast triggers magecraft
+4761 MV 2 AFTER cast triggers magecraft
+5646 MV 3 AFTER cast triggers magecraft
+6487 MV 3 AFTER cast triggers magecraft
+5404 MV 3 AFTER cast triggers magecraft
+171 MV 3 AFTER copies spell, triggers magecraft
