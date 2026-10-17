@@ -77,7 +77,7 @@ def judge_in():
     print('missing enablers', miss)
 
 
-LINE = re.compile(r'#?(\d+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)\s*\|?\s*(.*)')
+LINE = re.compile(r'#?([A-Z0-9_]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)\s*\|?\s*(.*)')
 
 
 def features():
@@ -85,7 +85,7 @@ def features():
     for r in dl.itertuples():
         p = HERE / 'judge_out' / f'{r.name}.txt'
         m = LINE.match(p.read_text().strip()) if p.exists() else None
-        if not m or int(m.group(1)) != r.id: bad.append(r.name); continue
+        if not m or m.group(1) not in (str(r.id), r.name): bad.append(r.name); continue
         off, on, pp = float(m.group(2)), float(m.group(3)), float(m.group(4)) / 100
         rows.append({'name': r.name, 'set': r.set, 'id': r.id, 'off': off, 'on': on, 'p': pp, 'ev': pp * on + (1 - pp) * off})
     d = pd.DataFrame(rows); print('bad', bad)
