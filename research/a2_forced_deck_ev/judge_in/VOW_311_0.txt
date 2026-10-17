@@ -1,0 +1,102 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#311 | M | MV 3 WB | Legendary Planeswalker — Kaya
++1: Creatures you control gain deathtouch until end of turn. Put a +1/+1 counter on up to one target creature token you control.
+−2: Until end of turn, if one or more tokens would be created under your control, twice that many of those tokens are created instead.
+−6: Exile all cards from all graveyards, then create a 1/1 white Spirit creature token with flying for each card exiled this way.
+
+#3509 | U | MV 2 W | Enchantment
+When this enchantment enters, exile target creature an opponent controls with mana value 3 or less until this enchantment leaves the battlefield.
+Whenever an opponent casts a Vampire spell with the same name as a card exiled with this enchantment, you gain 2 life.
+
+#807 | C | MV 1 W | Instant
+~ deals 2 damage to target attacking or blocking creature. Scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+
+#2118 | C | MV 2 W | Instant
+Cleave {5}{W} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Destroy target [attacking] creature.
+
+#5857 | C | MV 3 W | Enchantment — Aura
+Enchant creature
+Enchanted creature can't attack or block.
+{4}{W}: Exile enchanted creature. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#5857 | C | MV 3 W | Enchantment — Aura
+Enchant creature
+Enchanted creature can't attack or block.
+{4}{W}: Exile enchanted creature. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#1045 | U | MV 2 B | Instant
+Cleave {1}{B}{B} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+~ deals 3 damage to target [Human] creature. You gain 3 life.
+
+#3298 | C | MV 6 B | Sorcery
+Destroy target creature or planeswalker. Create two Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#3027 | R | MV 3 B | Sorcery
+Cleave {4}{W}{B} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Destroy all creatures [with mana value 2 or less].
+
+#5321 | C | MV 3 W | Creature — Human Knight | 2/1
+Flying
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+
+#5321 | C | MV 3 W | Creature — Human Knight | 2/1
+Flying
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+
+#1869 | U | MV 3 W | Creature — Human Soldier | 3/2
+When this creature enters, if you control another Human, draw a card.
+
+#6138 | C | MV 3 W | Creature — Human Soldier | 3/3
+This creature can't attack alone.
+Whenever this creature attacks, untap target creature.
+
+#663 | U | MV 4 W | Creature — Human Knight | 2/2
+Flying
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+Whenever this creature attacks, you may pay {1}{W}. If you do, target attacking creature without flying gains flying until end of turn.
+
+#4945 | C | MV 4 W | Creature — Bird | 2/3
+Flying
+If you would gain life, you gain that much life plus 1 instead.
+{1}{W}: This creature gains lifelink until end of turn.
+
+#4945 | C | MV 4 W | Creature — Bird | 2/3
+Flying
+If you would gain life, you gain that much life plus 1 instead.
+{1}{W}: This creature gains lifelink until end of turn.
+
+#6498 | C | MV 4 W | Creature — Human Soldier | 4/2
+Whenever this creature attacks, you may pay {1}. If you do, it gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#6498 | C | MV 4 W | Creature — Human Soldier | 4/2
+Whenever this creature attacks, you may pay {1}. If you do, it gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#1614 | C | MV 5 W | Creature — Spirit | 3/3
+Flying
+{3}{W}, Exile this card from your graveyard: Create two 1/1 white Spirit creature tokens with flying. Activate only if you control an enchantment and only as a sorcery.
+
+#2146 | C | MV 5 B | Creature — Zombie Kraken | 5/4
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, each opponent sacrifices a creature of their choice.
+
+#2146 | C | MV 5 B | Creature — Zombie Kraken | 5/4
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, each opponent sacrifices a creature of their choice.
+
+#2628 | C | MV 2 B | Creature — Human | 1/1
+When this creature dies, create a 2/2 black Zombie creature token.
+
+#3854 | C | MV 3 colourless | Artifact Creature — Construct | 2/2
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+TARGET card: #311
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 311 MV 3
+3854 MV 3 EITHER makes Blood token for +1 counter
+2628 MV 2 EITHER dies into Zombie token, doubled
+3298 MV 6 AFTER makes Blood tokens, doubled by -2
+1614 MV 5 AFTER graveyard spirit tokens, doubled by -2

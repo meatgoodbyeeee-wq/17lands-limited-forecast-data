@@ -1,0 +1,100 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2048 | R | MV 4 UR | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I, II — Choose target nontoken creature you control that doesn't have the same name as a token you control. Create a token that's a copy of it, except it isn't legendary, is a Reflection in addition to its other types, and has haste.
+III — Sacrifice all Reflections you control.
+
+#4777 | R | MV 4 R | Creature — Goblin Warrior | 3/3
+Menace
+When this creature enters, create two 1/1 black Rat creature tokens with "This token can't block."
+At the beginning of your upkeep, you may sacrifice another creature. If you do, put a +1/+1 counter on this creature and exile the top card of your library. You may play that card this turn.
+
+#5186 | U | MV 3 R | Creature — Ogre Warrior | 3/3
+Celebration — At the beginning of combat on your turn, if two or more nonland permanents entered the battlefield under your control this turn, target creature you control gets +1/+0 and gains menace until end of turn. (It can't be blocked except by two or more creatures.)
+
+#124 | C | MV 3 R | Creature — Human Bard | 3/2
+When this creature enters, you may pay {1}. When you do, create a Young Hero Role token attached to target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#124 | C | MV 3 R | Creature — Human Bard | 3/2
+When this creature enters, you may pay {1}. When you do, create a Young Hero Role token attached to target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#124 | C | MV 3 R | Creature — Human Bard | 3/2
+When this creature enters, you may pay {1}. When you do, create a Young Hero Role token attached to target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#6693 | C | MV 2 R | Creature — Human Peasant | 2/2
+Celebration — This creature gets +1/+1 and has trample as long as two or more nonland permanents entered the battlefield under your control this turn.
+
+#2829 | R | MV 2 R | Creature — Human Rogue | 1/1
+Haste
+When this creature enters, choose one —
+• Discard a card, then draw a card.
+• Create a Treasure token.
+• Create a Wicked Role token attached to target creature you control.
+
+#3796 | C | MV 4 R | Creature — Dog | 3/3
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, create a 1/1 black Rat creature token with "This token can't block."
+
+#3182 | C | MV 3 R | Creature — Goblin Rogue | 2/3
+When this creature enters, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#3182 | C | MV 3 R | Creature — Goblin Rogue | 2/3
+When this creature enters, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5678 | C | MV 3 U | Creature — Merfolk | 2/3
+{1}: This creature gets +1/-1 until end of turn.
+When this creature dies, scry 2.
+
+#1748 | U | MV 3 U | Creature — Elemental Soldier | 2/3
+Vigilance
+Whenever this creature attacks, you may pay {1}{U}. When you do, tap target creature an opponent controls.
+Whenever you tap an untapped creature an opponent controls, this creature gets +2/+1 until end of turn.
+
+#5466 | C | MV 3 U | Creature — Faerie Rogue | 2/1
+Flying
+Instant and sorcery spells you cast cost {1} less to cast.
+
+#5466 | C | MV 3 U | Creature — Faerie Rogue | 2/1
+Flying
+Instant and sorcery spells you cast cost {1} less to cast.
+
+#6322 | C | MV 3 U | Creature — Human Warlock | 3/2
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+When this creature enters, if it was bargained, create a Cursed Role token attached to target creature an opponent controls. (If you control another Role on it, put that one into the graveyard. Enchanted creature is 1/1.)
+
+#4475 | U | MV 1 R | Instant
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+~ deals X damage to target creature or planeswalker. If this spell was bargained, it deals twice X damage to that permanent instead.
+
+#1867 | U | MV 4 R | Instant
+This spell costs {1} less to cast for each creature that attacked this turn.
+~ deals 5 damage to target creature.
+
+#905 | C | MV 3 R | Instant
+~ deals X damage to target creature, where X is 2 plus the number of cards in your graveyard that are instant cards, sorcery cards, and/or have an Adventure.
+
+#905 | C | MV 3 R | Instant
+~ deals X damage to target creature, where X is 2 plus the number of cards in your graveyard that are instant cards, sorcery cards, and/or have an Adventure.
+
+#2827 | U | MV 3 U | Instant
+Tap one or two target creatures an opponent controls. Put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#2860 | C | MV 2 U | Sorcery
+Tap target creature an opponent controls and put three stun counters on it. Scry 2. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#4550 | C | MV 2 R | Sorcery
+You may discard a card. If you do, draw two cards.
+Create a Wicked Role token attached to up to one target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature gets +1/+1. When this token is put into a graveyard, each opponent loses 1 life.)
+
+TARGET card: #2048
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2048 MV 4
+4777 MV 4 BEFORE nontoken creature with ETB to copy
+124 MV 3 BEFORE nontoken creature, ETB Role copyable
+2829 MV 2 BEFORE nontoken creature, ETB copyable
+3796 MV 4 BEFORE nontoken creature, ETB Rat copyable
+3182 MV 3 BEFORE nontoken creature, ETB Treasure copyable
+6322 MV 3 BEFORE nontoken creature, ETB Role copyable

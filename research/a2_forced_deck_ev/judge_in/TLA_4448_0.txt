@@ -1,0 +1,113 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4448 | M | MV 2 W | Sorcery
+Create X 1/1 white Ally creature tokens, then put a +1/+1 counter on each creature you control.
+
+#2061 | U | MV 2 W | Creature — Human Warrior Ally | 1/1
+Flash
+When this creature enters, create a 1/1 white Ally creature token.
+
+#3041 | C | MV 2 colourless | Artifact — Equipment
+When this Equipment enters, create a 1/1 white Ally creature token, then attach this Equipment to it.
+Equipped creature gets +1/+0.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#3041 | C | MV 2 colourless | Artifact — Equipment
+When this Equipment enters, create a 1/1 white Ally creature token, then attach this Equipment to it.
+Equipped creature gets +1/+0.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#968 | C | MV 3 W | Creature — Human Pilot Ally | 2/3
+Flying
+When this creature enters, scry 1. (Look at the top card of your library. You may put it on the bottom.)
+
+#1804 | U | MV 1 W | Creature — Human Soldier Ally | 1/1
+Vigilance
+Sacrifice this creature: Another target Ally you control gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#6408 | C | MV 2 W | Instant
+~ deals 4 damage to target attacking or blocking creature. You gain life equal to the excess damage dealt this way.
+
+#2012 | C | MV 2 W | Creature — Human Rebel Ally | 1/2
+When this creature enters, put a +1/+1 counter on target creature.
+
+#5329 | C | MV 4 W | Creature — Human Warrior Ally | 3/3
+When this creature enters, create a 1/1 white Ally creature token.
+
+#3740 | U | MV 3 W | Instant — Lesson
+Untap one or two target creatures. They each get +2/+2 until end of turn.
+
+#2234 | U | MV 5 W | Legendary Creature — Human Warrior Ally | 4/4
+First strike
+Whenever ~ attacks, look at the top four cards of your library. You may reveal an Ally, Equipment, or Lesson card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+
+#6517 | C | MV 2 W | Enchantment — Aura
+Enchant creature
+Enchanted creature can't attack or block.
+{5}, Sacrifice this Aura: Exile enchanted creature. Create a 1/1 white Ally creature token. Activate only during your turn.
+
+#6517 | C | MV 2 W | Enchantment — Aura
+Enchant creature
+Enchanted creature can't attack or block.
+{5}, Sacrifice this Aura: Exile enchanted creature. Create a 1/1 white Ally creature token. Activate only during your turn.
+
+#6036 | R | MV 3 W | Legendary Creature — Human Warrior Ally | 2/4
+Other creatures you control get +1/+0.
+Whenever another permanent you control leaves the battlefield during your turn, create a 1/1 white Ally creature token. This ability triggers only once each turn.
+
+#5863 | U | MV 1 W | Legendary Creature — Lemur Bat Ally | 1/1
+Flying, vigilance
+When ~ leaves the battlefield, choose one —
+• Create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this token: You gain 3 life.")
+• Put a +1/+1 counter on target creature you control.
+• Scry 2.
+
+#4162 | C | MV 5 W | Creature — Rabbit Kangaroo | 3/5
+Landfall — Whenever a land you control enters, this creature gains flying until end of turn and you gain 1 life.
+Plainscycling {2} ({2}, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)
+
+#738 | C | MV 2 R | Instant
+~ deals 3 damage to any target.
+
+#5117 | C | MV 1 R | Instant — Lesson
+Kicker {4} (You may pay an additional {4} as you cast this spell.)
+~ deals 2 damage to target creature. If this spell was kicked, it deals 5 damage to that creature instead.
+
+#6372 | C | MV 3 R | Creature — Human Rebel Ally | 2/1
+Haste
+When this creature enters, create a 1/1 white Ally creature token.
+
+#6898 | U | MV 3 R | Legendary Creature — Human Rebel Ally | 2/3
+Firebending 1 (Whenever this creature attacks, add {R}. This mana lasts until end of combat.)
+Exhaust — {3}: Put a +1/+1 counter on ~. When you next cast a Lesson spell this turn, copy it and you may choose new targets for the copy. (Activate each exhaust ability only once.)
+
+#6312 | U | MV 2 R | Creature — Human Cleric | 2/2
+Firebending 1 (Whenever this creature attacks, add {R}. This mana lasts until end of combat.)
+{1}{R}{R}: Put a +1/+1 counter on this creature.
+
+#2135 | C | MV 2 R | Instant
+Target creature gets +3/+1 until end of turn.
+Create a Clue token. (It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+
+#2047 | C | MV 3 R | Instant — Lesson
+Target creature gains menace until end of turn. (It can't be blocked except by two or more creatures.)
+Creatures target player controls get +2/+0 until end of turn.
+
+TARGET card: #4448
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 4448 MV 2
+1804 MV 1 BEFORE creature gets counter
+5863 MV 1 BEFORE creature gets counter
+2061 MV 2 BEFORE creature plus token
+2012 MV 2 BEFORE creature gets counter
+3041 MV 2 BEFORE Ally token gets counter
+6312 MV 2 BEFORE creature gets counter
+968 MV 3 BEFORE creature gets counter
+6036 MV 3 BEFORE creature gets counter
+6372 MV 3 BEFORE creature plus token
+6898 MV 3 BEFORE creature gets counter
+5329 MV 4 BEFORE creature plus token
+2234 MV 5 BEFORE creature gets counter
+4162 MV 5 BEFORE creature gets counter

@@ -1,0 +1,111 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#5629 | R | MV 3 BG | Legendary Creature — Boar Rhino Mutant | 7/5
+Whenever ~ attack or block, sacrifice a permanent unless you discard a card.
+
+#1992 | C | MV 1 B | Creature — Squirrel Mutant | 1/1
+Deathtouch
+
+#6972 | C | MV 2 G | Creature — Boar Rhino | 2/2
+When this creature leaves the battlefield, create a Mutagen token. (It's an artifact with "{1}, {T}, Sacrifice this token: Put a +1/+1 counter on target creature. Activate only as a sorcery.")
+
+#6972 | C | MV 2 G | Creature — Boar Rhino | 2/2
+When this creature leaves the battlefield, create a Mutagen token. (It's an artifact with "{1}, {T}, Sacrifice this token: Put a +1/+1 counter on target creature. Activate only as a sorcery.")
+
+#771 | C | MV 2 BG | Artifact Creature — Food Cat Mutant | 1/3
+{2}, Sacrifice another creature or token: Draw a card. Activate only as a sorcery.
+{2}, {T}, Sacrifice this creature: You gain 3 life.
+
+#6988 | C | MV 2 B | Creature — Rat | 2/2
+{4}{B}: Return this card from your graveyard to the battlefield tapped.
+
+#418 | U | MV 2 B | Instant
+Exile target creature with mana value 3 or less.
+
+#501 | C | MV 2 G | Instant
+Target creature you control deals damage equal to its power to target creature an opponent controls.
+
+#763 | U | MV 2 G | Instant
+This spell costs {1} less to cast if you control a Turtle.
+Put a +1/+1 counter on target creature you control. It gains trample, hexproof, and indestructible until end of turn.
+
+#5000 | C | MV 2 B | Instant
+Kicker—Sacrifice an artifact or creature. (You may sacrifice an artifact or creature in addition to any other costs as you cast this spell.)
+Target creature gets -2/-2 until end of turn. If this spell was kicked, that creature gets -5/-5 until end of turn instead.
+
+#3332 | U | MV 3 B | Sorcery
+Sneak {B} (You may cast this spell for {B} if you also return an unblocked attacker you control to hand during the declare blockers step.)
+Destroy target creature or enchantment. If an enchantment was destroyed this way, you lose 2 life.
+
+#3332 | U | MV 3 B | Sorcery
+Sneak {B} (You may cast this spell for {B} if you also return an unblocked attacker you control to hand during the declare blockers step.)
+Destroy target creature or enchantment. If an enchantment was destroyed this way, you lose 2 life.
+
+#5683 | R | MV 4 B | Creature — Snake Spirit Avatar | 3/4
+Deathtouch
+Whenever another creature you control dies, you gain life equal to its toughness.
+Whenever you gain life, each opponent loses 1 life.
+
+#4597 | R | MV 4 B | Legendary Creature — Shark Octopus Ninja | 4/4
+Sneak {3}{B}{B}
+First strike
+Whenever ~ deals combat damage to a player, put up to one target creature card from that player's graveyard onto the battlefield under your control. It enters tapped and attacking that player.
+
+#3536 | R | MV 4 G | Legendary Creature — Crocodile Mutant Rogue | 5/4
+Trample
+~ enters with a hexproof counter on her.
+Whenever ~ deals combat damage to a player, you may remove a counter from her. When you do, destroy target artifact or enchantment that player controls.
+
+#4879 | U | MV 4 G | Legendary Creature — Mutant Ninja Turtle | 4/4
+Each creature you control with a counter on it can't be blocked by more than one creature.
+Whenever ~ enters or attacks, create a Mutagen token. (It's an artifact with "{1}, {T}, Sacrifice this token: Put a +1/+1 counter on target creature. Activate only as a sorcery.")
+
+#1806 | C | MV 4 B | Creature — Human Ninja Warlock | 2/4
+Lifelink
+Disappear — When this creature enters, if a permanent left the battlefield under your control this turn, create a 1/1 black Ninja creature token.
+
+#5274 | C | MV 4 B | Artifact — Food
+When this artifact enters, destroy target creature.
+{2}, {T}, Sacrifice this artifact: You gain 3 life.
+
+#5274 | C | MV 4 B | Artifact — Food
+When this artifact enters, destroy target creature.
+{2}, {T}, Sacrifice this artifact: You gain 3 life.
+
+#7024 | C | MV 5 B | Legendary Creature — Boar Mutant Warrior | 5/4
+Menace (This creature can't be blocked except by two or more creatures.)
+Rhinos you control have menace.
+Swampcycling {2} ({2}, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)
+
+#939 | C | MV 6 G | Legendary Creature — Rhino Mutant | 7/7
+~ can't be blocked by more than one creature.
+Boars you control can't be blocked by more than one creature.
+Forestcycling {2} ({2}, Discard this card: Search your library for a Forest card, reveal it, put it into your hand, then shuffle.)
+
+#1037 | U | MV 2 B | Artifact — Equipment
+Equipped creature gets +2/+1.
+When this Equipment enters, attach it to target creature you control.
+Equip—Sacrifice another nonland permanent. Activate only once each turn.
+
+#4995 | C | MV 1 G | Artifact — Food
+Flash
+When this artifact enters, target creature gets +2/+2 until end of turn. Untap it.
+{2}, {T}, Sacrifice this artifact: You gain 3 life.
+
+#4331 | C | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {B} or {G}.
+
+TARGET card: #5629
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 5629 MV 3
+1992 MV 1 BEFORE cheap creature to sacrifice
+6972 MV 2 BEFORE sacrifice fodder, leaves Mutagen token
+771 MV 2 BEFORE Food creature, sacrifice fodder
+4995 MV 1 BEFORE Food, cheap permanent to sacrifice
+6988 MV 2 EITHER discard fodder, recurs from graveyard
+939 MV 6 EITHER forestcycling card is discard fodder
+7024 MV 5 EITHER swampcycling card is discard fodder

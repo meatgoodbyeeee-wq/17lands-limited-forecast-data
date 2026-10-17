@@ -1,0 +1,110 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2980 | R | MV 3 B | Enchantment
+Whenever you discard one or more cards, create a tapped 2/2 black Zombie creature token. This ability triggers only once each turn.
+
+#4661 | U | MV 2 BR | Creature — Vampire | 3/2
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+{T}, Sacrifice this creature: Target creature gets -X/-X until end of turn, where X is twice the number of Blood tokens you control. Activate only as a sorcery.
+
+#4661 | U | MV 2 BR | Creature — Vampire | 3/2
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+{T}, Sacrifice this creature: Target creature gets -X/-X until end of turn, where X is twice the number of Blood tokens you control. Activate only as a sorcery.
+
+#5511 | U | MV 3 B | Instant
+Destroy target creature or planeswalker.
+
+#5848 | C | MV 1 R | Instant
+~ deals 2 damage to target creature or planeswalker. If that creature or planeswalker would die this turn, exile it instead.
+
+#5848 | C | MV 1 R | Instant
+~ deals 2 damage to target creature or planeswalker. If that creature or planeswalker would die this turn, exile it instead.
+
+#2377 | C | MV 2 R | Instant
+Choose one —
+• ~ deals 3 damage to target creature.
+• Destroy target artifact.
+
+#5864 | C | MV 5 R | Sorcery
+~ deals 4 damage to target creature. Create a number of Blood tokens equal to the amount of excess damage dealt to that creature this way. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#1045 | U | MV 2 B | Instant
+Cleave {1}{B}{B} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+~ deals 3 damage to target [Human] creature. You gain 3 life.
+
+#2083 | R | MV 4 R | Creature — Human Rogue | 4/3
+Haste
+Whenever this creature attacks, if you attacked with exactly one other creature this combat, you may have that creature's base power and toughness become 4/3 until end of turn.
+
+#2434 | C | MV 5 R | Creature — Vampire | 4/4
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, create two Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#6437 | C | MV 4 B | Creature — Vampire | 3/3
+Menace
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+Whenever this creature attacks, you may sacrifice a Blood token. If you do, it gets +2/+2 until end of turn.
+
+#4342 | C | MV 3 R | Creature — Vampire | 3/2
+Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)
+Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#1114 | C | MV 2 R | Creature — Vampire | 2/1
+This creature has first strike as long as it's attacking.
+When this creature dies, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#1114 | C | MV 2 R | Creature — Vampire | 2/1
+This creature has first strike as long as it's attacking.
+When this creature dies, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#1114 | C | MV 2 R | Creature — Vampire | 2/1
+This creature has first strike as long as it's attacking.
+When this creature dies, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#4236 | C | MV 1 R | Creature — Vampire | 1/1
+When this creature enters, it deals 1 damage to each opponent. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#1849 | C | MV 3 B | Creature — Vampire | 1/4
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+Whenever you sacrifice a Blood token, you gain 1 life.
+
+#25 | C | MV 3 B | Sorcery
+You draw two cards, lose 2 life, then create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#2699 | U | MV 4 R | Sorcery
+It becomes night. Discard any number of cards, then draw that many cards plus one.
+
+#5442 | U | MV 2 R | Artifact
+When this artifact enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+Whenever you sacrifice a Blood token, you may have this artifact become a 3/3 Vampire artifact creature with haste until end of turn.
+
+#5626 | U | MV 5 R | Creature — Devil | 3/3
+Haste
+Whenever you cast a noncreature spell, this creature gets +2/+2 until end of turn.
+
+#3854 | C | MV 3 colourless | Artifact Creature — Construct | 2/2
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#2949 | R | MV 0 colourless | Land
+{T}: Add {C}.
+{T}, Pay 1 life: Add one mana of any color. Spend this mana only to cast a Vampire spell.
+{5}, {T}: Create a Blood token. This ability costs {1} less to activate for each Vampire you control. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+TARGET card: #2980
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2980 MV 3
+4661 MV 2 EITHER Blood token, discard outlet
+6437 MV 4 EITHER Blood token, discard outlet
+4342 MV 3 EITHER Combat damage makes Blood token
+1114 MV 2 EITHER Dies for Blood, discard outlet
+4236 MV 1 EITHER Blood token, discard outlet
+1849 MV 3 EITHER Blood token, discard outlet
+25 MV 3 EITHER Blood token, discard outlet
+5442 MV 2 EITHER Blood token, discard outlet
+2434 MV 5 EITHER Two Blood tokens, discard outlets
+3854 MV 3 EITHER Blood token, discard outlet
+2949 MV 0 EITHER Land makes Blood tokens
+5864 MV 5 EITHER Excess damage makes Blood tokens
+2699 MV 4 AFTER Discards cards directly

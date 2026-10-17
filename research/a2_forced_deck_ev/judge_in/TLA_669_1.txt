@@ -1,0 +1,119 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#669 | R | MV 6 URG | Legendary Creature — Human Noble Ally | 5/5
+Firebending 2
+During your turn, each non-Lesson instant and sorcery card in your graveyard has flashback. The flashback cost is equal to that card's mana cost. (You may cast a card from your graveyard for its flashback cost. Then exile it.)
+During your turn, each Lesson card in your graveyard has flashback {1}.
+
+#738 | C | MV 2 R | Instant
+~ deals 3 damage to any target.
+
+#981 | C | MV 4 R | Sorcery
+Choose one —
+• ~ deals damage equal to the number of lands you control to target creature.
+• Destroy target land creature or nonbasic land.
+
+#2135 | C | MV 2 R | Instant
+Target creature gets +3/+1 until end of turn.
+Create a Clue token. (It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+
+#2047 | C | MV 3 R | Instant — Lesson
+Target creature gains menace until end of turn. (It can't be blocked except by two or more creatures.)
+Creatures target player controls get +2/+0 until end of turn.
+
+#6312 | U | MV 2 R | Creature — Human Cleric | 2/2
+Firebending 1 (Whenever this creature attacks, add {R}. This mana lasts until end of combat.)
+{1}{R}{R}: Put a +1/+1 counter on this creature.
+
+#6312 | U | MV 2 R | Creature — Human Cleric | 2/2
+Firebending 1 (Whenever this creature attacks, add {R}. This mana lasts until end of combat.)
+{1}{R}{R}: Put a +1/+1 counter on this creature.
+
+#6099 | R | MV 4 R | Creature — Human Rebel Ally | 4/4
+Haste
+Whenever another Ally you control enters, put a +1/+1 counter on that creature and it gains haste until end of turn.
+
+#3798 | C | MV 5 R | Creature — Human Mercenary | 5/5
+Firebending 2 (Whenever this creature attacks, add {R}{R}. This mana lasts until end of combat.)
+Exhaust — {8}: Put two +1/+1 counters on this creature. It gains trample until end of turn. (Activate each exhaust ability only once.)
+
+#2846 | U | MV 3 R | Legendary Creature — Human Performer | 3/2
+Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)
+Whenever ~ attacks, you may pay {1}. When you do, target creature can't block this turn.
+
+#4473 | C | MV 2 R | Creature — Human Archer | 3/1
+Reach
+When this creature enters, you may discard a card. If you do, draw a card.
+
+#2681 | U | MV 3 R | Artifact — Equipment
+Flash
+When this Equipment enters, attach it to target creature you control. That creature gains double strike until end of turn.
+Equipped creature gets +1/+1.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#5943 | C | MV 3 U | Creature — Human Peasant Ally | 2/2
+When this creature enters, tap target creature an opponent controls and put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#5943 | C | MV 3 U | Creature — Human Peasant Ally | 2/2
+When this creature enters, tap target creature an opponent controls and put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#4526 | C | MV 5 U | Instant — Lesson
+The owner of target creature or enchantment puts it into their library second from the top or on the bottom. You create a Clue token. (It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+
+#3661 | C | MV 5 U | Creature — Human Warrior Ally | 4/3
+Flying
+Waterbend {4}: Draw a card, then discard a card. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)
+
+#6669 | C | MV 4 U | Sorcery — Lesson
+Draw three cards. Then discard a card unless you waterbend {2}. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)
+
+#1615 | C | MV 2 U | Creature — Human Pilot Ally | 1/2
+Flying
+This creature gets +1/+1 as long as there's a Lesson card in your graveyard.
+
+#2902 | C | MV 4 U | Creature — Human Warrior Ally | 2/5
+Vigilance
+Waterbend {3}: This creature has base power and toughness 5/2 until end of turn. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)
+
+#5193 | C | MV 1 U | Instant — Lesson
+Target creature you control gets +1/+1 and gains hexproof until end of turn. Untap it. (It can't be the target of spells or abilities your opponents control.)
+
+#6383 | C | MV 2 U | Creature — Otter Bird | 2/1
+Whenever you draw your second card each turn, this creature gets +1/+2 until end of turn and can't be blocked this turn.
+
+#501 | C | MV 2 G | Instant
+Target creature you control deals damage equal to its power to target creature an opponent controls.
+
+#6638 | U | MV 3 colourless | Artifact — Vehicle | 4/4
+Reach
+When this Vehicle dies, create a Clue token. (It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#6405 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {U} or {R}.
+{4}, {T}, Sacrifice this land: Draw a card.
+
+#1715 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {R} or {G}.
+{4}, {T}, Sacrifice this land: Draw a card.
+
+#426 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {G} or {U}.
+{4}, {T}, Sacrifice this land: Draw a card.
+
+TARGET card: #669
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET #669 MV 6
+#738 MV 2 EITHER instant gets flashback
+#981 MV 4 EITHER sorcery gets flashback
+#2135 MV 2 EITHER instant gets flashback
+#2047 MV 3 EITHER instant Lesson, flashback {1}
+#4526 MV 5 EITHER instant Lesson, flashback {1}
+#6669 MV 4 EITHER sorcery Lesson, flashback {1}
+#5193 MV 1 EITHER instant Lesson, flashback {1}
+#501 MV 2 EITHER instant gets flashback

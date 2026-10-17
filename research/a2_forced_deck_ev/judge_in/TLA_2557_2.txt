@@ -1,0 +1,114 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2557 | R | MV 2 WG | Creature — Human Soldier Ally | 1/1
+Trample
+When this creature enters, put a +1/+1 counter on each other Ally creature you control.
+Whenever another Ally you control enters, put a +1/+1 counter on this creature.
+
+#2012 | C | MV 2 W | Creature — Human Rebel Ally | 1/2
+When this creature enters, put a +1/+1 counter on target creature.
+
+#2069 | C | MV 2 W | Creature — Human Cleric Ally | 2/2
+Whenever this creature becomes tapped, you gain 1 life and scry 1. (Look at the top card of your library. You may put it on the bottom.)
+
+#3041 | C | MV 2 colourless | Artifact — Equipment
+When this Equipment enters, create a 1/1 white Ally creature token, then attach this Equipment to it.
+Equipped creature gets +1/+0.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#3041 | C | MV 2 colourless | Artifact — Equipment
+When this Equipment enters, create a 1/1 white Ally creature token, then attach this Equipment to it.
+Equipped creature gets +1/+0.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#6060 | C | MV 2 G | Creature — Human Citizen | 2/1
+{T}: Add {G}. If you control a creature with power 4 or greater, add {G}{G} instead.
+
+#3489 | C | MV 3 W | Creature — Human Soldier Ally | 3/3
+{5}: Creatures you control get +1/+1 until end of turn.
+
+#4243 | R | MV 4 G | Legendary Creature — Human Noble Ally | 2/2
+When ~ enters, create a 4/4 green Bear creature token.
+Whenever one or more creatures you control with power 4 or greater attack, search your library for up to that many basic land cards, put them onto the battlefield tapped, then shuffle.
+
+#5329 | C | MV 4 W | Creature — Human Warrior Ally | 3/3
+When this creature enters, create a 1/1 white Ally creature token.
+
+#2234 | U | MV 5 W | Legendary Creature — Human Warrior Ally | 4/4
+First strike
+Whenever ~ attacks, look at the top four cards of your library. You may reveal an Ally, Equipment, or Lesson card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+
+#6235 | U | MV 6 W | Legendary Creature — Bison Ally | 4/4
+Flying
+Whenever ~ enters or attacks, choose one —
+• Target creature you control gains flying until end of turn.
+• Airbend another target nonland permanent you control. (Exile it. While it's exiled, its owner may cast it for {2} rather than its mana cost.)
+
+#4162 | C | MV 5 W | Creature — Rabbit Kangaroo | 3/5
+Landfall — Whenever a land you control enters, this creature gains flying until end of turn and you gain 1 life.
+Plainscycling {2} ({2}, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)
+
+#1360 | U | MV 5 W | Sorcery
+Create a 1/1 white Ally creature token for each Plains you control. Scry 2. (Look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)
+
+#1360 | U | MV 5 W | Sorcery
+Create a 1/1 white Ally creature token for each Plains you control. Scry 2. (Look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)
+
+#2503 | R | MV 3 W | Enchantment
+Flash
+When this enchantment enters, exile up to one other target nonland permanent until this enchantment leaves the battlefield.
+Waterbend {3}: Sacrifice this enchantment. If you do, scry 2. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)
+
+#2549 | U | MV 2 W | Instant — Lesson
+Choose one —
+• Destroy target attacking creature.
+• Airbend target creature you control. (Exile it. While it's exiled, its owner may cast it for {2} rather than its mana cost.)
+
+#3839 | R | MV 2 W | Enchantment
+When this enchantment enters, airbend up to one target creature.
+Whenever a creature you control enters, put a quest counter on this enchantment.
+At the beginning of your end step, if this enchantment has four or more quest counters on it, exile up to one target creature you control, then return it to the battlefield under its owner's control.
+
+#501 | C | MV 2 G | Instant
+Target creature you control deals damage equal to its power to target creature an opponent controls.
+
+#412 | U | MV 3 G | Instant
+Affinity for Allies (This spell costs {1} less to cast for each Ally you control.)
+Up to two target creatures you control each deal damage equal to their power to target creature an opponent controls.
+
+#6696 | C | MV 2 G | Instant — Lesson
+Choose one —
+• Destroy target artifact or enchantment.
+• Put a +1/+1 counter on target creature you control. It gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#942 | C | MV 1 G | Instant
+Target creature gets +2/+2 and gains reach until end of turn. Untap it.
+
+#6638 | U | MV 3 colourless | Artifact — Vehicle | 4/4
+Reach
+When this Vehicle dies, create a Clue token. (It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#2453 | C | MV 1 colourless | Artifact
+{1}: Add one mana of any color. Activate only once each turn.
+{5}, {T}, Sacrifice this artifact: It deals 5 damage to target creature.
+
+#334 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {G} or {W}.
+{4}, {T}, Sacrifice this land: Draw a card.
+
+TARGET card: #2557
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2557 MV 2
+2012 MV 2 EITHER Ally; counter either order
+2069 MV 2 EITHER Ally; counter either order
+3041 MV 2 EITHER makes Ally token; counter either order
+3489 MV 3 EITHER Ally; counter either order
+4243 MV 4 EITHER Ally; counter either order
+5329 MV 4 EITHER Ally plus Ally token
+2234 MV 5 EITHER Ally; counter either order
+6235 MV 6 EITHER Ally; counter either order
+1360 MV 5 EITHER makes many Ally tokens

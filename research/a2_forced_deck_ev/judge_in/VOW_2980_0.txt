@@ -1,0 +1,92 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4236 | C | MV 1 R | Creature — Vampire | 1/1
+When this creature enters, it deals 1 damage to each opponent. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#252 | R | MV 1 R | Creature — Human Knight | 1/2
+Menace
+{2}{R}, {T}, Exile three cards from your graveyard: Create a 3/2 red Wolf creature token.
+
+#1114 | C | MV 2 R | Creature — Vampire | 2/1
+This creature has first strike as long as it's attacking.
+When this creature dies, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#2628 | C | MV 2 B | Creature — Human | 1/1
+When this creature dies, create a 2/2 black Zombie creature token.
+
+#554 | U | MV 3 B | Creature — Zombie Scorpion | 3/2
+Deathtouch
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, target player draws two cards and loses 2 life.
+
+#3199 | U | MV 3 B | Creature — Zombie Cleric | 3/2
+Whenever this creature or another Zombie you control dies, look at the top card of your library. If it's a Zombie card, you may reveal it and put it into your hand. If you don't put the card into your hand, you may put it into your graveyard.
+
+#4465 | C | MV 3 R | Creature — Human Warrior | 2/2
+Haste (This creature can attack and {T} as soon as it comes under your control.)
+When this creature enters, target creature gets +2/+0 until end of turn.
+
+#4465 | C | MV 3 R | Creature — Human Warrior | 2/2
+Haste (This creature can attack and {T} as soon as it comes under your control.)
+When this creature enters, target creature gets +2/+0 until end of turn.
+
+#3854 | C | MV 3 colourless | Artifact Creature — Construct | 2/2
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#3854 | C | MV 3 colourless | Artifact Creature — Construct | 2/2
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#2279 | U | MV 4 B | Creature — Vampire Assassin | 4/2
+When this creature enters, target creature an opponent controls gets -2/-2 until end of turn if that opponent controls no other creatures.
+
+#4285 | C | MV 4 R | Creature — Wolf | 4/3
+{1}{R}: This creature gains first strike until end of turn. Activate only as a sorcery.
+
+#4285 | C | MV 4 R | Creature — Wolf | 4/3
+{1}{R}: This creature gains first strike until end of turn. Activate only as a sorcery.
+
+#2434 | C | MV 5 R | Creature — Vampire | 4/4
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, create two Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#2146 | C | MV 5 B | Creature — Zombie Kraken | 5/4
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, each opponent sacrifices a creature of their choice.
+
+#5224 | R | MV 7 B | Creature — Demon | 6/6
+Flying
+At the beginning of your end step, sacrifice a non-Demon creature. If you do, create a token that's a copy of this creature.
+
+#2980 | R | MV 3 B | Enchantment
+Whenever you discard one or more cards, create a tapped 2/2 black Zombie creature token. This ability triggers only once each turn.
+
+#1404 | C | MV 4 B | Instant
+Target creature gets -13/-13 until end of turn. If that creature would die this turn, exile it instead.
+
+#1404 | C | MV 4 B | Instant
+Target creature gets -13/-13 until end of turn. If that creature would die this turn, exile it instead.
+
+#4658 | C | MV 2 B | Sorcery
+Target player loses 2 life and you gain 2 life. Create two Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#4658 | C | MV 2 B | Sorcery
+Target player loses 2 life and you gain 2 life. Create two Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#5864 | C | MV 5 R | Sorcery
+~ deals 4 damage to target creature. Create a number of Blood tokens equal to the amount of excess damage dealt to that creature this way. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#582 | C | MV 3 R | Sorcery
+Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+TARGET card: #2980
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2980 MV 3
+4236 MV 1 EITHER Blood token, discard outlet
+1114 MV 2 EITHER Dies for Blood, discard outlet
+3854 MV 3 EITHER Blood token, discard outlet
+2434 MV 5 EITHER Two Blood tokens, discard outlets
+4658 MV 2 EITHER Two Blood tokens, discard outlets
+5864 MV 5 EITHER Excess damage makes Blood tokens
+582 MV 3 EITHER Blood token, discard outlet

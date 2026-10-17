@@ -1,0 +1,109 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#3662 | R | MV 2 G | Creature — Elf Artificer | 0/1
+Whenever one or more artifacts you control enter, put two +1/+1 counters on this creature. This ability triggers only once each turn.
+Whenever one or more enchantments you control enter, draw a card. This ability triggers only once each turn.
+
+#1294 | C | MV 3 G | Sorcery
+Create a Monster Role token attached to target creature you control. When you do, that creature fights up to one target creature you don't control. (If you control another Role on it, put that one into the graveyard. Enchanted creature gets +1/+1 and has trample. Creatures that fight each deal damage equal to their power to the other.)
+
+#6992 | C | MV 2 G | Enchantment — Aura
+Enchant creature
+Enchanted creature gets +2/+2.
+{4}{G}: Return this card from your graveyard to your hand.
+
+#1856 | U | MV 5 G | Creature — Human Knight | 4/4
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+Trample
+When this creature enters, if it was bargained, it fights up to one target creature you don't control. (Each deals damage equal to its power to the other.)
+
+#2433 | C | MV 7 G | Creature — Giant | 6/6
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+This spell costs {2} less to cast if it's bargained.
+Trample
+When this creature enters, you gain 3 life.
+
+#5560 | C | MV 2 G | Creature — Ouphe | 2/2
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+When this creature enters, if it was bargained, exile target artifact or enchantment an opponent controls.
+
+#3586 | C | MV 3 G | Creature — Human Knight | 4/2
+{1}{G}: This creature can't be blocked by creatures with power 2 or less this turn.
+
+#2763 | C | MV 2 G | Creature — Satyr Scout | 1/3
+{T}: Add {G}.
+{1}, {T}: Add one mana of any color.
+
+#1826 | U | MV 2 W | Artifact
+When this artifact enters, exile target creature an opponent controls with mana value 3 or less until this artifact leaves the battlefield.
+
+#1826 | U | MV 2 W | Artifact
+When this artifact enters, exile target creature an opponent controls with mana value 3 or less until this artifact leaves the battlefield.
+
+#3539 | C | MV 2 W | Enchantment
+When this enchantment enters, create a 2/2 white Knight creature token with vigilance.
+When this enchantment is put into a graveyard from the battlefield, scry 2.
+{2}{W}: Sacrifice this enchantment.
+
+#4688 | U | MV 3 W | Enchantment
+When this enchantment enters, tap target creature an opponent controls and put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+Whenever you tap an untapped creature an opponent controls, put a +1/+1 counter on target creature you control.
+
+#855 | C | MV 4 W | Creature — Elk | 3/4
+Whenever an enchantment you control enters, tap target creature an opponent controls.
+
+#6845 | C | MV 4 W | Creature — Faerie Scout | 2/3
+Flying
+Celebration — This creature gets +1/+0 and has lifelink as long as two or more nonland permanents entered the battlefield under your control this turn.
+
+#3318 | C | MV 5 W | Creature — Faerie Advisor | 3/3
+Flying
+When this creature enters, create a Royal Role token attached to another target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature gets +1/+1 and has ward {1}.)
+
+#3294 | U | MV 3 W | Instant
+Destroy target nonland permanent. Its controller creates a 1/1 white Human creature token.
+
+#797 | R | MV 2 W | Creature — Human Peasant | 2/2
+Vigilance
+At the beginning of combat on your turn, you may pay {1}. When you do, create a Sorcerer Role token attached to target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature gets +1/+1 and has "Whenever this creature attacks, scry 1.")
+
+#5615 | C | MV 2 W | Instant
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+~ deals 3 damage to target attacking or blocking creature. If this spell was bargained, destroy that creature instead.
+
+#1296 | R | MV 3 W | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)
+I — Create a 1/1 white Mouse creature token.
+II, III — Create a token that's a copy of target token you control.
+IV — Creatures you control get +1/+1 and gain vigilance until end of turn.
+
+#6463 | C | MV 3 W | Creature — Human Peasant | 3/2
+When this creature dies, create a Young Hero Role token attached to up to one target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#2379 | C | MV 2 W | Creature — Mouse | 3/1
+Celebration — This creature gets +0/+2 as long as two or more nonland permanents entered the battlefield under your control this turn.
+
+#2530 | C | MV 1 colourless | Artifact — Food Clue
+When this artifact enters, scry 2.
+{2}, {T}, Sacrifice this artifact: You gain 3 life and draw a card.
+
+#5871 | C | MV 2 colourless | Artifact Creature — Scarecrow | 2/1
+Reach
+{1}: Add one mana of any color. Activate only once each turn.
+
+TARGET card: #3662
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 3662 MV 2
+1294 MV 3 AFTER Monster Role enchantment
+6992 MV 2 AFTER Aura enchantment
+1826 MV 2 AFTER artifact enters
+3539 MV 2 AFTER enchantment enters
+4688 MV 3 AFTER enchantment enters
+3318 MV 5 AFTER Royal Role enchantment
+797 MV 2 AFTER Sorcerer Role enchantment
+1296 MV 3 AFTER saga enchantment
+6463 MV 3 AFTER Young Hero Role on death
+2530 MV 1 AFTER artifact enters
+5871 MV 2 AFTER artifact creature enters

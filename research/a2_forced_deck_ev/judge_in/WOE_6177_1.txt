@@ -1,0 +1,102 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#6177 | M | MV 4 WU | Legendary Creature — Human Warlock | 3/4
+Whenever you tap an untapped creature an opponent controls, you may pay {1}. When you do, choose one —
+• Create a 4/4 white and blue Elemental creature token.
+• Put a +1/+1 counter on each creature you control.
+• Scry 2, then draw a card.
+
+#6641 | C | MV 2 W | Creature — Human Peasant Wizard | 2/2
+When this creature enters, you may pay {2}. If you do, create a Sorcerer Role token attached to it. (Enchanted creature gets +1/+1 and has "Whenever this creature attacks, scry 1.")
+
+#2308 | C | MV 1 W | Creature — Human Knight | 1/1
+Whenever an enchantment you control enters, scry 1.
+{2}{W}: This creature gets +1/+1 until end of turn for each enchantment you control.
+
+#6272 | C | MV 3 W | Creature — Human Knight | 2/3
+Vigilance
+Whenever an enchantment you control is put into a graveyard from the battlefield, put a +1/+1 counter on this creature.
+
+#509 | U | MV 5 W | Creature — Griffin | 4/4
+Flying
+{2}{W}, Sacrifice two enchantments: Return this card from your graveyard to your hand.
+
+#855 | C | MV 4 W | Creature — Elk | 3/4
+Whenever an enchantment you control enters, tap target creature an opponent controls.
+
+#544 | C | MV 2 U | Creature — Human Rogue | 2/1
+Whenever you cast a spell with mana value 5 or greater, put two +1/+1 counters on this creature.
+
+#6322 | C | MV 3 U | Creature — Human Warlock | 3/2
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+When this creature enters, if it was bargained, create a Cursed Role token attached to target creature an opponent controls. (If you control another Role on it, put that one into the graveyard. Enchanted creature is 1/1.)
+
+#2175 | U | MV 6 U | Creature — Dragon Wizard | 4/6
+Flying
+Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+When this creature enters, scry 2.
+
+#5194 | C | MV 1 colourless | Artifact Creature — Food Golem | 1/1
+Haste (This creature can attack and {T} as soon as it comes under your control.)
+{1}: This creature can't be blocked this turn except by creatures with haste.
+{2}, {T}, Sacrifice this creature: You gain 3 life.
+
+#3539 | C | MV 2 W | Enchantment
+When this enchantment enters, create a 2/2 white Knight creature token with vigilance.
+When this enchantment is put into a graveyard from the battlefield, scry 2.
+{2}{W}: Sacrifice this enchantment.
+
+#2827 | U | MV 3 U | Instant
+Tap one or two target creatures an opponent controls. Put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#2827 | U | MV 3 U | Instant
+Tap one or two target creatures an opponent controls. Put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#2827 | U | MV 3 U | Instant
+Tap one or two target creatures an opponent controls. Put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#5636 | R | MV 3 colourless | Legendary Artifact
+{1}, {T}: Tap target creature. This ability costs {1} less to activate during your turn.
+{3}, Sacrifice ~: Draw a card for each tapped creature your opponents control.
+
+#3294 | U | MV 3 W | Instant
+Destroy target nonland permanent. Its controller creates a 1/1 white Human creature token.
+
+#6525 | C | MV 3 W | Instant
+Choose one —
+• Untap target creature. It gets +1/+0 and gains indestructible until end of turn.
+• Destroy target creature with power 4 or greater.
+
+#1133 | C | MV 4 U | Instant
+Target creature's owner puts it on their choice of the top or bottom of their library.
+
+#1339 | C | MV 2 W | Instant
+Target creature gets +3/+0 until end of turn.
+Draw a card.
+
+#3743 | C | MV 5 U | Sorcery
+Draw three cards. Create a 1/1 blue Faerie creature token with flying and "This token can block only creatures with flying."
+
+#6326 | C | MV 2 colourless | Artifact
+When this artifact enters, draw a card.
+{1}, {T}: Add one mana of any color.
+
+#4898 | C | MV 2 U | Instant
+Until end of turn, target creature you control has base power and toughness 4/4 and gains flying and hexproof. (It can't be the target of spells or abilities your opponents control.)
+
+#2530 | C | MV 1 colourless | Artifact — Food Clue
+When this artifact enters, scry 2.
+{2}, {T}, Sacrifice this artifact: You gain 3 life and draw a card.
+
+TARGET card: #6177
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 6177 MV 4
+6269 MV 2 EITHER Taps target creature
+855 MV 4 EITHER Taps creature when enchantment enters
+2827 MV 3 AFTER Taps opponent creatures
+5636 MV 3 EITHER Taps target creature
+3539 MV 2 AFTER Enchantment entering triggers Elk tap
+6641 MV 2 AFTER Sorcerer Role enters, triggers Elk tap
+6322 MV 3 AFTER Bargained Role enters, triggers Elk tap

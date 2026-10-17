@@ -1,0 +1,104 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2048 | R | MV 4 UR | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I, II — Choose target nontoken creature you control that doesn't have the same name as a token you control. Create a token that's a copy of it, except it isn't legendary, is a Reflection in addition to its other types, and has haste.
+III — Sacrifice all Reflections you control.
+
+#934 | U | MV 1 R | Creature — Human Knight | 2/1
+{1}, Sacrifice this creature: Create a Young Hero Role token attached to another target creature. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#544 | C | MV 2 U | Creature — Human Rogue | 2/1
+Whenever you cast a spell with mana value 5 or greater, put two +1/+1 counters on this creature.
+
+#544 | C | MV 2 U | Creature — Human Rogue | 2/1
+Whenever you cast a spell with mana value 5 or greater, put two +1/+1 counters on this creature.
+
+#508 | C | MV 1 U | Creature — Faerie Wizard | 1/1
+Flying
+When this creature enters, you may pay {2}. When you do, tap target creature an opponent controls and put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#5466 | C | MV 3 U | Creature — Faerie Rogue | 2/1
+Flying
+Instant and sorcery spells you cast cost {1} less to cast.
+
+#5678 | C | MV 3 U | Creature — Merfolk | 2/3
+{1}: This creature gets +1/-1 until end of turn.
+When this creature dies, scry 2.
+
+#4689 | R | MV 2 colourless | Legendary Artifact Creature — Food Knight | 3/1
+~ has trample, hexproof, and haste as long as an opponent controls a planeswalker.
+Whenever another artifact you control is put into a graveyard from the battlefield, put a +1/+1 counter on ~ and scry 1.
+{2}, {T}, Sacrifice ~: You gain life equal to its power.
+
+#3915 | C | MV 1 R | Instant
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+~ deals 2 damage to target creature or planeswalker. If this spell was bargained, instead it deals 3 damage to that permanent and you scry 1.
+If a permanent dealt damage by ~ would die this turn, exile it instead.
+
+#3915 | C | MV 1 R | Instant
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+~ deals 2 damage to target creature or planeswalker. If this spell was bargained, instead it deals 3 damage to that permanent and you scry 1.
+If a permanent dealt damage by ~ would die this turn, exile it instead.
+
+#3915 | C | MV 1 R | Instant
+Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+~ deals 2 damage to target creature or planeswalker. If this spell was bargained, instead it deals 3 damage to that permanent and you scry 1.
+If a permanent dealt damage by ~ would die this turn, exile it instead.
+
+#367 | C | MV 4 R | Sorcery
+~ deals 4 damage to target creature.
+Create a Young Hero Role token attached to up to one target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#367 | C | MV 4 R | Sorcery
+~ deals 4 damage to target creature.
+Create a Young Hero Role token attached to up to one target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#367 | C | MV 4 R | Sorcery
+~ deals 4 damage to target creature.
+Create a Young Hero Role token attached to up to one target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#367 | C | MV 4 R | Sorcery
+~ deals 4 damage to target creature.
+Create a Young Hero Role token attached to up to one target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature has "Whenever this creature attacks, if its toughness is 3 or less, put a +1/+1 counter on it.")
+
+#781 | C | MV 3 R | Instant
+~ deals 1 damage to any target. You create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+Draw a card.
+
+#781 | C | MV 3 R | Instant
+~ deals 1 damage to any target. You create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+Draw a card.
+
+#1867 | U | MV 4 R | Instant
+This spell costs {1} less to cast for each creature that attacked this turn.
+~ deals 5 damage to target creature.
+
+#2860 | C | MV 2 U | Sorcery
+Tap target creature an opponent controls and put three stun counters on it. Scry 2. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#4550 | C | MV 2 R | Sorcery
+You may discard a card. If you do, draw two cards.
+Create a Wicked Role token attached to up to one target creature you control. (If you control another Role on it, put that one into the graveyard. Enchanted creature gets +1/+1. When this token is put into a graveyard, each opponent loses 1 life.)
+
+#6034 | U | MV 2 colourless | Artifact — Food
+{2}, {T}: Choose one that hasn't been chosen —
+• This artifact deals 2 damage to target creature.
+• Tap target creature.
+• Sacrifice this artifact. You gain 3 life.
+
+#4305 | C | MV 3 U | Instant
+Draw two cards.
+
+#6326 | C | MV 2 colourless | Artifact
+When this artifact enters, draw a card.
+{1}, {T}: Add one mana of any color.
+
+TARGET card: #2048
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2048 MV 4
+934 MV 1 BEFORE nontoken creature; copy can sacrifice
+508 MV 1 BEFORE nontoken creature, ETB stun copyable
+4689 MV 2 BEFORE nontoken creature; copy not legendary
