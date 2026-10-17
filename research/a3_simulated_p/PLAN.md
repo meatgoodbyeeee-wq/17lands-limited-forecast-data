@@ -30,3 +30,8 @@ Pass iff MAE lower AND Spearman higher AND >= 15/28 sets lower MAE AND gain > 0.
 If either arm passes: freeze FRA predictions (file + sha256), add PENDING_FRA item 12, update the 10/28 scheduled task. Otherwise FRA stays descriptive.
 Also reported (descriptive): P_sim vs A2 judge P, named cards (Avengers Assemble!, Rite of the Dragoncaller, Smile at Death, ...), and comparison with A2 (Rule F16).
 A1 pilot cards shaped the method and are flagged.
+
+## Addendum (before any scoring, after running the simulation only)
+3 cards (DSK 1306 MV 11, DSK 3697, MKM 3550) are cost-reduction cards whose printed MV makes them uncastable in the
+model (cast rate < 5 %, P undefined or 0). Rule: when a deck's cast rate is < 0.05, P_sim falls back to the A2 judge P
+for that deck. No other change. Arms not yet run.
