@@ -1,0 +1,94 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#5325 | R | MV 5 B | Creature — Elf Assassin | 4/4
+When this creature enters, target creature you control gets +X/+0 until end of turn and up to one target creature an opponent controls gets -0/-X until end of turn, where X is the number of Elves you control plus the number of Elf cards in your graveyard.
+
+#5147 | C | MV 3 B | Creature — Elf Warlock | 2/1
+Whenever this creature attacks, you draw a card and lose 1 life.
+
+#1288 | C | MV 5 B | Creature — Treefolk Warlock | 3/7
+Whenever this creature enters or attacks, you may blight 2. If you do, you draw a card and lose 1 life. (To blight 2, put two -1/-1 counters on a creature you control.)
+
+#4726 | C | MV 1 B | Creature — Goblin Assassin | 1/1
+When this creature dies, put a -1/-1 counter on up to one target creature.
+
+#4726 | C | MV 1 B | Creature — Goblin Assassin | 1/1
+When this creature dies, put a -1/-1 counter on up to one target creature.
+
+#799 | C | MV 2 B | Creature — Goblin Warrior | 1/3
+Whenever you attack, target attacking Goblin you control gets +1/+0 until end of turn.
+
+#3601 | C | MV 2 B | Artifact — Equipment
+Flash
+When this Equipment enters, attach it to target creature you control. That creature gains wither until end of turn. (It deals damage to creatures in the form of -1/-1 counters.)
+Equipped creature gets +1/+2.
+Equip {2}
+
+#6709 | C | MV 1 B | Instant
+Target creature you control gains deathtouch and lifelink until end of turn. When that creature dies this turn, create a 2/2 black and green Elf creature token.
+
+#2408 | U | MV 2 R | Creature — Elemental Bard | 2/2
+{T}: Add two mana in any combination of colors. Spend this mana only to cast Elemental spells or activate abilities of Elemental sources.
+
+#3500 | C | MV 1 R | Sorcery
+As an additional cost to cast this spell, you may blight 1. (You may put a -1/-1 counter on a creature you control.)
+~ deals 2 damage to target creature. It deals 4 damage to that creature instead if this spell's additional cost was paid.
+
+#974 | C | MV 3 R | Instant
+~ deals 3 damage to any target. You may discard a card. If you do, draw a card.
+
+#4933 | C | MV 4 R | Creature — Elemental Sorcerer | 4/3
+Trample
+When this creature enters, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#4933 | C | MV 4 R | Creature — Elemental Sorcerer | 4/3
+Trample
+When this creature enters, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#6456 | C | MV 4 R | Instant
+~ deals 5 damage to target creature. If that creature would die this turn, exile it instead.
+
+#7016 | C | MV 3 R | Creature — Goblin Warlock | 2/2
+When this creature enters, create a 1/1 black and red Goblin creature token.
+
+#7016 | C | MV 3 R | Creature — Goblin Warlock | 2/2
+When this creature enters, create a 1/1 black and red Goblin creature token.
+
+#3291 | C | MV 3 R | Creature — Elemental Sorcerer | 3/2
+Reach
+Whenever you cast a spell with mana value 4 or greater, this creature deals 2 damage to each opponent.
+
+#5098 | U | MV 4 R | Creature — Goblin Warrior | 4/3
+When this creature enters, you may blight 2. If you do, create two 1/1 black and red Goblin creature tokens. (To blight 2, put two -1/-1 counters on a creature you control.)
+
+#370 | C | MV 2 R | Creature — Goblin Scout | 1/3
+{T}, Blight 1: Discard a card. If you do, draw a card. (To blight 1, put a -1/-1 counter on a creature you control.)
+
+#2667 | R | MV 5 BR | Kindred Sorcery — Goblin
+Choose two —
+• Create a token that's a copy of target Goblin you control.
+• Creatures target player controls get +1/+1 and gain haste until end of turn.
+• Destroy target artifact or creature.
+• Target player mills five cards, then puts each Goblin card milled this way into their hand.
+
+#3136 | C | MV 3 BR | Creature — Goblin Warlock | 5/4
+When this creature enters, you may pay {2}. If you don't, blight 2. (To blight 2, put two -1/-1 counters on a creature you control.)
+
+#1165 | C | MV 3 colourless | Creature — Shapeshifter | 1/2
+Changeling (This card is every creature type.)
+When this creature enters, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle.
+
+#5962 | C | MV 3 colourless | Kindred Artifact — Shapeshifter
+Changeling (This card is every creature type.)
+{T}: Add one mana of any color.
+{4}: This artifact becomes a 4/4 artifact creature until end of turn.
+
+TARGET card: #5325
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 5325 MV 5
+5147 MV 3 BEFORE Elf adds to X
+1165 MV 3 BEFORE Changeling counts as Elf
+5962 MV 3 BEFORE Changeling counts as Elf
+6709 MV 1 BEFORE Makes Elf token on death

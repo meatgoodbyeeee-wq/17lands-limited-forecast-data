@@ -1,0 +1,100 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#6056 | R | MV 3 R | Enchantment
+Whenever one or more Dinosaurs you control attack, create that many Treasure tokens.
+Whenever you cast an artifact spell, create a 3/1 red Dinosaur creature token. This ability triggers only once each turn.
+
+#2011 | U | MV 1 R | Artifact — Equipment
+Indestructible (Effects that say "destroy" don't destroy this Equipment.)
+Equipped creature gets +1/+1 and has "Whenever this creature attacks, create a Treasure token." (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+Equip {2}
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5324 | U | MV 2 R | Creature — Goblin Pirate | 2/2
+At the beginning of your end step, if you descended this turn, create a Treasure token. (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#2723 | U | MV 3 R | Creature — Dinosaur | 4/3
+Whenever a player casts a spell, if it's not their turn, this creature deals 4 damage to them.
+
+#1886 | C | MV 6 R | Creature — Dinosaur | 6/5
+Trample
+{2}{R}, Sacrifice a land: Draw a card.
+Mountaincycling {2} ({2}, Discard this card: Search your library for a Mountain card, reveal it, put it into your hand, then shuffle.)
+
+#2765 | C | MV 1 R | Artifact — Equipment
+Equipped creature gets +1/+0 and has "Whenever this creature attacks, you may sacrifice ~. When you do, this creature deals 2 damage to any target."
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+
+#3239 | C | MV 2 R | Artifact Creature — Golem | 2/2
+Whenever this creature becomes tapped, you may discard a card. If you do, draw a card.
+
+#4974 | C | MV 2 R | Creature — Human Knight | 2/2
+Whenever this creature attacks or blocks while you control a Dinosaur, this creature gets +1/+1 until end of turn.
+
+#703 | U | MV 1 R | Sorcery
+~ deals damage to target creature equal to 2 or the greatest power among Dinosaurs you control, whichever is greater.
+
+#1559 | U | MV 2 R | Instant
+The owner of target artifact or creature with mana value 1 or greater shuffles it into their library. Then that player discovers X, where X is its mana value. (They exile cards from the top of their library until they exile a nonland card with that mana value or less. They cast it without paying its mana cost or put it into their hand. They put the rest on the bottom in a random order.)
+
+#2996 | C | MV 4 R | Artifact Creature — Dinosaur Gnome | 4/3
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, target creature you control gains menace until end of turn.
+
+#3688 | C | MV 4 R | Sorcery
+~ deals damage to target creature equal to the number of lands you control.
+
+#2375 | C | MV 6 G | Creature — Dinosaur | 7/7
+When this creature enters, scry 2. (Look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)
+{3}{G}: This creature can't be blocked by creatures with power 2 or less this turn.
+
+#3141 | R | MV 1 G | Creature — Merfolk Scout | 1/1
+When this creature enters, it explores X times. (To have it explore, reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard.)
+
+#1193 | C | MV 3 G | Instant
+Target creature you control gets +1/+0 until end of turn. It deals damage equal to its power to target creature an opponent controls.
+
+#5674 | U | MV 1 G | Creature — Human Druid | 1/1
+{T}: Add one mana of any color. Spend this mana only to cast a Dinosaur spell or activate an ability of a Dinosaur source.
+
+#5893 | C | MV 4 G | Creature — Dinosaur | 4/3
+When this creature enters, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)
+
+#1026 | C | MV 4 G | Creature — Spider | 3/4
+Reach
+When this creature enters, you may mill two cards. (You may put the top two cards of your library into your graveyard.)
+
+#4189 | C | MV 5 G | Creature — Cat Warrior | 5/4
+Trample
+Descend 4 — Whenever this creature attacks, if there are four or more permanent cards in your graveyard, put a +1/+1 counter on target creature.
+
+#5319 | U | MV 4 G | Creature — Dinosaur | 4/5
+Reach, trample
+
+#4979 | C | MV 7 G | Creature — Dinosaur | 5/5
+When this creature enters, create a 3/3 green Dinosaur creature token.
+Forestcycling {2} ({2}, Discard this card: Search your library for a Forest card, reveal it, put it into your hand, then shuffle.)
+
+#4754 | C | MV 3 colourless | Artifact Creature — Gnome | 2/1
+When this creature enters, create a Map token. (It's an artifact with "{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.")
+
+TARGET card: #6056
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 6056 MV 3
+1886 MV 6 BEFORE Dinosaur attacker
+2723 MV 3 BEFORE Dinosaur attacker
+2996 MV 4 BEFORE Dinosaur attacker; also artifact
+2375 MV 6 BEFORE Dinosaur attacker
+5893 MV 4 BEFORE Dinosaur attacker
+5319 MV 4 BEFORE Dinosaur attacker
+4979 MV 7 BEFORE Dinosaur and Dinosaur token
+2011 MV 1 AFTER artifact spell makes 3/1 Dinosaur
+2765 MV 1 AFTER artifact spell makes 3/1 Dinosaur
+3239 MV 2 AFTER artifact spell makes 3/1 Dinosaur
+2996 MV 4 AFTER artifact spell makes 3/1 Dinosaur
+4754 MV 3 AFTER artifact spell makes 3/1 Dinosaur

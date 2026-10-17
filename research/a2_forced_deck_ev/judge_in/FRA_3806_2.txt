@@ -1,0 +1,107 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#3806 | M | MV 2 W | Legendary Planeswalker — Ajani
+Whenever you gain life, put a loyalty counter on ~.
+0: You gain 1 life.
+−4: Create a 2/2 white Cat Soldier creature token named ~'s Pridemate with “Whenever you gain life, put a +1/+1 counter on this token.”
+−10: You get an emblem with “Creatures you control get +2/+2.”
+
+#6835 | C | MV 2 W | Creature — Human Cleric | 2/1
+Ward {1} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {1}.)
+Whenever you gain life, put a +1/+1 counter on this creature.
+
+#6835 | C | MV 2 W | Creature — Human Cleric | 2/1
+Ward {1} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {1}.)
+Whenever you gain life, put a +1/+1 counter on this creature.
+
+#4696 | C | MV 2 W | Creature — Human Advisor | 3/1
+{1}, Exile this card from your graveyard: Empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)
+
+#4696 | C | MV 2 W | Creature — Human Advisor | 3/1
+{1}, Exile this card from your graveyard: Empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)
+
+#1774 | C | MV 1 WB | Creature — Zombie Cleric | 1/1
+Lifelink
+{2}{W/B}: Return this card from your graveyard to your hand.
+
+#6867 | U | MV 1 B | Legendary Creature — Mouse Warlock | 1/1
+Deathtouch
+When ~ enters, remove up to three counters from another target creature or planeswalker.
+
+#2310 | C | MV 3 B | Creature — Siren Bard | 1/4
+Flying
+Whenever this creature attacks, it deals 1 damage to each opponent and you gain 1 life.
+
+#4297 | C | MV 3 W | Creature — Pegasus | 2/3
+Flying
+{4}{W}: Creatures you control get +1/+1 until end of turn.
+
+#6968 | C | MV 3 W | Enchantment
+When this enchantment enters, exile target nonland permanent an opponent controls until this enchantment leaves the battlefield.
+
+#6968 | C | MV 3 W | Enchantment
+When this enchantment enters, exile target nonland permanent an opponent controls until this enchantment leaves the battlefield.
+
+#919 | U | MV 3 B | Instant
+Target opponent sacrifices a creature or planeswalker with the greatest mana value among creatures and planeswalkers they control. You gain 2 life.
+
+#565 | U | MV 3 B | Legendary Creature — Human Knight | 2/2
+First strike
+Whenever you cast a spell that targets an opponent or a creature an opponent controls, put a +1/+1 counter on ~.
+
+#4048 | U | MV 3 B | Legendary Creature — Skeleton Rogue | 2/1
+When ~ enters, each opponent discards a card.
+Whenever a player discards one or more cards, ~ deals 1 damage to each opponent.
+
+#4690 | C | MV 4 W | Creature — Angel Cleric | 2/4
+Flying, vigilance
+This creature enters prepared. (While it's prepared, you may cast a copy of its spell. Doing so unprepares it.)
+//Prep//
+Seed Suture
+{G/W}
+Sorcery
+Put a +1/+1 counter on target creature. You gain 1 life.
+
+#2064 | C | MV 4 B | Creature — Horror | 3/3
+Deathtouch
+When this creature enters, target creature gets +2/+2 and gains deathtouch until end of turn.
+
+#347 | C | MV 4 B | Instant
+Exile target creature or planeswalker. ~ deals 1 damage to each opponent and you gain 1 life.
+
+#1160 | C | MV 2 B | Instant
+Target creature gets -3/-3 until end of turn.
+
+#6284 | U | MV 5 B | Legendary Creature — Human Assassin | 4/4
+Whenever another creature or planeswalker you control dies, ~ deals 1 damage to target opponent and you gain 1 life.
+Whenever an opponent is dealt noncombat damage, put a +1/+1 counter on ~.
+
+#4897 | C | MV 5 W | Creature — Rhino Cleric | 3/4
+When this creature enters, choose one —
+• Return target legendary card from your graveyard to your hand.
+• Put a +1/+1 counter on target creature. It gains vigilance and indestructible until end of turn. (Damage and effects that say “destroy” don't destroy it.)
+
+#3559 | C | MV 6 B | Creature — Wolf | 6/4
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters or dies, you gain 2 life.
+Basic landcycling {2} ({2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)
+
+#6547 | C | MV 2 W | Instant
+Target creature gets +2/+2 and gains flying until end of turn.
+Empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)
+
+#1426 | C | MV 2 B | Creature — Zombie Rat | 1/1
+When this creature enters, each opponent discards a card.
+
+TARGET card: #3806
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 3806 MV 2
+4690 MV 4 AFTER Seed Suture gains life
+1774 MV 1 AFTER lifelink gains life
+2310 MV 3 AFTER attack trigger gains life
+347 MV 4 AFTER gains 1 life
+3559 MV 6 AFTER gains 2 life
+919 MV 3 AFTER gains 2 life
+6284 MV 5 AFTER gains life when creature dies

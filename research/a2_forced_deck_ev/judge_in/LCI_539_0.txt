@@ -1,0 +1,98 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#539 | R | MV 2 R | Legendary Creature — Human Knight | 2/2
+Whenever you attack, you may discard a card. When you do, put a +1/+1 counter on target attacking creature. It gains trample until end of turn.
+Whenever you discard one or more cards, exile the top card of your library. You may play that card until your next end step.
+
+#5601 | R | MV 2 BR | Sorcery
+Choose one. If you descended this turn, you may choose both instead. (You descended if a permanent card was put into your graveyard from anywhere.)
+• Destroy target creature or planeswalker.
+• Destroy target noncreature, nonland permanent with mana value 1 or less.
+
+#5262 | U | MV 2 BR | Legendary Creature — Goblin Warlock | 2/2
+Deathtouch
+At the beginning of your end step, if you descended this turn, each opponent may discard a card or sacrifice a permanent of their choice. ~ deals 3 damage to each opponent who didn't. (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#1917 | U | MV 2 B | Instant
+As an additional cost to cast this spell, discard a card or pay 3 life.
+Destroy target creature or planeswalker.
+
+#3803 | C | MV 1 B | Enchantment — Aura
+Enchant creature
+Enchanted creature gets -2/-2.
+
+#1814 | R | MV 5 R | Artifact — Vehicle | 5/5
+When this Vehicle enters, it deals 5 damage to target creature an opponent controls.
+Whenever one or more creatures your opponents control are dealt excess noncombat damage, create a Treasure token.
+Crew 2
+
+#4716 | C | MV 5 R | Creature — Dinosaur | 4/5
+Reach
+{T}: This creature deals 2 damage to each opponent.
+
+#4716 | C | MV 5 R | Creature — Dinosaur | 4/5
+Reach
+{T}: This creature deals 2 damage to each opponent.
+
+#2723 | U | MV 3 R | Creature — Dinosaur | 4/3
+Whenever a player casts a spell, if it's not their turn, this creature deals 4 damage to them.
+
+#6320 | C | MV 4 B | Creature — Fungus | 4/3
+At the beginning of your end step, if you descended this turn, create a 1/1 black Fungus creature token with "This token can't block." (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#6320 | C | MV 4 B | Creature — Fungus | 4/3
+At the beginning of your end step, if you descended this turn, create a 1/1 black Fungus creature token with "This token can't block." (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#3853 | C | MV 5 B | Creature — Insect Horror | 5/2
+When this creature dies, discover 3. (Exile cards from the top of your library until you exile a nonland card with mana value 3 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)
+
+#3940 | C | MV 3 B | Creature — Spirit | 2/2
+Flying
+Whenever this creature attacks, mill a card. (Put the top card of your library into your graveyard.)
+
+#6616 | C | MV 3 B | Creature — Goblin Warrior | 2/2
+Menace
+At the beginning of your end step, if you descended this turn, put a +1/+1 counter on this creature. (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#4449 | C | MV 2 B | Creature — Vampire Spirit | 2/2
+Descend 4 — As long as there are four or more permanent cards in your graveyard, this creature gets +1/+1 and has lifelink.
+
+#1886 | C | MV 6 R | Creature — Dinosaur | 6/5
+Trample
+{2}{R}, Sacrifice a land: Draw a card.
+Mountaincycling {2} ({2}, Discard this card: Search your library for a Mountain card, reveal it, put it into your hand, then shuffle.)
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#3239 | C | MV 2 R | Artifact Creature — Golem | 2/2
+Whenever this creature becomes tapped, you may discard a card. If you do, draw a card.
+
+#1028 | C | MV 1 R | Creature — Goblin Pirate | 1/2
+As long as you control an artifact, this creature gets +1/+0 and has haste.
+
+#6056 | R | MV 3 R | Enchantment
+Whenever one or more Dinosaurs you control attack, create that many Treasure tokens.
+Whenever you cast an artifact spell, create a 3/1 red Dinosaur creature token. This ability triggers only once each turn.
+
+#3053 | C | MV 3 B | Creature — Vampire Cleric | 1/4
+{T}, Sacrifice another creature or artifact: Each opponent loses 1 life and you gain 1 life.
+
+#1679 | R | MV 2 B | Creature — Spirit
+As an additional cost to cast this spell, discard a card or sacrifice a permanent.
+Fathomless descent — ~'s power is equal to the number of permanent cards in your graveyard and its toughness is equal to that number plus 1.
+
+TARGET card: #539
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 539 MV 2
+3239 MV 2 EITHER tap trigger discards
+1917 MV 2 AFTER discard cost triggers exile
+1679 MV 2 AFTER discard cost triggers exile
+1886 MV 6 AFTER mountaincycling discards, triggers exile

@@ -1,0 +1,102 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#6070 | M | MV 6 B | Sorcery
+Choose a creature type. Return up to two creature cards of that type from your graveyard to the battlefield. If this spell was foretold, return all creature cards of that type from your graveyard to the battlefield instead.
+Foretell {5}{B}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#4154 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, exile a creature card from your graveyard.
+Target creature gets -3/-3 until end of turn.
+
+#1119 | C | MV 4 B | Creature — Zombie Cleric | 3/2
+Flash
+When this creature enters, destroy target creature or planeswalker an opponent controls that was dealt damage this turn.
+Foretell {1}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#2266 | C | MV 2 B | Creature — Elf Berserker | 2/2
+When this creature dies, if its power was 3 or greater, create a 2/2 black Zombie Berserker creature token.
+
+#1469 | C | MV 4 B | Sorcery
+Target opponent discards two cards. If fewer than two cards were discarded this way, you draw cards equal to the difference.
+Foretell {1}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#5747 | C | MV 6 B | Creature — Spirit Knight | 3/7
+{1}{B}, {T}, Exile a creature card from your graveyard: Target opponent loses 3 life.
+
+#637 | C | MV 3 B | Creature — Elf Cleric | 3/1
+Lifelink (Damage dealt by this creature also causes you to gain that much life.)
+When this creature dies, each player mills three cards. (They each put the top three cards of their library into their graveyard.)
+
+#637 | C | MV 3 B | Creature — Elf Cleric | 3/1
+Lifelink (Damage dealt by this creature also causes you to gain that much life.)
+When this creature dies, each player mills three cards. (They each put the top three cards of their library into their graveyard.)
+
+#3632 | R | MV 3 B | Instant
+Create X 2/2 black Zombie Berserker creature tokens, where X is the number of nontoken creatures that died this turn.
+Foretell {B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#5279 | C | MV 2 B | Instant
+Until end of turn, target creature gets +2/+0 and gains "When this creature dies, return it to the battlefield under its owner's control."
+
+#2558 | C | MV 2 B | Instant
+Choose one —
+• Return target creature card from your graveyard to your hand.
+• Return two target creature cards that share a creature type from your graveyard to your hand.
+
+#179 | C | MV 2 B | Creature — Elf Cleric | 1/1
+When this creature enters, each opponent discards a card.
+
+#174 | R | MV 3 UB | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — Each player mills four cards. Then you may exile a creature or planeswalker card from each graveyard.
+II, III — Until end of turn, you may cast spells from among cards exiled with this Saga, and you may spend mana as though it were mana of any color to cast those spells.
+
+#607 | C | MV 4 U | Creature — Shapeshifter | 2/4
+Changeling (This card is every creature type.)
+When this creature enters, if you control three or more creatures that share a creature type, put a +1/+1 counter on this creature, then scry 1.
+
+#607 | C | MV 4 U | Creature — Shapeshifter | 2/4
+Changeling (This card is every creature type.)
+When this creature enters, if you control three or more creatures that share a creature type, put a +1/+1 counter on this creature, then scry 1.
+
+#6187 | C | MV 3 U | Creature — Zombie Rogue | 3/2
+When this creature enters, look at the top card of target player's library. You may put that card into their graveyard.
+
+#6187 | C | MV 3 U | Creature — Zombie Rogue | 3/2
+When this creature enters, look at the top card of target player's library. You may put that card into their graveyard.
+
+#6495 | C | MV 4 U | Creature — Bird | 3/3
+Flying
+Foretell {1}{U} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#920 | C | MV 4 U | Snow Creature — Yeti | 3/3
+{1}{S}: This creature can't be blocked this turn. ({S} can be paid with one mana from a snow source.)
+
+#1926 | C | MV 1 U | Creature — Human Rogue | 1/2
+Flash
+When this creature enters, target creature an opponent controls gets -2/-0 until end of turn.
+
+#1926 | C | MV 1 U | Creature — Human Rogue | 1/2
+Flash
+When this creature enters, target creature an opponent controls gets -2/-0 until end of turn.
+
+#3374 | C | MV 2 U | Instant
+Return target nonland permanent to its owner's hand.
+Foretell {U} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#3778 | C | MV 6 U | Creature — Giant Rogue | 5/6
+Flash (You may cast this spell any time you could cast an instant.)
+This creature enters tapped.
+
+TARGET card: #6070
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 6070 MV 6
+637 MV 3 BEFORE Mills; Elf Cleric to return
+174 MV 3 BEFORE Saga mills four creatures
+6187 MV 3 BEFORE Mills; Zombie Rogue to return
+607 MV 4 BEFORE Changeling matches any chosen type
+179 MV 2 BEFORE Elf Cleric to return
+2266 MV 2 BEFORE Elf Berserker to return
+1119 MV 4 BEFORE Zombie Cleric to return

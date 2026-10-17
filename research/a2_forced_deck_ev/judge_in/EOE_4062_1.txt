@@ -1,0 +1,90 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4062 | R | MV 3 G | Enchantment
+Whenever you put one or more +1/+1 counters on a creature you control, you may draw that many cards. Do this only once each turn.
+
+#1059 | C | MV 2 G | Creature — Insect Citizen | 2/2
+{3}: Put a +1/+1 counter on this creature. Activate only as a sorcery.
+
+#1059 | C | MV 2 G | Creature — Insect Citizen | 2/2
+{3}: Put a +1/+1 counter on this creature. Activate only as a sorcery.
+
+#1059 | C | MV 2 G | Creature — Insect Citizen | 2/2
+{3}: Put a +1/+1 counter on this creature. Activate only as a sorcery.
+
+#1059 | C | MV 2 G | Creature — Insect Citizen | 2/2
+{3}: Put a +1/+1 counter on this creature. Activate only as a sorcery.
+
+#4943 | C | MV 3 G | Creature — Human Scout | 3/3
+When this creature enters, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+
+#4943 | C | MV 3 G | Creature — Human Scout | 3/3
+When this creature enters, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+
+#4943 | C | MV 3 G | Creature — Human Scout | 3/3
+When this creature enters, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+
+#4760 | C | MV 3 G | Creature — Insect Scout | 4/2
+When this creature enters or dies, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#4760 | C | MV 3 G | Creature — Insect Scout | 4/2
+When this creature enters or dies, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#1710 | C | MV 3 G | Sorcery
+Destroy target artifact, enchantment, or creature with flying. Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#1710 | C | MV 3 G | Sorcery
+Destroy target artifact, enchantment, or creature with flying. Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#5431 | C | MV 4 G | Creature — Beast | 4/4
+Trample
+Landfall — Whenever a land you control enters, this creature gets +1/+0 until end of turn.
+
+#5431 | C | MV 4 G | Creature — Beast | 4/4
+Trample
+Landfall — Whenever a land you control enters, this creature gets +1/+0 until end of turn.
+
+#6127 | C | MV 4 G | Creature — Drix Wizard | 3/2
+When this creature enters, put a +1/+1 counter on target creature.
+Each creature you control with a +1/+1 counter on it has trample.
+Warp {1}{G} (You may cast this card from your hand for its warp cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+
+#4178 | U | MV 7 G | Creature — Leviathan | 6/6
+Trample
+When this creature enters, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+Landfall — Whenever a land you control enters, creatures you control get +1/+1 and gain vigilance and haste until end of turn.
+
+#4040 | C | MV 7 G | Creature — Fungus Beast | 5/5
+This spell costs {X} less to cast, where X is the number of differently named lands you control.
+
+#2213 | C | MV 4 W | Creature — Human Knight | 2/2
+This creature enters with a +1/+1 counter on it for each other creature and/or artifact you control.
+
+#2213 | C | MV 4 W | Creature — Human Knight | 2/2
+This creature enters with a +1/+1 counter on it for each other creature and/or artifact you control.
+
+#5338 | U | MV 4 W | Creature — Human Artificer | 3/3
+Whenever you cast your second spell each turn, put a +1/+1 counter on this creature and draw a card.
+
+#3084 | R | MV 3 W | Legendary Artifact — Spacecraft | 5/5
+When ~ enters, search your library for a legendary creature card, reveal it, put it into your hand, then shuffle.
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 7+.)
+7+ | Flying
+Other tapped legendary creatures you control have indestructible.
+
+#46 | C | MV 4 W | Instant
+Destroy target artifact or tapped creature. You gain 3 life.
+
+#3861 | U | MV 2 W | Creature — Human Pilot | 1/2
+When this creature enters, look at the top five cards of your library. You may reveal a Spacecraft card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. If you didn't put a card into your hand this way, put a +1/+1 counter on this creature.
+
+TARGET card: #4062
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 4062 MV 3
+1059 MV 2 AFTER pays {3} for counter
+6127 MV 4 AFTER enters, puts counter
+2213 MV 4 AFTER enters with counters
+5338 MV 4 AFTER counter on second spell
+3861 MV 2 AFTER counter if no Spacecraft found

@@ -1,0 +1,102 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#791 | R | MV 6 B | Snow Sorcery
+Choose one —
+• Destroy all creatures.
+• Destroy all planeswalkers.
+Then return a creature or planeswalker card with mana value X or less from your graveyard to the battlefield, where X is the amount of {S} spent to cast this spell. ({S} is mana from a snow source.)
+
+#2927 | U | MV 5 B | Sorcery
+Return target creature card from your graveyard to the battlefield. If it's an Elf, create two 1/1 green Elf Warrior creature tokens.
+Foretell {3}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#637 | C | MV 3 B | Creature — Elf Cleric | 3/1
+Lifelink (Damage dealt by this creature also causes you to gain that much life.)
+When this creature dies, each player mills three cards. (They each put the top three cards of their library into their graveyard.)
+
+#4838 | C | MV 4 B | Instant
+Exile target creature or planeswalker.
+
+#5279 | C | MV 2 B | Instant
+Until end of turn, target creature gets +2/+0 and gains "When this creature dies, return it to the battlefield under its owner's control."
+
+#4742 | C | MV 3 B | Snow Creature — Zombie Berserker | 3/2
+{1}{S}: This creature gets +1/+0 and gains menace until end of turn. (It can't be blocked except by two or more creatures. {S} can be paid with one mana from a snow source.)
+
+#3579 | C | MV 2 B | Snow Creature — Zombie Cleric | 0/4
+{T}, Sacrifice this creature: Target creature gets -X/-X until end of turn, where X is the number of snow lands you control. Activate only as a sorcery.
+
+#5143 | C | MV 5 B | Creature — Zombie Berserker | 4/4
+When this creature enters, up to two target creatures each get +1/+0 and gain indestructible until end of turn. (Damage and effects that say "destroy" don't destroy them.)
+
+#1469 | C | MV 4 B | Sorcery
+Target opponent discards two cards. If fewer than two cards were discarded this way, you draw cards equal to the difference.
+Foretell {1}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#2541 | U | MV 4 B | Creature — Elf Cleric | 2/5
+When this creature enters, choose one —
+• Each opponent loses X life, where X is the greatest number of creatures you control that have a creature type in common.
+• You gain X life, where X is the greatest number of creatures you control that have a creature type in common.
+
+#5577 | C | MV 2 B | Enchantment — Aura
+Enchant creature
+Enchanted creature has base power 0 and has "At the beginning of your upkeep, you lose 1 life unless you sacrifice this creature."
+
+#1119 | C | MV 4 B | Creature — Zombie Cleric | 3/2
+Flash
+When this creature enters, destroy target creature or planeswalker an opponent controls that was dealt damage this turn.
+Foretell {1}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#3872 | U | MV 2 B | Artifact — Equipment
+When this Equipment enters, you may pay {2}{B}. If you do, create a 2/2 black Zombie Berserker creature token, then attach this Equipment to it.
+Equipped creature gets +2/+2 and has menace. (It can't be blocked except by two or more creatures.)
+Equip {4}
+
+#4034 | U | MV 2 B | Enchantment — Aura Rune
+Enchant permanent
+When this Aura enters, draw a card.
+As long as enchanted permanent is a creature, it has deathtouch.
+As long as enchanted permanent is an Equipment, it has "Equipped creature has deathtouch."
+
+#4907 | C | MV 3 U | Creature — Shapeshifter | 1/4
+Changeling (This card is every creature type.)
+Flying
+{1}{U}: This creature gets +1/-1 until end of turn.
+
+#4133 | C | MV 5 U | Snow Creature — Giant Wizard | 4/4
+When this creature enters, tap target artifact or creature an opponent controls. If {S} was spent to cast this spell, that permanent doesn't untap during its controller's next untap step. ({S} is mana from a snow source.)
+
+#4133 | C | MV 5 U | Snow Creature — Giant Wizard | 4/4
+When this creature enters, tap target artifact or creature an opponent controls. If {S} was spent to cast this spell, that permanent doesn't untap during its controller's next untap step. ({S} is mana from a snow source.)
+
+#3778 | C | MV 6 U | Creature — Giant Rogue | 5/6
+Flash (You may cast this spell any time you could cast an instant.)
+This creature enters tapped.
+
+#6187 | C | MV 3 U | Creature — Zombie Rogue | 3/2
+When this creature enters, look at the top card of target player's library. You may put that card into their graveyard.
+
+#1926 | C | MV 1 U | Creature — Human Rogue | 1/2
+Flash
+When this creature enters, target creature an opponent controls gets -2/-0 until end of turn.
+
+#3374 | C | MV 2 U | Instant
+Return target nonland permanent to its owner's hand.
+Foretell {U} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#4842 | U | MV 3 U | Instant
+Counter target spell.
+Foretell {1}{U} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#4573 | C | MV 2 U | Enchantment — Aura
+Flash
+Enchant creature or Vehicle
+Enchanted creature gets -3/-0.
+
+TARGET card: #791
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 791 MV 6
+637 MV 3 BEFORE Mills creatures into graveyard
+5279 MV 2 BEFORE Returns creature when it dies

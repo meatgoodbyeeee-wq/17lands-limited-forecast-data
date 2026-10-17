@@ -1,0 +1,107 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#6717 | M | MV 8 G | Legendary Creature — Elder Dinosaur | 12/12
+Trample
+When ~ enters, put any number of creature cards from your hand onto the battlefield.
+
+#3572 | M | MV 8 G | Legendary Artifact
+This spell costs {X} less to cast, where X is the greatest power among creatures you control.
+Whenever one or more nontoken creatures you control die, create a green Fungus Dinosaur creature token with base power and toughness each equal to the total power of those creatures.
+{2}, {T}: Double target creature's power until end of turn.
+
+#5319 | U | MV 4 G | Creature — Dinosaur | 4/5
+Reach, trample
+
+#5893 | C | MV 4 G | Creature — Dinosaur | 4/3
+When this creature enters, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)
+
+#4979 | C | MV 7 G | Creature — Dinosaur | 5/5
+When this creature enters, create a 3/3 green Dinosaur creature token.
+Forestcycling {2} ({2}, Discard this card: Search your library for a Forest card, reveal it, put it into your hand, then shuffle.)
+
+#3529 | C | MV 2 G | Creature — Frog | 1/1
+Reach
+{T}: Add one mana of any color.
+{2}: This creature gains deathtouch until end of turn.
+
+#5674 | U | MV 1 G | Creature — Human Druid | 1/1
+{T}: Add one mana of any color. Spend this mana only to cast a Dinosaur spell or activate an ability of a Dinosaur source.
+
+#5018 | U | MV 2 G | Artifact
+This artifact enters with two +1/+1 counters on it.
+Whenever a creature you control with a +1/+1 counter on it dies, put a +1/+1 counter on this artifact.
+{T}: Move a +1/+1 counter from this artifact onto target creature. Activate only as a sorcery.
+
+#6902 | C | MV 2 G | Instant
+Target creature gets +3/+3 and gains trample until end of turn.
+
+#5105 | C | MV 2 G | Instant
+Until end of turn, target land you control becomes a 4/4 Dinosaur creature with reach and haste. It's still a land. It must be blocked this turn if able.
+
+#700 | C | MV 3 G | Artifact — Equipment
+Flash
+When this Equipment enters, attach it to target creature you control.
+Equipped creature gets +2/+2.
+Equip {4} ({4}: Attach to target creature you control. Equip only as a sorcery.)
+
+#6252 | C | MV 2 G | Sorcery
+Choose one —
+• Destroy target artifact or enchantment.
+• Target creature you control explores, then it explores again. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard. Then repeat this process.)
+
+#703 | U | MV 1 R | Sorcery
+~ deals damage to target creature equal to 2 or the greatest power among Dinosaurs you control, whichever is greater.
+
+#1187 | U | MV 2 R | Creature — Dinosaur | 3/2
+Trample
+Whenever another Dinosaur you control enters, you may have this creature's base power become equal to that creature's power until end of turn.
+
+#581 | U | MV 5 R | Creature — Dinosaur | 5/4
+This creature can't be blocked except by three or more creatures.
+
+#5297 | C | MV 4 R | Creature — Elemental | 3/3
+Trample
+At the beginning of your end step, if you descended this turn, put a +1/+1 counter on this creature. (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#5297 | C | MV 4 R | Creature — Elemental | 3/3
+Trample
+At the beginning of your end step, if you descended this turn, put a +1/+1 counter on this creature. (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#621 | C | MV 3 R | Creature — Orc Pirate | 3/2
+When this creature enters, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#4212 | C | MV 3 R | Creature — Orc Pirate | 2/3
+Whenever this creature attacks while you control two or more artifacts, it gets +2/+1 until end of turn.
+
+#3582 | C | MV 1 R | Sorcery
+~ deals 1 damage to each opponent and each creature they control.
+
+#2823 | C | MV 4 colourless | Artifact Creature — Golem | 3/4
+Whenever this creature attacks, exile target card from an opponent's graveyard.
+
+#3297 | U | MV 3 colourless | Artifact — Vehicle | 3/3
+Whenever this Vehicle attacks, create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+Crew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#4754 | C | MV 3 colourless | Artifact Creature — Gnome | 2/1
+When this creature enters, create a Map token. (It's an artifact with "{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.")
+
+#5976 | R | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {R} or {G}.
+{2}{R}{G}: This land becomes a 3/4 red and green Dinosaur creature until end of turn. It's still a land.
+Whenever this land attacks, another target attacking creature gets +2/+0 until end of turn. Untap that creature.
+
+TARGET card: #6717
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 6717 MV 8
+3529 MV 2 BEFORE mana to reach MV 8
+5674 MV 1 BEFORE mana for Dinosaur spell
+4979 MV 7 AFTER cheated in from hand, makes token
+5893 MV 4 AFTER cheated in from hand, explores
+5319 MV 4 AFTER cheated in from hand, body
+581 MV 5 AFTER cheated in from hand, body
+1187 MV 2 AFTER Dinosaur enters, power becomes 12
+621 MV 3 AFTER cheated in from hand, Treasure

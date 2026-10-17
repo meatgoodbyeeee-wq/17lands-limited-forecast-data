@@ -1,0 +1,97 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#3304 | R | MV 3 U | Creature — Vedalken Artificer Detective | 2/3
+Whenever you cast an artifact spell, investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+Activated abilities of artifacts you control cost {1} less to activate. This effect can't reduce the mana in that cost to less than one mana.
+
+#970 | C | MV 5 U | Creature — Merfolk Wizard | 4/5
+Whenever this creature enters or attacks, you may sacrifice an artifact. If you do, draw a card.
+
+#2273 | C | MV 3 U | Creature — Human Detective | 3/2
+Whenever this creature or another Detective you control enters and whenever a Detective you control is turned face up, you may draw a card. If you do, discard a card.
+
+#2273 | C | MV 3 U | Creature — Human Detective | 3/2
+Whenever this creature or another Detective you control enters and whenever a Detective you control is turned face up, you may draw a card. If you do, discard a card.
+
+#6880 | C | MV 4 U | Creature — Spirit Detective | 3/3
+Flying
+When this creature dies, investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+
+#3946 | C | MV 3 U | Creature — Faerie Detective | 2/2
+As an additional cost to cast this spell, you may collect evidence 6. (Exile cards with total mana value 6 or greater from your graveyard.)
+Flying
+When this creature enters, tap target creature. If evidence was collected, put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#6016 | U | MV 3 U | Creature — Merfolk Advisor | 3/2
+This creature can't be blocked as long as you've sacrificed an artifact this turn.
+Whenever this creature attacks, draw a card, then discard a card.
+
+#4869 | C | MV 3 U | Enchantment — Aura
+Enchant creature
+When this Aura enters, tap enchanted creature.
+Enchanted creature doesn't untap during its controller's untap step.
+{U}{U}: Shuffle enchanted creature into its owner's library.
+
+#6069 | C | MV 2 U | Creature — Octopus Fish | 2/1
+Disguise {5}{U} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)
+As this creature is turned face up, put four +1/+1 counters on it.
+
+#2373 | C | MV 4 UR | Creature — Goblin Artificer | 3/2
+When this creature enters or is turned face up, create a 1/1 colorless Thopter artifact creature token with flying.
+Disguise {U/R}{U/R} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)
+
+#2373 | C | MV 4 UR | Creature — Goblin Artificer | 3/2
+When this creature enters or is turned face up, create a 1/1 colorless Thopter artifact creature token with flying.
+Disguise {U/R}{U/R} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)
+
+#562 | R | MV 7 UR | Legendary Creature — Lizard Artificer | 4/4
+Menace, ward {2}, haste
+Whenever ~ attacks, sacrifice any number of other creatures, then exile the top X cards of your library, where X is their total power. You may cast any number of instant and/or sorcery spells from among the exiled cards without paying their mana costs.
+
+#355 | C | MV 1 R | Instant
+~ deals 2 damage to any target.
+
+#355 | C | MV 1 R | Instant
+~ deals 2 damage to any target.
+
+#6969 | C | MV 2 R | Instant
+~ deals 3 damage to target creature. If you've drawn two or more cards this turn, ~ deals 5 damage to that creature instead.
+
+#5307 | U | MV 3 R | Enchantment — Case
+When this Case enters, it deals 3 damage to target creature an opponent controls.
+To solve — Three or more sources you controlled dealt damage this turn. (If unsolved, solve at the beginning of your end step.)
+Solved — Sacrifice this Case: Exile the top three cards of your library. Choose one of them. You may play that card this turn.
+
+#728 | U | MV 5 R | Creature — Lizard Warrior | 5/4
+When this creature enters, you may sacrifice an artifact. When you do, this creature deals 3 damage to any target.
+
+#6660 | C | MV 5 R | Creature — Giant Rogue | 5/4
+Disguise {4}{R} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)
+When this creature enters or is turned face up, up to one target creature gets +2/+0 until end of turn.
+
+#2074 | C | MV 5 R | Creature — Lizard Warrior | 5/5
+Whenever this creature attacks, if it's not suspected, you may suspect it. (A suspected creature has menace and can't block.)
+
+#2074 | C | MV 5 R | Creature — Lizard Warrior | 5/5
+Whenever this creature attacks, if it's not suspected, you may suspect it. (A suspected creature has menace and can't block.)
+
+#5156 | C | MV 4 R | Creature — Human Rogue | 2/2
+When this creature enters, suspect it. Create a 2/2 white and blue Detective creature token. (A suspected creature has menace and can't block.)
+
+#506 | U | MV 1 R | Artifact — Clue Equipment
+During your turn, equipped creature gets +1/+0 and has first strike.
+{2}, Sacrifice this Equipment: Draw a card.
+Equip {2}
+
+#6153 | C | MV 2 R | Artifact Creature — Clue Fish | 2/2
+Haste
+This creature attacks each combat if able.
+{2}, Sacrifice this creature: Draw a card.
+
+TARGET card: #3304
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 3304 MV 3
+506 MV 1 AFTER artifact spell investigates
+6153 MV 2 AFTER artifact spell investigates

@@ -1,0 +1,104 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#5819 | M | MV 5 W | Enchantment
+Whenever a nontoken, non-Angel creature you control dies, return that card to the battlefield under its owner's control with a +1/+1 counter on it. It has flying and is an Angel in addition to its other types.
+
+#5724 | C | MV 2 W | Creature — Human Soldier | 3/1
+Flash
+{1}, Sacrifice this creature: Destroy target artifact or enchantment.
+
+#2645 | C | MV 3 W | Creature — Human Knight | 3/3
+During your turn, this creature has first strike. (It deals combat damage before creatures without first strike.)
+During your turn, creatures you control with +1/+1 counters on them have first strike.
+
+#3226 | U | MV 5 W | Creature — Angel | 4/4
+Flying
+Vigilance (Attacking doesn't cause this creature to tap.)
+
+#4544 | C | MV 3 W | Instant
+Destroy target artifact, enchantment, or creature with power 4 or greater.
+
+#6968 | C | MV 3 W | Enchantment
+When this enchantment enters, exile target nonland permanent an opponent controls until this enchantment leaves the battlefield.
+
+#3294 | U | MV 3 W | Instant
+Destroy target nonland permanent. Its controller creates a 1/1 white Human creature token.
+
+#5268 | C | MV 4 W | Creature — Angel Warrior | 3/3
+Flying
+Whenever you gain life for the first time each turn, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#5268 | C | MV 4 W | Creature — Angel Warrior | 3/3
+Flying
+Whenever you gain life for the first time each turn, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#6615 | C | MV 4 W | Creature — Cat Beast | 2/3
+Lifelink (Damage dealt by this creature also causes you to gain that much life.)
+When this creature enters, put a +1/+1 counter on each of up to two other target creatures you control.
+
+#2724 | C | MV 5 W | Creature — Dinosaur | 4/4
+Vigilance (Attacking doesn't cause this creature to tap.)
+Whenever you attack with three or more creatures, put a +1/+1 counter on target creature you control.
+
+#6759 | U | MV 6 B | Creature — Demon | 5/4
+As an additional cost to cast this spell, sacrifice a creature.
+Flying
+When this creature enters, each opponent discards a card and loses 2 life. You draw a card and gain 2 life.
+
+#6662 | C | MV 3 B | Creature — Vampire Cleric | 3/2
+Whenever you gain life, each opponent loses 1 life.
+
+#6662 | C | MV 3 B | Creature — Vampire Cleric | 3/2
+Whenever you gain life, each opponent loses 1 life.
+
+#1496 | C | MV 5 B | Creature — Vampire Warlock | 3/2
+Flying
+This creature can't block.
+When this creature enters, return target creature card from your graveyard to your hand.
+
+#1496 | C | MV 5 B | Creature — Vampire Warlock | 3/2
+Flying
+This creature can't block.
+When this creature enters, return target creature card from your graveyard to your hand.
+
+#175 | C | MV 1 B | Creature — Elf Warlock | 1/1
+When this creature dies, create a 1/1 black and green Insect creature token with flying.
+
+#6503 | C | MV 4 B | Instant
+Destroy target creature. Create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this token: You gain 3 life.")
+
+#5546 | C | MV 2 B | Creature — Zombie | 2/2
+{1}, Sacrifice another creature: Put a +1/+1 counter on this creature.
+
+#3147 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, sacrifice a creature or pay {3}{B}.
+Exile target creature or planeswalker.
+
+#3147 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, sacrifice a creature or pay {3}{B}.
+Exile target creature or planeswalker.
+
+#3345 | U | MV 2 B | Creature — Skeleton Warrior | 1/1
+{1}{B}: Return this card from your graveyard to the battlefield tapped.
+
+#4231 | U | MV 4 WB | Creature — Bear Demon | 3/2
+Whenever you gain life, put a +1/+1 counter on this creature.
+When this creature dies, return another target non-Bear creature card with mana value less than or equal to this creature's power from your graveyard to the battlefield.
+
+TARGET card: #5819
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 5819 MV 5
+5724 MV 2 EITHER nontoken non-Angel creature returns when dies
+2645 MV 3 EITHER nontoken non-Angel creature returns when dies
+6615 MV 4 EITHER nontoken non-Angel creature returns when dies
+2724 MV 5 EITHER nontoken non-Angel creature returns when dies
+6662 MV 3 EITHER nontoken non-Angel creature returns when dies
+1496 MV 5 EITHER nontoken non-Angel creature returns when dies
+175 MV 1 EITHER nontoken non-Angel creature returns when dies
+3345 MV 2 EITHER nontoken non-Angel creature returns when dies
+4231 MV 4 EITHER nontoken non-Angel creature returns when dies
+6759 MV 6 AFTER sacrifices creature as cost, triggers return
+5546 MV 2 AFTER sacrifices creatures, triggers return
+3147 MV 1 AFTER sacrifice cost triggers return

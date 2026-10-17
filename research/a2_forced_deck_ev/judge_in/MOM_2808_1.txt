@@ -1,0 +1,113 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2808 | M | MV 6 R | Legendary Planeswalker — Chandra
+Whenever you cast an instant or sorcery spell, copy it. You may choose new targets for the copy. This ability triggers only once each turn.
++2: Add two mana in any combination of colors.
++1: Exile the top five cards of your library. Until the end of your next turn, you may cast an instant or sorcery spell from among those exiled cards.
+−X: ~ deals X damage to each of up to two targets.
+
+#2207 | C | MV 6 R | Instant
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Choose one —
+• ~ deals 6 damage to target creature, planeswalker, or battle.
+• Destroy target artifact.
+
+#2207 | C | MV 6 R | Instant
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Choose one —
+• ~ deals 6 damage to target creature, planeswalker, or battle.
+• Destroy target artifact.
+
+#4579 | R | MV 3 R | Sorcery
+Choose one —
+• ~ deals 2 damage to each creature, planeswalker, and battle.
+• Put any number of cards from your hand on the bottom of your library, then draw that many cards plus one.
+
+#2397 | C | MV 3 R | Sorcery
+~ deals 2 damage to any target. If it's a creature, it can't block this turn. Incubate 1. (Create an Incubator token with a +1/+1 counter on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+
+#5260 | C | MV 4 B | Instant
+Destroy target creature or planeswalker. Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5260 | C | MV 4 B | Instant
+Destroy target creature or planeswalker. Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#5921 | C | MV 2 B | Instant
+Kicker—Sacrifice an artifact or creature. (You may sacrifice an artifact or creature in addition to any other costs as you cast this spell.)
+Target creature gets -2/-2 until end of turn. If this spell was kicked, that creature gets -6/-6 until end of turn instead.
+
+#4635 | C | MV 1 B | Instant
+Destroy target creature that was dealt damage this turn.
+Draw a card.
+
+#5687 | U | MV 3 B | Instant
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Target creature gets -3/-3 until end of turn.
+
+#1265 | U | MV 6 B | Instant
+Exile target creature. Incubate 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+
+#5801 | C | MV 2 B | Creature — Rat Rogue | 1/1
+When this creature enters, each opponent discards a card.
+
+#563 | U | MV 2 R | Creature — Phyrexian Gremlin | 1/2
+{1}{R}: This creature gets +1/+0 until end of turn.
+When this creature dies, incubate X, where X is its power. (Create an Incubator token with X +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+
+#4393 | C | MV 1 R | Creature — Phyrexian Goblin | 1/1
+{1}{R}, {T}, Sacrifice an artifact or land: Draw a card.
+
+#4562 | U | MV 3 BR | Creature — Ogre Warrior | 2/2
+{1}, Sacrifice another creature or artifact: Put a +1/+1 counter on this creature and draw a card. Activate only as a sorcery.
+
+#5816 | C | MV 3 R | Creature — Lizard Warrior | 4/3
+Defender
+As long as this creature's power is 5 or greater, it can attack as though it didn't have defender.
+
+#5816 | C | MV 3 R | Creature — Lizard Warrior | 4/3
+Defender
+As long as this creature's power is 5 or greater, it can attack as though it didn't have defender.
+
+#6719 | C | MV 3 R | Artifact — Vehicle | 4/1
+Haste
+When this Vehicle enters, incubate 2. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#1625 | C | MV 3 R | Creature — Dwarf Pilot | 2/1
+Backup 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.)
+Whenever this creature becomes tapped, you may discard a card. If you do, draw a card.
+
+#3570 | C | MV 4 R | Creature — Goblin Rogue | 2/3
+Backup 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.)
+First strike
+
+#2008 | C | MV 4 B | Creature — Phyrexian Wizard | 2/4
+Menace (This creature can't be blocked except by two or more creatures.)
+This creature gets +3/+0 as long as an opponent has eight or more cards in their graveyard.
+Whenever this creature attacks or blocks, each player mills a card.
+
+#2542 | U | MV 5 R | Creature — Dwarf Berserker | 3/2
+Backup 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.)
+Double strike
+
+#2861 | U | MV 6 B | Creature — Phyrexian Horror | 4/4
+When this creature enters, you draw two cards and you lose 2 life.
+
+#3021 | C | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {B} or {R}.
+
+TARGET card: #2808
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2808 MV 6
+2207 MV 6 AFTER Instant cast after gets copied
+4579 MV 3 AFTER Sorcery cast after gets copied
+2397 MV 3 AFTER Sorcery cast after gets copied
+5260 MV 4 AFTER Instant cast after gets copied
+5921 MV 2 AFTER Instant cast after gets copied
+4635 MV 1 AFTER Instant cast after gets copied
+5687 MV 3 AFTER Instant cast after gets copied
+1265 MV 6 AFTER Instant cast after gets copied

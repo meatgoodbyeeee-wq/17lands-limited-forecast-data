@@ -1,0 +1,109 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2954 | M | MV 3 BG | Legendary Creature — Elder Fungus
+Trample
+~'s power and toughness are each equal to the number of creatures you control that are Fungi and/or Saprolings.
+At the beginning of your end step, create X 1/1 black Fungus creature tokens with "This token can't block," where X is the number of times you descended this turn. (You descend each time a permanent card is put into your graveyard from anywhere.)
+
+#4189 | C | MV 5 G | Creature — Cat Warrior | 5/4
+Trample
+Descend 4 — Whenever this creature attacks, if there are four or more permanent cards in your graveyard, put a +1/+1 counter on target creature.
+
+#4189 | C | MV 5 G | Creature — Cat Warrior | 5/4
+Trample
+Descend 4 — Whenever this creature attacks, if there are four or more permanent cards in your graveyard, put a +1/+1 counter on target creature.
+
+#841 | C | MV 1 G | Creature — Merfolk Scout | 1/1
+{2}{G}: This creature explores. Activate only as a sorcery. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)
+
+#3873 | C | MV 5 G | Sorcery
+Return up to one target permanent card from your graveyard to your hand. Discover 4. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)
+
+#6595 | R | MV 4 G | Creature — Dinosaur | 5/3
+Ward {2}
+At the beginning of your first main phase, add {G}{G}.
+
+#1026 | C | MV 4 G | Creature — Spider | 3/4
+Reach
+When this creature enters, you may mill two cards. (You may put the top two cards of your library into your graveyard.)
+
+#3529 | C | MV 2 G | Creature — Frog | 1/1
+Reach
+{T}: Add one mana of any color.
+{2}: This creature gains deathtouch until end of turn.
+
+#2375 | C | MV 6 G | Creature — Dinosaur | 7/7
+When this creature enters, scry 2. (Look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)
+{3}{G}: This creature can't be blocked by creatures with power 2 or less this turn.
+
+#2375 | C | MV 6 G | Creature — Dinosaur | 7/7
+When this creature enters, scry 2. (Look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)
+{3}{G}: This creature can't be blocked by creatures with power 2 or less this turn.
+
+#6357 | C | MV 3 G | Creature — Merfolk Scout | 3/1
+Vigilance
+When this creature enters, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)
+
+#6113 | C | MV 3 G | Creature — Dinosaur | 3/3
+When this creature enters, you may reveal a Dinosaur card from your hand. If you do or if you control another Dinosaur, you gain 3 life.
+
+#4507 | C | MV 6 colourless | Artifact
+Flash
+When this artifact enters, it deals 6 damage to target creature an opponent controls.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#6821 | C | MV 2 B | Enchantment — Aura
+Flash
+Enchant creature
+Enchanted creature gets +2/+0.
+When enchanted creature dies, return it to the battlefield tapped under its owner's control.
+
+#4449 | C | MV 2 B | Creature — Vampire Spirit | 2/2
+Descend 4 — As long as there are four or more permanent cards in your graveyard, this creature gets +1/+1 and has lifelink.
+
+#4449 | C | MV 2 B | Creature — Vampire Spirit | 2/2
+Descend 4 — As long as there are four or more permanent cards in your graveyard, this creature gets +1/+1 and has lifelink.
+
+#430 | C | MV 1 B | Creature — Human Pirate | 1/1
+When this creature dies, scry 1 and create a Treasure token. (To scry 1, look at the top card of your library. You may put that card on the bottom. A Treasure token is an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#2330 | C | MV 6 B | Creature — Dinosaur | 5/6
+When this creature enters, target creature you control gets +2/+0 and gains indestructible until end of turn.
+Swampcycling {2} ({2}, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)
+
+#2330 | C | MV 6 B | Creature — Dinosaur | 5/6
+When this creature enters, target creature you control gets +2/+0 and gains indestructible until end of turn.
+Swampcycling {2} ({2}, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)
+
+#6274 | U | MV 3 B | Creature — Fungus Wizard | 3/1
+When this creature dies, create two 1/1 black Fungus creature tokens with "This token can't block."
+
+#6616 | C | MV 3 B | Creature — Goblin Warrior | 2/2
+Menace
+At the beginning of your end step, if you descended this turn, put a +1/+1 counter on this creature. (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#4277 | C | MV 2 B | Instant
+As an additional cost to cast this spell, sacrifice an artifact or creature.
+Draw two cards and create a Map token. (It's an artifact with "{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.")
+
+#398 | U | MV 8 B | Creature — Leech | 5/5
+This spell costs {1} less to cast for each Cave you control and each Cave card in your graveyard.
+Lifelink
+
+#6794 | C | MV 0 colourless | Land — Cave
+{T}: Add {C}.
+{1}, {T}: Add one mana of any color.
+{4}, {T}, Sacrifice this land: Put two +1/+1 counters on target creature. Activate only as a sorcery.
+
+TARGET card: #2954
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2954 MV 3
+6274 MV 3 EITHER Fungus; dies, makes two Fungus tokens
+1026 MV 4 EITHER mill two, descend
+4507 MV 6 EITHER cycling discards permanent, descend
+2330 MV 6 EITHER swampcycling discards creature, descend
+4277 MV 2 EITHER sacrifice creature/artifact, descend
+430 MV 1 EITHER dies into graveyard, descend
+6794 MV 0 EITHER sacrifice land, descend

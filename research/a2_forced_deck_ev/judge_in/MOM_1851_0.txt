@@ -1,0 +1,107 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#1851 | M | MV 5 URG | Legendary Creature — Cyclops Homunculus | 6/5
+Whenever ~ enters or attacks, draw a card, then you may discard any number of land cards. When you discard one or more cards this way, ~ deals twice that much damage to target creature.
+{1}{U}: Put ~ into its owner's library third from the top.
+
+#218 | U | MV 5 UR | Creature — Human Shaman | 2/3
+When this creature enters, create two 1/1 blue and red Elemental creature tokens.
+Whenever you cast a spell that has convoke, this creature deals 1 damage to each opponent and each battle they protect.
+
+#5023 | U | MV 4 RG | Creature — Dinosaur Beast | 3/3
+Trample, haste
+Whenever you attack, target attacking creature gets +1/+1 until end of turn. If it's attacking a battle, put a +1/+1 counter on it instead.
+
+#6128 | R | MV 3 UR | Legendary Creature — Human | 2/4
+First strike, menace
+Whenever you cast your first instant or sorcery spell each turn, you may cast a spell with lesser mana value that shares a card type with it from your hand without paying its mana cost. If you don't, create First Mate Ragavan, a legendary 2/1 red Monkey Pirate creature token. It gains haste until end of turn.
+
+#4735 | U | MV 1 R | Sorcery
+This spell can't be countered.
+~ deals 1 damage to target creature or planeswalker. It deals 5 damage instead if that target is white and/or blue.
+
+#6428 | C | MV 2 R | Sorcery
+Create two 1/1 blue and red Elemental creature tokens.
+
+#6719 | C | MV 3 R | Artifact — Vehicle | 4/1
+Haste
+When this Vehicle enters, incubate 2. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#3570 | C | MV 4 R | Creature — Goblin Rogue | 2/3
+Backup 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.)
+First strike
+
+#2328 | C | MV 2 R | Creature — Human Shaman | 1/3
+Haste
+{T}: Another target creature gains haste until end of turn.
+
+#1625 | C | MV 3 R | Creature — Dwarf Pilot | 2/1
+Backup 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.)
+Whenever this creature becomes tapped, you may discard a card. If you do, draw a card.
+
+#7005 | C | MV 3 G | Creature — Pest | 2/2
+When this creature enters, look at the top five cards of your library. You may reveal a land or double-faced card from among them and put that card into your hand. Put the rest on the bottom of your library in a random order.
+
+#2766 | C | MV 3 G | Creature — Human Monk | 3/3
+Reach
+This creature has indestructible as long as it attacked a battle this turn.
+
+#32 | U | MV 5 G | Creature — Dinosaur | 3/4
+When this creature enters, choose one —
+• This creature gains haste until end of turn.
+• Destroy target artifact or enchantment.
+
+#2670 | C | MV 5 G | Creature — Elf Warrior | 3/3
+When this creature enters, return target creature or battle card from your graveyard to your hand.
+If this creature would die, exile it instead.
+
+#1644 | C | MV 6 U | Creature — Octopus | 5/6
+Whenever this creature attacks, you may tap two other untapped creatures you control. If you do, this creature can't be blocked this turn.
+Islandcycling {2} ({2}, Discard this card: Search your library for an Island card, reveal it, put it into your hand, then shuffle.)
+
+#5028 | C | MV 4 U | Creature — Phyrexian Dragon | 3/2
+Flying
+As long as you control a transformed permanent, this creature has "When this creature dies, draw a card."
+
+#6897 | C | MV 3 U | Instant
+This spell costs {2} less to cast if it targets an attacking creature.
+Return target creature to its owner's hand. Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+
+#1082 | C | MV 2 U | Instant
+Target creature has base power and toughness 4/3 until end of turn.
+Draw a card.
+
+#1606 | C | MV 4 U | Sorcery
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+The owner of target nonland permanent puts it into their library second from the top or on the bottom.
+
+#659 | U | MV 4 U | Instant
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Tap up to two target creatures. Put a stun counter on either of them. Then put a stun counter on either of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#6258 | U | MV 3 U | Creature — Human Knight | 2/2
+Flying, vigilance
+{T}: Create a 2/2 white and blue Knight creature token with vigilance. Activate only if you've cast two or more spells this turn.
+
+#1762 | U | MV 4 G | Sorcery
+Distribute four +1/+1 counters among up to four target creatures you control. Creatures you control gain vigilance and trample until end of turn.
+
+#800 | U | MV 7 R | Creature — Dragon | 4/4
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Flying, haste
+
+#5398 | C | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {R} or {G}.
+
+TARGET card: #1851
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 1851 MV 5
+7005 MV 3 BEFORE finds land to discard
+1644 MV 6 BEFORE islandcycling fetches land to discard
+1625 MV 3 BEFORE loots, discards land
+1082 MV 2 BEFORE draws card for land discard

@@ -1,0 +1,94 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#6213 | R | MV 5 B | Creature — Vampire Knight | 5/4
+Whenever this creature enters or attacks, return up to one target Vampire card from your graveyard to the battlefield with a finality counter on it. You lose life equal to its mana value. (If a creature with a finality counter on it would die, exile it instead.)
+
+#1380 | C | MV 4 B | Creature — Vampire Knight | 3/3
+{B}, Sacrifice another creature or artifact: Put a +1/+1 counter on this creature. It gains menace until end of turn.
+
+#1380 | C | MV 4 B | Creature — Vampire Knight | 3/3
+{B}, Sacrifice another creature or artifact: Put a +1/+1 counter on this creature. It gains menace until end of turn.
+
+#4449 | C | MV 2 B | Creature — Vampire Spirit | 2/2
+Descend 4 — As long as there are four or more permanent cards in your graveyard, this creature gets +1/+1 and has lifelink.
+
+#3053 | C | MV 3 B | Creature — Vampire Cleric | 1/4
+{T}, Sacrifice another creature or artifact: Each opponent loses 1 life and you gain 1 life.
+
+#6704 | U | MV 3 B | Creature — Insect Horror | 1/3
+Deathtouch
+Descend 4 — Whenever this creature attacks, if there are four or more permanent cards in your graveyard, you draw a card and you lose 1 life.
+
+#6616 | C | MV 3 B | Creature — Goblin Warrior | 2/2
+Menace
+At the beginning of your end step, if you descended this turn, put a +1/+1 counter on this creature. (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#3853 | C | MV 5 B | Creature — Insect Horror | 5/2
+When this creature dies, discover 3. (Exile cards from the top of your library until you exile a nonland card with mana value 3 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)
+
+#2330 | C | MV 6 B | Creature — Dinosaur | 5/6
+When this creature enters, target creature you control gets +2/+0 and gains indestructible until end of turn.
+Swampcycling {2} ({2}, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)
+
+#430 | C | MV 1 B | Creature — Human Pirate | 1/1
+When this creature dies, scry 1 and create a Treasure token. (To scry 1, look at the top card of your library. You may put that card on the bottom. A Treasure token is an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#3803 | C | MV 1 B | Enchantment — Aura
+Enchant creature
+Enchanted creature gets -2/-2.
+
+#4553 | C | MV 3 B | Instant
+You may mill two cards. Then return up to two creature cards from your graveyard to your hand. (To mill two cards, put the top two cards of your library into your graveyard.)
+
+#4716 | C | MV 5 R | Creature — Dinosaur | 4/5
+Reach
+{T}: This creature deals 2 damage to each opponent.
+
+#581 | U | MV 5 R | Creature — Dinosaur | 5/4
+This creature can't be blocked except by three or more creatures.
+
+#3688 | C | MV 4 R | Sorcery
+~ deals damage to target creature equal to the number of lands you control.
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#539 | R | MV 2 R | Legendary Creature — Human Knight | 2/2
+Whenever you attack, you may discard a card. When you do, put a +1/+1 counter on target attacking creature. It gains trample until end of turn.
+Whenever you discard one or more cards, exile the top card of your library. You may play that card until your next end step.
+
+#2679 | C | MV 3 R | Artifact Creature — Gnome | 3/1
+Haste
+{T}: Another target creature gains haste until end of turn.
+
+#3239 | C | MV 2 R | Artifact Creature — Golem | 2/2
+Whenever this creature becomes tapped, you may discard a card. If you do, draw a card.
+
+#2765 | C | MV 1 R | Artifact — Equipment
+Equipped creature gets +1/+0 and has "Whenever this creature attacks, you may sacrifice ~. When you do, this creature deals 2 damage to any target."
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+
+#5740 | U | MV 4 R | Creature — Human Artificer | 3/3
+Whenever you discover, discover again for the same value. This ability triggers only once each turn.
+
+#2531 | C | MV 2 R | Creature — Human Soldier | 1/3
+Tap two untapped artifacts and/or creatures you control: This creature deals 1 damage to each opponent. Activate only as a sorcery.
+
+#2823 | C | MV 4 colourless | Artifact Creature — Golem | 3/4
+Whenever this creature attacks, exile target card from an opponent's graveyard.
+
+#4298 | C | MV 0 colourless | Land — Cave
+This land enters tapped.
+{T}: Add {B}.
+{4}{B}, {T}, Sacrifice this land: Discover 4. Activate only as a sorcery. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)
+
+TARGET card: #6213
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 6213 MV 5
+1380 MV 4 BEFORE Vampire card to return
+4449 MV 2 BEFORE Vampire card to return
+3053 MV 3 BEFORE Vampire card to return
+4553 MV 3 BEFORE mills, fills graveyard

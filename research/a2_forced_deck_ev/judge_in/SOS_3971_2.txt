@@ -1,0 +1,103 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#3971 | M | MV 2 U | Sorcery
+Target player draws 2ˣ cards. (2⁰ = 1, 2¹ = 2, 2² = 4, 2³ = 8, 2⁴ = 16, 2⁵ = 32, and so on.)
+
+#3302 | C | MV 4 UR | Creature — Djinn Sorcerer | 4/4
+Whenever this creature enters or attacks, you may draw a card. If you do, discard a card.
+
+#3302 | C | MV 4 UR | Creature — Djinn Sorcerer | 4/4
+Whenever this creature enters or attacks, you may draw a card. If you do, discard a card.
+
+#4404 | C | MV 4 R | Creature — Orc Sorcerer | 4/3
+Trample
+Opus — Whenever you cast an instant or sorcery spell, put a +1/+1 counter on this creature. If five or more mana was spent to cast that spell, put two +1/+1 counters on this creature instead.
+
+#1524 | U | MV 4 U | Creature — Merfolk Bard // Sorcery | 3/4
+Ward {2}
+This creature enters prepared. (While it's prepared, you may cast a copy of its spell. Doing so unprepares it.) Create a 3/3 blue and red Elemental creature token with flying.
+
+#764 | C | MV 3 U | Creature — Frog Wizard | 0/3
+Increment (Whenever you cast a spell, if the amount of mana you spent is greater than this creature's power or toughness, put a +1/+1 counter on this creature.)
+When this creature enters, surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+
+#4186 | C | MV 3 R | Creature — Dwarf Sorcerer | 1/4
+When this creature enters, you may discard a card. If you do, draw a card.
+{T}, Exile a card from your graveyard: Add {R}. When you do, this creature deals 1 damage to each opponent.
+
+#6915 | C | MV 2 R | Creature — Human Sorcerer | 2/2
+Opus — Whenever you cast an instant or sorcery spell, this creature gets +1/+1 until end of turn. If five or more mana was spent to cast that spell, this creature also gains double strike until end of turn.
+
+#6790 | C | MV 2 colourless | Artifact Creature — Construct | 2/1
+Whenever you cast a multicolored spell, put a +1/+1 counter on this creature.
+
+#6790 | C | MV 2 colourless | Artifact Creature — Construct | 2/1
+Whenever you cast a multicolored spell, put a +1/+1 counter on this creature.
+
+#2485 | C | MV 2 U | Creature — Merfolk Wizard | 1/3
+{T}: Add {U}. Spend this mana only to cast an instant or sorcery spell.
+{1}, {T}: Add one mana of any color. Spend this mana only to cast an instant or sorcery spell.
+
+#4435 | U | MV 2 R | Enchantment
+When this enchantment enters, create a 2/2 red and white Spirit creature token.
+Whenever you attack, if a card left your graveyard this turn, target attacking creature gets +2/+0 until end of turn.
+
+#4310 | R | MV 2 UR | Instant
+~ deals X damage to any target. Draw two cards, then discard a card.
+
+#3725 | U | MV 5 UR | Instant
+~ deals 5 damage to up to one target creature. Look at the top two cards of your library. Put one of those cards into your hand and the other on the bottom of your library.
+
+#672 | U | MV 2 UR | Instant
+Choose one —
+• Surveil 2, then draw a card.
+• ~ deals 1 damage to each of one or two targets.
+• Return target nonland permanent to its owner's hand.
+
+#672 | U | MV 2 UR | Instant
+Choose one —
+• Surveil 2, then draw a card.
+• ~ deals 1 damage to each of one or two targets.
+• Return target nonland permanent to its owner's hand.
+
+#888 | C | MV 3 R | Instant
+~ deals 4 damage to target creature. Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#2669 | C | MV 2 U | Instant
+Return target nonland permanent to its owner's hand. Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#836 | C | MV 4 U | Instant
+This spell costs {1} less to cast if it targets an attacking creature.
+Target creature's owner puts it on their choice of the top or bottom of their library.
+
+#2885 | C | MV 7 UR | Sorcery
+Create two 3/3 blue and red Elemental creature tokens with flying.
+{2}, Discard this card: Look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.
+
+#5150 | C | MV 3 R | Sorcery
+As an additional cost to cast this spell, discard a card.
+Draw two cards and create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#2926 | C | MV 2 U | Instant
+Counter target creature spell.
+
+#1109 | U | MV 1 U | Instant
+Create a 0/0 green and blue Fractal creature token and put X +1/+1 counters on it, where X is the number of cards you've drawn this turn.
+
+#2977 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {U} or {R}.
+{2}{U}{R}, {T}: Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#2977 | C | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {U} or {R}.
+{2}{U}{R}, {T}: Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+TARGET card: #3971
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 3971 MV 2
+2485 MV 2 BEFORE extra mana for instants/sorceries
+5150 MV 3 BEFORE Treasure gives extra mana

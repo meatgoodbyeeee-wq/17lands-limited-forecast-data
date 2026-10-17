@@ -1,0 +1,98 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4347 | R | MV 2 WR | Legendary Creature — Lobster Citizen | 2/2
+Artifacts you control are Foods in addition to their other types and have "{2}, {T}, Sacrifice this artifact: You gain 3 life."
+{1}, {T}, Sacrifice a Food: ~ deals 3 damage to each opponent.
+At the beginning of each end step, if you gained life this turn, untap ~.
+
+#6968 | C | MV 3 W | Enchantment
+When this enchantment enters, exile target nonland permanent an opponent controls until this enchantment leaves the battlefield.
+
+#520 | U | MV 6 W | Creature — Human Knight | 4/5
+Lifelink
+At the beginning of your end step, if you control two or more tapped creatures, put a +1/+1 counter on each creature you control other than this creature.
+
+#5651 | C | MV 1 W | Instant
+~ deals X damage to target attacking or blocking creature, where X is 2 plus the number of creatures and/or Spacecraft you control.
+
+#2213 | C | MV 4 W | Creature — Human Knight | 2/2
+This creature enters with a +1/+1 counter on it for each other creature and/or artifact you control.
+
+#5145 | R | MV 1 W | Creature — Angel Wizard | 2/1
+Vigilance
+When this creature enters, each opponent exiles a card from their hand and may play that card for as long as it remains exiled. Each spell cast this way costs {1} more to cast. Each land played this way enters tapped.
+
+#5536 | C | MV 3 W | Creature — Human Soldier | 2/4
+Vigilance
+This creature gets +2/+0 as long as you've cast two or more spells this turn.
+
+#46 | C | MV 4 W | Instant
+Destroy target artifact or tapped creature. You gain 3 life.
+
+#2537 | C | MV 4 R | Sorcery
+~ deals 6 damage to target creature. If excess damage was dealt this way, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+
+#2537 | C | MV 4 R | Sorcery
+~ deals 6 damage to target creature. If excess damage was dealt this way, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+
+#5218 | U | MV 6 R | Artifact — Spacecraft | 6/5
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 3+.)
+3+ | Flying, haste
+
+#6768 | U | MV 5 R | Creature — Kavu Soldier | 5/5
+At the beginning of your end step, if you control two or more tapped creatures, you may discard your hand. If you do, draw two cards.
+
+#1932 | C | MV 7 R | Creature — Dragon | 4/4
+Flying
+When this creature enters, it deals 3 damage to any target.
+
+#3681 | C | MV 3 R | Instant
+~ deals 4 damage to target creature.
+
+#3681 | C | MV 3 R | Instant
+~ deals 4 damage to target creature.
+
+#4000 | C | MV 5 R | Creature — Kavu Soldier | 4/5
+Reach
+Void — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was warped this turn, put a +1/+1 counter on this creature.
+
+#1901 | U | MV 2 R | Instant
+~ deals 3 damage to target creature. It deals 5 damage instead if you control a Spacecraft.
+
+#4175 | C | MV 1 R | Sorcery
+~ deals 2 damage to any target.
+Void — ~ deals 3 damage instead if a nonland permanent left the battlefield this turn or a spell was warped this turn.
+
+#1726 | C | MV 3 R | Artifact Creature — Robot Scout | 2/3
+{T}: Target creature you control gets +1/+1 and gains haste until end of turn. Activate only as a sorcery.
+
+#1740 | C | MV 4 R | Artifact Creature — Robot Cat | 3/3
+Haste
+Warp {1}{R} (You may cast this card from your hand for its warp cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+
+#2583 | C | MV 2 colourless | Artifact Creature — Dog | 2/1
+Whenever this creature becomes tapped, you gain 1 life.
+{2}, {T}: Put target card from a graveyard on the bottom of its owner's library.
+
+#2583 | C | MV 2 colourless | Artifact Creature — Dog | 2/1
+Whenever this creature becomes tapped, you gain 1 life.
+{2}, {T}: Put target card from a graveyard on the bottom of its owner's library.
+
+#4952 | C | MV 1 colourless | Artifact — Food
+Indestructible (Effects that say "destroy" don't destroy this artifact.)
+{2}, {T}, Sacrifice this artifact: You gain 3 life.
+When this artifact is put into a graveyard from the battlefield, draw a card.
+
+TARGET card: #4347
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 4347 MV 2
+5218 MV 6 EITHER Artifact, becomes Food
+1726 MV 3 EITHER Artifact, becomes Food
+1740 MV 4 EITHER Artifact, becomes Food
+2583 MV 2 EITHER Artifact; gains life when tapped
+4952 MV 1 EITHER Food artifact; gains life
+2537 MV 4 EITHER Can make Lander artifact
+46 MV 4 EITHER Lifegain untaps Lobster
+520 MV 6 EITHER Lifelink untaps Lobster

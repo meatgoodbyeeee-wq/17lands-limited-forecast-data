@@ -1,0 +1,98 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4809 | R | MV 2 W | Enchantment
+You may look at the top card of your library any time.
+Once each turn, you may cast a creature spell with power 2 or less from the top of your library.
+
+#1639 | U | MV 2 W | Creature — Human Detective | 1/1
+Flying, lifelink
+Whenever another Detective you control enters and whenever a Detective you control is turned face up, this creature gets +1/+1 until end of turn.
+
+#1639 | U | MV 2 W | Creature — Human Detective | 1/1
+Flying, lifelink
+Whenever another Detective you control enters and whenever a Detective you control is turned face up, this creature gets +1/+1 until end of turn.
+
+#5057 | C | MV 1 W | Creature — Human Detective | 1/2
+When this creature enters, investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+
+#3167 | U | MV 2 W | Instant
+Exile target attacking creature.
+
+#5161 | C | MV 3 W | Enchantment
+When this enchantment enters, exile target creature an opponent controls until this enchantment leaves the battlefield. You gain 2 life.
+
+#4544 | C | MV 3 W | Instant
+Destroy target artifact, enchantment, or creature with power 4 or greater.
+
+#226 | U | MV 1 W | Artifact — Clue Equipment
+Equipped creature gets +1/+1 and has vigilance and "{3}, {T}: Tap target creature."
+{2}, Sacrifice this Equipment: Draw a card.
+Equip {2}
+
+#155 | C | MV 2 W | Instant
+Target creature gets +2/+2 until end of turn. Investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+
+#1943 | C | MV 1 B | Creature — Dog | 1/1
+Menace
+Whenever another creature you control with power 2 or less enters, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#1943 | C | MV 1 B | Creature — Dog | 1/1
+Menace
+Whenever another creature you control with power 2 or less enters, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#1039 | C | MV 2 B | Creature — Elf Detective | 1/1
+When this creature enters, target opponent exiles a card from their hand.
+
+#1361 | C | MV 3 B | Creature — Vampire Rogue | 3/3
+This creature enters tapped.
+Disguise {4}{B}{B} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)
+When this creature is turned face up, target opponent loses 3 life and you gain 3 life.
+
+#1361 | C | MV 3 B | Creature — Vampire Rogue | 3/3
+This creature enters tapped.
+Disguise {4}{B}{B} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)
+When this creature is turned face up, target opponent loses 3 life and you gain 3 life.
+
+#3985 | U | MV 3 B | Creature — Vampire Rogue | 3/2
+When this creature enters, suspect up to one other target creature you control. (A suspected creature has menace and can't block.)
+Whenever one or more suspected creatures you control attack, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#6430 | C | MV 4 B | Creature — Insect | 3/4
+Whenever one or more creature cards leave your graveyard, this creature gets +1/+0 and gains menace and lifelink until end of turn.
+
+#6430 | C | MV 4 B | Creature — Insect | 3/4
+Whenever one or more creature cards leave your graveyard, this creature gets +1/+0 and gains menace and lifelink until end of turn.
+
+#2848 | C | MV 5 B | Creature — Ogre Cleric | 3/6
+{2}{B}, Sacrifice another creature: Draw a card. If the sacrificed creature was suspected, draw two cards instead.
+
+#3349 | U | MV 6 B | Creature — Gorgon Detective | 5/6
+When this creature enters, investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+Whenever you sacrifice a Clue, target opponent gets two poison counters. (A player with ten or more poison counters loses the game.)
+
+#4054 | C | MV 3 B | Instant
+Destroy target creature.
+
+#4054 | C | MV 3 B | Instant
+Destroy target creature.
+
+#3879 | U | MV 4 B | Enchantment
+Flash
+When this enchantment enters, target creature gets -4/-4 until end of turn.
+Whenever one or more creature cards leave your graveyard, each opponent loses 1 life and you gain 1 life.
+
+#4019 | C | MV 2 B | Sorcery
+As an additional cost to cast this spell, you may collect evidence 6. (Exile cards with total mana value 6 or greater from your graveyard.)
+Each opponent sacrifices a creature of their choice. If evidence was collected, instead each opponent sacrifices a creature with the greatest power among creatures they control.
+
+TARGET card: #4809
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 4809 MV 2
+1639 MV 2 AFTER castable from top, power 2 or less
+5057 MV 1 AFTER castable from top, power 2 or less
+1943 MV 1 AFTER castable from top, power 2 or less; surveil sets top
+1039 MV 2 AFTER castable from top, power 2 or less
+1361 MV 3 AFTER castable from top as face-down 2/2
+3985 MV 3 EITHER surveil sets up top card

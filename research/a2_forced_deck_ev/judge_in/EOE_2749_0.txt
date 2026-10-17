@@ -1,0 +1,98 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2749 | M | MV 5 B | Legendary Creature — Human Cleric | 3/3
+Ward—Discard a card at random.
+Void — Whenever ~ attacks, if a nonland permanent left the battlefield this turn or a spell was warped this turn, defending player loses half their life, rounded up.
+
+#1106 | C | MV 2 B | Artifact Creature — Insect | 1/1
+When this creature enters, each opponent discards a card.
+
+#1106 | C | MV 2 B | Artifact Creature — Insect | 1/1
+When this creature enters, each opponent discards a card.
+
+#29 | C | MV 3 B | Creature — Human Scout | 2/1
+Flying
+When this creature dies, create a tapped 2/2 colorless Robot artifact creature token.
+
+#4365 | C | MV 3 B | Creature — Insect Horror | 2/2
+Menace (This creature can't be blocked except by two or more creatures.)
+Void — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was warped this turn, put a +1/+1 counter on this creature.
+
+#2934 | C | MV 3 B | Creature — Insect Horror | 2/3
+Lifelink
+Whenever this creature attacks, you may sacrifice another creature or artifact. If you do, this creature gets +2/+0 until end of turn.
+
+#1837 | C | MV 4 B | Creature — Human Soldier | 3/4
+As long as you control an artifact, this creature gets +1/+0 and has deathtouch.
+
+#6648 | C | MV 4 B | Creature — Insect Warrior | 2/4
+Flying
+Whenever this creature becomes tapped, you may sacrifice another creature or artifact. If you do, draw a card.
+
+#6648 | C | MV 4 B | Creature — Insect Warrior | 2/4
+Flying
+Whenever this creature becomes tapped, you may sacrifice another creature or artifact. If you do, draw a card.
+
+#4261 | C | MV 4 B | Instant
+Exile target creature or Spacecraft.
+
+#4261 | C | MV 4 B | Instant
+Exile target creature or Spacecraft.
+
+#1416 | C | MV 2 B | Instant
+Target creature gets -3/-0 until end of turn. Then if that creature's power is 0 or less, destroy it.
+
+#2385 | U | MV 4 BR | Artifact Creature — Robot | 2/2
+Flying
+When this creature enters, return target artifact or creature card from your graveyard to your hand.
+Void — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was warped this turn, put a +1/+1 counter on this creature.
+
+#428 | U | MV 1 R | Artifact Creature — Robot Soldier | 2/1
+Whenever this creature attacks, you may pay {2}. If you do, create a 2/2 colorless Robot artifact creature token that's tapped and attacking. Sacrifice that token at end of combat.
+
+#4175 | C | MV 1 R | Sorcery
+~ deals 2 damage to any target.
+Void — ~ deals 3 damage instead if a nonland permanent left the battlefield this turn or a spell was warped this turn.
+
+#4175 | C | MV 1 R | Sorcery
+~ deals 2 damage to any target.
+Void — ~ deals 3 damage instead if a nonland permanent left the battlefield this turn or a spell was warped this turn.
+
+#3681 | C | MV 3 R | Instant
+~ deals 4 damage to target creature.
+
+#2537 | C | MV 4 R | Sorcery
+~ deals 6 damage to target creature. If excess damage was dealt this way, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+
+#2537 | C | MV 4 R | Sorcery
+~ deals 6 damage to target creature. If excess damage was dealt this way, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+
+#3955 | C | MV 3 R | Creature — Kavu Soldier | 2/3
+At the beginning of your end step, if you control two or more tapped creatures, put a +1/+1 counter on this creature.
+
+#3888 | U | MV 4 R | Creature — Kavu Soldier | 4/3
+During your turn, other creatures you control get +1/+0.
+Warp {1}{R} (You may cast this card from your hand for its warp cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+
+#3888 | U | MV 4 R | Creature — Kavu Soldier | 4/3
+During your turn, other creatures you control get +1/+0.
+Warp {1}{R} (You may cast this card from your hand for its warp cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+
+#5454 | C | MV 4 R | Creature — Kavu Soldier | 4/3
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, create a Lander token. At the beginning of the end step on your next turn, sacrifice that token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+
+TARGET card: #2749
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2749 MV 5
+3888 MV 4 BEFORE Warp cast triggers void
+29 MV 3 BEFORE Dies, permanent leaves
+4261 MV 4 BEFORE Exile makes permanent leave
+1416 MV 2 BEFORE Can destroy creature
+3681 MV 3 BEFORE Kills creature
+2537 MV 4 BEFORE Kills creature
+4175 MV 1 BEFORE Can kill small creature
+2934 MV 3 BEFORE Sacrifices permanent on attack
+6648 MV 4 BEFORE Sacrifices permanent when tapped

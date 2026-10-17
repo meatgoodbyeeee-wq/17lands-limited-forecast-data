@@ -1,0 +1,102 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#1603 | M | MV 6 B | Sorcery
+Exile all creature cards from target player's graveyard. You may cast spells from among those cards for as long as they remain exiled, and mana of any type can be spent to cast them.
+
+#642 | R | MV 6 BG | Legendary Creature — Spider Demon | 8/8
+Deathtouch, ward {2}
+Other Spiders you control have deathtouch and ward {2}.
+Whenever another creature dealt damage this turn by a Spider you controlled dies, create a token that's a copy of that creature, except it's a Food artifact with "{2}, {T}, Sacrifice this token: You gain 3 life," and it loses all other card types.
+
+#5762 | R | MV 2 B | Creature — Orc Archer | 1/1
+Flash
+When this creature enters and whenever an opponent draws a card except the first one they draw in each of their draw steps, this creature deals 1 damage to any target. Then amass Orcs 1.
+
+#4164 | U | MV 2 B | Legendary Creature — Orc Soldier | 2/2
+Whenever a Goblin or Orc you control deals combat damage to a player, you may sacrifice it. When you do, choose one —
+• Draw a card.
+• Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#789 | C | MV 3 B | Creature — Orc Berserker | 3/2
+When this creature enters, the Ring tempts you.
+
+#789 | C | MV 3 B | Creature — Orc Berserker | 3/2
+When this creature enters, the Ring tempts you.
+
+#2703 | C | MV 3 B | Creature — Bird Horror | 1/1
+Flying
+When this creature enters, amass Orcs 2. (Put two +1/+1 counters on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)
+
+#3812 | C | MV 4 B | Creature — Wolf | 3/4
+Menace (This creature can't be blocked except by two or more creatures.)
+As long as you control a Goblin or Orc, this creature gets +1/+0.
+
+#6778 | C | MV 5 B | Creature — Orc Soldier | 4/5
+{1}, {T}, Sacrifice another creature: Draw a card, then create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this token: You gain 3 life.")
+
+#6778 | C | MV 5 B | Creature — Orc Soldier | 4/5
+{1}, {T}, Sacrifice another creature: Draw a card, then create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this token: You gain 3 life.")
+
+#860 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, sacrifice a creature or pay {4}.
+Destroy target creature.
+
+#5832 | C | MV 3 B | Sorcery
+Creatures your opponents control get -1/-1 until end of turn. The Ring tempts you.
+
+#2300 | U | MV 4 B | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — You and target opponent each create a Food token.
+II — Each opponent loses 3 life. Create a Treasure token.
+III — Create three tapped 1/1 white Spirit creature tokens with flying.
+
+#4001 | C | MV 4 B | Sorcery
+Target opponent reveals their hand. You choose a nonland card from it. That player discards that card.
+Amass Orcs 2. (Put two +1/+1 counters on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)
+
+#1196 | C | MV 3 G | Creature — Dwarf Soldier | 4/2
+When this creature dies, the Ring tempts you.
+
+#1196 | C | MV 3 G | Creature — Dwarf Soldier | 4/2
+When this creature dies, the Ring tempts you.
+
+#3802 | C | MV 4 G | Creature — Dwarf | 4/4
+Whenever this creature attacks, it gets +X/+X until end of turn, where X is the number of legendary creatures you control.
+
+#5670 | C | MV 5 G | Creature — Treefolk | 4/5
+Trample
+When this creature enters, the Ring tempts you.
+
+#3206 | R | MV 7 G | Legendary Creature — Treefolk | 4/10
+Treefolk you control have vigilance.
+Whenever one or more Treefolk you control attack, add twice that much {G}.
+You don't lose unspent green mana as steps and phases end.
+
+#5109 | C | MV 2 G | Creature — Human Shaman | 1/1
+{T}: Add one mana of any color.
+{6}{G}, {T}: Another target creature gets +3/+3 and gains trample until end of turn.
+
+#1807 | U | MV 4 G | Enchantment — Aura
+Flash
+Enchant creature
+When this Aura enters, scry 2.
+Enchanted creature gets +3/+3.
+
+#4169 | C | MV 1 G | Creature — Spider | 1/1
+Deathtouch
+Whenever this creature attacks, target legendary creature you control gains deathtouch until end of turn.
+
+#2369 | C | MV 2 B | Sorcery
+You draw a card and you lose 1 life.
+Amass Orcs 1. (Put a +1/+1 counter on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)
+
+TARGET card: #1603
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 1603 MV 6
+860 MV 1 BEFORE Destroys creature into graveyard
+5832 MV 3 BEFORE Kills small creatures into graveyard
+6778 MV 5 BEFORE Sacrifices creature into graveyard
+4164 MV 2 BEFORE Sacrifices Goblin or Orc
+5762 MV 2 BEFORE Pings kill small creatures

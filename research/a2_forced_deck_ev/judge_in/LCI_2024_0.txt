@@ -1,0 +1,101 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2024 | R | MV 2 U | Enchantment
+Whenever one or more nontoken Merfolk you control become tapped, create a 1/1 blue Merfolk creature token with hexproof.
+
+#6115 | M | MV 2 UR | Legendary Creature — Human Artificer | 2/2
+{U}{R}, {T}: Create a token that's a copy of another target creature or artifact you control, except it's an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of the next end step.
+
+#6115 | M | MV 2 UR | Legendary Creature — Human Artificer | 2/2
+{U}{R}, {T}: Create a token that's a copy of another target creature or artifact you control, except it's an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of the next end step.
+
+#4844 | C | MV 2 U | Creature — Merfolk Scout | 1/2
+When this creature enters, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)
+
+#2578 | U | MV 2 U | Creature — Human Pirate | 2/1
+When this creature enters, look at the top four cards of your library. You may reveal an artifact or Pirate card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+
+#5425 | C | MV 2 U | Artifact Creature — Siren Pirate | 1/2
+Flying, vigilance
+{T}: Add {U}. Spend this mana only to cast an artifact spell or activate an ability of an artifact source.
+
+#1043 | C | MV 1 U | Artifact Creature — Gnome | 1/2
+Flash
+When this creature enters, target creature an opponent controls gets -2/-0 until end of turn.
+
+#2797 | C | MV 2 U | Creature — Human Pirate | 3/3
+Defender
+As long as an artifact entered the battlefield under your control this turn, this creature can attack as though it didn't have defender.
+
+#3239 | C | MV 2 R | Artifact Creature — Golem | 2/2
+Whenever this creature becomes tapped, you may discard a card. If you do, draw a card.
+
+#2723 | U | MV 3 R | Creature — Dinosaur | 4/3
+Whenever a player casts a spell, if it's not their turn, this creature deals 4 damage to them.
+
+#4496 | C | MV 4 U | Creature — Human Pirate | 3/3
+When this creature enters, if you control an artifact, tap target artifact or creature an opponent controls and put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+
+#2679 | C | MV 3 R | Artifact Creature — Gnome | 3/1
+Haste
+{T}: Another target creature gains haste until end of turn.
+
+#5740 | U | MV 4 R | Creature — Human Artificer | 3/3
+Whenever you discover, discover again for the same value. This ability triggers only once each turn.
+
+#5297 | C | MV 4 R | Creature — Elemental | 3/3
+Trample
+At the beginning of your end step, if you descended this turn, put a +1/+1 counter on this creature. (You descended if a permanent card was put into your graveyard from anywhere.)
+
+#2519 | C | MV 5 U | Creature — Spirit Cleric | 3/2
+When this creature enters, draw a card.
+Descend 4 — This creature has flying as long as there are four or more permanent cards in your graveyard.
+
+#4836 | U | MV 5 colourless | Artifact Creature — Golem | 2/5
+Flying
+Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+{2}: Put target card from a graveyard on the bottom of its owner's library.
+
+#4754 | C | MV 3 colourless | Artifact Creature — Gnome | 2/1
+When this creature enters, create a Map token. (It's an artifact with "{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.")
+
+#2377 | C | MV 2 R | Instant
+Choose one —
+• ~ deals 3 damage to target creature.
+• Destroy target artifact.
+
+#1559 | U | MV 2 R | Instant
+The owner of target artifact or creature with mana value 1 or greater shuffles it into their library. Then that player discovers X, where X is its mana value. (They exile cards from the top of their library until they exile a nonland card with that mana value or less. They cast it without paying its mana cost or put it into their hand. They put the rest on the bottom in a random order.)
+
+#160 | C | MV 2 U | Instant
+Return target creature to its owner's hand. If it was tapped, create a Map token. (It's an artifact with "{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.")
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#4761 | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#4507 | C | MV 6 colourless | Artifact
+Flash
+When this artifact enters, it deals 6 damage to target creature an opponent controls.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+
+#6313 | C | MV 0 colourless | Land — Cave
+This land enters tapped.
+{T}: Add {U}.
+{4}{U}, {T}, Sacrifice this land: Discover 4. Activate only as a sorcery. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)
+
+#6313 | C | MV 0 colourless | Land — Cave
+This land enters tapped.
+{T}: Add {U}.
+{4}{U}, {T}, Sacrifice this land: Discover 4. Activate only as a sorcery. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)
+
+TARGET card: #2024
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2024 MV 2
+4844 MV 2 AFTER nontoken Merfolk that taps when attacking

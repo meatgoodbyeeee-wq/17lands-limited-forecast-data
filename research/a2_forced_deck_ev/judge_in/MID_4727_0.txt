@@ -1,0 +1,95 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#4727 | R | MV 1 B | Creature — Zombie | 1/1
+Whenever another Zombie you control enters, put a +1/+1 counter on this creature.
+
+#4441 | C | MV 2 B | Creature — Human Wizard | 1/2
+When this creature dies, you draw a card and you lose 1 life.
+
+#4441 | C | MV 2 B | Creature — Human Wizard | 1/2
+When this creature dies, you draw a card and you lose 1 life.
+
+#1673 | R | MV 2 B | Creature — Vampire Warrior | 3/3
+When this creature enters, each opponent creates a 1/1 white Human creature token.
+Whenever a creature an opponent controls dies, put a +1/+1 counter on this creature.
+
+#3750 | C | MV 3 B | Creature — Vampire Noble | 3/2
+When this creature enters, if an opponent lost life this turn, each opponent loses 2 life and you gain 2 life.
+
+#166 | C | MV 3 R | Creature — Devil | 2/3
+Menace (This creature can't be blocked except by two or more creatures.)
+If it's neither day nor night, it becomes day as this creature enters.
+Whenever day becomes night or night becomes day, this creature deals 1 damage to each opponent.
+
+#5719 | C | MV 2 R | Creature — Vampire | 2/1
+Whenever this creature attacks, it deals 1 damage to defending player.
+
+#5998 | C | MV 4 R | Creature — Vampire | 4/3
+When this creature enters, if an opponent lost life this turn, add {R}{R}{R}.
+{2}{R}, Discard a card: Draw a card.
+
+#5384 | C | MV 5 R | Creature — Vampire Knight | 5/4
+Trample
+This creature enters with a +1/+1 counter on it if an opponent lost life this turn.
+
+#3704 | U | MV 5 R | Creature — Dragon | 4/3
+Flying
+Whenever this creature attacks, it deals 1 damage to target creature defending player controls. If that creature is a Zombie, this creature deals 2 damage to it instead.
+
+#308 | C | MV 5 B | Creature — Zombie Giant | 7/6
+As an additional cost to cast this spell, sacrifice a creature or pay {1}{B}.
+Menace (This creature can't be blocked except by two or more creatures.)
+
+#6526 | M | MV 6 B | Creature — Demon | 6/6
+Flying, trample
+{B}, Sacrifice another creature: Target player mills three cards.
+Pay 1 life: Add {C}. Spend this mana only to cast a spell from your graveyard.
+
+#668 | C | MV 4 colourless | Artifact Creature — Scarecrow | 3/4
+When this creature enters, exile up to one target card from a graveyard.
+{2}: Add one mana of any color.
+
+#6855 | C | MV 3 B | Instant
+Destroy target creature without flying.
+
+#6855 | C | MV 3 B | Instant
+Destroy target creature without flying.
+
+#59 | C | MV 2 B | Instant
+Target creature gets -2/-2 until end of turn. If it's night, that creature gets -13/-13 until end of turn instead.
+
+#59 | C | MV 2 B | Instant
+Target creature gets -2/-2 until end of turn. If it's night, that creature gets -13/-13 until end of turn instead.
+
+#4462 | C | MV 3 R | Instant
+This spell costs {2} less to cast if it's night.
+~ deals 3 damage to any target.
+
+#4462 | C | MV 3 R | Instant
+This spell costs {2} less to cast if it's night.
+~ deals 3 damage to any target.
+
+#1069 | U | MV 2 R | Instant
+Choose one —
+• ~ deals 3 damage to target creature or planeswalker.
+• Discard up to two cards, then draw that many cards.
+
+#3580 | C | MV 1 B | Instant
+Exile up to one target card from a graveyard. Create a 2/2 black Zombie creature token with decayed. (It can't block. When it attacks, sacrifice it at end of combat.)
+Flashback {1}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+
+#3580 | C | MV 1 B | Instant
+Exile up to one target card from a graveyard. Create a 2/2 black Zombie creature token with decayed. (It can't block. When it attacks, sacrifice it at end of combat.)
+Flashback {1}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+
+#5547 | C | MV 3 B | Sorcery
+Target opponent discards two cards. You create a 2/2 black Zombie creature token with decayed. (It can't block. When it attacks, sacrifice it at end of combat.)
+
+TARGET card: #4727
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 4727 MV 1
+308 MV 5 AFTER Zombie entering triggers counter
+3580 MV 1 AFTER makes Zombie token
+5547 MV 3 AFTER makes Zombie token

@@ -1,0 +1,105 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#2976 | R | MV 3 UB | Legendary Creature — Human Ninja | 2/4
+Whenever you activate a ninjutsu ability, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order. This ability triggers only once each turn.
+Each creature card in your hand has ninjutsu {2}{U}{B}.
+
+#2200 | R | MV 1 U | Creature — Human Ninja | 1/1
+Ninjutsu {2}{U}{U} ({2}{U}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Flying
+When this creature enters from your hand, if it's attacking, create a token that's a copy of another target attacking creature. The token enters tapped and attacking.
+
+#6860 | C | MV 1 U | Artifact Creature — Moonfolk Rogue | 1/1
+Flying
+When this creature enters, tap target permanent.
+
+#5734 | C | MV 2 U | Artifact Creature — Equipment Beast | 2/1
+Ward {2} (Whenever this permanent becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+Equipped creature gets +2/+1 and has ward {2}.
+Reconfigure {4} ({4}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#2805 | C | MV 2 colourless | Artifact Creature — Frog | 2/1
+When this creature leaves the battlefield, you may pay {2}. If you do, draw a card.
+
+#1106 | C | MV 2 B | Artifact Creature — Insect | 1/1
+When this creature enters, each opponent discards a card.
+
+#2423 | U | MV 2 B | Artifact Creature — Equipment Leech | 2/2
+Lifelink
+Equipped creature has lifelink.
+Reconfigure {4} ({4}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)
+
+#6323 | C | MV 2 B | Instant
+Target creature gets -2/-2 until end of turn. It gets an additional -1/-1 until end of turn for each modified creature you controlled as you cast this spell. (Equipment, Auras you control, and counters are modifications.)
+
+#3341 | R | MV 3 B | Creature — Human Ninja | 3/3
+Ninjutsu {2}{B}
+This creature enters with a menace counter on it.
+Whenever this creature deals combat damage to a player, you may remove a menace counter from it. When you do, that player reveals their hand and you choose a nonland card from it. Exile that card.
+
+#248 | C | MV 3 B | Artifact Creature — Human Rogue | 1/4
+{T}: Create a Treasure token. Activate only if a creature died this turn. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+
+#2659 | C | MV 4 B | Artifact Creature — Rat Ninja | 3/2
+Ninjutsu {1}{B} ({1}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Lifelink
+
+#2659 | C | MV 4 B | Artifact Creature — Rat Ninja | 3/2
+Ninjutsu {1}{B} ({1}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Lifelink
+
+#2659 | C | MV 4 B | Artifact Creature — Rat Ninja | 3/2
+Ninjutsu {1}{B} ({1}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Lifelink
+
+#5318 | U | MV 4 B | Legendary Enchantment Creature — Shrine | 2/2
+Deathtouch
+At the beginning of your end step, you may pay {1}. When you do, destroy target creature with toughness X or less, where X is the number of Shrines you control.
+
+#3251 | C | MV 4 B | Creature — Spirit | 3/4
+When this creature enters, if you control an artifact and an enchantment, you draw a card and you gain 1 life.
+
+#244 | C | MV 4 colourless | Artifact Creature — Construct | 2/4
+When this creature enters, for each kind of counter on target permanent, put another counter of that kind on it or remove one from it.
+
+#5249 | R | MV 5 B | Sorcery
+Target opponent sacrifices a creature of their choice. If they can't, they lose 2 life and you draw a card. Then repeat this process for an enchantment and a planeswalker.
+
+#1153 | C | MV 5 B | Creature — Spirit | 3/3
+When this creature enters, choose one —
+• Return up to one target Ninja or Rogue creature card from your graveyard to your hand.
+• Put target creature card from your graveyard on top of your library.
+
+#1153 | C | MV 5 B | Creature — Spirit | 3/3
+When this creature enters, choose one —
+• Return up to one target Ninja or Rogue creature card from your graveyard to your hand.
+• Put target creature card from your graveyard on top of your library.
+
+#2120 | C | MV 6 B | Creature — Ogre Ninja | 5/5
+Ninjutsu {3}{B} ({3}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+
+#3243 | C | MV 4 U | Artifact — Vehicle | 6/6
+Crew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)
+
+#3220 | C | MV 7 U | Artifact Creature — Crab | 5/7
+Ward {3} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)
+Channel — {2}{U}, Discard this card: Counter target spell or ability unless its controller pays {3}.
+
+#4635 | C | MV 1 B | Instant
+Destroy target creature that was dealt damage this turn.
+Draw a card.
+
+#704 | C | MV 0 colourless | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {U} or {B}.
+
+TARGET card: #2976
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 2976 MV 3
+2200 MV 1 AFTER ninjutsu activation triggers target
+3341 MV 3 AFTER ninjutsu activation triggers target
+2659 MV 4 AFTER ninjutsu activation triggers target
+2120 MV 6 AFTER ninjutsu activation triggers target

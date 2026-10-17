@@ -1,0 +1,100 @@
+DECK (non-basic cards; the rest are basic lands):
+
+#6070 | M | MV 6 B | Sorcery
+Choose a creature type. Return up to two creature cards of that type from your graveyard to the battlefield. If this spell was foretold, return all creature cards of that type from your graveyard to the battlefield instead.
+Foretell {5}{B}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#4154 | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, exile a creature card from your graveyard.
+Target creature gets -3/-3 until end of turn.
+
+#4742 | C | MV 3 B | Snow Creature — Zombie Berserker | 3/2
+{1}{S}: This creature gets +1/+0 and gains menace until end of turn. (It can't be blocked except by two or more creatures. {S} can be paid with one mana from a snow source.)
+
+#5143 | C | MV 5 B | Creature — Zombie Berserker | 4/4
+When this creature enters, up to two target creatures each get +1/+0 and gain indestructible until end of turn. (Damage and effects that say "destroy" don't destroy them.)
+
+#5876 | M | MV 4 B | Creature — Angel Berserker | 4/3
+Flying, lifelink, hexproof from planeswalkers
+Boast — {1}{B}, Sacrifice a creature: Each opponent sacrifices a creature or planeswalker. (Activate only if this creature attacked this turn and only once each turn.)
+
+#6139 | C | MV 4 B | Creature — Zombie Cleric | 3/3
+Boast — {3}{B}: Return target creature card from your graveyard to your hand. (Activate only if this creature attacked this turn and only once each turn.)
+
+#2927 | U | MV 5 B | Sorcery
+Return target creature card from your graveyard to the battlefield. If it's an Elf, create two 1/1 green Elf Warrior creature tokens.
+Foretell {3}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#1755 | C | MV 3 B | Creature — Imp | 2/2
+Whenever you cast your second spell each turn, put a +1/+1 counter on this creature and it gains flying until end of turn.
+
+#4130 | C | MV 1 B | Creature — Elf Berserker | 1/2
+Boast — {1}: Target opponent loses 1 life and you gain 1 life. (Activate only if this creature attacked this turn and only once each turn.)
+
+#1859 | U | MV 4 BR | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — You may sacrifice a creature. When you do, this Saga deals 3 damage to any target.
+II — Each player discards a card.
+III — Return target creature card from your graveyard to the battlefield. Put a +1/+1 counter on it. It gains haste until your next turn.
+
+#6953 | C | MV 2 R | Creature — Demon Berserker | 2/1
+When this creature enters, you may discard a card. If you do, draw a card.
+
+#6953 | C | MV 2 R | Creature — Demon Berserker | 2/1
+When this creature enters, you may discard a card. If you do, draw a card.
+
+#2014 | C | MV 3 R | Creature — Human Berserker | 3/2
+Boast — {1}: Exile the top card of your library. You may play that card this turn. (Activate only if this creature attacked this turn and only once each turn.)
+
+#2014 | C | MV 3 R | Creature — Human Berserker | 3/2
+Boast — {1}: Exile the top card of your library. You may play that card this turn. (Activate only if this creature attacked this turn and only once each turn.)
+
+#2014 | C | MV 3 R | Creature — Human Berserker | 3/2
+Boast — {1}: Exile the top card of your library. You may play that card this turn. (Activate only if this creature attacked this turn and only once each turn.)
+
+#5282 | C | MV 3 R | Creature — Dwarf Berserker | 3/2
+Haste
+
+#6623 | C | MV 2 R | Creature — Dwarf Berserker | 2/2
+{T}: Target creature gains haste until end of turn. (It can attack and {T} this turn.)
+
+#2528 | U | MV 4 R | Creature — Giant Wizard | 4/2
+When this creature enters, it deals X damage to any target, where X is the greatest number of creatures you control that have a creature type in common.
+
+#2528 | U | MV 4 R | Creature — Giant Wizard | 4/2
+When this creature enters, it deals X damage to any target, where X is the greatest number of creatures you control that have a creature type in common.
+
+#1083 | C | MV 3 R | Instant
+~ deals 4 damage to target creature or planeswalker.
+Foretell {R} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#1786 | C | MV 4 R | Sorcery
+Create two 2/1 red Dwarf Berserker creature tokens.
+Foretell {1}{R} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)
+
+#5306 | C | MV 4 R | Creature — Giant Coward | 4/4
+This creature can't block alone.
+
+#2565 | C | MV 0 colourless | Snow Land — Swamp Mountain
+({T}: Add {B} or {R}.)
+This land enters tapped.
+
+#1113 | U | MV 0 colourless | Land
+This land enters tapped.
+{T}: Add {B}.
+{1}{B}{R}{R}, {T}, Sacrifice this land: It deals 3 damage to target player. That player discards a card. Activate only as a sorcery.
+
+TARGET card: #6070
+
+
+ENABLERS IN THIS DECK (id, MV, order relative to target, reason):
+TARGET 6070 MV 6
+6953 MV 2 BEFORE Rummage discards creature; Berserker
+1859 MV 4 BEFORE Saga sacrifices/discards creatures
+5876 MV 4 BEFORE Sacrifice outlet; Berserker to return
+4742 MV 3 BEFORE Zombie Berserker to return
+5143 MV 5 BEFORE Zombie Berserker to return
+4130 MV 1 BEFORE Elf Berserker to return
+2014 MV 3 BEFORE Human Berserker to return
+5282 MV 3 BEFORE Dwarf Berserker to return
+6623 MV 2 BEFORE Dwarf Berserker to return
