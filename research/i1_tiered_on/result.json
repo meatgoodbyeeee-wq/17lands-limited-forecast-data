@@ -1,0 +1,98 @@
+{
+ "n_decks": 90,
+ "n_cards": 30,
+ "ev": {
+  "pearson": 0.571939921479637,
+  "spearman": 0.4576195773081201,
+  "mae_pp": 3.480800807183139
+ },
+ "on1": {
+  "pearson": 0.44090515237165323,
+  "spearman": 0.3336310183558819,
+  "mae_pp": 3.7210497695564144
+ },
+ "on3": {
+  "pearson": 0.30568417106487916,
+  "spearman": 0.3951910361609588,
+  "mae_pp": 4.851897957713101
+ },
+ "off": {
+  "pearson": 0.318034372482114,
+  "spearman": 0.20247258762105882,
+  "mae_pp": 4.818130544710248
+ },
+ "mae_zero": 4.596761419028035,
+ "named": {
+  "ECL|Chronicle of Victory": {
+   "off": -6.0,
+   "on1": -2.0,
+   "on2": 2.17,
+   "on3": 6.5,
+   "ev": 3.23,
+   "actual": 7.9
+  },
+  "FDN|Arahbo, the First Fang": {
+   "off": 3.0,
+   "on1": 5.83,
+   "on2": 8.0,
+   "on3": 9.17,
+   "ev": 5.58,
+   "actual": 6.61
+  },
+  "FDN|Doubling Season": {
+   "off": -9.0,
+   "on1": -4.0,
+   "on2": -0.67,
+   "on3": 3.0,
+   "ev": -2.53,
+   "actual": -15.1
+  },
+  "FDN|Rite of the Dragoncaller": {
+   "off": -8.0,
+   "on1": 3.0,
+   "on2": 9.0,
+   "on3": 13.0,
+   "ev": 4.99,
+   "actual": -3.17
+  },
+  "MSH|Agent Phil Coulson": {
+   "off": -4.0,
+   "on1": 2.5,
+   "on2": 6.67,
+   "on3": 10.17,
+   "ev": 4.85,
+   "actual": 8.09
+  },
+  "MSH|Avengers Assemble!": {
+   "off": -6.0,
+   "on1": 1.83,
+   "on2": 4.83,
+   "on3": 7.5,
+   "ev": 4.57,
+   "actual": 8.3
+  },
+  "TDM|Smile at Death": {
+   "off": -6.0,
+   "on1": 1.5,
+   "on2": 5.83,
+   "on3": 8.67,
+   "ev": 7.39,
+   "actual": -3.58
+  },
+  "VOW|Necroduality": {
+   "off": -8.0,
+   "on1": -2.0,
+   "on2": 3.0,
+   "on3": 6.33,
+   "ev": -0.11,
+   "actual": 5.11
+  }
+ },
+ "rule_f21": {
+  "pearson": false,
+  "spearman": false,
+  "rite_below_aa": false,
+  "adds_information": true,
+  "pass": false
+ }
+}
