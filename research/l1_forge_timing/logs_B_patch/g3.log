@@ -1,0 +1,1787 @@
+START
+DRAW|Island|lb_039_UB
+DRAW|Scientist Supreme of A.I.M.|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Depower|lb_039_UB
+DRAW|Red Room Recruit|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Swamp|lb_033_BR
+DRAW|Visions of Villainy|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Ninja of the Hand|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Crossbones, Malicious Mercenary|lb_033_BR
+DRAW|Unliving Legionnaire|lb_033_BR
+DRAW|Visions of Villainy|lb_039_UB
+DRAW|Madame Masque|lb_033_BR
+DRAW|Swamp|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Machinesmith Automaton|lb_033_BR
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+DRAW|Swamp|lb_033_BR
+DRAW|Island|lb_039_UB
+Visions of Villainy|Draw>LoseLife|MAIN2|9|true|false|0|3|2|true|true|false|lb_039_UB
+DRAW|Viv Vision, Teen Synthezoid|lb_039_UB
+DRAW|Giant-Sized Flying Ant|lb_039_UB
+DRAW|Ronin, Shadow Stalker|lb_033_BR
+DRAW|Island|lb_039_UB
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|11|true|false|0|4|3|true|false|true|lb_039_UB
+DRAW|Lightning Strike|lb_033_BR
+Lightning Strike|DealDamage|DRAW|12|true|false|0|3|5|true|true|false|lb_033_BR
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|12|false|true|0|4|4|true|true|false|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Atlantean Cavalry|lb_039_UB
+DRAW|Misty Knight, Hero for Hire|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|S.H.I.E.L.D. Deployment Drone|lb_039_UB
+DRAW|Swamp|lb_033_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|16|true|false|0|4|4|true|true|false|lb_033_BR
+DRAW|Blazing Crescendo|lb_033_BR
+DRAW|A.I.M. Synthoids|lb_033_BR
+DRAW|Swamp|lb_039_UB
+DRAW|Widow's Bite|lb_033_BR
+END|lb_033_BR
+START
+DRAW|Swamp|lb_032_BG
+DRAW|Hercules, Prince of Power|lb_032_BG
+DRAW|Heroic Feast|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Madame Masque|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Forest|lb_038_RG
+DRAW|Hulk, Gamma Goliath|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Volcanic Villain|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Rapid Rescue|lb_038_RG
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|2|true|false|0|0|0|true|true|false|lb_038_RG
+DRAW|Punishing Punch|lb_032_BG
+DRAW|Hawkeye's Bow|lb_038_RG
+DRAW|Swamp|lb_032_BG
+DRAW|Mountain|lb_038_RG
+Punishing Punch|Pump>DealDamage|UPKEEP|7|true|false|0|1|1|true|true|false|lb_032_BG
+DRAW|Cruel Alliance|lb_032_BG
+DRAW|Super Strength|lb_038_RG
+DRAW|Super Strength|lb_032_BG
+DRAW|Knight of Wundagore|lb_038_RG
+DRAW|Captain America's Shield|lb_032_BG
+DRAW|Mountain|lb_038_RG
+DRAW|Forest|lb_032_BG
+DRAW|Vibranium Energy Daggers|lb_032_BG
+DRAW|White Tiger, Ava Ayala|lb_038_RG
+DRAW|Titania, Rugged Rumbler|lb_032_BG
+END|lb_032_BG
+START
+DRAW|Plains|lb_037_WR
+DRAW|Death to Our Enemies|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Dependable Quinjet|lb_037_WR
+DRAW|Murdock's Crusade|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|HYDRA Assault Robot|lb_037_WR
+DRAW|Pym Particles|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Call Damage Control|lb_031_UG
+DRAW|Super Strength|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Aerial Doombot|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Red Guardian, Super-Soldier|lb_037_WR
+DRAW|Falcon's Wing Harness|lb_031_UG
+DRAW|Mountain|lb_037_WR
+DRAW|Giant Growth|lb_031_UG
+DRAW|Take Up the Shield|lb_037_WR
+DRAW|Forest|lb_031_UG
+DRAW|Lightning Strike|lb_037_WR
+Lightning Strike|DealDamage|DRAW|9|true|false|0|1|1|true|true|false|lb_037_WR
+Giant Growth|Pump|DRAW|9|false|false|1|1|1|true|true|false|lb_031_UG
+DRAW|Punishing Punch|lb_031_UG
+DRAW|Evil's Thrall|lb_037_WR
+DRAW|Hydraulic Helper|lb_031_UG
+Take Up the Shield|PutCounter>Pump|END_OF_TURN|12|false|false|0|1|1|true|true|false|lb_037_WR
+DRAW|Jessica Jones, Private Eye|lb_037_WR
+DRAW|Forest|lb_031_UG
+DRAW|Plains|lb_037_WR
+DRAW|Serpent Specialist|lb_031_UG
+DRAW|Helicarrier Strike|lb_037_WR
+END|lb_037_WR
+START
+DRAW|Swamp|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Viv Vision, Teen Synthezoid|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Iron Fist, Living Weapon|lb_036_BR
+DRAW|Lightning Strike|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Ultron Drone|lb_034_WU
+DRAW|Panther Pounce|lb_034_WU
+DRAW|Quake, Agent of S.H.I.E.L.D.|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Depower|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|S.H.I.E.L.D. Helicarrier|lb_036_BR
+DRAW|Island|lb_034_WU
+DRAW|Swamp|lb_036_BR
+DRAW|Wakandan Drone Flock|lb_034_WU
+Lightning Strike|DealDamage|END_OF_TURN|5|false|false|0|0|1|true|true|false|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Island|lb_034_WU
+DRAW|HYDRA Infiltration|lb_036_BR
+DRAW|Aerial Doombot|lb_034_WU
+DRAW|A.I.M. Synthoids|lb_036_BR
+DRAW|Plains|lb_034_WU
+DRAW|Mountain|lb_036_BR
+DRAW|Plains|lb_034_WU
+DRAW|Ronin, Shadow Stalker|lb_036_BR
+DRAW|Iron Lad, Diverging Destiny|lb_034_WU
+END|lb_034_WU
+START
+DRAW|HYDRA Infiltration|lb_030_WB
+DRAW|Brave Brawler|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Robot Domination|lb_030_WB
+DRAW|H.E.R.B.I.E. Scout Unit|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Helicarrier Strike|lb_030_WB
+DRAW|Agent 13, Sharon Carter|lb_035_WU
+DRAW|Ultron Drone|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Iron Lad, Diverging Destiny|lb_035_WU
+DRAW|Plains|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lb_035_WU
+DRAW|Justice, Vance Astrovik|lb_035_WU
+DRAW|Baron Helmut Zemo|lb_030_WB
+DRAW|Patriot, Shield Wielder|lb_035_WU
+DRAW|Swamp|lb_030_WB
+DRAW|Island|lb_035_WU
+Helicarrier Strike|DealDamage|COMBAT_DECLARE_ATTACKERS|6|false|true|0|0|3|true|true|false|lb_030_WB
+DRAW|Roxxon Brutes|lb_030_WB
+DRAW|Island|lb_035_WU
+DRAW|Ninja of the Hand|lb_030_WB
+DRAW|Island|lb_035_WU
+DRAW|Swamp|lb_030_WB
+DRAW|Invisible Woman, Sue Storm|lb_035_WU
+DRAW|Hydraulic Helper|lb_035_WU
+DRAW|Plains|lb_030_WB
+DRAW|Plains|lb_035_WU
+DRAW|Madame Masque|lb_030_WB
+DRAW|Murdock's Crusade|lb_030_WB
+DRAW|Frozen in Ice|lb_035_WU
+END|lb_035_WU
+START
+DRAW|Swamp|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Super-Adaptoid|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Kingpin's Enforcers|lb_039_UB
+DRAW|Depower|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Swamp|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Punishing Punch|lb_032_BG
+DRAW|Ultron Drone|lb_032_BG
+DRAW|Giant Growth|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Heroic Feast|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Visions of Villainy|lb_039_UB
+DRAW|Swamp|lb_032_BG
+DRAW|Swamp|lb_039_UB
+DRAW|Forest|lb_032_BG
+DRAW|Iron Lad, Diverging Destiny|lb_039_UB
+Punishing Punch|Pump>DealDamage|UPKEEP|8|true|false|0|1|2|true|true|false|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Hour of Defeat|lb_039_UB
+Hour of Defeat|Destroy>Surveil|COMBAT_BEGIN|9|true|true|0|1|1|true|true|false|lb_039_UB
+DRAW|Savage Land Dinosaur|lb_032_BG
+DRAW|Red Room Recruit|lb_039_UB
+DRAW|Cruel Alliance|lb_039_UB
+Visions of Villainy|Draw>LoseLife|MAIN2|11|true|false|0|2|0|true|true|false|lb_039_UB
+DRAW|I Am Iron Man|lb_039_UB
+DRAW|Giant-Sized Flying Ant|lb_039_UB
+DRAW|Forest|lb_032_BG
+DRAW|Swamp|lb_039_UB
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|13|true|false|0|2|1|true|false|true|lb_039_UB
+DRAW|Yellowjacket, Heartless Marauder|lb_032_BG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|14|false|true|0|3|1|true|true|false|lb_039_UB
+DRAW|Frozen in Ice|lb_039_UB
+DRAW|Trickster's Stratagem|lb_039_UB
+DRAW|Hercules, Prince of Power|lb_032_BG
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+I Am Iron Man|Animate>Draw|COMBAT_BEGIN|17|true|true|0|3|2|true|true|false|lb_039_UB
+DRAW|Baron Strucker, HYDRA Overlord|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Cruel Alliance|lb_032_BG
+DRAW|Swamp|lb_039_UB
+DRAW|HYDRA Troopers|lb_032_BG
+DRAW|Island|lb_039_UB
+DRAW|Swamp|lb_032_BG
+DRAW|Swamp|lb_039_UB
+DRAW|Forest|lb_032_BG
+DRAW|Unliving Legionnaire|lb_039_UB
+DRAW|Stolen Stark Tech|lb_039_UB
+DRAW|Captain America's Shield|lb_032_BG
+DRAW|Atlantean Cavalry|lb_039_UB
+DRAW|Swamp|lb_039_UB
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|27|false|true|0|3|4|true|true|false|lb_032_BG
+DRAW|Swamp|lb_039_UB
+END|lb_039_UB
+START
+DRAW|Mountain|lb_037_WR
+DRAW|Take Up the Shield|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|HYDRA Assault Robot|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Colleen Wing, Street Samurai|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Mountain|lb_033_BR
+DRAW|Misty Knight, Hero for Hire|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|A.I.M. Synthoids|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Visions of Villainy|lb_033_BR
+DRAW|Blazing Crescendo|lb_037_WR
+DRAW|Death to Our Enemies|lb_033_BR
+DRAW|Plains|lb_037_WR
+DRAW|Widow's Bite|lb_033_BR
+DRAW|Political Triumph|lb_037_WR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|6|true|true|0|1|2|true|true|false|lb_037_WR
+DRAW|Mountain|lb_033_BR
+DRAW|Crimson Operative|lb_037_WR
+DRAW|Vibranium Energy Daggers|lb_033_BR
+DRAW|Agents of S.H.I.E.L.D.|lb_037_WR
+DRAW|Madame Masque|lb_033_BR
+DRAW|Lightning Strike|lb_033_BR
+DRAW|Plains|lb_037_WR
+Take Up the Shield|PutCounter>Pump|COMBAT_DECLARE_BLOCKERS|12|true|true|0|4|3|true|true|false|lb_037_WR
+DRAW|Swamp|lb_033_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|13|true|false|0|1|2|true|true|false|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Death to Our Enemies|lb_037_WR
+DRAW|Crossbones, Malicious Mercenary|lb_033_BR
+DRAW|Kree Commandos|lb_037_WR
+DRAW|Raft Security Officer|lb_037_WR
+DRAW|Swamp|lb_033_BR
+DRAW|Plains|lb_037_WR
+DRAW|Unliving Legionnaire|lb_033_BR
+DRAW|Agent 13, Sharon Carter|lb_037_WR
+DRAW|Stolen Stark Tech|lb_033_BR
+Stolen Stark Tech|PermanentNoncreature|MAIN1|21|true|false|0|5|5|true|false|true|lb_033_BR
+Widow's Bite|Charm>Pump|COMBAT_DECLARE_ATTACKERS|21|true|true|0|5|5|true|true|false|lb_033_BR
+END|lb_033_BR
+START
+DRAW|Swamp|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Misty Knight, Hero for Hire|lb_036_BR
+DRAW|Stark Industries Executive|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|S.H.I.E.L.D. Helicarrier|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Forest|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Restorative Technique|lb_038_RG
+DRAW|Stark Industries Executive|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Hulk, Gamma Goliath|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Mountain|lb_036_BR
+DRAW|Knight of Wundagore|lb_038_RG
+DRAW|Ultron Drone|lb_036_BR
+DRAW|Viv Vision, Teen Synthezoid|lb_038_RG
+DRAW|Dependable Quinjet|lb_036_BR
+DRAW|Rapid Rescue|lb_038_RG
+DRAW|Mountain|lb_036_BR
+DRAW|Forest|lb_038_RG
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|10|true|false|0|4|5|true|true|false|lb_038_RG
+DRAW|Mountain|lb_036_BR
+DRAW|Forest|lb_038_RG
+DRAW|Vibranium Energy Daggers|lb_036_BR
+DRAW|Mountain|lb_038_RG
+DRAW|Hawkeye's Bow|lb_038_RG
+END|lb_038_RG
+START
+DRAW|Plains|lb_030_WB
+DRAW|H.E.R.B.I.E. Scout Unit|lb_030_WB
+DRAW|Roxxon Brutes|lb_030_WB
+DRAW|Web Up|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Forest|lb_031_UG
+DRAW|Hydraulic Helper|lb_031_UG
+DRAW|White Tiger, Ava Ayala|lb_031_UG
+DRAW|Aerial Doombot|lb_031_UG
+DRAW|A.I.M. Synthoids|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Widow's Bite|lb_030_WB
+DRAW|Forest|lb_031_UG
+DRAW|Captain Mar-Vell, Space-Born|lb_030_WB
+Widow's Bite|Charm>Pump|MAIN1|4|true|false|0|0|2|true|true|false|lb_030_WB
+DRAW|Island|lb_031_UG
+DRAW|Baron Helmut Zemo|lb_030_WB
+DRAW|Super Strength|lb_031_UG
+DRAW|Swamp|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Island|lb_031_UG
+DRAW|Robot Domination|lb_030_WB
+DRAW|Vibranium Energy Daggers|lb_031_UG
+DRAW|Plains|lb_030_WB
+DRAW|Forest|lb_031_UG
+DRAW|Wakandan Drone Flock|lb_030_WB
+DRAW|Frozen in Ice|lb_031_UG
+END|lb_031_UG
+START
+DRAW|Island|lb_035_WU
+DRAW|Night Nurse, Healer of Heroes|lb_035_WU
+DRAW|Invisible Woman, Sue Storm|lb_035_WU
+DRAW|Agent of Atlas|lb_035_WU
+DRAW|Justice, Vance Astrovik|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Super Suit|lb_035_WU
+DRAW|Justice, Vance Astrovik|lb_034_WU
+DRAW|Mockingbird, Ace Agent|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Falcon's Wing Harness|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|S.H.I.E.L.D. Spy Kit|lb_034_WU
+DRAW|Island|lb_035_WU
+DRAW|Ultron Drone|lb_034_WU
+DRAW|Hydraulic Helper|lb_035_WU
+Super Suit|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|0|true|false|true|lb_035_WU
+DRAW|Plains|lb_034_WU
+DRAW|Mockingbird, Ace Agent|lb_035_WU
+Super Suit|PermanentNoncreature|COMBAT_BEGIN|6|true|true|0|0|1|true|false|true|lb_035_WU
+DRAW|Dependable Quinjet|lb_034_WU
+DRAW|Captain Mar-Vell, Space-Born|lb_035_WU
+DRAW|Panther Pounce|lb_034_WU
+DRAW|Agent 13, Sharon Carter|lb_035_WU
+DRAW|Plains|lb_034_WU
+DRAW|Plains|lb_035_WU
+Night Nurse, Healer of Heroes|PermanentCreature|MAIN1|12|true|false|0|1|3|true|false|true|lb_035_WU
+DRAW|Island|lb_034_WU
+DRAW|Frozen in Ice|lb_035_WU
+DRAW|Agent of Atlas|lb_034_WU
+DRAW|A.I.M. Synthoids|lb_035_WU
+DRAW|Bold Biochemist|lb_034_WU
+END|lb_034_WU
+START
+DRAW|Swamp|lb_039_UB
+DRAW|Stolen Stark Tech|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Trickster's Stratagem|lb_039_UB
+DRAW|S.H.I.E.L.D. Deployment Drone|lb_039_UB
+DRAW|Scientist Supreme of A.I.M.|lb_039_UB
+DRAW|Ronin, Shadow Stalker|lb_039_UB
+DRAW|Plains|lb_037_WR
+DRAW|Crimson Operative|lb_037_WR
+DRAW|Crowd of True Believers|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Dependable Quinjet|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Raft Security Officer|lb_037_WR
+DRAW|HYDRA Assault Robot|lb_037_WR
+DRAW|Island|lb_039_UB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|0|1|true|false|true|lb_039_UB
+DRAW|Mountain|lb_037_WR
+DRAW|Atlantean Cavalry|lb_039_UB
+DRAW|Agent 13, Sharon Carter|lb_037_WR
+DRAW|Baron Strucker, HYDRA Overlord|lb_039_UB
+DRAW|Kree Commandos|lb_037_WR
+DRAW|Frozen in Ice|lb_039_UB
+DRAW|Team Tactics|lb_037_WR
+DRAW|Viv Vision, Teen Synthezoid|lb_039_UB
+DRAW|Agents of S.H.I.E.L.D.|lb_037_WR
+DRAW|Visions of Villainy|lb_039_UB
+DRAW|Colleen Wing, Street Samurai|lb_037_WR
+DRAW|Swamp|lb_039_UB
+DRAW|Plains|lb_037_WR
+Team Tactics|Pump>Pump|COMBAT_DECLARE_BLOCKERS|16|true|true|0|8|6|true|true|false|lb_037_WR
+DRAW|Death to Our Enemies|lb_037_WR
+DRAW|Super-Adaptoid|lb_039_UB
+DRAW|Plains|lb_037_WR
+DRAW|Blazing Crescendo|lb_037_WR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|18|true|true|0|6|5|true|true|false|lb_037_WR
+END|lb_037_WR
+START
+DRAW|Mountain|lb_036_BR
+DRAW|The Masters of Evil|lb_036_BR
+DRAW|Hire a Crew|lb_036_BR
+DRAW|Ronin, Shadow Stalker|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Hawkeye's Bow|lb_036_BR
+DRAW|A.I.M. Synthoids|lb_036_BR
+DRAW|HYDRA Troopers|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Unliving Legionnaire|lb_032_BG
+DRAW|Captain America's Shield|lb_032_BG
+DRAW|Vibranium Energy Daggers|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Swamp|lb_036_BR
+DRAW|Madame Masque|lb_032_BG
+DRAW|Viv Vision, Teen Synthezoid|lb_036_BR
+DRAW|Super Strength|lb_032_BG
+DRAW|Ultron Drone|lb_036_BR
+DRAW|Savage Land Dinosaur|lb_032_BG
+DRAW|Iron Fist, Living Weapon|lb_036_BR
+DRAW|Visions of Villainy|lb_032_BG
+DRAW|Mountain|lb_036_BR
+DRAW|Forest|lb_032_BG
+DRAW|Agents of HYDRA|lb_036_BR
+DRAW|Forest|lb_032_BG
+DRAW|Unliving Legionnaire|lb_036_BR
+END|lb_036_BR
+START
+DRAW|Raft Security Officer|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Murdock's Crusade|lb_030_WB
+DRAW|Helicarrier Strike|lb_030_WB
+DRAW|Roxxon Brutes|lb_030_WB
+DRAW|Hour of Defeat|lb_030_WB
+DRAW|Captain Mar-Vell, Space-Born|lb_030_WB
+DRAW|Blazing Crescendo|lb_033_BR
+DRAW|Machinesmith Automaton|lb_033_BR
+DRAW|Vibranium Energy Daggers|lb_033_BR
+DRAW|Volcanic Villain|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Ultron Drone|lb_033_BR
+DRAW|Panther Pounce|lb_030_WB
+DRAW|Dark Deed|lb_030_WB
+DRAW|Murdock's Crusade|lb_030_WB
+DRAW|Widow's Bite|lb_030_WB
+DRAW|H.E.R.B.I.E. Scout Unit|lb_030_WB
+DRAW|Stolen Stark Tech|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Invisible Woman, Sue Storm|lb_030_WB
+DRAW|HYDRA Infiltration|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Baron Helmut Zemo|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|HYDRA Infiltration|lb_033_BR
+DRAW|Roxxon Brutes|lb_030_WB
+DRAW|Stolen Stark Tech|lb_033_BR
+DRAW|Swamp|lb_030_WB
+DRAW|Hour of Defeat|lb_030_WB
+DRAW|Unliving Legionnaire|lb_033_BR
+DRAW|Plains|lb_030_WB
+DRAW|Mountain|lb_033_BR
+DRAW|Murdock's Crusade|lb_030_WB
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_ATTACKERS|10|true|true|0|0|1|true|true|false|lb_030_WB
+DRAW|Yellowjacket, Heartless Marauder|lb_033_BR
+DRAW|H.E.R.B.I.E. Scout Unit|lb_030_WB
+DRAW|Captain Mar-Vell, Space-Born|lb_030_WB
+DRAW|Misty Knight, Hero for Hire|lb_033_BR
+DRAW|Stolen Stark Tech|lb_030_WB
+Stolen Stark Tech|PermanentNoncreature|MAIN1|14|true|false|0|1|0|true|false|true|lb_030_WB
+DRAW|Roxxon Brutes|lb_033_BR
+DRAW|Plains|lb_030_WB
+DRAW|Ronin, Shadow Stalker|lb_033_BR
+DRAW|Swamp|lb_030_WB
+DRAW|HYDRA Assault Robot|lb_033_BR
+DRAW|Swamp|lb_030_WB
+END|lb_030_WB
+START
+DRAW|Plains|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Luke Cage, Power Man|lb_035_WU
+DRAW|Super Suit|lb_035_WU
+DRAW|Plains|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Plains|lb_035_WU
+DRAW|Photon Blast Barrage|lb_038_RG
+DRAW|Punishing Punch|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Crimson Operative|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Volcanic Villain|lb_038_RG
+DRAW|Plains|lb_035_WU
+DRAW|Knight of Wundagore|lb_038_RG
+DRAW|Plains|lb_035_WU
+Super Suit|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|1|true|false|true|lb_035_WU
+DRAW|Rapid Rescue|lb_038_RG
+DRAW|Patriot, Shield Wielder|lb_035_WU
+Punishing Punch|Pump>DealDamage|UPKEEP|7|true|false|0|2|1|true|true|false|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Island|lb_035_WU
+DRAW|Hulk, Gamma Goliath|lb_038_RG
+DRAW|Dependable Quinjet|lb_035_WU
+DRAW|Restorative Technique|lb_038_RG
+DRAW|A.I.M. Synthoids|lb_035_WU
+DRAW|Mountain|lb_038_RG
+END|lb_038_RG
+START
+DRAW|Hydraulic Helper|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Red Guardian, Super-Soldier|lb_034_WU
+DRAW|Dependable Quinjet|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Kid Loki|lb_034_WU
+DRAW|Hero in Training|lb_034_WU
+DRAW|Forest|lb_031_UG
+DRAW|Futurist Forge|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Undercover Skrull|lb_031_UG
+DRAW|Frozen in Ice|lb_031_UG
+DRAW|Bold Biochemist|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Wakandan Royal Guard|lb_031_UG
+DRAW|Island|lb_034_WU
+DRAW|Forest|lb_031_UG
+DRAW|Plains|lb_034_WU
+DRAW|Iron Lad, Diverging Destiny|lb_034_WU
+DRAW|Aerial Doombot|lb_031_UG
+DRAW|Island|lb_034_WU
+DRAW|Go Nuts!|lb_031_UG
+DRAW|Wakandan Drone Flock|lb_034_WU
+DRAW|Island|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Kree Commandos|lb_034_WU
+DRAW|Pym Particles|lb_031_UG
+DRAW|Mockingbird, Ace Agent|lb_034_WU
+END|lb_034_WU
+START
+DRAW|Cruel Alliance|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Depower|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Iron Lad, Diverging Destiny|lb_039_UB
+DRAW|Mountain|lb_036_BR
+DRAW|Lightning Strike|lb_036_BR
+DRAW|Roxxon Brutes|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Visions of Villainy|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Vision of Love|lb_036_BR
+DRAW|Stark Industries Executive|lb_036_BR
+DRAW|Giant-Sized Flying Ant|lb_039_UB
+DRAW|Mountain|lb_036_BR
+DRAW|Atlantean Cavalry|lb_039_UB
+Lightning Strike|DealDamage|MAIN2|5|false|false|0|1|1|true|true|false|lb_036_BR
+DRAW|Unliving Legionnaire|lb_036_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|6|true|false|0|1|0|true|true|false|lb_036_BR
+DRAW|Human Torch, Johnny Storm|lb_036_BR
+DRAW|Iron Fist, Living Weapon|lb_036_BR
+DRAW|Swamp|lb_039_UB
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|7|true|false|0|0|1|true|false|true|lb_039_UB
+DRAW|Vibranium Energy Daggers|lb_036_BR
+DRAW|Viv Vision, Teen Synthezoid|lb_039_UB
+DRAW|HYDRA Infiltration|lb_036_BR
+DRAW|Island|lb_039_UB
+DRAW|Ultron Drone|lb_036_BR
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+DRAW|Yellowjacket, Heartless Marauder|lb_036_BR
+DRAW|Visions of Villainy|lb_039_UB
+Visions of Villainy|Draw>LoseLife|MAIN2|15|true|false|0|3|1|true|true|false|lb_039_UB
+DRAW|Baron Strucker, HYDRA Overlord|lb_039_UB
+DRAW|Red Room Recruit|lb_039_UB
+DRAW|Swamp|lb_036_BR
+DRAW|S.H.I.E.L.D. Deployment Drone|lb_039_UB
+DRAW|Swamp|lb_036_BR
+DRAW|Scientist Supreme of A.I.M.|lb_039_UB
+END|lb_039_UB
+START
+DRAW|Baron Helmut Zemo|lb_030_WB
+DRAW|Robot Domination|lb_030_WB
+DRAW|Panther Pounce|lb_030_WB
+DRAW|Helicarrier Strike|lb_030_WB
+DRAW|Roxxon Brutes|lb_030_WB
+DRAW|Murdock's Crusade|lb_030_WB
+DRAW|HYDRA Infiltration|lb_030_WB
+DRAW|Take Up the Shield|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Luke Cage, Power Man|lb_037_WR
+DRAW|Colleen Wing, Street Samurai|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Madame Masque|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|S.H.I.E.L.D. Spy Kit|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|HYDRA Infiltration|lb_030_WB
+DRAW|Hour of Defeat|lb_030_WB
+DRAW|Panther Pounce|lb_030_WB
+DRAW|K'un-Lun Warrior|lb_037_WR
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lb_030_WB
+DRAW|Evil's Thrall|lb_037_WR
+DRAW|Stolen Stark Tech|lb_030_WB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|5|true|true|0|0|1|true|false|true|lb_030_WB
+DRAW|Mountain|lb_037_WR
+DRAW|Plains|lb_030_WB
+Take Up the Shield|PutCounter>Pump|END_OF_TURN|7|false|false|0|1|1|true|true|false|lb_037_WR
+DRAW|Blazing Crescendo|lb_037_WR
+DRAW|Murdock's Crusade|lb_030_WB
+DRAW|S.H.I.E.L.D. Spy Kit|lb_037_WR
+DRAW|Plains|lb_030_WB
+DRAW|Crowd of True Believers|lb_037_WR
+Hour of Defeat|Destroy>Surveil|UPKEEP|13|true|false|0|1|2|true|true|false|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Kree Commandos|lb_037_WR
+DRAW|Dark Deed|lb_030_WB
+DRAW|Mountain|lb_037_WR
+DRAW|Plains|lb_030_WB
+DRAW|Jessica Jones, Private Eye|lb_037_WR
+DRAW|Swamp|lb_030_WB
+DRAW|Raft Security Officer|lb_037_WR
+END|lb_037_WR
+START
+DRAW|Panther Pounce|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Plains|lb_035_WU
+DRAW|Depower|lb_035_WU
+DRAW|Justice, Vance Astrovik|lb_035_WU
+DRAW|Hydraulic Helper|lb_035_WU
+DRAW|Swamp|lb_032_BG
+DRAW|Ninja of the Hand|lb_032_BG
+DRAW|Super Strength|lb_032_BG
+DRAW|Moonstone, Harsh Mistress|lb_032_BG
+DRAW|Visions of Villainy|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Titania, Rugged Rumbler|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Super Suit|lb_035_WU
+Super Suit|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|0|0|true|false|true|lb_035_WU
+DRAW|Ultron Drone|lb_032_BG
+DRAW|Plains|lb_035_WU
+DRAW|Forest|lb_032_BG
+DRAW|Pym Particles|lb_035_WU
+DRAW|Forest|lb_032_BG
+DRAW|Island|lb_035_WU
+DRAW|Dependable Quinjet|lb_032_BG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|10|false|true|0|2|1|true|true|false|lb_035_WU
+DRAW|Plains|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Swamp|lb_032_BG
+DRAW|Frozen in Ice|lb_035_WU
+DRAW|HYDRA Troopers|lb_032_BG
+DRAW|Island|lb_035_WU
+DRAW|Punishing Punch|lb_032_BG
+Punishing Punch|Pump>DealDamage|DRAW|16|true|false|0|3|2|true|true|false|lb_032_BG
+DRAW|Crowd of True Believers|lb_035_WU
+DRAW|Swamp|lb_032_BG
+END|lb_032_BG
+START
+DRAW|Island|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Crowd of True Believers|lb_034_WU
+DRAW|Kree Commandos|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Mountain|lb_033_BR
+DRAW|Crossbones, Malicious Mercenary|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Yellowjacket, Heartless Marauder|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Plains|lb_034_WU
+DRAW|Mountain|lb_033_BR
+DRAW|Hydraulic Helper|lb_034_WU
+DRAW|Blazing Crescendo|lb_033_BR
+DRAW|Plains|lb_034_WU
+DRAW|Ultron Drone|lb_033_BR
+DRAW|Plains|lb_034_WU
+DRAW|Mountain|lb_033_BR
+DRAW|Hero in Training|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|Volcanic Villain|lb_033_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|12|true|true|0|4|4|true|true|false|lb_033_BR
+DRAW|Panther Pounce|lb_034_WU
+DRAW|Swamp|lb_033_BR
+END|lb_033_BR
+START
+DRAW|Island|lb_031_UG
+DRAW|The Wondrous Wasp|lb_031_UG
+DRAW|Atlantis Attacks|lb_031_UG
+DRAW|Giant Growth|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|A.I.M. Synthoids|lb_031_UG
+DRAW|Serpent Specialist|lb_031_UG
+DRAW|Call Damage Control|lb_038_RG
+DRAW|K'un-Lun Warrior|lb_038_RG
+DRAW|Arc Reactor|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Rapid Rescue|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Forest|lb_038_RG
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|1|true|false|0|0|0|true|true|false|lb_038_RG
+DRAW|Call Damage Control|lb_031_UG
+DRAW|Forest|lb_038_RG
+DRAW|Island|lb_031_UG
+DRAW|Super Strength|lb_038_RG
+DRAW|Go Nuts!|lb_031_UG
+The Wondrous Wasp|PermanentCreature|DRAW|6|true|false|0|1|1|true|false|true|lb_031_UG
+DRAW|Mountain|lb_038_RG
+DRAW|Island|lb_031_UG
+DRAW|Knight of Wundagore|lb_038_RG
+DRAW|Forest|lb_031_UG
+DRAW|Forest|lb_038_RG
+DRAW|Frozen in Ice|lb_031_UG
+DRAW|Abomination, Terrifying Titan|lb_038_RG
+DRAW|Island|lb_031_UG
+DRAW|Mountain|lb_038_RG
+DRAW|Forest|lb_031_UG
+DRAW|Stark Industries Executive|lb_038_RG
+DRAW|Undercover Skrull|lb_031_UG
+DRAW|Forest|lb_038_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lb_031_UG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|20|true|true|0|2|2|true|true|false|lb_031_UG
+END|lb_031_UG
+START
+DRAW|Visions of Villainy|lb_039_UB
+DRAW|Baron Strucker, HYDRA Overlord|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+DRAW|Murdock's Crusade|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Raft Security Officer|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Hour of Defeat|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Island|lb_039_UB
+DRAW|Plains|lb_030_WB
+DRAW|Cruel Alliance|lb_039_UB
+DRAW|Plains|lb_030_WB
+DRAW|I Am Iron Man|lb_039_UB
+DRAW|Ninja of the Hand|lb_030_WB
+Hour of Defeat|Destroy>Surveil|MAIN1|7|true|false|0|1|1|true|true|false|lb_030_WB
+DRAW|Trickster's Stratagem|lb_039_UB
+DRAW|Dark Deed|lb_030_WB
+DRAW|Atlantis Attacks|lb_039_UB
+DRAW|Madame Masque|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Kingpin's Enforcers|lb_039_UB
+DRAW|Swamp|lb_039_UB
+I Am Iron Man|Animate>Draw|COMBAT_BEGIN|12|true|true|0|2|3|true|true|false|lb_039_UB
+DRAW|Atlantean Cavalry|lb_039_UB
+DRAW|S.H.I.E.L.D. Spy Kit|lb_030_WB
+DRAW|Super-Adaptoid|lb_039_UB
+Visions of Villainy|Draw>LoseLife|MAIN2|14|true|false|0|2|3|true|true|false|lb_039_UB
+DRAW|S.H.I.E.L.D. Deployment Drone|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Swamp|lb_030_WB
+DRAW|Viv Vision, Teen Synthezoid|lb_039_UB
+DRAW|Scientist Supreme of A.I.M.|lb_039_UB
+DRAW|Stolen Stark Tech|lb_030_WB
+Stolen Stark Tech|PermanentNoncreature|MAIN1|17|true|false|0|3|6|true|false|true|lb_030_WB
+DRAW|Island|lb_039_UB
+DRAW|Invisible Woman, Sue Storm|lb_030_WB
+DRAW|Depower|lb_039_UB
+DRAW|Web Up|lb_030_WB
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|21|false|true|0|2|3|true|true|false|lb_039_UB
+DRAW|Red Room Recruit|lb_039_UB
+DRAW|Hour of Defeat|lb_039_UB
+Hour of Defeat|Destroy>Surveil|DRAW|22|true|false|0|1|2|true|true|false|lb_039_UB
+DRAW|Captain Mar-Vell, Space-Born|lb_030_WB
+DRAW|Giant-Sized Flying Ant|lb_039_UB
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|24|true|false|0|1|2|true|false|true|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Panther Pounce|lb_030_WB
+DRAW|Iron Lad, Diverging Destiny|lb_039_UB
+DRAW|Helicarrier Strike|lb_030_WB
+DRAW|Swamp|lb_039_UB
+DRAW|Brave Brawler|lb_030_WB
+END|lb_030_WB
+START
+DRAW|Dependable Quinjet|lb_035_WU
+DRAW|Crowd of True Believers|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Mockingbird, Ace Agent|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Ultron Drone|lb_036_BR
+DRAW|Roxxon Brutes|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Dependable Quinjet|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Hire a Crew|lb_036_BR
+DRAW|Iron Fist, Living Weapon|lb_036_BR
+DRAW|Plains|lb_035_WU
+DRAW|Vision of Love|lb_036_BR
+DRAW|Captain Mar-Vell, Space-Born|lb_035_WU
+DRAW|Mountain|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Kid Loki|lb_035_WU
+DRAW|Stark Industries Executive|lb_036_BR
+DRAW|Agent of Atlas|lb_035_WU
+DRAW|Viv Vision, Teen Synthezoid|lb_036_BR
+DRAW|Plains|lb_035_WU
+DRAW|Vibranium Energy Daggers|lb_036_BR
+DRAW|Island|lb_035_WU
+DRAW|Hawkeye's Bow|lb_036_BR
+DRAW|Iron Lad, Diverging Destiny|lb_035_WU
+DRAW|Mountain|lb_036_BR
+DRAW|Plains|lb_035_WU
+DRAW|Super Suit|lb_035_WU
+Super Suit|PermanentNoncreature|MAIN2|17|true|false|0|5|3|true|false|true|lb_035_WU
+DRAW|Yellowjacket, Heartless Marauder|lb_036_BR
+DRAW|Night Nurse, Healer of Heroes|lb_035_WU
+Night Nurse, Healer of Heroes|PermanentCreature|COMBAT_DECLARE_ATTACKERS|19|true|true|0|4|5|true|false|true|lb_035_WU
+END|lb_035_WU
+START
+DRAW|Island|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Panther Pounce|lb_034_WU
+DRAW|Brave Brawler|lb_034_WU
+DRAW|Kid Loki|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|Super Intelligence|lb_034_WU
+DRAW|Red Guardian, Super-Soldier|lb_037_WR
+DRAW|Kree Commandos|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Death to Our Enemies|lb_037_WR
+DRAW|Agents of S.H.I.E.L.D.|lb_037_WR
+DRAW|Colleen Wing, Street Samurai|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Crowd of True Believers|lb_034_WU
+DRAW|Evil's Thrall|lb_037_WR
+DRAW|S.H.I.E.L.D. Spy Kit|lb_034_WU
+DRAW|Mountain|lb_037_WR
+DRAW|Island|lb_034_WU
+DRAW|Dependable Quinjet|lb_037_WR
+DRAW|Island|lb_034_WU
+DRAW|Mountain|lb_037_WR
+DRAW|Island|lb_034_WU
+DRAW|Plains|lb_037_WR
+DRAW|Plains|lb_034_WU
+DRAW|Plains|lb_037_WR
+Red Guardian, Super-Soldier|PermanentCreature|MAIN2|13|true|false|0|2|3|true|false|true|lb_037_WR
+DRAW|Ultron Drone|lb_034_WU
+DRAW|Agent 13, Sharon Carter|lb_037_WR
+DRAW|Kree Commandos|lb_034_WU
+DRAW|Mountain|lb_037_WR
+DRAW|Hero in Training|lb_034_WU
+DRAW|Hydraulic Helper|lb_034_WU
+DRAW|Plains|lb_037_WR
+DRAW|Quake, Agent of S.H.I.E.L.D.|lb_034_WU
+END|lb_034_WU
+START
+DRAW|Serpent Specialist|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|A.I.M. Synthoids|lb_031_UG
+DRAW|Vibranium Energy Daggers|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Swamp|lb_032_BG
+DRAW|Pet Avengers|lb_032_BG
+DRAW|Titania, Rugged Rumbler|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Hercules, Prince of Power|lb_032_BG
+DRAW|Madame Masque|lb_032_BG
+DRAW|Kingpin's Enforcers|lb_032_BG
+DRAW|Bold Biochemist|lb_031_UG
+DRAW|Forest|lb_032_BG
+DRAW|Island|lb_031_UG
+DRAW|Ultron Drone|lb_032_BG
+DRAW|Wakandan Royal Guard|lb_031_UG
+DRAW|HYDRA Troopers|lb_032_BG
+DRAW|H.E.R.B.I.E. Scout Unit|lb_031_UG
+DRAW|Swamp|lb_032_BG
+DRAW|Island|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Forest|lb_032_BG
+DRAW|Island|lb_031_UG
+DRAW|Moonstone, Harsh Mistress|lb_032_BG
+DRAW|Call Damage Control|lb_031_UG
+DRAW|Vibranium Energy Daggers|lb_032_BG
+DRAW|Super Strength|lb_031_UG
+DRAW|Undercover Skrull|lb_031_UG
+DRAW|Giant Growth|lb_031_UG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|17|true|true|0|3|2|true|true|false|lb_031_UG
+END|lb_031_UG
+START
+DRAW|Undercover Skrull|lb_038_RG
+DRAW|Abomination, Terrifying Titan|lb_038_RG
+DRAW|Rapid Rescue|lb_038_RG
+DRAW|Hire a Crew|lb_038_RG
+DRAW|Punishing Punch|lb_038_RG
+DRAW|Photon Blast Barrage|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Lightning Strike|lb_033_BR
+DRAW|Death to Our Enemies|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Volcanic Villain|lb_033_BR
+DRAW|HYDRA Infiltration|lb_033_BR
+DRAW|Roxxon Brutes|lb_033_BR
+DRAW|Yellowjacket, Heartless Marauder|lb_033_BR
+DRAW|Mountain|lb_038_RG
+DRAW|Knight of Wundagore|lb_038_RG
+DRAW|Volcanic Villain|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Blazing Crescendo|lb_038_RG
+DRAW|Hawkeye, Young Avenger|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Mountain|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Machinesmith Automaton|lb_033_BR
+DRAW|Ronin, Shadow Stalker|lb_033_BR
+DRAW|HYDRA Infiltration|lb_033_BR
+DRAW|Kingpin's Enforcers|lb_033_BR
+DRAW|Ninja of the Hand|lb_033_BR
+DRAW|Forest|lb_038_RG
+DRAW|Mountain|lb_033_BR
+DRAW|Iron Fist, Living Weapon|lb_038_RG
+DRAW|Unliving Legionnaire|lb_033_BR
+DRAW|Forest|lb_038_RG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|7|true|true|0|2|1|true|true|false|lb_038_RG
+DRAW|Mountain|lb_033_BR
+DRAW|Hawkeye's Bow|lb_038_RG
+DRAW|Mountain|lb_033_BR
+DRAW|Undercover Skrull|lb_038_RG
+DRAW|Lightning Strike|lb_033_BR
+Lightning Strike|DealDamage|DRAW|12|true|false|0|2|3|true|true|false|lb_033_BR
+DRAW|Forest|lb_038_RG
+DRAW|Mountain|lb_033_BR
+DRAW|Mountain|lb_038_RG
+DRAW|Roxxon Brutes|lb_033_BR
+DRAW|Mountain|lb_038_RG
+DRAW|Swamp|lb_033_BR
+DRAW|Mountain|lb_038_RG
+DRAW|Visions of Villainy|lb_033_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|20|true|false|0|6|2|true|true|false|lb_033_BR
+DRAW|Madame Masque|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Punishing Punch|lb_038_RG
+Punishing Punch|Pump>DealDamage|DRAW|21|true|false|0|2|7|true|true|false|lb_038_RG
+DRAW|Mountain|lb_033_BR
+DRAW|Mountain|lb_038_RG
+DRAW|Widow's Bite|lb_033_BR
+END|lb_033_BR
+START
+DRAW|Baron Strucker, HYDRA Overlord|lb_039_UB
+DRAW|Giant-Sized Flying Ant|lb_039_UB
+DRAW|Stolen Stark Tech|lb_039_UB
+DRAW|Atlantean Cavalry|lb_039_UB
+DRAW|Frozen in Ice|lb_039_UB
+DRAW|Hour of Defeat|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Plains|lb_035_WU
+DRAW|Depower|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Okoye, Dora Milaje Leader|lb_035_WU
+DRAW|Agent of Atlas|lb_035_WU
+DRAW|Agent 13, Sharon Carter|lb_035_WU
+DRAW|S.H.I.E.L.D. Deployment Drone|lb_039_UB
+DRAW|Visions of Villainy|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Atlantis Attacks|lb_039_UB
+DRAW|Scientist Supreme of A.I.M.|lb_039_UB
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+DRAW|Super-Adaptoid|lb_039_UB
+DRAW|Stolen Stark Tech|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Atlantis Attacks|lb_039_UB
+DRAW|Viv Vision, Teen Synthezoid|lb_039_UB
+DRAW|Trickster's Stratagem|lb_039_UB
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+DRAW|Patriot, Shield Wielder|lb_035_WU
+DRAW|Island|lb_039_UB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|1|true|false|true|lb_039_UB
+DRAW|Plains|lb_035_WU
+DRAW|Hour of Defeat|lb_039_UB
+DRAW|Island|lb_035_WU
+DRAW|Swamp|lb_039_UB
+DRAW|Night Nurse, Healer of Heroes|lb_035_WU
+Hour of Defeat|Destroy>Surveil|UPKEEP|10|true|false|0|2|6|true|true|false|lb_039_UB
+Night Nurse, Healer of Heroes|PermanentCreature|UPKEEP|10|false|false|0|5|2|true|false|true|lb_035_WU
+DRAW|Cruel Alliance|lb_039_UB
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|10|false|true|1|6|2|true|true|false|lb_035_WU
+DRAW|Hydraulic Helper|lb_035_WU
+DRAW|Pym Particles|lb_035_WU
+DRAW|Ronin, Shadow Stalker|lb_039_UB
+DRAW|Island|lb_035_WU
+END|lb_035_WU
+START
+DRAW|Super Intelligence|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Hero in Training|lb_034_WU
+DRAW|S.H.I.E.L.D. Spy Kit|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|Widow's Bite|lb_030_WB
+DRAW|S.H.I.E.L.D. Spy Kit|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Dark Deed|lb_030_WB
+DRAW|Panther Pounce|lb_030_WB
+DRAW|H.E.R.B.I.E. Scout Unit|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Island|lb_034_WU
+DRAW|Web Up|lb_030_WB
+DRAW|Crowd of True Believers|lb_034_WU
+Widow's Bite|Charm>Pump|MAIN2|4|false|false|1|0|1|true|true|false|lb_030_WB
+DRAW|Hour of Defeat|lb_030_WB
+DRAW|Falcon's Wing Harness|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|Madame Masque|lb_030_WB
+DRAW|Red Guardian, Super-Soldier|lb_034_WU
+DRAW|Stolen Stark Tech|lb_030_WB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|9|true|true|0|0|1|true|false|true|lb_030_WB
+DRAW|Kid Loki|lb_034_WU
+DRAW|Ultron Drone|lb_030_WB
+DRAW|Panther Pounce|lb_034_WU
+DRAW|Plains|lb_030_WB
+DRAW|Ultron Drone|lb_034_WU
+DRAW|Plains|lb_030_WB
+DRAW|We Say Thee Nay!|lb_034_WU
+END|lb_034_WU
+START
+DRAW|Island|lb_031_UG
+DRAW|Hydraulic Helper|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Knight of Wundagore|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Ninja of the Hand|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|A.I.M. Synthoids|lb_036_BR
+DRAW|Roxxon Brutes|lb_036_BR
+DRAW|Human Torch, Johnny Storm|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Atlantis Attacks|lb_031_UG
+DRAW|Swamp|lb_036_BR
+DRAW|Vibranium Energy Daggers|lb_031_UG
+DRAW|Vibranium Energy Daggers|lb_036_BR
+DRAW|Forest|lb_031_UG
+DRAW|Swamp|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Island|lb_031_UG
+DRAW|Mountain|lb_036_BR
+DRAW|Forest|lb_031_UG
+DRAW|Mountain|lb_036_BR
+DRAW|Island|lb_031_UG
+DRAW|Mountain|lb_036_BR
+END|lb_036_BR
+START
+DRAW|Forest|lb_038_RG
+DRAW|Hulk, Gamma Goliath|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Undercover Skrull|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Plains|lb_037_WR
+DRAW|Helicarrier Strike|lb_037_WR
+DRAW|Agents of S.H.I.E.L.D.|lb_037_WR
+DRAW|Death to Our Enemies|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Political Triumph|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Forest|lb_038_RG
+DRAW|Raft Security Officer|lb_037_WR
+DRAW|Mountain|lb_038_RG
+DRAW|Kree Commandos|lb_037_WR
+DRAW|Restorative Technique|lb_038_RG
+DRAW|Plains|lb_037_WR
+Helicarrier Strike|DealDamage|COMBAT_DECLARE_BLOCKERS|7|true|true|0|2|1|true|true|false|lb_037_WR
+DRAW|Forest|lb_038_RG
+DRAW|Mountain|lb_037_WR
+DRAW|White Tiger, Ava Ayala|lb_038_RG
+DRAW|Agent 13, Sharon Carter|lb_037_WR
+DRAW|Crowd of True Believers|lb_037_WR
+DRAW|Hawkeye, Young Avenger|lb_038_RG
+DRAW|HYDRA Assault Robot|lb_037_WR
+DRAW|Mountain|lb_038_RG
+DRAW|Colleen Wing, Street Samurai|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Abomination, Terrifying Titan|lb_038_RG
+DRAW|Plains|lb_037_WR
+DRAW|Volcanic Villain|lb_038_RG
+DRAW|Mountain|lb_037_WR
+DRAW|Punishing Punch|lb_038_RG
+END|lb_038_RG
+START
+DRAW|A.I.M. Synthoids|lb_033_BR
+DRAW|Visions of Villainy|lb_033_BR
+DRAW|Team Tactics|lb_033_BR
+DRAW|Yellowjacket, Heartless Marauder|lb_033_BR
+DRAW|Kingpin's Enforcers|lb_033_BR
+DRAW|Widow's Bite|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Cruel Alliance|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Madame Masque|lb_032_BG
+DRAW|Swamp|lb_033_BR
+DRAW|Death to Our Enemies|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|HYDRA Infiltration|lb_033_BR
+DRAW|Team Tactics|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Forest|lb_032_BG
+DRAW|Kingpin's Enforcers|lb_033_BR
+DRAW|Hercules, Prince of Power|lb_032_BG
+DRAW|Ronin, Shadow Stalker|lb_033_BR
+DRAW|Moonstone, Harsh Mistress|lb_032_BG
+DRAW|Madame Masque|lb_033_BR
+DRAW|Visions of Villainy|lb_032_BG
+DRAW|Volcanic Villain|lb_033_BR
+DRAW|Kingpin's Enforcers|lb_032_BG
+DRAW|Mountain|lb_033_BR
+DRAW|Swamp|lb_032_BG
+Visions of Villainy|Draw>LoseLife|MAIN2|12|true|false|0|3|2|true|true|false|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Titania, Rugged Rumbler|lb_032_BG
+DRAW|Ultron Drone|lb_033_BR
+Team Tactics|Pump>Pump|COMBAT_DECLARE_BLOCKERS|13|true|true|0|2|3|true|true|false|lb_033_BR
+DRAW|Ultron Drone|lb_032_BG
+DRAW|Crossbones, Malicious Mercenary|lb_033_BR
+DRAW|Swamp|lb_032_BG
+DRAW|Mountain|lb_033_BR
+DRAW|Roxxon Brutes|lb_033_BR
+DRAW|Baron Strucker, HYDRA Overlord|lb_032_BG
+DRAW|HYDRA Assault Robot|lb_033_BR
+DRAW|Captain America's Shield|lb_032_BG
+DRAW|Swamp|lb_033_BR
+DRAW|Unliving Legionnaire|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Mountain|lb_033_BR
+DRAW|Vibranium Energy Daggers|lb_032_BG
+DRAW|Blazing Crescendo|lb_033_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|24|false|true|0|2|4|true|true|false|lb_033_BR
+END|lb_032_BG
+START
+DRAW|Swamp|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+DRAW|A.I.M. Synthoids|lb_039_UB
+DRAW|Super-Adaptoid|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Unliving Legionnaire|lb_039_UB
+DRAW|Plains|lb_034_WU
+DRAW|Wakandan Drone Flock|lb_034_WU
+DRAW|Iron Lad, Diverging Destiny|lb_034_WU
+DRAW|Mockingbird, Ace Agent|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|I Am Iron Man|lb_039_UB
+DRAW|Island|lb_034_WU
+DRAW|Atlantean Cavalry|lb_039_UB
+DRAW|Plains|lb_034_WU
+DRAW|Frozen in Ice|lb_039_UB
+DRAW|Depower|lb_034_WU
+DRAW|S.H.I.E.L.D. Deployment Drone|lb_039_UB
+I Am Iron Man|Animate>Draw|COMBAT_BEGIN|8|true|true|0|1|2|true|true|false|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Aerial Doombot|lb_034_WU
+DRAW|Depower|lb_039_UB
+DRAW|Dependable Quinjet|lb_034_WU
+DRAW|Island|lb_039_UB
+DRAW|Kree Commandos|lb_034_WU
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|13|false|true|0|2|3|true|true|false|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Iron Lad, Diverging Destiny|lb_039_UB
+DRAW|Hero in Training|lb_034_WU
+DRAW|Justice, Vance Astrovik|lb_034_WU
+DRAW|Island|lb_039_UB
+DRAW|Red Guardian, Super-Soldier|lb_034_WU
+DRAW|Island|lb_039_UB
+DRAW|Agent of Atlas|lb_034_WU
+END|lb_034_WU
+START
+DRAW|Forest|lb_031_UG
+DRAW|Pym Particles|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Go Nuts!|lb_031_UG
+DRAW|Aerial Doombot|lb_031_UG
+DRAW|H.E.R.B.I.E. Scout Unit|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Island|lb_035_WU
+DRAW|Justice, Vance Astrovik|lb_035_WU
+DRAW|Luke Cage, Power Man|lb_035_WU
+DRAW|Pym Particles|lb_035_WU
+DRAW|Night Nurse, Healer of Heroes|lb_035_WU
+DRAW|Mockingbird, Ace Agent|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|A.I.M. Synthoids|lb_035_WU
+DRAW|Atlantis Attacks|lb_031_UG
+DRAW|Panther Pounce|lb_035_WU
+DRAW|The Wondrous Wasp|lb_031_UG
+The Wondrous Wasp|PermanentCreature|MAIN1|5|true|false|0|1|1|true|false|true|lb_031_UG
+DRAW|Island|lb_035_WU
+DRAW|Super Strength|lb_031_UG
+DRAW|Frozen in Ice|lb_035_WU
+DRAW|Giant Growth|lb_031_UG
+DRAW|Invisible Woman, Sue Storm|lb_035_WU
+DRAW|Forest|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Plains|lb_035_WU
+DRAW|Call Damage Control|lb_031_UG
+DRAW|Hydraulic Helper|lb_035_WU
+DRAW|Falcon's Wing Harness|lb_031_UG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|15|true|true|0|3|4|true|true|false|lb_031_UG
+END|lb_031_UG
+START
+DRAW|Rapid Rescue|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Viv Vision, Teen Synthezoid|lb_038_RG
+DRAW|Hawkeye, Young Avenger|lb_038_RG
+DRAW|Photon Blast Barrage|lb_038_RG
+DRAW|Hour of Defeat|lb_030_WB
+DRAW|Robot Domination|lb_030_WB
+DRAW|Web Up|lb_030_WB
+DRAW|Captain Mar-Vell, Space-Born|lb_030_WB
+DRAW|Baron Helmut Zemo|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Wakandan Drone Flock|lb_030_WB
+DRAW|Murdock's Crusade|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Brave Brawler|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Plains|lb_030_WB
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|1|true|false|0|0|0|true|true|false|lb_038_RG
+DRAW|Panther Pounce|lb_030_WB
+DRAW|Hulk, Gamma Goliath|lb_038_RG
+DRAW|HYDRA Infiltration|lb_030_WB
+DRAW|Forest|lb_038_RG
+DRAW|Swamp|lb_030_WB
+DRAW|Hawkeye's Bow|lb_038_RG
+DRAW|Swamp|lb_030_WB
+DRAW|Stark Industries Executive|lb_038_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lb_030_WB
+DRAW|Raft Security Officer|lb_030_WB
+DRAW|Call Damage Control|lb_038_RG
+DRAW|Plains|lb_030_WB
+DRAW|Arc Reactor|lb_038_RG
+DRAW|Plains|lb_030_WB
+DRAW|Knight of Wundagore|lb_038_RG
+DRAW|Baron Helmut Zemo|lb_030_WB
+DRAW|Mountain|lb_038_RG
+DRAW|Roxxon Brutes|lb_030_WB
+DRAW|Forest|lb_038_RG
+DRAW|Ultron Drone|lb_030_WB
+DRAW|Iron Fist, Living Weapon|lb_038_RG
+DRAW|Madame Masque|lb_030_WB
+DRAW|Web Up|lb_030_WB
+DRAW|Volcanic Villain|lb_038_RG
+DRAW|Plains|lb_030_WB
+DRAW|Vibranium Energy Daggers|lb_038_RG
+DRAW|Swamp|lb_030_WB
+DRAW|Mountain|lb_038_RG
+DRAW|Ninja of the Hand|lb_030_WB
+DRAW|Forest|lb_038_RG
+DRAW|Robot Domination|lb_030_WB
+DRAW|Mountain|lb_038_RG
+DRAW|Widow's Bite|lb_030_WB
+DRAW|Forest|lb_038_RG
+DRAW|Wakandan Drone Flock|lb_030_WB
+DRAW|White Tiger, Ava Ayala|lb_038_RG
+DRAW|Helicarrier Strike|lb_030_WB
+DRAW|Mountain|lb_038_RG
+Helicarrier Strike|DealDamage|COMBAT_DECLARE_ATTACKERS|37|false|true|1|6|5|true|true|false|lb_030_WB
+DRAW|Captain Mar-Vell, Space-Born|lb_030_WB
+DRAW|Invisible Woman, Sue Storm|lb_030_WB
+DRAW|Blazing Crescendo|lb_038_RG
+DRAW|Hour of Defeat|lb_030_WB
+Hour of Defeat|Destroy>Surveil|DRAW|40|true|false|0|5|1|true|true|false|lb_030_WB
+END|lb_030_WB
+START
+DRAW|Madame Masque|lb_033_BR
+DRAW|Yellowjacket, Heartless Marauder|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Volcanic Villain|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Visions of Villainy|lb_033_BR
+DRAW|Stark Industries Executive|lb_036_BR
+DRAW|Visions of Villainy|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|A.I.M. Synthoids|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Ultron Drone|lb_033_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Stolen Stark Tech|lb_033_BR
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|2|true|false|true|lb_033_BR
+DRAW|Roxxon Brutes|lb_036_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|5|true|false|0|2|0|true|true|false|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Hawkeye's Bow|lb_036_BR
+DRAW|Ninja of the Hand|lb_033_BR
+DRAW|Dependable Quinjet|lb_036_BR
+DRAW|Mountain|lb_033_BR
+DRAW|S.H.I.E.L.D. Helicarrier|lb_036_BR
+DRAW|Roxxon Brutes|lb_033_BR
+DRAW|The Masters of Evil|lb_036_BR
+DRAW|Kingpin's Enforcers|lb_033_BR
+DRAW|Human Torch, Johnny Storm|lb_036_BR
+DRAW|Machinesmith Automaton|lb_033_BR
+DRAW|Iron Fist, Living Weapon|lb_036_BR
+END|lb_036_BR
+START
+DRAW|Swamp|lb_032_BG
+DRAW|Savage Land Dinosaur|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Hercules, Prince of Power|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Pet Avengers|lb_032_BG
+DRAW|Titania, Rugged Rumbler|lb_032_BG
+DRAW|Blazing Crescendo|lb_037_WR
+DRAW|Murdock's Crusade|lb_037_WR
+DRAW|Agents of S.H.I.E.L.D.|lb_037_WR
+DRAW|K'un-Lun Warrior|lb_037_WR
+DRAW|Team Tactics|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Forest|lb_032_BG
+DRAW|Evil's Thrall|lb_037_WR
+DRAW|Ultron Drone|lb_032_BG
+DRAW|Crowd of True Believers|lb_037_WR
+DRAW|Swamp|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Mountain|lb_037_WR
+DRAW|Swamp|lb_032_BG
+DRAW|Raft Security Officer|lb_037_WR
+DRAW|Captain America's Shield|lb_032_BG
+DRAW|Plains|lb_037_WR
+DRAW|Forest|lb_032_BG
+DRAW|Jessica Jones, Private Eye|lb_037_WR
+DRAW|Swamp|lb_032_BG
+DRAW|Plains|lb_037_WR
+DRAW|Dependable Quinjet|lb_032_BG
+END|lb_032_BG
+START
+DRAW|Unliving Legionnaire|lb_039_UB
+DRAW|Baron Strucker, HYDRA Overlord|lb_039_UB
+DRAW|Visions of Villainy|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|Frozen in Ice|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|S.H.I.E.L.D. Deployment Drone|lb_039_UB
+DRAW|White Tiger, Ava Ayala|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Knight of Wundagore|lb_031_UG
+DRAW|A.I.M. Synthoids|lb_031_UG
+DRAW|The Wondrous Wasp|lb_031_UG
+DRAW|Swamp|lb_039_UB
+DRAW|Undercover Skrull|lb_031_UG
+DRAW|I Am Iron Man|lb_039_UB
+DRAW|Forest|lb_031_UG
+DRAW|Island|lb_039_UB
+DRAW|Island|lb_031_UG
+DRAW|Trickster's Stratagem|lb_039_UB
+The Wondrous Wasp|PermanentCreature|MAIN2|8|false|false|0|3|1|true|false|true|lb_031_UG
+DRAW|Punishing Punch|lb_031_UG
+Punishing Punch|Pump>DealDamage|DRAW|9|true|false|0|4|1|true|true|false|lb_031_UG
+DRAW|Swamp|lb_039_UB
+DRAW|Island|lb_031_UG
+DRAW|Iron Lad, Diverging Destiny|lb_039_UB
+I Am Iron Man|Animate>Draw|COMBAT_BEGIN|12|true|true|0|1|4|true|true|false|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Forest|lb_031_UG
+DRAW|Hour of Defeat|lb_039_UB
+Hour of Defeat|Destroy>Surveil|MAIN1|14|true|false|0|2|4|true|true|false|lb_039_UB
+DRAW|Super-Adaptoid|lb_039_UB
+DRAW|Island|lb_031_UG
+DRAW|Viv Vision, Teen Synthezoid|lb_039_UB
+DRAW|Falcon's Wing Harness|lb_031_UG
+DRAW|Swamp|lb_039_UB
+DRAW|Island|lb_031_UG
+DRAW|Cruel Alliance|lb_039_UB
+DRAW|Futurist Forge|lb_031_UG
+END|lb_031_UG
+START
+DRAW|Forest|lb_038_RG
+DRAW|Crimson Operative|lb_038_RG
+DRAW|Hulk, Gamma Goliath|lb_038_RG
+DRAW|Blazing Crescendo|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Forest|lb_038_RG
+DRAW|Justice, Vance Astrovik|lb_034_WU
+DRAW|Agent of Atlas|lb_034_WU
+DRAW|We Say Thee Nay!|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Hero in Training|lb_034_WU
+DRAW|Ultron Drone|lb_034_WU
+DRAW|Vibranium Energy Daggers|lb_038_RG
+DRAW|S.H.I.E.L.D. Spy Kit|lb_034_WU
+DRAW|Restorative Technique|lb_038_RG
+DRAW|Plains|lb_034_WU
+DRAW|Forest|lb_038_RG
+DRAW|Aerial Doombot|lb_034_WU
+DRAW|Forest|lb_038_RG
+DRAW|Depower|lb_034_WU
+DRAW|Hawkeye, Young Avenger|lb_038_RG
+DRAW|Plains|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|White Tiger, Ava Ayala|lb_038_RG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|13|true|true|0|1|4|true|true|false|lb_038_RG
+DRAW|Island|lb_034_WU
+DRAW|Viv Vision, Teen Synthezoid|lb_038_RG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|15|false|true|0|0|2|true|true|false|lb_034_WU
+DRAW|Plains|lb_034_WU
+END|lb_038_RG
+START
+DRAW|Volcanic Villain|lb_033_BR
+DRAW|Stolen Stark Tech|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Lightning Strike|lb_033_BR
+DRAW|Vibranium Energy Daggers|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Plains|lb_035_WU
+DRAW|Crowd of True Believers|lb_035_WU
+DRAW|Plains|lb_035_WU
+DRAW|Plains|lb_035_WU
+DRAW|Dependable Quinjet|lb_035_WU
+DRAW|Justice, Vance Astrovik|lb_035_WU
+DRAW|Agent of Atlas|lb_035_WU
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lb_035_WU
+DRAW|Swamp|lb_033_BR
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|0|1|true|false|true|lb_033_BR
+DRAW|Captain Mar-Vell, Space-Born|lb_035_WU
+DRAW|HYDRA Assault Robot|lb_033_BR
+DRAW|Island|lb_035_WU
+Stolen Stark Tech|PermanentNoncreature|MAIN1|6|false|false|0|0|3|true|false|true|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Island|lb_035_WU
+DRAW|Crossbones, Malicious Mercenary|lb_033_BR
+DRAW|Kid Loki|lb_035_WU
+DRAW|Madame Masque|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Island|lb_035_WU
+END|lb_035_WU
+START
+DRAW|Unliving Legionnaire|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|HYDRA Troopers|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Ninja of the Hand|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Visions of Villainy|lb_032_BG
+DRAW|Swamp|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Dark Deed|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Panther Pounce|lb_030_WB
+DRAW|Murdock's Crusade|lb_030_WB
+DRAW|Web Up|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Savage Land Dinosaur|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Brave Brawler|lb_030_WB
+DRAW|Vibranium Energy Daggers|lb_032_BG
+DRAW|Invisible Woman, Sue Storm|lb_030_WB
+DRAW|Hercules, Prince of Power|lb_032_BG
+DRAW|Plains|lb_030_WB
+DRAW|Kingpin's Enforcers|lb_032_BG
+DRAW|Ninja of the Hand|lb_030_WB
+DRAW|Giant Growth|lb_032_BG
+DRAW|Baron Helmut Zemo|lb_030_WB
+DRAW|Dependable Quinjet|lb_032_BG
+DRAW|Swamp|lb_030_WB
+DRAW|Forest|lb_032_BG
+DRAW|Raft Security Officer|lb_030_WB
+DRAW|Captain America's Shield|lb_032_BG
+DRAW|Roxxon Brutes|lb_030_WB
+DRAW|Swamp|lb_032_BG
+Visions of Villainy|Draw>LoseLife|MAIN2|19|true|false|0|3|3|true|true|false|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Ultron Drone|lb_032_BG
+DRAW|Madame Masque|lb_030_WB
+END|lb_030_WB
+START
+DRAW|Mountain|lb_037_WR
+DRAW|Murdock's Crusade|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Kree Commandos|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Agents of HYDRA|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|A.I.M. Synthoids|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Plains|lb_037_WR
+DRAW|Yellowjacket, Heartless Marauder|lb_036_BR
+DRAW|Mountain|lb_037_WR
+DRAW|Ultron Drone|lb_036_BR
+DRAW|Red Guardian, Super-Soldier|lb_037_WR
+DRAW|Hire a Crew|lb_036_BR
+DRAW|Mountain|lb_037_WR
+DRAW|Human Torch, Johnny Storm|lb_036_BR
+Red Guardian, Super-Soldier|PermanentCreature|COMBAT_DAMAGE|9|false|true|0|1|4|true|false|true|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Vision of Love|lb_036_BR
+DRAW|Blazing Crescendo|lb_037_WR
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_BLOCKERS|12|false|true|0|4|2|true|true|false|lb_036_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|12|true|true|0|2|5|true|true|false|lb_037_WR
+DRAW|Visions of Villainy|lb_036_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|13|true|false|0|4|0|true|true|false|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Viv Vision, Teen Synthezoid|lb_036_BR
+DRAW|Mountain|lb_037_WR
+DRAW|Mountain|lb_036_BR
+END|lb_036_BR
+START
+DRAW|Atlantis Attacks|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Unliving Legionnaire|lb_039_UB
+DRAW|I Am Iron Man|lb_039_UB
+DRAW|Super-Adaptoid|lb_039_UB
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+DRAW|A.I.M. Synthoids|lb_039_UB
+DRAW|Hawkeye, Young Avenger|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Mountain|lb_038_RG
+DRAW|Vibranium Energy Daggers|lb_038_RG
+DRAW|Iron Fist, Living Weapon|lb_038_RG
+DRAW|Arc Reactor|lb_038_RG
+DRAW|Photon Blast Barrage|lb_038_RG
+DRAW|Island|lb_039_UB
+DRAW|A.I.M. Synthoids|lb_039_UB
+DRAW|Island|lb_039_UB
+DRAW|I Am Iron Man|lb_039_UB
+DRAW|Hour of Defeat|lb_039_UB
+DRAW|Cruel Alliance|lb_039_UB
+DRAW|Giant-Sized Flying Ant|lb_039_UB
+DRAW|Forest|lb_038_RG
+DRAW|Ultron, Artificial Malevolence|lb_039_UB
+DRAW|Viv Vision, Teen Synthezoid|lb_038_RG
+DRAW|Island|lb_039_UB
+I Am Iron Man|Animate>Draw|COMBAT_BEGIN|5|true|true|0|1|0|true|true|false|lb_039_UB
+DRAW|Swamp|lb_039_UB
+DRAW|Hulk, Gamma Goliath|lb_038_RG
+DRAW|Atlantean Cavalry|lb_039_UB
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|7|true|false|0|1|1|true|false|true|lb_039_UB
+DRAW|Hawkeye's Bow|lb_038_RG
+DRAW|Crimson Operative|lb_038_RG
+DRAW|Swamp|lb_039_UB
+DRAW|Restorative Technique|lb_038_RG
+DRAW|Swamp|lb_039_UB
+DRAW|Forest|lb_038_RG
+DRAW|Swamp|lb_039_UB
+DRAW|Volcanic Villain|lb_038_RG
+DRAW|Island|lb_039_UB
+DRAW|Mountain|lb_038_RG
+DRAW|Island|lb_039_UB
+DRAW|Super Strength|lb_038_RG
+DRAW|Super-Adaptoid|lb_039_UB
+DRAW|Mountain|lb_038_RG
+DRAW|Trickster's Stratagem|lb_039_UB
+DRAW|Mountain|lb_038_RG
+END|lb_038_RG
+START
+DRAW|Mountain|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Swamp|lb_033_BR
+DRAW|Widow's Bite|lb_033_BR
+DRAW|A.I.M. Synthoids|lb_033_BR
+DRAW|Ninja of the Hand|lb_033_BR
+DRAW|Mountain|lb_033_BR
+DRAW|Super Strength|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Forest|lb_031_UG
+DRAW|Vibranium Energy Daggers|lb_031_UG
+DRAW|Undercover Skrull|lb_031_UG
+DRAW|Serpent Specialist|lb_031_UG
+DRAW|Stolen Stark Tech|lb_033_BR
+DRAW|The Wondrous Wasp|lb_031_UG
+DRAW|Madame Masque|lb_033_BR
+Widow's Bite|Charm>Pump|MAIN1|4|true|false|0|0|1|true|true|false|lb_033_BR
+DRAW|Call Damage Control|lb_031_UG
+DRAW|Mountain|lb_033_BR
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|6|true|true|0|0|1|true|false|true|lb_033_BR
+DRAW|A.I.M. Synthoids|lb_031_UG
+DRAW|Roxxon Brutes|lb_033_BR
+DRAW|H.E.R.B.I.E. Scout Unit|lb_031_UG
+The Wondrous Wasp|PermanentCreature|MAIN1|9|true|false|0|1|1|true|false|true|lb_031_UG
+DRAW|Machinesmith Automaton|lb_033_BR
+DRAW|Hydraulic Helper|lb_031_UG
+DRAW|Island|lb_031_UG
+DRAW|Mountain|lb_033_BR
+DRAW|Blazing Crescendo|lb_033_BR
+DRAW|Futurist Forge|lb_031_UG
+DRAW|Mountain|lb_033_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|14|true|true|0|4|3|true|true|false|lb_033_BR
+END|lb_033_BR
+START
+DRAW|Decoy Ploy|lb_032_BG
+DRAW|Baron Strucker, HYDRA Overlord|lb_032_BG
+DRAW|Unliving Legionnaire|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Dependable Quinjet|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Bold Biochemist|lb_034_WU
+DRAW|Plains|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Kid Loki|lb_034_WU
+DRAW|Hydraulic Helper|lb_034_WU
+DRAW|Aerial Doombot|lb_034_WU
+DRAW|Island|lb_034_WU
+DRAW|Dependable Quinjet|lb_034_WU
+DRAW|Titania, Rugged Rumbler|lb_032_BG
+DRAW|Quake, Agent of S.H.I.E.L.D.|lb_034_WU
+DRAW|Swamp|lb_032_BG
+DRAW|Crowd of True Believers|lb_034_WU
+DRAW|Savage Land Dinosaur|lb_032_BG
+DRAW|Visions of Villainy|lb_032_BG
+DRAW|Kree Commandos|lb_034_WU
+DRAW|Madame Masque|lb_032_BG
+DRAW|Moonstone, Harsh Mistress|lb_032_BG
+DRAW|Island|lb_034_WU
+DRAW|Hercules, Prince of Power|lb_032_BG
+DRAW|Ninja of the Hand|lb_032_BG
+DRAW|Ultron Drone|lb_034_WU
+DRAW|Captain America's Shield|lb_032_BG
+DRAW|Forest|lb_032_BG
+DRAW|Plains|lb_034_WU
+DRAW|Swamp|lb_032_BG
+Visions of Villainy|Draw>LoseLife|MAIN2|15|true|false|0|5|5|true|true|false|lb_032_BG
+DRAW|Heroic Feast|lb_032_BG
+DRAW|Forest|lb_032_BG
+Decoy Ploy|Charm>ChangeZone|MAIN2|15|true|false|0|5|5|true|true|false|lb_032_BG
+DRAW|Red Guardian, Super-Soldier|lb_034_WU
+DRAW|Forest|lb_032_BG
+DRAW|Swamp|lb_032_BG
+DRAW|Cruel Alliance|lb_032_BG
+Red Guardian, Super-Soldier|PermanentCreature|MAIN1|17|false|false|0|4|7|true|false|true|lb_034_WU
+END|lb_032_BG
+START
+DRAW|Mountain|lb_037_WR
+DRAW|Mountain|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Plains|lb_037_WR
+DRAW|Blazing Crescendo|lb_037_WR
+DRAW|Agents of S.H.I.E.L.D.|lb_037_WR
+DRAW|S.H.I.E.L.D. Spy Kit|lb_037_WR
+DRAW|Plains|lb_035_WU
+DRAW|Plains|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Island|lb_035_WU
+DRAW|Kid Loki|lb_035_WU
+DRAW|Patriot, Shield Wielder|lb_035_WU
+DRAW|Take Up the Shield|lb_037_WR
+DRAW|Island|lb_035_WU
+DRAW|Evil's Thrall|lb_037_WR
+DRAW|Island|lb_035_WU
+DRAW|Mountain|lb_037_WR
+DRAW|Plains|lb_035_WU
+DRAW|Mountain|lb_037_WR
+DRAW|Iron Lad, Diverging Destiny|lb_035_WU
+DRAW|Raft Security Officer|lb_037_WR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|10|true|true|0|1|3|true|true|false|lb_037_WR
+DRAW|Frozen in Ice|lb_035_WU
+DRAW|Agent 13, Sharon Carter|lb_037_WR
+DRAW|Island|lb_035_WU
+DRAW|Crowd of True Believers|lb_037_WR
+Take Up the Shield|PutCounter>Pump|DRAW|14|true|false|0|3|3|true|true|false|lb_037_WR
+DRAW|Plains|lb_035_WU
+DRAW|Mountain|lb_037_WR
+DRAW|Depower|lb_035_WU
+DRAW|HYDRA Assault Robot|lb_037_WR
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|18|false|true|0|1|4|true|true|false|lb_035_WU
+DRAW|Dependable Quinjet|lb_035_WU
+DRAW|A.I.M. Synthoids|lb_035_WU
+DRAW|Kree Commandos|lb_037_WR
+DRAW|Team Tactics|lb_037_WR
+DRAW|Justice, Vance Astrovik|lb_035_WU
+DRAW|Plains|lb_037_WR
+Team Tactics|Pump>Pump|COMBAT_DECLARE_BLOCKERS|22|true|true|0|4|2|true|true|false|lb_037_WR
+END|lb_037_WR
+START
+DRAW|Mountain|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Plains|lb_030_WB
+DRAW|Plains|lb_030_WB
+DRAW|Helicarrier Strike|lb_030_WB
+DRAW|Raft Security Officer|lb_030_WB
+DRAW|Swamp|lb_030_WB
+DRAW|Madame Masque|lb_030_WB
+DRAW|Dark Deed|lb_030_WB
+DRAW|Ronin, Shadow Stalker|lb_036_BR
+DRAW|Agents of HYDRA|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Vibranium Energy Daggers|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Mountain|lb_036_BR
+DRAW|Swamp|lb_036_BR
+DRAW|Plains|lb_030_WB
+DRAW|Vision of Love|lb_036_BR
+DRAW|Swamp|lb_030_WB
+DRAW|Mountain|lb_036_BR
+DRAW|Invisible Woman, Sue Storm|lb_030_WB
+DRAW|Ultron Drone|lb_036_BR
+DRAW|Swamp|lb_030_WB
+DRAW|Swamp|lb_036_BR
+DRAW|S.H.I.E.L.D. Spy Kit|lb_030_WB
+DRAW|Mountain|lb_036_BR
+DRAW|Wakandan Drone Flock|lb_030_WB
+DRAW|Iron Fist, Living Weapon|lb_036_BR
+DRAW|Plains|lb_030_WB
+DRAW|Hire a Crew|lb_036_BR
+Helicarrier Strike|DealDamage|COMBAT_DECLARE_ATTACKERS|15|false|true|0|2|5|true|true|false|lb_030_WB
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lb_030_WB
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|16|false|true|0|4|2|true|true|false|lb_036_BR
+DRAW|Swamp|lb_030_WB
+DRAW|The Masters of Evil|lb_036_BR
+DRAW|Ninja of the Hand|lb_030_WB
+DRAW|Viv Vision, Teen Synthezoid|lb_036_BR
+END|lb_036_BR

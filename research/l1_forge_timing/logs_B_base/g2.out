@@ -1,0 +1,652 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=43163 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Error handling registered!
+15:32:58 [INFO ] GuiBase: ##########################################
+15:32:58 [INFO ] GuiBase: APP: Forge v.2.0.16-SNAPSHOT-10.19
+15:32:58 [INFO ] GuiBase: Java: 21.0.12.1 (Ubuntu)
+15:32:58 [INFO ] GuiBase: OS: Linux 6.18.44-fc-v139 amd64
+15:32:58 [INFO ] GuiBase: RAM: 2048 MB max, 2 CPUs
+15:32:58 [INFO ] GuiBase: ##########################################
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 1 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+Simulation mode
+Starting a RoundRobin tournament with 10 players over 9 rounds
+
+Round 1 Pairings:
+lb_025_WB[0] vs lb_028_WU[0] 
+lb_020_RG[0] vs lb_021_UR[0] 
+lb_027_WR[0] vs lb_029_WG[0] 
+lb_023_WR[0] vs lb_024_UG[0] 
+lb_026_WG[0] vs lb_022_RG[0] 
+
+Round 1 - lb_025_WB[0] vs lb_028_WU[0] 
+Game Outcome: Match Duration 0m : 09s
+Game Outcome: Turn 13
+Game Outcome: lb_025_WB has won because all opponents have lost
+Game Outcome: lb_028_WU has lost because life total reached 0
+Match Result: lb_025_WB: 1 lb_028_WU: 0 
+
+Game Result: Game 1 ended in 10495 ms. lb_025_WB has won!
+
+Match Winner - lb_025_WB!
+
+Round 1 - lb_020_RG[0] vs lb_021_UR[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lb_020_RG has won because all opponents have lost
+Game Outcome: lb_021_UR has lost because life total reached 0
+Match Result: lb_020_RG: 1 lb_021_UR: 0 
+
+Game Result: Game 1 ended in 4200 ms. lb_020_RG has won!
+
+Match Winner - lb_020_RG!
+
+Round 1 - lb_027_WR[0] vs lb_029_WG[0] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 6
+Game Outcome: lb_027_WR has lost because life total reached 0
+Game Outcome: lb_029_WG has won because all opponents have lost
+Match Result: lb_027_WR: 0 lb_029_WG: 1 
+
+Game Result: Game 1 ended in 1747 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+Round 1 - lb_023_WR[0] vs lb_024_UG[0] 
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 10
+Game Outcome: lb_023_WR has won because all opponents have lost
+Game Outcome: lb_024_UG has lost because life total reached 0
+Match Result: lb_023_WR: 1 lb_024_UG: 0 
+
+Game Result: Game 1 ended in 7473 ms. lb_023_WR has won!
+
+Match Winner - lb_023_WR!
+
+Round 1 - lb_026_WG[0] vs lb_022_RG[0] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: lb_026_WG has won because all opponents have lost
+Game Outcome: lb_022_RG has lost because life total reached 0
+Match Result: lb_026_WG: 1 lb_022_RG: 0 
+
+Game Result: Game 1 ended in 2723 ms. lb_026_WG has won!
+
+Match Winner - lb_026_WG!
+
+End Round - 1
+
+Round 2 Pairings:
+lb_025_WB[3] vs lb_020_RG[3] 
+lb_027_WR[0] vs lb_028_WU[0] 
+lb_023_WR[3] vs lb_021_UR[0] 
+lb_026_WG[3] vs lb_029_WG[3] 
+lb_022_RG[0] vs lb_024_UG[0] 
+
+Round 2 - lb_025_WB[3] vs lb_020_RG[3] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 11
+Game Outcome: lb_025_WB has won because all opponents have lost
+Game Outcome: lb_020_RG has lost because life total reached 0
+Match Result: lb_025_WB: 1 lb_020_RG: 0 
+
+Game Result: Game 1 ended in 5766 ms. lb_025_WB has won!
+
+Match Winner - lb_025_WB!
+
+Round 2 - lb_027_WR[0] vs lb_028_WU[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: lb_027_WR has won because all opponents have lost
+Game Outcome: lb_028_WU has lost because life total reached 0
+Match Result: lb_027_WR: 1 lb_028_WU: 0 
+
+Game Result: Game 1 ended in 3854 ms. lb_027_WR has won!
+
+Match Winner - lb_027_WR!
+
+Round 2 - lb_023_WR[3] vs lb_021_UR[0] 
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 9
+Game Outcome: lb_023_WR has won because all opponents have lost
+Game Outcome: lb_021_UR has lost because life total reached 0
+Match Result: lb_023_WR: 1 lb_021_UR: 0 
+
+Game Result: Game 1 ended in 5850 ms. lb_023_WR has won!
+
+Match Winner - lb_023_WR!
+
+Round 2 - lb_026_WG[3] vs lb_029_WG[3] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lb_026_WG has lost because life total reached 0
+Game Outcome: lb_029_WG has won because all opponents have lost
+Match Result: lb_026_WG: 0 lb_029_WG: 1 
+
+Game Result: Game 1 ended in 4383 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+Round 2 - lb_022_RG[0] vs lb_024_UG[0] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 10
+Game Outcome: lb_022_RG has won because all opponents have lost
+Game Outcome: lb_024_UG has lost because life total reached 0
+Match Result: lb_022_RG: 1 lb_024_UG: 0 
+
+Game Result: Game 1 ended in 8898 ms. lb_022_RG has won!
+
+Match Winner - lb_022_RG!
+
+End Round - 2
+
+Round 3 Pairings:
+lb_025_WB[6] vs lb_027_WR[3] 
+lb_023_WR[6] vs lb_020_RG[3] 
+lb_026_WG[3] vs lb_028_WU[0] 
+lb_022_RG[3] vs lb_021_UR[0] 
+lb_024_UG[0] vs lb_029_WG[6] 
+
+Round 3 - lb_025_WB[6] vs lb_027_WR[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lb_025_WB has won because all opponents have lost
+Game Outcome: lb_027_WR has lost because life total reached 0
+Match Result: lb_025_WB: 1 lb_027_WR: 0 
+
+Game Result: Game 1 ended in 1872 ms. lb_025_WB has won!
+
+Match Winner - lb_025_WB!
+
+Round 3 - lb_023_WR[6] vs lb_020_RG[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lb_023_WR has lost because life total reached 0
+Game Outcome: lb_020_RG has won because all opponents have lost
+Match Result: lb_023_WR: 0 lb_020_RG: 1 
+
+Game Result: Game 1 ended in 2119 ms. lb_020_RG has won!
+
+Match Winner - lb_020_RG!
+
+Round 3 - lb_026_WG[3] vs lb_028_WU[0] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 13
+Game Outcome: lb_026_WG has won because all opponents have lost
+Game Outcome: lb_028_WU has lost because life total reached 0
+Match Result: lb_026_WG: 1 lb_028_WU: 0 
+
+Game Result: Game 1 ended in 4860 ms. lb_026_WG has won!
+
+Match Winner - lb_026_WG!
+
+Round 3 - lb_022_RG[3] vs lb_021_UR[0] 
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lb_022_RG has won because all opponents have lost
+Game Outcome: lb_021_UR has lost because life total reached 0
+Match Result: lb_022_RG: 1 lb_021_UR: 0 
+
+Game Result: Game 1 ended in 2390 ms. lb_022_RG has won!
+
+Match Winner - lb_022_RG!
+
+Round 3 - lb_024_UG[0] vs lb_029_WG[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lb_024_UG has lost because life total reached 0
+Game Outcome: lb_029_WG has won because all opponents have lost
+Match Result: lb_024_UG: 0 lb_029_WG: 1 
+
+Game Result: Game 1 ended in 2247 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+End Round - 3
+
+Round 4 Pairings:
+lb_025_WB[9] vs lb_023_WR[6] 
+lb_026_WG[6] vs lb_027_WR[3] 
+lb_022_RG[6] vs lb_020_RG[6] 
+lb_024_UG[0] vs lb_028_WU[0] 
+lb_029_WG[9] vs lb_021_UR[0] 
+
+Round 4 - lb_025_WB[9] vs lb_023_WR[6] 
+Game Outcome: Match Duration 0m : 31s
+Game Outcome: Turn 14
+Game Outcome: lb_025_WB has won because all opponents have lost
+Game Outcome: lb_023_WR has lost because life total reached 0
+Match Result: lb_025_WB: 1 lb_023_WR: 0 
+
+Game Result: Game 1 ended in 31728 ms. lb_025_WB has won!
+
+Match Winner - lb_025_WB!
+
+Round 4 - lb_026_WG[6] vs lb_027_WR[3] 
+Correcting zone for Kree Commandos (10)
+Correcting zone for Nick Fury, Agent of S.H.I.E.L.D. (35)
+Correcting zone for Nick Fury, Agent of S.H.I.E.L.D. (35)
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lb_026_WG has lost because life total reached 0
+Game Outcome: lb_027_WR has won because all opponents have lost
+Match Result: lb_026_WG: 0 lb_027_WR: 1 
+
+Game Result: Game 1 ended in 4290 ms. lb_027_WR has won!
+
+Match Winner - lb_027_WR!
+
+Round 4 - lb_022_RG[6] vs lb_020_RG[6] 
+Game Outcome: Match Duration 0m : 18s
+Game Outcome: Turn 13
+Game Outcome: lb_022_RG has lost because life total reached 0
+Game Outcome: lb_020_RG has won because all opponents have lost
+Match Result: lb_022_RG: 0 lb_020_RG: 1 
+
+Game Result: Game 1 ended in 19047 ms. lb_020_RG has won!
+
+Match Winner - lb_020_RG!
+
+Round 4 - lb_024_UG[0] vs lb_028_WU[0] 
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 11
+Game Outcome: lb_024_UG has lost because life total reached 0
+Game Outcome: lb_028_WU has won because all opponents have lost
+Match Result: lb_024_UG: 0 lb_028_WU: 1 
+
+Game Result: Game 1 ended in 12658 ms. lb_028_WU has won!
+
+Match Winner - lb_028_WU!
+
+Round 4 - lb_029_WG[9] vs lb_021_UR[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lb_029_WG has won because all opponents have lost
+Game Outcome: lb_021_UR has lost because life total reached 0
+Match Result: lb_029_WG: 1 lb_021_UR: 0 
+
+Game Result: Game 1 ended in 4145 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+End Round - 4
+
+Round 5 Pairings:
+lb_025_WB[12] vs lb_026_WG[6] 
+lb_022_RG[6] vs lb_023_WR[6] 
+lb_024_UG[0] vs lb_027_WR[6] 
+lb_029_WG[12] vs lb_020_RG[9] 
+lb_021_UR[0] vs lb_028_WU[3] 
+
+Round 5 - lb_025_WB[12] vs lb_026_WG[6] 
+Swordsman, Sharp Scoundrel (13) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 24s
+Game Outcome: Turn 19
+Game Outcome: lb_025_WB has lost because life total reached 0
+Game Outcome: lb_026_WG has won because all opponents have lost
+Match Result: lb_025_WB: 0 lb_026_WG: 1 
+
+Game Result: Game 1 ended in 25366 ms. lb_026_WG has won!
+
+Match Winner - lb_026_WG!
+
+Round 5 - lb_022_RG[6] vs lb_023_WR[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lb_022_RG has lost because life total reached 0
+Game Outcome: lb_023_WR has won because all opponents have lost
+Match Result: lb_022_RG: 0 lb_023_WR: 1 
+
+Game Result: Game 1 ended in 3108 ms. lb_023_WR has won!
+
+Match Winner - lb_023_WR!
+
+Round 5 - lb_024_UG[0] vs lb_027_WR[6] 
+Correcting zone for S.H.I.E.L.D. Deployment Drone (8)
+Correcting zone for Shang-Chi, Master of Kung Fu (17)
+Correcting zone for S.H.I.E.L.D. Deployment Drone (8)
+Correcting zone for Shang-Chi, Master of Kung Fu (17)
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 14
+Game Outcome: lb_024_UG has lost because life total reached 0
+Game Outcome: lb_027_WR has won because all opponents have lost
+Match Result: lb_024_UG: 0 lb_027_WR: 1 
+
+Game Result: Game 1 ended in 7421 ms. lb_027_WR has won!
+
+Match Winner - lb_027_WR!
+
+Round 5 - lb_029_WG[12] vs lb_020_RG[9] 
+Forest Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 13s
+Game Outcome: Turn 14
+Game Outcome: lb_029_WG has won because all opponents have lost
+Game Outcome: lb_020_RG has lost because life total reached 0
+Match Result: lb_029_WG: 1 lb_020_RG: 0 
+
+Game Result: Game 1 ended in 13885 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+Round 5 - lb_021_UR[0] vs lb_028_WU[3] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lb_021_UR has lost because life total reached 0
+Game Outcome: lb_028_WU has won because all opponents have lost
+Match Result: lb_021_UR: 0 lb_028_WU: 1 
+
+Game Result: Game 1 ended in 3932 ms. lb_028_WU has won!
+
+Match Winner - lb_028_WU!
+
+End Round - 5
+
+Round 6 Pairings:
+lb_025_WB[12] vs lb_022_RG[6] 
+lb_024_UG[0] vs lb_026_WG[9] 
+lb_029_WG[15] vs lb_023_WR[9] 
+lb_021_UR[0] vs lb_027_WR[9] 
+lb_028_WU[6] vs lb_020_RG[9] 
+
+Round 6 - lb_025_WB[12] vs lb_022_RG[6] 
+Swordsman, Sharp Scoundrel (13) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 59s
+Game Outcome: Turn 15
+Game Outcome: lb_025_WB has won because all opponents have lost
+Game Outcome: lb_022_RG has lost because life total reached 0
+Match Result: lb_025_WB: 1 lb_022_RG: 0 
+
+Game Result: Game 1 ended in 59660 ms. lb_025_WB has won!
+
+Match Winner - lb_025_WB!
+
+Round 6 - lb_024_UG[0] vs lb_026_WG[9] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 8
+Game Outcome: lb_024_UG has won because all opponents have lost
+Game Outcome: lb_026_WG has lost because life total reached 0
+Match Result: lb_024_UG: 1 lb_026_WG: 0 
+
+Game Result: Game 1 ended in 4632 ms. lb_024_UG has won!
+
+Match Winner - lb_024_UG!
+
+Round 6 - lb_029_WG[15] vs lb_023_WR[9] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lb_029_WG has won because all opponents have lost
+Game Outcome: lb_023_WR has lost because life total reached 0
+Match Result: lb_029_WG: 1 lb_023_WR: 0 
+
+Game Result: Game 1 ended in 2546 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+Round 6 - lb_021_UR[0] vs lb_027_WR[9] 
+Correcting zone for Viv Vision, Teen Synthezoid (4)
+Correcting zone for Ultron Drone (17)
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 6
+Game Outcome: lb_021_UR has lost because life total reached 0
+Game Outcome: lb_027_WR has won because all opponents have lost
+Match Result: lb_021_UR: 0 lb_027_WR: 1 
+
+Game Result: Game 1 ended in 1243 ms. lb_027_WR has won!
+
+Match Winner - lb_027_WR!
+
+Round 6 - lb_028_WU[6] vs lb_020_RG[9] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: lb_028_WU has won because all opponents have lost
+Game Outcome: lb_020_RG has lost because life total reached 0
+Match Result: lb_028_WU: 1 lb_020_RG: 0 
+
+Game Result: Game 1 ended in 3117 ms. lb_028_WU has won!
+
+Match Winner - lb_028_WU!
+
+End Round - 6
+
+Round 7 Pairings:
+lb_025_WB[15] vs lb_024_UG[3] 
+lb_029_WG[18] vs lb_022_RG[6] 
+lb_021_UR[0] vs lb_026_WG[9] 
+lb_028_WU[9] vs lb_023_WR[9] 
+lb_020_RG[9] vs lb_027_WR[12] 
+
+Round 7 - lb_025_WB[15] vs lb_024_UG[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 13
+Game Outcome: lb_025_WB has lost because life total reached 0
+Game Outcome: lb_024_UG has won because all opponents have lost
+Match Result: lb_025_WB: 0 lb_024_UG: 1 
+
+Game Result: Game 1 ended in 3445 ms. lb_024_UG has won!
+
+Match Winner - lb_024_UG!
+
+Round 7 - lb_029_WG[18] vs lb_022_RG[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: lb_029_WG has won because all opponents have lost
+Game Outcome: lb_022_RG has lost because life total reached 0
+Match Result: lb_029_WG: 1 lb_022_RG: 0 
+
+Game Result: Game 1 ended in 3006 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+Round 7 - lb_021_UR[0] vs lb_026_WG[9] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 5
+Game Outcome: lb_021_UR has lost because life total reached 0
+Game Outcome: lb_026_WG has won because all opponents have lost
+Match Result: lb_021_UR: 0 lb_026_WG: 1 
+
+Game Result: Game 1 ended in 1483 ms. lb_026_WG has won!
+
+Match Winner - lb_026_WG!
+
+Round 7 - lb_028_WU[9] vs lb_023_WR[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lb_028_WU has lost because life total reached 0
+Game Outcome: lb_023_WR has won because all opponents have lost
+Match Result: lb_028_WU: 0 lb_023_WR: 1 
+
+Game Result: Game 1 ended in 2375 ms. lb_023_WR has won!
+
+Match Winner - lb_023_WR!
+
+Round 7 - lb_020_RG[9] vs lb_027_WR[12] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+Game Outcome: Match Duration 0m : 16s
+Game Outcome: Turn 17
+Game Outcome: lb_020_RG has won because all opponents have lost
+Game Outcome: lb_027_WR has lost because life total reached 0
+Match Result: lb_020_RG: 1 lb_027_WR: 0 
+
+Game Result: Game 1 ended in 16888 ms. lb_020_RG has won!
+
+Match Winner - lb_020_RG!
+
+End Round - 7
+
+Round 8 Pairings:
+lb_025_WB[15] vs lb_029_WG[21] 
+lb_021_UR[0] vs lb_024_UG[6] 
+lb_028_WU[9] vs lb_022_RG[6] 
+lb_020_RG[12] vs lb_026_WG[12] 
+lb_027_WR[12] vs lb_023_WR[12] 
+
+Round 8 - lb_025_WB[15] vs lb_029_WG[21] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 7
+Game Outcome: lb_025_WB has lost because life total reached 0
+Game Outcome: lb_029_WG has won because all opponents have lost
+Match Result: lb_025_WB: 0 lb_029_WG: 1 
+
+Game Result: Game 1 ended in 1378 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+Round 8 - lb_021_UR[0] vs lb_024_UG[6] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 22s
+Game Outcome: Turn 13
+Game Outcome: lb_021_UR has lost because life total reached 0
+Game Outcome: lb_024_UG has won because all opponents have lost
+Match Result: lb_021_UR: 0 lb_024_UG: 1 
+
+Game Result: Game 1 ended in 23169 ms. lb_024_UG has won!
+
+Match Winner - lb_024_UG!
+
+Round 8 - lb_028_WU[9] vs lb_022_RG[6] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 8
+Game Outcome: lb_028_WU has lost because life total reached 0
+Game Outcome: lb_022_RG has won because all opponents have lost
+Match Result: lb_028_WU: 0 lb_022_RG: 1 
+
+Game Result: Game 1 ended in 9163 ms. lb_022_RG has won!
+
+Match Winner - lb_022_RG!
+
+Round 8 - lb_020_RG[12] vs lb_026_WG[12] 
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 11
+Game Outcome: lb_020_RG has lost because life total reached 0
+Game Outcome: lb_026_WG has won because all opponents have lost
+Match Result: lb_020_RG: 0 lb_026_WG: 1 
+
+Game Result: Game 1 ended in 13201 ms. lb_026_WG has won!
+
+Match Winner - lb_026_WG!
+
+Round 8 - lb_027_WR[12] vs lb_023_WR[12] 
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: lb_027_WR has won because all opponents have lost
+Game Outcome: lb_023_WR has lost because life total reached 0
+Match Result: lb_027_WR: 1 lb_023_WR: 0 
+
+Game Result: Game 1 ended in 4751 ms. lb_027_WR has won!
+
+Match Winner - lb_027_WR!
+
+End Round - 8
+
+Round 9 Pairings:
+lb_025_WB[15] vs lb_021_UR[0] 
+lb_028_WU[9] vs lb_029_WG[24] 
+lb_020_RG[12] vs lb_024_UG[9] 
+lb_027_WR[15] vs lb_022_RG[9] 
+lb_023_WR[12] vs lb_026_WG[15] 
+
+Round 9 - lb_025_WB[15] vs lb_021_UR[0] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 10
+Game Outcome: lb_025_WB has won because all opponents have lost
+Game Outcome: lb_021_UR has lost because life total reached 0
+Match Result: lb_025_WB: 1 lb_021_UR: 0 
+
+Game Result: Game 1 ended in 8317 ms. lb_025_WB has won!
+
+Match Winner - lb_025_WB!
+
+Round 9 - lb_028_WU[9] vs lb_029_WG[24] 
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 12
+Game Outcome: lb_028_WU has lost because life total reached 0
+Game Outcome: lb_029_WG has won because all opponents have lost
+Match Result: lb_028_WU: 0 lb_029_WG: 1 
+
+Game Result: Game 1 ended in 13356 ms. lb_029_WG has won!
+
+Match Winner - lb_029_WG!
+
+Round 9 - lb_020_RG[12] vs lb_024_UG[9] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lb_020_RG has won because all opponents have lost
+Game Outcome: lb_024_UG has lost because life total reached 0
+Match Result: lb_020_RG: 1 lb_024_UG: 0 
+
+Game Result: Game 1 ended in 3914 ms. lb_020_RG has won!
+
+Match Winner - lb_020_RG!
+
+Round 9 - lb_027_WR[15] vs lb_022_RG[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 6
+Game Outcome: lb_027_WR has lost because life total reached 0
+Game Outcome: lb_022_RG has won because all opponents have lost
+Match Result: lb_027_WR: 0 lb_022_RG: 1 
+
+Game Result: Game 1 ended in 1756 ms. lb_022_RG has won!
+
+Match Winner - lb_022_RG!
+
+Round 9 - lb_023_WR[12] vs lb_026_WG[15] 
+Game Outcome: Match Duration 0m : 21s
+Game Outcome: Turn 23
+Game Outcome: lb_023_WR has won because all opponents have lost
+Game Outcome: lb_026_WG has lost because life total reached 0
+Match Result: lb_023_WR: 1 lb_026_WG: 0 
+
+Game Result: Game 1 ended in 22423 ms. lb_023_WR has won!
+
+Match Winner - lb_023_WR!
+
+lb_029_WG		9 Wins(0 Byes)-0 Losses-0 Ties	=>	27 Points
+lb_025_WB		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+lb_027_WR		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lb_026_WG		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lb_020_RG		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lb_023_WR		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lb_022_RG		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lb_024_UG		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lb_028_WU		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lb_021_UR		0 Wins(0 Byes)-9 Losses-0 Ties	=>	0 Points

@@ -1,0 +1,145 @@
+target class T (5): ['S.H.I.E.L.D. Flying Car', 'Stolen Stark Tech', 'Super Suit', 'Super Villain Lockup', 'Thunderbolts Conspiracy']
+{
+ "base": {
+  "games": 360,
+  "ended": 360,
+  "timeouts": 0,
+  "mean_turns": 9.41388888888889,
+  "draws_per_player": 12.340277777777779,
+  "pn_casts": 118,
+  "pn_upkeep_draw": 76,
+  "pn_upkeep_draw_rate": 0.6440677966101694,
+  "pn_phase_dist": {
+   "自:DRAW": 52,
+   "自:UPKEEP": 24,
+   "自:MAIN1": 14,
+   "自:COMBAT_BEGIN": 14,
+   "相:COMBAT_DECLARE_ATTACKERS": 7,
+   "自:COMBAT_DECLARE_ATTACKERS": 2,
+   "相:UPKEEP": 1,
+   "自:MAIN2": 1,
+   "自:COMBAT_DAMAGE": 1,
+   "自:COMBAT_DECLARE_BLOCKERS": 1,
+   "相:COMBAT_BEGIN": 1
+  },
+  "aa_casts": [],
+  "T_wr": 0.4506172839506173,
+  "T_n": 162,
+  "N_wr": 0.5109709270433351,
+  "N_n": 7292
+ },
+ "patch": {
+  "games": 360,
+  "ended": 360,
+  "timeouts": 1,
+  "mean_turns": 9.38888888888889,
+  "draws_per_player": 12.254166666666666,
+  "pn_casts": 112,
+  "pn_upkeep_draw": 0,
+  "pn_upkeep_draw_rate": 0.0,
+  "pn_phase_dist": {
+   "自:MAIN1": 68,
+   "自:COMBAT_BEGIN": 33,
+   "相:COMBAT_DECLARE_ATTACKERS": 5,
+   "自:MAIN2": 2,
+   "相:END_OF_TURN": 1,
+   "相:MAIN1": 1,
+   "自:COMBAT_DECLARE_ATTACKERS": 1,
+   "自:COMBAT_DECLARE_BLOCKERS": 1
+  },
+  "aa_casts": [],
+  "T_wr": 0.5205479452054794,
+  "T_n": 146,
+  "N_wr": 0.5174458695352365,
+  "N_n": 7251
+ },
+ "diff_T": {
+  "point": 0.06993066125486214,
+  "ci95": [
+   0.006972059968847373,
+   0.1342883268184294
+  ],
+  "valid_resamples": 10000
+ },
+ "diff_N": {
+  "point": 0.006474942491901392,
+  "ci95": [
+   -0.03794064185958043,
+   0.051299450189963916
+  ],
+  "valid_resamples": 10000
+ },
+ "verdict": {
+  "a_patch_works": true,
+  "c_placebo_ci_contains_0": true,
+  "c_timeouts": true,
+  "c_turns": true,
+  "b_ci95": [
+   0.006972059968847373,
+   0.1342883268184294
+  ],
+  "result": "効果あり"
+ },
+ "per_card_T": {
+  "S.H.I.E.L.D. Flying Car": {
+   "base": [
+    2,
+    6
+   ],
+   "patch": [
+    3,
+    6
+   ],
+   "base_wr": 0.3333333333333333,
+   "patch_wr": 0.5
+  },
+  "Stolen Stark Tech": {
+   "base": [
+    28,
+    59
+   ],
+   "patch": [
+    27,
+    60
+   ],
+   "base_wr": 0.4745762711864407,
+   "patch_wr": 0.45
+  },
+  "Super Suit": {
+   "base": [
+    25,
+    53
+   ],
+   "patch": [
+    24,
+    39
+   ],
+   "base_wr": 0.4716981132075472,
+   "patch_wr": 0.6153846153846154
+  },
+  "Super Villain Lockup": {
+   "base": [
+    14,
+    27
+   ],
+   "patch": [
+    18,
+    27
+   ],
+   "base_wr": 0.5185185185185185,
+   "patch_wr": 0.6666666666666666
+  },
+  "Thunderbolts Conspiracy": {
+   "base": [
+    4,
+    17
+   ],
+   "patch": [
+    4,
+    14
+   ],
+   "base_wr": 0.23529411764705882,
+   "patch_wr": 0.2857142857142857
+  }
+ }
+}
