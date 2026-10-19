@@ -1,0 +1,188 @@
+{
+ "base": {
+  "games": 360,
+  "timeouts": 1,
+  "mean_turns": 9.583333333333334,
+  "draw_lines_per_player": 18.2375,
+  "F_casts": 153,
+  "F_meaningful": 5,
+  "F_pointless_rate": 0.9673202614379085,
+  "F_cast_phase": {
+   "自:MAIN1": 119,
+   "自:DRAW": 22,
+   "自:UPKEEP": 4,
+   "相:UPKEEP": 3,
+   "自:COMBAT_DECLARE_ATTACKERS": 3,
+   "相:COMBAT_DECLARE_ATTACKERS": 1,
+   "相:COMBAT_DAMAGE": 1
+  },
+  "F_drawn": 160,
+  "F_drawn_never_cast_rate": 0.09999999999999998,
+  "S_uses": 11,
+  "S_meaningful": 11,
+  "S_meaningful_rate": 1.0,
+  "S_gih_games": 151,
+  "S_uses_per_gih": 0.0728476821192053,
+  "S_use_phase": {
+   "Alseid of Life's Bounty @相:COMBAT_DECLARE_BLOCKERS": 2,
+   "Spectacular Spider-Man @相:COMBAT_DECLARE_BLOCKERS": 2,
+   "Selfless Samurai @相:COMBAT_DECLARE_BLOCKERS": 2,
+   "Alseid of Life's Bounty @自:COMBAT_DECLARE_BLOCKERS": 1,
+   "Spectacular Spider-Man @相:UPKEEP 対応": 1,
+   "Selfless Samurai @自:COMBAT_DECLARE_BLOCKERS": 1,
+   "Spectacular Spider-Man @自:COMBAT_DECLARE_BLOCKERS": 1,
+   "Hakoda, Selfless Commander @相:MAIN1 対応": 1
+  },
+  "per_card": {
+   "Alseid of Life's Bounty": [
+    21,
+    33
+   ],
+   "Fang Guardian": [
+    39,
+    104
+   ],
+   "Hakoda, Selfless Commander": [
+    14,
+    31
+   ],
+   "Plumecreed Escort": [
+    34,
+    56
+   ],
+   "Selfless Samurai": [
+    14,
+    28
+   ],
+   "Spectacular Spider-Man": [
+    26,
+    37
+   ],
+   "Zack Fair": [
+    14,
+    22
+   ]
+  },
+  "F_gih_n": 160,
+  "F_gih_wr": 0.45625,
+  "S_gih_n": 151,
+  "S_gih_wr": 0.5894039735099338,
+  "N_gih_n": 7193,
+  "N_gih_wr": 0.5095231475045183
+ },
+ "patch": {
+  "games": 360,
+  "timeouts": 0,
+  "mean_turns": 9.55,
+  "draw_lines_per_player": 18.25,
+  "F_casts": 83,
+  "F_meaningful": 82,
+  "F_pointless_rate": 0.012048192771084338,
+  "F_cast_phase": {
+   "自:COMBAT_DECLARE_BLOCKERS": 36,
+   "相:COMBAT_DECLARE_ATTACKERS": 26,
+   "相:COMBAT_DECLARE_ATTACKERS 対応": 9,
+   "相:COMBAT_DECLARE_BLOCKERS": 3,
+   "相:COMBAT_DAMAGE": 2,
+   "自:COMBAT_DECLARE_ATTACKERS 対応": 2,
+   "相:DRAW 対応": 1,
+   "相:MAIN1 対応": 1,
+   "自:MAIN1": 1,
+   "自:COMBAT_DECLARE_ATTACKERS": 1,
+   "相:END_OF_TURN": 1
+  },
+  "F_drawn": 144,
+  "F_drawn_never_cast_rate": 0.4305555555555556,
+  "S_uses": 48,
+  "S_meaningful": 48,
+  "S_meaningful_rate": 1.0,
+  "S_gih_games": 168,
+  "S_uses_per_gih": 0.2857142857142857,
+  "S_use_phase": {
+   "Spectacular Spider-Man @自:COMBAT_DECLARE_BLOCKERS": 12,
+   "Spectacular Spider-Man @相:COMBAT_DECLARE_BLOCKERS": 7,
+   "Hakoda, Selfless Commander @相:COMBAT_DECLARE_BLOCKERS": 7,
+   "Selfless Samurai @自:COMBAT_DECLARE_BLOCKERS": 5,
+   "Selfless Samurai @相:COMBAT_DECLARE_BLOCKERS": 4,
+   "Hakoda, Selfless Commander @自:COMBAT_DECLARE_BLOCKERS": 3,
+   "Hakoda, Selfless Commander @相:DRAW 対応": 2,
+   "Alseid of Life's Bounty @相:MAIN1 対応": 2,
+   "Hakoda, Selfless Commander @相:MAIN1 対応": 1,
+   "Alseid of Life's Bounty @相:COMBAT_DECLARE_BLOCKERS": 1,
+   "Spectacular Spider-Man @自:COMBAT_DECLARE_ATTACKERS 対応": 1,
+   "Selfless Samurai @相:DRAW 対応": 1,
+   "Selfless Samurai @相:MAIN1 対応": 1,
+   "Alseid of Life's Bounty @自:COMBAT_DECLARE_BLOCKERS": 1
+  },
+  "per_card": {
+   "Alseid of Life's Bounty": [
+    23,
+    34
+   ],
+   "Fang Guardian": [
+    45,
+    94
+   ],
+   "Hakoda, Selfless Commander": [
+    21,
+    40
+   ],
+   "Plumecreed Escort": [
+    18,
+    50
+   ],
+   "Selfless Samurai": [
+    12,
+    20
+   ],
+   "Spectacular Spider-Man": [
+    32,
+    48
+   ],
+   "Zack Fair": [
+    15,
+    26
+   ]
+  },
+  "F_gih_n": 144,
+  "F_gih_wr": 0.4375,
+  "S_gih_n": 168,
+  "S_gih_wr": 0.6130952380952381,
+  "N_gih_n": 7062,
+  "N_gih_wr": 0.5160011328235627
+ },
+ "diff_F": {
+  "point": -0.01874999999999999,
+  "ci95": [
+   -0.1400047380156076,
+   0.10065119102555654
+  ],
+  "valid_resamples": 10000
+ },
+ "diff_S": {
+  "point": 0.02369126458530435,
+  "ci95": [
+   -0.06579726741956779,
+   0.11823133078173619
+  ],
+  "valid_resamples": 10000
+ },
+ "diff_N": {
+  "point": 0.006477985319044421,
+  "ci95": [
+   -0.04091681794391944,
+   0.05194744254897248
+  ],
+  "valid_resamples": 10000
+ },
+ "verdict": {
+  "b_placebo_ci_contains_0": true,
+  "b_timeouts": true,
+  "b_turns": true,
+  "aF_pointless_le_25pct": true,
+  "aS_uses_per_gih_diff": 0.21286660359508042,
+  "aS_ok": true,
+  "F_part": "採用候補",
+  "S_part": "採用候補"
+ }
+}
