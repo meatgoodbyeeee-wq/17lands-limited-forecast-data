@@ -1,0 +1,15 @@
+diff --git a/forge-game/src/main/java/forge/game/GameLogFormatter.java b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+index f782187d..eac17ce4 100644
+--- a/forge-game/src/main/java/forge/game/GameLogFormatter.java
++++ b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+@@ -315,6 +315,10 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+             return new GameLogEntry(GameLogEntryType.ANTE,
+                     (c != null ? c.getOwner() + " anted " + c : "a card was anted"));
+         }
++        // J2d research patch: record when Avengers Assemble! enters a hand from the library (draw / opening hand)
++        if (from == ZoneType.Library && to == ZoneType.Hand && ev.card() != null) {
++            return new GameLogEntry(GameLogEntryType.INFORMATION, "K1_DREW " + ev.card().getOwner() + " drew " + ev.card().getName());
++        }
+         // Only log Battlefield -> Graveyard/Exile to avoid duplicating entries
+         // already covered by other events (land played, spell cast, discard, etc.)
+         if (from != ZoneType.Battlefield || (to != ZoneType.Graveyard && to != ZoneType.Exile)) {
