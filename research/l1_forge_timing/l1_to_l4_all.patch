@@ -1,0 +1,311 @@
+diff --git a/forge-ai/src/main/java/forge/ai/ComputerUtilCost.java b/forge-ai/src/main/java/forge/ai/ComputerUtilCost.java
+index be04e602..99709a18 100644
+--- a/forge-ai/src/main/java/forge/ai/ComputerUtilCost.java
++++ b/forge-ai/src/main/java/forge/ai/ComputerUtilCost.java
+@@ -361,6 +361,10 @@ public class ComputerUtilCost {
+                     if (!CardLists.filterControlledBy(source.getEnchantedBy(), source.getController()).isEmpty()) {
+                         return false;
+                     }
++                    // L4 research patch: sacrificing this creature is fine when its effect saves something worth more
++                    if ("1".equals(System.getenv("L4_PATCH")) && source.isCreature() && l4SacSavesMoreValuable(ai, source, sourceAbility)) {
++                        return true;
++                    }
+                     if (source.isCreature()) {
+                         // e.g. Sakura-Tribe Elder
+                         final Combat combat = ai.getGame().getCombat();
+@@ -752,4 +756,49 @@ public class ComputerUtilCost {
+         }
+         return new CardCollection(choices);
+     }
++
++    // L4 research helper: does this sacrifice-self protection ability save other creatures worth more than the source?
++    private static boolean l4SacSavesMoreValuable(final Player ai, final Card source, final SpellAbility sa) {
++        if (sa == null) {
++            return false;
++        }
++        final ApiType api = sa.getApi();
++        if (api != ApiType.Pump && api != ApiType.PumpAll && api != ApiType.Protection && api != ApiType.ProtectionAll) {
++            return false;
++        }
++        final boolean all = api == ApiType.PumpAll || api == ApiType.ProtectionAll;
++        final String kw = sa.getParamOrDefault("KW", "");
++        final boolean indestructible = kw.contains("Indestructible");
++        final boolean protective = api == ApiType.Protection || api == ApiType.ProtectionAll || indestructible
++                || kw.contains("Hexproof") || kw.contains("Shroud") || kw.contains("Protection");
++        if (!protective) {
++            return false;
++        }
++        final forge.game.Game game = ai.getGame();
++        final java.util.Set<Card> saved = new java.util.LinkedHashSet<>();
++        if (!game.getStack().isEmpty()) {
++            for (final GameObject o : ComputerUtil.predictThreatenedObjects(ai, sa, true)) {
++                if (o instanceof Card c && c.getController().equals(ai) && c.isCreature() && !c.equals(source) && (all || sa.canTarget(c))) {
++                    saved.add(c);
++                }
++            }
++        }
++        final Combat combat = game.getCombat();
++        if (indestructible && combat != null && game.getPhaseHandler().is(PhaseType.COMBAT_DECLARE_BLOCKERS)) {
++            for (final Card c : ai.getCreaturesInPlay()) {
++                if (!c.equals(source) && (combat.isAttacking(c) || combat.isBlocking(c)) && (all || sa.canTarget(c))
++                        && ComputerUtilCombat.combatantWouldBeDestroyed(ai, c, combat)) {
++                    saved.add(c);
++                }
++            }
++        }
++        if (saved.isEmpty()) {
++            return false;
++        }
++        int value = 0;
++        for (final Card c : saved) {
++            value = all ? value + ComputerUtilCard.evaluateCreature(c) : Math.max(value, ComputerUtilCard.evaluateCreature(c));
++        }
++        return value > ComputerUtilCard.evaluateCreature(source);
++    }
+ }
+diff --git a/forge-ai/src/main/java/forge/ai/ability/AttachAi.java b/forge-ai/src/main/java/forge/ai/ability/AttachAi.java
+index 06c93201..48d3bef9 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/AttachAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/AttachAi.java
+@@ -929,6 +929,14 @@ public class AttachAi extends SpellAbilityAi {
+             attachPreference(sa, tgt, mandatory);
+             targets = sa.getTargets();
+         }
++        // L3 research patch (enabled only with env L3_PATCH=1): an optional targeted attach with no target chosen does nothing,
++        // so do not report it as worth playing (this is what the pre-cast ETB check asks).
++        // The preference step can come back empty before the card is on the battlefield even when targets exist,
++        // so only refuse when there is no legal target at all.
++        if ("1".equals(System.getenv("L3_PATCH")) && !mandatory && tgt != null && targets.isEmpty()
++                && CardUtil.getValidCardsToTarget(sa).isEmpty()) {
++            return new AiAbilityDecision(0, AiPlayDecision.TargetingFailed);
++        }
+ 
+         if (!mandatory && card.isEquipment() && !targets.isEmpty()) {
+             Card newTarget = (Card) targets.get(0);
+diff --git a/forge-ai/src/main/java/forge/ai/ability/PermanentAi.java b/forge-ai/src/main/java/forge/ai/ability/PermanentAi.java
+index 85451d60..f581347d 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/PermanentAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/PermanentAi.java
+@@ -34,6 +34,12 @@ public class PermanentAi extends SpellAbilityAi {
+             return false;
+         }
+ 
++        // L2' research patch (enabled only with env L2_PATCH=1): hold flash noncreature permanents during the AI's own upkeep/draw
++        if ("1".equals(System.getenv("L2_PATCH")) && card.hasKeyword(Keyword.FLASH) && !card.isCreature()
++                && ph.isPlayerTurn(ai) && (ph.is(PhaseType.UPKEEP) || ph.is(PhaseType.DRAW))) {
++            return false;
++        }
++
+         // Wait for Main2 if possible
+         return !ph.is(PhaseType.MAIN1) || !ph.isPlayerTurn(ai) || sa.hasParam("WithoutManaCost") || ComputerUtil.castPermanentInMain1(ai, sa);
+     }
+diff --git a/forge-ai/src/main/java/forge/ai/ability/PermanentCreatureAi.java b/forge-ai/src/main/java/forge/ai/ability/PermanentCreatureAi.java
+index f5db465e..429754b7 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/PermanentCreatureAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/PermanentCreatureAi.java
+@@ -151,6 +151,14 @@ public class PermanentCreatureAi extends PermanentAi {
+         } else if (isCommander && isMyMain1OrLater) {
+             // Don't hold out specifically if this card is a commander, since otherwise it leads to stupid AI choices
+             return true;
++        } else if ("1".equals(System.getenv("L4_PATCH")) && l4ProtectiveEtb(card) != null) {
++            // L4 research patch: a protective/pump ETB on a creature you control is used like an instant. Cast when that
++            // effect is worth using right now (in response to a threat, or as a combat trick after blocks); otherwise only
++            // at the end of the opponent's turn (or own end step if casting on the opponent's turn is not possible).
++            if (l4EtbWorthNow(card, ai)) {
++                return true;
++            }
++            return canCastAtOppTurn ? isEOTBeforeMyTurn : isOwnEOT;
+         } else if (wantToCastInMain1) {
+             // Would rather cast it in Main 1 or as soon as possible anyway, so go for it
+             return isMyMain1OrLater;
+@@ -209,4 +217,81 @@ public class PermanentCreatureAi extends PermanentAi {
+ 
+         return decision;
+     }
++
++    // L4 research helper: the ETB trigger whose effect is a targeted Pump/Protection/PutCounter on something you control.
++    private static forge.game.trigger.Trigger l4ProtectiveEtb(final Card card) {
++        for (final forge.game.trigger.Trigger tr : card.getTriggers()) {
++            if (tr.getMode() != forge.game.trigger.TriggerType.ChangesZone) {
++                continue;
++            }
++            if (!"Battlefield".equals(tr.getParam("Destination")) || !tr.hasParam("ValidCard") || !tr.getParam("ValidCard").contains("Self")) {
++                continue;
++            }
++            final SpellAbility ex = tr.ensureAbility();
++            if (ex == null || !ex.usesTargeting() || ex.isCurse()) {
++                continue;
++            }
++            final ApiType api = ex.getApi();
++            if (api != ApiType.Pump && api != ApiType.Protection && api != ApiType.PutCounter) {
++                continue;
++            }
++            if (!ex.getParamOrDefault("ValidTgts", "").contains("YouCtrl")) {
++                continue;
++            }
++            return tr;
++        }
++        return null;
++    }
++
++    // L4 research helper: would the ETB effect be worth using right now?
++    private static boolean l4EtbWorthNow(final Card card, final Player ai) {
++        final forge.game.trigger.Trigger tr = l4ProtectiveEtb(card);
++        if (tr == null) {
++            return false;
++        }
++        try {
++            final SpellAbility ex = tr.ensureAbility().copy(ai);
++            ex.setActivatingPlayer(ai);
++            final Game game = ai.getGame();
++            // 1) in response to a threat to a creature we control that this effect can save
++            if (!game.getStack().isEmpty()) {
++                for (final forge.game.GameObject o : forge.ai.ComputerUtil.predictThreatenedObjects(ai, ex, true)) {
++                    if (o instanceof Card c && c.getController().equals(ai) && c.isCreature() && !c.equals(card) && ex.canTarget(c)) {
++                        return true;
++                    }
++                }
++                return false;
++            }
++            // 2) as a combat trick after blockers are declared
++            final forge.game.combat.Combat combat = game.getCombat();
++            if (combat != null && game.getPhaseHandler().is(PhaseType.COMBAT_DECLARE_BLOCKERS)) {
++                int att = 0;
++                int def = 0;
++                final java.util.List<String> kws = new java.util.ArrayList<>();
++                if (ex.getApi() == ApiType.PutCounter) {
++                    if (!"P1P1".equals(ex.getParam("CounterType"))) {
++                        return false;
++                    }
++                    att = def = forge.game.ability.AbilityUtils.calculateAmount(card, ex.getParamOrDefault("CounterNum", "1"), ex);
++                } else if (ex.getApi() == ApiType.Pump) {
++                    att = ex.hasParam("NumAtt") ? forge.game.ability.AbilityUtils.calculateAmount(card, ex.getParam("NumAtt"), ex) : 0;
++                    def = ex.hasParam("NumDef") ? forge.game.ability.AbilityUtils.calculateAmount(card, ex.getParam("NumDef"), ex) : 0;
++                    if (ex.hasParam("KW")) {
++                        kws.addAll(java.util.Arrays.asList(ex.getParam("KW").split(" & ")));
++                    }
++                } else {
++                    return false;
++                }
++                for (final Card c : ai.getCreaturesInPlay()) {
++                    if ((combat.isAttacking(c) || combat.isBlocking(c)) && ex.canTarget(c)
++                            && forge.ai.ComputerUtilCard.shouldPumpCard(ai, ex, c, def, att, kws)) {
++                        return true;
++                    }
++                }
++            }
++        } catch (final Exception e) {
++            return false;
++        }
++        return false;
++    }
+ }
+diff --git a/forge-game/src/main/java/forge/game/GameLogFormatter.java b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+index f782187d..8974bf75 100644
+--- a/forge-game/src/main/java/forge/game/GameLogFormatter.java
++++ b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+@@ -32,8 +32,28 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+                 : String.format("%dm : %02ds", minutes, seconds);
+     }
+ 
++    // L1/L2' research helper (observation only): append one line to the file named by env L1_LOG.
++    private static void l1Write(final String line) {
++        try {
++            final String path = System.getenv("L1_LOG");
++            if (path != null) {
++                java.nio.file.Files.write(java.nio.file.Paths.get(path), (line + "\n").getBytes(java.nio.charset.StandardCharsets.UTF_8),
++                        java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND);
++            }
++        } catch (Throwable t) {
++            // never affect the game
++        }
++    }
++
++    @Override
++    public GameLogEntry visit(GameEventGameStarted ev) {
++        l1Write("START");
++        return null;
++    }
++
+     @Override
+     public GameLogEntry visit(GameEventGameOutcome ev) {
++        l1Write("END|" + ev.winningPlayerName());
+         // Match Duration
+         if (log.getMatchStartMillis() >= 0) { // defend against it somehow still never being set
+             long durationMillis = System.currentTimeMillis() - log.getMatchStartMillis();
+@@ -309,6 +329,9 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+         }
+         final ZoneType from = ev.from().zoneType();
+         final ZoneType to = ev.to().zoneType();
++        if (from == ZoneType.Library && to == ZoneType.Hand && ev.card() != null) {
++            l1Write("DRAW|" + ev.card().getName() + "|" + ev.card().getOwner().getName());
++        }
+         // Log mid-game ante additions (e.g. Contract from Below, Demonic Attorney)
+         if (to == ZoneType.Ante && from != ZoneType.Ante) {
+             final CardView c = ev.card();
+diff --git a/forge-game/src/main/java/forge/game/zone/MagicStack.java b/forge-game/src/main/java/forge/game/zone/MagicStack.java
+index 36c38e12..7912f934 100644
+--- a/forge-game/src/main/java/forge/game/zone/MagicStack.java
++++ b/forge-game/src/main/java/forge/game/zone/MagicStack.java
+@@ -366,6 +366,61 @@ public class MagicStack /* extends MyObservable */ implements Iterable<SpellAbil
+         runParams.put(AbilityKey.CurrentCastSpells, getSpellCardsCastThisTurn());
+ 
+         game.updateStackForView();
++        // L1 research patch (observation only, no behaviour change): record when instant/flash spells are cast.
++        try {
++            final String l1Path = System.getenv("L1_LOG");
++            if (l1Path != null && sp.isSpell() && !sp.isCopied() && source != null
++                    && (source.isInstant() || source.hasKeyword(forge.game.keyword.Keyword.FLASH) || "1".equals(System.getenv("L1_ALL_SPELLS")))) {
++                final forge.game.phase.PhaseHandler ph = game.getPhaseHandler();
++                final StringBuilder chain = new StringBuilder();
++                for (forge.game.spellability.SpellAbility x = sp; x != null; x = x.getSubAbility()) {
++                    if (chain.length() > 0) { chain.append('>'); }
++                    chain.append(x.getApi());
++                }
++                final String line = String.join("|", source.getName(), chain.toString(),
++                        String.valueOf(ph.getPhase()), String.valueOf(ph.getTurn()),
++                        String.valueOf(ph.isPlayerTurn(activator)), String.valueOf(ph.inCombat()),
++                        String.valueOf(stack.size() - 1),
++                        String.valueOf(activator.getCreaturesInPlay().size()),
++                        String.valueOf(activator.getWeakestOpponent().getCreaturesInPlay().size()),
++                        String.valueOf(activator.getController().isAI()), String.valueOf(source.isInstant()),
++                        String.valueOf(source.hasKeyword(forge.game.keyword.Keyword.FLASH)), activator.getName()) + "\n";
++                java.nio.file.Files.write(java.nio.file.Paths.get(l1Path), line.getBytes(java.nio.charset.StandardCharsets.UTF_8),
++                        java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND);
++            }
++        } catch (Throwable t) {
++            // never affect the game
++        }
++        // L4 research logging (observation only): every spell and non-mana activated ability, into the L1_LOG file
++        try {
++            final String l4Path = System.getenv("L1_LOG");
++            if ("1".equals(System.getenv("L4_LOG")) && l4Path != null && !sp.isCopied() && source != null && !sp.isManaAbility()
++                    && (sp.isSpell() || sp.isActivatedAbility())) {
++                boolean oppOnStack = false;
++                for (final SpellAbilityStackInstance s2 : stack) {
++                    if (s2.getSpellAbility() != sp && s2.getActivatingPlayer() != null && s2.getActivatingPlayer().isOpponentOf(activator)) {
++                        oppOnStack = true;
++                    }
++                }
++                boolean sacSelf = false;
++                if (sp.getPayCosts() != null) {
++                    for (final forge.game.cost.CostPart cp : sp.getPayCosts().getCostParts()) {
++                        if (cp instanceof forge.game.cost.CostSacrifice && cp.payCostFromSource()) {
++                            sacSelf = true;
++                        }
++                    }
++                }
++                final forge.game.phase.PhaseHandler ph4 = game.getPhaseHandler();
++                final String line = String.join("|", "L4", sp.isSpell() ? "SPELL" : "ABIL", source.getName(), String.valueOf(sp.getApi()),
++                        String.valueOf(ph4.getPhase()), String.valueOf(ph4.getTurn()), String.valueOf(ph4.isPlayerTurn(activator)),
++                        String.valueOf(ph4.inCombat()), String.valueOf(stack.size() - 1), String.valueOf(oppOnStack), String.valueOf(sacSelf),
++                        String.valueOf(activator.getCreaturesInPlay().size()), activator.getName()) + "\n";
++                java.nio.file.Files.write(java.nio.file.Paths.get(l4Path), line.getBytes(java.nio.charset.StandardCharsets.UTF_8),
++                        java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND);
++            }
++        } catch (Throwable t) {
++            // never affect the game
++        }
+         game.fireEvent(new GameEventSpellAbilityCast(sp, si, stack.size() - 1));
+ 
+         if (!sp.isCopied()) {
