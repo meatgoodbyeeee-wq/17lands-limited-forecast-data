@@ -1,0 +1,722 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=42073 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Error handling registered!
+17:20:12 [INFO ] GuiBase: ##########################################
+17:20:12 [INFO ] GuiBase: APP: Forge v.2.0.16-SNAPSHOT-10.19
+17:20:12 [INFO ] GuiBase: Java: 21.0.12.1 (Ubuntu)
+17:20:12 [INFO ] GuiBase: OS: Linux 6.18.44-fc-v139 amd64
+17:20:12 [INFO ] GuiBase: RAM: 2048 MB max, 2 CPUs
+17:20:12 [INFO ] GuiBase: ##########################################
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 2 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+Simulation mode
+Starting a RoundRobin tournament with 10 players over 9 rounds
+
+Round 1 Pairings:
+lc_016_UR[0] vs lc_019_WB[0] 
+lc_017_UG[0] vs lc_014_UR[0] 
+lc_010_UG[0] vs lc_015_BG[0] 
+lc_018_UB[0] vs lc_013_UB[0] 
+lc_011_WU[0] vs lc_012_WR[0] 
+
+Round 1 - lc_016_UR[0] vs lc_019_WB[0] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 8
+Game Outcome: lc_016_UR has won because all opponents have lost
+Game Outcome: lc_019_WB has lost because life total reached 0
+Match Result: lc_016_UR: 1 lc_019_WB: 0 
+
+Game Result: Game 1 ended in 11027 ms. lc_016_UR has won!
+
+Match Winner - lc_016_UR!
+
+Round 1 - lc_017_UG[0] vs lc_014_UR[0] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 12
+Game Outcome: lc_017_UG has lost because life total reached 0
+Game Outcome: lc_014_UR has won because all opponents have lost
+Match Result: lc_017_UG: 0 lc_014_UR: 1 
+
+Game Result: Game 1 ended in 8890 ms. lc_014_UR has won!
+
+Match Winner - lc_014_UR!
+
+Round 1 - lc_010_UG[0] vs lc_015_BG[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 7
+Game Outcome: lc_010_UG has won because all opponents have lost
+Game Outcome: lc_015_BG has lost because life total reached 0
+Match Result: lc_010_UG: 1 lc_015_BG: 0 
+
+Game Result: Game 1 ended in 3710 ms. lc_010_UG has won!
+
+Match Winner - lc_010_UG!
+
+Round 1 - lc_018_UB[0] vs lc_013_UB[0] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 10
+Game Outcome: lc_018_UB has won because all opponents have lost
+Game Outcome: lc_013_UB has lost because life total reached 0
+Match Result: lc_018_UB: 1 lc_013_UB: 0 
+
+Game Result: Game 1 ended in 7053 ms. lc_018_UB has won!
+
+Match Winner - lc_018_UB!
+
+Round 1 - lc_011_WU[0] vs lc_012_WR[0] 
+Correcting zone for Aerial Doombot (19)
+Correcting zone for Spider-Woman, Secret Agent (27)
+Correcting zone for Aerial Doombot (19)
+Correcting zone for Spider-Woman, Secret Agent (27)
+Game Outcome: Match Duration 0m : 13s
+Game Outcome: Turn 11
+Game Outcome: lc_011_WU has lost because life total reached 0
+Game Outcome: lc_012_WR has won because all opponents have lost
+Match Result: lc_011_WU: 0 lc_012_WR: 1 
+
+Game Result: Game 1 ended in 14577 ms. lc_012_WR has won!
+
+Match Winner - lc_012_WR!
+
+End Round - 1
+
+Round 2 Pairings:
+lc_016_UR[3] vs lc_017_UG[0] 
+lc_010_UG[3] vs lc_019_WB[0] 
+lc_018_UB[3] vs lc_014_UR[3] 
+lc_011_WU[0] vs lc_015_BG[0] 
+lc_012_WR[3] vs lc_013_UB[0] 
+
+Round 2 - lc_016_UR[3] vs lc_017_UG[0] 
+SVar 'NumTimes' not found in ability, fallback to Card (Hawkeye, Master Marksman). Ability is ()
+SVar 'NumTimes' not defined in Card (Hawkeye, Master Marksman)
+Game Outcome: Match Duration 0m : 22s
+Game Outcome: Turn 27
+Game Outcome: lc_016_UR has lost trying to draw cards from empty library
+Game Outcome: lc_017_UG has won because all opponents have lost
+Match Result: lc_016_UR: 0 lc_017_UG: 1 
+
+Game Result: Game 1 ended in 23714 ms. lc_017_UG has won!
+
+Match Winner - lc_017_UG!
+
+Round 2 - lc_010_UG[3] vs lc_019_WB[0] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 11
+Game Outcome: lc_010_UG has lost because life total reached 0
+Game Outcome: lc_019_WB has won because all opponents have lost
+Match Result: lc_010_UG: 0 lc_019_WB: 1 
+
+Game Result: Game 1 ended in 8734 ms. lc_019_WB has won!
+
+Match Winner - lc_019_WB!
+
+Round 2 - lc_018_UB[3] vs lc_014_UR[3] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 9
+Game Outcome: lc_018_UB has won because all opponents have lost
+Game Outcome: lc_014_UR has lost because life total reached 0
+Match Result: lc_018_UB: 1 lc_014_UR: 0 
+
+Game Result: Game 1 ended in 7410 ms. lc_018_UB has won!
+
+Match Winner - lc_018_UB!
+
+Round 2 - lc_011_WU[0] vs lc_015_BG[0] 
+Game Outcome: Match Duration 0m : 13s
+Game Outcome: Turn 10
+Game Outcome: lc_011_WU has won because all opponents have lost
+Game Outcome: lc_015_BG has lost because life total reached 0
+Match Result: lc_011_WU: 1 lc_015_BG: 0 
+
+Game Result: Game 1 ended in 14190 ms. lc_011_WU has won!
+
+Match Winner - lc_011_WU!
+
+Round 2 - lc_012_WR[3] vs lc_013_UB[0] 
+Correcting zone for Unliving Legionnaire (77)
+Correcting zone for Unliving Legionnaire (77)
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 14
+Game Outcome: lc_012_WR has lost because life total reached 0
+Game Outcome: lc_013_UB has won because all opponents have lost
+Match Result: lc_012_WR: 0 lc_013_UB: 1 
+
+Game Result: Game 1 ended in 9230 ms. lc_013_UB has won!
+
+Match Winner - lc_013_UB!
+
+End Round - 2
+
+Round 3 Pairings:
+lc_016_UR[3] vs lc_010_UG[3] 
+lc_018_UB[6] vs lc_017_UG[3] 
+lc_011_WU[3] vs lc_019_WB[3] 
+lc_012_WR[3] vs lc_014_UR[3] 
+lc_013_UB[3] vs lc_015_BG[0] 
+
+Round 3 - lc_016_UR[3] vs lc_010_UG[3] 
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 11
+Game Outcome: lc_016_UR has lost because life total reached 0
+Game Outcome: lc_010_UG has won because all opponents have lost
+Match Result: lc_016_UR: 0 lc_010_UG: 1 
+
+Game Result: Game 1 ended in 5858 ms. lc_010_UG has won!
+
+Match Winner - lc_010_UG!
+
+Round 3 - lc_018_UB[6] vs lc_017_UG[3] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lc_018_UB has lost because life total reached 0
+Game Outcome: lc_017_UG has won because all opponents have lost
+Match Result: lc_018_UB: 0 lc_017_UG: 1 
+
+Game Result: Game 1 ended in 3999 ms. lc_017_UG has won!
+
+Match Winner - lc_017_UG!
+
+Round 3 - lc_011_WU[3] vs lc_019_WB[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lc_011_WU has won because all opponents have lost
+Game Outcome: lc_019_WB has lost because life total reached 0
+Match Result: lc_011_WU: 1 lc_019_WB: 0 
+
+Game Result: Game 1 ended in 2605 ms. lc_011_WU has won!
+
+Match Winner - lc_011_WU!
+
+Round 3 - lc_012_WR[3] vs lc_014_UR[3] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Correcting zone for Attuma, Atlantean Warlord (68)
+Correcting zone for Attuma, Atlantean Warlord (68)
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_012_WR has won because all opponents have lost
+Game Outcome: lc_014_UR has lost because life total reached 0
+Match Result: lc_012_WR: 1 lc_014_UR: 0 
+
+Game Result: Game 1 ended in 2378 ms. lc_012_WR has won!
+
+Match Winner - lc_012_WR!
+
+Round 3 - lc_013_UB[3] vs lc_015_BG[0] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lc_013_UB has won because all opponents have lost
+Game Outcome: lc_015_BG has lost because life total reached 0
+Match Result: lc_013_UB: 1 lc_015_BG: 0 
+
+Game Result: Game 1 ended in 2665 ms. lc_013_UB has won!
+
+Match Winner - lc_013_UB!
+
+End Round - 3
+
+Round 4 Pairings:
+lc_016_UR[3] vs lc_018_UB[6] 
+lc_011_WU[6] vs lc_010_UG[6] 
+lc_012_WR[6] vs lc_017_UG[6] 
+lc_013_UB[6] vs lc_019_WB[3] 
+lc_015_BG[0] vs lc_014_UR[3] 
+
+Round 4 - lc_016_UR[3] vs lc_018_UB[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lc_016_UR has won because all opponents have lost
+Game Outcome: lc_018_UB has lost because life total reached 0
+Match Result: lc_016_UR: 1 lc_018_UB: 0 
+
+Game Result: Game 1 ended in 3903 ms. lc_016_UR has won!
+
+Match Winner - lc_016_UR!
+
+Round 4 - lc_011_WU[6] vs lc_010_UG[6] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lc_011_WU has won because all opponents have lost
+Game Outcome: lc_010_UG has lost because life total reached 0
+Match Result: lc_011_WU: 1 lc_010_UG: 0 
+
+Game Result: Game 1 ended in 2773 ms. lc_011_WU has won!
+
+Match Winner - lc_011_WU!
+
+Round 4 - lc_012_WR[6] vs lc_017_UG[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lc_012_WR has won because all opponents have lost
+Game Outcome: lc_017_UG has lost because life total reached 0
+Match Result: lc_012_WR: 1 lc_017_UG: 0 
+
+Game Result: Game 1 ended in 3666 ms. lc_012_WR has won!
+
+Match Winner - lc_012_WR!
+
+Round 4 - lc_013_UB[6] vs lc_019_WB[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lc_013_UB has lost because life total reached 0
+Game Outcome: lc_019_WB has won because all opponents have lost
+Match Result: lc_013_UB: 0 lc_019_WB: 1 
+
+Game Result: Game 1 ended in 2128 ms. lc_019_WB has won!
+
+Match Winner - lc_019_WB!
+
+Round 4 - lc_015_BG[0] vs lc_014_UR[3] 
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lc_015_BG has lost because life total reached 0
+Game Outcome: lc_014_UR has won because all opponents have lost
+Match Result: lc_015_BG: 0 lc_014_UR: 1 
+
+Game Result: Game 1 ended in 1751 ms. lc_014_UR has won!
+
+Match Winner - lc_014_UR!
+
+End Round - 4
+
+Round 5 Pairings:
+lc_016_UR[6] vs lc_011_WU[9] 
+lc_012_WR[9] vs lc_018_UB[6] 
+lc_013_UB[6] vs lc_010_UG[6] 
+lc_015_BG[0] vs lc_017_UG[6] 
+lc_014_UR[6] vs lc_019_WB[6] 
+
+Round 5 - lc_016_UR[6] vs lc_011_WU[9] 
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 13
+Game Outcome: lc_016_UR has won because all opponents have lost
+Game Outcome: lc_011_WU has lost because life total reached 0
+Match Result: lc_016_UR: 1 lc_011_WU: 0 
+
+Game Result: Game 1 ended in 12974 ms. lc_016_UR has won!
+
+Match Winner - lc_016_UR!
+
+Round 5 - lc_012_WR[9] vs lc_018_UB[6] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 14
+Game Outcome: lc_012_WR has won because all opponents have lost
+Game Outcome: lc_018_UB has lost because life total reached 0
+Match Result: lc_012_WR: 1 lc_018_UB: 0 
+
+Game Result: Game 1 ended in 8438 ms. lc_012_WR has won!
+
+Match Winner - lc_012_WR!
+
+Round 5 - lc_013_UB[6] vs lc_010_UG[6] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 9
+Game Outcome: lc_013_UB has lost because life total reached 0
+Game Outcome: lc_010_UG has won because all opponents have lost
+Match Result: lc_013_UB: 0 lc_010_UG: 1 
+
+Game Result: Game 1 ended in 7494 ms. lc_010_UG has won!
+
+Match Winner - lc_010_UG!
+
+Round 5 - lc_015_BG[0] vs lc_017_UG[6] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 7
+Game Outcome: lc_015_BG has won because all opponents have lost
+Game Outcome: lc_017_UG has lost because life total reached 0
+Match Result: lc_015_BG: 1 lc_017_UG: 0 
+
+Game Result: Game 1 ended in 1359 ms. lc_015_BG has won!
+
+Match Winner - lc_015_BG!
+
+Round 5 - lc_014_UR[6] vs lc_019_WB[6] 
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_014_UR has lost because life total reached 0
+Game Outcome: lc_019_WB has won because all opponents have lost
+Match Result: lc_014_UR: 0 lc_019_WB: 1 
+
+Game Result: Game 1 ended in 2297 ms. lc_019_WB has won!
+
+Match Winner - lc_019_WB!
+
+End Round - 5
+
+Round 6 Pairings:
+lc_016_UR[9] vs lc_012_WR[12] 
+lc_013_UB[6] vs lc_011_WU[9] 
+lc_015_BG[3] vs lc_018_UB[6] 
+lc_014_UR[6] vs lc_010_UG[9] 
+lc_019_WB[9] vs lc_017_UG[6] 
+
+Round 6 - lc_016_UR[9] vs lc_012_WR[12] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+Correcting zone for Falcon, Winged Wonder (15)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lc_016_UR has lost because life total reached 0
+Game Outcome: lc_012_WR has won because all opponents have lost
+Match Result: lc_016_UR: 0 lc_012_WR: 1 
+
+Game Result: Game 1 ended in 1694 ms. lc_012_WR has won!
+
+Match Winner - lc_012_WR!
+
+Round 6 - lc_013_UB[6] vs lc_011_WU[9] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lc_013_UB has lost because life total reached 0
+Game Outcome: lc_011_WU has won because all opponents have lost
+Match Result: lc_013_UB: 0 lc_011_WU: 1 
+
+Game Result: Game 1 ended in 3266 ms. lc_011_WU has won!
+
+Match Winner - lc_011_WU!
+
+Round 6 - lc_015_BG[3] vs lc_018_UB[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lc_015_BG has lost because life total reached 0
+Game Outcome: lc_018_UB has won because all opponents have lost
+Match Result: lc_015_BG: 0 lc_018_UB: 1 
+
+Game Result: Game 1 ended in 1709 ms. lc_018_UB has won!
+
+Match Winner - lc_018_UB!
+
+Round 6 - lc_014_UR[6] vs lc_010_UG[9] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 12
+Game Outcome: lc_014_UR has lost because life total reached 0
+Game Outcome: lc_010_UG has won because all opponents have lost
+Match Result: lc_014_UR: 0 lc_010_UG: 1 
+
+Game Result: Game 1 ended in 8280 ms. lc_010_UG has won!
+
+Match Winner - lc_010_UG!
+
+Round 6 - lc_019_WB[9] vs lc_017_UG[6] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 6
+Game Outcome: lc_019_WB has won because all opponents have lost
+Game Outcome: lc_017_UG has lost because life total reached 0
+Match Result: lc_019_WB: 1 lc_017_UG: 0 
+
+Game Result: Game 1 ended in 1095 ms. lc_019_WB has won!
+
+Match Winner - lc_019_WB!
+
+End Round - 6
+
+Round 7 Pairings:
+lc_016_UR[9] vs lc_013_UB[6] 
+lc_015_BG[3] vs lc_012_WR[15] 
+lc_014_UR[6] vs lc_011_WU[12] 
+lc_019_WB[12] vs lc_018_UB[9] 
+lc_017_UG[6] vs lc_010_UG[12] 
+
+Round 7 - lc_016_UR[9] vs lc_013_UB[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lc_016_UR has won because all opponents have lost
+Game Outcome: lc_013_UB has lost because life total reached 0
+Match Result: lc_016_UR: 1 lc_013_UB: 0 
+
+Game Result: Game 1 ended in 2271 ms. lc_016_UR has won!
+
+Match Winner - lc_016_UR!
+
+Round 7 - lc_015_BG[3] vs lc_012_WR[15] 
+Correcting zone for Hercules, Prince of Power (8)
+Correcting zone for Hercules, Prince of Power (8)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_015_BG has won because all opponents have lost
+Game Outcome: lc_012_WR has lost because life total reached 0
+Match Result: lc_015_BG: 1 lc_012_WR: 0 
+
+Game Result: Game 1 ended in 2545 ms. lc_015_BG has won!
+
+Match Winner - lc_015_BG!
+
+Round 7 - lc_014_UR[6] vs lc_011_WU[12] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 8
+Game Outcome: lc_014_UR has won because all opponents have lost
+Game Outcome: lc_011_WU has lost because life total reached 0
+Match Result: lc_014_UR: 1 lc_011_WU: 0 
+
+Game Result: Game 1 ended in 6505 ms. lc_014_UR has won!
+
+Match Winner - lc_014_UR!
+
+Round 7 - lc_019_WB[12] vs lc_018_UB[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lc_019_WB has won because all opponents have lost
+Game Outcome: lc_018_UB has lost because life total reached 0
+Match Result: lc_019_WB: 1 lc_018_UB: 0 
+
+Game Result: Game 1 ended in 2384 ms. lc_019_WB has won!
+
+Match Winner - lc_019_WB!
+
+Round 7 - lc_017_UG[6] vs lc_010_UG[12] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 7
+Game Outcome: lc_017_UG has lost because life total reached 0
+Game Outcome: lc_010_UG has won because all opponents have lost
+Match Result: lc_017_UG: 0 lc_010_UG: 1 
+
+Game Result: Game 1 ended in 1249 ms. lc_010_UG has won!
+
+Match Winner - lc_010_UG!
+
+End Round - 7
+
+Round 8 Pairings:
+lc_016_UR[12] vs lc_015_BG[6] 
+lc_014_UR[9] vs lc_013_UB[6] 
+lc_019_WB[15] vs lc_012_WR[15] 
+lc_017_UG[6] vs lc_011_WU[12] 
+lc_010_UG[15] vs lc_018_UB[9] 
+
+Round 8 - lc_016_UR[12] vs lc_015_BG[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lc_016_UR has won because all opponents have lost
+Game Outcome: lc_015_BG has lost because life total reached 0
+Match Result: lc_016_UR: 1 lc_015_BG: 0 
+
+Game Result: Game 1 ended in 3714 ms. lc_016_UR has won!
+
+Match Winner - lc_016_UR!
+
+Round 8 - lc_014_UR[9] vs lc_013_UB[6] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lc_014_UR has won because all opponents have lost
+Game Outcome: lc_013_UB has lost because life total reached 0
+Match Result: lc_014_UR: 1 lc_013_UB: 0 
+
+Game Result: Game 1 ended in 3019 ms. lc_014_UR has won!
+
+Match Winner - lc_014_UR!
+
+Round 8 - lc_019_WB[15] vs lc_012_WR[15] 
+Correcting zone for Quake, Agent of S.H.I.E.L.D. (31)
+Correcting zone for Quake, Agent of S.H.I.E.L.D. (31)
+Correcting zone for Quake, Agent of S.H.I.E.L.D. (31)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_019_WB has lost because life total reached 0
+Game Outcome: lc_012_WR has won because all opponents have lost
+Match Result: lc_019_WB: 0 lc_012_WR: 1 
+
+Game Result: Game 1 ended in 1798 ms. lc_012_WR has won!
+
+Match Winner - lc_012_WR!
+
+Round 8 - lc_017_UG[6] vs lc_011_WU[12] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lc_017_UG has lost because life total reached 0
+Game Outcome: lc_011_WU has won because all opponents have lost
+Match Result: lc_017_UG: 0 lc_011_WU: 1 
+
+Game Result: Game 1 ended in 4246 ms. lc_011_WU has won!
+
+Match Winner - lc_011_WU!
+
+Round 8 - lc_010_UG[15] vs lc_018_UB[9] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: lc_010_UG has lost because life total reached 0
+Game Outcome: lc_018_UB has won because all opponents have lost
+Match Result: lc_010_UG: 0 lc_018_UB: 1 
+
+Game Result: Game 1 ended in 5072 ms. lc_018_UB has won!
+
+Match Winner - lc_018_UB!
+
+End Round - 8
+
+Round 9 Pairings:
+lc_016_UR[15] vs lc_014_UR[12] 
+lc_019_WB[15] vs lc_015_BG[6] 
+lc_017_UG[6] vs lc_013_UB[6] 
+lc_010_UG[15] vs lc_012_WR[18] 
+lc_018_UB[12] vs lc_011_WU[15] 
+
+Round 9 - lc_016_UR[15] vs lc_014_UR[12] 
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_016_UR has lost because life total reached 0
+Game Outcome: lc_014_UR has won because all opponents have lost
+Match Result: lc_016_UR: 0 lc_014_UR: 1 
+
+Game Result: Game 1 ended in 1936 ms. lc_014_UR has won!
+
+Match Winner - lc_014_UR!
+
+Round 9 - lc_019_WB[15] vs lc_015_BG[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lc_019_WB has lost because life total reached 0
+Game Outcome: lc_015_BG has won because all opponents have lost
+Match Result: lc_019_WB: 0 lc_015_BG: 1 
+
+Game Result: Game 1 ended in 2535 ms. lc_015_BG has won!
+
+Match Winner - lc_015_BG!
+
+Round 9 - lc_017_UG[6] vs lc_013_UB[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lc_017_UG has won because all opponents have lost
+Game Outcome: lc_013_UB has lost because life total reached 0
+Match Result: lc_017_UG: 1 lc_013_UB: 0 
+
+Game Result: Game 1 ended in 2578 ms. lc_017_UG has won!
+
+Match Winner - lc_017_UG!
+
+Round 9 - lc_010_UG[15] vs lc_012_WR[18] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Correcting zone for Shuri, Wakandan Inventor (21)
+Correcting zone for Shuri, Wakandan Inventor (21)
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 8
+Game Outcome: lc_010_UG has lost because life total reached 0
+Game Outcome: lc_012_WR has won because all opponents have lost
+Match Result: lc_010_UG: 0 lc_012_WR: 1 
+
+Game Result: Game 1 ended in 1420 ms. lc_012_WR has won!
+
+Match Winner - lc_012_WR!
+
+Round 9 - lc_018_UB[12] vs lc_011_WU[15] 
+Game Outcome: Match Duration 0m : 21s
+Game Outcome: Turn 10
+Game Outcome: lc_018_UB has lost because life total reached 0
+Game Outcome: lc_011_WU has won because all opponents have lost
+Match Result: lc_018_UB: 0 lc_011_WU: 1 
+
+Game Result: Game 1 ended in 22450 ms. lc_011_WU has won!
+
+Match Winner - lc_011_WU!
+
+lc_012_WR		7 Wins(0 Byes)-2 Losses-0 Ties	=>	21 Points
+lc_011_WU		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+lc_019_WB		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lc_014_UR		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lc_010_UG		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lc_016_UR		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lc_018_UB		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lc_017_UG		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lc_015_BG		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lc_013_UB		2 Wins(0 Byes)-7 Losses-0 Ties	=>	6 Points

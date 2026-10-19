@@ -1,0 +1,711 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=42073 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Error handling registered!
+17:33:13 [INFO ] GuiBase: ##########################################
+17:33:13 [INFO ] GuiBase: APP: Forge v.2.0.16-SNAPSHOT-10.19
+17:33:13 [INFO ] GuiBase: Java: 21.0.12.1 (Ubuntu)
+17:33:13 [INFO ] GuiBase: OS: Linux 6.18.44-fc-v139 amd64
+17:33:13 [INFO ] GuiBase: RAM: 2048 MB max, 2 CPUs
+17:33:13 [INFO ] GuiBase: ##########################################
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 1 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+Simulation mode
+Starting a RoundRobin tournament with 10 players over 9 rounds
+
+Round 1 Pairings:
+lc_070_UG[0] vs lc_079_RG[0] 
+lc_078_UR[0] vs lc_072_UG[0] 
+lc_077_UG[0] vs lc_074_BR[0] 
+lc_076_WG[0] vs lc_075_BR[0] 
+lc_073_WB[0] vs lc_071_UB[0] 
+
+Round 1 - lc_070_UG[0] vs lc_079_RG[0] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 9
+Game Outcome: lc_070_UG has lost because life total reached 0
+Game Outcome: lc_079_RG has won because all opponents have lost
+Match Result: lc_070_UG: 0 lc_079_RG: 1 
+
+Game Result: Game 1 ended in 8900 ms. lc_079_RG has won!
+
+Match Winner - lc_079_RG!
+
+Round 1 - lc_078_UR[0] vs lc_072_UG[0] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at forge.ai.AiController.chooseSpellAbilityToPlayFromList(AiController.java:1782)
+	at forge.ai.AiController.getSpellAbilityToPlay(AiController.java:1659)
+	at forge.ai.AiController.chooseSpellAbilityToPlayImpl(AiController.java:1480)
+	at forge.ai.AiController.chooseSpellAbilityToPlay(AiController.java:1425)
+	at forge.ai.PlayerControllerAi.chooseSpellAbilityToPlay(PlayerControllerAi.java:850)
+	at forge.game.phase.PhaseHandler.mainLoopStep(PhaseHandler.java:1065)
+	at forge.game.phase.PhaseHandler.mainGameLoop(PhaseHandler.java:1043)
+	at forge.game.phase.PhaseHandler.startFirstTurn(PhaseHandler.java:1037)
+	at forge.game.GameAction.startGame(GameAction.java:2396)
+	at forge.game.Match.startGame(Match.java:92)
+	at forge.game.Match.startGame(Match.java:77)
+	at forge.view.SimulateMatch.lambda$simulateSingleMatch$0(SimulateMatch.java:219)
+	at forge.view.TimeLimitedCodeBlock.lambda$runWithTimeout$0(TimeLimitedCodeBlock.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+AI eval thread at timeout:
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at forge.ai.AiController.chooseSpellAbilityToPlayFromList(AiController.java:1782)
+	at forge.ai.AiController.getSpellAbilityToPlay(AiController.java:1659)
+	at forge.ai.AiController.chooseSpellAbilityToPlayImpl(AiController.java:1480)
+	at forge.ai.AiController.chooseSpellAbilityToPlay(AiController.java:1425)
+	at forge.ai.PlayerControllerAi.chooseSpellAbilityToPlay(PlayerControllerAi.java:850)
+	at forge.game.phase.PhaseHandler.mainLoopStep(PhaseHandler.java:1065)
+	at forge.game.phase.PhaseHandler.mainGameLoop(PhaseHandler.java:1043)
+	at forge.game.phase.PhaseHandler.startFirstTurn(PhaseHandler.java:1037)
+	at forge.game.GameAction.startGame(GameAction.java:2396)
+	at forge.game.Match.startGame(Match.java:92)
+	at forge.game.Match.startGame(Match.java:77)
+	at forge.view.SimulateMatch.lambda$simulateSingleMatch$0(SimulateMatch.java:219)
+	at forge.view.TimeLimitedCodeBlock.lambda$runWithTimeout$0(TimeLimitedCodeBlock.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+AI eval thread at timeout:
+	at java.base/java.util.HashMap.resize(HashMap.java:713)
+	at java.base/java.util.HashMap.putVal(HashMap.java:669)
+	at java.base/java.util.HashMap.put(HashMap.java:618)
+	at java.base/java.util.HashSet.add(HashSet.java:229)
+	at forge.util.collect.FCollection.add(FCollection.java:273)
+	at forge.util.collect.FCollection.addAll(FCollection.java:346)
+	at forge.util.collect.FCollection.addAll(FCollection.java:325)
+	at forge.game.Game.getCardsIn(Game.java:645)
+	at forge.game.staticability.StaticAbilityCombatDamageToughness.combatDamageToughness(StaticAbilityCombatDamageToughness.java:11)
+	at forge.game.card.Card.toughnessAssignsDamage(Card.java:4543)
+	at forge.ai.ComputerUtilCombat.canDestroyAttacker(ComputerUtilCombat.java:1703)
+	at forge.ai.AiBlockController.getKillingBlockers(AiBlockController.java:122)
+	at forge.ai.AiBlockController.makeGoodBlocks(AiBlockController.java:240)
+	at forge.ai.AiBlockController.assignBlockers(AiBlockController.java:1148)
+	at forge.ai.AiBlockController.assignBlockersForCombat(AiBlockController.java:1079)
+	at forge.ai.ComputerUtil.predictNextCombatsRemainingLife(ComputerUtil.java:3249)
+	at forge.ai.ComputerUtil.predictNextCombatsRemainingLife(ComputerUtil.java:3214)
+	at forge.ai.AiAttackController.notNeededAsBlockers(AiAttackController.java:427)
+	at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:1310)
+	at forge.ai.AiController.getPredictedCombat(AiController.java:144)
+	at forge.ai.ComputerUtilCard.doesCreatureAttackAI(ComputerUtilCard.java:832)
+	at forge.ai.ComputerUtilCard.shouldPumpCard(ComputerUtilCard.java:1583)
+	at forge.ai.ComputerUtilCard.shouldPumpCard(ComputerUtilCard.java:1472)
+	at forge.ai.ability.CountersPutAi.checkApiLogic(CountersPutAi.java:627)
+	at forge.ai.SpellAbilityAi.canPlayWithoutRestrict(SpellAbilityAi.java:100)
+	at forge.ai.SpellAbilityAi.canPlay(SpellAbilityAi.java:78)
+	at forge.ai.SpellAbilityAi.canPlayWithSubs(SpellAbilityAi.java:57)
+	at forge.ai.AiController.canPlaySa(AiController.java:924)
+	at forge.ai.AiController.canPlayAndPayForFace(AiController.java:870)
+	at forge.ai.AiController.canPlayAndPayFor(AiController.java:849)
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 51s
+Game Outcome: Turn 21
+Game Outcome: lc_078_UR has lost because life total reached 0
+Game Outcome: lc_072_UG has won because all opponents have lost
+Match Result: lc_078_UR: 0 lc_072_UG: 1 
+
+Game Result: Game 1 ended in 51736 ms. lc_072_UG has won!
+
+Match Winner - lc_072_UG!
+
+Round 1 - lc_077_UG[0] vs lc_074_BR[0] 
+Correcting zone for Pet Avengers (4)
+Game Outcome: Match Duration 0m : 16s
+Game Outcome: Turn 12
+Game Outcome: lc_077_UG has won because all opponents have lost
+Game Outcome: lc_074_BR has lost because life total reached 0
+Match Result: lc_077_UG: 1 lc_074_BR: 0 
+
+Game Result: Game 1 ended in 16722 ms. lc_077_UG has won!
+
+Match Winner - lc_077_UG!
+
+Round 1 - lc_076_WG[0] vs lc_075_BR[0] 
+Game Outcome: Match Duration 0m : 10s
+Game Outcome: Turn 9
+Game Outcome: lc_076_WG has won because all opponents have lost
+Game Outcome: lc_075_BR has lost because life total reached 0
+Match Result: lc_076_WG: 1 lc_075_BR: 0 
+
+Game Result: Game 1 ended in 10632 ms. lc_076_WG has won!
+
+Match Winner - lc_076_WG!
+
+Round 1 - lc_073_WB[0] vs lc_071_UB[0] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 13
+Game Outcome: lc_073_WB has lost because life total reached 0
+Game Outcome: lc_071_UB has won because all opponents have lost
+Match Result: lc_073_WB: 0 lc_071_UB: 1 
+
+Game Result: Game 1 ended in 9081 ms. lc_071_UB has won!
+
+Match Winner - lc_071_UB!
+
+End Round - 1
+
+Round 2 Pairings:
+lc_070_UG[0] vs lc_078_UR[0] 
+lc_077_UG[3] vs lc_079_RG[3] 
+lc_076_WG[3] vs lc_072_UG[3] 
+lc_073_WB[0] vs lc_074_BR[0] 
+lc_071_UB[3] vs lc_075_BR[0] 
+
+Round 2 - lc_070_UG[0] vs lc_078_UR[0] 
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Correcting zone for Stature, Size Shifter (6)
+Correcting zone for Stature, Size Shifter (6)
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lc_070_UG has won because all opponents have lost
+Game Outcome: lc_078_UR has lost because life total reached 0
+Match Result: lc_070_UG: 1 lc_078_UR: 0 
+
+Game Result: Game 1 ended in 3422 ms. lc_070_UG has won!
+
+Match Winner - lc_070_UG!
+
+Round 2 - lc_077_UG[3] vs lc_079_RG[3] 
+Game Outcome: Match Duration 0m : 09s
+Game Outcome: Turn 9
+Game Outcome: lc_077_UG has lost because life total reached 0
+Game Outcome: lc_079_RG has won because all opponents have lost
+Match Result: lc_077_UG: 0 lc_079_RG: 1 
+
+Game Result: Game 1 ended in 10322 ms. lc_079_RG has won!
+
+Match Winner - lc_079_RG!
+
+Round 2 - lc_076_WG[3] vs lc_072_UG[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lc_076_WG has lost because life total reached 0
+Game Outcome: lc_072_UG has won because all opponents have lost
+Match Result: lc_076_WG: 0 lc_072_UG: 1 
+
+Game Result: Game 1 ended in 2190 ms. lc_072_UG has won!
+
+Match Winner - lc_072_UG!
+
+Round 2 - lc_073_WB[0] vs lc_074_BR[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: lc_073_WB has won because all opponents have lost
+Game Outcome: lc_074_BR has lost because life total reached 0
+Match Result: lc_073_WB: 1 lc_074_BR: 0 
+
+Game Result: Game 1 ended in 3687 ms. lc_073_WB has won!
+
+Match Winner - lc_073_WB!
+
+Round 2 - lc_071_UB[3] vs lc_075_BR[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lc_071_UB has won because all opponents have lost
+Game Outcome: lc_075_BR has lost because life total reached 0
+Match Result: lc_071_UB: 1 lc_075_BR: 0 
+
+Game Result: Game 1 ended in 4077 ms. lc_071_UB has won!
+
+Match Winner - lc_071_UB!
+
+End Round - 2
+
+Round 3 Pairings:
+lc_070_UG[3] vs lc_077_UG[3] 
+lc_076_WG[3] vs lc_078_UR[0] 
+lc_073_WB[3] vs lc_079_RG[6] 
+lc_071_UB[6] vs lc_072_UG[6] 
+lc_075_BR[0] vs lc_074_BR[0] 
+
+Round 3 - lc_070_UG[3] vs lc_077_UG[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 6
+Game Outcome: lc_070_UG has won because all opponents have lost
+Game Outcome: lc_077_UG has lost because life total reached 0
+Match Result: lc_070_UG: 1 lc_077_UG: 0 
+
+Game Result: Game 1 ended in 2036 ms. lc_070_UG has won!
+
+Match Winner - lc_070_UG!
+
+Round 3 - lc_076_WG[3] vs lc_078_UR[0] 
+Correcting zone for Agent Maria Hill (11)
+Correcting zone for Agent Maria Hill (11)
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lc_076_WG has won because all opponents have lost
+Game Outcome: lc_078_UR has lost because life total reached 0
+Match Result: lc_076_WG: 1 lc_078_UR: 0 
+
+Game Result: Game 1 ended in 2280 ms. lc_076_WG has won!
+
+Match Winner - lc_076_WG!
+
+Round 3 - lc_073_WB[3] vs lc_079_RG[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_073_WB has won because all opponents have lost
+Game Outcome: lc_079_RG has lost because life total reached 0
+Match Result: lc_073_WB: 1 lc_079_RG: 0 
+
+Game Result: Game 1 ended in 1763 ms. lc_073_WB has won!
+
+Match Winner - lc_073_WB!
+
+Round 3 - lc_071_UB[6] vs lc_072_UG[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lc_071_UB has lost because life total reached 0
+Game Outcome: lc_072_UG has won because all opponents have lost
+Match Result: lc_071_UB: 0 lc_072_UG: 1 
+
+Game Result: Game 1 ended in 4170 ms. lc_072_UG has won!
+
+Match Winner - lc_072_UG!
+
+Round 3 - lc_075_BR[0] vs lc_074_BR[0] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lc_075_BR has lost because life total reached 0
+Game Outcome: lc_074_BR has won because all opponents have lost
+Match Result: lc_075_BR: 0 lc_074_BR: 1 
+
+Game Result: Game 1 ended in 1943 ms. lc_074_BR has won!
+
+Match Winner - lc_074_BR!
+
+End Round - 3
+
+Round 4 Pairings:
+lc_070_UG[6] vs lc_076_WG[6] 
+lc_073_WB[6] vs lc_077_UG[3] 
+lc_071_UB[6] vs lc_078_UR[0] 
+lc_075_BR[0] vs lc_079_RG[6] 
+lc_074_BR[3] vs lc_072_UG[9] 
+
+Round 4 - lc_070_UG[6] vs lc_076_WG[6] 
+Game Outcome: Match Duration 0m : 09s
+Game Outcome: Turn 11
+Game Outcome: lc_070_UG has lost because life total reached 0
+Game Outcome: lc_076_WG has won because all opponents have lost
+Match Result: lc_070_UG: 0 lc_076_WG: 1 
+
+Game Result: Game 1 ended in 9543 ms. lc_076_WG has won!
+
+Match Winner - lc_076_WG!
+
+Round 4 - lc_073_WB[6] vs lc_077_UG[3] 
+Game Outcome: Match Duration 0m : 09s
+Game Outcome: Turn 12
+Game Outcome: lc_073_WB has won because all opponents have lost
+Game Outcome: lc_077_UG has lost because life total reached 0
+Match Result: lc_073_WB: 1 lc_077_UG: 0 
+
+Game Result: Game 1 ended in 10250 ms. lc_073_WB has won!
+
+Match Winner - lc_073_WB!
+
+Round 4 - lc_071_UB[6] vs lc_078_UR[0] 
+Game Outcome: Match Duration 0m : 20s
+Game Outcome: Turn 13
+Game Outcome: lc_071_UB has won because all opponents have lost
+Game Outcome: lc_078_UR has lost because life total reached 0
+Match Result: lc_071_UB: 1 lc_078_UR: 0 
+
+Game Result: Game 1 ended in 21311 ms. lc_071_UB has won!
+
+Match Winner - lc_071_UB!
+
+Round 4 - lc_075_BR[0] vs lc_079_RG[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_075_BR has won because all opponents have lost
+Game Outcome: lc_079_RG has lost because life total reached 0
+Match Result: lc_075_BR: 1 lc_079_RG: 0 
+
+Game Result: Game 1 ended in 2276 ms. lc_075_BR has won!
+
+Match Winner - lc_075_BR!
+
+Round 4 - lc_074_BR[3] vs lc_072_UG[9] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 12
+Game Outcome: lc_074_BR has won because all opponents have lost
+Game Outcome: lc_072_UG has lost because life total reached 0
+Match Result: lc_074_BR: 1 lc_072_UG: 0 
+
+Game Result: Game 1 ended in 2550 ms. lc_074_BR has won!
+
+Match Winner - lc_074_BR!
+
+End Round - 4
+
+Round 5 Pairings:
+lc_070_UG[6] vs lc_073_WB[9] 
+lc_071_UB[9] vs lc_076_WG[9] 
+lc_075_BR[3] vs lc_077_UG[3] 
+lc_074_BR[6] vs lc_078_UR[0] 
+lc_072_UG[9] vs lc_079_RG[6] 
+
+Round 5 - lc_070_UG[6] vs lc_073_WB[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lc_070_UG has won because all opponents have lost
+Game Outcome: lc_073_WB has lost because life total reached 0
+Match Result: lc_070_UG: 1 lc_073_WB: 0 
+
+Game Result: Game 1 ended in 1879 ms. lc_070_UG has won!
+
+Match Winner - lc_070_UG!
+
+Round 5 - lc_071_UB[9] vs lc_076_WG[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_071_UB has lost because life total reached 0
+Game Outcome: lc_076_WG has won because all opponents have lost
+Match Result: lc_071_UB: 0 lc_076_WG: 1 
+
+Game Result: Game 1 ended in 1988 ms. lc_076_WG has won!
+
+Match Winner - lc_076_WG!
+
+Round 5 - lc_075_BR[3] vs lc_077_UG[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 6
+Game Outcome: lc_075_BR has lost because life total reached 0
+Game Outcome: lc_077_UG has won because all opponents have lost
+Match Result: lc_075_BR: 0 lc_077_UG: 1 
+
+Game Result: Game 1 ended in 1555 ms. lc_077_UG has won!
+
+Match Winner - lc_077_UG!
+
+Round 5 - lc_074_BR[6] vs lc_078_UR[0] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 10
+Game Outcome: lc_074_BR has lost because life total reached 0
+Game Outcome: lc_078_UR has won because all opponents have lost
+Match Result: lc_074_BR: 0 lc_078_UR: 1 
+
+Game Result: Game 1 ended in 4702 ms. lc_078_UR has won!
+
+Match Winner - lc_078_UR!
+
+Round 5 - lc_072_UG[9] vs lc_079_RG[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lc_072_UG has won because all opponents have lost
+Game Outcome: lc_079_RG has lost because life total reached 0
+Match Result: lc_072_UG: 1 lc_079_RG: 0 
+
+Game Result: Game 1 ended in 2522 ms. lc_072_UG has won!
+
+Match Winner - lc_072_UG!
+
+End Round - 5
+
+Round 6 Pairings:
+lc_070_UG[9] vs lc_071_UB[9] 
+lc_075_BR[3] vs lc_073_WB[9] 
+lc_074_BR[6] vs lc_076_WG[12] 
+lc_072_UG[12] vs lc_077_UG[6] 
+lc_079_RG[6] vs lc_078_UR[3] 
+
+Round 6 - lc_070_UG[9] vs lc_071_UB[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_070_UG has won because all opponents have lost
+Game Outcome: lc_071_UB has lost because life total reached 0
+Match Result: lc_070_UG: 1 lc_071_UB: 0 
+
+Game Result: Game 1 ended in 1855 ms. lc_070_UG has won!
+
+Match Winner - lc_070_UG!
+
+Round 6 - lc_075_BR[3] vs lc_073_WB[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lc_075_BR has lost because life total reached 0
+Game Outcome: lc_073_WB has won because all opponents have lost
+Match Result: lc_075_BR: 0 lc_073_WB: 1 
+
+Game Result: Game 1 ended in 1542 ms. lc_073_WB has won!
+
+Match Winner - lc_073_WB!
+
+Round 6 - lc_074_BR[6] vs lc_076_WG[12] 
+Correcting zone for Captain America, Wings of Freedom (52)
+Correcting zone for Captain America, Wings of Freedom (52)
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 12
+Game Outcome: lc_074_BR has lost because life total reached 0
+Game Outcome: lc_076_WG has won because all opponents have lost
+Match Result: lc_074_BR: 0 lc_076_WG: 1 
+
+Game Result: Game 1 ended in 3186 ms. lc_076_WG has won!
+
+Match Winner - lc_076_WG!
+
+Round 6 - lc_072_UG[12] vs lc_077_UG[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: lc_072_UG has lost because life total reached 0
+Game Outcome: lc_077_UG has won because all opponents have lost
+Match Result: lc_072_UG: 0 lc_077_UG: 1 
+
+Game Result: Game 1 ended in 3418 ms. lc_077_UG has won!
+
+Match Winner - lc_077_UG!
+
+Round 6 - lc_079_RG[6] vs lc_078_UR[3] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_079_RG has won because all opponents have lost
+Game Outcome: lc_078_UR has lost because life total reached 0
+Match Result: lc_079_RG: 1 lc_078_UR: 0 
+
+Game Result: Game 1 ended in 2084 ms. lc_079_RG has won!
+
+Match Winner - lc_079_RG!
+
+End Round - 6
+
+Round 7 Pairings:
+lc_070_UG[12] vs lc_075_BR[3] 
+lc_074_BR[6] vs lc_071_UB[9] 
+lc_072_UG[12] vs lc_073_WB[12] 
+lc_079_RG[9] vs lc_076_WG[15] 
+lc_078_UR[3] vs lc_077_UG[9] 
+
+Round 7 - lc_070_UG[12] vs lc_075_BR[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lc_070_UG has lost because life total reached 0
+Game Outcome: lc_075_BR has won because all opponents have lost
+Match Result: lc_070_UG: 0 lc_075_BR: 1 
+
+Game Result: Game 1 ended in 1702 ms. lc_075_BR has won!
+
+Match Winner - lc_075_BR!
+
+Round 7 - lc_074_BR[6] vs lc_071_UB[9] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 10
+Game Outcome: lc_074_BR has lost because life total reached 0
+Game Outcome: lc_071_UB has won because all opponents have lost
+Match Result: lc_074_BR: 0 lc_071_UB: 1 
+
+Game Result: Game 1 ended in 5494 ms. lc_071_UB has won!
+
+Match Winner - lc_071_UB!
+
+Round 7 - lc_072_UG[12] vs lc_073_WB[12] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 12
+Game Outcome: lc_072_UG has lost because life total reached 0
+Game Outcome: lc_073_WB has won because all opponents have lost
+Match Result: lc_072_UG: 0 lc_073_WB: 1 
+
+Game Result: Game 1 ended in 7750 ms. lc_073_WB has won!
+
+Match Winner - lc_073_WB!
+
+Round 7 - lc_079_RG[9] vs lc_076_WG[15] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: lc_079_RG has lost because life total reached 0
+Game Outcome: lc_076_WG has won because all opponents have lost
+Match Result: lc_079_RG: 0 lc_076_WG: 1 
+
+Game Result: Game 1 ended in 4572 ms. lc_076_WG has won!
+
+Match Winner - lc_076_WG!
+
+Round 7 - lc_078_UR[3] vs lc_077_UG[9] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 11
+Game Outcome: lc_078_UR has won because all opponents have lost
+Game Outcome: lc_077_UG has lost because life total reached 0
+Match Result: lc_078_UR: 1 lc_077_UG: 0 
+
+Game Result: Game 1 ended in 5937 ms. lc_078_UR has won!
+
+Match Winner - lc_078_UR!
+
+End Round - 7
+
+Round 8 Pairings:
+lc_070_UG[12] vs lc_074_BR[6] 
+lc_072_UG[12] vs lc_075_BR[6] 
+lc_079_RG[9] vs lc_071_UB[12] 
+lc_078_UR[6] vs lc_073_WB[15] 
+lc_077_UG[9] vs lc_076_WG[18] 
+
+Round 8 - lc_070_UG[12] vs lc_074_BR[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lc_070_UG has won because all opponents have lost
+Game Outcome: lc_074_BR has lost because life total reached 0
+Match Result: lc_070_UG: 1 lc_074_BR: 0 
+
+Game Result: Game 1 ended in 2474 ms. lc_070_UG has won!
+
+Match Winner - lc_070_UG!
+
+Round 8 - lc_072_UG[12] vs lc_075_BR[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lc_072_UG has won because all opponents have lost
+Game Outcome: lc_075_BR has lost because life total reached 0
+Match Result: lc_072_UG: 1 lc_075_BR: 0 
+
+Game Result: Game 1 ended in 2880 ms. lc_072_UG has won!
+
+Match Winner - lc_072_UG!
+
+Round 8 - lc_079_RG[9] vs lc_071_UB[12] 
+Forest Did not have activator set in SpellAbilityRestriction.canPlay()
+Forest Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_079_RG has won because all opponents have lost
+Game Outcome: lc_071_UB has lost because life total reached 0
+Match Result: lc_079_RG: 1 lc_071_UB: 0 
+
+Game Result: Game 1 ended in 1334 ms. lc_079_RG has won!
+
+Match Winner - lc_079_RG!
+
+Round 8 - lc_078_UR[6] vs lc_073_WB[15] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lc_078_UR has lost because life total reached 0
+Game Outcome: lc_073_WB has won because all opponents have lost
+Match Result: lc_078_UR: 0 lc_073_WB: 1 
+
+Game Result: Game 1 ended in 1323 ms. lc_073_WB has won!
+
+Match Winner - lc_073_WB!
+
+Round 8 - lc_077_UG[9] vs lc_076_WG[18] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lc_077_UG has won because all opponents have lost
+Game Outcome: lc_076_WG has lost because life total reached 0
+Match Result: lc_077_UG: 1 lc_076_WG: 0 
+
+Game Result: Game 1 ended in 2342 ms. lc_077_UG has won!
+
+Match Winner - lc_077_UG!
+
+End Round - 8
+
+Round 9 Pairings:
+lc_070_UG[15] vs lc_072_UG[15] 
+lc_079_RG[12] vs lc_074_BR[6] 
+lc_078_UR[6] vs lc_075_BR[6] 
+lc_077_UG[12] vs lc_071_UB[12] 
+lc_076_WG[18] vs lc_073_WB[18] 
+
+Round 9 - lc_070_UG[15] vs lc_072_UG[15] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 7
+Game Outcome: lc_070_UG has won because all opponents have lost
+Game Outcome: lc_072_UG has lost because life total reached 0
+Match Result: lc_070_UG: 1 lc_072_UG: 0 
+
+Game Result: Game 1 ended in 1116 ms. lc_070_UG has won!
+
+Match Winner - lc_070_UG!
+
+Round 9 - lc_079_RG[12] vs lc_074_BR[6] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 7
+Game Outcome: lc_079_RG has lost because life total reached 0
+Game Outcome: lc_074_BR has won because all opponents have lost
+Match Result: lc_079_RG: 0 lc_074_BR: 1 
+
+Game Result: Game 1 ended in 990 ms. lc_074_BR has won!
+
+Match Winner - lc_074_BR!
+
+Round 9 - lc_078_UR[6] vs lc_075_BR[6] 
+Correcting zone for Project Deathlok Soldier (52)
+Correcting zone for Project Deathlok Soldier (52)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lc_078_UR has lost because life total reached 0
+Game Outcome: lc_075_BR has won because all opponents have lost
+Match Result: lc_078_UR: 0 lc_075_BR: 1 
+
+Game Result: Game 1 ended in 1782 ms. lc_075_BR has won!
+
+Match Winner - lc_075_BR!
+
+Round 9 - lc_077_UG[12] vs lc_071_UB[12] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lc_077_UG has lost because life total reached 0
+Game Outcome: lc_071_UB has won because all opponents have lost
+Match Result: lc_077_UG: 0 lc_071_UB: 1 
+
+Game Result: Game 1 ended in 2589 ms. lc_071_UB has won!
+
+Match Winner - lc_071_UB!
+
+Round 9 - lc_076_WG[18] vs lc_073_WB[18] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lc_076_WG has lost because life total reached 0
+Game Outcome: lc_073_WB has won because all opponents have lost
+Match Result: lc_076_WG: 0 lc_073_WB: 1 
+
+Game Result: Game 1 ended in 1841 ms. lc_073_WB has won!
+
+Match Winner - lc_073_WB!
+
+lc_073_WB		7 Wins(0 Byes)-2 Losses-0 Ties	=>	21 Points
+lc_076_WG		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+lc_070_UG		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+lc_072_UG		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lc_071_UB		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lc_079_RG		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lc_077_UG		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lc_075_BR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lc_074_BR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lc_078_UR		2 Wins(0 Byes)-7 Losses-0 Ties	=>	6 Points

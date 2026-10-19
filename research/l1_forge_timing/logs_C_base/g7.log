@@ -1,0 +1,2431 @@
+START
+DRAW|Forest|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Claim the Kingdom|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Atlantis Attacks|lc_070_UG
+DRAW|Pym Particles|lc_070_UG
+DRAW|Mountain|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Restorative Technique|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Hawkeye, Young Avenger|lc_079_RG
+DRAW|Call Damage Control|lc_079_RG
+DRAW|Iron Man Armor|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Savage Land Dinosaur|lc_070_UG
+Claim the Kingdom|PermanentNoncreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_070_UG
+DRAW|Wakandan Royal Guard|lc_079_RG
+DRAW|Island|lc_070_UG
+DRAW|Serpent Specialist|lc_079_RG
+Serpent Specialist|PermanentCreature|MAIN2|6|true|false|0|0|0|true|false|false|lc_079_RG
+DRAW|Forest|lc_070_UG
+DRAW|Super Suit|lc_070_UG
+Super Suit|PermanentNoncreature|DRAW|7|true|false|0|0|1|true|false|true|lc_070_UG
+DRAW|Ka-Zar of the Savage Land|lc_079_RG
+Iron Man Armor|PermanentNoncreature|MAIN1|8|true|false|0|1|0|true|false|false|lc_079_RG
+DRAW|Forest|lc_070_UG
+DRAW|Blazing Crescendo|lc_079_RG
+DRAW|Rewrite History|lc_070_UG
+Rewrite History|PermanentNoncreature|MAIN2|11|true|false|0|0|1|true|false|false|lc_070_UG
+DRAW|H.E.R.B.I.E. Scout Unit|lc_079_RG
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|12|true|false|0|1|0|true|false|false|lc_079_RG
+DRAW|Ultron Drone|lc_070_UG
+Atlantis Attacks|Charm>Token|MAIN2|13|true|false|0|0|2|true|false|false|lc_070_UG
+DRAW|Dependable Quinjet|lc_079_RG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|14|true|true|0|2|1|true|true|false|lc_079_RG
+END|lc_079_RG
+START
+DRAW|Mountain|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Speed, Young Avenger|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Heroic Feast|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Restorative Technique|lc_072_UG
+DRAW|Wiccan, Rising Magician|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|S.H.I.E.L.D. Deployment Drone|lc_072_UG
+DRAW|Mister Fantastic, Reed Richards|lc_078_UR
+DRAW|Blazing Crescendo|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Super Suit|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Knight of Wundagore|lc_072_UG
+DRAW|Island|lc_078_UR
+Super Suit|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|0|0|true|false|true|lc_078_UR
+DRAW|Forest|lc_072_UG
+Knight of Wundagore|PermanentCreature|MAIN2|4|true|false|0|0|0|true|false|false|lc_072_UG
+DRAW|Mountain|lc_078_UR
+DRAW|Secret Invasion|lc_072_UG
+S.H.I.E.L.D. Deployment Drone|PermanentCreature|MAIN2|6|true|false|0|1|0|true|false|false|lc_072_UG
+DRAW|A.I.M. Scientists|lc_078_UR
+A.I.M. Scientists|PermanentCreature|MAIN2|7|true|false|0|0|3|true|false|false|lc_078_UR
+DRAW|Crimson Operative|lc_078_UR
+DRAW|Cosmic Cube|lc_072_UG
+Heroic Feast|PermanentNoncreature|MAIN2|8|true|false|0|3|1|true|false|false|lc_072_UG
+DRAW|Dependable Quinjet|lc_078_UR
+Dependable Quinjet|PermanentNoncreature|MAIN2|9|true|false|0|1|3|true|false|false|lc_078_UR
+DRAW|Hellcat, Undying Vigilante|lc_072_UG
+Hellcat, Undying Vigilante|PermanentCreature|MAIN1|10|true|false|0|3|1|true|false|false|lc_072_UG
+DRAW|Giant-Sized Flying Ant|lc_078_UR
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|11|true|false|0|1|4|true|false|true|lc_078_UR
+DRAW|White Tiger, Ava Ayala|lc_072_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|12|true|false|0|4|2|true|false|false|lc_072_UG
+DRAW|Speed, Young Avenger|lc_078_UR
+Speed, Young Avenger|PermanentCreature|MAIN1|13|true|false|0|2|4|true|false|false|lc_078_UR
+Mister Fantastic, Reed Richards|PermanentCreature|MAIN2|13|true|false|0|3|4|true|false|false|lc_078_UR
+DRAW|Island|lc_072_UG
+Cosmic Cube|PermanentNoncreature|MAIN1|14|true|false|0|4|4|true|false|false|lc_072_UG
+Echo, Perceptive Prodigy|PermanentCreature|COMBAT_DECLARE_ATTACKERS|14|true|true|1|4|4|true|false|false|lc_072_UG
+DRAW|Depower|lc_078_UR
+DRAW|Rewrite History|lc_072_UG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|16|false|true|1|3|4|true|true|false|lc_078_UR
+DRAW|Mountain|lc_078_UR
+Loki, God of Mischief|PermanentCreature|COMBAT_DECLARE_ATTACKERS|16|true|true|1|4|3|true|false|false|lc_072_UG
+Rewrite History|PermanentNoncreature|MAIN2|16|true|false|0|5|3|true|false|false|lc_072_UG
+DRAW|Island|lc_078_UR
+DRAW|Forest|lc_072_UG
+Wiccan, Rising Magician|PermanentCreature|MAIN1|18|true|false|0|5|3|true|false|false|lc_072_UG
+DRAW|S.H.I.E.L.D. Flying Car|lc_072_UG
+Attuma, Atlantean Warlord|PermanentCreature|COMBAT_DECLARE_ATTACKERS|18|true|true|1|6|4|true|false|false|lc_072_UG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|18|false|true|0|4|7|true|true|false|lc_078_UR
+END|lc_072_UG
+START
+DRAW|Bold Biochemist|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|The Astonishing Ant-Man|lc_077_UG
+DRAW|Falcon's Wing Harness|lc_077_UG
+DRAW|Swamp|lc_074_BR
+DRAW|Hex Magic|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Misty Knight, Hero for Hire|lc_074_BR
+DRAW|Evil's Thrall|lc_074_BR
+DRAW|Vision of Love|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Kingpin's Enforcers|lc_074_BR
+DRAW|Savage Land Dinosaur|lc_077_UG
+Bold Biochemist|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Mountain|lc_074_BR
+Misty Knight, Hero for Hire|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_074_BR
+DRAW|Ka-Zar of the Savage Land|lc_077_UG
+Falcon's Wing Harness|PermanentNoncreature|MAIN1|5|true|false|0|1|1|true|false|false|lc_077_UG
+DRAW|Iron Fist, Living Weapon|lc_074_BR
+Hex Magic|ChangeZoneAll>Draw>Effect>Cleanup|MAIN1|6|true|false|0|1|1|true|false|false|lc_074_BR
+DRAW|Speed, Young Avenger|lc_074_BR
+DRAW|Jessica Jones, Private Eye|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Agents of HYDRA|lc_074_BR
+DRAW|Volcanic Villain|lc_074_BR
+DRAW|Restorative Technique|lc_077_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN2|7|true|false|0|1|1|true|false|false|lc_077_UG
+DRAW|Human Torch, Johnny Storm|lc_074_BR
+Volcanic Villain|PermanentCreature|MAIN1|8|true|false|0|1|2|true|false|false|lc_074_BR
+DRAW|Island|lc_077_UG
+DRAW|Island|lc_077_UG
+Ka-Zar of the Savage Land|PermanentCreature|MAIN2|9|true|false|0|2|2|true|false|false|lc_077_UG
+DRAW|Swamp|lc_074_BR
+Speed, Young Avenger|PermanentCreature|MAIN1|10|true|false|0|2|4|true|false|false|lc_074_BR
+Agents of HYDRA|PermanentCreature|MAIN2|10|true|false|0|3|4|true|false|false|lc_074_BR
+DRAW|Island|lc_077_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|11|true|false|0|4|4|true|false|false|lc_077_UG
+DRAW|Arnim Zola, Bio-Fanatic|lc_074_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|12|true|false|0|4|4|true|false|false|lc_074_BR
+DRAW|Rewrite History|lc_077_UG
+Rewrite History|PermanentNoncreature|MAIN2|13|true|false|0|2|2|true|false|false|lc_077_UG
+DRAW|Swamp|lc_074_BR
+Human Torch, Johnny Storm|PermanentCreature|MAIN2|14|true|false|0|2|2|true|false|false|lc_074_BR
+Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|14|true|false|0|3|2|true|false|false|lc_074_BR
+DRAW|Dependable Quinjet|lc_077_UG
+DRAW|Rick Jones, Destined Sidekick|lc_077_UG
+Dependable Quinjet|PermanentNoncreature|MAIN2|15|true|false|0|1|2|true|false|false|lc_077_UG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|15|true|false|0|1|2|true|false|false|lc_077_UG
+DRAW|HYDRA Troopers|lc_074_BR
+HYDRA Troopers|PermanentCreature|MAIN2|16|true|false|0|2|2|true|false|false|lc_074_BR
+DRAW|Rapid Rescue|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|17|true|false|0|2|5|true|true|false|lc_077_UG
+DRAW|Swamp|lc_074_BR
+Lightning Strike|DealDamage|DRAW|18|true|false|0|5|2|true|true|false|lc_074_BR
+DRAW|Island|lc_077_UG
+DRAW|Training Regimen|lc_077_UG
+END|lc_077_UG
+START
+DRAW|Plains|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Agent 13, Sharon Carter|lc_076_WG
+DRAW|Hulkling, Burgeoning Bruiser|lc_076_WG
+DRAW|Raft Security Officer|lc_076_WG
+DRAW|Swamp|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Decoy Ploy|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Moonstone, Harsh Mistress|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Plains|lc_076_WG
+DRAW|Hawkeye, Young Avenger|lc_075_BR
+DRAW|Plains|lc_076_WG
+Raft Security Officer|PermanentCreature|MAIN2|4|true|false|0|0|0|true|false|false|lc_076_WG
+DRAW|Iron Man Armor|lc_075_BR
+Iron Man Armor|PermanentNoncreature|MAIN2|5|true|false|0|0|1|true|false|false|lc_075_BR
+DRAW|Iron Man Armor|lc_076_WG
+Iron Man Armor|PermanentNoncreature|MAIN1|6|true|false|0|1|0|true|false|false|lc_076_WG
+DRAW|Baron Helmut Zemo|lc_075_BR
+Moonstone, Harsh Mistress|PermanentCreature|MAIN2|7|true|false|0|0|1|true|false|false|lc_075_BR
+DRAW|Plains|lc_076_WG
+Hulkling, Burgeoning Bruiser|PermanentCreature|MAIN2|8|true|false|0|1|1|true|false|false|lc_076_WG
+DRAW|Unliving Legionnaire|lc_075_BR
+Unliving Legionnaire|PermanentCreature|MAIN2|9|true|false|0|1|2|true|false|false|lc_075_BR
+DRAW|Plains|lc_076_WG
+Agent 13, Sharon Carter|PermanentCreature|MAIN2|10|true|false|0|2|2|true|false|false|lc_076_WG
+DRAW|Swamp|lc_075_BR
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|11|true|false|0|2|3|true|false|false|lc_075_BR
+DRAW|Borough Backup|lc_076_WG
+Borough Backup|Token|MAIN2|12|true|false|0|3|3|true|false|false|lc_076_WG
+DRAW|Machinesmith Automaton|lc_075_BR
+Machinesmith Automaton|PermanentCreature|MAIN2|13|true|false|0|3|5|true|false|false|lc_075_BR
+DRAW|Savage Land Dinosaur|lc_076_WG
+Savage Land Dinosaur|PermanentCreature|MAIN2|14|true|false|0|5|4|true|false|false|lc_076_WG
+DRAW|Swamp|lc_075_BR
+DRAW|Forest|lc_076_WG
+DRAW|Mountain|lc_075_BR
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|17|true|false|0|3|5|true|false|false|lc_075_BR
+DRAW|Plains|lc_076_WG
+DRAW|Okoye, Dora Milaje Leader|lc_076_WG
+Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|18|true|false|0|5|4|true|false|false|lc_076_WG
+DRAW|Volcanic Villain|lc_075_BR
+Volcanic Villain|PermanentCreature|MAIN1|19|true|false|0|4|8|true|false|false|lc_075_BR
+DRAW|Forest|lc_076_WG
+DRAW|Viv Vision, Teen Synthezoid|lc_076_WG
+END|lc_076_WG
+START
+DRAW|Red Guardian, Super-Soldier|lc_073_WB
+DRAW|Wakandan Drone Flock|lc_073_WB
+DRAW|Cruel Alliance|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Decoy Ploy|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|H.E.R.B.I.E. Scout Unit|lc_071_UB
+DRAW|Atlantis Attacks|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Stolen Stark Tech|lc_071_UB
+DRAW|HYDRA Infiltration|lc_071_UB
+DRAW|Viv Vision, Teen Synthezoid|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|S.H.I.E.L.D. Flying Car|lc_071_UB
+DRAW|Hour of Defeat|lc_073_WB
+DRAW|Unliving Legionnaire|lc_071_UB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|0|true|false|true|lc_071_UB
+DRAW|Swamp|lc_073_WB
+DRAW|Giant-Sized Flying Ant|lc_071_UB
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lc_073_WB
+Wakandan Drone Flock|PermanentCreature|MAIN2|7|true|false|0|0|0|true|false|false|lc_073_WB
+DRAW|Dependable Quinjet|lc_071_UB
+DRAW|Swamp|lc_073_WB
+Nick Fury, Agent of S.H.I.E.L.D.|PermanentCreature|MAIN2|9|true|false|0|1|0|true|false|false|lc_073_WB
+DRAW|Atlantean Cavalry|lc_071_UB
+DRAW|Ultron Drone|lc_073_WB
+Ultron Drone|PermanentCreature|MAIN2|11|true|false|0|2|0|true|false|false|lc_073_WB
+DRAW|Swamp|lc_071_UB
+Atlantean Cavalry|PermanentCreature|MAIN2|12|true|false|0|0|3|true|false|false|lc_071_UB
+DRAW|Swamp|lc_073_WB
+Cruel Alliance|ChangeZone>ChangeZone>GainLife|MAIN1|13|true|false|0|3|1|true|false|false|lc_073_WB
+DRAW|Island|lc_071_UB
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|14|true|false|0|0|3|true|false|true|lc_071_UB
+DRAW|Plains|lc_073_WB
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_ATTACKERS|15|true|true|0|3|1|true|true|false|lc_073_WB
+END|lc_073_WB
+START
+DRAW|Forest|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Pym Particles|lc_070_UG
+DRAW|Super Suit|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Doc Samson, Super Psychiatrist|lc_070_UG
+DRAW|Justice, Vance Astrovik|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|A.I.M. Scientists|lc_078_UR
+DRAW|Echo, Perceptive Prodigy|lc_078_UR
+DRAW|Vision of Love|lc_078_UR
+DRAW|A.I.M. Synthoids|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|White Tiger, Ava Ayala|lc_070_UG
+DRAW|Mountain|lc_078_UR
+A.I.M. Synthoids|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|Forest|lc_070_UG
+Super Suit|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|1|true|false|true|lc_070_UG
+DRAW|Island|lc_078_UR
+Justice, Vance Astrovik|PermanentCreature|MAIN1|5|true|false|0|1|0|true|false|false|lc_078_UR
+Super Suit|PermanentNoncreature|UPKEEP|6|true|false|0|0|2|true|false|true|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Bold Biochemist|lc_078_UR
+A.I.M. Scientists|PermanentCreature|MAIN2|7|true|false|0|2|0|true|false|false|lc_078_UR
+DRAW|K'un-Lun Warrior|lc_078_UR
+DRAW|Savage Land Dinosaur|lc_070_UG
+White Tiger, Ava Ayala|PermanentCreature|MAIN2|8|true|false|0|0|3|true|false|false|lc_070_UG
+DRAW|Giant-Sized Flying Ant|lc_078_UR
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|9|true|false|0|3|1|true|false|true|lc_078_UR
+DRAW|Training Regimen|lc_070_UG
+Training Regimen|PermanentNoncreature|MAIN1|10|true|false|0|1|4|true|false|false|lc_070_UG
+DRAW|Mountain|lc_078_UR
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|11|true|false|0|3|1|true|false|false|lc_078_UR
+Bold Biochemist|PermanentCreature|MAIN2|11|true|false|0|4|1|true|false|false|lc_078_UR
+DRAW|She-Hulk, Jade Defender|lc_070_UG
+Savage Land Dinosaur|PermanentCreature|MAIN2|12|true|false|0|1|5|true|false|false|lc_070_UG
+DRAW|Mountain|lc_078_UR
+END|lc_078_UR
+START
+DRAW|Rapid Rescue|lc_077_UG
+DRAW|S.H.I.E.L.D. Helicarrier|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Forest|lc_079_RG
+DRAW|Powerful Broker|lc_079_RG
+DRAW|Lightning Strike|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lc_079_RG
+DRAW|Giant Growth|lc_079_RG
+DRAW|Forest|lc_079_RG
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|1|true|false|0|0|0|true|true|false|lc_077_UG
+DRAW|Vision of Love|lc_079_RG
+DRAW|Echo, Perceptive Prodigy|lc_077_UG
+DRAW|Viv Vision, Teen Synthezoid|lc_079_RG
+DRAW|Forest|lc_077_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|5|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Mountain|lc_079_RG
+Powerful Broker|PermanentCreature|MAIN2|6|true|false|0|0|1|true|false|false|lc_079_RG
+DRAW|Beast, Erudite Aerialist|lc_077_UG
+Beast, Erudite Aerialist|PermanentCreature|MAIN1|7|true|false|0|1|1|true|false|false|lc_077_UG
+Lightning Strike|DealDamage|UPKEEP|8|true|false|0|1|2|true|true|false|lc_079_RG
+DRAW|Mountain|lc_079_RG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|8|true|true|0|1|1|true|true|false|lc_079_RG
+DRAW|Savage Land Dinosaur|lc_077_UG
+S.H.I.E.L.D. Helicarrier|PermanentNoncreature|MAIN2|9|true|false|0|0|1|true|false|false|lc_077_UG
+DRAW|Knight of Wundagore|lc_079_RG
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|10|true|false|0|1|2|true|false|false|lc_079_RG
+DRAW|Island|lc_077_UG
+Savage Land Dinosaur|PermanentCreature|MAIN2|11|true|false|0|2|2|true|false|false|lc_077_UG
+DRAW|Forest|lc_079_RG
+H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|12|true|false|0|2|3|true|false|false|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Rick Jones, Destined Sidekick|lc_077_UG
+Ant-Man, Colony Commander|PermanentCreature|MAIN2|13|true|false|0|3|3|true|false|false|lc_077_UG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|13|true|false|0|4|3|true|false|false|lc_077_UG
+DRAW|Super Speed|lc_079_RG
+DRAW|Forest|lc_077_UG
+DRAW|Iron Man Armor|lc_079_RG
+Iron Man Armor|PermanentNoncreature|MAIN1|16|true|false|0|3|6|true|false|false|lc_079_RG
+DRAW|Blazing Crescendo|lc_079_RG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|16|true|true|0|3|6|true|true|false|lc_079_RG
+END|lc_079_RG
+START
+DRAW|Borough Backup|lc_076_WG
+DRAW|Panther Pounce|lc_076_WG
+DRAW|Wakandan Royal Guard|lc_076_WG
+DRAW|Okoye, Dora Milaje Leader|lc_076_WG
+DRAW|Hulkling, Burgeoning Bruiser|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Forest|lc_072_UG
+DRAW|Knight of Wundagore|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Hydraulic Helper|lc_072_UG
+DRAW|Thirst for Knowledge|lc_072_UG
+DRAW|Restorative Technique|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Agent Maria Hill|lc_076_WG
+DRAW|Wiccan, Rising Magician|lc_072_UG
+Knight of Wundagore|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_072_UG
+DRAW|Plains|lc_076_WG
+Agent Maria Hill|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_076_WG
+DRAW|Island|lc_072_UG
+Hydraulic Helper|PermanentCreature|MAIN2|5|true|false|0|1|1|true|false|false|lc_072_UG
+DRAW|Forest|lc_076_WG
+Hulkling, Burgeoning Bruiser|PermanentCreature|MAIN2|6|true|false|0|1|2|true|false|false|lc_076_WG
+DRAW|Island|lc_072_UG
+Thirst for Knowledge|Draw>Discard|MAIN2|7|true|false|0|2|2|true|true|false|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Plains|lc_076_WG
+Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|8|true|false|0|2|2|true|false|false|lc_076_WG
+DRAW|Falcon's Wing Harness|lc_072_UG
+Wiccan, Rising Magician|PermanentCreature|MAIN2|9|true|false|0|1|4|true|false|false|lc_072_UG
+DRAW|Rick Jones, Destined Sidekick|lc_076_WG
+Wakandan Royal Guard|PermanentCreature|MAIN2|10|true|false|0|4|2|true|false|false|lc_076_WG
+DRAW|Island|lc_072_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN1|11|true|false|0|2|5|true|false|false|lc_072_UG
+Falcon's Wing Harness|PermanentNoncreature|MAIN1|11|true|false|0|2|4|true|false|false|lc_072_UG
+DRAW|Web Up|lc_076_WG
+Web Up|PermanentNoncreature|MAIN1|12|true|false|0|7|2|true|false|false|lc_076_WG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|12|true|false|0|6|1|true|false|false|lc_076_WG
+DRAW|Forest|lc_072_UG
+DRAW|Plains|lc_076_WG
+Borough Backup|Token|MAIN2|14|true|false|0|6|1|true|false|false|lc_076_WG
+DRAW|Forest|lc_072_UG
+DRAW|Super Strength|lc_076_WG
+Super Strength|Attach|MAIN1|16|true|false|0|8|1|true|false|false|lc_076_WG
+END|lc_076_WG
+START
+DRAW|Plains|lc_073_WB
+DRAW|Dark Deed|lc_073_WB
+DRAW|Colleen Wing, Street Samurai|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Super-Adaptoid|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lc_073_WB
+DRAW|Speed, Young Avenger|lc_074_BR
+DRAW|Stolen Stark Tech|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Arnim Zola, Bio-Fanatic|lc_074_BR
+DRAW|K'un-Lun Warrior|lc_074_BR
+DRAW|Stark Industries Executive|lc_074_BR
+Nick Fury, Agent of S.H.I.E.L.D.|PermanentCreature|MAIN2|1|true|false|0|0|0|true|false|false|lc_073_WB
+DRAW|Mountain|lc_074_BR
+Stark Industries Executive|PermanentCreature|MAIN2|2|true|false|0|0|1|true|false|false|lc_074_BR
+DRAW|Swamp|lc_073_WB
+Colleen Wing, Street Samurai|PermanentCreature|MAIN2|3|true|false|0|1|1|true|false|false|lc_073_WB
+DRAW|Jessica Jones, Private Eye|lc_074_BR
+Speed, Young Avenger|PermanentCreature|MAIN1|4|true|false|0|1|2|true|false|false|lc_074_BR
+DRAW|Plains|lc_073_WB
+Stolen Stark Tech|PermanentNoncreature|UPKEEP|6|true|false|0|2|2|true|false|true|lc_074_BR
+DRAW|Team Tactics|lc_074_BR
+DRAW|Cruel Alliance|lc_073_WB
+Cruel Alliance|ChangeZone>ChangeZone>GainLife|MAIN1|7|true|false|0|2|2|true|false|false|lc_073_WB
+DRAW|Hire a Crew|lc_074_BR
+DRAW|Swamp|lc_073_WB
+DRAW|Lightning Strike|lc_074_BR
+Lightning Strike|DealDamage|MAIN1|10|true|false|0|1|2|true|true|false|lc_074_BR
+DRAW|Raft Security Officer|lc_073_WB
+Raft Security Officer|PermanentCreature|MAIN2|11|true|false|0|1|1|true|false|false|lc_073_WB
+DRAW|Dark Deed|lc_074_BR
+Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|12|true|false|0|1|2|true|false|false|lc_074_BR
+DRAW|Yellowjacket, Heartless Marauder|lc_073_WB
+Yellowjacket, Heartless Marauder|PermanentCreature|MAIN2|13|true|false|0|2|2|true|false|false|lc_073_WB
+DRAW|Mountain|lc_074_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|14|true|false|0|2|3|true|false|false|lc_074_BR
+DRAW|Swamp|lc_073_WB
+Super-Adaptoid|PermanentCreature|MAIN1|15|true|false|0|3|3|true|false|false|lc_073_WB
+DRAW|Iron Fist, Living Weapon|lc_074_BR
+Iron Fist, Living Weapon|PermanentCreature|MAIN2|16|true|false|0|3|4|true|false|false|lc_074_BR
+DRAW|Luke Cage, Power Man|lc_073_WB
+Luke Cage, Power Man|PermanentCreature|MAIN2|17|true|false|0|4|4|true|false|false|lc_073_WB
+DRAW|Hex Magic|lc_074_BR
+Hex Magic|ChangeZoneAll>Draw>Effect>Cleanup|MAIN1|18|true|false|0|4|5|true|false|false|lc_074_BR
+DRAW|Yellowjacket, Heartless Marauder|lc_074_BR
+DRAW|Super Speed|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Kingpin's Enforcers|lc_074_BR
+Yellowjacket, Heartless Marauder|PermanentCreature|MAIN2|18|true|false|0|4|5|true|false|false|lc_074_BR
+DRAW|Wakandan Drone Flock|lc_073_WB
+Wakandan Drone Flock|PermanentCreature|MAIN2|19|true|false|0|5|5|true|false|false|lc_073_WB
+DRAW|Volcanic Villain|lc_074_BR
+Kingpin's Enforcers|PermanentCreature|MAIN1|20|true|false|0|5|6|true|false|false|lc_074_BR
+DRAW|Robot Domination|lc_073_WB
+Robot Domination|PermanentNoncreature|MAIN2|21|true|false|0|5|6|true|false|false|lc_073_WB
+DRAW|Agents of HYDRA|lc_074_BR
+Volcanic Villain|PermanentCreature|MAIN1|22|true|false|0|6|5|true|false|false|lc_074_BR
+Agents of HYDRA|PermanentCreature|MAIN1|22|true|false|0|7|5|true|false|false|lc_074_BR
+DRAW|Plains|lc_073_WB
+DRAW|Vision of Love|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Widow's Bite|lc_073_WB
+Widow's Bite|Charm>Pump>Pump|COMBAT_BEGIN|25|true|true|0|5|8|true|true|false|lc_073_WB
+DRAW|Decoy Ploy|lc_074_BR
+Decoy Ploy|Charm>ChangeZone|MAIN2|26|true|false|0|7|5|true|true|false|lc_074_BR
+Volcanic Villain|PermanentCreature|MAIN2|26|true|false|0|7|5|true|false|false|lc_074_BR
+DRAW|Roxxon Brutes|lc_073_WB
+Roxxon Brutes|PermanentCreature|MAIN1|27|true|false|0|5|8|true|false|false|lc_073_WB
+DRAW|Misty Knight, Hero for Hire|lc_074_BR
+DRAW|Hour of Defeat|lc_073_WB
+Hour of Defeat|Destroy>Surveil|DRAW|29|true|false|0|6|8|true|true|false|lc_073_WB
+DRAW|Dependable Quinjet|lc_073_WB
+Dependable Quinjet|PermanentNoncreature|MAIN2|29|true|false|0|5|6|true|false|false|lc_073_WB
+DRAW|Swamp|lc_074_BR
+Misty Knight, Hero for Hire|PermanentCreature|MAIN2|30|true|false|0|6|5|true|false|false|lc_074_BR
+DRAW|Plains|lc_073_WB
+DRAW|Mountain|lc_074_BR
+END|lc_073_WB
+START
+DRAW|Project Deathlok Soldier|lc_071_UB
+DRAW|Ghost, Spectral Saboteur|lc_071_UB
+DRAW|S.H.I.E.L.D. Flying Car|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Red Room Recruit|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Rewrite History|lc_071_UB
+DRAW|Swamp|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Crimson Operative|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Volcanic Villain|lc_075_BR
+DRAW|Roxxon Brutes|lc_075_BR
+DRAW|Mountain|lc_075_BR
+Project Deathlok Soldier|PermanentCreature|MAIN2|1|true|false|0|0|0|true|false|false|lc_071_UB
+DRAW|Swamp|lc_075_BR
+DRAW|Swamp|lc_071_UB
+Red Room Recruit|PermanentCreature|MAIN2|3|true|false|0|1|0|true|false|false|lc_071_UB
+DRAW|Giant-Sized Flying Ant|lc_071_UB
+DRAW|Project Deathlok Soldier|lc_075_BR
+Project Deathlok Soldier|PermanentCreature|MAIN2|4|true|false|0|0|2|true|false|false|lc_075_BR
+DRAW|Swamp|lc_071_UB
+S.H.I.E.L.D. Flying Car|PermanentNoncreature|COMBAT_BEGIN|5|true|true|0|2|1|true|false|true|lc_071_UB
+DRAW|We Say Thee Nay!|lc_071_UB
+DRAW|Iron Man Armor|lc_075_BR
+Volcanic Villain|PermanentCreature|MAIN1|6|true|false|0|1|2|true|false|false|lc_075_BR
+DRAW|Swamp|lc_071_UB
+DRAW|Mountain|lc_075_BR
+Iron Man Armor|PermanentNoncreature|MAIN1|8|true|false|0|2|2|true|false|false|lc_075_BR
+We Say Thee Nay!|Counter|MAIN1|8|false|false|1|2|2|true|true|false|lc_071_UB
+DRAW|Baron Strucker, HYDRA Overlord|lc_071_UB
+Baron Strucker, HYDRA Overlord|PermanentCreature|MAIN2|9|true|false|0|3|2|true|false|false|lc_071_UB
+DRAW|HYDRA Infiltration|lc_075_BR
+HYDRA Infiltration|PermanentNoncreature|MAIN1|10|true|false|0|2|3|true|false|false|lc_075_BR
+DRAW|Thirst for Knowledge|lc_071_UB
+Thirst for Knowledge|Draw>Discard|MAIN2|11|true|false|0|3|1|true|true|false|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|HYDRA Troopers|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|HULK SMASH!|lc_075_BR
+HULK SMASH!|Charm>Destroy|DRAW|12|true|false|0|1|2|true|true|false|lc_075_BR
+Crimson Operative|PermanentCreature|MAIN2|12|true|false|0|1|2|true|false|false|lc_075_BR
+DRAW|Aerial Doombot|lc_071_UB
+Aerial Doombot|PermanentCreature|MAIN1|13|true|false|0|2|2|true|false|false|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Moonstone, Harsh Mistress|lc_075_BR
+Roxxon Brutes|PermanentCreature|MAIN2|14|true|false|0|1|2|true|false|false|lc_075_BR
+DRAW|Swamp|lc_071_UB
+DRAW|Mountain|lc_075_BR
+Moonstone, Harsh Mistress|PermanentCreature|MAIN2|16|true|false|0|2|2|true|false|false|lc_075_BR
+DRAW|Atlantean Cavalry|lc_071_UB
+Atlantean Cavalry|PermanentCreature|MAIN2|17|true|false|0|2|2|true|false|false|lc_071_UB
+DRAW|Mountain|lc_075_BR
+DRAW|Island|lc_071_UB
+END|lc_071_UB
+START
+DRAW|Island|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Iron Lad, Diverging Destiny|lc_070_UG
+DRAW|Rewrite History|lc_070_UG
+DRAW|Island|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Training Regimen|lc_077_UG
+DRAW|Echo, Perceptive Prodigy|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|A.I.M. Synthoids|lc_077_UG
+DRAW|Pym Particles|lc_070_UG
+DRAW|Island|lc_077_UG
+A.I.M. Synthoids|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Forest|lc_070_UG
+DRAW|Rick Jones, Destined Sidekick|lc_077_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|5|true|false|0|1|0|true|false|false|lc_077_UG
+DRAW|Forest|lc_070_UG
+Iron Lad, Diverging Destiny|PermanentCreature|MAIN2|6|true|false|0|0|2|true|false|false|lc_070_UG
+DRAW|The Astonishing Ant-Man|lc_077_UG
+Training Regimen|PermanentNoncreature|MAIN1|7|true|false|0|2|1|true|false|false|lc_077_UG
+DRAW|Island|lc_070_UG
+Rewrite History|PermanentNoncreature|MAIN2|8|true|false|0|1|2|true|false|false|lc_070_UG
+DRAW|Ant-Man, Colony Commander|lc_077_UG
+Ant-Man, Colony Commander|PermanentCreature|MAIN1|9|true|false|0|2|1|true|false|false|lc_077_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN1|9|true|false|0|3|1|true|false|false|lc_077_UG
+DRAW|Training Regimen|lc_070_UG
+Training Regimen|PermanentNoncreature|MAIN1|10|true|false|0|1|5|true|false|false|lc_070_UG
+DRAW|Forest|lc_077_UG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN1|11|true|false|0|6|1|true|false|false|lc_077_UG
+DRAW|Claim the Kingdom|lc_070_UG
+Claim the Kingdom|PermanentNoncreature|MAIN2|12|true|false|0|1|8|true|false|false|lc_070_UG
+DRAW|Forest|lc_077_UG
+END|lc_077_UG
+START
+DRAW|Agent Maria Hill|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Helicarrier Strike|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Speed, Young Avenger|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Evil's Thrall|lc_078_UR
+DRAW|Wonder Man, Hollywood Hero|lc_078_UR
+DRAW|Echo, Perceptive Prodigy|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Wakandan Royal Guard|lc_076_WG
+Agent Maria Hill|PermanentCreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_076_WG
+DRAW|Mountain|lc_078_UR
+Speed, Young Avenger|PermanentCreature|MAIN1|3|true|false|0|0|1|true|false|false|lc_078_UR
+DRAW|Forest|lc_076_WG
+DRAW|Island|lc_078_UR
+Evil's Thrall|GainControl>GainControl|MAIN1|5|true|false|0|1|1|true|false|false|lc_078_UR
+Helicarrier Strike|DealDamage|COMBAT_DECLARE_ATTACKERS|5|false|true|0|0|2|true|true|false|lc_076_WG
+DRAW|Agent 13, Sharon Carter|lc_076_WG
+Agent 13, Sharon Carter|PermanentCreature|MAIN2|6|true|false|0|1|0|true|false|false|lc_076_WG
+DRAW|Kree Sentinel|lc_078_UR
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|7|true|false|0|0|2|true|false|false|lc_078_UR
+DRAW|Take Up the Shield|lc_076_WG
+Take Up the Shield|PutCounter>Pump|COMBAT_BEGIN|8|true|true|0|2|1|true|true|false|lc_076_WG
+DRAW|A.I.M. Scientists|lc_078_UR
+Wonder Man, Hollywood Hero|PermanentCreature|MAIN1|9|true|false|0|1|2|true|false|false|lc_078_UR
+DRAW|Plains|lc_076_WG
+DRAW|Plains|lc_076_WG
+Wakandan Royal Guard|PermanentCreature|MAIN2|10|true|false|0|2|2|true|false|false|lc_076_WG
+DRAW|Vision of Love|lc_078_UR
+Kree Sentinel|PermanentCreature|MAIN2|11|true|false|0|2|3|true|false|false|lc_078_UR
+DRAW|Ultron Drone|lc_076_WG
+Ultron Drone|PermanentCreature|MAIN2|12|true|false|0|3|3|true|false|false|lc_076_WG
+DRAW|Mountain|lc_078_UR
+A.I.M. Scientists|PermanentCreature|MAIN2|13|true|false|0|3|4|true|false|false|lc_078_UR
+DRAW|Death to Our Enemies|lc_078_UR
+DRAW|Viv Vision, Teen Synthezoid|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Mountain|lc_078_UR
+DRAW|Super Strength|lc_076_WG
+Super Strength|Attach|MAIN1|16|true|false|0|5|4|true|false|false|lc_076_WG
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|16|true|false|0|4|2|true|false|false|lc_076_WG
+DRAW|Blazing Crescendo|lc_078_UR
+DRAW|Giant Growth|lc_076_WG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|18|true|true|0|5|2|true|true|false|lc_076_WG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|18|false|true|0|2|5|true|true|false|lc_078_UR
+END|lc_076_WG
+START
+DRAW|Widow's Bite|lc_073_WB
+DRAW|Stolen Stark Tech|lc_073_WB
+DRAW|Dependable Quinjet|lc_073_WB
+DRAW|White Widow, Free Agent|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Roxxon Brutes|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|Vision of Love|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Viv Vision, Teen Synthezoid|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Plains|lc_073_WB
+DRAW|Serpent Specialist|lc_079_RG
+Serpent Specialist|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_079_RG
+DRAW|Unliving Legionnaire|lc_073_WB
+Widow's Bite|Charm>Pump|MAIN1|4|true|false|0|0|1|true|true|false|lc_073_WB
+DRAW|Forest|lc_079_RG
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|5|true|false|0|0|0|true|false|false|lc_079_RG
+Stolen Stark Tech|PermanentNoncreature|UPKEEP|6|true|false|0|0|1|true|false|true|lc_073_WB
+DRAW|Decoy Ploy|lc_073_WB
+DRAW|Iron Man Armor|lc_079_RG
+Iron Man Armor|PermanentNoncreature|MAIN1|7|true|false|0|1|0|true|false|false|lc_079_RG
+DRAW|Hawkeye, Young Avenger|lc_079_RG
+DRAW|Swamp|lc_073_WB
+Unliving Legionnaire|PermanentCreature|MAIN2|8|true|false|0|0|1|true|false|false|lc_073_WB
+DRAW|Mountain|lc_079_RG
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|9|true|false|0|1|1|true|false|false|lc_079_RG
+DRAW|Plains|lc_073_WB
+White Widow, Free Agent|PermanentCreature|MAIN2|10|true|false|0|1|2|true|false|false|lc_073_WB
+DRAW|Dependable Quinjet|lc_079_RG
+Dependable Quinjet|PermanentNoncreature|MAIN2|11|true|false|0|2|2|true|false|false|lc_079_RG
+DRAW|Dark Deed|lc_073_WB
+Roxxon Brutes|PermanentCreature|MAIN2|12|true|false|0|2|2|true|false|false|lc_073_WB
+DRAW|H.E.R.B.I.E. Scout Unit|lc_079_RG
+DRAW|Swamp|lc_073_WB
+Dependable Quinjet|PermanentNoncreature|MAIN2|14|true|false|0|3|2|true|false|false|lc_073_WB
+DRAW|Mountain|lc_079_RG
+DRAW|Forest|lc_079_RG
+H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|15|true|false|0|2|3|true|false|false|lc_079_RG
+DRAW|Lightning Strike|lc_079_RG
+Lightning Strike|DealDamage|MAIN2|15|true|false|0|3|3|true|true|false|lc_079_RG
+Decoy Ploy|Charm>ChangeZone|MAIN2|15|false|false|0|2|3|true|true|false|lc_073_WB
+DRAW|Hour of Defeat|lc_073_WB
+Hour of Defeat|Destroy>Surveil|DRAW|16|true|false|0|2|3|true|true|false|lc_073_WB
+DRAW|Giant Growth|lc_079_RG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|17|true|true|0|2|2|true|true|false|lc_079_RG
+DRAW|Raft Security Officer|lc_073_WB
+Unliving Legionnaire|PermanentCreature|MAIN2|18|true|false|0|2|2|true|false|false|lc_073_WB
+Raft Security Officer|PermanentCreature|MAIN2|18|true|false|0|3|2|true|false|false|lc_073_WB
+DRAW|Mountain|lc_079_RG
+END|lc_079_RG
+START
+DRAW|Swamp|lc_071_UB
+DRAW|Dependable Quinjet|lc_071_UB
+DRAW|Thirst for Knowledge|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|We Say Thee Nay!|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Cosmic Cube|lc_072_UG
+DRAW|Knight of Wundagore|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|The Astonishing Ant-Man|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Hydraulic Helper|lc_072_UG
+DRAW|S.H.I.E.L.D. Flying Car|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Island|lc_071_UB
+DRAW|Island|lc_072_UG
+Knight of Wundagore|PermanentCreature|MAIN2|4|true|false|0|0|0|true|false|false|lc_072_UG
+We Say Thee Nay!|Counter|MAIN2|4|false|false|1|0|0|true|true|false|lc_071_UB
+DRAW|Island|lc_071_UB
+Dependable Quinjet|PermanentNoncreature|MAIN2|5|true|false|0|0|0|true|false|false|lc_071_UB
+DRAW|Island|lc_072_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN2|6|true|false|0|0|0|true|false|false|lc_072_UG
+DRAW|Depower|lc_071_UB
+Thirst for Knowledge|Draw>Discard|MAIN2|7|true|false|0|0|1|true|true|false|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Unliving Legionnaire|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Rewrite History|lc_072_UG
+Hydraulic Helper|PermanentCreature|MAIN2|8|true|false|0|1|0|true|false|false|lc_072_UG
+DRAW|Viv Vision, Teen Synthezoid|lc_071_UB
+Unliving Legionnaire|PermanentCreature|MAIN2|9|true|false|0|0|2|true|false|false|lc_071_UB
+DRAW|Secret Invasion|lc_072_UG
+Cosmic Cube|PermanentNoncreature|MAIN1|10|true|false|0|2|1|true|false|false|lc_072_UG
+DRAW|H.E.R.B.I.E. Scout Unit|lc_071_UB
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|11|true|false|0|1|2|true|false|false|lc_071_UB
+H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|11|true|false|0|2|2|true|false|false|lc_071_UB
+DRAW|Kang, Temporal Tyrant|lc_071_UB
+DRAW|Island|lc_072_UG
+Thirst for Knowledge|Draw>Discard|COMBAT_DECLARE_ATTACKERS|12|true|true|1|2|3|true|true|false|lc_072_UG
+DRAW|S.H.I.E.L.D. Deployment Drone|lc_072_UG
+DRAW|Hellcat, Undying Vigilante|lc_072_UG
+DRAW|Restorative Technique|lc_072_UG
+S.H.I.E.L.D. Deployment Drone|PermanentCreature|MAIN2|12|true|false|0|2|3|true|false|false|lc_072_UG
+Rewrite History|PermanentNoncreature|MAIN2|12|true|false|0|4|3|true|false|false|lc_072_UG
+DRAW|Swamp|lc_071_UB
+Kang, Temporal Tyrant|PermanentCreature|MAIN2|13|true|false|0|4|4|true|false|false|lc_071_UB
+DRAW|Dependable Quinjet|lc_072_UG
+Hellcat, Undying Vigilante|PermanentCreature|MAIN1|14|true|false|0|4|4|true|false|false|lc_072_UG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|14|false|true|2|4|5|true|true|false|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Island|lc_072_UG
+Wiccan, Rising Magician|PermanentCreature|COMBAT_DECLARE_ATTACKERS|14|true|true|1|5|4|true|false|false|lc_072_UG
+Dependable Quinjet|PermanentNoncreature|MAIN2|14|true|false|0|6|4|true|false|false|lc_072_UG
+DRAW|HYDRA Infiltration|lc_071_UB
+HYDRA Infiltration|PermanentNoncreature|MAIN1|15|true|false|0|4|7|true|false|false|lc_071_UB
+DRAW|Frozen in Ice|lc_072_UG
+Frozen in Ice|Attach|MAIN1|16|true|false|0|7|4|true|false|false|lc_072_UG
+DRAW|Forest|lc_072_UG
+Falcon's Wing Harness|PermanentNoncreature|COMBAT_DECLARE_ATTACKERS|16|true|true|1|6|5|true|false|false|lc_072_UG
+END|lc_072_UG
+START
+DRAW|Swamp|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Unliving Legionnaire|lc_075_BR
+DRAW|Jessica Jones, Private Eye|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|The Vision|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|K'un-Lun Warrior|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Hire a Crew|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Decoy Ploy|lc_075_BR
+DRAW|Stark Industries Executive|lc_074_BR
+Stark Industries Executive|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_074_BR
+DRAW|A.I.M. Synthoids|lc_075_BR
+A.I.M. Synthoids|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_075_BR
+DRAW|Dark Deed|lc_074_BR
+DRAW|Mountain|lc_075_BR
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|6|false|true|0|1|1|true|true|false|lc_074_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|6|true|false|0|1|2|true|false|false|lc_075_BR
+DRAW|Swamp|lc_074_BR
+DRAW|HULK SMASH!|lc_075_BR
+HULK SMASH!|Charm>Pump>DealDamage|DRAW|8|true|false|0|2|2|true|true|false|lc_075_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Volcanic Villain|lc_075_BR
+Volcanic Villain|PermanentCreature|MAIN1|10|true|false|0|2|1|true|false|false|lc_075_BR
+DRAW|Agents of HYDRA|lc_074_BR
+Agents of HYDRA|PermanentCreature|MAIN2|11|true|false|0|1|3|true|false|false|lc_074_BR
+DRAW|Mountain|lc_075_BR
+The Vision|PermanentCreature|MAIN2|12|true|false|0|3|2|true|false|false|lc_075_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Machinesmith Automaton|lc_075_BR
+DRAW|Mountain|lc_074_BR
+DRAW|S.H.I.E.L.D. Helicarrier|lc_075_BR
+S.H.I.E.L.D. Helicarrier|PermanentNoncreature|MAIN1|16|true|false|0|4|1|true|false|false|lc_075_BR
+DRAW|Swamp|lc_075_BR
+END|lc_075_BR
+START
+DRAW|Giant-Sized Flying Ant|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Hellcat, Undying Vigilante|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Attuma, Atlantean Warlord|lc_070_UG
+DRAW|Captain America, Wings of Freedom|lc_076_WG
+DRAW|Take Up the Shield|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Wakandan Royal Guard|lc_076_WG
+DRAW|Agent Maria Hill|lc_076_WG
+DRAW|Knight of Wundagore|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Pym Particles|lc_070_UG
+DRAW|Agent 13, Sharon Carter|lc_076_WG
+Knight of Wundagore|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_076_WG
+DRAW|Forest|lc_070_UG
+DRAW|Giant Growth|lc_076_WG
+DRAW|Forest|lc_070_UG
+Hellcat, Undying Vigilante|PermanentCreature|MAIN1|6|true|false|0|0|1|true|false|false|lc_070_UG
+DRAW|Iron Man Armor|lc_076_WG
+DRAW|Island|lc_070_UG
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|8|true|false|0|1|1|true|false|true|lc_070_UG
+DRAW|Plains|lc_076_WG
+Iron Man Armor|PermanentNoncreature|MAIN1|9|true|false|0|1|2|true|false|false|lc_076_WG
+DRAW|Forest|lc_070_UG
+Attuma, Atlantean Warlord|PermanentCreature|MAIN1|10|true|false|0|2|1|true|false|false|lc_070_UG
+DRAW|Helicarrier Strike|lc_076_WG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|11|true|true|0|1|3|true|true|false|lc_076_WG
+Agent Maria Hill|PermanentCreature|MAIN2|11|true|false|0|1|3|true|false|false|lc_076_WG
+DRAW|Ultron Drone|lc_070_UG
+DRAW|Doc Samson, Super Psychiatrist|lc_070_UG
+Doc Samson, Super Psychiatrist|PermanentCreature|MAIN2|12|true|false|0|3|2|true|false|false|lc_070_UG
+DRAW|Forest|lc_076_WG
+Captain America, Wings of Freedom|PermanentCreature|MAIN2|13|true|false|0|2|4|true|false|false|lc_076_WG
+DRAW|S.H.I.E.L.D. Deployment Drone|lc_070_UG
+DRAW|Savage Land Dinosaur|lc_070_UG
+Savage Land Dinosaur|PermanentCreature|MAIN2|14|true|false|0|3|1|true|false|false|lc_070_UG
+DRAW|Plains|lc_076_WG
+Wakandan Royal Guard|PermanentCreature|MAIN2|15|true|false|0|1|4|true|false|false|lc_076_WG
+DRAW|She-Hulk, Jade Defender|lc_070_UG
+END|lc_070_UG
+START
+DRAW|Swamp|lc_073_WB
+DRAW|Raft Security Officer|lc_073_WB
+DRAW|Roxxon Brutes|lc_073_WB
+DRAW|Red Guardian, Super-Soldier|lc_073_WB
+DRAW|Agent Maria Hill|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Island|lc_077_UG
+DRAW|Rewrite History|lc_077_UG
+DRAW|Depower|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Super Intelligence|lc_077_UG
+DRAW|Ant-Man, Colony Commander|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Hero in Training|lc_073_WB
+Agent Maria Hill|PermanentCreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_073_WB
+DRAW|Stature, Size Shifter|lc_077_UG
+Stature, Size Shifter|PermanentCreature|MAIN2|3|true|false|0|0|1|true|false|false|lc_077_UG
+DRAW|Swamp|lc_073_WB
+Raft Security Officer|PermanentCreature|MAIN2|4|true|false|0|1|1|true|false|false|lc_073_WB
+DRAW|Rick Jones, Destined Sidekick|lc_077_UG
+DRAW|Swamp|lc_073_WB
+Hero in Training|PermanentCreature|MAIN2|6|true|false|0|2|1|true|false|false|lc_073_WB
+DRAW|Unliving Legionnaire|lc_073_WB
+DRAW|Dependable Quinjet|lc_077_UG
+Ant-Man, Colony Commander|PermanentCreature|MAIN2|7|true|false|0|1|3|true|false|false|lc_077_UG
+DRAW|Swamp|lc_073_WB
+Unliving Legionnaire|PermanentCreature|MAIN2|8|true|false|0|3|2|true|false|false|lc_073_WB
+DRAW|Pet Avengers|lc_077_UG
+Rewrite History|PermanentNoncreature|MAIN2|9|true|false|0|2|4|true|false|false|lc_077_UG
+DRAW|Yellowjacket, Heartless Marauder|lc_073_WB
+Roxxon Brutes|PermanentCreature|MAIN2|10|true|false|0|4|2|true|false|false|lc_073_WB
+DRAW|Savage Land Dinosaur|lc_077_UG
+Dependable Quinjet|PermanentNoncreature|MAIN2|11|true|false|0|2|5|true|false|false|lc_077_UG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|11|true|false|0|2|5|true|false|false|lc_077_UG
+DRAW|Cruel Alliance|lc_073_WB
+Cruel Alliance|ChangeZone>ChangeZone>GainLife|MAIN1|12|true|false|0|5|3|true|false|false|lc_073_WB
+DRAW|Dependable Quinjet|lc_073_WB
+END|lc_073_WB
+START
+DRAW|Rewrite History|lc_071_UB
+DRAW|H.E.R.B.I.E. Scout Unit|lc_071_UB
+DRAW|Thirst for Knowledge|lc_071_UB
+DRAW|HYDRA Infiltration|lc_071_UB
+DRAW|Project Deathlok Soldier|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Island|lc_078_UR
+DRAW|Blazing Crescendo|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Pym Particles|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Vision of Love|lc_078_UR
+DRAW|Justice, Vance Astrovik|lc_078_UR
+DRAW|Arnim Zola, Bio-Fanatic|lc_071_UB
+DRAW|Crimson Operative|lc_078_UR
+DRAW|Baron Strucker, HYDRA Overlord|lc_071_UB
+DRAW|Death to Our Enemies|lc_078_UR
+Death to Our Enemies|PermanentNoncreature|MAIN2|5|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|Ghost, Spectral Saboteur|lc_071_UB
+DRAW|Dependable Quinjet|lc_078_UR
+Dependable Quinjet|PermanentNoncreature|MAIN2|7|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|Island|lc_071_UB
+Rewrite History|PermanentNoncreature|MAIN2|8|true|false|0|0|0|true|false|false|lc_071_UB
+DRAW|Photon Blast Barrage|lc_078_UR
+Crimson Operative|PermanentCreature|MAIN2|9|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|Island|lc_071_UB
+H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|10|true|false|0|0|1|true|false|false|lc_071_UB
+DRAW|We Say Thee Nay!|lc_071_UB
+DRAW|Speed, Young Avenger|lc_078_UR
+Justice, Vance Astrovik|PermanentCreature|MAIN1|11|true|false|0|1|1|true|false|false|lc_078_UR
+Speed, Young Avenger|PermanentCreature|MAIN1|11|true|false|0|2|0|true|false|false|lc_078_UR
+DRAW|Island|lc_071_UB
+H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|12|true|false|0|0|3|true|false|false|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Island|lc_078_UR
+Photon Blast Barrage|DealDamage|MAIN1|13|true|false|0|3|1|true|false|false|lc_078_UR
+DRAW|Kang, Temporal Tyrant|lc_071_UB
+Kang, Temporal Tyrant|PermanentCreature|MAIN2|14|true|false|0|0|3|true|false|false|lc_071_UB
+DRAW|Kree Sentinel|lc_078_UR
+Kree Sentinel|PermanentCreature|MAIN2|15|true|false|0|4|1|true|false|false|lc_078_UR
+We Say Thee Nay!|Counter|MAIN2|15|false|false|1|1|4|true|true|false|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Swamp|lc_071_UB
+HYDRA Infiltration|PermanentNoncreature|MAIN1|16|true|false|0|1|3|true|false|false|lc_071_UB
+Thirst for Knowledge|Draw>Discard|MAIN2|16|true|false|0|1|3|true|true|false|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Unliving Legionnaire|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Wonder Man, Hollywood Hero|lc_078_UR
+Wonder Man, Hollywood Hero|PermanentCreature|MAIN2|17|true|false|0|4|1|true|false|false|lc_078_UR
+DRAW|Atlantean Cavalry|lc_071_UB
+Unliving Legionnaire|PermanentCreature|MAIN2|18|true|false|0|1|4|true|false|false|lc_071_UB
+Atlantean Cavalry|PermanentCreature|MAIN2|18|true|false|0|2|4|true|false|false|lc_071_UB
+DRAW|A.I.M. Synthoids|lc_078_UR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|19|true|true|0|4|3|true|true|false|lc_078_UR
+END|lc_078_UR
+START
+DRAW|Hex Magic|lc_075_BR
+DRAW|The Vision|lc_075_BR
+DRAW|Machinesmith Automaton|lc_075_BR
+DRAW|Hawkeye, Young Avenger|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Hire a Crew|lc_075_BR
+DRAW|Dependable Quinjet|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Alien Invasion|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Knight of Wundagore|lc_079_RG
+DRAW|Serpent Specialist|lc_079_RG
+DRAW|Wakandan Royal Guard|lc_079_RG
+DRAW|Giant Growth|lc_079_RG
+Serpent Specialist|PermanentCreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_079_RG
+DRAW|Swamp|lc_075_BR
+DRAW|Forest|lc_079_RG
+Knight of Wundagore|PermanentCreature|MAIN2|4|true|false|0|1|0|true|false|false|lc_079_RG
+DRAW|Swamp|lc_075_BR
+DRAW|Forest|lc_079_RG
+Dependable Quinjet|PermanentNoncreature|MAIN2|6|true|false|0|2|0|true|false|false|lc_079_RG
+DRAW|Mountain|lc_075_BR
+Hex Magic|ChangeZoneAll>Draw>Effect>Cleanup|MAIN1|7|true|false|0|0|2|true|false|false|lc_075_BR
+DRAW|HULK SMASH!|lc_075_BR
+DRAW|HYDRA Troopers|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Project Deathlok Soldier|lc_075_BR
+DRAW|Red Room Recruit|lc_075_BR
+Project Deathlok Soldier|PermanentCreature|MAIN2|7|true|false|0|0|2|true|false|false|lc_075_BR
+DRAW|Ka-Zar of the Savage Land|lc_079_RG
+Alien Invasion|PermanentNoncreature|MAIN1|8|true|false|0|2|1|true|false|false|lc_079_RG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|8|true|true|0|3|1|true|true|false|lc_079_RG
+HULK SMASH!|Charm>Destroy|UPKEEP|9|true|false|0|0|2|true|true|false|lc_075_BR
+DRAW|Mountain|lc_075_BR
+HYDRA Troopers|PermanentCreature|MAIN2|9|true|false|0|0|2|true|false|false|lc_075_BR
+DRAW|Mountain|lc_079_RG
+DRAW|Mountain|lc_075_BR
+Project Deathlok Soldier|PermanentCreature|MAIN2|11|true|false|0|1|2|true|false|false|lc_075_BR
+Red Room Recruit|PermanentCreature|MAIN2|11|true|false|0|2|2|true|false|false|lc_075_BR
+DRAW|A.I.M. Synthoids|lc_075_BR
+DRAW|Mountain|lc_079_RG
+Wakandan Royal Guard|PermanentCreature|MAIN2|12|true|false|0|3|1|true|false|false|lc_079_RG
+DRAW|Jessica Jones, Private Eye|lc_075_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|13|true|false|0|1|4|true|false|false|lc_075_BR
+DRAW|Mountain|lc_079_RG
+END|lc_079_RG
+START
+DRAW|Stark Industries Executive|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Evil's Thrall|lc_074_BR
+DRAW|Dark Deed|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Iron Fist, Living Weapon|lc_074_BR
+DRAW|Island|lc_072_UG
+DRAW|The Astonishing Ant-Man|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Attuma, Atlantean Warlord|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Wiccan, Rising Magician|lc_072_UG
+DRAW|Rewrite History|lc_072_UG
+DRAW|Mountain|lc_074_BR
+Stark Industries Executive|PermanentCreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_074_BR
+DRAW|Forest|lc_072_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN2|3|true|false|0|0|1|true|false|false|lc_072_UG
+DRAW|HYDRA Troopers|lc_074_BR
+DRAW|White Tiger, Ava Ayala|lc_072_UG
+Rewrite History|PermanentNoncreature|MAIN2|5|true|false|0|1|1|true|false|false|lc_072_UG
+DRAW|Mountain|lc_074_BR
+Evil's Thrall|GainControl>GainControl|MAIN1|6|true|false|0|1|1|true|false|false|lc_074_BR
+DRAW|Island|lc_072_UG
+Attuma, Atlantean Warlord|PermanentCreature|MAIN1|7|true|false|0|1|1|true|false|false|lc_072_UG
+DRAW|Knight of Wundagore|lc_072_UG
+DRAW|Team Tactics|lc_074_BR
+Iron Fist, Living Weapon|PermanentCreature|MAIN2|8|true|false|0|1|2|true|false|false|lc_074_BR
+DRAW|Forest|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Island|lc_072_UG
+Wiccan, Rising Magician|PermanentCreature|MAIN2|9|true|false|0|2|2|true|false|false|lc_072_UG
+DRAW|Decoy Ploy|lc_074_BR
+HYDRA Troopers|PermanentCreature|MAIN2|10|true|false|0|2|3|true|false|false|lc_074_BR
+DRAW|Forest|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Hydraulic Helper|lc_072_UG
+END|lc_072_UG
+START
+DRAW|Island|lc_070_UG
+DRAW|Claim the Kingdom|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Beast, Erudite Aerialist|lc_070_UG
+DRAW|Attuma, Atlantean Warlord|lc_070_UG
+DRAW|Giant-Sized Flying Ant|lc_070_UG
+DRAW|Okoye, Dora Milaje Leader|lc_073_WB
+DRAW|Hero in Training|lc_073_WB
+DRAW|Hour of Defeat|lc_073_WB
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lc_073_WB
+DRAW|White Widow, Free Agent|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Agent Maria Hill|lc_073_WB
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lc_073_WB
+DRAW|Red Guardian, Super-Soldier|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Super-Adaptoid|lc_073_WB
+DRAW|Stolen Stark Tech|lc_073_WB
+DRAW|Colleen Wing, Street Samurai|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|White Widow, Free Agent|lc_073_WB
+Nick Fury, Agent of S.H.I.E.L.D.|PermanentCreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_073_WB
+DRAW|Forest|lc_070_UG
+Claim the Kingdom|PermanentNoncreature|MAIN2|3|true|false|0|0|1|true|false|false|lc_070_UG
+DRAW|Swamp|lc_073_WB
+Stolen Stark Tech|PermanentNoncreature|MAIN1|4|true|false|0|1|0|true|false|true|lc_073_WB
+DRAW|Forest|lc_070_UG
+DRAW|Robot Domination|lc_073_WB
+Colleen Wing, Street Samurai|PermanentCreature|MAIN2|6|true|false|0|1|0|true|false|false|lc_073_WB
+DRAW|Forest|lc_070_UG
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|7|true|false|0|0|2|true|false|true|lc_070_UG
+DRAW|Plains|lc_073_WB
+White Widow, Free Agent|PermanentCreature|MAIN2|8|true|false|0|2|1|true|false|false|lc_073_WB
+DRAW|Pym Particles|lc_070_UG
+Attuma, Atlantean Warlord|PermanentCreature|MAIN1|9|true|false|0|1|3|true|false|false|lc_070_UG
+DRAW|Raft Security Officer|lc_073_WB
+Robot Domination|PermanentNoncreature|MAIN2|10|true|false|0|2|1|true|false|false|lc_073_WB
+DRAW|Savage Land Dinosaur|lc_070_UG
+Savage Land Dinosaur|PermanentCreature|MAIN2|11|true|false|0|1|2|true|false|false|lc_070_UG
+DRAW|Swamp|lc_073_WB
+Raft Security Officer|PermanentCreature|MAIN2|12|true|false|0|2|2|true|false|false|lc_073_WB
+DRAW|She-Hulk, Jade Defender|lc_070_UG
+DRAW|Hour of Defeat|lc_073_WB
+She-Hulk, Jade Defender|PermanentCreature|MAIN2|13|true|false|0|1|1|true|false|false|lc_070_UG
+Hour of Defeat|Destroy>Surveil|UPKEEP|14|true|false|0|1|2|true|true|false|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|Island|lc_070_UG
+DRAW|Swamp|lc_073_WB
+DRAW|Doc Samson, Super Psychiatrist|lc_070_UG
+END|lc_070_UG
+START
+DRAW|Cruel Alliance|lc_071_UB
+DRAW|Aerial Doombot|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Atlantean Cavalry|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Plains|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Mister Hyde, Monster Within|lc_076_WG
+DRAW|Savage Land Dinosaur|lc_076_WG
+DRAW|Giant Growth|lc_076_WG
+DRAW|Swamp|lc_071_UB
+Aerial Doombot|PermanentCreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_071_UB
+DRAW|Borough Backup|lc_076_WG
+DRAW|Swamp|lc_071_UB
+DRAW|Plains|lc_076_WG
+DRAW|Heroic Feast|lc_076_WG
+Mister Hyde, Monster Within|PermanentCreature|MAIN2|5|true|false|0|0|1|true|false|false|lc_076_WG
+DRAW|Depower|lc_071_UB
+Atlantean Cavalry|PermanentCreature|MAIN2|6|true|false|0|1|1|true|false|false|lc_071_UB
+DRAW|Forest|lc_076_WG
+Heroic Feast|PermanentNoncreature|MAIN2|7|true|false|0|1|2|true|false|false|lc_076_WG
+DRAW|Island|lc_071_UB
+Cruel Alliance|ChangeZone>ChangeZone>GainLife|MAIN1|8|true|false|0|2|1|true|false|false|lc_071_UB
+DRAW|Plains|lc_076_WG
+Borough Backup|Token|MAIN2|9|true|false|0|0|2|true|false|false|lc_076_WG
+DRAW|Baron Strucker, HYDRA Overlord|lc_071_UB
+Baron Strucker, HYDRA Overlord|PermanentCreature|MAIN2|10|true|false|0|2|2|true|false|false|lc_071_UB
+DRAW|Viv Vision, Teen Synthezoid|lc_076_WG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|11|false|true|0|3|2|true|true|false|lc_071_UB
+DRAW|Atlantis Attacks|lc_071_UB
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|11|true|false|0|2|3|true|false|false|lc_076_WG
+DRAW|Kang, Temporal Tyrant|lc_071_UB
+Kang, Temporal Tyrant|PermanentCreature|MAIN1|12|true|false|0|3|3|true|false|false|lc_071_UB
+DRAW|Arnim Zola, Bio-Fanatic|lc_071_UB
+Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN1|12|true|false|0|4|3|true|false|false|lc_071_UB
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|12|false|true|0|3|5|true|true|false|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|We Say Thee Nay!|lc_071_UB
+DRAW|Ghost, Spectral Saboteur|lc_071_UB
+DRAW|Plains|lc_076_WG
+DRAW|Super Strength|lc_076_WG
+Super Strength|Attach|MAIN2|15|true|false|0|2|3|true|false|false|lc_076_WG
+DRAW|Project Deathlok Soldier|lc_071_UB
+DRAW|Island|lc_071_UB
+END|lc_071_UB
+START
+DRAW|Swamp|lc_075_BR
+DRAW|Decoy Ploy|lc_075_BR
+DRAW|HYDRA Infiltration|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Hawkeye, Young Avenger|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Restorative Technique|lc_077_UG
+DRAW|Ka-Zar of the Savage Land|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Vibranium Energy Daggers|lc_077_UG
+DRAW|Depower|lc_077_UG
+DRAW|Stature, Size Shifter|lc_077_UG
+DRAW|Echo, Perceptive Prodigy|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Rewrite History|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Vibranium Energy Daggers|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Hydraulic Helper|lc_077_UG
+Vibranium Energy Daggers|PermanentNoncreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Machinesmith Automaton|lc_075_BR
+DRAW|Dependable Quinjet|lc_077_UG
+Hydraulic Helper|PermanentCreature|MAIN2|4|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|The Vision|lc_075_BR
+Machinesmith Automaton|PermanentCreature|MAIN2|5|true|false|0|0|1|true|false|false|lc_075_BR
+DRAW|Hulkling, Burgeoning Bruiser|lc_077_UG
+Hulkling, Burgeoning Bruiser|PermanentCreature|MAIN2|6|true|false|0|1|1|true|false|false|lc_077_UG
+DRAW|Mountain|lc_075_BR
+The Vision|PermanentCreature|MAIN1|7|true|false|0|1|2|true|false|false|lc_075_BR
+DRAW|Island|lc_077_UG
+Rewrite History|PermanentNoncreature|MAIN2|8|true|false|0|1|1|true|false|false|lc_077_UG
+DRAW|Swamp|lc_075_BR
+HYDRA Infiltration|PermanentNoncreature|MAIN1|9|true|false|0|1|1|true|false|false|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Echo, Perceptive Prodigy|lc_077_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|10|true|false|0|1|1|true|false|false|lc_077_UG
+DRAW|Hire a Crew|lc_075_BR
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|11|true|false|0|1|2|true|false|false|lc_075_BR
+Decoy Ploy|Charm>ChangeZone|MAIN2|11|true|false|0|2|2|true|true|false|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Bold Biochemist|lc_077_UG
+DRAW|Swamp|lc_075_BR
+Machinesmith Automaton|PermanentCreature|MAIN2|13|true|false|0|2|2|true|false|false|lc_075_BR
+DRAW|Ka-Zar of the Savage Land|lc_077_UG
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|14|false|true|0|3|2|true|true|false|lc_075_BR
+DRAW|Jessica Jones, Private Eye|lc_075_BR
+Bold Biochemist|PermanentCreature|MAIN2|14|true|false|0|2|4|true|false|false|lc_077_UG
+DRAW|Mountain|lc_075_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|15|true|false|0|4|3|true|false|false|lc_075_BR
+DRAW|Super Intelligence|lc_077_UG
+DRAW|Mountain|lc_075_BR
+DRAW|Forest|lc_077_UG
+Ka-Zar of the Savage Land|PermanentCreature|MAIN1|18|true|false|0|3|5|true|false|false|lc_077_UG
+DRAW|S.H.I.E.L.D. Helicarrier|lc_075_BR
+S.H.I.E.L.D. Helicarrier|PermanentNoncreature|MAIN1|19|true|false|0|5|5|true|false|false|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Forest|lc_077_UG
+DRAW|HULK SMASH!|lc_075_BR
+HULK SMASH!|Charm>Pump>DealDamage|COMBAT_DECLARE_ATTACKERS|21|true|true|0|8|5|true|true|false|lc_075_BR
+DRAW|Unliving Legionnaire|lc_075_BR
+END|lc_075_BR
+START
+DRAW|Dark Deed|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|HYDRA Troopers|lc_074_BR
+DRAW|Jessica Jones, Private Eye|lc_074_BR
+DRAW|Vision of Love|lc_074_BR
+DRAW|Arnim Zola, Bio-Fanatic|lc_074_BR
+DRAW|Kingpin's Enforcers|lc_074_BR
+DRAW|Mountain|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Wonder Man, Hollywood Hero|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Super Suit|lc_078_UR
+DRAW|Trickster's Stratagem|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Lightning Strike|lc_074_BR
+DRAW|Evil's Thrall|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Decoy Ploy|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Stolen Stark Tech|lc_074_BR
+DRAW|Speed, Young Avenger|lc_078_UR
+DRAW|Super Speed|lc_074_BR
+DRAW|Blazing Crescendo|lc_078_UR
+Speed, Young Avenger|PermanentCreature|MAIN1|4|true|false|0|0|0|true|false|false|lc_078_UR
+Lightning Strike|DealDamage|MAIN2|4|false|false|0|0|1|true|true|false|lc_074_BR
+DRAW|Kingpin's Enforcers|lc_074_BR
+DRAW|Vision of Love|lc_078_UR
+DRAW|Swamp|lc_074_BR
+Kingpin's Enforcers|PermanentCreature|MAIN2|7|true|false|0|0|0|true|false|false|lc_074_BR
+DRAW|Giant-Sized Flying Ant|lc_078_UR
+DRAW|Swamp|lc_074_BR
+DRAW|Island|lc_078_UR
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|10|true|false|0|0|1|true|false|true|lc_078_UR
+DRAW|Volcanic Villain|lc_074_BR
+Volcanic Villain|PermanentCreature|MAIN1|11|true|false|0|1|1|true|false|false|lc_074_BR
+Super Suit|PermanentNoncreature|UPKEEP|12|true|false|0|1|2|true|false|true|lc_078_UR
+DRAW|Depower|lc_078_UR
+DRAW|Iron Fist, Living Weapon|lc_074_BR
+Evil's Thrall|GainControl>GainControl|MAIN1|13|true|false|0|2|1|true|false|false|lc_074_BR
+DRAW|Island|lc_078_UR
+Wonder Man, Hollywood Hero|PermanentCreature|MAIN2|14|true|false|0|1|2|true|false|false|lc_078_UR
+DRAW|Stark Industries Executive|lc_074_BR
+Iron Fist, Living Weapon|PermanentCreature|MAIN2|15|true|false|0|2|2|true|false|false|lc_074_BR
+DRAW|Crimson Operative|lc_078_UR
+Crimson Operative|PermanentCreature|MAIN2|16|true|false|0|2|3|true|false|false|lc_078_UR
+DRAW|K'un-Lun Warrior|lc_074_BR
+Stark Industries Executive|PermanentCreature|MAIN2|17|true|false|0|3|3|true|false|false|lc_074_BR
+DRAW|A.I.M. Scientists|lc_078_UR
+DRAW|Vision of Love|lc_074_BR
+DRAW|Bold Biochemist|lc_078_UR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|20|true|true|0|3|4|true|true|false|lc_078_UR
+A.I.M. Scientists|PermanentCreature|MAIN2|20|true|false|0|3|4|true|false|false|lc_078_UR
+DRAW|K'un-Lun Warrior|lc_078_UR
+Bold Biochemist|PermanentCreature|MAIN2|20|true|false|0|4|4|true|false|false|lc_078_UR
+DRAW|Mountain|lc_074_BR
+DRAW|Island|lc_078_UR
+DRAW|Mountain|lc_074_BR
+DRAW|Human Torch, Johnny Storm|lc_074_BR
+END|lc_078_UR
+START
+DRAW|Island|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Echo, Perceptive Prodigy|lc_072_UG
+DRAW|Restorative Technique|lc_072_UG
+DRAW|Shuri, Wakandan Inventor|lc_072_UG
+DRAW|Forest|lc_079_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lc_079_RG
+DRAW|Hawkeye, Young Avenger|lc_079_RG
+DRAW|Call Damage Control|lc_079_RG
+DRAW|Wakandan Royal Guard|lc_079_RG
+DRAW|Undercover Skrull|lc_079_RG
+DRAW|Lightning Strike|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Blazing Crescendo|lc_079_RG
+DRAW|Giant Growth|lc_079_RG
+DRAW|Lightning Strike|lc_079_RG
+DRAW|Knight of Wundagore|lc_072_UG
+DRAW|Forest|lc_079_RG
+DRAW|Forest|lc_072_UG
+Shuri, Wakandan Inventor|PermanentCreature|MAIN2|4|true|false|0|0|0|true|false|false|lc_072_UG
+DRAW|Restorative Technique|lc_079_RG
+Lightning Strike|DealDamage|DRAW|5|true|false|0|0|1|true|true|false|lc_079_RG
+DRAW|White Tiger, Ava Ayala|lc_072_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|6|true|false|0|0|0|true|false|false|lc_072_UG
+DRAW|Ka-Zar of the Savage Land|lc_079_RG
+DRAW|Forest|lc_072_UG
+White Tiger, Ava Ayala|PermanentCreature|MAIN1|8|true|false|0|1|0|true|false|false|lc_072_UG
+Knight of Wundagore|PermanentCreature|MAIN2|8|true|false|0|2|0|true|false|false|lc_072_UG
+DRAW|Mountain|lc_079_RG
+Ka-Zar of the Savage Land|PermanentCreature|MAIN2|9|true|false|0|0|3|true|false|false|lc_079_RG
+DRAW|Falcon's Wing Harness|lc_072_UG
+Falcon's Wing Harness|PermanentNoncreature|MAIN1|10|true|false|0|3|2|true|false|false|lc_072_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|10|true|false|0|3|2|true|false|false|lc_072_UG
+DRAW|Forest|lc_079_RG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|11|true|true|0|2|3|true|true|false|lc_079_RG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|11|true|false|0|2|3|true|false|false|lc_079_RG
+DRAW|Wiccan, Rising Magician|lc_072_UG
+DRAW|Dependable Quinjet|lc_079_RG
+Dependable Quinjet|PermanentNoncreature|MAIN2|13|true|false|0|2|4|true|false|false|lc_079_RG
+DRAW|Forest|lc_072_UG
+Wiccan, Rising Magician|PermanentCreature|MAIN1|14|true|false|0|4|2|true|false|false|lc_072_UG
+DRAW|Powerful Broker|lc_079_RG
+Powerful Broker|PermanentCreature|MAIN2|15|true|false|0|2|4|true|false|false|lc_079_RG
+DRAW|Forest|lc_072_UG
+END|lc_072_UG
+START
+DRAW|Futurist Forge|lc_070_UG
+DRAW|Savage Land Dinosaur|lc_070_UG
+DRAW|White Tiger, Ava Ayala|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Claim the Kingdom|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Giant-Sized Flying Ant|lc_071_UB
+DRAW|We Say Thee Nay!|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Ghost, Spectral Saboteur|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Kang, Temporal Tyrant|lc_071_UB
+DRAW|Forest|lc_070_UG
+DRAW|Aerial Doombot|lc_071_UB
+Aerial Doombot|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_071_UB
+DRAW|Island|lc_070_UG
+White Tiger, Ava Ayala|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_070_UG
+DRAW|Stolen Stark Tech|lc_071_UB
+Stolen Stark Tech|PermanentNoncreature|DRAW|5|true|false|0|1|1|true|false|true|lc_071_UB
+DRAW|Island|lc_070_UG
+Futurist Forge|PermanentNoncreature|MAIN2|6|true|false|0|1|1|true|false|false|lc_070_UG
+DRAW|Rapid Rescue|lc_070_UG
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|6|true|false|0|1|1|true|true|false|lc_070_UG
+DRAW|Swamp|lc_071_UB
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|7|true|false|0|1|1|true|false|true|lc_071_UB
+DRAW|Island|lc_070_UG
+She-Hulk, Jade Defender|PermanentCreature|MAIN2|8|true|false|0|1|2|true|false|false|lc_070_UG
+DRAW|Dependable Quinjet|lc_071_UB
+Kang, Temporal Tyrant|PermanentCreature|MAIN2|9|true|false|0|2|2|true|false|false|lc_071_UB
+DRAW|Pym Particles|lc_070_UG
+Claim the Kingdom|PermanentNoncreature|MAIN2|10|true|false|0|2|3|true|false|false|lc_070_UG
+DRAW|Swamp|lc_071_UB
+Dependable Quinjet|PermanentNoncreature|MAIN2|11|true|false|0|3|2|true|false|false|lc_071_UB
+DRAW|Stature, Size Shifter|lc_070_UG
+DRAW|Swamp|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Island|lc_070_UG
+Ghost, Spectral Saboteur|PermanentCreature|COMBAT_DECLARE_ATTACKERS|14|false|true|0|2|2|true|false|true|lc_071_UB
+DRAW|Atlantis Attacks|lc_071_UB
+Atlantis Attacks|Charm>Token>ChangeZone|MAIN2|15|true|false|0|2|3|true|false|false|lc_071_UB
+DRAW|Iron Lad, Diverging Destiny|lc_070_UG
+Savage Land Dinosaur|PermanentCreature|MAIN2|16|true|false|0|1|3|true|false|false|lc_070_UG
+Stature, Size Shifter|PermanentCreature|MAIN2|16|true|false|0|2|3|true|false|false|lc_070_UG
+DRAW|Project Deathlok Soldier|lc_071_UB
+Project Deathlok Soldier|PermanentCreature|MAIN2|17|true|false|0|4|3|true|false|false|lc_071_UB
+DRAW|Island|lc_070_UG
+END|lc_070_UG
+START
+DRAW|Hawkeye, Young Avenger|lc_075_BR
+DRAW|Machinesmith Automaton|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|The Vision|lc_075_BR
+DRAW|Stolen Stark Tech|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|Hero in Training|lc_073_WB
+DRAW|Red Guardian, Super-Soldier|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|Okoye, Dora Milaje Leader|lc_073_WB
+DRAW|Robot Domination|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|Roxxon Brutes|lc_075_BR
+DRAW|Swamp|lc_073_WB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|0|true|false|true|lc_073_WB
+DRAW|Swamp|lc_075_BR
+DRAW|Decoy Ploy|lc_075_BR
+Machinesmith Automaton|PermanentCreature|MAIN2|5|true|false|0|0|0|true|false|false|lc_075_BR
+DRAW|Widow's Bite|lc_073_WB
+Widow's Bite|Charm>Pump|DRAW|6|true|false|0|0|1|true|true|false|lc_073_WB
+DRAW|Swamp|lc_075_BR
+The Vision|PermanentCreature|MAIN2|7|true|false|0|0|0|true|false|false|lc_075_BR
+DRAW|Swamp|lc_073_WB
+Robot Domination|PermanentNoncreature|MAIN2|8|true|false|0|0|1|true|false|false|lc_073_WB
+DRAW|Mountain|lc_075_BR
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|9|true|false|0|1|0|true|false|false|lc_075_BR
+DRAW|Nick Fury, Agent of S.H.I.E.L.D.|lc_073_WB
+DRAW|Project Deathlok Soldier|lc_075_BR
+Decoy Ploy|Charm>ChangeZone|MAIN2|11|true|false|0|2|0|true|true|false|lc_075_BR
+DRAW|HULK SMASH!|lc_075_BR
+Project Deathlok Soldier|PermanentCreature|MAIN2|11|true|false|0|2|0|true|false|false|lc_075_BR
+HULK SMASH!|Charm>Destroy|MAIN2|11|true|false|0|3|0|true|true|false|lc_075_BR
+DRAW|Swamp|lc_073_WB
+DRAW|Swamp|lc_075_BR
+Roxxon Brutes|PermanentCreature|MAIN2|13|true|false|0|3|0|true|false|false|lc_075_BR
+DRAW|Raft Security Officer|lc_073_WB
+DRAW|Ronin, Shadow Stalker|lc_075_BR
+END|lc_075_BR
+START
+DRAW|Dark Deed|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Evil's Thrall|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Hire a Crew|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Raft Security Officer|lc_076_WG
+DRAW|Rick Jones, Destined Sidekick|lc_076_WG
+DRAW|Savage Land Dinosaur|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Ultron Drone|lc_076_WG
+DRAW|Hulkling, Burgeoning Bruiser|lc_076_WG
+DRAW|Mountain|lc_074_BR
+DRAW|Super Strength|lc_076_WG
+Raft Security Officer|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_076_WG
+DRAW|Vision of Love|lc_074_BR
+DRAW|Take Up the Shield|lc_076_WG
+DRAW|Forest|lc_076_WG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|5|true|false|0|1|0|true|false|false|lc_076_WG
+DRAW|Mountain|lc_074_BR
+Evil's Thrall|GainControl>GainControl|MAIN1|6|true|false|0|0|2|true|false|false|lc_074_BR
+DRAW|Web Up|lc_076_WG
+Hulkling, Burgeoning Bruiser|PermanentCreature|MAIN2|7|true|false|0|2|0|true|false|false|lc_076_WG
+DRAW|Stolen Stark Tech|lc_074_BR
+Stolen Stark Tech|PermanentNoncreature|DRAW|8|true|false|0|0|3|true|false|true|lc_074_BR
+DRAW|Forest|lc_076_WG
+Web Up|PermanentNoncreature|MAIN1|9|true|false|0|3|0|true|false|false|lc_076_WG
+DRAW|Misty Knight, Hero for Hire|lc_074_BR
+Misty Knight, Hero for Hire|PermanentCreature|MAIN2|10|true|false|0|0|3|true|false|false|lc_074_BR
+DRAW|Heroic Feast|lc_076_WG
+Ultron Drone|PermanentCreature|MAIN2|11|true|false|0|3|1|true|false|false|lc_076_WG
+DRAW|Jessica Jones, Private Eye|lc_074_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|12|true|false|0|1|4|true|false|false|lc_074_BR
+DRAW|Plains|lc_076_WG
+Super Strength|Attach|MAIN1|13|true|false|0|4|2|true|false|false|lc_076_WG
+DRAW|Agents of HYDRA|lc_074_BR
+Agents of HYDRA|PermanentCreature|MAIN2|14|true|false|0|2|4|true|false|false|lc_074_BR
+DRAW|Plains|lc_076_WG
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|15|false|true|0|3|4|true|true|false|lc_074_BR
+Take Up the Shield|PutCounter>Pump|COMBAT_DECLARE_BLOCKERS|15|true|true|0|4|4|true|true|false|lc_076_WG
+Heroic Feast|PermanentNoncreature|MAIN2|15|true|false|0|3|1|true|false|false|lc_076_WG
+DRAW|Mountain|lc_074_BR
+DRAW|Forest|lc_076_WG
+END|lc_076_WG
+START
+DRAW|Hellcat, Undying Vigilante|lc_072_UG
+DRAW|Heroic Feast|lc_072_UG
+DRAW|The Astonishing Ant-Man|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Shuri, Wakandan Inventor|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Futurist Forge|lc_072_UG
+DRAW|Forest|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Restorative Technique|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Depower|lc_077_UG
+DRAW|Bold Biochemist|lc_077_UG
+DRAW|Savage Land Dinosaur|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Vibranium Energy Daggers|lc_077_UG
+DRAW|Island|lc_077_UG
+Vibranium Energy Daggers|PermanentNoncreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Echo, Perceptive Prodigy|lc_072_UG
+Shuri, Wakandan Inventor|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_072_UG
+DRAW|Restorative Technique|lc_077_UG
+Bold Biochemist|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_077_UG
+DRAW|Forest|lc_072_UG
+Hellcat, Undying Vigilante|PermanentCreature|MAIN1|5|true|false|0|1|1|true|false|false|lc_072_UG
+Futurist Forge|PermanentNoncreature|MAIN2|5|true|false|0|2|1|true|false|false|lc_072_UG
+DRAW|Restorative Technique|lc_072_UG
+DRAW|S.H.I.E.L.D. Helicarrier|lc_077_UG
+DRAW|Island|lc_072_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|7|true|false|0|2|1|true|false|false|lc_072_UG
+DRAW|Island|lc_077_UG
+S.H.I.E.L.D. Helicarrier|PermanentNoncreature|MAIN2|8|true|false|0|1|3|true|false|false|lc_077_UG
+DRAW|Wiccan, Rising Magician|lc_072_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN1|9|true|false|0|3|3|true|false|false|lc_072_UG
+DRAW|Falcon's Wing Harness|lc_077_UG
+Falcon's Wing Harness|PermanentNoncreature|MAIN1|10|true|false|0|3|4|true|false|false|lc_077_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|10|true|false|0|4|4|true|false|false|lc_077_UG
+DRAW|Frozen in Ice|lc_072_UG
+Frozen in Ice|Attach|MAIN1|11|true|false|0|4|3|true|false|false|lc_072_UG
+DRAW|Dependable Quinjet|lc_077_UG
+Dependable Quinjet|PermanentNoncreature|MAIN2|12|true|false|0|3|4|true|false|false|lc_077_UG
+DRAW|Loki, God of Mischief|lc_072_UG
+Loki, God of Mischief|PermanentCreature|MAIN1|13|true|false|0|4|3|true|false|false|lc_072_UG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|13|false|true|0|3|5|true|true|false|lc_077_UG
+DRAW|Rewrite History|lc_077_UG
+DRAW|Ant-Man, Colony Commander|lc_077_UG
+Ant-Man, Colony Commander|PermanentCreature|MAIN2|14|true|false|0|4|5|true|false|false|lc_077_UG
+Rewrite History|PermanentNoncreature|MAIN2|14|true|false|0|5|5|true|false|false|lc_077_UG
+DRAW|Hydraulic Helper|lc_072_UG
+Heroic Feast|PermanentNoncreature|MAIN2|15|true|false|0|5|3|true|false|false|lc_072_UG
+Hydraulic Helper|PermanentCreature|MAIN2|15|true|false|0|5|3|true|false|false|lc_072_UG
+DRAW|Hydraulic Helper|lc_077_UG
+Hydraulic Helper|PermanentCreature|MAIN2|16|true|false|0|3|6|true|false|false|lc_077_UG
+DRAW|Island|lc_072_UG
+Wiccan, Rising Magician|PermanentCreature|MAIN1|17|true|false|0|6|4|true|false|false|lc_072_UG
+DRAW|Savage Land Dinosaur|lc_077_UG
+END|lc_072_UG
+START
+DRAW|Call Damage Control|lc_079_RG
+DRAW|Training Regimen|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Iron Man Armor|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Kree Sentinel|lc_078_UR
+DRAW|Dependable Quinjet|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Blazing Crescendo|lc_078_UR
+DRAW|K'un-Lun Warrior|lc_078_UR
+DRAW|Photon Blast Barrage|lc_078_UR
+DRAW|Depower|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|K'un-Lun Warrior|lc_078_UR
+DRAW|Pym Particles|lc_078_UR
+DRAW|Bold Biochemist|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Photon Blast Barrage|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Knight of Wundagore|lc_079_RG
+DRAW|Giant-Sized Flying Ant|lc_078_UR
+Bold Biochemist|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|Forest|lc_079_RG
+Knight of Wundagore|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_079_RG
+DRAW|Mountain|lc_078_UR
+Photon Blast Barrage|DealDamage|MAIN1|5|true|false|0|1|1|true|false|false|lc_078_UR
+DRAW|Mountain|lc_079_RG
+Iron Man Armor|PermanentNoncreature|MAIN2|6|true|false|0|0|1|true|false|false|lc_079_RG
+DRAW|Island|lc_078_UR
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|7|true|false|0|1|0|true|false|true|lc_078_UR
+DRAW|Powerful Broker|lc_079_RG
+Training Regimen|PermanentNoncreature|MAIN2|8|true|false|0|0|2|true|false|false|lc_079_RG
+DRAW|Mountain|lc_078_UR
+DRAW|Forest|lc_079_RG
+Powerful Broker|PermanentCreature|MAIN2|10|true|false|0|0|2|true|false|false|lc_079_RG
+DRAW|A.I.M. Synthoids|lc_078_UR
+A.I.M. Synthoids|PermanentCreature|MAIN2|11|true|false|0|2|1|true|false|false|lc_078_UR
+DRAW|H.E.R.B.I.E. Scout Unit|lc_079_RG
+H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|12|true|false|0|1|3|true|false|false|lc_079_RG
+DRAW|Undercover Skrull|lc_079_RG
+Undercover Skrull|PermanentCreature|MAIN2|12|true|false|0|2|3|true|false|false|lc_079_RG
+DRAW|Island|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Kree Sentinel|lc_079_RG
+Kree Sentinel|PermanentCreature|MAIN2|14|true|false|0|3|3|true|false|false|lc_079_RG
+DRAW|Depower|lc_078_UR
+DRAW|Ka-Zar of the Savage Land|lc_079_RG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|16|false|true|0|3|4|true|true|false|lc_078_UR
+DRAW|Death to Our Enemies|lc_078_UR
+Ka-Zar of the Savage Land|PermanentCreature|MAIN2|16|true|false|0|3|3|true|false|false|lc_079_RG
+DRAW|Mister Fantastic, Reed Richards|lc_078_UR
+Pym Particles|Pump>Effect>Draw|MAIN1|17|true|false|0|3|5|true|false|false|lc_078_UR
+DRAW|Island|lc_078_UR
+Mister Fantastic, Reed Richards|PermanentCreature|MAIN2|17|true|false|0|3|5|true|false|false|lc_078_UR
+Death to Our Enemies|PermanentNoncreature|MAIN2|17|true|false|0|4|5|true|false|false|lc_078_UR
+DRAW|Alien Invasion|lc_079_RG
+Alien Invasion|PermanentNoncreature|MAIN1|18|true|false|0|5|4|true|false|false|lc_079_RG
+Call Damage Control|Charm>Pump>ChangeZone|MAIN1|18|true|false|0|5|4|true|false|false|lc_079_RG
+DRAW|Echo, Perceptive Prodigy|lc_078_UR
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|19|true|false|0|4|5|true|false|false|lc_078_UR
+DRAW|Super Speed|lc_079_RG
+Kree Sentinel|PermanentCreature|MAIN2|20|true|false|0|5|5|true|false|false|lc_079_RG
+DRAW|Super Suit|lc_078_UR
+Super Suit|PermanentNoncreature|DRAW|21|true|false|0|5|6|true|false|true|lc_078_UR
+DRAW|Dependable Quinjet|lc_078_UR
+Dependable Quinjet|PermanentNoncreature|MAIN2|21|true|false|0|5|6|true|false|false|lc_078_UR
+DRAW|A.I.M. Scientists|lc_078_UR
+A.I.M. Scientists|PermanentCreature|MAIN2|21|true|false|0|5|6|true|false|false|lc_078_UR
+DRAW|Crimson Operative|lc_078_UR
+DRAW|Mountain|lc_079_RG
+DRAW|Island|lc_078_UR
+DRAW|Abomination, Terrifying Titan|lc_079_RG
+Abomination, Terrifying Titan|PermanentCreature|MAIN2|24|true|false|0|5|4|true|false|false|lc_079_RG
+DRAW|Justice, Vance Astrovik|lc_078_UR
+Justice, Vance Astrovik|PermanentCreature|MAIN1|25|true|false|0|4|6|true|false|false|lc_078_UR
+DRAW|Lightning Strike|lc_079_RG
+Lightning Strike|DealDamage|DRAW|26|true|false|0|4|4|true|true|false|lc_079_RG
+END|lc_079_RG
+START
+DRAW|Island|lc_070_UG
+DRAW|Rewrite History|lc_070_UG
+DRAW|Hellcat, Undying Vigilante|lc_070_UG
+DRAW|Training Regimen|lc_070_UG
+DRAW|Doc Samson, Super Psychiatrist|lc_070_UG
+DRAW|Bold Biochemist|lc_070_UG
+DRAW|Beast, Erudite Aerialist|lc_070_UG
+DRAW|Machinesmith Automaton|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Too Evil to Stay Dead|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Unliving Legionnaire|lc_075_BR
+DRAW|Savage Land Dinosaur|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Iron Lad, Diverging Destiny|lc_070_UG
+DRAW|She-Hulk, Jade Defender|lc_070_UG
+DRAW|A.I.M. Synthoids|lc_070_UG
+DRAW|Hellcat, Undying Vigilante|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Super Suit|lc_070_UG
+DRAW|HULK SMASH!|lc_075_BR
+DRAW|Pym Particles|lc_070_UG
+Super Suit|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|0|true|false|true|lc_070_UG
+HULK SMASH!|Charm>Destroy|COMBAT_BEGIN|4|false|true|0|0|0|true|true|false|lc_075_BR
+DRAW|Jessica Jones, Private Eye|lc_075_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|5|true|false|0|0|0|true|false|false|lc_075_BR
+DRAW|Futurist Forge|lc_070_UG
+A.I.M. Synthoids|PermanentCreature|MAIN2|6|true|false|0|0|1|true|false|false|lc_070_UG
+DRAW|S.H.I.E.L.D. Helicarrier|lc_075_BR
+Unliving Legionnaire|PermanentCreature|MAIN2|7|true|false|0|1|1|true|false|false|lc_075_BR
+DRAW|Forest|lc_070_UG
+Hellcat, Undying Vigilante|PermanentCreature|MAIN1|8|true|false|0|1|2|true|false|false|lc_070_UG
+DRAW|Mountain|lc_075_BR
+Machinesmith Automaton|PermanentCreature|MAIN2|9|true|false|0|2|2|true|false|false|lc_075_BR
+DRAW|Forest|lc_070_UG
+She-Hulk, Jade Defender|PermanentCreature|MAIN2|10|true|false|0|2|3|true|false|false|lc_070_UG
+DRAW|Hawkeye, Young Avenger|lc_075_BR
+S.H.I.E.L.D. Helicarrier|PermanentNoncreature|MAIN1|11|true|false|0|3|3|true|false|false|lc_075_BR
+DRAW|Rewrite History|lc_070_UG
+Iron Lad, Diverging Destiny|PermanentCreature|MAIN2|12|true|false|0|3|5|true|false|false|lc_070_UG
+DRAW|Mountain|lc_075_BR
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|13|true|false|0|5|4|true|false|false|lc_075_BR
+DRAW|Forest|lc_070_UG
+Rewrite History|PermanentNoncreature|MAIN2|14|true|false|0|4|6|true|false|false|lc_070_UG
+DRAW|Mountain|lc_075_BR
+Red Room Recruit|PermanentCreature|MAIN2|15|true|false|0|6|4|true|false|false|lc_075_BR
+DRAW|Crimson Operative|lc_075_BR
+Decoy Ploy|Charm>ChangeZone|MAIN2|15|true|false|0|7|4|true|true|false|lc_075_BR
+DRAW|Stature, Size Shifter|lc_070_UG
+Futurist Forge|PermanentNoncreature|MAIN2|16|true|false|0|4|7|true|false|false|lc_070_UG
+DRAW|Island|lc_070_UG
+Stature, Size Shifter|PermanentCreature|MAIN2|16|true|false|0|4|7|true|false|false|lc_070_UG
+DRAW|Mountain|lc_075_BR
+Crimson Operative|PermanentCreature|MAIN1|17|true|false|0|7|5|true|false|false|lc_075_BR
+DRAW|Forest|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|Volcanic Villain|lc_075_BR
+Volcanic Villain|PermanentCreature|MAIN1|19|true|false|0|7|5|true|false|false|lc_075_BR
+Roxxon Brutes|PermanentCreature|MAIN2|19|true|false|0|8|5|true|false|false|lc_075_BR
+DRAW|Island|lc_070_UG
+DRAW|Mountain|lc_075_BR
+DRAW|Doc Samson, Super Psychiatrist|lc_070_UG
+Doc Samson, Super Psychiatrist|PermanentCreature|MAIN2|22|true|false|0|5|9|true|false|false|lc_070_UG
+DRAW|Iron Man Armor|lc_075_BR
+Iron Man Armor|PermanentNoncreature|MAIN1|23|true|false|0|9|6|true|false|false|lc_075_BR
+Machinesmith Automaton|PermanentCreature|MAIN2|23|true|false|0|9|6|true|false|false|lc_075_BR
+HYDRA Troopers|PermanentCreature|MAIN2|23|true|false|0|10|6|true|false|false|lc_075_BR
+DRAW|Island|lc_070_UG
+DRAW|Swamp|lc_075_BR
+DRAW|Forest|lc_070_UG
+DRAW|S.H.I.E.L.D. Deployment Drone|lc_070_UG
+DRAW|Vibranium Energy Daggers|lc_070_UG
+DRAW|White Tiger, Ava Ayala|lc_070_UG
+Vibranium Energy Daggers|PermanentNoncreature|MAIN1|26|true|false|0|6|11|true|false|false|lc_070_UG
+S.H.I.E.L.D. Deployment Drone|PermanentCreature|MAIN2|26|true|false|0|6|11|true|false|false|lc_070_UG
+White Tiger, Ava Ayala|PermanentCreature|MAIN2|26|true|false|0|8|11|true|false|false|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Baron Helmut Zemo|lc_075_BR
+DRAW|Atlantis Attacks|lc_070_UG
+DRAW|The Vision|lc_075_BR
+The Vision|PermanentCreature|MAIN1|29|true|false|0|10|9|true|false|false|lc_075_BR
+DRAW|Claim the Kingdom|lc_070_UG
+Atlantis Attacks|Charm>Token>ChangeZone|MAIN2|30|true|false|0|9|10|true|false|false|lc_070_UG
+Claim the Kingdom|PermanentNoncreature|MAIN2|30|true|false|0|10|8|true|false|false|lc_070_UG
+DRAW|Swamp|lc_075_BR
+The Vision|PermanentCreature|MAIN1|31|true|false|0|8|10|true|false|false|lc_075_BR
+Unliving Legionnaire|PermanentCreature|MAIN2|31|true|false|0|9|10|true|false|false|lc_075_BR
+DRAW|Island|lc_070_UG
+END|lc_070_UG
+START
+DRAW|Speed, Young Avenger|lc_074_BR
+DRAW|Super Speed|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Volcanic Villain|lc_074_BR
+DRAW|Evil's Thrall|lc_074_BR
+DRAW|K'un-Lun Warrior|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Swamp|lc_071_UB
+DRAW|S.H.I.E.L.D. Flying Car|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Dependable Quinjet|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Cruel Alliance|lc_071_UB
+DRAW|Arnim Zola, Bio-Fanatic|lc_074_BR
+DRAW|Viv Vision, Teen Synthezoid|lc_071_UB
+DRAW|Jessica Jones, Private Eye|lc_074_BR
+Speed, Young Avenger|PermanentCreature|MAIN1|4|true|false|0|0|0|true|false|false|lc_074_BR
+DRAW|Island|lc_071_UB
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|5|true|false|0|0|1|true|false|false|lc_071_UB
+DRAW|Yellowjacket, Heartless Marauder|lc_074_BR
+Yellowjacket, Heartless Marauder|PermanentCreature|MAIN2|6|true|false|0|1|1|true|false|false|lc_074_BR
+DRAW|Swamp|lc_071_UB
+Cruel Alliance|ChangeZone>ChangeZone>GainLife|MAIN1|7|true|false|0|1|2|true|false|false|lc_071_UB
+DRAW|Swamp|lc_074_BR
+Volcanic Villain|PermanentCreature|MAIN1|8|true|false|0|1|1|true|false|false|lc_074_BR
+DRAW|Island|lc_071_UB
+Dependable Quinjet|PermanentNoncreature|MAIN2|9|true|false|0|1|2|true|false|false|lc_071_UB
+DRAW|Human Torch, Johnny Storm|lc_074_BR
+Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN1|10|true|false|0|2|1|true|false|false|lc_074_BR
+DRAW|HYDRA Infiltration|lc_071_UB
+HYDRA Infiltration|PermanentNoncreature|MAIN1|11|true|false|0|1|3|true|false|false|lc_071_UB
+DRAW|Swamp|lc_074_BR
+Evil's Thrall|GainControl>GainControl|MAIN1|12|true|false|0|3|1|true|false|false|lc_074_BR
+S.H.I.E.L.D. Flying Car|PermanentNoncreature|MAIN1|12|false|false|1|1|3|true|false|true|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Mountain|lc_074_BR
+END|lc_074_BR
+START
+DRAW|Echo, Perceptive Prodigy|lc_072_UG
+DRAW|Falcon's Wing Harness|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Rewrite History|lc_072_UG
+DRAW|The Astonishing Ant-Man|lc_072_UG
+DRAW|Loki, God of Mischief|lc_072_UG
+DRAW|Heroic Feast|lc_072_UG
+DRAW|Swamp|lc_073_WB
+DRAW|Agent Maria Hill|lc_073_WB
+DRAW|Decoy Ploy|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Robot Domination|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|Colleen Wing, Street Samurai|lc_073_WB
+DRAW|Heroic Feast|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Hellcat, Undying Vigilante|lc_072_UG
+DRAW|Restorative Technique|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|The Astonishing Ant-Man|lc_072_UG
+Agent Maria Hill|PermanentCreature|MAIN2|1|true|false|0|0|0|true|false|false|lc_073_WB
+DRAW|Island|lc_072_UG
+DRAW|Wakandan Drone Flock|lc_073_WB
+Colleen Wing, Street Samurai|PermanentCreature|MAIN2|3|true|false|0|1|0|true|false|false|lc_073_WB
+DRAW|Island|lc_072_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN2|4|true|false|0|0|2|true|false|false|lc_072_UG
+DRAW|Swamp|lc_073_WB
+Decoy Ploy|Charm>ChangeZone|MAIN2|5|true|false|0|1|0|true|true|false|lc_073_WB
+Agent Maria Hill|PermanentCreature|MAIN2|5|true|false|0|1|0|true|false|false|lc_073_WB
+DRAW|S.H.I.E.L.D. Flying Car|lc_072_UG
+Hellcat, Undying Vigilante|PermanentCreature|MAIN1|6|true|false|0|0|2|true|false|false|lc_072_UG
+DRAW|Dark Deed|lc_073_WB
+Wakandan Drone Flock|PermanentCreature|MAIN2|7|true|false|0|2|1|true|false|false|lc_073_WB
+DRAW|Island|lc_072_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|8|true|false|0|1|3|true|false|false|lc_072_UG
+DRAW|Plains|lc_073_WB
+Robot Domination|PermanentNoncreature|MAIN2|9|true|false|0|3|1|true|false|false|lc_073_WB
+DRAW|Wiccan, Rising Magician|lc_072_UG
+Wiccan, Rising Magician|PermanentCreature|MAIN2|10|true|false|0|1|3|true|false|false|lc_072_UG
+DRAW|Plains|lc_073_WB
+DRAW|Hydraulic Helper|lc_072_UG
+Hydraulic Helper|PermanentCreature|MAIN2|12|true|false|0|2|3|true|false|false|lc_072_UG
+DRAW|Plains|lc_073_WB
+DRAW|Loki, God of Mischief|lc_072_UG
+Loki, God of Mischief|PermanentCreature|MAIN2|14|true|false|0|3|3|true|false|false|lc_072_UG
+DRAW|Raft Security Officer|lc_073_WB
+Raft Security Officer|PermanentCreature|MAIN2|15|true|false|0|3|4|true|false|false|lc_073_WB
+DRAW|Forest|lc_072_UG
+DRAW|Okoye, Dora Milaje Leader|lc_073_WB
+Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|17|true|false|0|4|4|true|false|false|lc_073_WB
+DRAW|Futurist Forge|lc_072_UG
+Futurist Forge|PermanentNoncreature|MAIN1|18|true|false|0|4|7|true|false|false|lc_072_UG
+DRAW|Shuri, Wakandan Inventor|lc_072_UG
+DRAW|White Tiger, Ava Ayala|lc_072_UG
+White Tiger, Ava Ayala|PermanentCreature|MAIN2|18|true|false|0|4|6|true|false|false|lc_072_UG
+Shuri, Wakandan Inventor|PermanentCreature|MAIN2|18|true|false|0|5|6|true|false|false|lc_072_UG
+DRAW|Super-Adaptoid|lc_073_WB
+DRAW|Island|lc_072_UG
+DRAW|Luke Cage, Power Man|lc_073_WB
+Luke Cage, Power Man|PermanentCreature|MAIN2|21|true|false|0|7|6|true|false|false|lc_073_WB
+DRAW|Island|lc_072_UG
+DRAW|Frozen in Ice|lc_072_UG
+DRAW|Rewrite History|lc_072_UG
+Frozen in Ice|Attach|MAIN1|22|true|false|0|7|8|true|false|false|lc_072_UG
+DRAW|Dependable Quinjet|lc_072_UG
+Rewrite History|PermanentNoncreature|MAIN1|22|true|false|0|7|7|true|false|false|lc_072_UG
+Dependable Quinjet|PermanentNoncreature|MAIN1|22|true|false|0|7|6|true|false|false|lc_072_UG
+DRAW|Island|lc_072_UG
+S.H.I.E.L.D. Flying Car|PermanentNoncreature|COMBAT_DECLARE_BLOCKERS|22|true|true|0|7|5|true|false|true|lc_072_UG
+END|lc_072_UG
+START
+DRAW|Mountain|lc_079_RG
+DRAW|Knight of Wundagore|lc_079_RG
+DRAW|Super Speed|lc_079_RG
+DRAW|Abomination, Terrifying Titan|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Restorative Technique|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Wakandan Royal Guard|lc_076_WG
+DRAW|Helicarrier Strike|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Giant Growth|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Mountain|lc_079_RG
+DRAW|Mister Hyde, Monster Within|lc_076_WG
+DRAW|Hawkeye, Young Avenger|lc_079_RG
+Knight of Wundagore|PermanentCreature|MAIN2|4|true|false|0|0|0|true|false|false|lc_079_RG
+DRAW|Raft Security Officer|lc_076_WG
+Raft Security Officer|PermanentCreature|MAIN2|5|true|false|0|0|1|true|false|false|lc_076_WG
+DRAW|Mountain|lc_079_RG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|6|true|false|0|1|1|true|false|false|lc_079_RG
+DRAW|Take Up the Shield|lc_076_WG
+Take Up the Shield|PutCounter>Pump|COMBAT_BEGIN|7|true|true|0|1|1|true|true|false|lc_076_WG
+DRAW|Forest|lc_079_RG
+Abomination, Terrifying Titan|PermanentCreature|MAIN2|8|true|false|0|1|1|true|false|false|lc_079_RG
+DRAW|Viv Vision, Teen Synthezoid|lc_076_WG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|9|true|true|0|1|2|true|true|false|lc_076_WG
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|9|true|false|0|1|1|true|false|false|lc_076_WG
+DRAW|Viv Vision, Teen Synthezoid|lc_079_RG
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|10|true|false|0|1|2|true|false|false|lc_079_RG
+DRAW|Savage Land Dinosaur|lc_076_WG
+Mister Hyde, Monster Within|PermanentCreature|MAIN2|11|true|false|0|2|2|true|false|false|lc_076_WG
+DRAW|Giant Growth|lc_079_RG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|12|true|true|0|2|3|true|true|false|lc_079_RG
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|12|true|false|0|2|2|true|false|false|lc_079_RG
+DRAW|Agent 13, Sharon Carter|lc_076_WG
+Agent 13, Sharon Carter|PermanentCreature|MAIN2|13|true|false|0|2|3|true|false|false|lc_076_WG
+DRAW|Mountain|lc_079_RG
+DRAW|Ultron Drone|lc_076_WG
+Ultron Drone|PermanentCreature|MAIN2|15|true|false|0|2|2|true|false|false|lc_076_WG
+DRAW|Mountain|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Plains|lc_076_WG
+Wakandan Royal Guard|PermanentCreature|MAIN2|17|true|false|0|3|2|true|false|false|lc_076_WG
+DRAW|Serpent Specialist|lc_079_RG
+DRAW|Blazing Crescendo|lc_079_RG
+Serpent Specialist|PermanentCreature|MAIN2|18|true|false|0|2|3|true|false|false|lc_079_RG
+DRAW|Forest|lc_076_WG
+Savage Land Dinosaur|PermanentCreature|MAIN2|19|true|false|0|3|3|true|false|false|lc_076_WG
+DRAW|Lightning Strike|lc_079_RG
+Lightning Strike|DealDamage|DRAW|20|true|false|0|3|4|true|true|false|lc_079_RG
+END|lc_079_RG
+START
+DRAW|Mountain|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Evil's Thrall|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Dependable Quinjet|lc_078_UR
+DRAW|Bold Biochemist|lc_078_UR
+DRAW|K'un-Lun Warrior|lc_078_UR
+DRAW|Dependable Quinjet|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Hydraulic Helper|lc_077_UG
+DRAW|Training Regimen|lc_077_UG
+DRAW|Restorative Technique|lc_077_UG
+DRAW|Bold Biochemist|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Blazing Crescendo|lc_078_UR
+DRAW|Savage Land Dinosaur|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Photon Blast Barrage|lc_078_UR
+DRAW|S.H.I.E.L.D. Helicarrier|lc_077_UG
+Dependable Quinjet|PermanentNoncreature|MAIN2|5|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Pym Particles|lc_078_UR
+Dependable Quinjet|PermanentNoncreature|MAIN2|6|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|Island|lc_077_UG
+Training Regimen|PermanentNoncreature|MAIN2|7|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Crimson Operative|lc_078_UR
+Crimson Operative|PermanentCreature|MAIN2|8|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|Echo, Perceptive Prodigy|lc_077_UG
+S.H.I.E.L.D. Helicarrier|PermanentNoncreature|MAIN2|9|true|false|0|0|1|true|false|false|lc_077_UG
+DRAW|Speed, Young Avenger|lc_078_UR
+Evil's Thrall|GainControl>GainControl|MAIN1|10|true|false|0|1|2|true|false|false|lc_078_UR
+Speed, Young Avenger|PermanentCreature|MAIN1|10|true|false|0|2|1|true|false|false|lc_078_UR
+DRAW|Falcon's Wing Harness|lc_077_UG
+Falcon's Wing Harness|PermanentNoncreature|MAIN1|11|true|false|0|1|3|true|false|false|lc_077_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|11|true|false|0|1|3|true|false|false|lc_077_UG
+DRAW|Volcanic Villain|lc_078_UR
+Volcanic Villain|PermanentCreature|MAIN1|12|true|false|0|3|2|true|false|false|lc_078_UR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|12|true|true|0|5|2|true|true|false|lc_078_UR
+DRAW|Island|lc_077_UG
+Bold Biochemist|PermanentCreature|MAIN2|13|true|false|0|4|3|true|false|false|lc_077_UG
+Hydraulic Helper|PermanentCreature|MAIN2|13|true|false|0|5|3|true|false|false|lc_077_UG
+DRAW|Island|lc_078_UR
+Photon Blast Barrage|DealDamage|MAIN1|14|true|false|0|3|5|true|false|false|lc_078_UR
+Bold Biochemist|PermanentCreature|MAIN2|14|true|false|0|3|3|true|false|false|lc_078_UR
+DRAW|Pet Avengers|lc_077_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN1|15|true|false|0|3|3|true|false|false|lc_077_UG
+DRAW|Mountain|lc_078_UR
+DRAW|Forest|lc_077_UG
+DRAW|The Astonishing Ant-Man|lc_077_UG
+DRAW|Vibranium Energy Daggers|lc_077_UG
+Vibranium Energy Daggers|PermanentNoncreature|MAIN1|17|true|false|0|3|3|true|false|false|lc_077_UG
+END|lc_077_UG
+START
+DRAW|Forest|lc_070_UG
+DRAW|S.H.I.E.L.D. Deployment Drone|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Island|lc_070_UG
+DRAW|A.I.M. Synthoids|lc_070_UG
+DRAW|Giant-Sized Flying Ant|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Mountain|lc_074_BR
+DRAW|Jessica Jones, Private Eye|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Speed, Young Avenger|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Attuma, Atlantean Warlord|lc_070_UG
+A.I.M. Synthoids|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_070_UG
+DRAW|Mountain|lc_074_BR
+Speed, Young Avenger|PermanentCreature|MAIN1|4|true|false|0|0|1|true|false|false|lc_074_BR
+DRAW|Super Suit|lc_070_UG
+Super Suit|PermanentNoncreature|DRAW|5|true|false|0|1|1|true|false|true|lc_070_UG
+DRAW|Dark Deed|lc_074_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|6|true|false|0|1|1|true|false|false|lc_074_BR
+DRAW|Doc Samson, Super Psychiatrist|lc_070_UG
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|7|true|false|0|1|2|true|false|true|lc_070_UG
+DRAW|Decoy Ploy|lc_074_BR
+DRAW|Forest|lc_070_UG
+Doc Samson, Super Psychiatrist|PermanentCreature|MAIN2|9|true|false|0|2|2|true|false|false|lc_070_UG
+Lightning Strike|DealDamage|END_OF_TURN|9|false|false|0|2|3|true|true|false|lc_074_BR
+DRAW|Stark Industries Executive|lc_074_BR
+Stark Industries Executive|PermanentCreature|MAIN2|10|true|false|0|2|3|true|false|false|lc_074_BR
+DRAW|Forest|lc_070_UG
+Attuma, Atlantean Warlord|PermanentCreature|MAIN1|11|true|false|0|3|3|true|false|false|lc_070_UG
+DRAW|Yellowjacket, Heartless Marauder|lc_074_BR
+Yellowjacket, Heartless Marauder|PermanentCreature|MAIN2|12|true|false|0|3|4|true|false|false|lc_074_BR
+DRAW|Island|lc_070_UG
+DRAW|Forest|lc_070_UG
+S.H.I.E.L.D. Deployment Drone|PermanentCreature|MAIN2|13|true|false|0|3|2|true|false|false|lc_070_UG
+Decoy Ploy|Charm>ChangeZone>ChangeZone|MAIN2|13|false|false|1|2|3|true|true|false|lc_074_BR
+DRAW|Mountain|lc_074_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|14|true|false|0|2|5|true|false|false|lc_074_BR
+Yellowjacket, Heartless Marauder|PermanentCreature|MAIN2|14|true|false|0|3|5|true|false|false|lc_074_BR
+DRAW|Island|lc_070_UG
+DRAW|Human Torch, Johnny Storm|lc_074_BR
+Human Torch, Johnny Storm|PermanentCreature|MAIN2|16|true|false|0|2|5|true|false|false|lc_074_BR
+DRAW|Claim the Kingdom|lc_070_UG
+END|lc_070_UG
+START
+DRAW|Forest|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Knight of Wundagore|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Hydraulic Helper|lc_072_UG
+DRAW|Cosmic Cube|lc_072_UG
+DRAW|Hellcat, Undying Vigilante|lc_072_UG
+DRAW|Volcanic Villain|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Moonstone, Harsh Mistress|lc_075_BR
+DRAW|Roxxon Brutes|lc_075_BR
+DRAW|Red Room Recruit|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|The Astonishing Ant-Man|lc_072_UG
+DRAW|Baron Helmut Zemo|lc_075_BR
+Red Room Recruit|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_075_BR
+DRAW|Iron Man Armor|lc_075_BR
+DRAW|Island|lc_072_UG
+Knight of Wundagore|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_072_UG
+DRAW|Hex Magic|lc_075_BR
+Volcanic Villain|PermanentCreature|MAIN1|5|true|false|0|1|1|true|false|false|lc_075_BR
+DRAW|S.H.I.E.L.D. Deployment Drone|lc_072_UG
+Hellcat, Undying Vigilante|PermanentCreature|MAIN1|6|true|false|0|0|1|true|false|false|lc_072_UG
+DRAW|Mountain|lc_075_BR
+Iron Man Armor|PermanentNoncreature|MAIN1|7|true|false|0|1|1|true|false|false|lc_075_BR
+DRAW|Island|lc_072_UG
+S.H.I.E.L.D. Deployment Drone|PermanentCreature|MAIN2|8|true|false|0|1|1|true|false|false|lc_072_UG
+DRAW|Mountain|lc_075_BR
+Hex Magic|ChangeZoneAll>Draw>Effect>Cleanup|MAIN1|9|true|false|0|1|3|true|false|false|lc_075_BR
+DRAW|Hire a Crew|lc_075_BR
+DRAW|Project Deathlok Soldier|lc_075_BR
+Project Deathlok Soldier|PermanentCreature|MAIN2|9|true|false|0|1|3|true|false|false|lc_075_BR
+DRAW|Island|lc_072_UG
+Cosmic Cube|PermanentNoncreature|MAIN1|10|true|false|0|3|2|true|false|false|lc_072_UG
+DRAW|Mountain|lc_075_BR
+Moonstone, Harsh Mistress|PermanentCreature|MAIN2|11|true|false|0|2|3|true|false|false|lc_075_BR
+DRAW|Island|lc_072_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN2|12|true|false|0|3|3|true|false|false|lc_072_UG
+Hydraulic Helper|PermanentCreature|MAIN2|12|true|false|0|4|3|true|false|false|lc_072_UG
+DRAW|Swamp|lc_075_BR
+DRAW|Forest|lc_072_UG
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|14|false|true|0|3|4|true|true|false|lc_075_BR
+DRAW|Swamp|lc_075_BR
+END|lc_075_BR
+START
+DRAW|Forest|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Knight of Wundagore|lc_079_RG
+DRAW|Wakandan Royal Guard|lc_079_RG
+DRAW|Dependable Quinjet|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Hawkeye, Young Avenger|lc_079_RG
+DRAW|Stolen Stark Tech|lc_071_UB
+DRAW|Baron Strucker, HYDRA Overlord|lc_071_UB
+DRAW|Viv Vision, Teen Synthezoid|lc_071_UB
+DRAW|Arnim Zola, Bio-Fanatic|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|H.E.R.B.I.E. Scout Unit|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Mountain|lc_079_RG
+DRAW|HYDRA Troopers|lc_071_UB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|0|0|true|false|true|lc_071_UB
+DRAW|Forest|lc_079_RG
+Knight of Wundagore|PermanentCreature|MAIN2|4|true|false|0|0|0|true|false|false|lc_079_RG
+DRAW|Aerial Doombot|lc_071_UB
+Aerial Doombot|PermanentCreature|MAIN2|5|true|false|0|0|1|true|false|false|lc_071_UB
+DRAW|Mountain|lc_079_RG
+Dependable Quinjet|PermanentNoncreature|MAIN2|6|true|false|0|1|1|true|false|false|lc_079_RG
+DRAW|Ghost, Spectral Saboteur|lc_071_UB
+DRAW|Forest|lc_079_RG
+Wakandan Royal Guard|PermanentCreature|MAIN2|8|true|false|0|1|1|true|false|false|lc_079_RG
+DRAW|Kang, Temporal Tyrant|lc_071_UB
+DRAW|Mountain|lc_079_RG
+Hawkeye, Young Avenger|PermanentCreature|MAIN2|10|true|false|0|2|1|true|false|false|lc_079_RG
+DRAW|Project Deathlok Soldier|lc_071_UB
+Project Deathlok Soldier|PermanentCreature|MAIN2|11|true|false|0|1|3|true|false|false|lc_071_UB
+DRAW|Lightning Strike|lc_079_RG
+Lightning Strike|DealDamage|COMBAT_DAMAGE|12|true|true|0|4|1|true|true|false|lc_079_RG
+END|lc_079_RG
+START
+DRAW|Mountain|lc_078_UR
+DRAW|Trickster's Stratagem|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Blazing Crescendo|lc_078_UR
+DRAW|Mister Fantastic, Reed Richards|lc_078_UR
+DRAW|Echo, Perceptive Prodigy|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Stolen Stark Tech|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Roxxon Brutes|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|White Widow, Free Agent|lc_073_WB
+DRAW|Okoye, Dora Milaje Leader|lc_073_WB
+DRAW|Red Guardian, Super-Soldier|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Bold Biochemist|lc_078_UR
+Bold Biochemist|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|Super-Adaptoid|lc_073_WB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|1|true|false|true|lc_073_WB
+DRAW|Mountain|lc_078_UR
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|5|true|false|0|1|0|true|false|false|lc_078_UR
+DRAW|Plains|lc_073_WB
+DRAW|Justice, Vance Astrovik|lc_078_UR
+Mister Fantastic, Reed Richards|PermanentCreature|MAIN1|7|true|false|0|2|0|true|false|false|lc_078_UR
+Red Guardian, Super-Soldier|PermanentCreature|COMBAT_DAMAGE|7|false|true|0|0|3|true|false|true|lc_073_WB
+DRAW|Plains|lc_073_WB
+Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|8|true|false|0|1|2|true|false|false|lc_073_WB
+DRAW|Island|lc_078_UR
+Justice, Vance Astrovik|PermanentCreature|MAIN1|9|true|false|0|2|4|true|false|false|lc_078_UR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|9|true|true|0|3|3|true|true|false|lc_078_UR
+DRAW|Plains|lc_073_WB
+Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|10|true|false|0|1|3|true|false|false|lc_073_WB
+DRAW|Mountain|lc_078_UR
+Photon Blast Barrage|DealDamage|MAIN1|11|true|false|0|3|4|true|false|false|lc_078_UR
+DRAW|Swamp|lc_073_WB
+Roxxon Brutes|PermanentCreature|MAIN2|12|true|false|0|3|3|true|false|false|lc_073_WB
+DRAW|Depower|lc_078_UR
+DRAW|Swamp|lc_073_WB
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|14|false|true|0|3|4|true|true|false|lc_078_UR
+DRAW|Crimson Operative|lc_078_UR
+White Widow, Free Agent|PermanentCreature|MAIN2|14|true|false|0|4|3|true|false|false|lc_073_WB
+DRAW|A.I.M. Scientists|lc_078_UR
+A.I.M. Scientists|PermanentCreature|MAIN2|15|true|false|0|3|5|true|false|false|lc_078_UR
+DRAW|Dependable Quinjet|lc_078_UR
+DRAW|Widow's Bite|lc_073_WB
+DRAW|Pym Particles|lc_078_UR
+Crimson Operative|PermanentCreature|MAIN2|17|true|false|0|4|5|true|false|false|lc_078_UR
+DRAW|Swamp|lc_073_WB
+DRAW|Volcanic Villain|lc_078_UR
+Volcanic Villain|PermanentCreature|MAIN1|19|true|false|0|5|5|true|false|false|lc_078_UR
+Death to Our Enemies|PermanentNoncreature|MAIN1|19|true|false|0|6|5|true|false|false|lc_078_UR
+DRAW|Colleen Wing, Street Samurai|lc_073_WB
+Colleen Wing, Street Samurai|PermanentCreature|MAIN2|20|true|false|0|5|6|true|false|false|lc_073_WB
+DRAW|K'un-Lun Warrior|lc_078_UR
+DRAW|Agent Maria Hill|lc_073_WB
+Agent Maria Hill|PermanentCreature|MAIN2|22|true|false|0|5|5|true|false|false|lc_073_WB
+DRAW|Evil's Thrall|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Island|lc_078_UR
+Evil's Thrall|GainControl>GainControl|MAIN1|23|true|false|0|5|6|true|false|false|lc_078_UR
+DRAW|Wonder Man, Hollywood Hero|lc_078_UR
+Widow's Bite|Charm>Pump>Pump|COMBAT_DECLARE_BLOCKERS|23|false|true|0|5|6|true|true|false|lc_073_WB
+DRAW|Ultron Drone|lc_073_WB
+END|lc_078_UR
+START
+DRAW|Hulkling, Burgeoning Bruiser|lc_077_UG
+DRAW|Vibranium Energy Daggers|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Rapid Rescue|lc_077_UG
+DRAW|Falcon's Wing Harness|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Forest|lc_077_UG
+DRAW|Forest|lc_076_WG
+DRAW|Knight of Wundagore|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Raft Security Officer|lc_076_WG
+DRAW|Plains|lc_076_WG
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|1|true|false|0|0|0|true|true|false|lc_077_UG
+DRAW|Forest|lc_076_WG
+DRAW|Rick Jones, Destined Sidekick|lc_077_UG
+A.I.M. Synthoids|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Super Villain Lockup|lc_076_WG
+Raft Security Officer|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_076_WG
+DRAW|Forest|lc_077_UG
+Falcon's Wing Harness|PermanentNoncreature|MAIN1|5|true|false|0|1|1|true|false|false|lc_077_UG
+Vibranium Energy Daggers|PermanentNoncreature|MAIN1|5|true|false|0|1|1|true|false|false|lc_077_UG
+Super Villain Lockup|PermanentNoncreature|UPKEEP|6|true|false|0|1|1|true|false|true|lc_076_WG
+DRAW|Viv Vision, Teen Synthezoid|lc_076_WG
+DRAW|Island|lc_077_UG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|7|true|false|0|1|1|true|false|false|lc_077_UG
+DRAW|Forest|lc_076_WG
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|8|true|false|0|1|2|true|false|false|lc_076_WG
+DRAW|Stature, Size Shifter|lc_077_UG
+Hulkling, Burgeoning Bruiser|PermanentCreature|MAIN2|9|true|false|0|2|2|true|false|false|lc_077_UG
+Stature, Size Shifter|PermanentCreature|MAIN2|9|true|false|0|3|2|true|false|false|lc_077_UG
+DRAW|Web Up|lc_076_WG
+Web Up|PermanentNoncreature|MAIN1|10|true|false|0|2|4|true|false|false|lc_076_WG
+DRAW|Dependable Quinjet|lc_077_UG
+DRAW|Heroic Feast|lc_076_WG
+Knight of Wundagore|PermanentCreature|MAIN2|12|true|false|0|2|3|true|false|false|lc_076_WG
+Heroic Feast|PermanentNoncreature|MAIN2|12|true|false|0|3|3|true|false|false|lc_076_WG
+DRAW|Forest|lc_077_UG
+Dependable Quinjet|PermanentNoncreature|MAIN2|13|true|false|0|3|3|true|false|false|lc_077_UG
+DRAW|Agent 13, Sharon Carter|lc_076_WG
+Agent 13, Sharon Carter|PermanentCreature|MAIN2|14|true|false|0|3|3|true|false|false|lc_076_WG
+DRAW|Forest|lc_077_UG
+END|lc_077_UG
+START
+DRAW|A.I.M. Synthoids|lc_070_UG
+DRAW|Beast, Erudite Aerialist|lc_070_UG
+DRAW|Doc Samson, Super Psychiatrist|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|White Tiger, Ava Ayala|lc_070_UG
+DRAW|Forest|lc_070_UG
+DRAW|Echo, Perceptive Prodigy|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|S.H.I.E.L.D. Deployment Drone|lc_072_UG
+DRAW|Forest|lc_072_UG
+DRAW|Wiccan, Rising Magician|lc_072_UG
+DRAW|Rewrite History|lc_072_UG
+DRAW|Hydraulic Helper|lc_072_UG
+DRAW|Rapid Rescue|lc_070_UG
+Rapid Rescue|Mill>ChangeZone>GainLife>Cleanup|MAIN2|2|true|false|0|0|0|true|true|false|lc_070_UG
+DRAW|Island|lc_072_UG
+Hydraulic Helper|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_072_UG
+DRAW|Forest|lc_070_UG
+White Tiger, Ava Ayala|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_070_UG
+DRAW|Island|lc_072_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|5|true|false|0|1|1|true|false|false|lc_072_UG
+DRAW|Forest|lc_070_UG
+A.I.M. Synthoids|PermanentCreature|MAIN2|6|true|false|0|1|2|true|false|false|lc_070_UG
+DRAW|Secret Invasion|lc_072_UG
+S.H.I.E.L.D. Deployment Drone|PermanentCreature|MAIN2|7|true|false|0|2|2|true|false|false|lc_072_UG
+DRAW|Bold Biochemist|lc_070_UG
+Beast, Erudite Aerialist|PermanentCreature|MAIN2|8|true|false|0|2|4|true|false|false|lc_070_UG
+DRAW|Restorative Technique|lc_072_UG
+Rewrite History|PermanentNoncreature|MAIN2|9|true|false|0|4|3|true|false|false|lc_072_UG
+DRAW|Pym Particles|lc_070_UG
+Doc Samson, Super Psychiatrist|PermanentCreature|MAIN2|10|true|false|0|3|4|true|false|false|lc_070_UG
+DRAW|Heroic Feast|lc_072_UG
+DRAW|Falcon's Wing Harness|lc_072_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|11|true|false|0|4|4|true|false|false|lc_072_UG
+Falcon's Wing Harness|PermanentNoncreature|MAIN2|11|true|false|0|4|4|true|false|false|lc_072_UG
+DRAW|The Astonishing Ant-Man|lc_072_UG
+DRAW|Island|lc_070_UG
+Bold Biochemist|PermanentCreature|MAIN2|12|true|false|0|4|4|true|false|false|lc_070_UG
+Claim the Kingdom|PermanentNoncreature|MAIN2|12|true|false|0|5|4|true|false|false|lc_070_UG
+DRAW|Forest|lc_072_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN1|13|true|false|0|4|5|true|false|false|lc_072_UG
+DRAW|Island|lc_072_UG
+DRAW|Super Suit|lc_070_UG
+Super Suit|PermanentNoncreature|DRAW|14|true|false|0|5|5|true|false|true|lc_070_UG
+DRAW|Forest|lc_072_UG
+DRAW|White Tiger, Ava Ayala|lc_072_UG
+White Tiger, Ava Ayala|PermanentCreature|MAIN2|15|true|false|0|5|5|true|false|false|lc_072_UG
+Restorative Technique|GainLife>ChangeZone>PutCounter|MAIN2|15|true|false|0|6|5|true|false|false|lc_072_UG
+DRAW|Atlantis Attacks|lc_070_UG
+DRAW|Knight of Wundagore|lc_072_UG
+Knight of Wundagore|PermanentCreature|MAIN2|17|true|false|0|6|6|true|false|false|lc_072_UG
+DRAW|Vibranium Energy Daggers|lc_070_UG
+DRAW|She-Hulk, Jade Defender|lc_070_UG
+DRAW|Island|lc_070_UG
+Vibranium Energy Daggers|PermanentNoncreature|MAIN1|18|true|false|0|6|7|true|false|false|lc_070_UG
+She-Hulk, Jade Defender|PermanentCreature|MAIN2|18|true|false|0|6|11|true|false|false|lc_070_UG
+DRAW|Forest|lc_072_UG
+DRAW|Ultron Drone|lc_070_UG
+Ultron Drone|PermanentCreature|MAIN2|20|true|false|0|7|11|true|false|false|lc_070_UG
+DRAW|Island|lc_072_UG
+DRAW|Attuma, Atlantean Warlord|lc_070_UG
+Attuma, Atlantean Warlord|PermanentCreature|MAIN1|22|true|false|0|8|12|true|false|false|lc_070_UG
+Atlantis Attacks|Charm>Token>ChangeZone|MAIN2|22|true|false|0|9|13|true|false|false|lc_070_UG
+DRAW|Forest|lc_072_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|23|true|false|0|11|10|true|false|false|lc_072_UG
+Knight of Wundagore|PermanentCreature|MAIN2|23|true|false|0|12|10|true|false|false|lc_072_UG
+DRAW|Giant-Sized Flying Ant|lc_070_UG
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|24|true|false|0|10|13|true|false|true|lc_070_UG
+DRAW|Frozen in Ice|lc_072_UG
+Frozen in Ice|Attach|MAIN1|25|true|false|0|12|10|true|false|false|lc_072_UG
+DRAW|Forest|lc_070_UG
+DRAW|Dependable Quinjet|lc_072_UG
+Dependable Quinjet|PermanentNoncreature|MAIN2|27|true|false|0|6|7|true|false|false|lc_072_UG
+DRAW|Island|lc_070_UG
+DRAW|Island|lc_070_UG
+END|lc_070_UG
+START
+DRAW|Viv Vision, Teen Synthezoid|lc_079_RG
+DRAW|Giant Growth|lc_079_RG
+DRAW|Forest|lc_079_RG
+DRAW|Wakandan Royal Guard|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Mountain|lc_079_RG
+DRAW|Savage Land Dinosaur|lc_079_RG
+DRAW|K'un-Lun Warrior|lc_074_BR
+DRAW|Kingpin's Enforcers|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Volcanic Villain|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Swamp|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Serpent Specialist|lc_079_RG
+Serpent Specialist|PermanentCreature|MAIN2|2|true|false|0|0|0|true|false|false|lc_079_RG
+DRAW|Dark Deed|lc_074_BR
+DRAW|Mountain|lc_079_RG
+DRAW|Lightning Strike|lc_074_BR
+Volcanic Villain|PermanentCreature|MAIN1|5|true|false|0|0|1|true|false|false|lc_074_BR
+DRAW|Forest|lc_079_RG
+DRAW|Lightning Strike|lc_079_RG
+Lightning Strike|DealDamage|DRAW|6|true|false|0|1|1|true|true|false|lc_079_RG
+Lightning Strike|DealDamage|UPKEEP|7|true|false|0|0|1|true|true|false|lc_074_BR
+DRAW|Mountain|lc_074_BR
+DRAW|Forest|lc_079_RG
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|8|true|false|0|0|0|true|false|false|lc_079_RG
+DRAW|Mountain|lc_074_BR
+Kingpin's Enforcers|PermanentCreature|MAIN2|9|true|false|0|0|1|true|false|false|lc_074_BR
+DRAW|Training Regimen|lc_079_RG
+Training Regimen|PermanentNoncreature|MAIN1|10|true|false|0|1|1|true|false|false|lc_079_RG
+DRAW|Agents of HYDRA|lc_074_BR
+Agents of HYDRA|PermanentCreature|MAIN2|11|true|false|0|1|1|true|false|false|lc_074_BR
+DRAW|Stark Industries Executive|lc_074_BR
+Stark Industries Executive|PermanentCreature|MAIN2|11|true|false|0|2|1|true|false|false|lc_074_BR
+DRAW|Mountain|lc_079_RG
+DRAW|Alien Invasion|lc_079_RG
+Wakandan Royal Guard|PermanentCreature|MAIN2|12|true|false|0|1|3|true|false|false|lc_079_RG
+DRAW|Misty Knight, Hero for Hire|lc_074_BR
+Misty Knight, Hero for Hire|PermanentCreature|MAIN2|13|true|false|0|3|2|true|false|false|lc_074_BR
+DRAW|Mountain|lc_079_RG
+Alien Invasion|PermanentNoncreature|MAIN1|14|true|false|0|2|4|true|false|false|lc_079_RG
+DRAW|Iron Man Armor|lc_079_RG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|14|true|true|0|3|4|true|true|false|lc_079_RG
+DRAW|Arnim Zola, Bio-Fanatic|lc_074_BR
+DRAW|Iron Fist, Living Weapon|lc_074_BR
+Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|15|true|false|0|2|3|true|false|false|lc_074_BR
+Iron Fist, Living Weapon|PermanentCreature|MAIN2|15|true|false|0|3|3|true|false|false|lc_074_BR
+DRAW|Forest|lc_079_RG
+Iron Man Armor|PermanentNoncreature|MAIN1|16|true|false|0|3|4|true|false|false|lc_079_RG
+DRAW|Blazing Crescendo|lc_079_RG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|16|true|true|0|4|4|true|true|false|lc_079_RG
+END|lc_079_RG
+START
+DRAW|Bold Biochemist|lc_078_UR
+DRAW|Trickster's Stratagem|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Island|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Justice, Vance Astrovik|lc_078_UR
+DRAW|Mountain|lc_078_UR
+DRAW|Swamp|lc_075_BR
+DRAW|S.H.I.E.L.D. Helicarrier|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Roxxon Brutes|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Jessica Jones, Private Eye|lc_075_BR
+DRAW|Too Evil to Stay Dead|lc_075_BR
+DRAW|Mountain|lc_075_BR
+DRAW|Island|lc_078_UR
+Bold Biochemist|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_078_UR
+DRAW|A.I.M. Synthoids|lc_075_BR
+A.I.M. Synthoids|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_075_BR
+DRAW|Mister Fantastic, Reed Richards|lc_078_UR
+Justice, Vance Astrovik|PermanentCreature|MAIN1|5|true|false|0|1|1|true|false|false|lc_078_UR
+DRAW|Crimson Operative|lc_075_BR
+Jessica Jones, Private Eye|PermanentCreature|MAIN2|6|true|false|0|0|2|true|false|false|lc_075_BR
+DRAW|Depower|lc_078_UR
+Mister Fantastic, Reed Richards|PermanentCreature|MAIN2|7|true|false|0|2|1|true|false|false|lc_078_UR
+DRAW|Ronin, Shadow Stalker|lc_075_BR
+Ronin, Shadow Stalker|PermanentCreature|MAIN2|8|true|false|0|1|3|true|false|false|lc_075_BR
+DRAW|Mountain|lc_078_UR
+DRAW|Swamp|lc_075_BR
+Roxxon Brutes|PermanentCreature|MAIN2|10|true|false|0|2|3|true|false|false|lc_075_BR
+DRAW|Super Suit|lc_078_UR
+Super Suit|PermanentNoncreature|DRAW|11|true|false|0|3|3|true|false|true|lc_078_UR
+DRAW|Mountain|lc_075_BR
+Crimson Operative|PermanentCreature|MAIN2|12|true|false|0|3|3|true|false|false|lc_075_BR
+A.I.M. Synthoids|PermanentCreature|MAIN2|12|true|false|0|4|3|true|false|false|lc_075_BR
+DRAW|Mountain|lc_078_UR
+DRAW|Mountain|lc_075_BR
+S.H.I.E.L.D. Helicarrier|PermanentNoncreature|MAIN1|14|true|false|0|5|3|true|false|false|lc_075_BR
+DRAW|Volcanic Villain|lc_078_UR
+DRAW|Pym Particles|lc_078_UR
+DRAW|Giant-Sized Flying Ant|lc_078_UR
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|15|true|false|0|3|7|true|false|true|lc_078_UR
+Volcanic Villain|PermanentCreature|MAIN1|15|true|false|0|4|7|true|false|false|lc_078_UR
+DRAW|Volcanic Villain|lc_075_BR
+Volcanic Villain|PermanentCreature|MAIN1|16|true|false|0|7|5|true|false|false|lc_075_BR
+DRAW|Island|lc_078_UR
+DRAW|Unliving Legionnaire|lc_075_BR
+DRAW|K'un-Lun Warrior|lc_078_UR
+DRAW|Hire a Crew|lc_075_BR
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|20|false|true|0|4|7|true|true|false|lc_078_UR
+DRAW|Mountain|lc_078_UR
+Unliving Legionnaire|PermanentCreature|MAIN2|20|true|false|0|6|4|true|false|false|lc_075_BR
+DRAW|Mountain|lc_078_UR
+DRAW|Decoy Ploy|lc_075_BR
+Crimson Operative|PermanentCreature|MAIN2|22|true|false|0|7|4|true|false|false|lc_075_BR
+Hex Magic|ChangeZoneAll>Draw>Effect>Cleanup|MAIN2|22|true|false|0|8|4|true|false|false|lc_075_BR
+DRAW|Baron Helmut Zemo|lc_075_BR
+DRAW|Machinesmith Automaton|lc_075_BR
+DRAW|Swamp|lc_075_BR
+DRAW|Echo, Perceptive Prodigy|lc_078_UR
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|23|true|false|0|4|8|true|false|false|lc_078_UR
+DRAW|Project Deathlok Soldier|lc_075_BR
+Machinesmith Automaton|PermanentCreature|MAIN2|24|true|false|0|8|5|true|false|false|lc_075_BR
+Project Deathlok Soldier|PermanentCreature|MAIN2|24|true|false|0|9|5|true|false|false|lc_075_BR
+HYDRA Infiltration|PermanentNoncreature|MAIN2|24|true|false|0|10|5|true|false|false|lc_075_BR
+Iron Man Armor|PermanentNoncreature|MAIN2|24|true|false|0|10|5|true|false|false|lc_075_BR
+DRAW|Mountain|lc_078_UR
+DRAW|Mountain|lc_075_BR
+DRAW|Blazing Crescendo|lc_078_UR
+DRAW|Swamp|lc_075_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|28|false|true|0|5|10|true|true|false|lc_078_UR
+END|lc_075_BR
+START
+DRAW|Ant-Man, Colony Commander|lc_077_UG
+DRAW|Rick Jones, Destined Sidekick|lc_077_UG
+DRAW|Dependable Quinjet|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Super Intelligence|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Island|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|Thirst for Knowledge|lc_071_UB
+DRAW|S.H.I.E.L.D. Flying Car|lc_071_UB
+DRAW|Rewrite History|lc_071_UB
+DRAW|Kang, Temporal Tyrant|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_071_UB
+DRAW|Hulkling, Burgeoning Bruiser|lc_077_UG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|4|true|false|0|0|0|true|false|false|lc_077_UG
+DRAW|Red Room Recruit|lc_071_UB
+Rewrite History|PermanentNoncreature|MAIN2|5|true|false|0|0|1|true|false|false|lc_071_UB
+DRAW|Forest|lc_077_UG
+Hulkling, Burgeoning Bruiser|PermanentCreature|MAIN2|6|true|false|0|1|0|true|false|false|lc_077_UG
+DRAW|Swamp|lc_071_UB
+Kang, Temporal Tyrant|PermanentCreature|MAIN2|7|true|false|0|0|2|true|false|false|lc_071_UB
+DRAW|Beast, Erudite Aerialist|lc_077_UG
+Beast, Erudite Aerialist|PermanentCreature|MAIN2|8|true|false|0|2|1|true|false|false|lc_077_UG
+DRAW|Island|lc_071_UB
+DRAW|Cruel Alliance|lc_071_UB
+DRAW|Island|lc_071_UB
+Thirst for Knowledge|Draw>Discard|MAIN2|9|true|false|0|1|3|true|true|false|lc_071_UB
+DRAW|Island|lc_071_UB
+DRAW|HYDRA Infiltration|lc_071_UB
+DRAW|Swamp|lc_071_UB
+Red Room Recruit|PermanentCreature|MAIN2|9|true|false|0|1|3|true|false|false|lc_071_UB
+DRAW|Atlantis Attacks|lc_071_UB
+DRAW|Pet Avengers|lc_077_UG
+DRAW|The Astonishing Ant-Man|lc_077_UG
+Pet Avengers|PermanentCreature|MAIN2|10|true|false|0|3|2|true|false|false|lc_077_UG
+DRAW|HYDRA Troopers|lc_071_UB
+HYDRA Infiltration|PermanentNoncreature|MAIN1|11|true|false|0|2|4|true|false|false|lc_071_UB
+DRAW|Forest|lc_077_UG
+Ant-Man, Colony Commander|PermanentCreature|MAIN2|12|true|false|0|3|1|true|false|false|lc_077_UG
+The Astonishing Ant-Man|PermanentCreature|MAIN2|12|true|false|0|4|1|true|false|false|lc_077_UG
+DRAW|Depower|lc_071_UB
+Cruel Alliance|ChangeZone>ChangeZone>GainLife|MAIN1|13|true|false|0|1|5|true|false|false|lc_071_UB
+DRAW|H.E.R.B.I.E. Scout Unit|lc_071_UB
+DRAW|Forest|lc_077_UG
+Depower|Pump>Draw|COMBAT_DECLARE_ATTACKERS|14|false|true|1|1|5|true|true|false|lc_071_UB
+DRAW|Baron Strucker, HYDRA Overlord|lc_071_UB
+DRAW|Viv Vision, Teen Synthezoid|lc_071_UB
+Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|15|true|false|0|1|5|true|false|false|lc_071_UB
+Baron Strucker, HYDRA Overlord|PermanentCreature|MAIN2|15|true|false|0|2|5|true|false|false|lc_071_UB
+DRAW|Forest|lc_077_UG
+DRAW|Island|lc_077_UG
+DRAW|Giant-Sized Flying Ant|lc_071_UB
+Giant-Sized Flying Ant|PermanentCreature|MAIN1|17|true|false|0|2|5|true|false|true|lc_071_UB
+HYDRA Troopers|PermanentCreature|MAIN1|17|true|false|0|3|5|true|false|false|lc_071_UB
+DRAW|Swamp|lc_071_UB
+DRAW|Island|lc_077_UG
+Echo, Perceptive Prodigy|PermanentCreature|MAIN2|18|true|false|0|5|5|true|false|false|lc_077_UG
+DRAW|Island|lc_071_UB
+DRAW|We Say Thee Nay!|lc_071_UB
+DRAW|Forest|lc_077_UG
+Stature, Size Shifter|PermanentCreature|MAIN1|20|true|false|0|6|5|true|false|false|lc_077_UG
+DRAW|Swamp|lc_071_UB
+DRAW|Island|lc_077_UG
+DRAW|Project Deathlok Soldier|lc_071_UB
+Project Deathlok Soldier|PermanentCreature|MAIN2|23|true|false|0|3|7|true|false|false|lc_071_UB
+DRAW|Depower|lc_077_UG
+Training Regimen|PermanentNoncreature|MAIN1|24|true|false|0|7|4|true|false|false|lc_077_UG
+DRAW|Swamp|lc_071_UB
+END|lc_071_UB
+START
+DRAW|Plains|lc_076_WG
+DRAW|Super Villain Lockup|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Forest|lc_076_WG
+DRAW|Plains|lc_076_WG
+DRAW|Iron Man Armor|lc_076_WG
+DRAW|Wakandan Royal Guard|lc_076_WG
+DRAW|Plains|lc_073_WB
+DRAW|Colleen Wing, Street Samurai|lc_073_WB
+DRAW|Widow's Bite|lc_073_WB
+DRAW|Dependable Quinjet|lc_073_WB
+DRAW|Swamp|lc_073_WB
+DRAW|Wakandan Drone Flock|lc_073_WB
+DRAW|Plains|lc_073_WB
+DRAW|Forest|lc_076_WG
+DRAW|Plains|lc_073_WB
+Colleen Wing, Street Samurai|PermanentCreature|MAIN2|3|true|false|0|0|0|true|false|false|lc_073_WB
+DRAW|Rick Jones, Destined Sidekick|lc_076_WG
+Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|4|true|false|0|0|1|true|false|false|lc_076_WG
+DRAW|Ultron Drone|lc_073_WB
+Ultron Drone|PermanentCreature|MAIN2|5|true|false|0|1|1|true|false|false|lc_073_WB
+DRAW|Savage Land Dinosaur|lc_076_WG
+Iron Man Armor|PermanentNoncreature|MAIN1|6|true|false|0|1|2|true|false|false|lc_076_WG
+DRAW|Swamp|lc_073_WB
+Wakandan Drone Flock|PermanentCreature|MAIN2|7|true|false|0|2|1|true|false|false|lc_073_WB
+Super Villain Lockup|PermanentNoncreature|UPKEEP|8|true|false|0|1|3|true|false|true|lc_076_WG
+DRAW|Super Strength|lc_076_WG
+DRAW|Yellowjacket, Heartless Marauder|lc_073_WB
+Dependable Quinjet|PermanentNoncreature|MAIN2|9|true|false|0|2|1|true|false|false|lc_073_WB
+Yellowjacket, Heartless Marauder|PermanentCreature|MAIN2|9|true|false|0|2|1|true|false|false|lc_073_WB
+DRAW|Forest|lc_076_WG
+DRAW|Forest|lc_076_WG
+Super Strength|Attach|MAIN1|10|true|false|0|1|3|true|false|false|lc_076_WG
+DRAW|Agent Maria Hill|lc_073_WB
+Agent Maria Hill|PermanentCreature|MAIN2|11|true|false|0|4|1|true|false|false|lc_073_WB
+DRAW|Plains|lc_076_WG
+Wakandan Royal Guard|PermanentCreature|MAIN2|12|true|false|0|1|4|true|false|false|lc_076_WG
+DRAW|Plains|lc_073_WB
+DRAW|Forest|lc_076_WG
+END|lc_076_WG

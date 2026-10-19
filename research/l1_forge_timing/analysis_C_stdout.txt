@@ -1,0 +1,110 @@
+{
+ "base": {
+  "games": 360,
+  "timeouts": 0,
+  "mean_turns": 9.627777777777778,
+  "draw_lines_per_player": 18.73611111111111,
+  "E_casts": 316,
+  "E_zero_creature_casts": 84,
+  "E_zero_creature_rate": 0.26582278481012656,
+  "E_cast_phase": {
+   "自:MAIN1": 137,
+   "自:DRAW": 86,
+   "自:COMBAT_BEGIN": 50,
+   "自:MAIN2": 26,
+   "自:UPKEEP": 12,
+   "自:COMBAT_DECLARE_ATTACKERS": 4,
+   "相:COMBAT_DAMAGE": 1
+  },
+  "E_gih_n": 338,
+  "E_gih_wr": 0.5,
+  "N_gih_n": 7189,
+  "N_gih_wr": 0.5128668799554875,
+  "per_card_E": {
+   "Falcon's Wing Harness": [
+    50,
+    87
+   ],
+   "Iron Man Armor": [
+    55,
+    82
+   ],
+   "Stolen Stark Tech": [
+    21,
+    63
+   ],
+   "Super Suit": [
+    43,
+    106
+   ]
+  },
+  "E_casts_per_gih_game": 0.9349112426035503
+ },
+ "patch": {
+  "games": 360,
+  "timeouts": 0,
+  "mean_turns": 9.33611111111111,
+  "draw_lines_per_player": 18.454166666666666,
+  "E_casts": 324,
+  "E_zero_creature_casts": 0,
+  "E_zero_creature_rate": 0.0,
+  "E_cast_phase": {
+   "自:MAIN1": 186,
+   "自:UPKEEP": 64,
+   "自:DRAW": 51,
+   "自:MAIN2": 16,
+   "自:COMBAT_DECLARE_ATTACKERS": 3,
+   "自:END_OF_TURN": 2,
+   "自:COMBAT_BEGIN": 1,
+   "自:COMBAT_DECLARE_BLOCKERS": 1
+  },
+  "E_gih_n": 358,
+  "E_gih_wr": 0.553072625698324,
+  "N_gih_n": 7193,
+  "N_gih_wr": 0.5132767968858613,
+  "per_card_E": {
+   "Falcon's Wing Harness": [
+    50,
+    90
+   ],
+   "Iron Man Armor": [
+    67,
+    103
+   ],
+   "Stolen Stark Tech": [
+    26,
+    59
+   ],
+   "Super Suit": [
+    55,
+    106
+   ]
+  },
+  "E_casts_per_gih_game": 0.9050279329608939
+ },
+ "diff_E": {
+  "point": 0.05307262569832405,
+  "ci95": [
+   -0.020660536018958904,
+   0.1250093392652961
+  ],
+  "valid_resamples": 10000
+ },
+ "diff_N": {
+  "point": 0.00040991693037373267,
+  "ci95": [
+   -0.04964684144481533,
+   0.0508162868988756
+  ],
+  "valid_resamples": 10000
+ },
+ "verdict": {
+  "a_zero_creature_rate_le_2pct": true,
+  "b_placebo_ci_contains_0": true,
+  "b_timeouts": true,
+  "b_turns": true,
+  "c_cast_ratio": 0.968036206774627,
+  "c_ok": true,
+  "result": "採用候補"
+ }
+}
