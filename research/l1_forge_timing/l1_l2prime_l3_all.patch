@@ -1,0 +1,115 @@
+diff --git a/forge-ai/src/main/java/forge/ai/ability/AttachAi.java b/forge-ai/src/main/java/forge/ai/ability/AttachAi.java
+index 06c93201..48d3bef9 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/AttachAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/AttachAi.java
+@@ -929,6 +929,14 @@ public class AttachAi extends SpellAbilityAi {
+             attachPreference(sa, tgt, mandatory);
+             targets = sa.getTargets();
+         }
++        // L3 research patch (enabled only with env L3_PATCH=1): an optional targeted attach with no target chosen does nothing,
++        // so do not report it as worth playing (this is what the pre-cast ETB check asks).
++        // The preference step can come back empty before the card is on the battlefield even when targets exist,
++        // so only refuse when there is no legal target at all.
++        if ("1".equals(System.getenv("L3_PATCH")) && !mandatory && tgt != null && targets.isEmpty()
++                && CardUtil.getValidCardsToTarget(sa).isEmpty()) {
++            return new AiAbilityDecision(0, AiPlayDecision.TargetingFailed);
++        }
+ 
+         if (!mandatory && card.isEquipment() && !targets.isEmpty()) {
+             Card newTarget = (Card) targets.get(0);
+diff --git a/forge-ai/src/main/java/forge/ai/ability/PermanentAi.java b/forge-ai/src/main/java/forge/ai/ability/PermanentAi.java
+index 85451d60..f581347d 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/PermanentAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/PermanentAi.java
+@@ -34,6 +34,12 @@ public class PermanentAi extends SpellAbilityAi {
+             return false;
+         }
+ 
++        // L2' research patch (enabled only with env L2_PATCH=1): hold flash noncreature permanents during the AI's own upkeep/draw
++        if ("1".equals(System.getenv("L2_PATCH")) && card.hasKeyword(Keyword.FLASH) && !card.isCreature()
++                && ph.isPlayerTurn(ai) && (ph.is(PhaseType.UPKEEP) || ph.is(PhaseType.DRAW))) {
++            return false;
++        }
++
+         // Wait for Main2 if possible
+         return !ph.is(PhaseType.MAIN1) || !ph.isPlayerTurn(ai) || sa.hasParam("WithoutManaCost") || ComputerUtil.castPermanentInMain1(ai, sa);
+     }
+diff --git a/forge-game/src/main/java/forge/game/GameLogFormatter.java b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+index f782187d..8974bf75 100644
+--- a/forge-game/src/main/java/forge/game/GameLogFormatter.java
++++ b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+@@ -32,8 +32,28 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+                 : String.format("%dm : %02ds", minutes, seconds);
+     }
+ 
++    // L1/L2' research helper (observation only): append one line to the file named by env L1_LOG.
++    private static void l1Write(final String line) {
++        try {
++            final String path = System.getenv("L1_LOG");
++            if (path != null) {
++                java.nio.file.Files.write(java.nio.file.Paths.get(path), (line + "\n").getBytes(java.nio.charset.StandardCharsets.UTF_8),
++                        java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND);
++            }
++        } catch (Throwable t) {
++            // never affect the game
++        }
++    }
++
++    @Override
++    public GameLogEntry visit(GameEventGameStarted ev) {
++        l1Write("START");
++        return null;
++    }
++
+     @Override
+     public GameLogEntry visit(GameEventGameOutcome ev) {
++        l1Write("END|" + ev.winningPlayerName());
+         // Match Duration
+         if (log.getMatchStartMillis() >= 0) { // defend against it somehow still never being set
+             long durationMillis = System.currentTimeMillis() - log.getMatchStartMillis();
+@@ -309,6 +329,9 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+         }
+         final ZoneType from = ev.from().zoneType();
+         final ZoneType to = ev.to().zoneType();
++        if (from == ZoneType.Library && to == ZoneType.Hand && ev.card() != null) {
++            l1Write("DRAW|" + ev.card().getName() + "|" + ev.card().getOwner().getName());
++        }
+         // Log mid-game ante additions (e.g. Contract from Below, Demonic Attorney)
+         if (to == ZoneType.Ante && from != ZoneType.Ante) {
+             final CardView c = ev.card();
+diff --git a/forge-game/src/main/java/forge/game/zone/MagicStack.java b/forge-game/src/main/java/forge/game/zone/MagicStack.java
+index 36c38e12..0b6809ee 100644
+--- a/forge-game/src/main/java/forge/game/zone/MagicStack.java
++++ b/forge-game/src/main/java/forge/game/zone/MagicStack.java
+@@ -366,6 +366,31 @@ public class MagicStack /* extends MyObservable */ implements Iterable<SpellAbil
+         runParams.put(AbilityKey.CurrentCastSpells, getSpellCardsCastThisTurn());
+ 
+         game.updateStackForView();
++        // L1 research patch (observation only, no behaviour change): record when instant/flash spells are cast.
++        try {
++            final String l1Path = System.getenv("L1_LOG");
++            if (l1Path != null && sp.isSpell() && !sp.isCopied() && source != null
++                    && (source.isInstant() || source.hasKeyword(forge.game.keyword.Keyword.FLASH) || "1".equals(System.getenv("L1_ALL_SPELLS")))) {
++                final forge.game.phase.PhaseHandler ph = game.getPhaseHandler();
++                final StringBuilder chain = new StringBuilder();
++                for (forge.game.spellability.SpellAbility x = sp; x != null; x = x.getSubAbility()) {
++                    if (chain.length() > 0) { chain.append('>'); }
++                    chain.append(x.getApi());
++                }
++                final String line = String.join("|", source.getName(), chain.toString(),
++                        String.valueOf(ph.getPhase()), String.valueOf(ph.getTurn()),
++                        String.valueOf(ph.isPlayerTurn(activator)), String.valueOf(ph.inCombat()),
++                        String.valueOf(stack.size() - 1),
++                        String.valueOf(activator.getCreaturesInPlay().size()),
++                        String.valueOf(activator.getWeakestOpponent().getCreaturesInPlay().size()),
++                        String.valueOf(activator.getController().isAI()), String.valueOf(source.isInstant()),
++                        String.valueOf(source.hasKeyword(forge.game.keyword.Keyword.FLASH)), activator.getName()) + "\n";
++                java.nio.file.Files.write(java.nio.file.Paths.get(l1Path), line.getBytes(java.nio.charset.StandardCharsets.UTF_8),
++                        java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND);
++            }
++        } catch (Throwable t) {
++            // never affect the game
++        }
+         game.fireEvent(new GameEventSpellAbilityCast(sp, si, stack.size() - 1));
+ 
+         if (!sp.isCopied()) {
