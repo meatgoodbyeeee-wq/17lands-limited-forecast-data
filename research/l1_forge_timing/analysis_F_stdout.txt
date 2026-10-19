@@ -1,0 +1,409 @@
+{
+ "base": {
+  "games": 360,
+  "timeouts": 0,
+  "mean_turns": 9.886111111111111,
+  "draw_lines_per_player": 18.6375,
+  "T_casts": 272,
+  "T_own_upkeep_draw": 148,
+  "T_own_upkeep_draw_rate": 0.5441176470588235,
+  "T_oppturn_or_response": 24,
+  "T_oppturn_or_response_rate": 0.08823529411764706,
+  "T_cast_phase": {
+   "自:DRAW": 85,
+   "自:MAIN1": 75,
+   "自:UPKEEP": 63,
+   "相:MAIN2": 14,
+   "自:COMBAT_DECLARE_ATTACKERS": 11,
+   "自:COMBAT_BEGIN": 10,
+   "相:COMBAT_DECLARE_ATTACKERS": 3,
+   "相:MAIN1": 2,
+   "自:MAIN2": 2,
+   "自:COMBAT_DECLARE_BLOCKERS": 2,
+   "自:COMBAT_DAMAGE": 2,
+   "相:COMBAT_BEGIN": 1,
+   "相:COMBAT_DAMAGE": 1,
+   "相:COMBAT_DECLARE_BLOCKERS": 1
+  },
+  "T_gih_n": 317,
+  "T_gih_wr": 0.5110410094637224,
+  "T_casts_per_gih": 0.8580441640378549,
+  "N_gih_n": 7200,
+  "N_gih_wr": 0.5190277777777778,
+  "per_card_T": {
+   "Bilbo's Deadly Slice": [
+    3,
+    11
+   ],
+   "Bleed Dry": [
+    7,
+    8
+   ],
+   "Blessed Light": [
+    1,
+    5
+   ],
+   "Bombard": [
+    4,
+    11
+   ],
+   "Command the Storm": [
+    2,
+    7
+   ],
+   "Disfigure": [
+    9,
+    15
+   ],
+   "Dual Shot": [
+    6,
+    13
+   ],
+   "Electrify": [
+    4,
+    15
+   ],
+   "Eyes of the Beholder": [
+    7,
+    10
+   ],
+   "Feed the Flames": [
+    1,
+    2
+   ],
+   "Final Death": [
+    4,
+    8
+   ],
+   "Final Reward": [
+    2,
+    4
+   ],
+   "Finishing Blow": [
+    10,
+    15
+   ],
+   "Flame Spill": [
+    6,
+    9
+   ],
+   "Flame-Blessed Bolt": [
+    5,
+    10
+   ],
+   "Flatten": [
+    3,
+    11
+   ],
+   "Gravkill": [
+    3,
+    9
+   ],
+   "Heated Debate": [
+    6,
+    9
+   ],
+   "Hero's Downfall": [
+    10,
+    18
+   ],
+   "Lash of Malice": [
+    8,
+    12
+   ],
+   "Last Gasp": [
+    2,
+    5
+   ],
+   "Magma Spray": [
+    3,
+    5
+   ],
+   "Murder": [
+    2,
+    4
+   ],
+   "Ob Nixilis's Cruelty": [
+    4,
+    5
+   ],
+   "Overkill": [
+    6,
+    14
+   ],
+   "Scorching Dragonfire": [
+    8,
+    14
+   ],
+   "Scorchmark": [
+    5,
+    7
+   ],
+   "Sear": [
+    1,
+    3
+   ],
+   "Spin Out": [
+    5,
+    9
+   ],
+   "Spreading Flames": [
+    3,
+    7
+   ],
+   "Stab": [
+    6,
+    10
+   ],
+   "Strangling Spores": [
+    2,
+    4
+   ],
+   "Throttle": [
+    5,
+    12
+   ],
+   "Wander Off": [
+    9,
+    16
+   ]
+  },
+  "per_kind_T": {
+   "ChangeZone": [
+    19,
+    42
+   ],
+   "DealDamage": [
+    54,
+    112
+   ],
+   "Destroy": [
+    30,
+    57
+   ],
+   "Pump-X": [
+    59,
+    106
+   ]
+  }
+ },
+ "patch": {
+  "games": 360,
+  "timeouts": 1,
+  "mean_turns": 10.183333333333334,
+  "draw_lines_per_player": 18.913888888888888,
+  "T_casts": 260,
+  "T_own_upkeep_draw": 2,
+  "T_own_upkeep_draw_rate": 0.007692307692307693,
+  "T_oppturn_or_response": 142,
+  "T_oppturn_or_response_rate": 0.5461538461538461,
+  "T_cast_phase": {
+   "自:MAIN1": 70,
+   "相:COMBAT_DECLARE_ATTACKERS": 59,
+   "自:COMBAT_DECLARE_BLOCKERS": 24,
+   "相:END_OF_TURN": 19,
+   "自:COMBAT_DECLARE_ATTACKERS": 15,
+   "相:MAIN1": 14,
+   "相:COMBAT_DECLARE_BLOCKERS": 13,
+   "相:MAIN2": 13,
+   "自:END_OF_TURN": 10,
+   "自:COMBAT_BEGIN": 8,
+   "相:COMBAT_DAMAGE": 3,
+   "相:COMBAT_END": 2,
+   "自:MAIN2": 2,
+   "相:COMBAT_BEGIN": 2,
+   "自:UPKEEP": 2,
+   "自:COMBAT_DAMAGE": 2,
+   "相:UPKEEP": 1,
+   "自:COMBAT_END": 1
+  },
+  "T_gih_n": 318,
+  "T_gih_wr": 0.48742138364779874,
+  "T_casts_per_gih": 0.8176100628930818,
+  "N_gih_n": 7337,
+  "N_gih_wr": 0.513152514651765,
+  "per_card_T": {
+   "Bilbo's Deadly Slice": [
+    2,
+    10
+   ],
+   "Bleed Dry": [
+    7,
+    11
+   ],
+   "Blessed Light": [
+    1,
+    3
+   ],
+   "Bombard": [
+    2,
+    5
+   ],
+   "Command the Storm": [
+    4,
+    9
+   ],
+   "Disfigure": [
+    3,
+    13
+   ],
+   "Dual Shot": [
+    5,
+    10
+   ],
+   "Electrify": [
+    5,
+    13
+   ],
+   "Eyes of the Beholder": [
+    6,
+    12
+   ],
+   "Feed the Flames": [
+    3,
+    6
+   ],
+   "Final Death": [
+    6,
+    9
+   ],
+   "Final Reward": [
+    0,
+    5
+   ],
+   "Finishing Blow": [
+    7,
+    16
+   ],
+   "Flame Spill": [
+    2,
+    6
+   ],
+   "Flame-Blessed Bolt": [
+    7,
+    10
+   ],
+   "Flatten": [
+    8,
+    12
+   ],
+   "Gravkill": [
+    8,
+    10
+   ],
+   "Heated Debate": [
+    4,
+    10
+   ],
+   "Hero's Downfall": [
+    9,
+    20
+   ],
+   "Lash of Malice": [
+    9,
+    17
+   ],
+   "Last Gasp": [
+    3,
+    3
+   ],
+   "Magma Spray": [
+    1,
+    7
+   ],
+   "Murder": [
+    4,
+    4
+   ],
+   "Ob Nixilis's Cruelty": [
+    4,
+    4
+   ],
+   "Overkill": [
+    7,
+    10
+   ],
+   "Scorching Dragonfire": [
+    3,
+    12
+   ],
+   "Scorchmark": [
+    2,
+    5
+   ],
+   "Sear": [
+    1,
+    5
+   ],
+   "Spin Out": [
+    8,
+    14
+   ],
+   "Spreading Flames": [
+    5,
+    8
+   ],
+   "Stab": [
+    3,
+    7
+   ],
+   "Strangling Spores": [
+    2,
+    3
+   ],
+   "Throttle": [
+    7,
+    9
+   ],
+   "Wander Off": [
+    7,
+    20
+   ]
+  },
+  "per_kind_T": {
+   "ChangeZone": [
+    22,
+    47
+   ],
+   "DealDamage": [
+    44,
+    106
+   ],
+   "Destroy": [
+    30,
+    64
+   ],
+   "Pump-X": [
+    59,
+    101
+   ]
+  }
+ },
+ "diff_T": {
+  "point": -0.023619625815923695,
+  "ci95": [
+   -0.09627329943410376,
+   0.05253515113802042
+  ],
+  "valid_resamples": 10000
+ },
+ "diff_N": {
+  "point": -0.00587526312601272,
+  "ci95": [
+   -0.05874043084333294,
+   0.047667062940635635
+  ],
+  "valid_resamples": 10000
+ },
+ "verdict": {
+  "a1_own_upkeep_draw_le_5pct": true,
+  "a2_diff": 0.457918552036199,
+  "a2_ok": true,
+  "c_cast_ratio": 0.9528764335923049,
+  "c_ok": true,
+  "b_placebo_ci_contains_0": true,
+  "b_timeouts": true,
+  "b_turns": true,
+  "result": "採用候補"
+ }
+}

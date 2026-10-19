@@ -1,0 +1,684 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36803 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Error handling registered!
+20:40:50 [INFO ] GuiBase: ##########################################
+20:40:50 [INFO ] GuiBase: APP: Forge v.2.0.16-SNAPSHOT-10.19
+20:40:50 [INFO ] GuiBase: Java: 21.0.12.1 (Ubuntu)
+20:40:50 [INFO ] GuiBase: OS: Linux 6.18.44-fc-v139 amd64
+20:40:50 [INFO ] GuiBase: RAM: 2048 MB max, 2 CPUs
+20:40:50 [INFO ] GuiBase: ##########################################
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 2 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+Simulation mode
+Starting a RoundRobin tournament with 10 players over 9 rounds
+
+Round 1 Pairings:
+lf_004_BR[0] vs lf_001_BR[0] 
+lf_008_WB[0] vs lf_009_BR[0] 
+lf_002_UB[0] vs lf_007_WR[0] 
+lf_003_WR[0] vs lf_006_RG[0] 
+lf_005_UB[0] vs lf_000_WB[0] 
+
+Round 1 - lf_004_BR[0] vs lf_001_BR[0] 
+Game Outcome: Match Duration 0m : 11s
+Game Outcome: Turn 10
+Game Outcome: lf_004_BR has won because all opponents have lost
+Game Outcome: lf_001_BR has lost because life total reached 0
+Match Result: lf_004_BR: 1 lf_001_BR: 0 
+
+Game Result: Game 1 ended in 13157 ms. lf_004_BR has won!
+
+Match Winner - lf_004_BR!
+
+Round 1 - lf_008_WB[0] vs lf_009_BR[0] 
+Game Outcome: Match Duration 0m : 09s
+Game Outcome: Turn 15
+Game Outcome: lf_008_WB has won because all opponents have lost
+Game Outcome: lf_009_BR has lost because life total reached 0
+Match Result: lf_008_WB: 1 lf_009_BR: 0 
+
+Game Result: Game 1 ended in 10089 ms. lf_008_WB has won!
+
+Match Winner - lf_008_WB!
+
+Round 1 - lf_002_UB[0] vs lf_007_WR[0] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: lf_002_UB has lost because life total reached 0
+Game Outcome: lf_007_WR has won because all opponents have lost
+Match Result: lf_002_UB: 0 lf_007_WR: 1 
+
+Game Result: Game 1 ended in 5211 ms. lf_007_WR has won!
+
+Match Winner - lf_007_WR!
+
+Round 1 - lf_003_WR[0] vs lf_006_RG[0] 
+Correcting zone for HYDRA Assault Robot (44)
+Correcting zone for HYDRA Assault Robot (44)
+Game Outcome: Match Duration 0m : 13s
+Game Outcome: Turn 16
+Game Outcome: lf_003_WR has won because all opponents have lost
+Game Outcome: lf_006_RG has lost because life total reached 0
+Match Result: lf_003_WR: 1 lf_006_RG: 0 
+
+Game Result: Game 1 ended in 14181 ms. lf_003_WR has won!
+
+Match Winner - lf_003_WR!
+
+Round 1 - lf_005_UB[0] vs lf_000_WB[0] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 9
+Game Outcome: lf_005_UB has lost because life total reached 0
+Game Outcome: lf_000_WB has won because all opponents have lost
+Match Result: lf_005_UB: 0 lf_000_WB: 1 
+
+Game Result: Game 1 ended in 5696 ms. lf_000_WB has won!
+
+Match Winner - lf_000_WB!
+
+End Round - 1
+
+Round 2 Pairings:
+lf_004_BR[3] vs lf_008_WB[3] 
+lf_002_UB[0] vs lf_001_BR[0] 
+lf_003_WR[3] vs lf_009_BR[0] 
+lf_005_UB[0] vs lf_007_WR[3] 
+lf_000_WB[3] vs lf_006_RG[0] 
+
+Round 2 - lf_004_BR[3] vs lf_008_WB[3] 
+Swordsman, Sharp Scoundrel (52) - [Couldn't add to stack, failed to target] -  [[], []]
+Swordsman, Sharp Scoundrel (52) - [Couldn't add to stack, failed to target] -  [[], []]
+Swordsman, Sharp Scoundrel (52) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 12
+Game Outcome: lf_004_BR has lost because life total reached 0
+Game Outcome: lf_008_WB has won because all opponents have lost
+Match Result: lf_004_BR: 0 lf_008_WB: 1 
+
+Game Result: Game 1 ended in 5978 ms. lf_008_WB has won!
+
+Match Winner - lf_008_WB!
+
+Round 2 - lf_002_UB[0] vs lf_001_BR[0] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 8
+Game Outcome: lf_002_UB has lost because life total reached 0
+Game Outcome: lf_001_BR has won because all opponents have lost
+Match Result: lf_002_UB: 0 lf_001_BR: 1 
+
+Game Result: Game 1 ended in 5203 ms. lf_001_BR has won!
+
+Match Winner - lf_001_BR!
+
+Round 2 - lf_003_WR[3] vs lf_009_BR[0] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Correcting zone for H.E.R.B.I.E. Scout Unit (42)
+Correcting zone for H.E.R.B.I.E. Scout Unit (42)
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lf_003_WR has won because all opponents have lost
+Game Outcome: lf_009_BR has lost because life total reached 0
+Match Result: lf_003_WR: 1 lf_009_BR: 0 
+
+Game Result: Game 1 ended in 3693 ms. lf_003_WR has won!
+
+Match Winner - lf_003_WR!
+
+Round 2 - lf_005_UB[0] vs lf_007_WR[3] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 13
+Game Outcome: lf_005_UB has won because all opponents have lost
+Game Outcome: lf_007_WR has lost because life total reached 0
+Match Result: lf_005_UB: 1 lf_007_WR: 0 
+
+Game Result: Game 1 ended in 6193 ms. lf_005_UB has won!
+
+Match Winner - lf_005_UB!
+
+Round 2 - lf_000_WB[3] vs lf_006_RG[0] 
+Forest Did not have activator set in SpellAbilityRestriction.canPlay()
+SVar 'X' not found in ability, fallback to Card (Electrify). Ability is (Electrify deals 4 damage to target creature.)
+SVar 'X' not defined in Card (Electrify)
+SVar 'X' not found in ability, fallback to Card (Electrify). Ability is (Electrify deals 4 damage to target creature.)
+SVar 'X' not defined in Card (Electrify)
+SVar 'X' not found in ability, fallback to Card (Electrify). Ability is (Electrify deals 4 damage to target creature.)
+SVar 'X' not defined in Card (Electrify)
+SVar 'X' not found in ability, fallback to Card (Electrify). Ability is (Electrify deals 4 damage to target creature.)
+SVar 'X' not defined in Card (Electrify)
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lf_000_WB has won because all opponents have lost
+Game Outcome: lf_006_RG has lost because life total reached 0
+Match Result: lf_000_WB: 1 lf_006_RG: 0 
+
+Game Result: Game 1 ended in 3973 ms. lf_000_WB has won!
+
+Match Winner - lf_000_WB!
+
+End Round - 2
+
+Round 3 Pairings:
+lf_004_BR[3] vs lf_002_UB[0] 
+lf_003_WR[6] vs lf_008_WB[6] 
+lf_005_UB[3] vs lf_001_BR[3] 
+lf_000_WB[6] vs lf_009_BR[0] 
+lf_006_RG[0] vs lf_007_WR[3] 
+
+Round 3 - lf_004_BR[3] vs lf_002_UB[0] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_004_BR has lost because life total reached 0
+Game Outcome: lf_002_UB has won because all opponents have lost
+Match Result: lf_004_BR: 0 lf_002_UB: 1 
+
+Game Result: Game 1 ended in 3374 ms. lf_002_UB has won!
+
+Match Winner - lf_002_UB!
+
+Round 3 - lf_003_WR[6] vs lf_008_WB[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lf_003_WR has lost because life total reached 0
+Game Outcome: lf_008_WB has won because all opponents have lost
+Match Result: lf_003_WR: 0 lf_008_WB: 1 
+
+Game Result: Game 1 ended in 3051 ms. lf_008_WB has won!
+
+Match Winner - lf_008_WB!
+
+Round 3 - lf_005_UB[3] vs lf_001_BR[3] 
+Game Outcome: Match Duration 0m : 23s
+Game Outcome: Turn 15
+Game Outcome: lf_005_UB has won because all opponents have lost
+Game Outcome: lf_001_BR has lost because life total reached 0
+Match Result: lf_005_UB: 1 lf_001_BR: 0 
+
+Game Result: Game 1 ended in 24096 ms. lf_005_UB has won!
+
+Match Winner - lf_005_UB!
+
+Round 3 - lf_000_WB[6] vs lf_009_BR[0] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lf_000_WB has lost because life total reached 0
+Game Outcome: lf_009_BR has won because all opponents have lost
+Match Result: lf_000_WB: 0 lf_009_BR: 1 
+
+Game Result: Game 1 ended in 3185 ms. lf_009_BR has won!
+
+Match Winner - lf_009_BR!
+
+Round 3 - lf_006_RG[0] vs lf_007_WR[3] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 9
+Game Outcome: lf_006_RG has lost because life total reached 0
+Game Outcome: lf_007_WR has won because all opponents have lost
+Match Result: lf_006_RG: 0 lf_007_WR: 1 
+
+Game Result: Game 1 ended in 1544 ms. lf_007_WR has won!
+
+Match Winner - lf_007_WR!
+
+End Round - 3
+
+Round 4 Pairings:
+lf_004_BR[3] vs lf_003_WR[6] 
+lf_005_UB[6] vs lf_002_UB[3] 
+lf_000_WB[6] vs lf_008_WB[9] 
+lf_006_RG[0] vs lf_001_BR[3] 
+lf_007_WR[6] vs lf_009_BR[3] 
+
+Round 4 - lf_004_BR[3] vs lf_003_WR[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lf_004_BR has won because all opponents have lost
+Game Outcome: lf_003_WR has lost because life total reached 0
+Match Result: lf_004_BR: 1 lf_003_WR: 0 
+
+Game Result: Game 1 ended in 2357 ms. lf_004_BR has won!
+
+Match Winner - lf_004_BR!
+
+Round 4 - lf_005_UB[6] vs lf_002_UB[3] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_005_UB has lost because life total reached 0
+Game Outcome: lf_002_UB has won because all opponents have lost
+Match Result: lf_005_UB: 0 lf_002_UB: 1 
+
+Game Result: Game 1 ended in 2549 ms. lf_002_UB has won!
+
+Match Winner - lf_002_UB!
+
+Round 4 - lf_000_WB[6] vs lf_008_WB[9] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lf_000_WB has lost because life total reached 0
+Game Outcome: lf_008_WB has won because all opponents have lost
+Match Result: lf_000_WB: 0 lf_008_WB: 1 
+
+Game Result: Game 1 ended in 2515 ms. lf_008_WB has won!
+
+Match Winner - lf_008_WB!
+
+Round 4 - lf_006_RG[0] vs lf_001_BR[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lf_006_RG has won because all opponents have lost
+Game Outcome: lf_001_BR has lost because life total reached 0
+Match Result: lf_006_RG: 1 lf_001_BR: 0 
+
+Game Result: Game 1 ended in 1755 ms. lf_006_RG has won!
+
+Match Winner - lf_006_RG!
+
+Round 4 - lf_007_WR[6] vs lf_009_BR[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lf_007_WR has won because all opponents have lost
+Game Outcome: lf_009_BR has lost because life total reached 0
+Match Result: lf_007_WR: 1 lf_009_BR: 0 
+
+Game Result: Game 1 ended in 2020 ms. lf_007_WR has won!
+
+Match Winner - lf_007_WR!
+
+End Round - 4
+
+Round 5 Pairings:
+lf_004_BR[6] vs lf_005_UB[6] 
+lf_000_WB[6] vs lf_003_WR[6] 
+lf_006_RG[3] vs lf_002_UB[6] 
+lf_007_WR[9] vs lf_008_WB[12] 
+lf_009_BR[3] vs lf_001_BR[3] 
+
+Round 5 - lf_004_BR[6] vs lf_005_UB[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lf_004_BR has won because all opponents have lost
+Game Outcome: lf_005_UB has lost because life total reached 0
+Match Result: lf_004_BR: 1 lf_005_UB: 0 
+
+Game Result: Game 1 ended in 2602 ms. lf_004_BR has won!
+
+Match Winner - lf_004_BR!
+
+Round 5 - lf_000_WB[6] vs lf_003_WR[6] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Swordsman, Sharp Scoundrel (14) - [Couldn't add to stack, failed to target] -  [[], []]
+Swordsman, Sharp Scoundrel (14) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_000_WB has won because all opponents have lost
+Game Outcome: lf_003_WR has lost because life total reached 0
+Match Result: lf_000_WB: 1 lf_003_WR: 0 
+
+Game Result: Game 1 ended in 2827 ms. lf_000_WB has won!
+
+Match Winner - lf_000_WB!
+
+Round 5 - lf_006_RG[3] vs lf_002_UB[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 12
+Game Outcome: lf_006_RG has lost because life total reached 0
+Game Outcome: lf_002_UB has won because all opponents have lost
+Match Result: lf_006_RG: 0 lf_002_UB: 1 
+
+Game Result: Game 1 ended in 3913 ms. lf_002_UB has won!
+
+Match Winner - lf_002_UB!
+
+Round 5 - lf_007_WR[9] vs lf_008_WB[12] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lf_007_WR has lost because life total reached 0
+Game Outcome: lf_008_WB has won because all opponents have lost
+Match Result: lf_007_WR: 0 lf_008_WB: 1 
+
+Game Result: Game 1 ended in 1673 ms. lf_008_WB has won!
+
+Match Winner - lf_008_WB!
+
+Round 5 - lf_009_BR[3] vs lf_001_BR[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lf_009_BR has won because all opponents have lost
+Game Outcome: lf_001_BR has lost because life total reached 0
+Match Result: lf_009_BR: 1 lf_001_BR: 0 
+
+Game Result: Game 1 ended in 2383 ms. lf_009_BR has won!
+
+Match Winner - lf_009_BR!
+
+End Round - 5
+
+Round 6 Pairings:
+lf_004_BR[9] vs lf_000_WB[9] 
+lf_006_RG[3] vs lf_005_UB[6] 
+lf_007_WR[9] vs lf_003_WR[6] 
+lf_009_BR[6] vs lf_002_UB[9] 
+lf_001_BR[3] vs lf_008_WB[15] 
+
+Round 6 - lf_004_BR[9] vs lf_000_WB[9] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lf_004_BR has won because all opponents have lost
+Game Outcome: lf_000_WB has lost because life total reached 0
+Match Result: lf_004_BR: 1 lf_000_WB: 0 
+
+Game Result: Game 1 ended in 2773 ms. lf_004_BR has won!
+
+Match Winner - lf_004_BR!
+
+Round 6 - lf_006_RG[3] vs lf_005_UB[6] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 21s
+Game Outcome: Turn 19
+Game Outcome: lf_006_RG has won because all opponents have lost
+Game Outcome: lf_005_UB has lost because life total reached 0
+Match Result: lf_006_RG: 1 lf_005_UB: 0 
+
+Game Result: Game 1 ended in 21717 ms. lf_006_RG has won!
+
+Match Winner - lf_006_RG!
+
+Round 6 - lf_007_WR[9] vs lf_003_WR[6] 
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_007_WR has won because all opponents have lost
+Game Outcome: lf_003_WR has lost because life total reached 0
+Match Result: lf_007_WR: 1 lf_003_WR: 0 
+
+Game Result: Game 1 ended in 2083 ms. lf_007_WR has won!
+
+Match Winner - lf_007_WR!
+
+Round 6 - lf_009_BR[6] vs lf_002_UB[9] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lf_009_BR has won because all opponents have lost
+Game Outcome: lf_002_UB has lost because life total reached 0
+Match Result: lf_009_BR: 1 lf_002_UB: 0 
+
+Game Result: Game 1 ended in 2692 ms. lf_009_BR has won!
+
+Match Winner - lf_009_BR!
+
+Round 6 - lf_001_BR[3] vs lf_008_WB[15] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 12
+Game Outcome: lf_001_BR has lost because life total reached 0
+Game Outcome: lf_008_WB has won because all opponents have lost
+Match Result: lf_001_BR: 0 lf_008_WB: 1 
+
+Game Result: Game 1 ended in 3277 ms. lf_008_WB has won!
+
+Match Winner - lf_008_WB!
+
+End Round - 6
+
+Round 7 Pairings:
+lf_004_BR[12] vs lf_006_RG[6] 
+lf_007_WR[12] vs lf_000_WB[9] 
+lf_009_BR[9] vs lf_005_UB[6] 
+lf_001_BR[3] vs lf_003_WR[6] 
+lf_008_WB[18] vs lf_002_UB[9] 
+
+Round 7 - lf_004_BR[12] vs lf_006_RG[6] 
+SVar 'X' not found in ability, fallback to Card (Electrify). Ability is (Electrify deals 4 damage to target creature.)
+SVar 'X' not defined in Card (Electrify)
+SVar 'X' not found in ability, fallback to Card (Electrify). Ability is (Electrify deals 4 damage to target creature.)
+SVar 'X' not defined in Card (Electrify)
+SVar 'X' not found in ability, fallback to Card (Electrify). Ability is (Electrify deals 4 damage to target creature.)
+SVar 'X' not defined in Card (Electrify)
+SVar 'X' not found in ability, fallback to Card (Electrify). Ability is (Electrify deals 4 damage to target creature.)
+SVar 'X' not defined in Card (Electrify)
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 16
+Game Outcome: lf_004_BR has won because all opponents have lost
+Game Outcome: lf_006_RG has lost because life total reached 0
+Match Result: lf_004_BR: 1 lf_006_RG: 0 
+
+Game Result: Game 1 ended in 6242 ms. lf_004_BR has won!
+
+Match Winner - lf_004_BR!
+
+Round 7 - lf_007_WR[12] vs lf_000_WB[9] 
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: lf_007_WR has won because all opponents have lost
+Game Outcome: lf_000_WB has lost because life total reached 0
+Match Result: lf_007_WR: 1 lf_000_WB: 0 
+
+Game Result: Game 1 ended in 4238 ms. lf_007_WR has won!
+
+Match Winner - lf_007_WR!
+
+Round 7 - lf_009_BR[9] vs lf_005_UB[6] 
+Swordsman, Sharp Scoundrel (18) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lf_009_BR has lost because life total reached 0
+Game Outcome: lf_005_UB has won because all opponents have lost
+Match Result: lf_009_BR: 0 lf_005_UB: 1 
+
+Game Result: Game 1 ended in 1917 ms. lf_005_UB has won!
+
+Match Winner - lf_005_UB!
+
+Round 7 - lf_001_BR[3] vs lf_003_WR[6] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lf_001_BR has lost because life total reached 0
+Game Outcome: lf_003_WR has won because all opponents have lost
+Match Result: lf_001_BR: 0 lf_003_WR: 1 
+
+Game Result: Game 1 ended in 2529 ms. lf_003_WR has won!
+
+Match Winner - lf_003_WR!
+
+Round 7 - lf_008_WB[18] vs lf_002_UB[9] 
+Swordsman, Sharp Scoundrel (12) - [Couldn't add to stack, failed to target] -  [[], []]
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 09s
+Game Outcome: Turn 13
+Game Outcome: lf_008_WB has lost because life total reached 0
+Game Outcome: lf_002_UB has won because all opponents have lost
+Match Result: lf_008_WB: 0 lf_002_UB: 1 
+
+Game Result: Game 1 ended in 9769 ms. lf_002_UB has won!
+
+Match Winner - lf_002_UB!
+
+End Round - 7
+
+Round 8 Pairings:
+lf_004_BR[15] vs lf_007_WR[15] 
+lf_009_BR[9] vs lf_006_RG[6] 
+lf_001_BR[3] vs lf_000_WB[9] 
+lf_008_WB[18] vs lf_005_UB[9] 
+lf_002_UB[12] vs lf_003_WR[9] 
+
+Round 8 - lf_004_BR[15] vs lf_007_WR[15] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lf_004_BR has won because all opponents have lost
+Game Outcome: lf_007_WR has lost because life total reached 0
+Match Result: lf_004_BR: 1 lf_007_WR: 0 
+
+Game Result: Game 1 ended in 2216 ms. lf_004_BR has won!
+
+Match Winner - lf_004_BR!
+
+Round 8 - lf_009_BR[9] vs lf_006_RG[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_009_BR has lost because life total reached 0
+Game Outcome: lf_006_RG has won because all opponents have lost
+Match Result: lf_009_BR: 0 lf_006_RG: 1 
+
+Game Result: Game 1 ended in 2539 ms. lf_006_RG has won!
+
+Match Winner - lf_006_RG!
+
+Round 8 - lf_001_BR[3] vs lf_000_WB[9] 
+Swordsman, Sharp Scoundrel (54) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 14
+Game Outcome: lf_001_BR has lost because life total reached 0
+Game Outcome: lf_000_WB has won because all opponents have lost
+Match Result: lf_001_BR: 0 lf_000_WB: 1 
+
+Game Result: Game 1 ended in 7310 ms. lf_000_WB has won!
+
+Match Winner - lf_000_WB!
+
+Round 8 - lf_008_WB[18] vs lf_005_UB[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_008_WB has won because all opponents have lost
+Game Outcome: lf_005_UB has lost because life total reached 0
+Match Result: lf_008_WB: 1 lf_005_UB: 0 
+
+Game Result: Game 1 ended in 2750 ms. lf_008_WB has won!
+
+Match Winner - lf_008_WB!
+
+Round 8 - lf_002_UB[12] vs lf_003_WR[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_002_UB has lost because life total reached 0
+Game Outcome: lf_003_WR has won because all opponents have lost
+Match Result: lf_002_UB: 0 lf_003_WR: 1 
+
+Game Result: Game 1 ended in 1959 ms. lf_003_WR has won!
+
+Match Winner - lf_003_WR!
+
+End Round - 8
+
+Round 9 Pairings:
+lf_004_BR[18] vs lf_009_BR[9] 
+lf_001_BR[3] vs lf_007_WR[15] 
+lf_008_WB[21] vs lf_006_RG[9] 
+lf_002_UB[12] vs lf_000_WB[12] 
+lf_003_WR[12] vs lf_005_UB[9] 
+
+Round 9 - lf_004_BR[18] vs lf_009_BR[9] 
+Swordsman, Sharp Scoundrel (58) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_004_BR has lost because life total reached 0
+Game Outcome: lf_009_BR has won because all opponents have lost
+Match Result: lf_004_BR: 0 lf_009_BR: 1 
+
+Game Result: Game 1 ended in 1721 ms. lf_009_BR has won!
+
+Match Winner - lf_009_BR!
+
+Round 9 - lf_001_BR[3] vs lf_007_WR[15] 
+SVar 'X' not found in ability, fallback to Card (Heated Debate). Ability is (Heated Debate deals 4 damage to target creature or planeswalker.)
+SVar 'X' not defined in Card (Heated Debate)
+SVar 'X' not found in ability, fallback to Card (Heated Debate). Ability is (Heated Debate deals 4 damage to target creature or planeswalker.)
+SVar 'X' not defined in Card (Heated Debate)
+SVar 'X' not found in ability, fallback to Card (Heated Debate). Ability is (Heated Debate deals 4 damage to target creature or planeswalker.)
+SVar 'X' not defined in Card (Heated Debate)
+SVar 'X' not found in ability, fallback to Card (Heated Debate). Ability is (Heated Debate deals 4 damage to target creature or planeswalker.)
+SVar 'X' not defined in Card (Heated Debate)
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_001_BR has lost because life total reached 0
+Game Outcome: lf_007_WR has won because all opponents have lost
+Match Result: lf_001_BR: 0 lf_007_WR: 1 
+
+Game Result: Game 1 ended in 2172 ms. lf_007_WR has won!
+
+Match Winner - lf_007_WR!
+
+Round 9 - lf_008_WB[21] vs lf_006_RG[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lf_008_WB has lost because life total reached 0
+Game Outcome: lf_006_RG has won because all opponents have lost
+Match Result: lf_008_WB: 0 lf_006_RG: 1 
+
+Game Result: Game 1 ended in 1982 ms. lf_006_RG has won!
+
+Match Winner - lf_006_RG!
+
+Round 9 - lf_002_UB[12] vs lf_000_WB[12] 
+Swordsman, Sharp Scoundrel (54) - [Couldn't add to stack, failed to target] -  [[], []]
+Swordsman, Sharp Scoundrel (54) - [Couldn't add to stack, failed to target] -  [[], []]
+Swordsman, Sharp Scoundrel (54) - [Couldn't add to stack, failed to target] -  [[], []]
+Swordsman, Sharp Scoundrel (54) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: lf_002_UB has lost because life total reached 0
+Game Outcome: lf_000_WB has won because all opponents have lost
+Match Result: lf_002_UB: 0 lf_000_WB: 1 
+
+Game Result: Game 1 ended in 4999 ms. lf_000_WB has won!
+
+Match Winner - lf_000_WB!
+
+Round 9 - lf_003_WR[12] vs lf_005_UB[9] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 13
+Game Outcome: lf_003_WR has won because all opponents have lost
+Game Outcome: lf_005_UB has lost because life total reached 0
+Match Result: lf_003_WR: 1 lf_005_UB: 0 
+
+Game Result: Game 1 ended in 4890 ms. lf_003_WR has won!
+
+Match Winner - lf_003_WR!
+
+lf_008_WB		7 Wins(0 Byes)-2 Losses-0 Ties	=>	21 Points
+lf_004_BR		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+lf_007_WR		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+lf_003_WR		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lf_000_WB		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lf_009_BR		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lf_002_UB		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lf_006_RG		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lf_005_UB		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lf_001_BR		1 Wins(0 Byes)-8 Losses-0 Ties	=>	3 Points

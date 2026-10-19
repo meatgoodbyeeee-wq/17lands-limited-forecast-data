@@ -1,0 +1,826 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36803 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Error handling registered!
+20:37:18 [INFO ] GuiBase: ##########################################
+20:37:18 [INFO ] GuiBase: APP: Forge v.2.0.16-SNAPSHOT-10.19
+20:37:18 [INFO ] GuiBase: Java: 21.0.12.1 (Ubuntu)
+20:37:18 [INFO ] GuiBase: OS: Linux 6.18.44-fc-v139 amd64
+20:37:18 [INFO ] GuiBase: RAM: 2048 MB max, 2 CPUs
+20:37:18 [INFO ] GuiBase: ##########################################
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 1 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+Simulation mode
+Starting a RoundRobin tournament with 10 players over 9 rounds
+
+Round 1 Pairings:
+lf_077_WR[0] vs lf_075_UB[0] 
+lf_072_WB[0] vs lf_073_BG[0] 
+lf_070_UB[0] vs lf_071_BG[0] 
+lf_078_BR[0] vs lf_076_BR[0] 
+lf_074_WB[0] vs lf_079_BG[0] 
+
+Round 1 - lf_077_WR[0] vs lf_075_UB[0] 
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 10
+Game Outcome: lf_077_WR has lost because life total reached 0
+Game Outcome: lf_075_UB has won because all opponents have lost
+Match Result: lf_077_WR: 0 lf_075_UB: 1 
+
+Game Result: Game 1 ended in 9602 ms. lf_075_UB has won!
+
+Match Winner - lf_075_UB!
+
+Round 1 - lf_072_WB[0] vs lf_073_BG[0] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 12
+Game Outcome: lf_072_WB has won because all opponents have lost
+Game Outcome: lf_073_BG has lost because life total reached 0
+Match Result: lf_072_WB: 1 lf_073_BG: 0 
+
+Game Result: Game 1 ended in 12969 ms. lf_072_WB has won!
+
+Match Winner - lf_072_WB!
+
+Round 1 - lf_070_UB[0] vs lf_071_BG[0] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 9
+Game Outcome: lf_070_UB has won because all opponents have lost
+Game Outcome: lf_071_BG has lost because life total reached 0
+Match Result: lf_070_UB: 1 lf_071_BG: 0 
+
+Game Result: Game 1 ended in 7560 ms. lf_070_UB has won!
+
+Match Winner - lf_070_UB!
+
+Round 1 - lf_078_BR[0] vs lf_076_BR[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lf_078_BR has lost because life total reached 0
+Game Outcome: lf_076_BR has won because all opponents have lost
+Match Result: lf_078_BR: 0 lf_076_BR: 1 
+
+Game Result: Game 1 ended in 3813 ms. lf_076_BR has won!
+
+Match Winner - lf_076_BR!
+
+Round 1 - lf_074_WB[0] vs lf_079_BG[0] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lf_074_WB has won because all opponents have lost
+Game Outcome: lf_079_BG has lost because life total reached 0
+Match Result: lf_074_WB: 1 lf_079_BG: 0 
+
+Game Result: Game 1 ended in 3069 ms. lf_074_WB has won!
+
+Match Winner - lf_074_WB!
+
+End Round - 1
+
+Round 2 Pairings:
+lf_077_WR[0] vs lf_072_WB[3] 
+lf_070_UB[3] vs lf_075_UB[3] 
+lf_078_BR[0] vs lf_073_BG[0] 
+lf_074_WB[3] vs lf_071_BG[0] 
+lf_079_BG[0] vs lf_076_BR[3] 
+
+Round 2 - lf_077_WR[0] vs lf_072_WB[3] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 15
+Game Outcome: lf_077_WR has lost because life total reached 0
+Game Outcome: lf_072_WB has won because all opponents have lost
+Match Result: lf_077_WR: 0 lf_072_WB: 1 
+
+Game Result: Game 1 ended in 6490 ms. lf_072_WB has won!
+
+Match Winner - lf_072_WB!
+
+Round 2 - lf_070_UB[3] vs lf_075_UB[3] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 10
+Game Outcome: lf_070_UB has lost because life total reached 0
+Game Outcome: lf_075_UB has won because all opponents have lost
+Match Result: lf_070_UB: 0 lf_075_UB: 1 
+
+Game Result: Game 1 ended in 6454 ms. lf_075_UB has won!
+
+Match Winner - lf_075_UB!
+
+Round 2 - lf_078_BR[0] vs lf_073_BG[0] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_078_BR has won because all opponents have lost
+Game Outcome: lf_073_BG has lost because life total reached 0
+Match Result: lf_078_BR: 1 lf_073_BG: 0 
+
+Game Result: Game 1 ended in 2380 ms. lf_078_BR has won!
+
+Match Winner - lf_078_BR!
+
+Round 2 - lf_074_WB[3] vs lf_071_BG[0] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_074_WB has won because all opponents have lost
+Game Outcome: lf_071_BG has lost because life total reached 0
+Match Result: lf_074_WB: 1 lf_071_BG: 0 
+
+Game Result: Game 1 ended in 1921 ms. lf_074_WB has won!
+
+Match Winner - lf_074_WB!
+
+Round 2 - lf_079_BG[0] vs lf_076_BR[3] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lf_079_BG has won because all opponents have lost
+Game Outcome: lf_076_BR has lost because life total reached 0
+Match Result: lf_079_BG: 1 lf_076_BR: 0 
+
+Game Result: Game 1 ended in 3906 ms. lf_079_BG has won!
+
+Match Winner - lf_079_BG!
+
+End Round - 2
+
+Round 3 Pairings:
+lf_077_WR[0] vs lf_070_UB[3] 
+lf_078_BR[3] vs lf_072_WB[6] 
+lf_074_WB[6] vs lf_075_UB[6] 
+lf_079_BG[3] vs lf_073_BG[0] 
+lf_076_BR[3] vs lf_071_BG[0] 
+
+Round 3 - lf_077_WR[0] vs lf_070_UB[3] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lf_077_WR has lost because life total reached 0
+Game Outcome: lf_070_UB has won because all opponents have lost
+Match Result: lf_077_WR: 0 lf_070_UB: 1 
+
+Game Result: Game 1 ended in 2064 ms. lf_070_UB has won!
+
+Match Winner - lf_070_UB!
+
+Round 3 - lf_078_BR[3] vs lf_072_WB[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_078_BR has lost because life total reached 0
+Game Outcome: lf_072_WB has won because all opponents have lost
+Match Result: lf_078_BR: 0 lf_072_WB: 1 
+
+Game Result: Game 1 ended in 3066 ms. lf_072_WB has won!
+
+Match Winner - lf_072_WB!
+
+Round 3 - lf_074_WB[6] vs lf_075_UB[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lf_074_WB has won because all opponents have lost
+Game Outcome: lf_075_UB has lost because life total reached 0
+Match Result: lf_074_WB: 1 lf_075_UB: 0 
+
+Game Result: Game 1 ended in 2611 ms. lf_074_WB has won!
+
+Match Winner - lf_074_WB!
+
+Round 3 - lf_079_BG[3] vs lf_073_BG[0] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 12
+Game Outcome: lf_079_BG has lost because life total reached 0
+Game Outcome: lf_073_BG has won because all opponents have lost
+Match Result: lf_079_BG: 0 lf_073_BG: 1 
+
+Game Result: Game 1 ended in 4789 ms. lf_073_BG has won!
+
+Match Winner - lf_073_BG!
+
+Round 3 - lf_076_BR[3] vs lf_071_BG[0] 
+Swamp Did not have activator set in SpellAbilityRestriction.canPlay()
+Swamp Did not have activator set in SpellAbilityRestriction.canPlay()
+Swamp Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lf_076_BR has won because all opponents have lost
+Game Outcome: lf_071_BG has lost because life total reached 0
+Match Result: lf_076_BR: 1 lf_071_BG: 0 
+
+Game Result: Game 1 ended in 2400 ms. lf_076_BR has won!
+
+Match Winner - lf_076_BR!
+
+End Round - 3
+
+Round 4 Pairings:
+lf_077_WR[0] vs lf_078_BR[3] 
+lf_074_WB[9] vs lf_070_UB[6] 
+lf_079_BG[3] vs lf_072_WB[9] 
+lf_076_BR[6] vs lf_075_UB[6] 
+lf_071_BG[0] vs lf_073_BG[3] 
+
+Round 4 - lf_077_WR[0] vs lf_078_BR[3] 
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Swamp Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Swamp Did not have activator set in SpellAbilityRestriction.canPlay()
+SVar 'X' not found in ability, fallback to Card (Scorchmark). Ability is (Scorchmark deals 2 damage to target creature. If that creature would die this turn, exile it instead.)
+SVar 'X' not defined in Card (Scorchmark)
+SVar 'X' not found in ability, fallback to Card (Scorchmark). Ability is (Scorchmark deals 2 damage to target creature. If that creature would die this turn, exile it instead.)
+SVar 'X' not defined in Card (Scorchmark)
+Swamp Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 8
+Game Outcome: lf_077_WR has lost because life total reached 0
+Game Outcome: lf_078_BR has won because all opponents have lost
+Match Result: lf_077_WR: 0 lf_078_BR: 1 
+
+Game Result: Game 1 ended in 5370 ms. lf_078_BR has won!
+
+Match Winner - lf_078_BR!
+
+Round 4 - lf_074_WB[9] vs lf_070_UB[6] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lf_074_WB has won because all opponents have lost
+Game Outcome: lf_070_UB has lost because life total reached 0
+Match Result: lf_074_WB: 1 lf_070_UB: 0 
+
+Game Result: Game 1 ended in 2794 ms. lf_074_WB has won!
+
+Match Winner - lf_074_WB!
+
+Round 4 - lf_079_BG[3] vs lf_072_WB[9] 
+Swordsman, Sharp Scoundrel (54) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 10
+Game Outcome: lf_079_BG has won because all opponents have lost
+Game Outcome: lf_072_WB has lost because life total reached 0
+Match Result: lf_079_BG: 1 lf_072_WB: 0 
+
+Game Result: Game 1 ended in 4942 ms. lf_079_BG has won!
+
+Match Winner - lf_079_BG!
+
+Round 4 - lf_076_BR[6] vs lf_075_UB[6] 
+Game Outcome: Match Duration 0m : 09s
+Game Outcome: Turn 11
+Game Outcome: lf_076_BR has won because all opponents have lost
+Game Outcome: lf_075_UB has lost because life total reached 0
+Match Result: lf_076_BR: 1 lf_075_UB: 0 
+
+Game Result: Game 1 ended in 10273 ms. lf_076_BR has won!
+
+Match Winner - lf_076_BR!
+
+Round 4 - lf_071_BG[0] vs lf_073_BG[3] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lf_071_BG has lost because life total reached 0
+Game Outcome: lf_073_BG has won because all opponents have lost
+Match Result: lf_071_BG: 0 lf_073_BG: 1 
+
+Game Result: Game 1 ended in 2895 ms. lf_073_BG has won!
+
+Match Winner - lf_073_BG!
+
+End Round - 4
+
+Round 5 Pairings:
+lf_077_WR[0] vs lf_074_WB[12] 
+lf_079_BG[6] vs lf_078_BR[6] 
+lf_076_BR[9] vs lf_070_UB[6] 
+lf_071_BG[0] vs lf_072_WB[9] 
+lf_073_BG[6] vs lf_075_UB[6] 
+
+Round 5 - lf_077_WR[0] vs lf_074_WB[12] 
+SVar 'X' not found in ability, fallback to Card (Lightning Strike). Ability is (Lightning Strike deals 3 damage to any target.)
+SVar 'X' not defined in Card (Lightning Strike)
+SVar 'X' not found in ability, fallback to Card (Command the Storm). Ability is (Command the Storm deals 5 damage to target creature.)
+SVar 'X' not defined in Card (Command the Storm)
+SVar 'X' not found in ability, fallback to Card (Command the Storm). Ability is (Command the Storm deals 5 damage to target creature.)
+SVar 'X' not defined in Card (Command the Storm)
+SVar 'X' not found in ability, fallback to Card (Command the Storm). Ability is (Command the Storm deals 5 damage to target creature.)
+SVar 'X' not defined in Card (Command the Storm)
+SVar 'X' not found in ability, fallback to Card (Command the Storm). Ability is (Command the Storm deals 5 damage to target creature.)
+SVar 'X' not defined in Card (Command the Storm)
+SVar 'X' not found in ability, fallback to Card (Command the Storm). Ability is (Command the Storm deals 5 damage to target creature.)
+SVar 'X' not defined in Card (Command the Storm)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_077_WR has lost because life total reached 0
+Game Outcome: lf_074_WB has won because all opponents have lost
+Match Result: lf_077_WR: 0 lf_074_WB: 1 
+
+Game Result: Game 1 ended in 2162 ms. lf_074_WB has won!
+
+Match Winner - lf_074_WB!
+
+Round 5 - lf_079_BG[6] vs lf_078_BR[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_079_BG has lost because life total reached 0
+Game Outcome: lf_078_BR has won because all opponents have lost
+Match Result: lf_079_BG: 0 lf_078_BR: 1 
+
+Game Result: Game 1 ended in 1848 ms. lf_078_BR has won!
+
+Match Winner - lf_078_BR!
+
+Round 5 - lf_076_BR[9] vs lf_070_UB[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 12
+Game Outcome: lf_076_BR has lost because life total reached 0
+Game Outcome: lf_070_UB has won because all opponents have lost
+Match Result: lf_076_BR: 0 lf_070_UB: 1 
+
+Game Result: Game 1 ended in 2765 ms. lf_070_UB has won!
+
+Match Winner - lf_070_UB!
+
+Round 5 - lf_071_BG[0] vs lf_072_WB[9] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lf_071_BG has won because all opponents have lost
+Game Outcome: lf_072_WB has lost because life total reached 0
+Match Result: lf_071_BG: 1 lf_072_WB: 0 
+
+Game Result: Game 1 ended in 2634 ms. lf_071_BG has won!
+
+Match Winner - lf_071_BG!
+
+Round 5 - lf_073_BG[6] vs lf_075_UB[6] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 13
+Game Outcome: lf_073_BG has won because all opponents have lost
+Game Outcome: lf_075_UB has lost because life total reached 0
+Match Result: lf_073_BG: 1 lf_075_UB: 0 
+
+Game Result: Game 1 ended in 6776 ms. lf_073_BG has won!
+
+Match Winner - lf_073_BG!
+
+End Round - 5
+
+Round 6 Pairings:
+lf_077_WR[0] vs lf_079_BG[6] 
+lf_076_BR[9] vs lf_074_WB[15] 
+lf_071_BG[3] vs lf_078_BR[9] 
+lf_073_BG[9] vs lf_070_UB[9] 
+lf_075_UB[6] vs lf_072_WB[9] 
+
+Round 6 - lf_077_WR[0] vs lf_079_BG[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 11
+Game Outcome: lf_077_WR has lost because life total reached 0
+Game Outcome: lf_079_BG has won because all opponents have lost
+Match Result: lf_077_WR: 0 lf_079_BG: 1 
+
+Game Result: Game 1 ended in 4130 ms. lf_079_BG has won!
+
+Match Winner - lf_079_BG!
+
+Round 6 - lf_076_BR[9] vs lf_074_WB[15] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_076_BR has lost because life total reached 0
+Game Outcome: lf_074_WB has won because all opponents have lost
+Match Result: lf_076_BR: 0 lf_074_WB: 1 
+
+Game Result: Game 1 ended in 1558 ms. lf_074_WB has won!
+
+Match Winner - lf_074_WB!
+
+Round 6 - lf_071_BG[3] vs lf_078_BR[9] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 13
+Game Outcome: lf_071_BG has lost because life total reached 0
+Game Outcome: lf_078_BR has won because all opponents have lost
+Match Result: lf_071_BG: 0 lf_078_BR: 1 
+
+Game Result: Game 1 ended in 6490 ms. lf_078_BR has won!
+
+Match Winner - lf_078_BR!
+
+Round 6 - lf_073_BG[9] vs lf_070_UB[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_073_BG has lost because life total reached 0
+Game Outcome: lf_070_UB has won because all opponents have lost
+Match Result: lf_073_BG: 0 lf_070_UB: 1 
+
+Game Result: Game 1 ended in 1413 ms. lf_070_UB has won!
+
+Match Winner - lf_070_UB!
+
+Round 6 - lf_075_UB[6] vs lf_072_WB[9] 
+Swordsman, Sharp Scoundrel (54) - [Couldn't add to stack, failed to target] -  [[], []]
+Swordsman, Sharp Scoundrel (54) - [Couldn't add to stack, failed to target] -  [[], []]
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 13
+Game Outcome: lf_075_UB has lost because life total reached 0
+Game Outcome: lf_072_WB has won because all opponents have lost
+Match Result: lf_075_UB: 0 lf_072_WB: 1 
+
+Game Result: Game 1 ended in 12708 ms. lf_072_WB has won!
+
+Match Winner - lf_072_WB!
+
+End Round - 6
+
+Round 7 Pairings:
+lf_077_WR[0] vs lf_076_BR[9] 
+lf_071_BG[3] vs lf_079_BG[9] 
+lf_073_BG[9] vs lf_074_WB[18] 
+lf_075_UB[6] vs lf_078_BR[12] 
+lf_072_WB[12] vs lf_070_UB[12] 
+
+Round 7 - lf_077_WR[0] vs lf_076_BR[9] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Plains Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 12
+Game Outcome: lf_077_WR has won because all opponents have lost
+Game Outcome: lf_076_BR has lost because life total reached 0
+Match Result: lf_077_WR: 1 lf_076_BR: 0 
+
+Game Result: Game 1 ended in 1914 ms. lf_077_WR has won!
+
+Match Winner - lf_077_WR!
+
+Round 7 - lf_071_BG[3] vs lf_079_BG[9] 
+Game Outcome: Match Duration 0m : 25s
+Game Outcome: Turn 12
+Game Outcome: lf_071_BG has won because all opponents have lost
+Game Outcome: lf_079_BG has lost because life total reached 0
+Match Result: lf_071_BG: 1 lf_079_BG: 0 
+
+Game Result: Game 1 ended in 25386 ms. lf_071_BG has won!
+
+Match Winner - lf_071_BG!
+
+Round 7 - lf_073_BG[9] vs lf_074_WB[18] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_073_BG has won because all opponents have lost
+Game Outcome: lf_074_WB has lost because life total reached 0
+Match Result: lf_073_BG: 1 lf_074_WB: 0 
+
+Game Result: Game 1 ended in 1474 ms. lf_073_BG has won!
+
+Match Winner - lf_073_BG!
+
+Round 7 - lf_075_UB[6] vs lf_078_BR[12] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lf_075_UB has won because all opponents have lost
+Game Outcome: lf_078_BR has lost because life total reached 0
+Match Result: lf_075_UB: 1 lf_078_BR: 0 
+
+Game Result: Game 1 ended in 3981 ms. lf_075_UB has won!
+
+Match Winner - lf_075_UB!
+
+Round 7 - lf_072_WB[12] vs lf_070_UB[12] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_072_WB has lost because life total reached 0
+Game Outcome: lf_070_UB has won because all opponents have lost
+Match Result: lf_072_WB: 0 lf_070_UB: 1 
+
+Game Result: Game 1 ended in 3065 ms. lf_070_UB has won!
+
+Match Winner - lf_070_UB!
+
+End Round - 7
+
+Round 8 Pairings:
+lf_077_WR[3] vs lf_071_BG[6] 
+lf_073_BG[12] vs lf_076_BR[9] 
+lf_075_UB[9] vs lf_079_BG[9] 
+lf_072_WB[12] vs lf_074_WB[18] 
+lf_070_UB[15] vs lf_078_BR[12] 
+
+Round 8 - lf_077_WR[3] vs lf_071_BG[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_077_WR has won because all opponents have lost
+Game Outcome: lf_071_BG has lost because life total reached 0
+Match Result: lf_077_WR: 1 lf_071_BG: 0 
+
+Game Result: Game 1 ended in 1658 ms. lf_077_WR has won!
+
+Match Winner - lf_077_WR!
+
+Round 8 - lf_073_BG[12] vs lf_076_BR[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 11
+Game Outcome: lf_073_BG has won because all opponents have lost
+Game Outcome: lf_076_BR has lost because life total reached 0
+Match Result: lf_073_BG: 1 lf_076_BR: 0 
+
+Game Result: Game 1 ended in 1928 ms. lf_073_BG has won!
+
+Match Winner - lf_073_BG!
+
+Round 8 - lf_075_UB[9] vs lf_079_BG[9] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 7
+Game Outcome: lf_075_UB has won because all opponents have lost
+Game Outcome: lf_079_BG has lost because life total reached 0
+Match Result: lf_075_UB: 1 lf_079_BG: 0 
+
+Game Result: Game 1 ended in 1258 ms. lf_075_UB has won!
+
+Match Winner - lf_075_UB!
+
+Round 8 - lf_072_WB[12] vs lf_074_WB[18] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_072_WB has lost because life total reached 0
+Game Outcome: lf_074_WB has won because all opponents have lost
+Match Result: lf_072_WB: 0 lf_074_WB: 1 
+
+Game Result: Game 1 ended in 1772 ms. lf_074_WB has won!
+
+Match Winner - lf_074_WB!
+
+Round 8 - lf_070_UB[15] vs lf_078_BR[12] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_070_UB has lost because life total reached 0
+Game Outcome: lf_078_BR has won because all opponents have lost
+Match Result: lf_070_UB: 0 lf_078_BR: 1 
+
+Game Result: Game 1 ended in 1861 ms. lf_078_BR has won!
+
+Match Winner - lf_078_BR!
+
+End Round - 8
+
+Round 9 Pairings:
+lf_077_WR[6] vs lf_073_BG[15] 
+lf_075_UB[12] vs lf_071_BG[6] 
+lf_072_WB[12] vs lf_076_BR[9] 
+lf_070_UB[15] vs lf_079_BG[9] 
+lf_078_BR[15] vs lf_074_WB[21] 
+
+Round 9 - lf_077_WR[6] vs lf_073_BG[15] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_077_WR has lost because life total reached 0
+Game Outcome: lf_073_BG has won because all opponents have lost
+Match Result: lf_077_WR: 0 lf_073_BG: 1 
+
+Game Result: Game 1 ended in 2551 ms. lf_073_BG has won!
+
+Match Winner - lf_073_BG!
+
+Round 9 - lf_075_UB[12] vs lf_071_BG[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lf_075_UB has lost because life total reached 0
+Game Outcome: lf_071_BG has won because all opponents have lost
+Match Result: lf_075_UB: 0 lf_071_BG: 1 
+
+Game Result: Game 1 ended in 1792 ms. lf_071_BG has won!
+
+Match Winner - lf_071_BG!
+
+Round 9 - lf_072_WB[12] vs lf_076_BR[9] 
+Swamp Did not have activator set in SpellAbilityRestriction.canPlay()
+Swamp Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 11
+Game Outcome: lf_072_WB has won because all opponents have lost
+Game Outcome: lf_076_BR has lost because life total reached 0
+Match Result: lf_072_WB: 1 lf_076_BR: 0 
+
+Game Result: Game 1 ended in 4042 ms. lf_072_WB has won!
+
+Match Winner - lf_072_WB!
+
+Round 9 - lf_070_UB[15] vs lf_079_BG[9] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_070_UB has lost because life total reached 0
+Game Outcome: lf_079_BG has won because all opponents have lost
+Match Result: lf_070_UB: 0 lf_079_BG: 1 
+
+Game Result: Game 1 ended in 2162 ms. lf_079_BG has won!
+
+Match Winner - lf_079_BG!
+
+Round 9 - lf_078_BR[15] vs lf_074_WB[21] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: lf_078_BR has won because all opponents have lost
+Game Outcome: lf_074_WB has lost because life total reached 0
+Match Result: lf_078_BR: 1 lf_074_WB: 0 
+
+Game Result: Game 1 ended in 1649 ms. lf_078_BR has won!
+
+Match Winner - lf_078_BR!
+
+lf_074_WB		7 Wins(0 Byes)-2 Losses-0 Ties	=>	21 Points
+lf_078_BR		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+lf_073_BG		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+lf_072_WB		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lf_070_UB		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lf_075_UB		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lf_079_BG		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lf_076_BR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lf_071_BG		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lf_077_WR		2 Wins(0 Byes)-7 Losses-0 Ties	=>	6 Points

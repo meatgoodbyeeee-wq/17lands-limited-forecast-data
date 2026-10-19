@@ -1,0 +1,3059 @@
+START
+DRAW|Plains|lf_014_WB
+DRAW|Cruel Alliance|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|HYDRA Troopers|lf_014_WB
+DRAW|Madame Masque|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Robot Domination|lf_014_WB
+DRAW|Hour of Defeat|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Ultron Drone|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Blazing Crescendo|lf_015_BR
+DRAW|Hire a Crew|lf_015_BR
+DRAW|Swamp|lf_014_WB
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_014_WB
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_014_WB
+DRAW|Swamp|lf_015_BR
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_015_BR
+DRAW|S.H.I.E.L.D. Spy Kit|lf_014_WB
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|7|true|false|0|false|false|1|lf_014_WB
+L4|SPELL|S.H.I.E.L.D. Spy Kit|PermanentNoncreature|MAIN1|7|true|false|0|false|false|1|lf_014_WB
+DRAW|Moonstone, Harsh Mistress|lf_015_BR
+Hour of Defeat|Destroy>Surveil|MAIN1|8|true|false|0|0|1|true|true|false|lf_015_BR
+L4|SPELL|Hour of Defeat|Destroy|MAIN1|8|true|false|0|false|false|0|lf_015_BR
+DRAW|Moonstone, Harsh Mistress|lf_014_WB
+L4|SPELL|Moonstone, Harsh Mistress|PermanentCreature|MAIN2|9|true|false|0|false|false|0|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN2|9|true|false|0|false|false|1|lf_014_WB
+DRAW|Command the Storm|lf_015_BR
+DRAW|Swamp|lf_014_WB
+Command the Storm|DealDamage|COMBAT_DECLARE_ATTACKERS|11|false|true|1|0|1|true|true|false|lf_015_BR
+L4|SPELL|Command the Storm|DealDamage|COMBAT_DECLARE_ATTACKERS|11|false|true|1|true|false|0|lf_015_BR
+L4|SPELL|Madame Masque|PermanentCreature|MAIN2|11|true|false|0|false|false|0|lf_014_WB
+DRAW|Patriot, Shield Wielder|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN2|11|true|false|0|false|false|2|lf_014_WB
+DRAW|Too Evil to Stay Dead|lf_015_BR
+L4|SPELL|Moonstone, Harsh Mistress|PermanentCreature|MAIN2|12|true|false|0|false|false|0|lf_015_BR
+DRAW|Final Death|lf_014_WB
+DRAW|Swamp|lf_015_BR
+Final Death|ChangeZone|COMBAT_DECLARE_ATTACKERS|14|false|true|0|2|1|true|true|false|lf_014_WB
+L4|SPELL|Final Death|ChangeZone|COMBAT_DECLARE_ATTACKERS|14|false|true|0|false|false|2|lf_014_WB
+DRAW|Widow's Bite|lf_014_WB
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|15|false|true|0|0|2|true|true|false|lf_015_BR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_ATTACKERS|15|false|true|0|false|false|0|lf_015_BR
+Widow's Bite|Charm>Pump|COMBAT_DECLARE_ATTACKERS|15|true|true|0|2|1|true|true|false|lf_014_WB
+L4|SPELL|Widow's Bite|Charm|COMBAT_DECLARE_ATTACKERS|15|true|true|0|false|false|2|lf_014_WB
+L4|SPELL|Patriot, Shield Wielder|PermanentCreature|MAIN2|15|true|false|0|false|false|2|lf_014_WB
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_014_WB
+END|lf_014_WB
+START
+DRAW|Stolen Stark Tech|lf_017_BR
+DRAW|Unliving Legionnaire|lf_017_BR
+DRAW|Klaw, Sonic Subjugator|lf_017_BR
+DRAW|Roxxon Brutes|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Crimson Operative|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Swamp|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Vibranium Energy Daggers|lf_013_UB
+DRAW|Robot Domination|lf_013_UB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|1|true|false|0|false|false|0|lf_013_UB
+DRAW|Sear|lf_017_BR
+DRAW|Island|lf_013_UB
+DRAW|Visions of Villainy|lf_017_BR
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|0|true|false|true|lf_017_BR
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|false|false|0|lf_017_BR
+DRAW|Echo, Perceptive Prodigy|lf_013_UB
+L4|SPELL|Echo, Perceptive Prodigy|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_013_UB
+DRAW|Dependable Quinjet|lf_017_BR
+L4|ABIL|Roxxon Brutes|ChangeZone|END_OF_TURN|6|true|false|0|false|false|0|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Ninja of the Hand|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|7|true|false|0|false|false|1|lf_013_UB
+DRAW|HYDRA Assault Robot|lf_017_BR
+DRAW|Super Intelligence|lf_013_UB
+L4|SPELL|Robot Domination|PermanentNoncreature|MAIN2|9|true|false|0|false|false|1|lf_013_UB
+Visions of Villainy|Draw>LoseLife|MAIN2|9|false|false|1|0|1|true|true|false|lf_017_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|9|false|false|1|true|false|0|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_017_BR
+DRAW|Machinesmith Automaton|lf_017_BR
+DRAW|HYDRA Troopers|lf_017_BR
+DRAW|Island|lf_013_UB
+L4|SPELL|Ninja of the Hand|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_013_UB
+L4|ABIL|Ninja of the Hand|Discard|MAIN2|11|true|false|0|false|false|2|lf_013_UB
+Sear|DealDamage|MAIN2|11|false|false|1|0|2|true|true|false|lf_017_BR
+L4|SPELL|Sear|DealDamage|MAIN2|11|false|false|1|true|false|0|lf_017_BR
+DRAW|Agents of HYDRA|lf_013_UB
+DRAW|Repulsor Blast|lf_017_BR
+L4|SPELL|Machinesmith Automaton|PermanentCreature|MAIN2|12|true|false|0|false|false|0|lf_017_BR
+DRAW|Island|lf_013_UB
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|13|true|false|0|false|false|1|lf_013_UB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_017_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN1|14|true|false|0|false|false|1|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|14|true|false|0|false|false|1|lf_017_BR
+DRAW|Island|lf_013_UB
+DRAW|Swamp|lf_017_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|16|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|16|true|false|0|false|false|1|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_013_UB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|17|true|false|0|false|false|2|lf_013_UB
+DRAW|Whiplash, Vengeful Engineer|lf_017_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|18|true|true|0|false|false|1|lf_017_BR
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|18|true|false|0|false|false|2|lf_017_BR
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN2|18|true|false|0|false|false|4|lf_017_BR
+DRAW|Stolen Stark Tech|lf_013_UB
+Stolen Stark Tech|PermanentNoncreature|DRAW|19|true|false|0|3|4|true|false|true|lf_013_UB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|DRAW|19|true|false|0|false|false|3|lf_013_UB
+DRAW|Red Hulk|lf_017_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|20|true|false|0|false|false|3|lf_017_BR
+DRAW|Kang, Temporal Tyrant|lf_013_UB
+DRAW|Atlantis Attacks|lf_013_UB
+L4|SPELL|Kang, Temporal Tyrant|PermanentCreature|MAIN1|21|true|false|0|false|false|2|lf_013_UB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|21|true|false|0|false|false|3|lf_013_UB
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_DECLARE_ATTACKERS|21|false|true|0|false|false|3|lf_017_BR
+DRAW|Swamp|lf_017_BR
+L4|SPELL|Red Hulk|PermanentCreature|MAIN2|22|true|false|0|false|false|2|lf_017_BR
+DRAW|Cruel Alliance|lf_013_UB
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|23|true|false|0|false|false|3|lf_013_UB
+DRAW|Island|lf_013_UB
+L4|SPELL|Atlantis Attacks|Charm|MAIN2|23|true|false|0|false|false|5|lf_013_UB
+DRAW|Mountain|lf_017_BR
+L4|SPELL|Klaw, Sonic Subjugator|PermanentCreature|MAIN2|24|true|false|0|false|false|0|lf_017_BR
+L4|SPELL|HYDRA Assault Robot|PermanentCreature|MAIN2|24|true|false|0|false|false|1|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|24|true|false|0|false|false|2|lf_017_BR
+DRAW|Swamp|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|25|true|false|0|false|false|6|lf_013_UB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|25|true|false|0|false|false|6|lf_013_UB
+DRAW|Bilbo's Deadly Slice|lf_013_UB
+END|lf_013_UB
+START
+DRAW|Swamp|lf_011_WB
+DRAW|Vibranium Energy Daggers|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Stolen Stark Tech|lf_011_WB
+DRAW|Roxxon Brutes|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Plains|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Web Up|lf_018_WR
+DRAW|Quicksilver, Brash Blur|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Vision of Love|lf_018_WR
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|1|true|false|0|false|false|0|lf_011_WB
+DRAW|Plains|lf_018_WR
+DRAW|Decoy Ploy|lf_011_WB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|0|1|true|false|true|lf_011_WB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|false|false|0|lf_011_WB
+DRAW|Plains|lf_018_WR
+DRAW|HYDRA Infiltration|lf_011_WB
+DRAW|Agent 13, Sharon Carter|lf_018_WR
+L4|SPELL|Web Up|PermanentNoncreature|MAIN1|6|true|false|0|false|false|1|lf_018_WR
+L4|ABIL|Roxxon Brutes|ChangeZone|END_OF_TURN|6|false|false|0|false|false|0|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Cloak and Dagger, Entwined|lf_011_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN2|7|true|false|0|false|false|0|lf_011_WB
+DRAW|Hire a Crew|lf_018_WR
+L4|SPELL|Agent 13, Sharon Carter|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_018_WR
+DRAW|Plains|lf_011_WB
+Decoy Ploy|Charm>ChangeZone|MAIN2|9|true|false|0|0|2|true|true|false|lf_011_WB
+L4|SPELL|Decoy Ploy|Charm|MAIN2|9|true|false|0|false|false|0|lf_011_WB
+DRAW|A.I.M. Synthoids|lf_018_WR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|10|true|false|0|false|false|2|lf_018_WR
+DRAW|Plains|lf_011_WB
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|11|true|false|0|false|false|0|lf_011_WB
+DRAW|Hero in Training|lf_018_WR
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|12|true|false|0|false|false|3|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Swamp|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|13|true|false|0|false|false|1|lf_011_WB
+DRAW|Repulsor Blast|lf_018_WR
+DRAW|Plains|lf_011_WB
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|15|false|true|0|4|1|true|true|false|lf_018_WR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_ATTACKERS|15|false|true|0|false|false|4|lf_018_WR
+DRAW|Mountain|lf_018_WR
+L4|ABIL|Quicksilver, Brash Blur|PutCounter|COMBAT_DECLARE_BLOCKERS|16|true|true|0|false|false|5|lf_018_WR
+END|lf_018_WR
+START
+DRAW|Mountain|lf_019_RG
+DRAW|Mountain|lf_019_RG
+DRAW|Machinesmith Automaton|lf_019_RG
+DRAW|Crimson Operative|lf_019_RG
+DRAW|Tigra, Feline Fury|lf_019_RG
+DRAW|Mountain|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Volcanic Villain|lf_012_BR
+DRAW|Viv Vision, Teen Synthezoid|lf_012_BR
+DRAW|Feed the Flames|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Cruel Alliance|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Blazing Crescendo|lf_012_BR
+DRAW|Repulsor Blast|lf_012_BR
+DRAW|Mountain|lf_019_RG
+DRAW|Mountain|lf_012_BR
+Tigra, Feline Fury|PermanentCreature|END_OF_TURN|4|false|false|0|0|0|true|false|true|lf_019_RG
+L4|SPELL|Tigra, Feline Fury|PermanentCreature|END_OF_TURN|4|false|false|0|false|false|0|lf_019_RG
+DRAW|K'un-Lun Warrior|lf_019_RG
+L4|SPELL|Machinesmith Automaton|PermanentCreature|MAIN2|5|true|false|0|false|false|1|lf_019_RG
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|6|true|false|0|false|false|0|lf_012_BR
+DRAW|Claim the Kingdom|lf_019_RG
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN1|7|true|false|0|false|false|2|lf_019_RG
+DRAW|Mountain|lf_012_BR
+Feed the Flames|DealDamage|MAIN1|8|true|false|0|1|3|true|true|false|lf_012_BR
+L4|SPELL|Feed the Flames|DealDamage|MAIN1|8|true|false|0|false|false|1|lf_012_BR
+DRAW|A.I.M. Synthoids|lf_019_RG
+L4|SPELL|Claim the Kingdom|PermanentNoncreature|MAIN1|9|true|false|0|false|false|2|lf_019_RG
+Team Tactics|Pump>Pump|COMBAT_DECLARE_BLOCKERS|9|true|true|0|2|1|true|true|false|lf_019_RG
+L4|SPELL|Team Tactics|Pump|COMBAT_DECLARE_BLOCKERS|9|true|true|0|false|false|2|lf_019_RG
+DRAW|Agents of HYDRA|lf_012_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|10|true|false|0|false|false|0|lf_012_BR
+DRAW|HYDRA Assault Robot|lf_019_RG
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_019_RG
+L4|SPELL|HYDRA Assault Robot|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_019_RG
+DRAW|Red Room Recruit|lf_012_BR
+L4|SPELL|Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|12|true|false|0|false|false|0|lf_012_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_012_BR
+DRAW|HYDRA Infiltration|lf_012_BR
+DRAW|Magma Spray|lf_019_RG
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|14|true|false|0|false|false|2|lf_012_BR
+Magma Spray|DealDamage|MAIN1|14|false|false|1|3|2|true|true|false|lf_019_RG
+L4|SPELL|Magma Spray|DealDamage|MAIN1|14|false|false|1|true|false|3|lf_019_RG
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|MAIN1|14|true|false|2|2|3|true|true|false|lf_012_BR
+L4|SPELL|Blazing Crescendo|Pump|MAIN1|14|true|false|2|true|false|2|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Forest|lf_019_RG
+DRAW|K'un-Lun Warrior|lf_012_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_012_BR
+DRAW|Forest|lf_019_RG
+DRAW|Swamp|lf_012_BR
+DRAW|Serpent Specialist|lf_019_RG
+L4|SPELL|Serpent Specialist|PermanentCreature|MAIN2|19|true|false|0|false|false|2|lf_019_RG
+L4|ABIL|Viv Vision, Teen Synthezoid|PutCounter|END_OF_TURN|19|false|false|0|false|false|3|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_012_BR
+L4|ABIL|Serpent Specialist|PutCounter|COMBAT_DECLARE_BLOCKERS|20|false|true|0|false|false|3|lf_019_RG
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|20|true|false|0|false|false|3|lf_012_BR
+DRAW|Forest|lf_019_RG
+END|lf_019_RG
+START
+DRAW|Black Widow, Double Agent|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Murdock's Crusade|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|H.E.R.B.I.E. Scout Unit|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Hawkeye, Master Marksman|lf_010_BR
+DRAW|Dependable Quinjet|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Wonder Man, Hollywood Hero|lf_010_BR
+DRAW|Swamp|lf_016_WB
+DRAW|Iron Fist, Living Weapon|lf_010_BR
+L4|SPELL|Hawkeye, Master Marksman|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_010_BR
+DRAW|Plains|lf_016_WB
+DRAW|Avengers: Under Siege|lf_010_BR
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Black Widow, Double Agent|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_016_WB
+DRAW|Cruel Alliance|lf_010_BR
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|7|true|false|0|false|false|1|lf_010_BR
+DRAW|A.I.M. Synthoids|lf_016_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_016_WB
+DRAW|Truck Toss|lf_010_BR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_010_BR
+DRAW|Mockingbird, Ace Agent|lf_016_WB
+L4|SPELL|Mockingbird, Ace Agent|PermanentCreature|MAIN2|10|true|false|0|false|false|1|lf_016_WB
+DRAW|Swamp|lf_010_BR
+L4|SPELL|H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_010_BR
+DRAW|Volcanic Villain|lf_010_BR
+DRAW|HYDRA Infiltration|lf_016_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|12|true|false|0|false|false|2|lf_016_WB
+DRAW|Mountain|lf_010_BR
+Truck Toss|DealDamage|MAIN1|13|true|false|0|3|2|true|true|false|lf_010_BR
+L4|SPELL|Truck Toss|DealDamage|MAIN1|13|true|false|0|false|false|3|lf_010_BR
+DRAW|Plains|lf_016_WB
+DRAW|Mountain|lf_010_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|15|true|false|0|false|false|3|lf_010_BR
+L4|ABIL|Volcanic Villain|PutCounter|COMBAT_DECLARE_BLOCKERS|15|true|true|0|false|false|4|lf_010_BR
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Murdock's Crusade|Charm|MAIN1|16|true|false|0|false|false|1|lf_016_WB
+DRAW|Super Speed|lf_010_BR
+L4|SPELL|Avengers: Under Siege|PermanentNoncreature|MAIN2|17|true|false|0|false|false|3|lf_010_BR
+DRAW|Whiplash, Vengeful Engineer|lf_016_WB
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN2|18|true|false|0|false|false|1|lf_016_WB
+DRAW|Ultron Drone|lf_010_BR
+END|lf_010_BR
+START
+DRAW|Kree Commandos|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|A.I.M. Synthoids|lf_014_WB
+DRAW|Madame Masque|lf_014_WB
+DRAW|Patriot, Shield Wielder|lf_014_WB
+DRAW|Vibranium Energy Daggers|lf_014_WB
+DRAW|HYDRA Infiltration|lf_014_WB
+DRAW|Swamp|lf_017_BR
+DRAW|Roxxon Brutes|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Machinesmith Automaton|lf_017_BR
+DRAW|Project Deathlok Soldier|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_017_BR
+DRAW|Cloak and Dagger, Entwined|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Vibranium Energy Daggers|lf_014_WB
+DRAW|Panther Pounce|lf_014_WB
+DRAW|Widow's Bite|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Swamp|lf_014_WB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|1|true|false|0|false|false|0|lf_017_BR
+DRAW|Plains|lf_014_WB
+DRAW|Swamp|lf_017_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|3|true|false|0|false|false|1|lf_017_BR
+DRAW|Take Up the Shield|lf_014_WB
+Widow's Bite|Charm>Pump|MAIN1|4|true|false|0|0|2|true|true|false|lf_014_WB
+L4|SPELL|Widow's Bite|Charm|MAIN1|4|true|false|0|false|false|0|lf_014_WB
+DRAW|Whiplash, Vengeful Engineer|lf_017_BR
+L4|SPELL|Machinesmith Automaton|PermanentCreature|MAIN2|5|true|false|0|false|false|1|lf_017_BR
+DRAW|Hero in Training|lf_014_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_014_WB
+DRAW|Raft Security Officer|lf_014_WB
+DRAW|HYDRA Troopers|lf_017_BR
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|7|true|false|0|false|false|1|lf_017_BR
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN2|7|true|false|0|false|false|3|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_014_WB
+L4|SPELL|Raft Security Officer|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_014_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_014_WB
+DRAW|Hawkeye's Bow|lf_017_BR
+L4|SPELL|Hawkeye's Bow|PermanentNoncreature|MAIN1|9|true|false|0|false|false|4|lf_017_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|MAIN1|9|true|false|0|false|false|4|lf_017_BR
+DRAW|Moonstone, Harsh Mistress|lf_014_WB
+L4|SPELL|Moonstone, Harsh Mistress|PermanentCreature|MAIN2|10|true|false|0|false|false|2|lf_014_WB
+DRAW|Stolen Stark Tech|lf_017_BR
+Stolen Stark Tech|PermanentNoncreature|DRAW|11|true|false|0|4|3|true|false|true|lf_017_BR
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|DRAW|11|true|false|0|false|false|4|lf_017_BR
+L4|ABIL|Hawkeye's Bow|Attach|MAIN1|11|true|false|0|false|false|4|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|11|true|false|0|false|false|4|lf_017_BR
+DRAW|Plains|lf_014_WB
+Take Up the Shield|PutCounter>Pump|MAIN1|12|true|false|0|3|5|true|true|false|lf_014_WB
+L4|SPELL|Take Up the Shield|PutCounter|MAIN1|12|true|false|0|false|false|3|lf_014_WB
+L4|ABIL|Raft Security Officer|Tap|UPKEEP|13|false|false|0|false|false|3|lf_014_WB
+DRAW|Swamp|lf_017_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|13|true|false|0|false|false|5|lf_017_BR
+DRAW|Kree Commandos|lf_014_WB
+L4|SPELL|Kree Commandos|PermanentCreature|MAIN2|14|true|false|0|false|false|3|lf_014_WB
+L4|ABIL|Raft Security Officer|Tap|UPKEEP|15|false|false|0|false|false|4|lf_014_WB
+DRAW|Swamp|lf_017_BR
+DRAW|Final Death|lf_014_WB
+Final Death|ChangeZone|MAIN1|16|true|false|0|4|6|true|true|false|lf_014_WB
+L4|SPELL|Final Death|ChangeZone|MAIN1|16|true|false|0|false|false|4|lf_014_WB
+DRAW|Mountain|lf_017_BR
+DRAW|Swamp|lf_014_WB
+L4|ABIL|Raft Security Officer|Tap|UPKEEP|19|false|false|0|false|false|2|lf_014_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_017_BR
+END|lf_017_BR
+START
+DRAW|Invisible Woman, Sue Storm|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|HYDRA Infiltration|lf_011_WB
+DRAW|Dependable Quinjet|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Blazing Crescendo|lf_015_BR
+DRAW|Lightning Strike|lf_015_BR
+DRAW|Project Deathlok Soldier|lf_015_BR
+DRAW|Photon Blast Barrage|lf_015_BR
+DRAW|Red Hulk|lf_015_BR
+DRAW|Hire a Crew|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_015_BR
+DRAW|Super Villain Lockup|lf_011_WB
+DRAW|Visions of Villainy|lf_015_BR
+Super Villain Lockup|PermanentNoncreature|COMBAT_DECLARE_ATTACKERS|4|false|true|0|0|1|true|false|true|lf_011_WB
+L4|SPELL|Super Villain Lockup|PermanentNoncreature|COMBAT_DECLARE_ATTACKERS|4|false|true|0|false|false|0|lf_011_WB
+DRAW|Hero in Training|lf_011_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Speed, Young Avenger|lf_015_BR
+L4|SPELL|Speed, Young Avenger|PermanentCreature|MAIN1|6|true|false|0|false|false|0|lf_015_BR
+DRAW|Eyes of the Beholder|lf_011_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|7|true|false|0|false|false|1|lf_011_WB
+DRAW|Swamp|lf_015_BR
+Lightning Strike|DealDamage|MAIN1|8|true|false|0|1|1|true|true|false|lf_015_BR
+L4|SPELL|Lightning Strike|DealDamage|MAIN1|8|true|false|0|false|false|1|lf_015_BR
+DRAW|Crowd of True Believers|lf_011_WB
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|9|true|false|0|false|false|0|lf_011_WB
+DRAW|Super Speed|lf_015_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|10|true|true|0|1|1|true|true|false|lf_015_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_DECLARE_BLOCKERS|10|true|true|0|false|false|1|lf_015_BR
+DRAW|Project Deathlok Soldier|lf_011_WB
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|11|true|false|0|false|false|0|lf_011_WB
+L4|SPELL|Crowd of True Believers|PermanentCreature|MAIN2|11|true|false|0|false|false|0|lf_011_WB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_011_WB
+DRAW|Swamp|lf_015_BR
+L4|SPELL|Moonstone, Harsh Mistress|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_015_BR
+DRAW|Swamp|lf_011_WB
+DRAW|Mountain|lf_015_BR
+Eyes of the Beholder|Pump|COMBAT_DECLARE_BLOCKERS|14|false|true|0|2|2|true|true|false|lf_011_WB
+L4|SPELL|Eyes of the Beholder|Pump|COMBAT_DECLARE_BLOCKERS|14|false|true|0|false|false|2|lf_011_WB
+Visions of Villainy|Draw>LoseLife|MAIN2|14|true|false|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|14|true|false|0|false|false|1|lf_015_BR
+DRAW|Stark Industries Executive|lf_015_BR
+DRAW|Dark Deed|lf_015_BR
+L4|SPELL|Stark Industries Executive|PermanentCreature|MAIN2|14|true|false|0|false|false|1|lf_015_BR
+DRAW|Brave Brawler|lf_011_WB
+L4|SPELL|Brave Brawler|PermanentCreature|MAIN2|15|true|false|0|false|false|2|lf_011_WB
+DRAW|Mountain|lf_015_BR
+L4|SPELL|Photon Blast Barrage|DealDamage|MAIN1|16|true|false|0|false|false|2|lf_015_BR
+DRAW|Stolen Stark Tech|lf_011_WB
+Stolen Stark Tech|PermanentNoncreature|DRAW|17|true|false|0|2|2|true|false|true|lf_011_WB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|DRAW|17|true|false|0|false|false|2|lf_011_WB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|17|false|true|1|true|false|2|lf_015_BR
+L4|ABIL|Crowd of True Believers|Pump|COMBAT_DECLARE_BLOCKERS|17|true|true|0|false|false|2|lf_011_WB
+DRAW|Mountain|lf_015_BR
+DRAW|Plains|lf_011_WB
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_011_WB
+DRAW|Mountain|lf_015_BR
+DRAW|Unliving Legionnaire|lf_011_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|23|true|false|0|false|false|2|lf_011_WB
+L4|ABIL|Unliving Legionnaire|ChangeZone|MAIN2|23|true|false|0|false|false|3|lf_011_WB
+DRAW|Mountain|lf_015_BR
+DRAW|Vibranium Energy Daggers|lf_011_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN1|25|true|false|0|false|false|3|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|25|true|false|0|false|false|3|lf_011_WB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|25|false|true|0|false|false|2|lf_015_BR
+END|lf_011_WB
+START
+DRAW|Mountain|lf_019_RG
+DRAW|Volcanic Villain|lf_019_RG
+DRAW|Human Torch, Johnny Storm|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Mountain|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Claim the Kingdom|lf_019_RG
+DRAW|Island|lf_013_UB
+DRAW|Cruel Alliance|lf_013_UB
+DRAW|Kang, Temporal Tyrant|lf_013_UB
+DRAW|Echo, Perceptive Prodigy|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Atlantis Attacks|lf_013_UB
+DRAW|The Vision|lf_013_UB
+DRAW|The Thing, Ben Grimm|lf_019_RG
+L4|SPELL|Claim the Kingdom|PermanentNoncreature|MAIN2|3|true|false|0|false|false|0|lf_019_RG
+DRAW|Swamp|lf_013_UB
+DRAW|Crimson Operative|lf_019_RG
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|5|true|false|0|false|false|0|lf_019_RG
+DRAW|Swamp|lf_013_UB
+L4|SPELL|Echo, Perceptive Prodigy|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_013_UB
+DRAW|Serpent Specialist|lf_019_RG
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|7|true|false|0|false|false|1|lf_019_RG
+DRAW|Robot Domination|lf_013_UB
+L4|SPELL|The Vision|PermanentCreature|MAIN1|8|true|false|0|false|false|1|lf_013_UB
+DRAW|Mountain|lf_019_RG
+L4|SPELL|Kree Sentinel|PermanentCreature|MAIN2|9|true|false|0|false|false|2|lf_019_RG
+DRAW|Swamp|lf_013_UB
+L4|SPELL|Kang, Temporal Tyrant|PermanentCreature|MAIN1|10|true|false|0|false|false|2|lf_013_UB
+DRAW|Forest|lf_019_RG
+L4|SPELL|The Thing, Ben Grimm|PermanentCreature|MAIN2|11|true|false|0|false|false|3|lf_019_RG
+DRAW|Island|lf_013_UB
+L4|SPELL|Robot Domination|PermanentNoncreature|MAIN1|12|true|false|0|false|false|1|lf_013_UB
+DRAW|Unliving Legionnaire|lf_013_UB
+DRAW|Forest|lf_019_RG
+L4|ABIL|Volcanic Villain|PutCounter|COMBAT_DECLARE_BLOCKERS|13|true|true|0|false|false|4|lf_019_RG
+END|lf_019_RG
+START
+DRAW|Grim Reaper, Lethal Legionnaire|lf_016_WB
+DRAW|Agent of Atlas|lf_016_WB
+DRAW|Mockingbird, Ace Agent|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Black Widow, Double Agent|lf_016_WB
+DRAW|A.I.M. Synthoids|lf_016_WB
+DRAW|Baron Helmut Zemo|lf_016_WB
+DRAW|Repulsor Blast|lf_018_WR
+DRAW|Wakandan Drone Flock|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Okoye, Dora Milaje Leader|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Invisible Woman, Sue Storm|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Captain America's Shield|lf_016_WB
+DRAW|Unliving Legionnaire|lf_016_WB
+DRAW|Roxxon Brutes|lf_016_WB
+DRAW|Origin of the Avengers|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Ultron Drone|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Mountain|lf_018_WR
+DRAW|A.I.M. Synthoids|lf_016_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_016_WB
+DRAW|Mountain|lf_018_WR
+DRAW|Plains|lf_016_WB
+L4|SPELL|Captain America's Shield|PermanentNoncreature|MAIN1|6|true|false|0|false|false|1|lf_016_WB
+DRAW|Captain Mar-Vell, Space-Born|lf_018_WR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|7|true|false|0|false|false|0|lf_018_WR
+DRAW|Kingpin's Enforcers|lf_016_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_016_WB
+DRAW|Hire a Crew|lf_018_WR
+L4|SPELL|Captain Mar-Vell, Space-Born|PermanentCreature|MAIN2|9|true|false|0|false|false|0|lf_018_WR
+DRAW|Whiplash, Vengeful Engineer|lf_016_WB
+L4|ABIL|Captain America's Shield|Attach|MAIN1|10|true|false|0|false|false|1|lf_016_WB
+L4|SPELL|Origin of the Avengers|PermanentNoncreature|MAIN2|10|true|false|0|false|false|1|lf_016_WB
+DRAW|Plains|lf_018_WR
+L4|SPELL|Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|11|true|false|0|false|false|1|lf_018_WR
+DRAW|Swamp|lf_016_WB
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_016_WB
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN2|12|true|false|0|false|false|2|lf_016_WB
+DRAW|Spreading Flames|lf_018_WR
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|13|true|false|0|false|false|4|lf_018_WR
+DRAW|Throttle|lf_016_WB
+DRAW|Mountain|lf_018_WR
+Spreading Flames|DealDamage|MAIN1|15|true|false|0|5|3|true|true|false|lf_018_WR
+L4|SPELL|Spreading Flames|DealDamage|MAIN1|15|true|false|0|false|false|5|lf_018_WR
+Throttle|Pump|MAIN1|15|false|false|1|3|5|true|true|false|lf_016_WB
+L4|SPELL|Throttle|Pump|MAIN1|15|false|false|1|true|false|3|lf_016_WB
+DRAW|Visions of Villainy|lf_016_WB
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_016_WB
+Visions of Villainy|Draw>LoseLife|MAIN2|16|true|false|0|3|4|true|true|false|lf_016_WB
+L4|SPELL|Visions of Villainy|Draw|MAIN2|16|true|false|0|false|false|3|lf_016_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Wakandan Drone Flock|PermanentCreature|MAIN2|17|true|false|0|false|false|4|lf_018_WR
+DRAW|Hero in Training|lf_016_WB
+L4|ABIL|Ultron Drone|PutCounter|DRAW|18|true|false|0|false|false|3|lf_016_WB
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_BLOCKERS|18|false|true|0|5|4|true|true|false|lf_018_WR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_BLOCKERS|18|false|true|0|false|false|5|lf_018_WR
+DRAW|Thor Odinson|lf_018_WR
+L4|SPELL|Thor Odinson|PermanentCreature|MAIN2|19|true|false|0|false|false|6|lf_018_WR
+DRAW|Plains|lf_016_WB
+L4|ABIL|Unliving Legionnaire|ChangeZone|MAIN2|20|true|false|0|false|false|4|lf_016_WB
+DRAW|Volcanic Villain|lf_018_WR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|21|true|false|0|false|false|5|lf_018_WR
+DRAW|HYDRA Troopers|lf_016_WB
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|22|true|false|0|false|false|4|lf_016_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|22|true|false|0|false|false|5|lf_016_WB
+DRAW|Viv Vision, Teen Synthezoid|lf_018_WR
+L4|SPELL|Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|23|true|false|0|false|false|5|lf_018_WR
+DRAW|Swamp|lf_016_WB
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|24|true|false|0|false|false|6|lf_016_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|24|true|false|0|false|false|7|lf_016_WB
+DRAW|Agent of Atlas|lf_016_WB
+DRAW|Borough Backup|lf_018_WR
+L4|SPELL|Borough Backup|Token|MAIN2|25|true|false|0|false|false|4|lf_018_WR
+DRAW|Wakandan Drone Flock|lf_016_WB
+L4|ABIL|Kingpin's Enforcers|Draw|COMBAT_DECLARE_BLOCKERS|26|true|true|0|false|false|8|lf_016_WB
+DRAW|Plains|lf_016_WB
+END|lf_016_WB
+START
+DRAW|Mountain|lf_010_BR
+DRAW|Hour of Defeat|lf_010_BR
+DRAW|Visions of Villainy|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Madame Hydra|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Dependable Quinjet|lf_010_BR
+DRAW|Dependable Quinjet|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Loki Laufeyson|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Red Room Recruit|lf_012_BR
+DRAW|Crimson Operative|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Truck Toss|lf_010_BR
+DRAW|Repulsor Blast|lf_012_BR
+L4|SPELL|Loki Laufeyson|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_012_BR
+DRAW|Iron Fist, Living Weapon|lf_010_BR
+DRAW|Mountain|lf_012_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|5|true|false|0|false|false|1|lf_012_BR
+DRAW|Unliving Legionnaire|lf_010_BR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_010_BR
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|7|true|false|0|false|false|1|lf_012_BR
+DRAW|Mountain|lf_010_BR
+Hour of Defeat|Destroy>Surveil|COMBAT_BEGIN|8|true|true|0|0|1|true|true|false|lf_010_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_BEGIN|8|true|true|0|false|false|0|lf_010_BR
+DRAW|Viv Vision, Teen Synthezoid|lf_012_BR
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|9|true|false|0|false|false|0|lf_012_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_012_BR
+DRAW|Widow's Bite|lf_012_BR
+DRAW|Mountain|lf_010_BR
+Truck Toss|DealDamage|DRAW|10|true|false|0|0|2|true|true|false|lf_010_BR
+L4|SPELL|Truck Toss|DealDamage|DRAW|10|true|false|0|false|false|0|lf_010_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Mountain|lf_010_BR
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|12|true|false|0|false|false|0|lf_010_BR
+Widow's Bite|Charm>Pump|MAIN2|12|false|false|0|1|1|true|true|false|lf_012_BR
+L4|SPELL|Widow's Bite|Charm|MAIN2|12|false|false|0|false|false|1|lf_012_BR
+DRAW|Volcanic Villain|lf_012_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|13|true|false|0|false|false|1|lf_012_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|13|true|true|0|false|false|2|lf_012_BR
+DRAW|Viv Vision, Teen Synthezoid|lf_010_BR
+L4|SPELL|Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|14|true|false|0|false|false|0|lf_010_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|14|true|false|0|1|2|true|true|false|lf_010_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|14|true|false|0|false|false|1|lf_010_BR
+DRAW|Hawkeye, Master Marksman|lf_010_BR
+DRAW|K'un-Lun Warrior|lf_010_BR
+DRAW|Kree Sentinel|lf_012_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|15|true|true|0|false|false|2|lf_012_BR
+L4|SPELL|Kree Sentinel|PermanentCreature|MAIN2|15|true|false|0|false|false|3|lf_012_BR
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Hawkeye, Master Marksman|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_010_BR
+L4|SPELL|Madame Hydra|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_010_BR
+L4|ABIL|Volcanic Villain|PutCounter|UPKEEP|17|true|false|0|false|false|3|lf_012_BR
+DRAW|Feed the Flames|lf_012_BR
+DRAW|Wonder Man, Hollywood Hero|lf_010_BR
+L4|SPELL|Wonder Man, Hollywood Hero|PermanentCreature|MAIN2|18|true|false|0|false|false|0|lf_010_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Volcanic Villain|lf_010_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|20|true|false|0|false|false|0|lf_010_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|20|true|false|0|false|false|1|lf_010_BR
+Feed the Flames|DealDamage|END_OF_TURN|20|false|false|0|2|1|true|true|false|lf_012_BR
+L4|SPELL|Feed the Flames|DealDamage|END_OF_TURN|20|false|false|0|false|false|2|lf_012_BR
+DRAW|Mountain|lf_012_BR
+END|lf_012_BR
+START
+DRAW|Swamp|lf_014_WB
+DRAW|Madame Masque|lf_014_WB
+DRAW|Patriot, Shield Wielder|lf_014_WB
+DRAW|Hero in Training|lf_014_WB
+DRAW|Red Guardian, Super-Soldier|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Plains|lf_011_WB
+DRAW|Kree Commandos|lf_011_WB
+DRAW|Eyes of the Beholder|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Invisible Woman, Sue Storm|lf_011_WB
+DRAW|Crowd of True Believers|lf_014_WB
+DRAW|Decoy Ploy|lf_011_WB
+L4|SPELL|Kree Commandos|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_011_WB
+DRAW|Panther Pounce|lf_014_WB
+DRAW|Swamp|lf_011_WB
+DRAW|S.H.I.E.L.D. Spy Kit|lf_014_WB
+DRAW|Cloak and Dagger, Entwined|lf_011_WB
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_011_WB
+DRAW|Cloak and Dagger, Entwined|lf_014_WB
+DRAW|Kingpin's Enforcers|lf_011_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_011_WB
+DRAW|Raft Security Officer|lf_014_WB
+DRAW|Plains|lf_011_WB
+DRAW|Plains|lf_014_WB
+Red Guardian, Super-Soldier|PermanentCreature|MAIN1|14|true|false|0|0|3|true|false|true|lf_014_WB
+L4|SPELL|Red Guardian, Super-Soldier|PermanentCreature|MAIN1|14|true|false|0|false|false|0|lf_014_WB
+DRAW|Klaw, Sonic Subjugator|lf_011_WB
+DRAW|Moonstone, Harsh Mistress|lf_014_WB
+L4|SPELL|Moonstone, Harsh Mistress|PermanentCreature|MAIN2|16|true|false|0|false|false|0|lf_014_WB
+L4|SPELL|Crowd of True Believers|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_014_WB
+DRAW|Baron Strucker, HYDRA Overlord|lf_011_WB
+END|lf_011_WB
+START
+DRAW|K'un-Lun Warrior|lf_019_RG
+DRAW|Mountain|lf_019_RG
+DRAW|Team Tactics|lf_019_RG
+DRAW|Rick Jones, Destined Sidekick|lf_019_RG
+DRAW|Volcanic Villain|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Swamp|lf_017_BR
+DRAW|Hour of Defeat|lf_017_BR
+DRAW|Death to Our Enemies|lf_017_BR
+DRAW|Hawkeye's Bow|lf_017_BR
+DRAW|Dependable Quinjet|lf_017_BR
+DRAW|Red Hulk|lf_017_BR
+DRAW|Machinesmith Automaton|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_017_BR
+DRAW|Hawkeye's Bow|lf_017_BR
+DRAW|Machinesmith Automaton|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_017_BR
+DRAW|Project Deathlok Soldier|lf_017_BR
+DRAW|HYDRA Troopers|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Visions of Villainy|lf_017_BR
+DRAW|HYDRA Assault Robot|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Death to Our Enemies|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|HYDRA Assault Robot|lf_019_RG
+L4|SPELL|Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_019_RG
+DRAW|Mountain|lf_017_BR
+DRAW|Speed, Young Avenger|lf_019_RG
+L4|SPELL|Speed, Young Avenger|PermanentCreature|MAIN1|4|true|false|0|false|false|1|lf_019_RG
+DRAW|Unliving Legionnaire|lf_017_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|5|true|false|0|0|2|true|true|false|lf_017_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|5|true|false|0|false|false|0|lf_017_BR
+DRAW|Sear|lf_017_BR
+DRAW|Machinesmith Automaton|lf_017_BR
+DRAW|Mountain|lf_019_RG
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|6|true|false|0|false|false|2|lf_019_RG
+DRAW|Grim Reaper, Lethal Legionnaire|lf_017_BR
+Sear|DealDamage|MAIN1|7|true|false|0|0|3|true|true|false|lf_017_BR
+L4|SPELL|Sear|DealDamage|MAIN1|7|true|false|0|false|false|0|lf_017_BR
+DRAW|Serpent Specialist|lf_019_RG
+L4|SPELL|Serpent Specialist|PermanentCreature|MAIN2|8|true|false|0|false|false|2|lf_019_RG
+L4|SPELL|HYDRA Assault Robot|PermanentCreature|MAIN2|8|true|false|0|false|false|3|lf_019_RG
+DRAW|Iron Fist, Living Weapon|lf_017_BR
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|9|true|false|0|false|false|0|lf_017_BR
+DRAW|Mountain|lf_019_RG
+L4|ABIL|Serpent Specialist|PutCounter|COMBAT_DECLARE_BLOCKERS|10|true|true|0|false|false|4|lf_019_RG
+DRAW|A.I.M. Synthoids|lf_017_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_017_BR
+DRAW|Tigra, Feline Fury|lf_019_RG
+Team Tactics|Pump>Pump|COMBAT_DECLARE_BLOCKERS|12|true|true|0|4|2|true|true|false|lf_019_RG
+L4|SPELL|Team Tactics|Pump|COMBAT_DECLARE_BLOCKERS|12|true|true|0|false|false|4|lf_019_RG
+END|lf_019_RG
+START
+DRAW|Kingpin's Enforcers|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Origin of the Avengers|lf_016_WB
+DRAW|HYDRA Troopers|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Swordsman, Sharp Scoundrel|lf_016_WB
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Blazing Crescendo|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Stark Industries Executive|lf_015_BR
+DRAW|Mountain|lf_015_BR
+L4|SPELL|Stark Industries Executive|PermanentCreature|MAIN2|1|true|false|0|false|false|0|lf_015_BR
+DRAW|Agent of Atlas|lf_016_WB
+DRAW|Mountain|lf_015_BR
+DRAW|A.I.M. Synthoids|lf_016_WB
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_016_WB
+DRAW|Agents of HYDRA|lf_015_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|5|true|true|0|1|1|true|true|false|lf_015_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_DECLARE_BLOCKERS|5|true|true|0|false|false|1|lf_015_BR
+DRAW|Wakandan Drone Flock|lf_016_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_016_WB
+DRAW|Mountain|lf_015_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|7|true|false|0|false|false|1|lf_015_BR
+DRAW|Lightning Strike|lf_015_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|7|true|false|0|false|false|2|lf_015_BR
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Wakandan Drone Flock|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_016_WB
+Lightning Strike|DealDamage|UPKEEP|9|true|false|0|3|2|true|true|false|lf_015_BR
+L4|SPELL|Lightning Strike|DealDamage|UPKEEP|9|true|false|0|false|false|3|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_016_WB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|10|false|true|0|false|false|3|lf_015_BR
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|10|true|false|0|false|false|1|lf_016_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|10|true|false|0|false|false|3|lf_016_WB
+DRAW|Swamp|lf_015_BR
+DRAW|Swamp|lf_016_WB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|12|false|true|0|false|false|3|lf_015_BR
+L4|SPELL|Swordsman, Sharp Scoundrel|PermanentCreature|MAIN2|12|true|false|0|false|false|4|lf_016_WB
+L4|SPELL|Origin of the Avengers|PermanentNoncreature|MAIN2|12|true|false|0|false|false|5|lf_016_WB
+DRAW|Hour of Defeat|lf_015_BR
+DRAW|Unliving Legionnaire|lf_016_WB
+DRAW|Ultron Drone|lf_016_WB
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_ATTACKERS|14|false|true|0|3|5|true|true|false|lf_015_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_ATTACKERS|14|false|true|0|false|false|3|lf_015_BR
+L4|ABIL|Kingpin's Enforcers|Draw|COMBAT_DECLARE_ATTACKERS|14|true|true|1|true|false|4|lf_016_WB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|14|false|true|2|true|false|3|lf_015_BR
+L4|ABIL|Kingpin's Enforcers|Draw|COMBAT_DECLARE_ATTACKERS|14|true|true|3|true|false|3|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Swamp|lf_015_BR
+DRAW|HYDRA Infiltration|lf_016_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|16|true|false|0|false|false|1|lf_016_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_016_WB
+DRAW|Too Evil to Stay Dead|lf_015_BR
+DRAW|Plains|lf_016_WB
+L4|ABIL|Unliving Legionnaire|ChangeZone|MAIN1|18|true|false|0|false|false|2|lf_016_WB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_BLOCKERS|18|false|true|0|false|false|2|lf_015_BR
+END|lf_016_WB
+START
+DRAW|Iron Fist, Living Weapon|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Hawkeye, Master Marksman|lf_010_BR
+DRAW|Hex Magic|lf_010_BR
+DRAW|Swamp|lf_013_UB
+DRAW|Atlantean Cavalry|lf_013_UB
+DRAW|Justice, Vance Astrovik|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Ronin, Shadow Stalker|lf_013_UB
+DRAW|Atlantis Attacks|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Mountain|lf_010_BR
+DRAW|Bilbo's Deadly Slice|lf_013_UB
+DRAW|Agents of HYDRA|lf_010_BR
+L4|SPELL|Hawkeye, Master Marksman|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_010_BR
+DRAW|Vibranium Energy Daggers|lf_013_UB
+L4|SPELL|Ronin, Shadow Stalker|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_013_UB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|5|true|false|0|false|false|1|lf_013_UB
+DRAW|Super Speed|lf_010_BR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|6|true|false|0|false|false|1|lf_010_BR
+DRAW|Eyes of the Beholder|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Wonder Man, Hollywood Hero|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Swamp|lf_013_UB
+L4|SPELL|Justice, Vance Astrovik|PermanentCreature|MAIN1|7|true|false|0|false|false|1|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|7|true|false|0|false|false|2|lf_013_UB
+DRAW|Visions of Villainy|lf_010_BR
+L4|SPELL|Hawkeye, Master Marksman|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_010_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_010_BR
+DRAW|Swamp|lf_013_UB
+Bilbo's Deadly Slice|Destroy|COMBAT_DECLARE_BLOCKERS|9|true|true|0|2|2|true|true|false|lf_013_UB
+L4|SPELL|Bilbo's Deadly Slice|Destroy|COMBAT_DECLARE_BLOCKERS|9|true|true|0|false|false|2|lf_013_UB
+DRAW|Decoy Ploy|lf_010_BR
+L4|SPELL|Wonder Man, Hollywood Hero|PermanentCreature|MAIN2|10|true|false|0|false|false|1|lf_010_BR
+DRAW|Swamp|lf_013_UB
+L4|SPELL|Atlantean Cavalry|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_013_UB
+DRAW|Dependable Quinjet|lf_010_BR
+Eyes of the Beholder|Pump|MAIN1|12|true|false|0|2|3|true|true|false|lf_010_BR
+L4|SPELL|Eyes of the Beholder|Pump|MAIN1|12|true|false|0|false|false|2|lf_010_BR
+DRAW|Ninja of the Hand|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|13|true|false|0|false|false|2|lf_013_UB
+L4|SPELL|Ninja of the Hand|PermanentCreature|MAIN2|13|true|false|0|false|false|2|lf_013_UB
+DRAW|Roxxon Brutes|lf_010_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_010_BR
+DRAW|Robot Domination|lf_013_UB
+L4|ABIL|Ninja of the Hand|Discard|MAIN2|15|true|false|0|false|false|3|lf_013_UB
+DRAW|Hour of Defeat|lf_010_BR
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_BLOCKERS|16|true|true|0|3|3|true|true|false|lf_010_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_BLOCKERS|16|true|true|0|false|false|3|lf_010_BR
+Decoy Ploy|Charm>ChangeZone>ChangeZone|MAIN2|16|true|false|0|3|2|true|true|false|lf_010_BR
+L4|SPELL|Decoy Ploy|Charm|MAIN2|16|true|false|0|false|false|3|lf_010_BR
+DRAW|Island|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|17|true|false|0|false|false|2|lf_013_UB
+L4|SPELL|Robot Domination|PermanentNoncreature|MAIN2|17|true|false|0|false|false|1|lf_013_UB
+DRAW|Truck Toss|lf_010_BR
+Truck Toss|DealDamage|DRAW|18|true|false|0|1|1|true|true|false|lf_010_BR
+L4|SPELL|Truck Toss|DealDamage|DRAW|18|true|false|0|false|false|1|lf_010_BR
+DRAW|Echo, Perceptive Prodigy|lf_013_UB
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|18|true|false|0|false|false|1|lf_010_BR
+DRAW|Island|lf_013_UB
+L4|SPELL|Atlantis Attacks|Charm|MAIN2|19|true|false|0|false|false|0|lf_013_UB
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Wonder Man, Hollywood Hero|PermanentCreature|MAIN2|20|true|false|0|false|false|0|lf_010_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|20|true|false|0|false|false|1|lf_010_BR
+DRAW|Island|lf_013_UB
+L4|SPELL|Echo, Perceptive Prodigy|PermanentCreature|MAIN2|21|true|false|0|false|false|0|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN2|21|true|false|0|false|false|1|lf_013_UB
+DRAW|Madame Hydra|lf_010_BR
+L4|ABIL|Wonder Man, Hollywood Hero|PutCounter|COMBAT_DECLARE_BLOCKERS|22|true|true|0|false|false|2|lf_010_BR
+END|lf_010_BR
+START
+DRAW|Mountain|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Arnim Zola, Bio-Fanatic|lf_012_BR
+DRAW|Blazing Crescendo|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Red Room Recruit|lf_012_BR
+DRAW|Plains|lf_018_WR
+DRAW|Vision of Love|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Hero in Training|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Agent of Atlas|lf_018_WR
+DRAW|Agents of HYDRA|lf_012_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Web Up|lf_018_WR
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_018_WR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_012_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|5|true|true|0|1|1|true|true|false|lf_012_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_BEGIN|5|true|true|0|false|false|1|lf_012_BR
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Web Up|PermanentNoncreature|MAIN1|6|true|false|0|false|false|1|lf_018_WR
+DRAW|HYDRA Infiltration|lf_012_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|7|true|false|0|false|false|0|lf_012_BR
+DRAW|Okoye, Dora Milaje Leader|lf_018_WR
+L4|SPELL|Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|8|true|false|0|false|false|1|lf_018_WR
+DRAW|K'un-Lun Warrior|lf_012_BR
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|9|true|false|0|false|false|1|lf_012_BR
+DRAW|Repulsor Blast|lf_018_WR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|10|true|false|0|false|false|4|lf_018_WR
+DRAW|Loki Laufeyson|lf_012_BR
+L4|SPELL|Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|11|true|false|0|false|false|0|lf_012_BR
+DRAW|Hire a Crew|lf_018_WR
+DRAW|Hire a Crew|lf_012_BR
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|13|false|true|0|4|1|true|true|false|lf_018_WR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_ATTACKERS|13|false|true|0|false|false|4|lf_018_WR
+L4|SPELL|Loki Laufeyson|PermanentCreature|MAIN2|13|true|false|0|false|false|1|lf_012_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|13|true|false|0|false|false|2|lf_012_BR
+DRAW|Mountain|lf_018_WR
+DRAW|Cruel Alliance|lf_012_BR
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|15|true|false|0|false|false|2|lf_012_BR
+DRAW|Invisible Woman, Sue Storm|lf_018_WR
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_018_WR
+DRAW|Swamp|lf_012_BR
+DRAW|Iron Fist, Living Weapon|lf_018_WR
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|18|false|true|0|false|false|2|lf_012_BR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|18|true|false|0|false|false|3|lf_018_WR
+DRAW|A.I.M. Synthoids|lf_012_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|19|true|false|0|false|false|3|lf_012_BR
+DRAW|Plains|lf_018_WR
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|20|false|true|0|false|false|4|lf_012_BR
+DRAW|Baron Helmut Zemo|lf_012_BR
+DRAW|H.E.R.B.I.E. Scout Unit|lf_018_WR
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|22|false|true|0|false|false|5|lf_012_BR
+L4|SPELL|H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|22|true|false|0|false|false|4|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Swamp|lf_012_BR
+DRAW|Murdock's Crusade|lf_018_WR
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|24|false|true|0|false|false|6|lf_012_BR
+DRAW|Dependable Quinjet|lf_012_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|25|true|false|0|false|false|7|lf_012_BR
+DRAW|Mountain|lf_018_WR
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|26|false|true|0|false|false|7|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Spreading Flames|lf_018_WR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_DECLARE_ATTACKERS|28|false|true|0|false|false|8|lf_012_BR
+Spreading Flames|DealDamage|COMBAT_DECLARE_ATTACKERS|28|true|true|1|5|8|true|true|false|lf_018_WR
+L4|SPELL|Spreading Flames|DealDamage|COMBAT_DECLARE_ATTACKERS|28|true|true|1|true|false|5|lf_018_WR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_DECLARE_ATTACKERS|28|false|true|2|true|false|8|lf_012_BR
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|28|false|true|2|true|false|9|lf_012_BR
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|28|false|true|2|10|5|true|true|false|lf_012_BR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_ATTACKERS|28|false|true|2|true|false|10|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Wakandan Drone Flock|lf_018_WR
+L4|SPELL|Wakandan Drone Flock|PermanentCreature|MAIN2|30|true|false|0|false|false|4|lf_018_WR
+DRAW|Crimson Operative|lf_012_BR
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|31|true|false|0|false|false|5|lf_012_BR
+L4|SPELL|Kree Sentinel|PermanentCreature|MAIN2|31|true|false|0|false|false|6|lf_012_BR
+DRAW|Thor Odinson|lf_018_WR
+L4|SPELL|Murdock's Crusade|Charm|MAIN1|32|true|false|0|false|false|5|lf_018_WR
+END|lf_018_WR
+START
+DRAW|Plains|lf_014_WB
+DRAW|S.H.I.E.L.D. Spy Kit|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|HYDRA Infiltration|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Mountain|lf_019_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lf_019_RG
+DRAW|Serpent Specialist|lf_019_RG
+DRAW|Repulsor Blast|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Human Torch, Johnny Storm|lf_019_RG
+DRAW|Mountain|lf_019_RG
+L4|SPELL|S.H.I.E.L.D. Spy Kit|PermanentNoncreature|MAIN2|1|true|false|0|false|false|0|lf_014_WB
+DRAW|The Thing, Ben Grimm|lf_019_RG
+L4|SPELL|Serpent Specialist|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_019_RG
+DRAW|Agent 13, Sharon Carter|lf_014_WB
+DRAW|Claim the Kingdom|lf_019_RG
+L4|SPELL|Claim the Kingdom|PermanentNoncreature|MAIN2|4|true|false|0|false|false|1|lf_019_RG
+DRAW|Cruel Alliance|lf_014_WB
+L4|SPELL|Agent 13, Sharon Carter|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_014_WB
+DRAW|Mountain|lf_019_RG
+L4|SPELL|Human Torch, Johnny Storm|PermanentCreature|MAIN2|6|true|false|0|false|false|1|lf_019_RG
+DRAW|Take Up the Shield|lf_014_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|7|true|false|0|false|false|1|lf_014_WB
+DRAW|Mountain|lf_019_RG
+L4|ABIL|Serpent Specialist|PutCounter|COMBAT_DECLARE_BLOCKERS|8|true|true|0|false|false|2|lf_019_RG
+DRAW|Cloak and Dagger, Entwined|lf_014_WB
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|9|true|false|0|false|false|1|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN1|9|true|false|0|false|false|1|lf_014_WB
+DRAW|Mountain|lf_019_RG
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|10|true|false|0|false|false|1|lf_019_RG
+DRAW|Panther Pounce|lf_014_WB
+DRAW|K'un-Lun Warrior|lf_019_RG
+DRAW|Moonstone, Harsh Mistress|lf_014_WB
+L4|SPELL|Moonstone, Harsh Mistress|PermanentCreature|MAIN2|13|true|false|0|false|false|0|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN2|13|true|false|0|false|false|1|lf_014_WB
+DRAW|Giant Growth|lf_019_RG
+DRAW|Swamp|lf_014_WB
+DRAW|Mountain|lf_019_RG
+L4|ABIL|Human Torch, Johnny Storm|PutCounter|COMBAT_DECLARE_BLOCKERS|16|true|true|0|false|false|1|lf_019_RG
+END|lf_019_RG
+START
+DRAW|Visions of Villainy|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Captain America's Shield|lf_016_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_016_WB
+DRAW|Whiplash, Vengeful Engineer|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Cloak and Dagger, Entwined|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Klaw, Sonic Subjugator|lf_011_WB
+DRAW|Invisible Woman, Sue Storm|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Swamp|lf_011_WB
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN2|1|true|false|0|false|false|0|lf_016_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Agent of Atlas|lf_016_WB
+L4|SPELL|Captain America's Shield|PermanentNoncreature|MAIN1|3|true|false|0|false|false|1|lf_016_WB
+DRAW|Eyes of the Beholder|lf_011_WB
+DRAW|Baron Helmut Zemo|lf_016_WB
+L4|ABIL|Captain America's Shield|Attach|MAIN1|5|true|false|0|false|false|1|lf_016_WB
+DRAW|Unliving Legionnaire|lf_011_WB
+L4|SPELL|Klaw, Sonic Subjugator|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_011_WB
+DRAW|Roxxon Brutes|lf_016_WB
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|7|true|false|0|false|false|1|lf_016_WB
+DRAW|Dependable Quinjet|lf_011_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_011_WB
+DRAW|HYDRA Infiltration|lf_016_WB
+DRAW|Decoy Ploy|lf_011_WB
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|10|true|false|0|false|false|2|lf_011_WB
+L4|ABIL|Roxxon Brutes|ChangeZone|END_OF_TURN|10|false|false|0|false|false|2|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Plains|lf_016_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|11|true|false|0|false|false|2|lf_016_WB
+DRAW|Kree Commandos|lf_011_WB
+L4|SPELL|Kree Commandos|PermanentCreature|MAIN2|12|true|false|0|false|false|3|lf_011_WB
+DRAW|Throttle|lf_016_WB
+DRAW|Brave Brawler|lf_011_WB
+Throttle|Pump|COMBAT_DECLARE_ATTACKERS|14|false|true|0|2|4|true|true|false|lf_016_WB
+L4|SPELL|Throttle|Pump|COMBAT_DECLARE_ATTACKERS|14|false|true|0|false|false|2|lf_016_WB
+L4|SPELL|Brave Brawler|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_011_WB
+Decoy Ploy|Charm>ChangeZone>ChangeZone|MAIN2|14|true|false|0|3|2|true|true|false|lf_011_WB
+L4|SPELL|Decoy Ploy|Charm|MAIN2|14|true|false|0|false|false|3|lf_011_WB
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|15|true|false|0|false|false|2|lf_016_WB
+DRAW|Hero in Training|lf_011_WB
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|16|true|false|0|false|false|3|lf_011_WB
+DRAW|Hero in Training|lf_016_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|17|true|false|0|false|false|3|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Red Room Recruit|lf_011_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|18|true|false|0|false|false|4|lf_011_WB
+DRAW|Swamp|lf_016_WB
+DRAW|The Masters of Evil|lf_011_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|20|true|false|0|false|false|5|lf_011_WB
+DRAW|Baron Strucker, HYDRA Overlord|lf_011_WB
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|20|true|false|0|false|false|6|lf_011_WB
+DRAW|HYDRA Infiltration|lf_011_WB
+DRAW|Kingpin's Enforcers|lf_016_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|21|true|false|0|false|false|3|lf_016_WB
+DRAW|Vibranium Energy Daggers|lf_011_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|22|true|false|0|false|false|4|lf_011_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN1|22|true|false|0|false|false|4|lf_011_WB
+DRAW|A.I.M. Synthoids|lf_016_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|23|true|false|0|false|false|4|lf_016_WB
+DRAW|Swamp|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|24|true|false|0|false|false|4|lf_011_WB
+L4|SPELL|Baron Strucker, HYDRA Overlord|PermanentCreature|MAIN2|24|true|false|0|false|false|4|lf_011_WB
+DRAW|Black Widow, Double Agent|lf_016_WB
+L4|SPELL|Black Widow, Double Agent|PermanentCreature|MAIN2|25|true|false|0|false|false|5|lf_016_WB
+DRAW|Project Deathlok Soldier|lf_011_WB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|26|true|false|0|false|false|5|lf_011_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Arnim Zola, Bio-Fanatic|lf_016_WB
+L4|SPELL|Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|29|true|false|0|false|false|6|lf_016_WB
+L4|ABIL|Project Deathlok Soldier|ChangeZone|MAIN2|29|false|false|1|true|false|4|lf_011_WB
+DRAW|Crowd of True Believers|lf_011_WB
+L4|ABIL|Unliving Legionnaire|ChangeZone|MAIN2|30|true|false|0|false|false|4|lf_011_WB
+DRAW|HYDRA Troopers|lf_016_WB
+L4|ABIL|Kingpin's Enforcers|Draw|COMBAT_DECLARE_BLOCKERS|31|true|true|0|false|false|6|lf_016_WB
+DRAW|Swamp|lf_016_WB
+END|lf_016_WB
+START
+DRAW|Agents of HYDRA|lf_010_BR
+DRAW|Madame Hydra|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Eyes of the Beholder|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Dependable Quinjet|lf_010_BR
+DRAW|Hawkeye, Master Marksman|lf_010_BR
+DRAW|HYDRA Assault Robot|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Visions of Villainy|lf_017_BR
+DRAW|Stolen Stark Tech|lf_017_BR
+DRAW|Kree Sentinel|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Swamp|lf_017_BR
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|0|0|true|false|true|lf_017_BR
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|3|true|true|0|false|false|0|lf_017_BR
+DRAW|Truck Toss|lf_010_BR
+L4|SPELL|Hawkeye, Master Marksman|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_010_BR
+DRAW|Swamp|lf_017_BR
+L4|SPELL|HYDRA Assault Robot|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|5|true|false|0|false|false|1|lf_017_BR
+DRAW|H.E.R.B.I.E. Scout Unit|lf_010_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|6|true|false|0|false|false|1|lf_010_BR
+DRAW|Hour of Defeat|lf_017_BR
+DRAW|Hex Magic|lf_010_BR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|8|true|false|0|false|false|2|lf_010_BR
+DRAW|Hour of Defeat|lf_010_BR
+DRAW|Decoy Ploy|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Visions of Villainy|lf_010_BR
+DRAW|Iron Fist, Living Weapon|lf_010_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|8|false|false|0|1|2|true|true|false|lf_017_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|8|false|false|0|false|false|1|lf_017_BR
+DRAW|Iron Fist, Living Weapon|lf_017_BR
+DRAW|Unliving Legionnaire|lf_017_BR
+DRAW|Mountain|lf_017_BR
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_BLOCKERS|9|true|true|0|1|2|true|true|false|lf_017_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_BLOCKERS|9|true|true|0|false|false|1|lf_017_BR
+DRAW|Ultron Drone|lf_010_BR
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_BLOCKERS|10|true|true|0|1|1|true|true|false|lf_010_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_BLOCKERS|10|true|true|0|false|false|1|lf_010_BR
+DRAW|A.I.M. Synthoids|lf_017_BR
+L4|SPELL|Kree Sentinel|PermanentCreature|MAIN2|11|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|11|true|false|0|false|false|1|lf_017_BR
+DRAW|Volcanic Villain|lf_010_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|12|true|false|0|false|false|1|lf_010_BR
+DRAW|Repulsor Blast|lf_017_BR
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|13|true|false|0|false|false|1|lf_017_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|13|true|false|0|false|false|2|lf_017_BR
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_010_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|14|true|false|0|3|3|true|true|false|lf_010_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|14|true|false|0|false|false|3|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Project Deathlok Soldier|lf_017_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|15|true|false|0|false|false|3|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|15|true|false|0|false|false|3|lf_017_BR
+DRAW|Unliving Legionnaire|lf_010_BR
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_010_BR
+Decoy Ploy|Charm>ChangeZone>ChangeZone|MAIN2|16|true|false|0|3|4|true|true|false|lf_010_BR
+L4|SPELL|Decoy Ploy|Charm|MAIN2|16|true|false|0|false|false|3|lf_010_BR
+DRAW|Red Hulk|lf_017_BR
+L4|SPELL|Red Hulk|PermanentCreature|MAIN2|17|true|false|0|false|false|3|lf_017_BR
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|18|true|false|0|false|false|1|lf_010_BR
+L4|SPELL|Hawkeye, Master Marksman|PermanentCreature|MAIN2|18|true|false|0|false|false|2|lf_010_BR
+DRAW|Crimson Operative|lf_017_BR
+END|lf_017_BR
+START
+DRAW|Mountain|lf_012_BR
+DRAW|Blazing Crescendo|lf_012_BR
+DRAW|Feed the Flames|lf_012_BR
+DRAW|Kree Sentinel|lf_012_BR
+DRAW|Elektra, Daughter of the Hand|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Red Room Recruit|lf_012_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Blazing Crescendo|lf_015_BR
+DRAW|Agents of HYDRA|lf_015_BR
+DRAW|Photon Blast Barrage|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Hire a Crew|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Roxxon Brutes|lf_015_BR
+DRAW|Mountain|lf_012_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_012_BR
+DRAW|Widow's Bite|lf_012_BR
+DRAW|Ultron Drone|lf_015_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_015_BR
+Widow's Bite|Charm>Pump|UPKEEP|5|true|false|0|1|1|true|true|false|lf_012_BR
+L4|SPELL|Widow's Bite|Charm|UPKEEP|5|true|false|0|false|false|1|lf_012_BR
+DRAW|Agents of HYDRA|lf_012_BR
+DRAW|H.E.R.B.I.E. Scout Unit|lf_015_BR
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN2|6|true|false|0|false|false|1|lf_015_BR
+DRAW|Crimson Operative|lf_012_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|7|true|true|0|1|2|true|true|false|lf_012_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_BEGIN|7|true|true|0|false|false|1|lf_012_BR
+DRAW|Mountain|lf_015_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|8|true|true|0|2|1|true|true|false|lf_015_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_DECLARE_BLOCKERS|8|true|true|0|false|false|2|lf_015_BR
+DRAW|Volcanic Villain|lf_012_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|9|true|false|0|false|false|1|lf_012_BR
+DRAW|Dark Deed|lf_015_BR
+L4|SPELL|Photon Blast Barrage|DealDamage|MAIN1|10|true|false|0|false|false|2|lf_015_BR
+DRAW|Mountain|lf_012_BR
+Feed the Flames|DealDamage|COMBAT_DECLARE_ATTACKERS|11|true|true|0|2|2|true|true|false|lf_012_BR
+L4|SPELL|Feed the Flames|DealDamage|COMBAT_DECLARE_ATTACKERS|11|true|true|0|false|false|2|lf_012_BR
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|11|false|true|1|2|2|true|true|false|lf_015_BR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_ATTACKERS|11|false|true|1|true|false|2|lf_015_BR
+DRAW|Mountain|lf_015_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_015_BR
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Elektra, Daughter of the Hand|PermanentCreature|MAIN2|13|true|false|0|false|false|1|lf_012_BR
+DRAW|Command the Storm|lf_015_BR
+DRAW|Baron Helmut Zemo|lf_012_BR
+Command the Storm|DealDamage|COMBAT_DECLARE_ATTACKERS|15|false|true|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Command the Storm|DealDamage|COMBAT_DECLARE_ATTACKERS|15|false|true|0|false|false|1|lf_015_BR
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|15|true|false|0|false|false|1|lf_012_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|15|true|false|0|false|false|2|lf_012_BR
+DRAW|Red Room Recruit|lf_015_BR
+L4|SPELL|H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_015_BR
+DRAW|Hour of Defeat|lf_015_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_015_BR
+DRAW|Red Hulk|lf_015_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Repulsor Blast|lf_012_BR
+DRAW|Project Deathlok Soldier|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|20|true|false|0|false|false|2|lf_015_BR
+DRAW|Mountain|lf_012_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|21|true|false|0|false|false|1|lf_012_BR
+Hour of Defeat|Destroy>Surveil|COMBAT_BEGIN|21|false|true|0|2|1|true|true|false|lf_015_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_BEGIN|21|false|true|0|false|false|2|lf_015_BR
+DRAW|Too Evil to Stay Dead|lf_015_BR
+END|lf_015_BR
+START
+DRAW|Mountain|lf_018_WR
+DRAW|Quicksilver, Brash Blur|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Repulsor Blast|lf_018_WR
+DRAW|Agent of Atlas|lf_018_WR
+DRAW|Murdock's Crusade|lf_018_WR
+DRAW|Stolen Stark Tech|lf_013_UB
+DRAW|Ninja of the Hand|lf_013_UB
+DRAW|Unliving Legionnaire|lf_013_UB
+DRAW|Atlantis Attacks|lf_013_UB
+DRAW|Bilbo's Deadly Slice|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Arnim Zola, Bio-Fanatic|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Cruel Alliance|lf_013_UB
+DRAW|Atlantean Cavalry|lf_013_UB
+DRAW|Hour of Defeat|lf_013_UB
+DRAW|The Vision|lf_013_UB
+DRAW|Unliving Legionnaire|lf_013_UB
+DRAW|Hire a Crew|lf_018_WR
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|3|true|false|0|false|false|1|lf_018_WR
+DRAW|Aerial Doombot|lf_013_UB
+L4|SPELL|Aerial Doombot|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_013_UB
+DRAW|Blazing Crescendo|lf_018_WR
+DRAW|Robot Domination|lf_013_UB
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_BLOCKERS|6|false|true|0|2|1|true|true|false|lf_018_WR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_BLOCKERS|6|false|true|0|false|false|2|lf_018_WR
+L4|SPELL|Atlantean Cavalry|PermanentCreature|MAIN2|6|true|false|0|false|false|1|lf_013_UB
+DRAW|Plains|lf_018_WR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|7|true|false|0|false|false|3|lf_018_WR
+DRAW|Island|lf_013_UB
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|8|true|false|0|false|false|1|lf_013_UB
+DRAW|Plains|lf_018_WR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|9|true|true|0|2|1|true|true|false|lf_018_WR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_DECLARE_BLOCKERS|9|true|true|0|false|false|2|lf_018_WR
+L4|SPELL|Web Up|PermanentNoncreature|MAIN2|9|true|false|0|false|false|2|lf_018_WR
+DRAW|Super Intelligence|lf_013_UB
+L4|SPELL|The Vision|PermanentCreature|MAIN2|10|true|false|0|false|false|0|lf_013_UB
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Murdock's Crusade|Charm|MAIN1|11|true|false|0|false|false|2|lf_018_WR
+END|lf_018_WR
+START
+DRAW|Swamp|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Crossbones, Malicious Mercenary|lf_014_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Black Widow, Double Agent|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|HYDRA Troopers|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Wakandan Drone Flock|lf_016_WB
+DRAW|Hero in Training|lf_014_WB
+DRAW|Agent 13, Sharon Carter|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|A.I.M. Synthoids|lf_014_WB
+DRAW|Vibranium Energy Daggers|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Crossbones, Malicious Mercenary|lf_014_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|1|true|false|0|false|false|0|lf_014_WB
+DRAW|Plains|lf_016_WB
+DRAW|HYDRA Troopers|lf_014_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_014_WB
+DRAW|Visions of Villainy|lf_016_WB
+DRAW|Widow's Bite|lf_014_WB
+DRAW|Plains|lf_016_WB
+L4|SPELL|Black Widow, Double Agent|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_016_WB
+Widow's Bite|Charm>Pump|MAIN2|6|false|false|0|1|1|true|true|false|lf_014_WB
+L4|SPELL|Widow's Bite|Charm|MAIN2|6|false|false|0|false|false|1|lf_014_WB
+DRAW|Take Up the Shield|lf_014_WB
+DRAW|Roxxon Brutes|lf_016_WB
+L4|SPELL|Wakandan Drone Flock|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_016_WB
+DRAW|Plains|lf_014_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|9|true|false|0|false|false|1|lf_014_WB
+DRAW|Crossbones, Malicious Mercenary|lf_016_WB
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|10|true|false|0|false|false|1|lf_016_WB
+DRAW|Panther Pounce|lf_014_WB
+Take Up the Shield|PutCounter>Pump|COMBAT_BEGIN|11|true|true|0|1|2|true|true|false|lf_014_WB
+L4|SPELL|Take Up the Shield|PutCounter|COMBAT_BEGIN|11|true|true|0|false|false|1|lf_014_WB
+DRAW|Kingpin's Enforcers|lf_016_WB
+L4|SPELL|Crossbones, Malicious Mercenary|PermanentCreature|MAIN2|12|true|false|0|false|false|2|lf_016_WB
+Visions of Villainy|Draw>LoseLife|MAIN2|12|true|false|0|3|1|true|true|false|lf_016_WB
+L4|SPELL|Visions of Villainy|Draw|MAIN2|12|true|false|0|false|false|3|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Swordsman, Sharp Scoundrel|lf_016_WB
+DRAW|Kree Commandos|lf_014_WB
+L4|SPELL|Kree Commandos|PermanentCreature|MAIN2|13|true|false|0|false|false|1|lf_014_WB
+DRAW|Origin of the Avengers|lf_016_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN1|14|true|false|0|false|false|3|lf_016_WB
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN1|14|true|false|0|false|false|4|lf_016_WB
+DRAW|Crowd of True Believers|lf_014_WB
+L4|SPELL|Agent 13, Sharon Carter|PermanentCreature|MAIN2|15|true|false|0|false|false|2|lf_014_WB
+DRAW|Plains|lf_016_WB
+L4|SPELL|Swordsman, Sharp Scoundrel|PermanentCreature|MAIN1|16|true|false|0|false|false|5|lf_016_WB
+L4|ABIL|Kingpin's Enforcers|Draw|COMBAT_DECLARE_BLOCKERS|16|true|true|0|false|false|5|lf_016_WB
+DRAW|Swamp|lf_016_WB
+END|lf_016_WB
+START
+DRAW|Agents of HYDRA|lf_010_BR
+DRAW|Hawkeye, Master Marksman|lf_010_BR
+DRAW|Eyes of the Beholder|lf_010_BR
+DRAW|Iron Fist, Living Weapon|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Ultron Drone|lf_010_BR
+DRAW|Lightning Strike|lf_010_BR
+DRAW|Forest|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|The Thing, Ben Grimm|lf_019_RG
+DRAW|Hulk, Gamma Goliath|lf_019_RG
+DRAW|Tigra, Feline Fury|lf_019_RG
+DRAW|K'un-Lun Warrior|lf_019_RG
+DRAW|Hercules, Prince of Power|lf_019_RG
+DRAW|Cruel Alliance|lf_010_BR
+DRAW|Truck Toss|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Eyes of the Beholder|lf_010_BR
+DRAW|Decoy Ploy|lf_010_BR
+DRAW|Hawkeye, Master Marksman|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Team Tactics|lf_019_RG
+DRAW|Swamp|lf_010_BR
+DRAW|Mountain|lf_019_RG
+DRAW|Mountain|lf_010_BR
+L4|SPELL|Hawkeye, Master Marksman|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_010_BR
+Tigra, Feline Fury|PermanentCreature|END_OF_TURN|5|false|false|0|0|1|true|false|true|lf_019_RG
+L4|SPELL|Tigra, Feline Fury|PermanentCreature|END_OF_TURN|5|false|false|0|false|false|0|lf_019_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lf_019_RG
+L4|SPELL|Hercules, Prince of Power|PermanentCreature|MAIN2|6|true|false|0|false|false|1|lf_019_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lf_010_BR
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|7|true|false|0|false|false|1|lf_010_BR
+DRAW|Magma Spray|lf_019_RG
+DRAW|Roxxon Brutes|lf_010_BR
+Magma Spray|DealDamage|COMBAT_DECLARE_ATTACKERS|9|false|true|1|1|1|true|true|false|lf_019_RG
+L4|SPELL|Magma Spray|DealDamage|COMBAT_DECLARE_ATTACKERS|9|false|true|1|true|false|1|lf_019_RG
+DRAW|Forest|lf_019_RG
+L4|SPELL|H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|10|true|false|0|false|false|1|lf_019_RG
+DRAW|Speed, Young Avenger|lf_019_RG
+DRAW|Mountain|lf_010_BR
+Truck Toss|DealDamage|MAIN1|11|true|false|0|0|2|true|true|false|lf_010_BR
+L4|SPELL|Truck Toss|DealDamage|MAIN1|11|true|false|0|false|false|0|lf_010_BR
+DRAW|Kree Sentinel|lf_019_RG
+L4|SPELL|Speed, Young Avenger|PermanentCreature|MAIN1|12|true|false|0|false|false|1|lf_019_RG
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|13|true|false|0|false|false|0|lf_010_BR
+DRAW|Volcanic Villain|lf_019_RG
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|14|true|false|0|false|false|2|lf_019_RG
+DRAW|Swamp|lf_010_BR
+L4|SPELL|H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|15|true|false|0|false|false|1|lf_010_BR
+DRAW|Hex Magic|lf_010_BR
+DRAW|A.I.M. Synthoids|lf_019_RG
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|16|true|false|0|false|false|3|lf_019_RG
+DRAW|Madame Hydra|lf_010_BR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|17|true|false|0|false|false|2|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Mountain|lf_010_BR
+L4|SPELL|Madame Hydra|PermanentCreature|MAIN2|17|true|false|0|false|false|2|lf_010_BR
+DRAW|Rick Jones, Destined Sidekick|lf_019_RG
+L4|SPELL|Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|18|true|false|0|false|false|4|lf_019_RG
+DRAW|Iron Fist, Living Weapon|lf_010_BR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|19|true|false|0|false|false|3|lf_010_BR
+DRAW|Forest|lf_019_RG
+L4|SPELL|Hulk, Gamma Goliath|PermanentCreature|MAIN2|20|true|false|0|false|false|3|lf_019_RG
+DRAW|Mountain|lf_010_BR
+END|lf_010_BR
+START
+DRAW|Death to Our Enemies|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Visions of Villainy|lf_012_BR
+DRAW|Loki Laufeyson|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Volcanic Villain|lf_012_BR
+DRAW|Repulsor Blast|lf_012_BR
+DRAW|Stolen Stark Tech|lf_011_WB
+DRAW|Super Villain Lockup|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Baron Strucker, HYDRA Overlord|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Kingpin's Enforcers|lf_011_WB
+DRAW|K'un-Lun Warrior|lf_012_BR
+L4|SPELL|Loki Laufeyson|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_012_BR
+DRAW|Unliving Legionnaire|lf_011_WB
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|1|true|false|true|lf_011_WB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|false|false|0|lf_011_WB
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|5|true|false|0|false|false|1|lf_012_BR
+Super Villain Lockup|PermanentNoncreature|UPKEEP|6|true|false|0|0|2|true|false|true|lf_011_WB
+L4|SPELL|Super Villain Lockup|PermanentNoncreature|UPKEEP|6|true|false|0|false|false|0|lf_011_WB
+DRAW|Brave Brawler|lf_011_WB
+Visions of Villainy|Draw>LoseLife|UPKEEP|7|true|false|0|1|0|true|true|false|lf_012_BR
+L4|SPELL|Visions of Villainy|Draw|UPKEEP|7|true|false|0|false|false|1|lf_012_BR
+DRAW|Kree Sentinel|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Vibranium Energy Daggers|lf_011_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_011_WB
+DRAW|Blazing Crescendo|lf_012_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|9|true|false|0|false|false|1|lf_012_BR
+DRAW|Colleen Wing, Street Samurai|lf_011_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|10|true|false|0|false|false|0|lf_011_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|10|true|false|0|false|false|1|lf_011_WB
+DRAW|Mountain|lf_012_BR
+L4|ABIL|Loki Laufeyson|PutCounter|COMBAT_DECLARE_BLOCKERS|11|true|true|0|false|false|1|lf_012_BR
+DRAW|Plains|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|12|true|false|0|false|false|1|lf_011_WB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|12|true|false|0|false|false|1|lf_011_WB
+DRAW|Widow's Bite|lf_012_BR
+L4|SPELL|Kree Sentinel|PermanentCreature|MAIN2|13|true|false|0|false|false|1|lf_012_BR
+DRAW|Swamp|lf_011_WB
+L4|SPELL|Brave Brawler|PermanentCreature|MAIN2|14|true|false|0|false|false|1|lf_011_WB
+L4|SPELL|Baron Strucker, HYDRA Overlord|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_011_WB
+L4|ABIL|Loki Laufeyson|DelayedTrigger|UPKEEP|15|true|false|0|false|false|2|lf_012_BR
+DRAW|Swamp|lf_012_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|15|true|true|0|2|3|true|true|false|lf_012_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_BEGIN|15|true|true|0|false|false|2|lf_012_BR
+Widow's Bite|Charm>Pump|COMBAT_DECLARE_ATTACKERS|15|true|true|0|2|3|true|true|false|lf_012_BR
+L4|SPELL|Widow's Bite|Charm|COMBAT_DECLARE_ATTACKERS|15|true|true|0|false|false|2|lf_012_BR
+DRAW|Red Room Recruit|lf_011_WB
+L4|SPELL|Colleen Wing, Street Samurai|PermanentCreature|MAIN2|16|true|false|0|false|false|0|lf_011_WB
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_011_WB
+DRAW|Plains|lf_011_WB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|16|true|false|0|false|false|2|lf_011_WB
+DRAW|Viv Vision, Teen Synthezoid|lf_012_BR
+L4|SPELL|Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|17|true|false|0|false|false|1|lf_012_BR
+L4|SPELL|Death to Our Enemies|PermanentNoncreature|MAIN2|17|true|false|0|false|false|2|lf_012_BR
+DRAW|Eyes of the Beholder|lf_011_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_012_BR
+Eyes of the Beholder|Pump|COMBAT_DECLARE_ATTACKERS|19|false|true|1|2|2|true|true|false|lf_011_WB
+L4|SPELL|Eyes of the Beholder|Pump|COMBAT_DECLARE_ATTACKERS|19|false|true|1|true|false|2|lf_011_WB
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|19|true|false|0|false|false|1|lf_012_BR
+DRAW|Kree Commandos|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|20|true|false|0|false|false|2|lf_011_WB
+L4|SPELL|Kree Commandos|PermanentCreature|MAIN2|20|true|false|0|false|false|2|lf_011_WB
+DRAW|Mountain|lf_012_BR
+L4|ABIL|Viv Vision, Teen Synthezoid|PutCounter|MAIN1|21|true|false|0|false|false|2|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Cloak and Dagger, Entwined|lf_011_WB
+DRAW|A.I.M. Synthoids|lf_012_BR
+DRAW|Feed the Flames|lf_012_BR
+Feed the Flames|DealDamage|COMBAT_DECLARE_ATTACKERS|23|true|true|0|1|2|true|true|false|lf_012_BR
+L4|SPELL|Feed the Flames|DealDamage|COMBAT_DECLARE_ATTACKERS|23|true|true|0|false|false|1|lf_012_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|23|true|false|0|false|false|1|lf_012_BR
+DRAW|Swamp|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|24|true|false|0|false|false|1|lf_011_WB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|24|true|false|0|false|false|1|lf_011_WB
+DRAW|Cruel Alliance|lf_012_BR
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|25|true|false|0|false|false|2|lf_012_BR
+DRAW|Klaw, Sonic Subjugator|lf_011_WB
+L4|SPELL|Klaw, Sonic Subjugator|PermanentCreature|MAIN2|26|true|false|0|false|false|0|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN2|26|true|false|0|false|false|1|lf_011_WB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|26|true|false|0|false|false|1|lf_011_WB
+DRAW|Mountain|lf_012_BR
+DRAW|HYDRA Infiltration|lf_012_BR
+END|lf_012_BR
+START
+DRAW|Vision of Love|lf_018_WR
+DRAW|Iron Fist, Living Weapon|lf_018_WR
+DRAW|Hero in Training|lf_018_WR
+DRAW|Murdock's Crusade|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|HYDRA Assault Robot|lf_017_BR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Hawkeye's Bow|lf_017_BR
+DRAW|Hour of Defeat|lf_017_BR
+L4|SPELL|Hawkeye's Bow|PermanentNoncreature|MAIN2|1|true|false|0|false|false|0|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_018_WR
+DRAW|Swamp|lf_017_BR
+L4|SPELL|HYDRA Assault Robot|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_017_BR
+DRAW|Blazing Crescendo|lf_018_WR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_018_WR
+DRAW|Sear|lf_017_BR
+L4|ABIL|Hawkeye's Bow|Attach|MAIN1|5|true|false|0|false|false|1|lf_017_BR
+DRAW|Mountain|lf_018_WR
+Sear|DealDamage|COMBAT_DECLARE_ATTACKERS|6|false|true|0|1|1|true|true|false|lf_017_BR
+L4|SPELL|Sear|DealDamage|COMBAT_DECLARE_ATTACKERS|6|false|true|0|false|false|1|lf_017_BR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_018_WR
+DRAW|Death to Our Enemies|lf_017_BR
+Hour of Defeat|Destroy>Surveil|MAIN1|7|true|false|0|1|1|true|true|false|lf_017_BR
+L4|SPELL|Hour of Defeat|Destroy|MAIN1|7|true|false|0|false|false|1|lf_017_BR
+DRAW|Plains|lf_018_WR
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|A.I.M. Synthoids|lf_017_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_017_BR
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Murdock's Crusade|Charm|MAIN1|10|true|false|0|false|false|1|lf_018_WR
+DRAW|Swamp|lf_017_BR
+L4|SPELL|Death to Our Enemies|PermanentNoncreature|MAIN2|11|true|false|0|false|false|1|lf_017_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_017_BR
+DRAW|Hex Magic|lf_018_WR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|12|true|false|0|false|false|1|lf_018_WR
+DRAW|Borough Backup|lf_018_WR
+DRAW|Thor Odinson|lf_018_WR
+DRAW|Wakandan Drone Flock|lf_018_WR
+DRAW|Swamp|lf_017_BR
+DRAW|Web Up|lf_018_WR
+L4|SPELL|Web Up|PermanentNoncreature|MAIN1|14|true|false|0|false|false|1|lf_018_WR
+L4|SPELL|Wakandan Drone Flock|PermanentCreature|MAIN2|14|true|false|0|false|false|1|lf_018_WR
+DRAW|Mountain|lf_017_BR
+L4|ABIL|Hawkeye's Bow|Attach|MAIN1|15|true|false|0|false|false|1|lf_017_BR
+DRAW|H.E.R.B.I.E. Scout Unit|lf_018_WR
+L4|SPELL|Thor Odinson|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_018_WR
+DRAW|Swamp|lf_017_BR
+DRAW|Okoye, Dora Milaje Leader|lf_018_WR
+L4|SPELL|Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|18|true|false|0|false|false|3|lf_018_WR
+DRAW|Swamp|lf_017_BR
+DRAW|Repulsor Blast|lf_018_WR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|20|true|false|0|false|false|6|lf_018_WR
+END|lf_018_WR
+START
+DRAW|Echo, Perceptive Prodigy|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Atlantis Attacks|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Aerial Doombot|lf_013_UB
+DRAW|Cruel Alliance|lf_013_UB
+DRAW|Mountain|lf_015_BR
+DRAW|Photon Blast Barrage|lf_015_BR
+DRAW|Hire a Crew|lf_015_BR
+DRAW|Hour of Defeat|lf_015_BR
+DRAW|Stark Industries Executive|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Visions of Villainy|lf_015_BR
+L4|SPELL|Stark Industries Executive|PermanentCreature|MAIN2|1|true|false|0|false|false|0|lf_015_BR
+DRAW|Super Intelligence|lf_013_UB
+L4|SPELL|Aerial Doombot|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_013_UB
+DRAW|Widow's Bite|lf_015_BR
+L4|SPELL|Photon Blast Barrage|DealDamage|MAIN1|3|true|false|0|false|false|1|lf_015_BR
+DRAW|Ninja of the Hand|lf_013_UB
+DRAW|Mountain|lf_015_BR
+DRAW|Island|lf_013_UB
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|6|false|true|0|1|0|true|true|false|lf_015_BR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_ATTACKERS|6|false|true|0|false|false|1|lf_015_BR
+L4|SPELL|Echo, Perceptive Prodigy|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_013_UB
+DRAW|Command the Storm|lf_015_BR
+DRAW|Unliving Legionnaire|lf_013_UB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|MAIN2|8|false|false|1|true|false|2|lf_015_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|8|false|false|1|2|1|true|true|false|lf_015_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|8|false|false|1|true|false|2|lf_015_BR
+DRAW|Agents of HYDRA|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Project Deathlok Soldier|lf_015_BR
+DRAW|Swamp|lf_013_UB
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|10|true|false|0|false|false|2|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|10|false|true|0|false|false|1|lf_015_BR
+Widow's Bite|Charm>Pump|COMBAT_DECLARE_ATTACKERS|10|false|true|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Widow's Bite|Charm|COMBAT_DECLARE_ATTACKERS|10|false|true|0|false|false|1|lf_015_BR
+DRAW|Super Speed|lf_015_BR
+DRAW|Island|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_END|12|false|true|0|false|false|1|lf_015_BR
+L4|SPELL|Ninja of the Hand|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_013_UB
+L4|ABIL|Ninja of the Hand|Discard|MAIN2|12|true|false|0|false|false|2|lf_013_UB
+L4|ABIL|Project Deathlok Soldier|ChangeZone|MAIN2|12|false|false|0|false|false|1|lf_015_BR
+DRAW|Lightning Strike|lf_015_BR
+Lightning Strike|DealDamage|DRAW|13|true|false|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Lightning Strike|DealDamage|DRAW|13|true|false|0|false|false|1|lf_015_BR
+DRAW|Swamp|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|14|false|true|0|false|false|1|lf_015_BR
+L4|SPELL|Atlantis Attacks|Charm|MAIN2|14|true|false|0|false|false|1|lf_013_UB
+DRAW|Mountain|lf_015_BR
+Command the Storm|DealDamage|END_OF_TURN|15|true|false|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Command the Storm|DealDamage|END_OF_TURN|15|true|false|0|false|false|1|lf_015_BR
+DRAW|A.I.M. Synthoids|lf_013_UB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_013_UB
+DRAW|Swamp|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|17|true|false|0|false|false|1|lf_015_BR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|18|false|true|0|false|false|2|lf_015_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|18|true|false|0|false|false|2|lf_013_UB
+DRAW|Swamp|lf_015_BR
+Hour of Defeat|Destroy>Surveil|MAIN1|19|true|false|0|2|3|true|true|false|lf_015_BR
+L4|SPELL|Hour of Defeat|Destroy|MAIN1|19|true|false|0|false|false|2|lf_015_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|19|true|false|0|false|false|2|lf_015_BR
+DRAW|Justice, Vance Astrovik|lf_013_UB
+L4|SPELL|Justice, Vance Astrovik|PermanentCreature|MAIN1|20|true|false|0|false|false|2|lf_013_UB
+DRAW|Ultron Drone|lf_015_BR
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN2|21|true|false|0|false|false|2|lf_015_BR
+L4|SPELL|Stark Industries Executive|PermanentCreature|MAIN2|21|true|false|0|false|false|3|lf_015_BR
+DRAW|Swamp|lf_013_UB
+DRAW|H.E.R.B.I.E. Scout Unit|lf_015_BR
+L4|SPELL|H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|23|true|false|0|false|false|3|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Robot Domination|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|24|false|true|0|false|false|4|lf_015_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|24|false|true|0|false|false|2|lf_015_BR
+L4|SPELL|Robot Domination|PermanentNoncreature|MAIN2|24|true|false|0|false|false|2|lf_013_UB
+DRAW|Blazing Crescendo|lf_015_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|25|true|true|0|2|2|true|true|false|lf_015_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_BEGIN|25|true|true|0|false|false|2|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|25|true|false|0|false|false|2|lf_015_BR
+DRAW|Agents of HYDRA|lf_013_UB
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|26|false|true|0|false|false|2|lf_015_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|26|true|false|0|false|false|2|lf_013_UB
+DRAW|Dark Deed|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|27|true|false|0|false|false|2|lf_015_BR
+DRAW|Swamp|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|28|false|true|0|false|false|3|lf_015_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|MAIN2|28|false|false|0|false|false|2|lf_015_BR
+DRAW|Red Hulk|lf_015_BR
+L4|SPELL|Red Hulk|PermanentCreature|MAIN2|29|true|false|0|false|false|2|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|29|true|false|0|false|false|3|lf_015_BR
+DRAW|Project Deathlok Soldier|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|30|false|true|0|false|false|4|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|30|true|false|0|false|false|3|lf_013_UB
+DRAW|Roxxon Brutes|lf_015_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|31|true|false|0|false|false|4|lf_015_BR
+DRAW|Swamp|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|32|false|true|0|false|false|5|lf_015_BR
+L4|ABIL|Ultron Drone|PutCounter|END_OF_TURN|32|false|false|0|false|false|5|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Bilbo's Deadly Slice|lf_013_UB
+Bilbo's Deadly Slice|Destroy|MAIN1|34|true|false|0|4|6|true|true|false|lf_013_UB
+L4|SPELL|Bilbo's Deadly Slice|Destroy|MAIN1|34|true|false|0|false|false|4|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|34|false|true|0|false|false|5|lf_015_BR
+DRAW|Speed, Young Avenger|lf_015_BR
+L4|SPELL|Speed, Young Avenger|PermanentCreature|MAIN1|35|true|false|0|false|false|4|lf_015_BR
+DRAW|Atlantean Cavalry|lf_013_UB
+DRAW|Hour of Defeat|lf_013_UB
+Hour of Defeat|Destroy>Surveil|MAIN1|36|true|false|0|4|5|true|true|false|lf_013_UB
+L4|SPELL|Hour of Defeat|Destroy|MAIN1|36|true|false|0|false|false|4|lf_013_UB
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|36|false|true|0|false|false|4|lf_015_BR
+L4|SPELL|Atlantean Cavalry|PermanentCreature|MAIN2|36|true|false|0|false|false|4|lf_013_UB
+L4|ABIL|Project Deathlok Soldier|ChangeZone|MAIN2|36|false|false|1|true|false|3|lf_015_BR
+DRAW|Truck Toss|lf_015_BR
+Truck Toss|DealDamage|DRAW|37|true|false|0|3|5|true|true|false|lf_015_BR
+L4|SPELL|Truck Toss|DealDamage|DRAW|37|true|false|0|false|false|3|lf_015_BR
+END|lf_015_BR
+START
+DRAW|Hero in Training|lf_014_WB
+DRAW|Panther Pounce|lf_014_WB
+DRAW|Final Death|lf_014_WB
+DRAW|Vibranium Energy Daggers|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Mountain|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Dependable Quinjet|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Visions of Villainy|lf_010_BR
+DRAW|Volcanic Villain|lf_010_BR
+DRAW|Take Up the Shield|lf_014_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|2|true|false|0|false|false|0|lf_014_WB
+DRAW|Hex Magic|lf_010_BR
+DRAW|Crowd of True Believers|lf_014_WB
+L4|SPELL|Crowd of True Believers|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_014_WB
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|5|true|false|0|false|false|0|lf_010_BR
+DRAW|Swamp|lf_014_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|6|true|false|0|false|false|1|lf_014_WB
+DRAW|Hawkeye, Master Marksman|lf_010_BR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|7|true|false|0|false|false|1|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Lightning Strike|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|A.I.M. Synthoids|lf_014_WB
+Take Up the Shield|PutCounter>Pump|COMBAT_DECLARE_BLOCKERS|8|true|true|0|1|1|true|true|false|lf_014_WB
+L4|SPELL|Take Up the Shield|PutCounter|COMBAT_DECLARE_BLOCKERS|8|true|true|0|false|false|1|lf_014_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_014_WB
+DRAW|Swamp|lf_010_BR
+Lightning Strike|DealDamage|COMBAT_DECLARE_ATTACKERS|9|true|true|0|1|2|true|true|false|lf_010_BR
+L4|SPELL|Lightning Strike|DealDamage|COMBAT_DECLARE_ATTACKERS|9|true|true|0|false|false|1|lf_010_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|9|true|false|0|false|false|1|lf_010_BR
+DRAW|Plains|lf_014_WB
+Final Death|ChangeZone|MAIN1|10|true|false|0|1|1|true|true|false|lf_014_WB
+L4|SPELL|Final Death|ChangeZone|MAIN1|10|true|false|0|false|false|1|lf_014_WB
+DRAW|Decoy Ploy|lf_010_BR
+DRAW|S.H.I.E.L.D. Spy Kit|lf_014_WB
+L4|SPELL|S.H.I.E.L.D. Spy Kit|PermanentNoncreature|MAIN1|12|true|false|0|false|false|1|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN1|12|true|false|0|false|false|1|lf_014_WB
+L4|ABIL|Crowd of True Believers|Pump|COMBAT_DECLARE_BLOCKERS|12|true|true|0|false|false|1|lf_014_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Avengers: Under Siege|lf_010_BR
+L4|SPELL|Avengers: Under Siege|PermanentNoncreature|MAIN2|13|true|false|0|false|false|0|lf_010_BR
+DRAW|Patriot, Shield Wielder|lf_014_WB
+L4|SPELL|Patriot, Shield Wielder|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_014_WB
+DRAW|Hour of Defeat|lf_010_BR
+DRAW|Agent 13, Sharon Carter|lf_014_WB
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_ATTACKERS|16|false|true|1|1|1|true|true|false|lf_010_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_ATTACKERS|16|false|true|1|true|false|1|lf_010_BR
+L4|SPELL|Agent 13, Sharon Carter|PermanentCreature|MAIN2|16|true|false|0|false|false|0|lf_014_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN2|16|true|false|0|false|false|1|lf_014_WB
+DRAW|Super Speed|lf_010_BR
+DRAW|Robot Domination|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN1|18|true|false|0|false|false|1|lf_014_WB
+L4|SPELL|Robot Domination|PermanentNoncreature|MAIN2|18|true|false|0|false|false|1|lf_014_WB
+DRAW|Eyes of the Beholder|lf_010_BR
+Eyes of the Beholder|Pump|MAIN1|19|true|false|0|0|1|true|true|false|lf_010_BR
+L4|SPELL|Eyes of the Beholder|Pump|MAIN1|19|true|false|0|false|false|0|lf_010_BR
+DRAW|Madame Masque|lf_014_WB
+DRAW|Moonstone, Harsh Mistress|lf_014_WB
+L4|SPELL|Moonstone, Harsh Mistress|PermanentCreature|MAIN2|20|true|false|0|false|false|0|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN2|20|true|false|0|false|false|1|lf_014_WB
+DRAW|Iron Fist, Living Weapon|lf_010_BR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|21|true|false|0|false|false|0|lf_010_BR
+DRAW|Swamp|lf_014_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|22|true|false|0|false|false|1|lf_014_WB
+END|lf_014_WB
+START
+DRAW|Feed the Flames|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Death to Our Enemies|lf_012_BR
+DRAW|Red Room Recruit|lf_012_BR
+DRAW|A.I.M. Synthoids|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Origin of the Avengers|lf_016_WB
+DRAW|HYDRA Troopers|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Whiplash, Vengeful Engineer|lf_016_WB
+DRAW|Visions of Villainy|lf_016_WB
+DRAW|Roxxon Brutes|lf_016_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_016_WB
+DRAW|Visions of Villainy|lf_016_WB
+DRAW|Murdock's Crusade|lf_016_WB
+DRAW|Unliving Legionnaire|lf_016_WB
+DRAW|Roxxon Brutes|lf_016_WB
+DRAW|Swordsman, Sharp Scoundrel|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_012_BR
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Swordsman, Sharp Scoundrel|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_016_WB
+DRAW|HYDRA Infiltration|lf_012_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_012_BR
+DRAW|Plains|lf_016_WB
+Visions of Villainy|Draw>LoseLife|MAIN2|5|true|false|0|1|1|true|true|false|lf_016_WB
+L4|SPELL|Visions of Villainy|Draw|MAIN2|5|true|false|0|false|false|1|lf_016_WB
+DRAW|Hero in Training|lf_016_WB
+DRAW|Baron Helmut Zemo|lf_016_WB
+DRAW|Mountain|lf_012_BR
+L4|SPELL|Death to Our Enemies|PermanentNoncreature|MAIN2|6|true|false|0|false|false|1|lf_012_BR
+DRAW|Agent of Atlas|lf_016_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|7|true|false|0|false|false|1|lf_016_WB
+DRAW|Mountain|lf_012_BR
+Feed the Flames|DealDamage|COMBAT_BEGIN|8|true|true|0|1|2|true|true|false|lf_012_BR
+L4|SPELL|Feed the Flames|DealDamage|COMBAT_BEGIN|8|true|true|0|false|false|1|lf_012_BR
+DRAW|Crossbones, Malicious Mercenary|lf_016_WB
+L4|SPELL|Crossbones, Malicious Mercenary|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_016_WB
+DRAW|Swamp|lf_012_BR
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|10|true|false|0|false|false|1|lf_012_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|10|true|false|0|false|false|1|lf_012_BR
+DRAW|Baron Helmut Zemo|lf_012_BR
+DRAW|Whiplash, Vengeful Engineer|lf_016_WB
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN1|11|true|false|0|false|false|2|lf_016_WB
+L4|SPELL|Murdock's Crusade|Charm|MAIN2|11|true|false|0|false|false|3|lf_016_WB
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|12|true|false|0|false|false|2|lf_012_BR
+DRAW|Swamp|lf_016_WB
+DRAW|Swamp|lf_012_BR
+DRAW|Black Widow, Double Agent|lf_016_WB
+L4|SPELL|Black Widow, Double Agent|PermanentCreature|MAIN1|15|true|false|0|false|false|3|lf_016_WB
+DRAW|Arnim Zola, Bio-Fanatic|lf_012_BR
+L4|SPELL|Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_012_BR
+DRAW|HYDRA Infiltration|lf_016_WB
+DRAW|Swamp|lf_012_BR
+DRAW|Swamp|lf_016_WB
+END|lf_016_WB
+START
+DRAW|Viv Vision, Teen Synthezoid|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Repulsor Blast|lf_018_WR
+DRAW|Captain Mar-Vell, Space-Born|lf_018_WR
+DRAW|Hex Magic|lf_018_WR
+DRAW|Forest|lf_019_RG
+DRAW|Crimson Operative|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Giant Growth|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Wakandan Royal Guard|lf_019_RG
+DRAW|Hire a Crew|lf_019_RG
+DRAW|Mountain|lf_019_RG
+DRAW|Mountain|lf_018_WR
+DRAW|Mountain|lf_019_RG
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|5|true|false|0|false|false|0|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Invisible Woman, Sue Storm|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Thor Odinson|lf_018_WR
+DRAW|Forest|lf_019_RG
+DRAW|A.I.M. Synthoids|lf_018_WR
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|7|false|true|0|0|0|true|true|false|lf_019_RG
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_ATTACKERS|7|false|true|0|false|false|0|lf_019_RG
+L4|SPELL|Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|7|true|false|0|false|false|0|lf_018_WR
+DRAW|Forest|lf_019_RG
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_019_RG
+DRAW|Plains|lf_018_WR
+L4|SPELL|Thor Odinson|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_018_WR
+DRAW|Serpent Specialist|lf_019_RG
+L4|SPELL|Wakandan Royal Guard|PermanentCreature|MAIN2|10|true|false|0|false|false|2|lf_019_RG
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_018_WR
+DRAW|Mountain|lf_019_RG
+Giant Growth|Pump|COMBAT_BEGIN|12|true|true|0|3|3|true|true|false|lf_019_RG
+L4|SPELL|Giant Growth|Pump|COMBAT_BEGIN|12|true|true|0|false|false|3|lf_019_RG
+L4|SPELL|Serpent Specialist|PermanentCreature|MAIN2|12|true|false|0|false|false|3|lf_019_RG
+DRAW|Iron Fist, Living Weapon|lf_018_WR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|13|true|false|0|false|false|3|lf_018_WR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|13|true|false|0|false|false|4|lf_018_WR
+L4|ABIL|Serpent Specialist|PutCounter|END_OF_TURN|13|false|false|0|false|false|4|lf_019_RG
+DRAW|Human Torch, Johnny Storm|lf_019_RG
+L4|SPELL|Human Torch, Johnny Storm|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_019_RG
+DRAW|Web Up|lf_018_WR
+L4|SPELL|Web Up|PermanentNoncreature|MAIN1|15|true|false|0|false|false|3|lf_018_WR
+DRAW|A.I.M. Synthoids|lf_019_RG
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_019_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lf_018_WR
+L4|ABIL|Viv Vision, Teen Synthezoid|PutCounter|COMBAT_DECLARE_BLOCKERS|17|true|true|0|false|false|3|lf_018_WR
+DRAW|Claim the Kingdom|lf_019_RG
+L4|SPELL|Claim the Kingdom|PermanentNoncreature|MAIN1|18|true|false|0|false|false|3|lf_019_RG
+DRAW|Vision of Love|lf_018_WR
+DRAW|Blazing Crescendo|lf_018_WR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|19|true|true|0|3|3|true|true|false|lf_018_WR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_DECLARE_BLOCKERS|19|true|true|0|false|false|3|lf_018_WR
+END|lf_018_WR
+START
+DRAW|Island|lf_013_UB
+DRAW|Justice, Vance Astrovik|lf_013_UB
+DRAW|Vibranium Energy Daggers|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Ninja of the Hand|lf_013_UB
+DRAW|Echo, Perceptive Prodigy|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Invisible Woman, Sue Storm|lf_011_WB
+DRAW|Baron Strucker, HYDRA Overlord|lf_011_WB
+DRAW|Kingpin's Enforcers|lf_011_WB
+DRAW|Hero in Training|lf_011_WB
+DRAW|Project Deathlok Soldier|lf_011_WB
+DRAW|HYDRA Infiltration|lf_011_WB
+DRAW|Stolen Stark Tech|lf_011_WB
+DRAW|Klaw, Sonic Subjugator|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Kingpin's Enforcers|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Plains|lf_011_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|1|true|false|0|false|false|0|lf_013_UB
+DRAW|Invisible Woman, Sue Storm|lf_011_WB
+DRAW|Island|lf_013_UB
+DRAW|Super Villain Lockup|lf_011_WB
+DRAW|Atlantean Cavalry|lf_013_UB
+L4|SPELL|Ninja of the Hand|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_013_UB
+DRAW|Decoy Ploy|lf_011_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_011_WB
+DRAW|Project Deathlok Soldier|lf_013_UB
+L4|SPELL|Justice, Vance Astrovik|PermanentCreature|MAIN1|7|true|false|0|false|false|1|lf_013_UB
+Super Villain Lockup|PermanentNoncreature|UPKEEP|8|true|false|0|0|2|true|false|true|lf_011_WB
+L4|SPELL|Super Villain Lockup|PermanentNoncreature|UPKEEP|8|true|false|0|false|false|0|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Swamp|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|9|true|false|0|false|false|1|lf_013_UB
+DRAW|Red Room Recruit|lf_011_WB
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|10|true|false|0|false|false|0|lf_011_WB
+DRAW|Swamp|lf_013_UB
+L4|SPELL|Echo, Perceptive Prodigy|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_013_UB
+L4|SPELL|Atlantean Cavalry|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_013_UB
+DRAW|Cloak and Dagger, Entwined|lf_011_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_011_WB
+DRAW|Swamp|lf_013_UB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|13|true|false|0|false|false|3|lf_013_UB
+DRAW|Plains|lf_011_WB
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_011_WB
+DRAW|Brave Brawler|lf_011_WB
+L4|SPELL|Brave Brawler|PermanentCreature|MAIN2|14|true|false|0|false|false|3|lf_011_WB
+DRAW|Swamp|lf_013_UB
+DRAW|Vibranium Energy Daggers|lf_011_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN1|16|true|false|0|false|false|4|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|16|true|false|0|false|false|4|lf_011_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_013_UB
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN1|17|true|false|0|false|false|4|lf_013_UB
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|17|true|true|0|false|false|2|lf_013_UB
+DRAW|Stolen Stark Tech|lf_011_WB
+Stolen Stark Tech|PermanentNoncreature|DRAW|18|true|false|0|2|2|true|false|true|lf_011_WB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|DRAW|18|true|false|0|false|false|2|lf_011_WB
+Decoy Ploy|Charm>ChangeZone>ChangeZone|MAIN2|18|true|false|0|2|2|true|true|false|lf_011_WB
+L4|SPELL|Decoy Ploy|Charm|MAIN2|18|true|false|0|false|false|2|lf_011_WB
+L4|SPELL|Brave Brawler|PermanentCreature|MAIN2|18|true|false|0|false|false|2|lf_011_WB
+DRAW|Atlantis Attacks|lf_013_UB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|19|true|false|0|false|false|2|lf_013_UB
+DRAW|Plains|lf_011_WB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|20|true|false|0|false|false|1|lf_011_WB
+L4|SPELL|Klaw, Sonic Subjugator|PermanentCreature|MAIN2|20|true|false|0|false|false|1|lf_011_WB
+DRAW|Swamp|lf_013_UB
+DRAW|Unliving Legionnaire|lf_011_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|22|true|false|0|false|false|2|lf_011_WB
+DRAW|A.I.M. Synthoids|lf_013_UB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|23|true|false|0|false|false|4|lf_013_UB
+DRAW|Colleen Wing, Street Samurai|lf_011_WB
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|24|false|true|0|false|false|4|lf_013_UB
+L4|ABIL|Unliving Legionnaire|ChangeZone|MAIN2|24|true|false|0|false|false|3|lf_011_WB
+DRAW|Stolen Stark Tech|lf_013_UB
+Stolen Stark Tech|PermanentNoncreature|DRAW|25|true|false|0|4|3|true|false|true|lf_013_UB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|DRAW|25|true|false|0|false|false|4|lf_013_UB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|25|true|false|0|false|false|4|lf_013_UB
+DRAW|Roxxon Brutes|lf_011_WB
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|26|true|false|0|false|false|2|lf_011_WB
+L4|SPELL|Colleen Wing, Street Samurai|PermanentCreature|MAIN2|26|true|false|0|false|false|3|lf_011_WB
+DRAW|Island|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|27|true|false|0|false|false|4|lf_013_UB
+DRAW|HYDRA Infiltration|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|28|true|false|0|false|false|4|lf_011_WB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|28|true|false|0|false|false|4|lf_011_WB
+END|lf_011_WB
+START
+DRAW|Mountain|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Roxxon Brutes|lf_015_BR
+DRAW|Volcanic Villain|lf_015_BR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_017_BR
+DRAW|Visions of Villainy|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Red Hulk|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Stark Industries Executive|lf_015_BR
+L4|SPELL|Stark Industries Executive|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_015_BR
+DRAW|Unliving Legionnaire|lf_017_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Swamp|lf_017_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|5|true|false|0|0|1|true|true|false|lf_017_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|5|true|false|0|false|false|0|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_017_BR
+DRAW|Stolen Stark Tech|lf_017_BR
+DRAW|Ultron Drone|lf_015_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|6|true|false|0|false|false|1|lf_015_BR
+Stolen Stark Tech|PermanentNoncreature|UPKEEP|7|true|false|0|0|2|true|false|true|lf_017_BR
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|UPKEEP|7|true|false|0|false|false|0|lf_017_BR
+DRAW|Sear|lf_017_BR
+DRAW|Project Deathlok Soldier|lf_015_BR
+Sear|DealDamage|COMBAT_DECLARE_BLOCKERS|8|false|true|0|0|2|true|true|false|lf_017_BR
+L4|SPELL|Sear|DealDamage|COMBAT_DECLARE_BLOCKERS|8|false|true|0|false|false|0|lf_017_BR
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|8|true|false|0|false|false|2|lf_015_BR
+DRAW|Machinesmith Automaton|lf_017_BR
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|9|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|9|true|false|0|false|false|1|lf_017_BR
+DRAW|Dark Deed|lf_015_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|10|true|false|0|false|false|3|lf_015_BR
+DRAW|Swamp|lf_017_BR
+L4|SPELL|Red Hulk|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_017_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_017_BR
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|13|false|true|0|false|false|4|lf_015_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|13|true|false|0|false|false|2|lf_017_BR
+L4|SPELL|Machinesmith Automaton|PermanentCreature|MAIN2|13|true|false|0|false|false|3|lf_017_BR
+DRAW|Truck Toss|lf_015_BR
+Truck Toss|DealDamage|DRAW|14|true|false|0|4|4|true|true|false|lf_015_BR
+L4|SPELL|Truck Toss|DealDamage|DRAW|14|true|false|0|false|false|4|lf_015_BR
+DRAW|Swamp|lf_017_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN1|15|true|false|0|false|false|4|lf_017_BR
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|15|false|true|0|false|false|4|lf_015_BR
+DRAW|Photon Blast Barrage|lf_015_BR
+L4|SPELL|Photon Blast Barrage|DealDamage|MAIN1|16|true|false|0|false|false|4|lf_015_BR
+DRAW|Mountain|lf_017_BR
+L4|ABIL|Unliving Legionnaire|ChangeZone|MAIN1|17|true|false|0|false|false|5|lf_017_BR
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|17|false|true|0|false|false|4|lf_015_BR
+DRAW|Hour of Defeat|lf_015_BR
+DRAW|Widow's Bite|lf_017_BR
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_ATTACKERS|19|false|true|0|4|5|true|true|false|lf_015_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_ATTACKERS|19|false|true|0|false|false|4|lf_015_BR
+L4|ABIL|Stark Industries Executive|Token|COMBAT_END|19|false|true|0|false|false|4|lf_015_BR
+L4|SPELL|Klaw, Sonic Subjugator|PermanentCreature|MAIN2|19|true|false|0|false|false|4|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|19|true|false|0|false|false|5|lf_017_BR
+DRAW|Speed, Young Avenger|lf_015_BR
+L4|SPELL|Speed, Young Avenger|PermanentCreature|MAIN1|20|true|false|0|false|false|4|lf_015_BR
+DRAW|Roxxon Brutes|lf_017_BR
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|21|false|true|0|false|false|5|lf_015_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|21|true|false|0|false|false|5|lf_017_BR
+L4|ABIL|Ultron Drone|PutCounter|END_OF_TURN|21|false|false|0|false|false|5|lf_015_BR
+DRAW|Moonstone, Harsh Mistress|lf_015_BR
+L4|SPELL|Moonstone, Harsh Mistress|PermanentCreature|MAIN2|22|true|false|0|false|false|6|lf_015_BR
+DRAW|HYDRA Assault Robot|lf_017_BR
+L4|SPELL|HYDRA Assault Robot|PermanentCreature|MAIN1|23|true|false|0|false|false|6|lf_017_BR
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|23|false|true|0|false|false|7|lf_015_BR
+DRAW|Lightning Strike|lf_015_BR
+Lightning Strike|DealDamage|DRAW|24|true|false|0|7|7|true|true|false|lf_015_BR
+L4|SPELL|Lightning Strike|DealDamage|DRAW|24|true|false|0|false|false|7|lf_015_BR
+END|lf_015_BR
+START
+DRAW|HYDRA Infiltration|lf_014_WB
+DRAW|Vibranium Energy Daggers|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|S.H.I.E.L.D. Spy Kit|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Cruel Alliance|lf_012_BR
+DRAW|Hire a Crew|lf_012_BR
+DRAW|Viv Vision, Teen Synthezoid|lf_012_BR
+DRAW|Blazing Crescendo|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Dependable Quinjet|lf_012_BR
+DRAW|K'un-Lun Warrior|lf_012_BR
+DRAW|Kree Sentinel|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Dependable Quinjet|lf_012_BR
+DRAW|Repulsor Blast|lf_012_BR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_012_BR
+DRAW|Loki Laufeyson|lf_012_BR
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|1|true|false|0|false|false|0|lf_014_WB
+DRAW|Mountain|lf_012_BR
+DRAW|Robot Domination|lf_014_WB
+L4|SPELL|S.H.I.E.L.D. Spy Kit|PermanentNoncreature|MAIN2|3|true|false|0|false|false|0|lf_014_WB
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Loki Laufeyson|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_012_BR
+DRAW|Swamp|lf_014_WB
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|6|true|false|0|false|false|1|lf_012_BR
+DRAW|Swamp|lf_014_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN2|7|true|false|0|false|false|0|lf_014_WB
+DRAW|A.I.M. Synthoids|lf_012_BR
+L4|ABIL|Loki Laufeyson|PutCounter|COMBAT_DECLARE_BLOCKERS|8|true|true|0|false|false|1|lf_012_BR
+DRAW|Patriot, Shield Wielder|lf_014_WB
+L4|SPELL|Robot Domination|PermanentNoncreature|MAIN2|9|true|false|0|false|false|0|lf_014_WB
+DRAW|Swamp|lf_012_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|10|true|true|0|false|false|1|lf_012_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|10|true|false|0|false|false|2|lf_012_BR
+DRAW|HYDRA Troopers|lf_014_WB
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|11|true|false|0|false|false|0|lf_014_WB
+L4|SPELL|Patriot, Shield Wielder|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN2|11|true|false|0|false|false|2|lf_014_WB
+DRAW|Crimson Operative|lf_012_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|12|true|false|0|false|false|2|lf_012_BR
+DRAW|Plains|lf_014_WB
+DRAW|A.I.M. Synthoids|lf_014_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|13|true|false|0|false|false|1|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN1|13|true|false|0|false|false|1|lf_014_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|13|true|false|0|false|false|1|lf_014_WB
+DRAW|Mountain|lf_012_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|14|true|true|0|false|false|2|lf_012_BR
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|14|true|false|0|false|false|3|lf_012_BR
+DRAW|Final Death|lf_014_WB
+Final Death|ChangeZone|MAIN1|15|true|false|0|2|3|true|true|false|lf_014_WB
+L4|SPELL|Final Death|ChangeZone|MAIN1|15|true|false|0|false|false|2|lf_014_WB
+DRAW|Swamp|lf_012_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|16|true|true|0|false|false|2|lf_012_BR
+DRAW|Agent 13, Sharon Carter|lf_014_WB
+L4|SPELL|Agent 13, Sharon Carter|PermanentCreature|MAIN2|17|true|false|0|false|false|2|lf_014_WB
+DRAW|Mountain|lf_012_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|18|true|true|0|false|false|2|lf_012_BR
+DRAW|Red Guardian, Super-Soldier|lf_014_WB
+END|lf_014_WB
+START
+DRAW|Quicksilver, Brash Blur|lf_018_WR
+DRAW|Captain Mar-Vell, Space-Born|lf_018_WR
+DRAW|Hero in Training|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Iron Fist, Living Weapon|lf_018_WR
+DRAW|Repulsor Blast|lf_018_WR
+DRAW|Volcanic Villain|lf_018_WR
+DRAW|Mountain|lf_010_BR
+DRAW|Eyes of the Beholder|lf_010_BR
+DRAW|Roxxon Brutes|lf_010_BR
+DRAW|Cruel Alliance|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Lightning Strike|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|H.E.R.B.I.E. Scout Unit|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Iron Fist, Living Weapon|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Volcanic Villain|lf_018_WR
+DRAW|Iron Fist, Living Weapon|lf_010_BR
+DRAW|A.I.M. Synthoids|lf_018_WR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_018_WR
+Lightning Strike|DealDamage|MAIN2|4|false|false|1|0|1|true|true|false|lf_010_BR
+L4|SPELL|Lightning Strike|DealDamage|MAIN2|4|false|false|1|true|false|0|lf_010_BR
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_010_BR
+DRAW|Spreading Flames|lf_018_WR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|6|true|false|0|false|false|0|lf_018_WR
+DRAW|Madame Hydra|lf_010_BR
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|7|true|false|0|false|false|1|lf_010_BR
+DRAW|Agent of Atlas|lf_018_WR
+L4|SPELL|H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_018_WR
+DRAW|Web Up|lf_018_WR
+DRAW|Mountain|lf_010_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_010_BR
+DRAW|Invisible Woman, Sue Storm|lf_018_WR
+L4|SPELL|Web Up|PermanentNoncreature|MAIN1|10|true|false|0|false|false|1|lf_018_WR
+DRAW|Hex Magic|lf_010_BR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|11|true|false|0|false|false|1|lf_010_BR
+DRAW|Agents of HYDRA|lf_010_BR
+DRAW|Hawkeye, Master Marksman|lf_010_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_010_BR
+DRAW|Borough Backup|lf_018_WR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_018_WR
+DRAW|Dependable Quinjet|lf_010_BR
+L4|SPELL|Hawkeye, Master Marksman|PermanentCreature|MAIN2|13|true|false|0|false|false|2|lf_010_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|13|true|false|0|false|false|3|lf_010_BR
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_018_WR
+DRAW|Visions of Villainy|lf_010_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|15|true|true|0|false|false|3|lf_010_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|15|true|false|0|4|3|true|true|false|lf_010_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|15|true|false|0|false|false|4|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Volcanic Villain|lf_010_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN2|15|true|false|0|false|false|4|lf_010_BR
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|16|true|false|0|false|false|3|lf_018_WR
+DRAW|Super Speed|lf_010_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|17|true|true|0|false|false|4|lf_010_BR
+L4|ABIL|Volcanic Villain|PutCounter|COMBAT_DECLARE_BLOCKERS|17|true|true|0|false|false|5|lf_010_BR
+DRAW|Plains|lf_018_WR
+Spreading Flames|DealDamage|MAIN1|18|true|false|0|4|4|true|true|false|lf_018_WR
+L4|SPELL|Spreading Flames|DealDamage|MAIN1|18|true|false|0|false|false|4|lf_018_WR
+DRAW|Swamp|lf_010_BR
+DRAW|Captain Mar-Vell, Space-Born|lf_018_WR
+END|lf_018_WR
+START
+DRAW|Swamp|lf_013_UB
+DRAW|Project Deathlok Soldier|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|HYDRA Infiltration|lf_016_WB
+DRAW|Arnim Zola, Bio-Fanatic|lf_016_WB
+DRAW|HYDRA Troopers|lf_016_WB
+DRAW|Whiplash, Vengeful Engineer|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Origin of the Avengers|lf_016_WB
+DRAW|Aerial Doombot|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Project Deathlok Soldier|lf_013_UB
+DRAW|Hour of Defeat|lf_013_UB
+DRAW|Madame Masque|lf_013_UB
+DRAW|Arnim Zola, Bio-Fanatic|lf_013_UB
+DRAW|Ronin, Shadow Stalker|lf_013_UB
+DRAW|Stolen Stark Tech|lf_013_UB
+DRAW|A.I.M. Synthoids|lf_013_UB
+DRAW|Vibranium Energy Daggers|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Project Deathlok Soldier|lf_013_UB
+DRAW|The Vision|lf_013_UB
+DRAW|Cruel Alliance|lf_013_UB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|1|true|false|0|false|false|0|lf_013_UB
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_016_WB
+DRAW|Island|lf_013_UB
+Stolen Stark Tech|PermanentNoncreature|MAIN1|3|true|false|0|1|1|true|false|true|lf_013_UB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|MAIN1|3|true|false|0|false|false|1|lf_013_UB
+DRAW|Plains|lf_016_WB
+L4|SPELL|Origin of the Avengers|PermanentNoncreature|MAIN2|4|true|false|0|false|false|1|lf_016_WB
+DRAW|Swamp|lf_013_UB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN1|5|true|false|0|false|false|1|lf_013_UB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|5|true|false|0|false|false|1|lf_013_UB
+DRAW|Swordsman, Sharp Scoundrel|lf_016_WB
+L4|SPELL|Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|6|true|false|0|false|false|2|lf_016_WB
+DRAW|Swamp|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|7|true|false|0|false|false|2|lf_013_UB
+DRAW|Agent of Atlas|lf_016_WB
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|8|true|false|0|false|false|3|lf_016_WB
+DRAW|Justice, Vance Astrovik|lf_013_UB
+L4|SPELL|Justice, Vance Astrovik|PermanentCreature|MAIN1|9|true|false|0|false|false|2|lf_013_UB
+DRAW|Roxxon Brutes|lf_016_WB
+L4|SPELL|Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|10|true|false|0|false|false|3|lf_016_WB
+DRAW|Swamp|lf_013_UB
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|12|true|false|0|false|false|4|lf_016_WB
+DRAW|Kang, Temporal Tyrant|lf_013_UB
+L4|SPELL|Kang, Temporal Tyrant|PermanentCreature|MAIN2|13|true|false|0|false|false|3|lf_013_UB
+DRAW|Plains|lf_016_WB
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|14|true|false|0|false|false|5|lf_016_WB
+DRAW|Atlantean Cavalry|lf_013_UB
+L4|SPELL|Atlantean Cavalry|PermanentCreature|MAIN2|15|true|false|0|false|false|4|lf_013_UB
+DRAW|Unliving Legionnaire|lf_016_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|16|true|false|0|false|false|6|lf_016_WB
+DRAW|Madame Masque|lf_013_UB
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|17|true|true|0|false|false|4|lf_013_UB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|17|true|false|0|false|false|4|lf_013_UB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|17|true|false|0|false|false|5|lf_013_UB
+DRAW|Crossbones, Malicious Mercenary|lf_016_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|18|true|false|0|false|false|6|lf_016_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_013_UB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|19|true|false|0|false|false|5|lf_013_UB
+DRAW|Agents of HYDRA|lf_013_UB
+DRAW|Wakandan Drone Flock|lf_016_WB
+L4|SPELL|Crossbones, Malicious Mercenary|PermanentCreature|MAIN2|20|true|false|0|false|false|5|lf_016_WB
+DRAW|Hour of Defeat|lf_013_UB
+DRAW|Hero in Training|lf_016_WB
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_ATTACKERS|22|false|true|0|5|6|true|true|false|lf_013_UB
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_ATTACKERS|22|false|true|0|false|false|5|lf_013_UB
+L4|SPELL|Wakandan Drone Flock|PermanentCreature|MAIN2|22|true|false|0|false|false|5|lf_016_WB
+DRAW|Super Intelligence|lf_013_UB
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|23|true|false|0|false|false|5|lf_013_UB
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|24|true|false|0|false|false|6|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Island|lf_013_UB
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|25|false|true|1|true|false|7|lf_016_WB
+DRAW|Atlantis Attacks|lf_013_UB
+DRAW|Visions of Villainy|lf_016_WB
+DRAW|Aerial Doombot|lf_013_UB
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|27|false|true|0|false|false|7|lf_016_WB
+L4|SPELL|Aerial Doombot|PermanentCreature|MAIN2|27|true|false|0|false|false|6|lf_013_UB
+DRAW|Ultron Drone|lf_016_WB
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN1|28|true|false|0|false|false|8|lf_016_WB
+DRAW|Ronin, Shadow Stalker|lf_013_UB
+L4|ABIL|Arnim Zola, Bio-Fanatic|Token|COMBAT_DECLARE_ATTACKERS|29|false|true|1|true|false|9|lf_016_WB
+DRAW|Swamp|lf_013_UB
+L4|ABIL|Aerial Doombot|PutCounter|COMBAT_DECLARE_BLOCKERS|29|true|true|0|false|false|7|lf_013_UB
+END|lf_013_UB
+START
+DRAW|Lightning Strike|lf_015_BR
+DRAW|Blazing Crescendo|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Red Hulk|lf_015_BR
+DRAW|Red Room Recruit|lf_015_BR
+DRAW|Machinesmith Automaton|lf_019_RG
+DRAW|Rick Jones, Destined Sidekick|lf_019_RG
+DRAW|Mountain|lf_019_RG
+DRAW|Hire a Crew|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Crimson Operative|lf_019_RG
+DRAW|HYDRA Assault Robot|lf_019_RG
+DRAW|Mountain|lf_019_RG
+L4|SPELL|Rick Jones, Destined Sidekick|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_019_RG
+DRAW|Hire a Crew|lf_015_BR
+Lightning Strike|DealDamage|MAIN1|3|true|false|0|0|1|true|true|false|lf_015_BR
+L4|SPELL|Lightning Strike|DealDamage|MAIN1|3|true|false|0|false|false|0|lf_015_BR
+DRAW|Forest|lf_019_RG
+L4|SPELL|HYDRA Assault Robot|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_019_RG
+DRAW|Mountain|lf_015_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_015_BR
+DRAW|Truck Toss|lf_015_BR
+DRAW|Serpent Specialist|lf_019_RG
+L4|SPELL|Machinesmith Automaton|PermanentCreature|MAIN2|6|true|false|0|false|false|1|lf_019_RG
+DRAW|Mountain|lf_015_BR
+Truck Toss|DealDamage|MAIN1|7|true|false|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Truck Toss|DealDamage|MAIN1|7|true|false|0|false|false|1|lf_015_BR
+DRAW|A.I.M. Synthoids|lf_019_RG
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_019_RG
+DRAW|Ultron Drone|lf_015_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_BEGIN|9|true|true|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_BEGIN|9|true|true|0|false|false|1|lf_015_BR
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_015_BR
+DRAW|Hulk, Gamma Goliath|lf_019_RG
+L4|SPELL|Hulk, Gamma Goliath|PermanentCreature|MAIN2|10|true|false|0|false|false|2|lf_019_RG
+DRAW|Swamp|lf_015_BR
+DRAW|Wakandan Royal Guard|lf_019_RG
+Hire a Crew|Token>PumpAll|COMBAT_DECLARE_ATTACKERS|12|false|true|0|2|3|true|true|false|lf_015_BR
+L4|SPELL|Hire a Crew|Token|COMBAT_DECLARE_ATTACKERS|12|false|true|0|false|false|2|lf_015_BR
+L4|SPELL|Wakandan Royal Guard|PermanentCreature|MAIN2|12|true|false|0|false|false|2|lf_019_RG
+DRAW|Swamp|lf_015_BR
+DRAW|The Thing, Ben Grimm|lf_019_RG
+L4|SPELL|Serpent Specialist|PermanentCreature|MAIN2|14|true|false|0|false|false|3|lf_019_RG
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|14|true|false|0|false|false|4|lf_019_RG
+DRAW|Swamp|lf_015_BR
+DRAW|Mountain|lf_019_RG
+L4|ABIL|Serpent Specialist|PutCounter|COMBAT_DECLARE_BLOCKERS|16|true|true|0|false|false|5|lf_019_RG
+END|lf_019_RG
+START
+DRAW|HYDRA Troopers|lf_017_BR
+DRAW|Widow's Bite|lf_017_BR
+DRAW|Iron Fist, Living Weapon|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Crimson Operative|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Swamp|lf_011_WB
+DRAW|Kingpin's Enforcers|lf_011_WB
+DRAW|Hero in Training|lf_011_WB
+DRAW|Stolen Stark Tech|lf_011_WB
+DRAW|Roxxon Brutes|lf_011_WB
+DRAW|Unliving Legionnaire|lf_011_WB
+DRAW|Super Villain Lockup|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Visions of Villainy|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Unliving Legionnaire|lf_011_WB
+DRAW|Hero in Training|lf_011_WB
+DRAW|Swamp|lf_017_BR
+DRAW|Swamp|lf_011_WB
+DRAW|Swamp|lf_017_BR
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_017_BR
+DRAW|Decoy Ploy|lf_011_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_011_WB
+DRAW|HYDRA Infiltration|lf_011_WB
+DRAW|Mountain|lf_017_BR
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|7|true|false|0|false|false|1|lf_017_BR
+DRAW|Invisible Woman, Sue Storm|lf_011_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|8|true|false|0|false|false|1|lf_011_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_017_BR
+Widow's Bite|Charm>Pump|COMBAT_DECLARE_ATTACKERS|9|true|true|0|2|1|true|true|false|lf_017_BR
+L4|SPELL|Widow's Bite|Charm|COMBAT_DECLARE_ATTACKERS|9|true|true|0|false|false|2|lf_017_BR
+DRAW|Kingpin's Enforcers|lf_011_WB
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|10|true|false|0|false|false|0|lf_011_WB
+DRAW|Roxxon Brutes|lf_017_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_017_BR
+DRAW|Swamp|lf_011_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_011_WB
+Visions of Villainy|Draw>LoseLife|MAIN2|12|true|false|0|2|3|true|true|false|lf_011_WB
+L4|SPELL|Visions of Villainy|Draw|MAIN2|12|true|false|0|false|false|2|lf_011_WB
+DRAW|Crowd of True Believers|lf_011_WB
+DRAW|Dependable Quinjet|lf_011_WB
+DRAW|Swamp|lf_017_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|13|true|false|0|false|false|3|lf_017_BR
+DRAW|Stolen Stark Tech|lf_011_WB
+Stolen Stark Tech|PermanentNoncreature|DRAW|14|true|false|0|2|4|true|false|true|lf_011_WB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|DRAW|14|true|false|0|false|false|2|lf_011_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|14|true|false|0|false|false|2|lf_011_WB
+L4|SPELL|Crowd of True Believers|PermanentCreature|MAIN2|14|true|false|0|false|false|3|lf_011_WB
+DRAW|Visions of Villainy|lf_017_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|15|true|false|0|4|3|true|true|false|lf_017_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|15|true|false|0|false|false|4|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Project Deathlok Soldier|lf_017_BR
+DRAW|Klaw, Sonic Subjugator|lf_011_WB
+L4|SPELL|Klaw, Sonic Subjugator|PermanentCreature|MAIN2|16|true|false|0|false|false|3|lf_011_WB
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|16|true|false|0|false|false|4|lf_011_WB
+DRAW|Machinesmith Automaton|lf_017_BR
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_DECLARE_ATTACKERS|17|false|true|1|true|false|4|lf_011_WB
+END|lf_017_BR
+START
+DRAW|Cloak and Dagger, Entwined|lf_014_WB
+DRAW|Widow's Bite|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Crowd of True Believers|lf_014_WB
+DRAW|Swamp|lf_014_WB
+DRAW|Raft Security Officer|lf_014_WB
+DRAW|S.H.I.E.L.D. Spy Kit|lf_014_WB
+DRAW|Plains|lf_018_WR
+DRAW|Iron Fist, Living Weapon|lf_018_WR
+DRAW|Agent of Atlas|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Web Up|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Hire a Crew|lf_018_WR
+DRAW|Plains|lf_014_WB
+L4|SPELL|Crowd of True Believers|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_014_WB
+DRAW|Plains|lf_018_WR
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_018_WR
+DRAW|Swamp|lf_014_WB
+Widow's Bite|Charm>Pump|MAIN1|4|true|false|0|1|1|true|true|false|lf_014_WB
+L4|SPELL|Widow's Bite|Charm|MAIN1|4|true|false|0|false|false|1|lf_014_WB
+DRAW|Mountain|lf_018_WR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|5|true|false|0|false|false|0|lf_018_WR
+DRAW|Vibranium Energy Daggers|lf_014_WB
+L4|SPELL|S.H.I.E.L.D. Spy Kit|PermanentNoncreature|MAIN1|6|true|false|0|false|false|1|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN1|6|true|false|0|false|false|1|lf_014_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN1|6|true|false|0|false|false|1|lf_014_WB
+DRAW|Agent 13, Sharon Carter|lf_018_WR
+L4|SPELL|Web Up|PermanentNoncreature|MAIN1|7|true|false|0|false|false|1|lf_018_WR
+DRAW|Plains|lf_014_WB
+L4|SPELL|Raft Security Officer|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_014_WB
+L4|ABIL|S.H.I.E.L.D. Spy Kit|Attach|MAIN2|8|true|false|0|false|false|1|lf_014_WB
+DRAW|Vision of Love|lf_018_WR
+L4|SPELL|Agent 13, Sharon Carter|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_018_WR
+DRAW|Swamp|lf_014_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|10|true|false|0|false|false|1|lf_014_WB
+L4|ABIL|Raft Security Officer|Tap|UPKEEP|11|false|false|0|false|false|1|lf_014_WB
+DRAW|Thor Odinson|lf_018_WR
+L4|SPELL|Thor Odinson|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_018_WR
+DRAW|Swamp|lf_014_WB
+L4|ABIL|Raft Security Officer|Tap|UPKEEP|13|false|false|0|false|false|1|lf_014_WB
+DRAW|Okoye, Dora Milaje Leader|lf_018_WR
+L4|SPELL|Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|13|true|false|0|false|false|3|lf_018_WR
+DRAW|Take Up the Shield|lf_014_WB
+L4|ABIL|Raft Security Officer|Tap|UPKEEP|15|false|false|0|false|false|1|lf_014_WB
+DRAW|Borough Backup|lf_018_WR
+L4|SPELL|Borough Backup|Token|MAIN2|15|true|false|0|false|false|6|lf_018_WR
+DRAW|Whiplash, Vengeful Engineer|lf_014_WB
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_014_WB
+L4|ABIL|Raft Security Officer|Tap|UPKEEP|17|false|false|0|false|false|2|lf_014_WB
+DRAW|Mountain|lf_018_WR
+END|lf_018_WR
+START
+DRAW|Madame Masque|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Ninja of the Hand|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Loki Laufeyson|lf_012_BR
+DRAW|HYDRA Infiltration|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Baron Helmut Zemo|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Repulsor Blast|lf_012_BR
+DRAW|Swamp|lf_013_UB
+DRAW|Mountain|lf_012_BR
+L4|SPELL|Loki Laufeyson|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_012_BR
+DRAW|Arnim Zola, Bio-Fanatic|lf_013_UB
+DRAW|Hire a Crew|lf_012_BR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_013_UB
+Hire a Crew|Token>PumpAll|COMBAT_END|6|false|true|0|1|0|true|true|false|lf_012_BR
+L4|SPELL|Hire a Crew|Token|COMBAT_END|6|false|true|0|false|false|1|lf_012_BR
+L4|SPELL|Ninja of the Hand|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_013_UB
+DRAW|Agents of HYDRA|lf_012_BR
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|7|true|false|0|false|false|2|lf_012_BR
+DRAW|Island|lf_013_UB
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_013_UB
+DRAW|A.I.M. Synthoids|lf_012_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|9|true|false|0|false|false|2|lf_012_BR
+DRAW|Cruel Alliance|lf_013_UB
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|10|true|false|0|false|false|1|lf_013_UB
+DRAW|Mountain|lf_012_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_012_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_012_BR
+DRAW|Agents of HYDRA|lf_013_UB
+L4|SPELL|Madame Masque|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_013_UB
+DRAW|The Vision|lf_013_UB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_012_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|13|true|false|0|false|false|3|lf_012_BR
+DRAW|Swamp|lf_013_UB
+L4|ABIL|Ninja of the Hand|Discard|MAIN2|14|true|false|0|false|false|3|lf_013_UB
+DRAW|Mountain|lf_012_BR
+DRAW|Island|lf_013_UB
+L4|SPELL|The Vision|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_013_UB
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|16|true|false|0|false|false|3|lf_013_UB
+DRAW|Red Room Recruit|lf_012_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|17|true|false|0|false|false|4|lf_012_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Swamp|lf_013_UB
+DRAW|Viv Vision, Teen Synthezoid|lf_012_BR
+L4|SPELL|Viv Vision, Teen Synthezoid|PermanentCreature|MAIN2|19|true|false|0|false|false|5|lf_012_BR
+DRAW|Stolen Stark Tech|lf_013_UB
+Stolen Stark Tech|PermanentNoncreature|DRAW|20|true|false|0|4|6|true|false|true|lf_013_UB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|DRAW|20|true|false|0|false|false|4|lf_013_UB
+DRAW|Island|lf_013_UB
+DRAW|Death to Our Enemies|lf_012_BR
+L4|SPELL|Death to Our Enemies|PermanentNoncreature|MAIN2|21|true|false|0|false|false|6|lf_012_BR
+DRAW|Island|lf_013_UB
+DRAW|Swamp|lf_012_BR
+L4|ABIL|Viv Vision, Teen Synthezoid|PutCounter|MAIN1|23|true|false|0|false|false|6|lf_012_BR
+DRAW|Hour of Defeat|lf_013_UB
+Hour of Defeat|Destroy>Surveil|MAIN1|24|true|false|0|4|6|true|true|false|lf_013_UB
+L4|SPELL|Hour of Defeat|Destroy|MAIN1|24|true|false|0|false|false|4|lf_013_UB
+DRAW|Aerial Doombot|lf_013_UB
+L4|SPELL|Aerial Doombot|PermanentCreature|MAIN2|24|true|false|0|false|false|4|lf_013_UB
+DRAW|Widow's Bite|lf_012_BR
+L4|ABIL|Aerial Doombot|PutCounter|UPKEEP|26|true|false|0|false|false|5|lf_013_UB
+DRAW|Unliving Legionnaire|lf_013_UB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|26|true|false|0|false|false|5|lf_013_UB
+DRAW|Mountain|lf_012_BR
+DRAW|Justice, Vance Astrovik|lf_013_UB
+L4|ABIL|Unliving Legionnaire|ChangeZone|MAIN1|28|true|false|0|false|false|6|lf_013_UB
+L4|SPELL|Justice, Vance Astrovik|PermanentCreature|MAIN1|28|true|false|0|false|false|6|lf_013_UB
+Widow's Bite|Charm>Pump>Pump|COMBAT_DECLARE_BLOCKERS|28|false|true|0|4|7|true|true|false|lf_012_BR
+L4|SPELL|Widow's Bite|Charm|COMBAT_DECLARE_BLOCKERS|28|false|true|0|false|false|4|lf_012_BR
+END|lf_013_UB
+START
+DRAW|Widow's Bite|lf_015_BR
+DRAW|Stark Industries Executive|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Visions of Villainy|lf_015_BR
+DRAW|Hour of Defeat|lf_015_BR
+DRAW|Project Deathlok Soldier|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Hex Magic|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Viv Vision, Teen Synthezoid|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|K'un-Lun Warrior|lf_010_BR
+L4|SPELL|Stark Industries Executive|PermanentCreature|MAIN2|1|true|false|0|false|false|0|lf_015_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Too Evil to Stay Dead|lf_015_BR
+DRAW|Ultron Drone|lf_010_BR
+DRAW|Swamp|lf_015_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|5|true|false|0|1|0|true|true|false|lf_015_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|5|true|false|0|false|false|1|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|H.E.R.B.I.E. Scout Unit|lf_015_BR
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|6|true|false|0|false|false|0|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Agents of HYDRA|lf_010_BR
+DRAW|Lightning Strike|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Avengers: Under Siege|lf_010_BR
+DRAW|Swamp|lf_015_BR
+L4|SPELL|H.E.R.B.I.E. Scout Unit|PermanentCreature|MAIN2|7|true|false|0|false|false|1|lf_015_BR
+DRAW|Mountain|lf_015_BR
+Lightning Strike|DealDamage|UPKEEP|8|true|false|0|0|2|true|true|false|lf_010_BR
+L4|SPELL|Lightning Strike|DealDamage|UPKEEP|8|true|false|0|false|false|0|lf_010_BR
+DRAW|Mountain|lf_010_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_010_BR
+DRAW|Blazing Crescendo|lf_015_BR
+Widow's Bite|Charm>Pump|MAIN1|9|true|false|0|1|1|true|true|false|lf_015_BR
+L4|SPELL|Widow's Bite|Charm|MAIN1|9|true|false|0|false|false|1|lf_015_BR
+Hour of Defeat|Destroy>Surveil|MAIN1|9|true|false|0|1|1|true|true|false|lf_015_BR
+L4|SPELL|Hour of Defeat|Destroy|MAIN1|9|true|false|0|false|false|1|lf_015_BR
+DRAW|Eyes of the Beholder|lf_010_BR
+L4|SPELL|Avengers: Under Siege|PermanentNoncreature|MAIN2|10|true|false|0|false|false|0|lf_010_BR
+DRAW|Speed, Young Avenger|lf_015_BR
+L4|SPELL|Speed, Young Avenger|PermanentCreature|MAIN1|11|true|false|0|false|false|1|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|11|true|false|0|false|false|2|lf_015_BR
+DRAW|Swamp|lf_010_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|MAIN1|12|false|false|1|3|2|true|true|false|lf_015_BR
+L4|SPELL|Blazing Crescendo|Pump|MAIN1|12|false|false|1|true|false|3|lf_015_BR
+Eyes of the Beholder|Pump|MAIN1|12|true|false|0|2|1|true|true|false|lf_010_BR
+L4|SPELL|Eyes of the Beholder|Pump|MAIN1|12|true|false|0|false|false|2|lf_010_BR
+DRAW|Red Hulk|lf_015_BR
+L4|SPELL|Red Hulk|PermanentCreature|MAIN2|13|true|false|0|false|false|0|lf_015_BR
+DRAW|Hour of Defeat|lf_010_BR
+DRAW|Swamp|lf_015_BR
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_ATTACKERS|15|false|true|0|2|1|true|true|false|lf_010_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_ATTACKERS|15|false|true|0|false|false|2|lf_010_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|MAIN2|15|true|false|0|false|false|0|lf_015_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|15|true|false|0|false|false|0|lf_015_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Unliving Legionnaire|lf_010_BR
+END|lf_010_BR
+START
+DRAW|Mountain|lf_017_BR
+DRAW|Crimson Operative|lf_017_BR
+DRAW|Roxxon Brutes|lf_017_BR
+DRAW|Dependable Quinjet|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Machinesmith Automaton|lf_017_BR
+DRAW|Iron Fist, Living Weapon|lf_017_BR
+DRAW|Swamp|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|HYDRA Infiltration|lf_016_WB
+DRAW|Captain America's Shield|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Murdock's Crusade|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Sear|lf_017_BR
+L4|ABIL|Roxxon Brutes|ChangeZone|END_OF_TURN|3|true|false|0|false|false|0|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Captain America's Shield|PermanentNoncreature|MAIN2|4|true|false|0|false|false|0|lf_016_WB
+DRAW|Stolen Stark Tech|lf_017_BR
+Stolen Stark Tech|PermanentNoncreature|END_OF_TURN|5|true|false|0|0|0|true|false|true|lf_017_BR
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|END_OF_TURN|5|true|false|0|false|false|0|lf_017_BR
+DRAW|HYDRA Troopers|lf_016_WB
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_016_WB
+DRAW|Mountain|lf_017_BR
+DRAW|Visions of Villainy|lf_016_WB
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|8|true|false|0|false|false|1|lf_016_WB
+Sear|DealDamage|COMBAT_DECLARE_BLOCKERS|8|false|true|0|0|1|true|true|false|lf_017_BR
+L4|SPELL|Sear|DealDamage|COMBAT_DECLARE_BLOCKERS|8|false|true|0|false|false|0|lf_017_BR
+DRAW|Klaw, Sonic Subjugator|lf_017_BR
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|9|true|false|0|false|false|0|lf_017_BR
+DRAW|Swamp|lf_016_WB
+Visions of Villainy|Draw>LoseLife|MAIN2|10|true|false|0|0|1|true|true|false|lf_016_WB
+L4|SPELL|Visions of Villainy|Draw|MAIN2|10|true|false|0|false|false|0|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Mountain|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|11|true|false|0|false|false|1|lf_017_BR
+L4|SPELL|Iron Fist, Living Weapon|PermanentCreature|MAIN2|11|true|false|0|false|false|1|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_016_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|12|true|false|0|false|false|0|lf_016_WB
+L4|ABIL|Captain America's Shield|Attach|MAIN2|12|true|false|0|false|false|1|lf_016_WB
+DRAW|Hawkeye's Bow|lf_017_BR
+L4|SPELL|Hawkeye's Bow|PermanentNoncreature|MAIN1|13|true|false|0|false|false|2|lf_017_BR
+L4|ABIL|Hawkeye's Bow|Attach|MAIN1|13|true|false|0|false|false|2|lf_017_BR
+L4|SPELL|Klaw, Sonic Subjugator|PermanentCreature|MAIN2|13|true|false|0|false|false|2|lf_017_BR
+DRAW|Baron Helmut Zemo|lf_016_WB
+DRAW|Kree Sentinel|lf_017_BR
+L4|SPELL|Kree Sentinel|PermanentCreature|MAIN2|15|true|false|0|false|false|3|lf_017_BR
+DRAW|Swordsman, Sharp Scoundrel|lf_016_WB
+L4|SPELL|Swordsman, Sharp Scoundrel|PermanentCreature|MAIN2|16|true|false|0|false|false|1|lf_016_WB
+DRAW|Project Deathlok Soldier|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|17|true|false|0|false|false|4|lf_017_BR
+DRAW|Hero in Training|lf_016_WB
+L4|SPELL|Hero in Training|PermanentCreature|MAIN2|18|true|false|0|false|false|2|lf_016_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_016_WB
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|18|true|false|0|false|false|3|lf_016_WB
+DRAW|Visions of Villainy|lf_017_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|19|true|false|0|5|4|true|true|false|lf_017_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|19|true|false|0|false|false|5|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Ultron Drone|lf_016_WB
+L4|SPELL|Ultron Drone|PermanentCreature|MAIN2|20|true|false|0|false|false|4|lf_016_WB
+DRAW|Swamp|lf_017_BR
+DRAW|Plains|lf_016_WB
+L4|ABIL|Ultron Drone|PutCounter|DRAW|22|true|false|0|false|false|5|lf_016_WB
+DRAW|Red Hulk|lf_017_BR
+L4|SPELL|Red Hulk|PermanentCreature|MAIN2|23|true|false|0|false|false|5|lf_017_BR
+DRAW|Crossbones, Malicious Mercenary|lf_016_WB
+L4|SPELL|Crossbones, Malicious Mercenary|PermanentCreature|MAIN2|24|true|false|0|false|false|6|lf_016_WB
+DRAW|HYDRA Troopers|lf_017_BR
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|25|true|false|0|false|false|6|lf_017_BR
+DRAW|Throttle|lf_016_WB
+DRAW|Widow's Bite|lf_017_BR
+Throttle|Pump|COMBAT_DECLARE_ATTACKERS|27|false|true|0|7|8|true|true|false|lf_016_WB
+L4|SPELL|Throttle|Pump|COMBAT_DECLARE_ATTACKERS|27|false|true|0|false|false|7|lf_016_WB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|27|true|false|0|false|false|7|lf_017_BR
+L4|ABIL|Hawkeye's Bow|Attach|MAIN2|27|true|false|0|false|false|7|lf_017_BR
+DRAW|Agent of Atlas|lf_016_WB
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|28|true|false|0|false|false|7|lf_016_WB
+DRAW|Unliving Legionnaire|lf_017_BR
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|29|true|false|0|false|false|7|lf_017_BR
+L4|ABIL|Unliving Legionnaire|ChangeZone|MAIN2|29|true|false|0|false|false|8|lf_017_BR
+DRAW|Plains|lf_016_WB
+DRAW|Death to Our Enemies|lf_017_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|31|true|false|0|false|false|8|lf_017_BR
+L4|SPELL|Death to Our Enemies|PermanentNoncreature|MAIN2|31|true|false|0|false|false|9|lf_017_BR
+DRAW|Whiplash, Vengeful Engineer|lf_016_WB
+L4|SPELL|Whiplash, Vengeful Engineer|PermanentCreature|MAIN1|32|true|false|0|false|false|8|lf_016_WB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_017_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|33|true|false|0|false|false|9|lf_017_BR
+DRAW|Kingpin's Enforcers|lf_016_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN1|34|true|false|0|false|false|9|lf_016_WB
+DRAW|Swamp|lf_017_BR
+DRAW|Black Widow, Double Agent|lf_016_WB
+L4|SPELL|Black Widow, Double Agent|PermanentCreature|MAIN1|36|true|false|0|false|false|10|lf_016_WB
+DRAW|Hour of Defeat|lf_017_BR
+Hour of Defeat|Destroy>Surveil|COMBAT_DECLARE_BLOCKERS|37|true|true|0|10|11|true|true|false|lf_017_BR
+L4|SPELL|Hour of Defeat|Destroy|COMBAT_DECLARE_BLOCKERS|37|true|true|0|false|false|10|lf_017_BR
+L4|ABIL|Kingpin's Enforcers|Draw|COMBAT_DECLARE_BLOCKERS|37|false|true|2|true|false|10|lf_016_WB
+Widow's Bite|Charm>Pump|COMBAT_DECLARE_BLOCKERS|37|true|true|3|10|10|true|true|false|lf_017_BR
+L4|SPELL|Widow's Bite|Charm|COMBAT_DECLARE_BLOCKERS|37|true|true|3|true|false|10|lf_017_BR
+L4|ABIL|Kingpin's Enforcers|Draw|COMBAT_DECLARE_BLOCKERS|37|false|true|5|true|false|9|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Arnim Zola, Bio-Fanatic|lf_016_WB
+END|lf_017_BR
+START
+DRAW|Decoy Ploy|lf_011_WB
+DRAW|Vibranium Energy Daggers|lf_011_WB
+DRAW|Project Deathlok Soldier|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Eyes of the Beholder|lf_011_WB
+DRAW|Mountain|lf_019_RG
+DRAW|Repulsor Blast|lf_019_RG
+DRAW|HYDRA Assault Robot|lf_019_RG
+DRAW|Tigra, Feline Fury|lf_019_RG
+DRAW|Hercules, Prince of Power|lf_019_RG
+DRAW|Serpent Specialist|lf_019_RG
+DRAW|Kree Sentinel|lf_019_RG
+DRAW|Machinesmith Automaton|lf_019_RG
+DRAW|Hulk, Gamma Goliath|lf_019_RG
+DRAW|Hercules, Prince of Power|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|K'un-Lun Warrior|lf_019_RG
+DRAW|Forest|lf_019_RG
+DRAW|Team Tactics|lf_019_RG
+DRAW|Roxxon Brutes|lf_011_WB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_011_WB
+DRAW|Volcanic Villain|lf_019_RG
+DRAW|Plains|lf_011_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN1|4|true|false|0|false|false|1|lf_011_WB
+DRAW|Repulsor Blast|lf_019_RG
+DRAW|Colleen Wing, Street Samurai|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|6|true|false|0|false|false|1|lf_011_WB
+DRAW|Forest|lf_019_RG
+L4|SPELL|Hercules, Prince of Power|PermanentCreature|MAIN2|7|true|false|0|false|false|0|lf_019_RG
+DRAW|Dependable Quinjet|lf_011_WB
+L4|SPELL|Colleen Wing, Street Samurai|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_011_WB
+DRAW|The Thing, Ben Grimm|lf_019_RG
+DRAW|Swamp|lf_011_WB
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|10|true|false|0|false|false|2|lf_011_WB
+DRAW|Forest|lf_019_RG
+DRAW|Super Villain Lockup|lf_011_WB
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|12|true|false|0|false|false|3|lf_011_WB
+DRAW|Forest|lf_019_RG
+DRAW|The Masters of Evil|lf_011_WB
+L4|ABIL|Dependable Quinjet|Animate|COMBAT_BEGIN|14|true|true|0|false|false|3|lf_011_WB
+END|lf_011_WB
+START
+DRAW|Agent 13, Sharon Carter|lf_014_WB
+DRAW|Patriot, Shield Wielder|lf_014_WB
+DRAW|Final Death|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Crowd of True Believers|lf_014_WB
+DRAW|Widow's Bite|lf_014_WB
+DRAW|Plains|lf_014_WB
+DRAW|Robot Domination|lf_013_UB
+DRAW|Ronin, Shadow Stalker|lf_013_UB
+DRAW|Justice, Vance Astrovik|lf_013_UB
+DRAW|Agents of HYDRA|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Aerial Doombot|lf_013_UB
+DRAW|Atlantean Cavalry|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Unliving Legionnaire|lf_013_UB
+DRAW|Kang, Temporal Tyrant|lf_013_UB
+DRAW|Project Deathlok Soldier|lf_013_UB
+DRAW|Echo, Perceptive Prodigy|lf_013_UB
+DRAW|Justice, Vance Astrovik|lf_013_UB
+DRAW|Stolen Stark Tech|lf_013_UB
+DRAW|Hour of Defeat|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Swamp|lf_013_UB
+DRAW|Ronin, Shadow Stalker|lf_013_UB
+DRAW|Grim Reaper, Lethal Legionnaire|lf_013_UB
+DRAW|Unliving Legionnaire|lf_013_UB
+DRAW|Echo, Perceptive Prodigy|lf_013_UB
+L4|SPELL|Crowd of True Believers|PermanentCreature|MAIN2|1|true|false|0|false|false|0|lf_014_WB
+DRAW|Swamp|lf_013_UB
+DRAW|Plains|lf_014_WB
+L4|SPELL|Patriot, Shield Wielder|PermanentCreature|MAIN2|3|true|false|0|false|false|1|lf_014_WB
+DRAW|Robot Domination|lf_013_UB
+DRAW|A.I.M. Synthoids|lf_014_WB
+L4|SPELL|Agent 13, Sharon Carter|PermanentCreature|MAIN2|5|true|false|0|false|false|2|lf_014_WB
+DRAW|Stolen Stark Tech|lf_013_UB
+Stolen Stark Tech|PermanentNoncreature|DRAW|6|true|false|0|0|3|true|false|true|lf_013_UB
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|DRAW|6|true|false|0|false|false|0|lf_013_UB
+DRAW|HYDRA Troopers|lf_014_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|7|true|false|0|false|false|3|lf_014_WB
+DRAW|Island|lf_013_UB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN2|8|true|false|0|false|false|0|lf_013_UB
+DRAW|Swamp|lf_014_WB
+Widow's Bite|Charm>Pump|COMBAT_DECLARE_ATTACKERS|9|true|true|0|4|1|true|true|false|lf_014_WB
+L4|SPELL|Widow's Bite|Charm|COMBAT_DECLARE_ATTACKERS|9|true|true|0|false|false|4|lf_014_WB
+DRAW|Island|lf_013_UB
+L4|SPELL|Ronin, Shadow Stalker|PermanentCreature|MAIN2|10|true|false|0|false|false|0|lf_013_UB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|10|true|false|0|false|false|1|lf_013_UB
+DRAW|Cloak and Dagger, Entwined|lf_014_WB
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|11|true|false|0|false|false|3|lf_014_WB
+DRAW|Island|lf_013_UB
+L4|SPELL|Echo, Perceptive Prodigy|PermanentCreature|MAIN2|12|true|false|0|false|false|0|lf_013_UB
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|12|true|false|0|false|false|1|lf_013_UB
+DRAW|Whiplash, Vengeful Engineer|lf_014_WB
+END|lf_014_WB
+START
+DRAW|Dark Deed|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Roxxon Brutes|lf_015_BR
+DRAW|Blazing Crescendo|lf_015_BR
+DRAW|Command the Storm|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Stark Industries Executive|lf_015_BR
+DRAW|Mountain|lf_018_WR
+DRAW|Invisible Woman, Sue Storm|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Volcanic Villain|lf_018_WR
+DRAW|Plains|lf_018_WR
+DRAW|Borough Backup|lf_018_WR
+DRAW|Mountain|lf_018_WR
+DRAW|Too Evil to Stay Dead|lf_015_BR
+L4|SPELL|Stark Industries Executive|PermanentCreature|MAIN2|2|true|false|0|false|false|0|lf_015_BR
+DRAW|Plains|lf_018_WR
+DRAW|Swamp|lf_015_BR
+DRAW|Plains|lf_018_WR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|5|true|false|0|false|false|0|lf_018_WR
+L4|ABIL|Roxxon Brutes|ChangeZone|END_OF_TURN|5|false|false|0|false|false|1|lf_015_BR
+DRAW|Mountain|lf_015_BR
+DRAW|Swamp|lf_015_BR
+DRAW|Agent of Atlas|lf_018_WR
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|7|true|false|0|false|false|1|lf_018_WR
+DRAW|Swamp|lf_015_BR
+Blazing Crescendo|Pump>Dig>Effect>Cleanup|COMBAT_DECLARE_BLOCKERS|8|true|true|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Blazing Crescendo|Pump|COMBAT_DECLARE_BLOCKERS|8|true|true|0|false|false|1|lf_015_BR
+DRAW|Captain Mar-Vell, Space-Born|lf_018_WR
+L4|SPELL|Captain Mar-Vell, Space-Born|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_018_WR
+DRAW|Visions of Villainy|lf_015_BR
+Command the Storm|DealDamage|MAIN1|10|true|false|0|1|2|true|true|false|lf_015_BR
+L4|SPELL|Command the Storm|DealDamage|MAIN1|10|true|false|0|false|false|1|lf_015_BR
+DRAW|Mountain|lf_018_WR
+L4|ABIL|Volcanic Villain|PutCounter|COMBAT_DECLARE_BLOCKERS|11|true|true|0|false|false|1|lf_018_WR
+DRAW|Swamp|lf_015_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|12|true|false|0|1|1|true|true|false|lf_015_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|12|true|false|0|false|false|1|lf_015_BR
+DRAW|Lightning Strike|lf_015_BR
+DRAW|Agents of HYDRA|lf_015_BR
+L4|SPELL|Agents of HYDRA|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_015_BR
+DRAW|Okoye, Dora Milaje Leader|lf_018_WR
+L4|SPELL|Okoye, Dora Milaje Leader|PermanentCreature|MAIN1|13|true|false|0|false|false|1|lf_018_WR
+Lightning Strike|DealDamage|UPKEEP|14|true|false|0|2|4|true|true|false|lf_015_BR
+L4|SPELL|Lightning Strike|DealDamage|UPKEEP|14|true|false|0|false|false|2|lf_015_BR
+DRAW|Speed, Young Avenger|lf_015_BR
+DRAW|Mountain|lf_018_WR
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_ATTACKERS|15|false|true|0|false|false|2|lf_015_BR
+L4|SPELL|Invisible Woman, Sue Storm|PermanentCreature|MAIN2|15|true|false|0|false|false|4|lf_018_WR
+DRAW|Swamp|lf_015_BR
+L4|SPELL|Speed, Young Avenger|PermanentCreature|MAIN1|16|true|false|0|false|false|1|lf_015_BR
+DRAW|Spreading Flames|lf_018_WR
+L4|ABIL|Stark Industries Executive|Token|COMBAT_DECLARE_BLOCKERS|17|false|true|0|false|false|2|lf_015_BR
+END|lf_018_WR
+START
+DRAW|Stolen Stark Tech|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Hour of Defeat|lf_017_BR
+DRAW|A.I.M. Synthoids|lf_017_BR
+DRAW|Death to Our Enemies|lf_017_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Mountain|lf_012_BR
+DRAW|Loki Laufeyson|lf_012_BR
+DRAW|HYDRA Infiltration|lf_012_BR
+DRAW|Crimson Operative|lf_012_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Repulsor Blast|lf_012_BR
+DRAW|Elektra, Daughter of the Hand|lf_012_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Swamp|lf_012_BR
+L4|SPELL|Loki Laufeyson|PermanentCreature|MAIN2|3|true|false|0|false|false|0|lf_012_BR
+DRAW|Mountain|lf_017_BR
+Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|0|1|true|false|true|lf_017_BR
+L4|SPELL|Stolen Stark Tech|PermanentNoncreature|COMBAT_BEGIN|4|true|true|0|false|false|0|lf_017_BR
+DRAW|Swamp|lf_012_BR
+DRAW|Kree Sentinel|lf_017_BR
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|6|true|false|0|false|false|1|lf_017_BR
+DRAW|Swamp|lf_012_BR
+L4|SPELL|HYDRA Infiltration|PermanentNoncreature|MAIN1|7|true|false|0|false|false|1|lf_012_BR
+DRAW|Roxxon Brutes|lf_017_BR
+Hour of Defeat|Destroy>Surveil|MAIN1|8|true|false|0|1|1|true|true|false|lf_017_BR
+L4|SPELL|Hour of Defeat|Destroy|MAIN1|8|true|false|0|false|false|1|lf_017_BR
+DRAW|Dependable Quinjet|lf_012_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|9|true|false|0|false|false|0|lf_012_BR
+DRAW|HYDRA Troopers|lf_017_BR
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|10|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|10|true|false|0|false|false|2|lf_017_BR
+DRAW|K'un-Lun Warrior|lf_012_BR
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|11|true|false|0|false|false|0|lf_012_BR
+DRAW|Visions of Villainy|lf_017_BR
+L4|SPELL|Death to Our Enemies|PermanentNoncreature|MAIN2|12|true|false|0|false|false|1|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|12|true|false|0|false|false|1|lf_017_BR
+DRAW|Volcanic Villain|lf_012_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|13|true|false|0|false|false|0|lf_012_BR
+DRAW|HYDRA Assault Robot|lf_017_BR
+Visions of Villainy|Draw>LoseLife|MAIN2|14|true|false|0|1|1|true|true|false|lf_017_BR
+L4|SPELL|Visions of Villainy|Draw|MAIN2|14|true|false|0|false|false|1|lf_017_BR
+DRAW|Mountain|lf_017_BR
+DRAW|Widow's Bite|lf_017_BR
+L4|SPELL|HYDRA Assault Robot|PermanentCreature|MAIN2|14|true|false|0|false|false|1|lf_017_BR
+DRAW|Swamp|lf_012_BR
+L4|ABIL|Volcanic Villain|PutCounter|COMBAT_DECLARE_BLOCKERS|15|true|true|0|false|false|1|lf_012_BR
+DRAW|Project Deathlok Soldier|lf_017_BR
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|16|true|false|0|false|false|2|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|16|true|false|0|false|false|3|lf_017_BR
+DRAW|Feed the Flames|lf_012_BR
+Feed the Flames|DealDamage|MAIN1|17|true|false|0|1|4|true|true|false|lf_012_BR
+L4|SPELL|Feed the Flames|DealDamage|MAIN1|17|true|false|0|false|false|1|lf_012_BR
+DRAW|Repulsor Blast|lf_017_BR
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|18|true|false|0|false|false|2|lf_017_BR
+DRAW|Grim Reaper, Lethal Legionnaire|lf_012_BR
+L4|SPELL|Grim Reaper, Lethal Legionnaire|PermanentCreature|MAIN2|19|true|false|0|false|false|0|lf_012_BR
+DRAW|Swamp|lf_017_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|MAIN1|20|true|false|0|false|false|2|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|20|true|false|0|false|false|2|lf_017_BR
+DRAW|Death to Our Enemies|lf_012_BR
+L4|SPELL|Elektra, Daughter of the Hand|PermanentCreature|MAIN2|21|true|false|0|false|false|1|lf_012_BR
+DRAW|Mountain|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN1|22|true|false|0|false|false|2|lf_017_BR
+DRAW|Cruel Alliance|lf_012_BR
+L4|SPELL|Cruel Alliance|ChangeZone|MAIN1|23|true|false|0|false|false|2|lf_012_BR
+Widow's Bite|Charm>Pump|COMBAT_DECLARE_BLOCKERS|23|false|true|0|1|2|true|true|false|lf_017_BR
+L4|SPELL|Widow's Bite|Charm|COMBAT_DECLARE_BLOCKERS|23|false|true|0|false|false|1|lf_017_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|23|false|true|0|false|false|0|lf_017_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|23|true|false|0|false|false|1|lf_012_BR
+DRAW|Swamp|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|24|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|24|true|false|0|false|false|1|lf_017_BR
+DRAW|Swamp|lf_012_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|25|false|true|0|false|false|0|lf_017_BR
+L4|SPELL|Death to Our Enemies|PermanentNoncreature|MAIN2|25|true|false|0|false|false|1|lf_012_BR
+DRAW|Mountain|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|26|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|26|true|false|0|false|false|1|lf_017_BR
+DRAW|Mountain|lf_012_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|27|false|true|0|false|false|0|lf_017_BR
+DRAW|Mountain|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|28|true|false|0|false|false|0|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|28|true|false|0|false|false|1|lf_017_BR
+DRAW|Mountain|lf_012_BR
+L4|ABIL|Project Deathlok Soldier|ChangeZone|COMBAT_DAMAGE|29|false|true|0|false|false|0|lf_017_BR
+DRAW|Red Hulk|lf_017_BR
+L4|SPELL|Red Hulk|PermanentCreature|MAIN2|30|true|false|0|false|false|0|lf_017_BR
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|30|true|false|0|false|false|1|lf_017_BR
+L4|ABIL|Stolen Stark Tech|Attach|MAIN2|30|true|false|0|false|false|2|lf_017_BR
+DRAW|Kree Sentinel|lf_012_BR
+L4|SPELL|Kree Sentinel|PermanentCreature|MAIN2|31|true|false|0|false|false|1|lf_012_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Red Room Recruit|lf_012_BR
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN2|33|true|false|0|false|false|2|lf_012_BR
+DRAW|Agents of HYDRA|lf_012_BR
+DRAW|Machinesmith Automaton|lf_017_BR
+L4|SPELL|Machinesmith Automaton|PermanentCreature|MAIN2|34|true|false|0|false|false|2|lf_017_BR
+DRAW|Arnim Zola, Bio-Fanatic|lf_012_BR
+L4|SPELL|Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|35|true|false|0|false|false|3|lf_012_BR
+DRAW|Swamp|lf_017_BR
+DRAW|Mountain|lf_012_BR
+END|lf_012_BR
+START
+DRAW|The Masters of Evil|lf_011_WB
+DRAW|Colleen Wing, Street Samurai|lf_011_WB
+DRAW|Roxxon Brutes|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Plains|lf_011_WB
+DRAW|Vibranium Energy Daggers|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|K'un-Lun Warrior|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Unliving Legionnaire|lf_010_BR
+DRAW|Mountain|lf_010_BR
+DRAW|Hex Magic|lf_010_BR
+DRAW|Ultron Drone|lf_010_BR
+DRAW|Dependable Quinjet|lf_011_WB
+L4|SPELL|Vibranium Energy Daggers|PermanentNoncreature|MAIN2|2|true|false|0|false|false|0|lf_011_WB
+DRAW|H.E.R.B.I.E. Scout Unit|lf_010_BR
+DRAW|Plains|lf_011_WB
+L4|SPELL|Colleen Wing, Street Samurai|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_011_WB
+DRAW|Eyes of the Beholder|lf_010_BR
+L4|SPELL|Hex Magic|ChangeZoneAll|MAIN1|5|true|false|0|false|false|0|lf_010_BR
+DRAW|Wonder Man, Hollywood Hero|lf_010_BR
+DRAW|Swamp|lf_010_BR
+DRAW|Volcanic Villain|lf_010_BR
+DRAW|Hour of Defeat|lf_010_BR
+DRAW|Cruel Alliance|lf_010_BR
+DRAW|Hero in Training|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|6|true|false|0|false|false|1|lf_011_WB
+DRAW|Lightning Strike|lf_010_BR
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|7|true|false|0|false|false|0|lf_010_BR
+DRAW|Kingpin's Enforcers|lf_011_WB
+L4|SPELL|Kingpin's Enforcers|PermanentCreature|MAIN2|8|true|false|0|false|false|1|lf_011_WB
+DRAW|Mountain|lf_010_BR
+Lightning Strike|DealDamage|UPKEEP|10|false|false|0|1|2|true|true|false|lf_010_BR
+L4|SPELL|Lightning Strike|DealDamage|UPKEEP|10|false|false|0|false|false|1|lf_010_BR
+L4|ABIL|Kingpin's Enforcers|Draw|UPKEEP|10|true|false|1|true|false|1|lf_011_WB
+DRAW|Swamp|lf_011_WB
+DRAW|Project Deathlok Soldier|lf_011_WB
+L4|SPELL|Project Deathlok Soldier|PermanentCreature|MAIN2|10|true|false|0|false|false|1|lf_011_WB
+DRAW|Mountain|lf_010_BR
+L4|ABIL|Volcanic Villain|PutCounter|COMBAT_DECLARE_BLOCKERS|11|true|true|0|false|false|1|lf_010_BR
+DRAW|Red Room Recruit|lf_011_WB
+L4|SPELL|Roxxon Brutes|PermanentCreature|MAIN2|12|true|false|0|false|false|2|lf_011_WB
+DRAW|Mountain|lf_010_BR
+Hour of Defeat|Destroy>Surveil|MAIN1|13|true|false|0|1|3|true|true|false|lf_010_BR
+L4|SPELL|Hour of Defeat|Destroy|MAIN1|13|true|false|0|false|false|1|lf_010_BR
+DRAW|Swamp|lf_011_WB
+L4|SPELL|The Masters of Evil|PermanentCreature|MAIN1|14|true|false|0|false|false|2|lf_011_WB
+DRAW|Dependable Quinjet|lf_010_BR
+L4|SPELL|Wonder Man, Hollywood Hero|PermanentCreature|MAIN2|15|true|false|0|false|false|0|lf_010_BR
+DRAW|Unliving Legionnaire|lf_011_WB
+L4|SPELL|Unliving Legionnaire|PermanentCreature|MAIN1|16|true|false|0|false|false|2|lf_011_WB
+DRAW|Swamp|lf_010_BR
+L4|SPELL|Dependable Quinjet|PermanentNoncreature|MAIN2|17|true|false|0|false|false|0|lf_010_BR
+DRAW|Plains|lf_011_WB
+L4|SPELL|Red Room Recruit|PermanentCreature|MAIN1|18|true|false|0|false|false|3|lf_011_WB
+DRAW|Plains|lf_011_WB
+L4|ABIL|Vibranium Energy Daggers|Attach|MAIN1|18|true|false|0|false|false|4|lf_011_WB
+END|lf_011_WB
+START
+DRAW|Forest|lf_019_RG
+DRAW|H.E.R.B.I.E. Scout Unit|lf_019_RG
+DRAW|Repulsor Blast|lf_019_RG
+DRAW|Tigra, Feline Fury|lf_019_RG
+DRAW|Mountain|lf_019_RG
+DRAW|Volcanic Villain|lf_019_RG
+DRAW|Mountain|lf_019_RG
+DRAW|Arnim Zola, Bio-Fanatic|lf_016_WB
+DRAW|Agent of Atlas|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Swamp|lf_016_WB
+DRAW|Plains|lf_016_WB
+DRAW|Origin of the Avengers|lf_016_WB
+DRAW|Murdock's Crusade|lf_016_WB
+DRAW|Giant Growth|lf_019_RG
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Agent of Atlas|PermanentCreature|MAIN2|4|true|false|0|false|false|0|lf_016_WB
+Tigra, Feline Fury|PermanentCreature|END_OF_TURN|4|false|false|0|0|1|true|false|true|lf_019_RG
+L4|SPELL|Tigra, Feline Fury|PermanentCreature|END_OF_TURN|4|false|false|0|false|false|0|lf_019_RG
+DRAW|Hulk, Gamma Goliath|lf_019_RG
+L4|SPELL|Volcanic Villain|PermanentCreature|MAIN1|5|true|false|0|false|false|1|lf_019_RG
+DRAW|Baron Helmut Zemo|lf_016_WB
+L4|SPELL|Arnim Zola, Bio-Fanatic|PermanentCreature|MAIN2|6|true|false|0|false|false|0|lf_016_WB
+DRAW|Mountain|lf_019_RG
+L4|SPELL|Repulsor Blast|DealDamage|MAIN1|7|true|false|0|false|false|1|lf_019_RG
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Origin of the Avengers|PermanentNoncreature|MAIN2|8|true|false|0|false|false|0|lf_016_WB
+DRAW|Hercules, Prince of Power|lf_019_RG
+L4|SPELL|Hercules, Prince of Power|PermanentCreature|MAIN2|9|true|false|0|false|false|1|lf_019_RG
+DRAW|Crossbones, Malicious Mercenary|lf_016_WB
+DRAW|Wakandan Drone Flock|lf_016_WB
+L4|SPELL|Crossbones, Malicious Mercenary|PermanentCreature|MAIN2|10|true|false|0|false|false|0|lf_016_WB
+DRAW|Speed, Young Avenger|lf_019_RG
+L4|SPELL|Speed, Young Avenger|PermanentCreature|MAIN1|11|true|false|0|false|false|2|lf_019_RG
+DRAW|Swamp|lf_016_WB
+L4|SPELL|Wakandan Drone Flock|PermanentCreature|MAIN2|12|true|false|0|false|false|1|lf_016_WB
+DRAW|Crimson Operative|lf_019_RG
+Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|13|true|true|0|3|2|true|true|false|lf_019_RG
+L4|SPELL|Giant Growth|Pump|COMBAT_DECLARE_BLOCKERS|13|true|true|0|false|false|3|lf_019_RG
+DRAW|A.I.M. Synthoids|lf_016_WB
+L4|SPELL|A.I.M. Synthoids|PermanentCreature|MAIN1|14|true|false|0|false|false|2|lf_016_WB
+DRAW|Kree Sentinel|lf_019_RG
+L4|SPELL|Crimson Operative|PermanentCreature|MAIN2|15|true|false|0|false|false|2|lf_019_RG
+DRAW|Black Widow, Double Agent|lf_016_WB
+L4|SPELL|Black Widow, Double Agent|PermanentCreature|MAIN1|16|true|false|0|false|false|2|lf_016_WB
+DRAW|Forest|lf_019_RG
+L4|SPELL|Hulk, Gamma Goliath|PermanentCreature|MAIN2|17|true|false|0|false|false|1|lf_019_RG
+DRAW|Visions of Villainy|lf_016_WB
+Visions of Villainy|Draw>LoseLife|MAIN2|18|true|false|0|3|0|true|true|false|lf_016_WB
+L4|SPELL|Visions of Villainy|Draw|MAIN2|18|true|false|0|false|false|3|lf_016_WB
+DRAW|HYDRA Troopers|lf_016_WB
+DRAW|Swamp|lf_016_WB
+L4|SPELL|HYDRA Troopers|PermanentCreature|MAIN2|18|true|false|0|false|false|3|lf_016_WB
+DRAW|Forest|lf_019_RG
+L4|SPELL|Kree Sentinel|PermanentCreature|MAIN2|19|true|false|0|false|false|0|lf_019_RG
+DRAW|Plains|lf_016_WB
+END|lf_016_WB

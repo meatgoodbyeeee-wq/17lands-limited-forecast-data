@@ -1,0 +1,626 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36803 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Error handling registered!
+20:49:11 [INFO ] GuiBase: ##########################################
+20:49:11 [INFO ] GuiBase: APP: Forge v.2.0.16-SNAPSHOT-10.19
+20:49:11 [INFO ] GuiBase: Java: 21.0.12.1 (Ubuntu)
+20:49:11 [INFO ] GuiBase: OS: Linux 6.18.44-fc-v139 amd64
+20:49:11 [INFO ] GuiBase: RAM: 2048 MB max, 2 CPUs
+20:49:11 [INFO ] GuiBase: ##########################################
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 1 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+Simulation mode
+Starting a RoundRobin tournament with 10 players over 9 rounds
+
+Round 1 Pairings:
+lf_045_BR[0] vs lf_042_BR[0] 
+lf_048_WB[0] vs lf_044_BG[0] 
+lf_041_BR[0] vs lf_040_BR[0] 
+lf_046_WR[0] vs lf_049_UB[0] 
+lf_047_BR[0] vs lf_043_UB[0] 
+
+Round 1 - lf_045_BR[0] vs lf_042_BR[0] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 9
+Game Outcome: lf_045_BR has lost because life total reached 0
+Game Outcome: lf_042_BR has won because all opponents have lost
+Match Result: lf_045_BR: 0 lf_042_BR: 1 
+
+Game Result: Game 1 ended in 9412 ms. lf_042_BR has won!
+
+Match Winner - lf_042_BR!
+
+Round 1 - lf_048_WB[0] vs lf_044_BG[0] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 6
+Game Outcome: lf_048_WB has won because all opponents have lost
+Game Outcome: lf_044_BG has lost because life total reached 0
+Match Result: lf_048_WB: 1 lf_044_BG: 0 
+
+Game Result: Game 1 ended in 3514 ms. lf_048_WB has won!
+
+Match Winner - lf_048_WB!
+
+Round 1 - lf_041_BR[0] vs lf_040_BR[0] 
+Game Outcome: Match Duration 0m : 11s
+Game Outcome: Turn 10
+Game Outcome: lf_041_BR has lost because life total reached 0
+Game Outcome: lf_040_BR has won because all opponents have lost
+Match Result: lf_041_BR: 0 lf_040_BR: 1 
+
+Game Result: Game 1 ended in 12565 ms. lf_040_BR has won!
+
+Match Winner - lf_040_BR!
+
+Round 1 - lf_046_WR[0] vs lf_049_UB[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lf_046_WR has lost because life total reached 0
+Game Outcome: lf_049_UB has won because all opponents have lost
+Match Result: lf_046_WR: 0 lf_049_UB: 1 
+
+Game Result: Game 1 ended in 3844 ms. lf_049_UB has won!
+
+Match Winner - lf_049_UB!
+
+Round 1 - lf_047_BR[0] vs lf_043_UB[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: lf_047_BR has lost because life total reached 0
+Game Outcome: lf_043_UB has won because all opponents have lost
+Match Result: lf_047_BR: 0 lf_043_UB: 1 
+
+Game Result: Game 1 ended in 4663 ms. lf_043_UB has won!
+
+Match Winner - lf_043_UB!
+
+End Round - 1
+
+Round 2 Pairings:
+lf_045_BR[0] vs lf_048_WB[3] 
+lf_041_BR[0] vs lf_042_BR[3] 
+lf_046_WR[0] vs lf_044_BG[0] 
+lf_047_BR[0] vs lf_040_BR[3] 
+lf_043_UB[3] vs lf_049_UB[3] 
+
+Round 2 - lf_045_BR[0] vs lf_048_WB[3] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 10
+Game Outcome: lf_045_BR has lost because life total reached 0
+Game Outcome: lf_048_WB has won because all opponents have lost
+Match Result: lf_045_BR: 0 lf_048_WB: 1 
+
+Game Result: Game 1 ended in 5558 ms. lf_048_WB has won!
+
+Match Winner - lf_048_WB!
+
+Round 2 - lf_041_BR[0] vs lf_042_BR[3] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 9
+Game Outcome: lf_041_BR has lost because life total reached 0
+Game Outcome: lf_042_BR has won because all opponents have lost
+Match Result: lf_041_BR: 0 lf_042_BR: 1 
+
+Game Result: Game 1 ended in 6464 ms. lf_042_BR has won!
+
+Match Winner - lf_042_BR!
+
+Round 2 - lf_046_WR[0] vs lf_044_BG[0] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 8
+Game Outcome: lf_046_WR has lost because life total reached 0
+Game Outcome: lf_044_BG has won because all opponents have lost
+Match Result: lf_046_WR: 0 lf_044_BG: 1 
+
+Game Result: Game 1 ended in 7481 ms. lf_044_BG has won!
+
+Match Winner - lf_044_BG!
+
+Round 2 - lf_047_BR[0] vs lf_040_BR[3] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: lf_047_BR has lost because life total reached 0
+Game Outcome: lf_040_BR has won because all opponents have lost
+Match Result: lf_047_BR: 0 lf_040_BR: 1 
+
+Game Result: Game 1 ended in 4844 ms. lf_040_BR has won!
+
+Match Winner - lf_040_BR!
+
+Round 2 - lf_043_UB[3] vs lf_049_UB[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lf_043_UB has won because all opponents have lost
+Game Outcome: lf_049_UB has lost because life total reached 0
+Match Result: lf_043_UB: 1 lf_049_UB: 0 
+
+Game Result: Game 1 ended in 3580 ms. lf_043_UB has won!
+
+Match Winner - lf_043_UB!
+
+End Round - 2
+
+Round 3 Pairings:
+lf_045_BR[0] vs lf_041_BR[0] 
+lf_046_WR[0] vs lf_048_WB[6] 
+lf_047_BR[0] vs lf_042_BR[6] 
+lf_043_UB[6] vs lf_044_BG[3] 
+lf_049_UB[3] vs lf_040_BR[6] 
+
+Round 3 - lf_045_BR[0] vs lf_041_BR[0] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 9
+Game Outcome: lf_045_BR has won because all opponents have lost
+Game Outcome: lf_041_BR has lost because life total reached 0
+Match Result: lf_045_BR: 1 lf_041_BR: 0 
+
+Game Result: Game 1 ended in 6064 ms. lf_045_BR has won!
+
+Match Winner - lf_045_BR!
+
+Round 3 - lf_046_WR[0] vs lf_048_WB[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: lf_046_WR has lost because life total reached 0
+Game Outcome: lf_048_WB has won because all opponents have lost
+Match Result: lf_046_WR: 0 lf_048_WB: 1 
+
+Game Result: Game 1 ended in 4744 ms. lf_048_WB has won!
+
+Match Winner - lf_048_WB!
+
+Round 3 - lf_047_BR[0] vs lf_042_BR[6] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 13
+Game Outcome: lf_047_BR has won because all opponents have lost
+Game Outcome: lf_042_BR has lost because life total reached 0
+Match Result: lf_047_BR: 1 lf_042_BR: 0 
+
+Game Result: Game 1 ended in 4785 ms. lf_047_BR has won!
+
+Match Winner - lf_047_BR!
+
+Round 3 - lf_043_UB[6] vs lf_044_BG[3] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 11
+Game Outcome: lf_043_UB has won because all opponents have lost
+Game Outcome: lf_044_BG has lost because life total reached 0
+Match Result: lf_043_UB: 1 lf_044_BG: 0 
+
+Game Result: Game 1 ended in 9375 ms. lf_043_UB has won!
+
+Match Winner - lf_043_UB!
+
+Round 3 - lf_049_UB[3] vs lf_040_BR[6] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 12
+Game Outcome: lf_049_UB has won because all opponents have lost
+Game Outcome: lf_040_BR has lost because life total reached 0
+Match Result: lf_049_UB: 1 lf_040_BR: 0 
+
+Game Result: Game 1 ended in 8006 ms. lf_049_UB has won!
+
+Match Winner - lf_049_UB!
+
+End Round - 3
+
+Round 4 Pairings:
+lf_045_BR[3] vs lf_046_WR[0] 
+lf_047_BR[3] vs lf_041_BR[0] 
+lf_043_UB[9] vs lf_048_WB[9] 
+lf_049_UB[6] vs lf_042_BR[6] 
+lf_040_BR[6] vs lf_044_BG[3] 
+
+Round 4 - lf_045_BR[3] vs lf_046_WR[0] 
+Warning: all Unless costs were unpayable for Bullseye, Death Dealer, but it had no FallbackAbility defined. Doing nothing (this is most likely incorrect behavior).
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_045_BR has lost because life total reached 0
+Game Outcome: lf_046_WR has won because all opponents have lost
+Match Result: lf_045_BR: 0 lf_046_WR: 1 
+
+Game Result: Game 1 ended in 3655 ms. lf_046_WR has won!
+
+Match Winner - lf_046_WR!
+
+Round 4 - lf_047_BR[3] vs lf_041_BR[0] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 15
+Game Outcome: lf_047_BR has lost because life total reached 0
+Game Outcome: lf_041_BR has won because all opponents have lost
+Match Result: lf_047_BR: 0 lf_041_BR: 1 
+
+Game Result: Game 1 ended in 8246 ms. lf_041_BR has won!
+
+Match Winner - lf_041_BR!
+
+Round 4 - lf_043_UB[9] vs lf_048_WB[9] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 7
+Game Outcome: lf_043_UB has won because all opponents have lost
+Game Outcome: lf_048_WB has lost because life total reached 0
+Match Result: lf_043_UB: 1 lf_048_WB: 0 
+
+Game Result: Game 1 ended in 1425 ms. lf_043_UB has won!
+
+Match Winner - lf_043_UB!
+
+Round 4 - lf_049_UB[6] vs lf_042_BR[6] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 11
+Game Outcome: lf_049_UB has won because all opponents have lost
+Game Outcome: lf_042_BR has lost because life total reached 0
+Match Result: lf_049_UB: 1 lf_042_BR: 0 
+
+Game Result: Game 1 ended in 4716 ms. lf_049_UB has won!
+
+Match Winner - lf_049_UB!
+
+Round 4 - lf_040_BR[6] vs lf_044_BG[3] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: lf_040_BR has lost because life total reached 0
+Game Outcome: lf_044_BG has won because all opponents have lost
+Match Result: lf_040_BR: 0 lf_044_BG: 1 
+
+Game Result: Game 1 ended in 4281 ms. lf_044_BG has won!
+
+Match Winner - lf_044_BG!
+
+End Round - 4
+
+Round 5 Pairings:
+lf_045_BR[3] vs lf_047_BR[3] 
+lf_043_UB[12] vs lf_046_WR[3] 
+lf_049_UB[9] vs lf_041_BR[3] 
+lf_040_BR[6] vs lf_048_WB[9] 
+lf_044_BG[6] vs lf_042_BR[6] 
+
+Round 5 - lf_045_BR[3] vs lf_047_BR[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lf_045_BR has lost because life total reached 0
+Game Outcome: lf_047_BR has won because all opponents have lost
+Match Result: lf_045_BR: 0 lf_047_BR: 1 
+
+Game Result: Game 1 ended in 3287 ms. lf_047_BR has won!
+
+Match Winner - lf_047_BR!
+
+Round 5 - lf_043_UB[12] vs lf_046_WR[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 11
+Game Outcome: lf_043_UB has won because all opponents have lost
+Game Outcome: lf_046_WR has lost because life total reached 0
+Match Result: lf_043_UB: 1 lf_046_WR: 0 
+
+Game Result: Game 1 ended in 3047 ms. lf_043_UB has won!
+
+Match Winner - lf_043_UB!
+
+Round 5 - lf_049_UB[9] vs lf_041_BR[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_049_UB has lost because life total reached 0
+Game Outcome: lf_041_BR has won because all opponents have lost
+Match Result: lf_049_UB: 0 lf_041_BR: 1 
+
+Game Result: Game 1 ended in 3522 ms. lf_041_BR has won!
+
+Match Winner - lf_041_BR!
+
+Round 5 - lf_040_BR[6] vs lf_048_WB[9] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: lf_040_BR has lost because life total reached 0
+Game Outcome: lf_048_WB has won because all opponents have lost
+Match Result: lf_040_BR: 0 lf_048_WB: 1 
+
+Game Result: Game 1 ended in 3265 ms. lf_048_WB has won!
+
+Match Winner - lf_048_WB!
+
+Round 5 - lf_044_BG[6] vs lf_042_BR[6] 
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 11
+Game Outcome: lf_044_BG has won because all opponents have lost
+Game Outcome: lf_042_BR has lost because life total reached 0
+Match Result: lf_044_BG: 1 lf_042_BR: 0 
+
+Game Result: Game 1 ended in 12815 ms. lf_044_BG has won!
+
+Match Winner - lf_044_BG!
+
+End Round - 5
+
+Round 6 Pairings:
+lf_045_BR[3] vs lf_043_UB[15] 
+lf_049_UB[9] vs lf_047_BR[6] 
+lf_040_BR[6] vs lf_046_WR[3] 
+lf_044_BG[9] vs lf_041_BR[6] 
+lf_042_BR[6] vs lf_048_WB[12] 
+
+Round 6 - lf_045_BR[3] vs lf_043_UB[15] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lf_045_BR has won because all opponents have lost
+Game Outcome: lf_043_UB has lost because life total reached 0
+Match Result: lf_045_BR: 1 lf_043_UB: 0 
+
+Game Result: Game 1 ended in 2791 ms. lf_045_BR has won!
+
+Match Winner - lf_045_BR!
+
+Round 6 - lf_049_UB[9] vs lf_047_BR[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: lf_049_UB has won because all opponents have lost
+Game Outcome: lf_047_BR has lost because life total reached 0
+Match Result: lf_049_UB: 1 lf_047_BR: 0 
+
+Game Result: Game 1 ended in 2662 ms. lf_049_UB has won!
+
+Match Winner - lf_049_UB!
+
+Round 6 - lf_040_BR[6] vs lf_046_WR[3] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 12
+Game Outcome: lf_040_BR has won because all opponents have lost
+Game Outcome: lf_046_WR has lost because life total reached 0
+Match Result: lf_040_BR: 1 lf_046_WR: 0 
+
+Game Result: Game 1 ended in 4586 ms. lf_040_BR has won!
+
+Match Winner - lf_040_BR!
+
+Round 6 - lf_044_BG[9] vs lf_041_BR[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 11
+Game Outcome: lf_044_BG has won because all opponents have lost
+Game Outcome: lf_041_BR has lost because life total reached 0
+Match Result: lf_044_BG: 1 lf_041_BR: 0 
+
+Game Result: Game 1 ended in 3375 ms. lf_044_BG has won!
+
+Match Winner - lf_044_BG!
+
+Round 6 - lf_042_BR[6] vs lf_048_WB[12] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 11
+Game Outcome: lf_042_BR has lost because life total reached 0
+Game Outcome: lf_048_WB has won because all opponents have lost
+Match Result: lf_042_BR: 0 lf_048_WB: 1 
+
+Game Result: Game 1 ended in 3286 ms. lf_048_WB has won!
+
+Match Winner - lf_048_WB!
+
+End Round - 6
+
+Round 7 Pairings:
+lf_045_BR[6] vs lf_049_UB[12] 
+lf_040_BR[9] vs lf_043_UB[15] 
+lf_044_BG[12] vs lf_047_BR[6] 
+lf_042_BR[6] vs lf_046_WR[3] 
+lf_048_WB[15] vs lf_041_BR[6] 
+
+Round 7 - lf_045_BR[6] vs lf_049_UB[12] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 12
+Game Outcome: lf_045_BR has lost because life total reached 0
+Game Outcome: lf_049_UB has won because all opponents have lost
+Match Result: lf_045_BR: 0 lf_049_UB: 1 
+
+Game Result: Game 1 ended in 3402 ms. lf_049_UB has won!
+
+Match Winner - lf_049_UB!
+
+Round 7 - lf_040_BR[9] vs lf_043_UB[15] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: lf_040_BR has lost because life total reached 0
+Game Outcome: lf_043_UB has won because all opponents have lost
+Match Result: lf_040_BR: 0 lf_043_UB: 1 
+
+Game Result: Game 1 ended in 5107 ms. lf_043_UB has won!
+
+Match Winner - lf_043_UB!
+
+Round 7 - lf_044_BG[12] vs lf_047_BR[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: lf_044_BG has won because all opponents have lost
+Game Outcome: lf_047_BR has lost because life total reached 0
+Match Result: lf_044_BG: 1 lf_047_BR: 0 
+
+Game Result: Game 1 ended in 2392 ms. lf_044_BG has won!
+
+Match Winner - lf_044_BG!
+
+Round 7 - lf_042_BR[6] vs lf_046_WR[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: lf_042_BR has won because all opponents have lost
+Game Outcome: lf_046_WR has lost because life total reached 0
+Match Result: lf_042_BR: 1 lf_046_WR: 0 
+
+Game Result: Game 1 ended in 3384 ms. lf_042_BR has won!
+
+Match Winner - lf_042_BR!
+
+Round 7 - lf_048_WB[15] vs lf_041_BR[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 12
+Game Outcome: lf_048_WB has won because all opponents have lost
+Game Outcome: lf_041_BR has lost because life total reached 0
+Match Result: lf_048_WB: 1 lf_041_BR: 0 
+
+Game Result: Game 1 ended in 3809 ms. lf_048_WB has won!
+
+Match Winner - lf_048_WB!
+
+End Round - 7
+
+Round 8 Pairings:
+lf_045_BR[6] vs lf_040_BR[9] 
+lf_044_BG[15] vs lf_049_UB[15] 
+lf_042_BR[9] vs lf_043_UB[18] 
+lf_048_WB[18] vs lf_047_BR[6] 
+lf_041_BR[6] vs lf_046_WR[3] 
+
+Round 8 - lf_045_BR[6] vs lf_040_BR[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_045_BR has won because all opponents have lost
+Game Outcome: lf_040_BR has lost because life total reached 0
+Match Result: lf_045_BR: 1 lf_040_BR: 0 
+
+Game Result: Game 1 ended in 2632 ms. lf_045_BR has won!
+
+Match Winner - lf_045_BR!
+
+Round 8 - lf_044_BG[15] vs lf_049_UB[15] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 12
+Game Outcome: lf_044_BG has won because all opponents have lost
+Game Outcome: lf_049_UB has lost because life total reached 0
+Match Result: lf_044_BG: 1 lf_049_UB: 0 
+
+Game Result: Game 1 ended in 4695 ms. lf_044_BG has won!
+
+Match Winner - lf_044_BG!
+
+Round 8 - lf_042_BR[9] vs lf_043_UB[18] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 13
+Game Outcome: lf_042_BR has lost because life total reached 0
+Game Outcome: lf_043_UB has won because all opponents have lost
+Match Result: lf_042_BR: 0 lf_043_UB: 1 
+
+Game Result: Game 1 ended in 6494 ms. lf_043_UB has won!
+
+Match Winner - lf_043_UB!
+
+Round 8 - lf_048_WB[18] vs lf_047_BR[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lf_048_WB has won because all opponents have lost
+Game Outcome: lf_047_BR has lost because life total reached 0
+Match Result: lf_048_WB: 1 lf_047_BR: 0 
+
+Game Result: Game 1 ended in 3602 ms. lf_048_WB has won!
+
+Match Winner - lf_048_WB!
+
+Round 8 - lf_041_BR[6] vs lf_046_WR[3] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: lf_041_BR has won because all opponents have lost
+Game Outcome: lf_046_WR has lost because life total reached 0
+Match Result: lf_041_BR: 1 lf_046_WR: 0 
+
+Game Result: Game 1 ended in 4430 ms. lf_041_BR has won!
+
+Match Winner - lf_041_BR!
+
+End Round - 8
+
+Round 9 Pairings:
+lf_045_BR[9] vs lf_044_BG[18] 
+lf_042_BR[9] vs lf_040_BR[9] 
+lf_048_WB[21] vs lf_049_UB[15] 
+lf_041_BR[9] vs lf_043_UB[21] 
+lf_046_WR[3] vs lf_047_BR[6] 
+
+Round 9 - lf_045_BR[9] vs lf_044_BG[18] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: lf_045_BR has lost because life total reached 0
+Game Outcome: lf_044_BG has won because all opponents have lost
+Match Result: lf_045_BR: 0 lf_044_BG: 1 
+
+Game Result: Game 1 ended in 2292 ms. lf_044_BG has won!
+
+Match Winner - lf_044_BG!
+
+Round 9 - lf_042_BR[9] vs lf_040_BR[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_042_BR has lost because life total reached 0
+Game Outcome: lf_040_BR has won because all opponents have lost
+Match Result: lf_042_BR: 0 lf_040_BR: 1 
+
+Game Result: Game 1 ended in 2497 ms. lf_040_BR has won!
+
+Match Winner - lf_040_BR!
+
+Round 9 - lf_048_WB[21] vs lf_049_UB[15] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 10
+Game Outcome: lf_048_WB has won because all opponents have lost
+Game Outcome: lf_049_UB has lost because life total reached 0
+Match Result: lf_048_WB: 1 lf_049_UB: 0 
+
+Game Result: Game 1 ended in 2386 ms. lf_048_WB has won!
+
+Match Winner - lf_048_WB!
+
+Round 9 - lf_041_BR[9] vs lf_043_UB[21] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: lf_041_BR has lost because life total reached 0
+Game Outcome: lf_043_UB has won because all opponents have lost
+Match Result: lf_041_BR: 0 lf_043_UB: 1 
+
+Game Result: Game 1 ended in 3403 ms. lf_043_UB has won!
+
+Match Winner - lf_043_UB!
+
+Round 9 - lf_046_WR[3] vs lf_047_BR[6] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 11
+Game Outcome: lf_046_WR has lost because life total reached 0
+Game Outcome: lf_047_BR has won because all opponents have lost
+Match Result: lf_046_WR: 0 lf_047_BR: 1 
+
+Game Result: Game 1 ended in 2825 ms. lf_047_BR has won!
+
+Match Winner - lf_047_BR!
+
+lf_043_UB		8 Wins(0 Byes)-1 Losses-0 Ties	=>	24 Points
+lf_048_WB		8 Wins(0 Byes)-1 Losses-0 Ties	=>	24 Points
+lf_044_BG		7 Wins(0 Byes)-2 Losses-0 Ties	=>	21 Points
+lf_049_UB		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+lf_040_BR		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+lf_047_BR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lf_042_BR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lf_045_BR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lf_041_BR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+lf_046_WR		1 Wins(0 Byes)-8 Losses-0 Ties	=>	3 Points
