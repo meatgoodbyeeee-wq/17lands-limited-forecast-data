@@ -1,0 +1,36 @@
+diff --git a/forge-game/src/main/java/forge/game/zone/MagicStack.java b/forge-game/src/main/java/forge/game/zone/MagicStack.java
+index 36c38e12..1d61a8ed 100644
+--- a/forge-game/src/main/java/forge/game/zone/MagicStack.java
++++ b/forge-game/src/main/java/forge/game/zone/MagicStack.java
+@@ -366,6 +366,31 @@ public class MagicStack /* extends MyObservable */ implements Iterable<SpellAbil
+         runParams.put(AbilityKey.CurrentCastSpells, getSpellCardsCastThisTurn());
+ 
+         game.updateStackForView();
++        // L1 research patch (observation only, no behaviour change): record when instant/flash spells are cast.
++        try {
++            final String l1Path = System.getenv("L1_LOG");
++            if (l1Path != null && sp.isSpell() && !sp.isCopied() && source != null
++                    && (source.isInstant() || source.hasKeyword(forge.game.keyword.Keyword.FLASH))) {
++                final forge.game.phase.PhaseHandler ph = game.getPhaseHandler();
++                final StringBuilder chain = new StringBuilder();
++                for (forge.game.spellability.SpellAbility x = sp; x != null; x = x.getSubAbility()) {
++                    if (chain.length() > 0) { chain.append('>'); }
++                    chain.append(x.getApi());
++                }
++                final String line = String.join("|", source.getName(), chain.toString(),
++                        String.valueOf(ph.getPhase()), String.valueOf(ph.getTurn()),
++                        String.valueOf(ph.isPlayerTurn(activator)), String.valueOf(ph.inCombat()),
++                        String.valueOf(stack.size() - 1),
++                        String.valueOf(activator.getCreaturesInPlay().size()),
++                        String.valueOf(activator.getWeakestOpponent().getCreaturesInPlay().size()),
++                        String.valueOf(activator.getController().isAI()), String.valueOf(source.isInstant()),
++                        String.valueOf(source.hasKeyword(forge.game.keyword.Keyword.FLASH)), activator.getName()) + "\n";
++                java.nio.file.Files.write(java.nio.file.Paths.get(l1Path), line.getBytes(java.nio.charset.StandardCharsets.UTF_8),
++                        java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND);
++            }
++        } catch (Throwable t) {
++            // never affect the game
++        }
+         game.fireEvent(new GameEventSpellAbilityCast(sp, si, stack.size() - 1));
+ 
+         if (!sp.isCopied()) {
