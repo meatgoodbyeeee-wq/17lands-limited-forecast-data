@@ -1,0 +1,662 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36803 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Error handling registered!
+19:53:12 [INFO ] GuiBase: ##########################################
+19:53:12 [INFO ] GuiBase: APP: Forge v.2.0.16-SNAPSHOT-10.19
+19:53:12 [INFO ] GuiBase: Java: 21.0.12.1 (Ubuntu)
+19:53:12 [INFO ] GuiBase: OS: Linux 6.18.44-fc-v139 amd64
+19:53:12 [INFO ] GuiBase: RAM: 2048 MB max, 2 CPUs
+19:53:12 [INFO ] GuiBase: ##########################################
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 1 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+Simulation mode
+Starting a RoundRobin tournament with 10 players over 9 rounds
+
+Round 1 Pairings:
+le_040_UR[0] vs le_044_UG[0] 
+le_042_UG[0] vs le_045_UG[0] 
+le_047_WU[0] vs le_041_UB[0] 
+le_049_UR[0] vs le_043_WU[0] 
+le_046_WU[0] vs le_048_WU[0] 
+
+Round 1 - le_040_UR[0] vs le_044_UG[0] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 8
+Game Outcome: le_040_UR has lost because life total reached 0
+Game Outcome: le_044_UG has won because all opponents have lost
+Match Result: le_040_UR: 0 le_044_UG: 1 
+
+Game Result: Game 1 ended in 9782 ms. le_044_UG has won!
+
+Match Winner - le_044_UG!
+
+Round 1 - le_042_UG[0] vs le_045_UG[0] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 6
+Game Outcome: le_042_UG has won because all opponents have lost
+Game Outcome: le_045_UG has lost because life total reached 0
+Match Result: le_042_UG: 1 le_045_UG: 0 
+
+Game Result: Game 1 ended in 3476 ms. le_042_UG has won!
+
+Match Winner - le_042_UG!
+
+Round 1 - le_047_WU[0] vs le_041_UB[0] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: le_047_WU has lost because life total reached 0
+Game Outcome: le_041_UB has won because all opponents have lost
+Match Result: le_047_WU: 0 le_041_UB: 1 
+
+Game Result: Game 1 ended in 4742 ms. le_041_UB has won!
+
+Match Winner - le_041_UB!
+
+Round 1 - le_049_UR[0] vs le_043_WU[0] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 14s
+Game Outcome: Turn 11
+Game Outcome: le_049_UR has lost because life total reached 0
+Game Outcome: le_043_WU has won because all opponents have lost
+Match Result: le_049_UR: 0 le_043_WU: 1 
+
+Game Result: Game 1 ended in 14610 ms. le_043_WU has won!
+
+Match Winner - le_043_WU!
+
+Round 1 - le_046_WU[0] vs le_048_WU[0] 
+Game Outcome: Match Duration 0m : 10s
+Game Outcome: Turn 12
+Game Outcome: le_046_WU has lost because life total reached 0
+Game Outcome: le_048_WU has won because all opponents have lost
+Match Result: le_046_WU: 0 le_048_WU: 1 
+
+Game Result: Game 1 ended in 11737 ms. le_048_WU has won!
+
+Match Winner - le_048_WU!
+
+End Round - 1
+
+Round 2 Pairings:
+le_040_UR[0] vs le_042_UG[3] 
+le_047_WU[0] vs le_044_UG[3] 
+le_049_UR[0] vs le_045_UG[0] 
+le_046_WU[0] vs le_041_UB[3] 
+le_048_WU[3] vs le_043_WU[3] 
+
+Round 2 - le_040_UR[0] vs le_042_UG[3] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 12
+Game Outcome: le_040_UR has lost because life total reached 0
+Game Outcome: le_042_UG has won because all opponents have lost
+Match Result: le_040_UR: 0 le_042_UG: 1 
+
+Game Result: Game 1 ended in 8514 ms. le_042_UG has won!
+
+Match Winner - le_042_UG!
+
+Round 2 - le_047_WU[0] vs le_044_UG[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 6
+Game Outcome: le_047_WU has lost because life total reached 0
+Game Outcome: le_044_UG has won because all opponents have lost
+Match Result: le_047_WU: 0 le_044_UG: 1 
+
+Game Result: Game 1 ended in 3166 ms. le_044_UG has won!
+
+Match Winner - le_044_UG!
+
+Round 2 - le_049_UR[0] vs le_045_UG[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 7
+Game Outcome: le_049_UR has won because all opponents have lost
+Game Outcome: le_045_UG has lost because life total reached 0
+Match Result: le_049_UR: 1 le_045_UG: 0 
+
+Game Result: Game 1 ended in 3987 ms. le_049_UR has won!
+
+Match Winner - le_049_UR!
+
+Round 2 - le_046_WU[0] vs le_041_UB[3] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 8
+Game Outcome: le_046_WU has won because all opponents have lost
+Game Outcome: le_041_UB has lost because life total reached 0
+Match Result: le_046_WU: 1 le_041_UB: 0 
+
+Game Result: Game 1 ended in 4728 ms. le_046_WU has won!
+
+Match Winner - le_046_WU!
+
+Round 2 - le_048_WU[3] vs le_043_WU[3] 
+Game Outcome: Match Duration 0m : 16s
+Game Outcome: Turn 12
+Game Outcome: le_048_WU has won because all opponents have lost
+Game Outcome: le_043_WU has lost because life total reached 0
+Match Result: le_048_WU: 1 le_043_WU: 0 
+
+Game Result: Game 1 ended in 17066 ms. le_048_WU has won!
+
+Match Winner - le_048_WU!
+
+End Round - 2
+
+Round 3 Pairings:
+le_040_UR[0] vs le_047_WU[0] 
+le_049_UR[3] vs le_042_UG[6] 
+le_046_WU[3] vs le_044_UG[6] 
+le_048_WU[6] vs le_045_UG[0] 
+le_043_WU[3] vs le_041_UB[3] 
+
+Round 3 - le_040_UR[0] vs le_047_WU[0] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 10
+Game Outcome: le_040_UR has lost because life total reached 0
+Game Outcome: le_047_WU has won because all opponents have lost
+Match Result: le_040_UR: 0 le_047_WU: 1 
+
+Game Result: Game 1 ended in 9307 ms. le_047_WU has won!
+
+Match Winner - le_047_WU!
+
+Round 3 - le_049_UR[3] vs le_042_UG[6] 
+Game Outcome: Match Duration 0m : 09s
+Game Outcome: Turn 11
+Game Outcome: le_049_UR has won because all opponents have lost
+Game Outcome: le_042_UG has lost because life total reached 0
+Match Result: le_049_UR: 1 le_042_UG: 0 
+
+Game Result: Game 1 ended in 9970 ms. le_049_UR has won!
+
+Match Winner - le_049_UR!
+
+Round 3 - le_046_WU[3] vs le_044_UG[6] 
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 13
+Game Outcome: le_046_WU has lost because life total reached 0
+Game Outcome: le_044_UG has won because all opponents have lost
+Match Result: le_046_WU: 0 le_044_UG: 1 
+
+Game Result: Game 1 ended in 13082 ms. le_044_UG has won!
+
+Match Winner - le_044_UG!
+
+Round 3 - le_048_WU[6] vs le_045_UG[0] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: le_048_WU has won because all opponents have lost
+Game Outcome: le_045_UG has lost because life total reached 0
+Match Result: le_048_WU: 1 le_045_UG: 0 
+
+Game Result: Game 1 ended in 2540 ms. le_048_WU has won!
+
+Match Winner - le_048_WU!
+
+Round 3 - le_043_WU[3] vs le_041_UB[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: le_043_WU has won because all opponents have lost
+Game Outcome: le_041_UB has lost because life total reached 0
+Match Result: le_043_WU: 1 le_041_UB: 0 
+
+Game Result: Game 1 ended in 2617 ms. le_043_WU has won!
+
+Match Winner - le_043_WU!
+
+End Round - 3
+
+Round 4 Pairings:
+le_040_UR[0] vs le_049_UR[6] 
+le_046_WU[3] vs le_047_WU[3] 
+le_048_WU[9] vs le_042_UG[6] 
+le_043_WU[6] vs le_044_UG[9] 
+le_041_UB[3] vs le_045_UG[0] 
+
+Round 4 - le_040_UR[0] vs le_049_UR[6] 
+Correcting zone for Stark Industries Executive (68)
+Correcting zone for Stark Industries Executive (68)
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: le_040_UR has won because all opponents have lost
+Game Outcome: le_049_UR has lost because life total reached 0
+Match Result: le_040_UR: 1 le_049_UR: 0 
+
+Game Result: Game 1 ended in 4865 ms. le_040_UR has won!
+
+Match Winner - le_040_UR!
+
+Round 4 - le_046_WU[3] vs le_047_WU[3] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 8
+Game Outcome: le_046_WU has won because all opponents have lost
+Game Outcome: le_047_WU has lost because life total reached 0
+Match Result: le_046_WU: 1 le_047_WU: 0 
+
+Game Result: Game 1 ended in 7026 ms. le_046_WU has won!
+
+Match Winner - le_046_WU!
+
+Round 4 - le_048_WU[9] vs le_042_UG[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: le_048_WU has won because all opponents have lost
+Game Outcome: le_042_UG has lost because life total reached 0
+Match Result: le_048_WU: 1 le_042_UG: 0 
+
+Game Result: Game 1 ended in 1584 ms. le_048_WU has won!
+
+Match Winner - le_048_WU!
+
+Round 4 - le_043_WU[6] vs le_044_UG[9] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 9
+Game Outcome: le_043_WU has lost because life total reached 0
+Game Outcome: le_044_UG has won because all opponents have lost
+Match Result: le_043_WU: 0 le_044_UG: 1 
+
+Game Result: Game 1 ended in 5556 ms. le_044_UG has won!
+
+Match Winner - le_044_UG!
+
+Round 4 - le_041_UB[3] vs le_045_UG[0] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: le_041_UB has lost because life total reached 0
+Game Outcome: le_045_UG has won because all opponents have lost
+Match Result: le_041_UB: 0 le_045_UG: 1 
+
+Game Result: Game 1 ended in 2242 ms. le_045_UG has won!
+
+Match Winner - le_045_UG!
+
+End Round - 4
+
+Round 5 Pairings:
+le_040_UR[3] vs le_046_WU[6] 
+le_048_WU[12] vs le_049_UR[6] 
+le_043_WU[6] vs le_047_WU[3] 
+le_041_UB[3] vs le_042_UG[6] 
+le_045_UG[3] vs le_044_UG[12] 
+
+Round 5 - le_040_UR[3] vs le_046_WU[6] 
+Correcting zone for Brave Brawler (73)
+Correcting zone for Brave Brawler (73)
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 10
+Game Outcome: le_040_UR has lost because life total reached 0
+Game Outcome: le_046_WU has won because all opponents have lost
+Match Result: le_040_UR: 0 le_046_WU: 1 
+
+Game Result: Game 1 ended in 5727 ms. le_046_WU has won!
+
+Match Winner - le_046_WU!
+
+Round 5 - le_048_WU[12] vs le_049_UR[6] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 9
+Game Outcome: le_048_WU has won because all opponents have lost
+Game Outcome: le_049_UR has lost because life total reached 0
+Match Result: le_048_WU: 1 le_049_UR: 0 
+
+Game Result: Game 1 ended in 5882 ms. le_048_WU has won!
+
+Match Winner - le_048_WU!
+
+Round 5 - le_043_WU[6] vs le_047_WU[3] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: le_043_WU has lost because life total reached 0
+Game Outcome: le_047_WU has won because all opponents have lost
+Match Result: le_043_WU: 0 le_047_WU: 1 
+
+Game Result: Game 1 ended in 2890 ms. le_047_WU has won!
+
+Match Winner - le_047_WU!
+
+Round 5 - le_041_UB[3] vs le_042_UG[6] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 15
+Game Outcome: le_041_UB has won because all opponents have lost
+Game Outcome: le_042_UG has lost because life total reached 0
+Match Result: le_041_UB: 1 le_042_UG: 0 
+
+Game Result: Game 1 ended in 8119 ms. le_041_UB has won!
+
+Match Winner - le_041_UB!
+
+Round 5 - le_045_UG[3] vs le_044_UG[12] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: le_045_UG has lost because life total reached 0
+Game Outcome: le_044_UG has won because all opponents have lost
+Match Result: le_045_UG: 0 le_044_UG: 1 
+
+Game Result: Game 1 ended in 2990 ms. le_044_UG has won!
+
+Match Winner - le_044_UG!
+
+End Round - 5
+
+Round 6 Pairings:
+le_040_UR[3] vs le_048_WU[15] 
+le_043_WU[6] vs le_046_WU[9] 
+le_041_UB[6] vs le_049_UR[6] 
+le_045_UG[3] vs le_047_WU[6] 
+le_044_UG[15] vs le_042_UG[6] 
+
+Round 6 - le_040_UR[3] vs le_048_WU[15] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: le_040_UR has lost because life total reached 0
+Game Outcome: le_048_WU has won because all opponents have lost
+Match Result: le_040_UR: 0 le_048_WU: 1 
+
+Game Result: Game 1 ended in 2151 ms. le_048_WU has won!
+
+Match Winner - le_048_WU!
+
+Round 6 - le_043_WU[6] vs le_046_WU[9] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 10
+Game Outcome: le_043_WU has lost because life total reached 0
+Game Outcome: le_046_WU has won because all opponents have lost
+Match Result: le_043_WU: 0 le_046_WU: 1 
+
+Game Result: Game 1 ended in 5360 ms. le_046_WU has won!
+
+Match Winner - le_046_WU!
+
+Round 6 - le_041_UB[6] vs le_049_UR[6] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 21s
+Game Outcome: Turn 16
+Game Outcome: le_041_UB has lost because life total reached 0
+Game Outcome: le_049_UR has won because all opponents have lost
+Match Result: le_041_UB: 0 le_049_UR: 1 
+
+Game Result: Game 1 ended in 21617 ms. le_049_UR has won!
+
+Match Winner - le_049_UR!
+
+Round 6 - le_045_UG[3] vs le_047_WU[6] 
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 11
+Game Outcome: le_045_UG has lost because life total reached 0
+Game Outcome: le_047_WU has won because all opponents have lost
+Match Result: le_045_UG: 0 le_047_WU: 1 
+
+Game Result: Game 1 ended in 5649 ms. le_047_WU has won!
+
+Match Winner - le_047_WU!
+
+Round 6 - le_044_UG[15] vs le_042_UG[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: le_044_UG has lost because life total reached 0
+Game Outcome: le_042_UG has won because all opponents have lost
+Match Result: le_044_UG: 0 le_042_UG: 1 
+
+Game Result: Game 1 ended in 2478 ms. le_042_UG has won!
+
+Match Winner - le_042_UG!
+
+End Round - 6
+
+Round 7 Pairings:
+le_040_UR[3] vs le_043_WU[6] 
+le_041_UB[6] vs le_048_WU[18] 
+le_045_UG[3] vs le_046_WU[12] 
+le_044_UG[15] vs le_049_UR[9] 
+le_042_UG[9] vs le_047_WU[9] 
+
+Round 7 - le_040_UR[3] vs le_043_WU[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: le_040_UR has lost because life total reached 0
+Game Outcome: le_043_WU has won because all opponents have lost
+Match Result: le_040_UR: 0 le_043_WU: 1 
+
+Game Result: Game 1 ended in 2361 ms. le_043_WU has won!
+
+Match Winner - le_043_WU!
+
+Round 7 - le_041_UB[6] vs le_048_WU[18] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 12
+Game Outcome: le_041_UB has lost because life total reached 0
+Game Outcome: le_048_WU has won because all opponents have lost
+Match Result: le_041_UB: 0 le_048_WU: 1 
+
+Game Result: Game 1 ended in 7736 ms. le_048_WU has won!
+
+Match Winner - le_048_WU!
+
+Round 7 - le_045_UG[3] vs le_046_WU[12] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: le_045_UG has lost because life total reached 0
+Game Outcome: le_046_WU has won because all opponents have lost
+Match Result: le_045_UG: 0 le_046_WU: 1 
+
+Game Result: Game 1 ended in 2411 ms. le_046_WU has won!
+
+Match Winner - le_046_WU!
+
+Round 7 - le_044_UG[15] vs le_049_UR[9] 
+Game Outcome: Match Duration 0m : 11s
+Game Outcome: Turn 14
+Game Outcome: le_044_UG has won because all opponents have lost
+Game Outcome: le_049_UR has lost because life total reached 0
+Match Result: le_044_UG: 1 le_049_UR: 0 
+
+Game Result: Game 1 ended in 12238 ms. le_044_UG has won!
+
+Match Winner - le_044_UG!
+
+Round 7 - le_042_UG[9] vs le_047_WU[9] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 11
+Game Outcome: le_042_UG has won because all opponents have lost
+Game Outcome: le_047_WU has lost because life total reached 0
+Match Result: le_042_UG: 1 le_047_WU: 0 
+
+Game Result: Game 1 ended in 3404 ms. le_042_UG has won!
+
+Match Winner - le_042_UG!
+
+End Round - 7
+
+Round 8 Pairings:
+le_040_UR[3] vs le_041_UB[6] 
+le_045_UG[3] vs le_043_WU[9] 
+le_044_UG[18] vs le_048_WU[21] 
+le_042_UG[12] vs le_046_WU[15] 
+le_047_WU[9] vs le_049_UR[9] 
+
+Round 8 - le_040_UR[3] vs le_041_UB[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: le_040_UR has won because all opponents have lost
+Game Outcome: le_041_UB has lost because life total reached 0
+Match Result: le_040_UR: 1 le_041_UB: 0 
+
+Game Result: Game 1 ended in 2520 ms. le_040_UR has won!
+
+Match Winner - le_040_UR!
+
+Round 8 - le_045_UG[3] vs le_043_WU[9] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 10
+Game Outcome: le_045_UG has lost because life total reached 0
+Game Outcome: le_043_WU has won because all opponents have lost
+Match Result: le_045_UG: 0 le_043_WU: 1 
+
+Game Result: Game 1 ended in 8564 ms. le_043_WU has won!
+
+Match Winner - le_043_WU!
+
+Round 8 - le_044_UG[18] vs le_048_WU[21] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 10
+Game Outcome: le_044_UG has won because all opponents have lost
+Game Outcome: le_048_WU has lost because life total reached 0
+Match Result: le_044_UG: 1 le_048_WU: 0 
+
+Game Result: Game 1 ended in 7345 ms. le_044_UG has won!
+
+Match Winner - le_044_UG!
+
+Round 8 - le_042_UG[12] vs le_046_WU[15] 
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: le_042_UG has won because all opponents have lost
+Game Outcome: le_046_WU has lost because life total reached 0
+Match Result: le_042_UG: 1 le_046_WU: 0 
+
+Game Result: Game 1 ended in 5526 ms. le_042_UG has won!
+
+Match Winner - le_042_UG!
+
+Round 8 - le_047_WU[9] vs le_049_UR[9] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 6
+Game Outcome: le_047_WU has won because all opponents have lost
+Game Outcome: le_049_UR has lost because life total reached 0
+Match Result: le_047_WU: 1 le_049_UR: 0 
+
+Game Result: Game 1 ended in 2564 ms. le_047_WU has won!
+
+Match Winner - le_047_WU!
+
+End Round - 8
+
+Round 9 Pairings:
+le_040_UR[6] vs le_045_UG[3] 
+le_044_UG[21] vs le_041_UB[6] 
+le_042_UG[15] vs le_043_WU[12] 
+le_047_WU[12] vs le_048_WU[21] 
+le_049_UR[9] vs le_046_WU[15] 
+
+Round 9 - le_040_UR[6] vs le_045_UG[3] 
+Correcting zone for Wakandan Royal Guard (43)
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: le_040_UR has won because all opponents have lost
+Game Outcome: le_045_UG has lost because life total reached 0
+Match Result: le_040_UR: 1 le_045_UG: 0 
+
+Game Result: Game 1 ended in 3306 ms. le_040_UR has won!
+
+Match Winner - le_040_UR!
+
+Round 9 - le_044_UG[21] vs le_041_UB[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: le_044_UG has lost because life total reached 0
+Game Outcome: le_041_UB has won because all opponents have lost
+Match Result: le_044_UG: 0 le_041_UB: 1 
+
+Game Result: Game 1 ended in 3050 ms. le_041_UB has won!
+
+Match Winner - le_041_UB!
+
+Round 9 - le_042_UG[15] vs le_043_WU[12] 
+Game Outcome: Match Duration 0m : 12s
+Game Outcome: Turn 9
+Game Outcome: le_042_UG has won because all opponents have lost
+Game Outcome: le_043_WU has lost because life total reached 0
+Match Result: le_042_UG: 1 le_043_WU: 0 
+
+Game Result: Game 1 ended in 12571 ms. le_042_UG has won!
+
+Match Winner - le_042_UG!
+
+Round 9 - le_047_WU[12] vs le_048_WU[21] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 13
+Game Outcome: le_047_WU has won because all opponents have lost
+Game Outcome: le_048_WU has lost because life total reached 0
+Match Result: le_047_WU: 1 le_048_WU: 0 
+
+Game Result: Game 1 ended in 9193 ms. le_047_WU has won!
+
+Match Winner - le_047_WU!
+
+Round 9 - le_049_UR[9] vs le_046_WU[15] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 11
+Game Outcome: le_049_UR has lost because life total reached 0
+Game Outcome: le_046_WU has won because all opponents have lost
+Match Result: le_049_UR: 0 le_046_WU: 1 
+
+Game Result: Game 1 ended in 9469 ms. le_046_WU has won!
+
+Match Winner - le_046_WU!
+
+le_048_WU		7 Wins(0 Byes)-2 Losses-0 Ties	=>	21 Points
+le_044_UG		7 Wins(0 Byes)-2 Losses-0 Ties	=>	21 Points
+le_046_WU		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+le_042_UG		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+le_047_WU		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+le_043_WU		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+le_049_UR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+le_041_UB		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+le_040_UR		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+le_045_UG		1 Wins(0 Byes)-8 Losses-0 Ties	=>	3 Points

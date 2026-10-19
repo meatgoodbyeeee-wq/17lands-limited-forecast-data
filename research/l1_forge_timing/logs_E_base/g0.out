@@ -1,0 +1,784 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36803 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Error handling registered!
+19:26:14 [INFO ] GuiBase: ##########################################
+19:26:14 [INFO ] GuiBase: APP: Forge v.2.0.16-SNAPSHOT-10.19
+19:26:14 [INFO ] GuiBase: Java: 21.0.12.1 (Ubuntu)
+19:26:14 [INFO ] GuiBase: OS: Linux 6.18.44-fc-v139 amd64
+19:26:14 [INFO ] GuiBase: RAM: 2048 MB max, 2 CPUs
+19:26:14 [INFO ] GuiBase: ##########################################
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 2 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+Simulation mode
+Starting a RoundRobin tournament with 10 players over 9 rounds
+
+Round 1 Pairings:
+le_003_UG[0] vs le_006_UR[0] 
+le_008_UR[0] vs le_005_UG[0] 
+le_009_UG[0] vs le_001_WU[0] 
+le_000_UR[0] vs le_007_UB[0] 
+le_002_UB[0] vs le_004_UR[0] 
+
+Round 1 - le_003_UG[0] vs le_006_UR[0] 
+Game Outcome: Match Duration 0m : 08s
+Game Outcome: Turn 8
+Game Outcome: le_003_UG has lost because life total reached 0
+Game Outcome: le_006_UR has won because all opponents have lost
+Match Result: le_003_UG: 0 le_006_UR: 1 
+
+Game Result: Game 1 ended in 10591 ms. le_006_UR has won!
+
+Match Winner - le_006_UR!
+
+Round 1 - le_008_UR[0] vs le_005_UG[0] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 7
+Game Outcome: le_008_UR has lost because life total reached 0
+Game Outcome: le_005_UG has won because all opponents have lost
+Match Result: le_008_UR: 0 le_005_UG: 1 
+
+Game Result: Game 1 ended in 7538 ms. le_005_UG has won!
+
+Match Winner - le_005_UG!
+
+Round 1 - le_009_UG[0] vs le_001_WU[0] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: le_009_UG has won because all opponents have lost
+Game Outcome: le_001_WU has lost because life total reached 0
+Match Result: le_009_UG: 1 le_001_WU: 0 
+
+Game Result: Game 1 ended in 3292 ms. le_009_UG has won!
+
+Match Winner - le_009_UG!
+
+Round 1 - le_000_UR[0] vs le_007_UB[0] 
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Island Did not have activator set in SpellAbilityRestriction.canPlay()
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 7
+Game Outcome: le_000_UR has lost because life total reached 0
+Game Outcome: le_007_UB has won because all opponents have lost
+Match Result: le_000_UR: 0 le_007_UB: 1 
+
+Game Result: Game 1 ended in 4142 ms. le_007_UB has won!
+
+Match Winner - le_007_UB!
+
+Round 1 - le_002_UB[0] vs le_004_UR[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 8
+Game Outcome: le_002_UB has lost because life total reached 0
+Game Outcome: le_004_UR has won because all opponents have lost
+Match Result: le_002_UB: 0 le_004_UR: 1 
+
+Game Result: Game 1 ended in 3843 ms. le_004_UR has won!
+
+Match Winner - le_004_UR!
+
+End Round - 1
+
+Round 2 Pairings:
+le_003_UG[0] vs le_008_UR[0] 
+le_009_UG[3] vs le_006_UR[3] 
+le_000_UR[0] vs le_005_UG[3] 
+le_002_UB[0] vs le_001_WU[0] 
+le_004_UR[3] vs le_007_UB[3] 
+
+Round 2 - le_003_UG[0] vs le_008_UR[0] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 12
+Game Outcome: le_003_UG has lost because life total reached 0
+Game Outcome: le_008_UR has won because all opponents have lost
+Match Result: le_003_UG: 0 le_008_UR: 1 
+
+Game Result: Game 1 ended in 7656 ms. le_008_UR has won!
+
+Match Winner - le_008_UR!
+
+Round 2 - le_009_UG[3] vs le_006_UR[3] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 10
+Game Outcome: le_009_UG has won because all opponents have lost
+Game Outcome: le_006_UR has lost because life total reached 0
+Match Result: le_009_UG: 1 le_006_UR: 0 
+
+Game Result: Game 1 ended in 6803 ms. le_009_UG has won!
+
+Match Winner - le_009_UG!
+
+Round 2 - le_000_UR[0] vs le_005_UG[3] 
+Game Outcome: Match Duration 0m : 11s
+Game Outcome: Turn 10
+Game Outcome: le_000_UR has lost because life total reached 0
+Game Outcome: le_005_UG has won because all opponents have lost
+Match Result: le_000_UR: 0 le_005_UG: 1 
+
+Game Result: Game 1 ended in 11674 ms. le_005_UG has won!
+
+Match Winner - le_005_UG!
+
+Round 2 - le_002_UB[0] vs le_001_WU[0] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: le_002_UB has won because all opponents have lost
+Game Outcome: le_001_WU has lost because life total reached 0
+Match Result: le_002_UB: 1 le_001_WU: 0 
+
+Game Result: Game 1 ended in 3184 ms. le_002_UB has won!
+
+Match Winner - le_002_UB!
+
+Round 2 - le_004_UR[3] vs le_007_UB[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: le_004_UR has won because all opponents have lost
+Game Outcome: le_007_UB has lost because life total reached 0
+Match Result: le_004_UR: 1 le_007_UB: 0 
+
+Game Result: Game 1 ended in 3104 ms. le_004_UR has won!
+
+Match Winner - le_004_UR!
+
+End Round - 2
+
+Round 3 Pairings:
+le_003_UG[0] vs le_009_UG[6] 
+le_000_UR[0] vs le_008_UR[3] 
+le_002_UB[3] vs le_006_UR[3] 
+le_004_UR[6] vs le_005_UG[6] 
+le_007_UB[3] vs le_001_WU[0] 
+
+Round 3 - le_003_UG[0] vs le_009_UG[6] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 7
+Game Outcome: le_003_UG has lost because life total reached 0
+Game Outcome: le_009_UG has won because all opponents have lost
+Match Result: le_003_UG: 0 le_009_UG: 1 
+
+Game Result: Game 1 ended in 5120 ms. le_009_UG has won!
+
+Match Winner - le_009_UG!
+
+Round 3 - le_000_UR[0] vs le_008_UR[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: le_000_UR has won because all opponents have lost
+Game Outcome: le_008_UR has lost because life total reached 0
+Match Result: le_000_UR: 1 le_008_UR: 0 
+
+Game Result: Game 1 ended in 3408 ms. le_000_UR has won!
+
+Match Winner - le_000_UR!
+
+Round 3 - le_002_UB[3] vs le_006_UR[3] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 12
+Game Outcome: le_002_UB has lost because life total reached 0
+Game Outcome: le_006_UR has won because all opponents have lost
+Match Result: le_002_UB: 0 le_006_UR: 1 
+
+Game Result: Game 1 ended in 7965 ms. le_006_UR has won!
+
+Match Winner - le_006_UR!
+
+Round 3 - le_004_UR[6] vs le_005_UG[6] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: le_004_UR has lost because life total reached 0
+Game Outcome: le_005_UG has won because all opponents have lost
+Match Result: le_004_UR: 0 le_005_UG: 1 
+
+Game Result: Game 1 ended in 2928 ms. le_005_UG has won!
+
+Match Winner - le_005_UG!
+
+Round 3 - le_007_UB[3] vs le_001_WU[0] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: le_007_UB has lost because life total reached 0
+Game Outcome: le_001_WU has won because all opponents have lost
+Match Result: le_007_UB: 0 le_001_WU: 1 
+
+Game Result: Game 1 ended in 3885 ms. le_001_WU has won!
+
+Match Winner - le_001_WU!
+
+End Round - 3
+
+Round 4 Pairings:
+le_003_UG[0] vs le_000_UR[3] 
+le_002_UB[3] vs le_009_UG[9] 
+le_004_UR[6] vs le_008_UR[3] 
+le_007_UB[3] vs le_006_UR[6] 
+le_001_WU[3] vs le_005_UG[9] 
+
+Round 4 - le_003_UG[0] vs le_000_UR[3] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: le_003_UG has lost because life total reached 0
+Game Outcome: le_000_UR has won because all opponents have lost
+Match Result: le_003_UG: 0 le_000_UR: 1 
+
+Game Result: Game 1 ended in 2573 ms. le_000_UR has won!
+
+Match Winner - le_000_UR!
+
+Round 4 - le_002_UB[3] vs le_009_UG[9] 
+Game Outcome: Match Duration 0m : 07s
+Game Outcome: Turn 10
+Game Outcome: le_002_UB has lost because life total reached 0
+Game Outcome: le_009_UG has won because all opponents have lost
+Match Result: le_002_UB: 0 le_009_UG: 1 
+
+Game Result: Game 1 ended in 8234 ms. le_009_UG has won!
+
+Match Winner - le_009_UG!
+
+Round 4 - le_004_UR[6] vs le_008_UR[3] 
+Correcting zone for Jessica Jones, Private Eye (66)
+Correcting zone for Jessica Jones, Private Eye (66)
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: le_004_UR has lost because life total reached 0
+Game Outcome: le_008_UR has won because all opponents have lost
+Match Result: le_004_UR: 0 le_008_UR: 1 
+
+Game Result: Game 1 ended in 3466 ms. le_008_UR has won!
+
+Match Winner - le_008_UR!
+
+Round 4 - le_007_UB[3] vs le_006_UR[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: le_007_UB has won because all opponents have lost
+Game Outcome: le_006_UR has lost because life total reached 0
+Match Result: le_007_UB: 1 le_006_UR: 0 
+
+Game Result: Game 1 ended in 1490 ms. le_007_UB has won!
+
+Match Winner - le_007_UB!
+
+Round 4 - le_001_WU[3] vs le_005_UG[9] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 9
+Game Outcome: le_001_WU has lost because life total reached 0
+Game Outcome: le_005_UG has won because all opponents have lost
+Match Result: le_001_WU: 0 le_005_UG: 1 
+
+Game Result: Game 1 ended in 3569 ms. le_005_UG has won!
+
+Match Winner - le_005_UG!
+
+End Round - 4
+
+Round 5 Pairings:
+le_003_UG[0] vs le_002_UB[3] 
+le_004_UR[6] vs le_000_UR[6] 
+le_007_UB[6] vs le_009_UG[12] 
+le_001_WU[3] vs le_008_UR[6] 
+le_005_UG[12] vs le_006_UR[6] 
+
+Round 5 - le_003_UG[0] vs le_002_UB[3] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: le_003_UG has lost because life total reached 0
+Game Outcome: le_002_UB has won because all opponents have lost
+Match Result: le_003_UG: 0 le_002_UB: 1 
+
+Game Result: Game 1 ended in 2591 ms. le_002_UB has won!
+
+Match Winner - le_002_UB!
+
+Round 5 - le_004_UR[6] vs le_000_UR[6] 
+Correcting zone for Aerial Doombot (58)
+Correcting zone for Aerial Doombot (58)
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 18
+Game Outcome: le_004_UR has won because all opponents have lost
+Game Outcome: le_000_UR has lost because life total reached 0
+Match Result: le_004_UR: 1 le_000_UR: 0 
+
+Game Result: Game 1 ended in 6874 ms. le_004_UR has won!
+
+Match Winner - le_004_UR!
+
+Round 5 - le_007_UB[6] vs le_009_UG[12] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 7
+Game Outcome: le_007_UB has lost because life total reached 0
+Game Outcome: le_009_UG has won because all opponents have lost
+Match Result: le_007_UB: 0 le_009_UG: 1 
+
+Game Result: Game 1 ended in 4063 ms. le_009_UG has won!
+
+Match Winner - le_009_UG!
+
+Round 5 - le_001_WU[3] vs le_008_UR[6] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 8
+Game Outcome: le_001_WU has won because all opponents have lost
+Game Outcome: le_008_UR has lost because life total reached 0
+Match Result: le_001_WU: 1 le_008_UR: 0 
+
+Game Result: Game 1 ended in 3201 ms. le_001_WU has won!
+
+Match Winner - le_001_WU!
+
+Round 5 - le_005_UG[12] vs le_006_UR[6] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 10
+Game Outcome: le_005_UG has lost because life total reached 0
+Game Outcome: le_006_UR has won because all opponents have lost
+Match Result: le_005_UG: 0 le_006_UR: 1 
+
+Game Result: Game 1 ended in 4076 ms. le_006_UR has won!
+
+Match Winner - le_006_UR!
+
+End Round - 5
+
+Round 6 Pairings:
+le_003_UG[0] vs le_004_UR[9] 
+le_007_UB[6] vs le_002_UB[6] 
+le_001_WU[6] vs le_000_UR[6] 
+le_005_UG[12] vs le_009_UG[15] 
+le_006_UR[9] vs le_008_UR[6] 
+
+Round 6 - le_003_UG[0] vs le_004_UR[9] 
+Correcting zone for Viv Vision, Teen Synthezoid (8)
+Correcting zone for Viv Vision, Teen Synthezoid (8)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: le_003_UG has lost because life total reached 0
+Game Outcome: le_004_UR has won because all opponents have lost
+Match Result: le_003_UG: 0 le_004_UR: 1 
+
+Game Result: Game 1 ended in 2758 ms. le_004_UR has won!
+
+Match Winner - le_004_UR!
+
+Round 6 - le_007_UB[6] vs le_002_UB[6] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 05s
+Game Outcome: Turn 12
+Game Outcome: le_007_UB has lost because life total reached 0
+Game Outcome: le_002_UB has won because all opponents have lost
+Match Result: le_007_UB: 0 le_002_UB: 1 
+
+Game Result: Game 1 ended in 6178 ms. le_002_UB has won!
+
+Match Winner - le_002_UB!
+
+Round 6 - le_001_WU[6] vs le_000_UR[6] 
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Mountain Did not have activator set in SpellAbilityRestriction.canPlay()
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: le_001_WU has won because all opponents have lost
+Game Outcome: le_000_UR has lost because life total reached 0
+Match Result: le_001_WU: 1 le_000_UR: 0 
+
+Game Result: Game 1 ended in 3050 ms. le_001_WU has won!
+
+Match Winner - le_001_WU!
+
+Round 6 - le_005_UG[12] vs le_009_UG[15] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: le_005_UG has lost because life total reached 0
+Game Outcome: le_009_UG has won because all opponents have lost
+Match Result: le_005_UG: 0 le_009_UG: 1 
+
+Game Result: Game 1 ended in 1707 ms. le_009_UG has won!
+
+Match Winner - le_009_UG!
+
+Round 6 - le_006_UR[9] vs le_008_UR[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: le_006_UR has won because all opponents have lost
+Game Outcome: le_008_UR has lost because life total reached 0
+Match Result: le_006_UR: 1 le_008_UR: 0 
+
+Game Result: Game 1 ended in 1974 ms. le_006_UR has won!
+
+Match Winner - le_006_UR!
+
+End Round - 6
+
+Round 7 Pairings:
+le_003_UG[0] vs le_007_UB[6] 
+le_001_WU[9] vs le_004_UR[12] 
+le_005_UG[12] vs le_002_UB[9] 
+le_006_UR[12] vs le_000_UR[6] 
+le_008_UR[6] vs le_009_UG[18] 
+
+Round 7 - le_003_UG[0] vs le_007_UB[6] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 13s
+Game Outcome: Turn 11
+Game Outcome: le_003_UG has won because all opponents have lost
+Game Outcome: le_007_UB has lost because life total reached 0
+Match Result: le_003_UG: 1 le_007_UB: 0 
+
+Game Result: Game 1 ended in 13854 ms. le_003_UG has won!
+
+Match Winner - le_003_UG!
+
+Round 7 - le_001_WU[9] vs le_004_UR[12] 
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Warning: default (ie. inherited from base class) implementation of chkAIDrawback is used by Trickster's Stratagem for forge.ai.ability.ConniveAi. Consider declaring an overloaded method
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: le_001_WU has won because all opponents have lost
+Game Outcome: le_004_UR has lost because life total reached 0
+Match Result: le_001_WU: 1 le_004_UR: 0 
+
+Game Result: Game 1 ended in 2498 ms. le_001_WU has won!
+
+Match Winner - le_001_WU!
+
+Round 7 - le_005_UG[12] vs le_002_UB[9] 
+Game Outcome: Match Duration 0m : 03s
+Game Outcome: Turn 11
+Game Outcome: le_005_UG has lost trying to draw cards from empty library
+Game Outcome: le_002_UB has won because all opponents have lost
+Match Result: le_005_UG: 0 le_002_UB: 1 
+
+Game Result: Game 1 ended in 4342 ms. le_002_UB has won!
+
+Match Winner - le_002_UB!
+
+Round 7 - le_006_UR[12] vs le_000_UR[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: le_006_UR has lost because life total reached 0
+Game Outcome: le_000_UR has won because all opponents have lost
+Match Result: le_006_UR: 0 le_000_UR: 1 
+
+Game Result: Game 1 ended in 1724 ms. le_000_UR has won!
+
+Match Winner - le_000_UR!
+
+Round 7 - le_008_UR[6] vs le_009_UG[18] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 9
+Game Outcome: le_008_UR has lost because life total reached 0
+Game Outcome: le_009_UG has won because all opponents have lost
+Match Result: le_008_UR: 0 le_009_UG: 1 
+
+Game Result: Game 1 ended in 4631 ms. le_009_UG has won!
+
+Match Winner - le_009_UG!
+
+End Round - 7
+
+Round 8 Pairings:
+le_003_UG[3] vs le_001_WU[12] 
+le_005_UG[12] vs le_007_UB[6] 
+le_006_UR[12] vs le_004_UR[12] 
+le_008_UR[6] vs le_002_UB[12] 
+le_009_UG[21] vs le_000_UR[9] 
+
+Round 8 - le_003_UG[3] vs le_001_WU[12] 
+Game Outcome: Match Duration 0m : 06s
+Game Outcome: Turn 11
+Game Outcome: le_003_UG has won because all opponents have lost
+Game Outcome: le_001_WU has lost because life total reached 0
+Match Result: le_003_UG: 1 le_001_WU: 0 
+
+Game Result: Game 1 ended in 7128 ms. le_003_UG has won!
+
+Match Winner - le_003_UG!
+
+Round 8 - le_005_UG[12] vs le_007_UB[6] 
+Game Outcome: Match Duration 0m : 10s
+Game Outcome: Turn 10
+Game Outcome: le_005_UG has won because all opponents have lost
+Game Outcome: le_007_UB has lost because life total reached 0
+Match Result: le_005_UG: 1 le_007_UB: 0 
+
+Game Result: Game 1 ended in 11101 ms. le_005_UG has won!
+
+Match Winner - le_005_UG!
+
+Round 8 - le_006_UR[12] vs le_004_UR[12] 
+Correcting zone for Ultron Drone (18)
+Game Outcome: Match Duration 0m : 04s
+Game Outcome: Turn 12
+Game Outcome: le_006_UR has lost because life total reached 0
+Game Outcome: le_004_UR has won because all opponents have lost
+Match Result: le_006_UR: 0 le_004_UR: 1 
+
+Game Result: Game 1 ended in 4940 ms. le_004_UR has won!
+
+Match Winner - le_004_UR!
+
+Round 8 - le_008_UR[6] vs le_002_UB[12] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 9
+Game Outcome: le_008_UR has lost because life total reached 0
+Game Outcome: le_002_UB has won because all opponents have lost
+Match Result: le_008_UR: 0 le_002_UB: 1 
+
+Game Result: Game 1 ended in 2478 ms. le_002_UB has won!
+
+Match Winner - le_002_UB!
+
+Round 8 - le_009_UG[21] vs le_000_UR[9] 
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+SVar 'Double' not found in ability, fallback to Card (Epic Fight). Ability is (Double target creature's power and toughness until end of turn.)
+SVar 'Double' not defined in Card (Epic Fight)
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 7
+Game Outcome: le_009_UG has won because all opponents have lost
+Game Outcome: le_000_UR has lost because life total reached 0
+Match Result: le_009_UG: 1 le_000_UR: 0 
+
+Game Result: Game 1 ended in 2143 ms. le_009_UG has won!
+
+Match Winner - le_009_UG!
+
+End Round - 8
+
+Round 9 Pairings:
+le_003_UG[6] vs le_005_UG[15] 
+le_006_UR[12] vs le_001_WU[12] 
+le_008_UR[6] vs le_007_UB[6] 
+le_009_UG[24] vs le_004_UR[15] 
+le_000_UR[9] vs le_002_UB[15] 
+
+Round 9 - le_003_UG[6] vs le_005_UG[15] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 7
+Game Outcome: le_003_UG has lost because life total reached 0
+Game Outcome: le_005_UG has won because all opponents have lost
+Match Result: le_003_UG: 0 le_005_UG: 1 
+
+Game Result: Game 1 ended in 2806 ms. le_005_UG has won!
+
+Match Winner - le_005_UG!
+
+Round 9 - le_006_UR[12] vs le_001_WU[12] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 9
+Game Outcome: le_006_UR has lost because life total reached 0
+Game Outcome: le_001_WU has won because all opponents have lost
+Match Result: le_006_UR: 0 le_001_WU: 1 
+
+Game Result: Game 1 ended in 3138 ms. le_001_WU has won!
+
+Match Winner - le_001_WU!
+
+Round 9 - le_008_UR[6] vs le_007_UB[6] 
+Game Outcome: Match Duration 0m : 01s
+Game Outcome: Turn 8
+Game Outcome: le_008_UR has lost because life total reached 0
+Game Outcome: le_007_UB has won because all opponents have lost
+Match Result: le_008_UR: 0 le_007_UB: 1 
+
+Game Result: Game 1 ended in 1858 ms. le_007_UB has won!
+
+Match Winner - le_007_UB!
+
+Round 9 - le_009_UG[24] vs le_004_UR[15] 
+Game Outcome: Match Duration 0m : 02s
+Game Outcome: Turn 10
+Game Outcome: le_009_UG has lost because life total reached 0
+Game Outcome: le_004_UR has won because all opponents have lost
+Match Result: le_009_UG: 0 le_004_UR: 1 
+
+Game Result: Game 1 ended in 3335 ms. le_004_UR has won!
+
+Match Winner - le_004_UR!
+
+Round 9 - le_000_UR[9] vs le_002_UB[15] 
+Game Outcome: Match Duration 0m : 00s
+Game Outcome: Turn 7
+Game Outcome: le_000_UR has won because all opponents have lost
+Game Outcome: le_002_UB has lost because life total reached 0
+Match Result: le_000_UR: 1 le_002_UB: 0 
+
+Game Result: Game 1 ended in 1490 ms. le_000_UR has won!
+
+Match Winner - le_000_UR!
+
+le_009_UG		8 Wins(0 Byes)-1 Losses-0 Ties	=>	24 Points
+le_005_UG		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+le_004_UR		6 Wins(0 Byes)-3 Losses-0 Ties	=>	18 Points
+le_002_UB		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+le_001_WU		5 Wins(0 Byes)-4 Losses-0 Ties	=>	15 Points
+le_000_UR		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+le_006_UR		4 Wins(0 Byes)-5 Losses-0 Ties	=>	12 Points
+le_007_UB		3 Wins(0 Byes)-6 Losses-0 Ties	=>	9 Points
+le_003_UG		2 Wins(0 Byes)-7 Losses-0 Ties	=>	6 Points
+le_008_UR		2 Wins(0 Byes)-7 Losses-0 Ties	=>	6 Points

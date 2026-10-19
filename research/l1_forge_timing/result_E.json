@@ -1,0 +1,172 @@
+{
+ "base": {
+  "games": 360,
+  "timeouts": 0,
+  "mean_turns": 9.472222222222221,
+  "draw_lines_per_player": 19.416666666666668,
+  "T_casts": 238,
+  "T_opp_eot_casts": 0,
+  "T_opp_eot_rate": 0.0,
+  "T_cast_phase": {
+   "自:MAIN2": 209,
+   "自:UPKEEP": 9,
+   "自:DRAW": 8,
+   "相:MAIN2": 5,
+   "自:MAIN1": 4,
+   "相:UPKEEP": 2,
+   "自:COMBAT_DECLARE_ATTACKERS": 1
+  },
+  "T_gih_n": 359,
+  "T_gih_wr": 0.4763231197771588,
+  "T_casts_per_gih": 0.6629526462395543,
+  "N_gih_n": 7490,
+  "N_gih_wr": 0.5145527369826435,
+  "per_card_T": {
+   "Artificer's Epiphany": [
+    14,
+    27
+   ],
+   "Catalog": [
+    11,
+    24
+   ],
+   "Enhanced Awareness": [
+    4,
+    8
+   ],
+   "Prying Eyes": [
+    9,
+    29
+   ],
+   "Quick Study": [
+    7,
+    13
+   ],
+   "Rain of Revelation": [
+    22,
+    34
+   ],
+   "Succumb to Temptation": [
+    7,
+    18
+   ],
+   "Thirst for Discovery": [
+    17,
+    34
+   ],
+   "Thirst for Identity": [
+    9,
+    24
+   ],
+   "Thirst for Knowledge": [
+    36,
+    72
+   ],
+   "Thirst for Meaning": [
+    23,
+    43
+   ],
+   "Tragic Lesson": [
+    12,
+    33
+   ]
+  }
+ },
+ "patch": {
+  "games": 360,
+  "timeouts": 0,
+  "mean_turns": 9.441666666666666,
+  "draw_lines_per_player": 19.544444444444444,
+  "T_casts": 237,
+  "T_opp_eot_casts": 192,
+  "T_opp_eot_rate": 0.810126582278481,
+  "T_cast_phase": {
+   "相:END_OF_TURN": 192,
+   "自:MAIN2": 36,
+   "相:MAIN2": 6,
+   "自:END_OF_TURN": 1,
+   "自:DRAW": 1,
+   "自:MAIN1": 1
+  },
+  "T_gih_n": 403,
+  "T_gih_wr": 0.5086848635235732,
+  "T_casts_per_gih": 0.5880893300248139,
+  "N_gih_n": 7486,
+  "N_gih_wr": 0.513625434143735,
+  "per_card_T": {
+   "Artificer's Epiphany": [
+    15,
+    37
+   ],
+   "Catalog": [
+    13,
+    34
+   ],
+   "Enhanced Awareness": [
+    9,
+    14
+   ],
+   "Prying Eyes": [
+    12,
+    29
+   ],
+   "Quick Study": [
+    9,
+    15
+   ],
+   "Rain of Revelation": [
+    18,
+    40
+   ],
+   "Succumb to Temptation": [
+    9,
+    13
+   ],
+   "Thirst for Discovery": [
+    19,
+    33
+   ],
+   "Thirst for Identity": [
+    12,
+    21
+   ],
+   "Thirst for Knowledge": [
+    40,
+    79
+   ],
+   "Thirst for Meaning": [
+    31,
+    50
+   ],
+   "Tragic Lesson": [
+    18,
+    38
+   ]
+  }
+ },
+ "diff_T": {
+  "point": 0.03236174374641443,
+  "ci95": [
+   -0.04309747392539096,
+   0.10886619419360369
+  ],
+  "valid_resamples": 10000
+ },
+ "diff_N": {
+  "point": -0.000927302838908517,
+  "ci95": [
+   -0.052707403955448984,
+   0.05176737912004155
+  ],
+  "valid_resamples": 10000
+ },
+ "verdict": {
+  "a_opp_eot_rate_ge_70pct": true,
+  "c_cast_ratio": 0.8870759221802865,
+  "c_ok": true,
+  "b_placebo_ci_contains_0": true,
+  "b_timeouts": true,
+  "b_turns": true,
+  "result": "採用候補"
+ }
+}
