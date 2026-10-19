@@ -21,7 +21,7 @@ REPO, DECKS, OUT, WORKERS = sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[
 PAIRS = [p.split(":") for p in sys.argv[5:]]
 JAR = os.path.join(REPO, "forge-gui-desktop/target/forge-gui-desktop-2.0.16-SNAPSHOT-jar-with-dependencies.jar")
 ARM_ENV = {"base": {}, "patch": {"L3_PATCH": "1", "L4S_PATCH": "1", "L5A_PATCH": "1"}}
-JOB_LIMIT_S = 105 * 60
+JOB_LIMIT_S = 113 * 60
 
 
 def convert(log_path):
