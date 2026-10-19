@@ -25,7 +25,7 @@ def job(j):
     jid, a, b, seed = j; out = f'{OUT}/{jid}.json'
     if os.path.exists(out): return jid
     n = '4' if SMOKE else '100'
-    cmd = ['java', '-Xmx1g', '-jar', FD + '/forge-gui-desktop/target/forge-gui-desktop-2.0.16-SNAPSHOT-jar-with-dependencies.jar', 'sim', '-d', a, b, '-n', n, '-s', str(seed), '-c', '120']
+    cmd = ['java', '-Xmx1g', '-jar', os.environ.get('FORGE_JAR', FD + '/forge-gui-desktop/target/forge-gui-desktop-2.0.16-SNAPSHOT-jar-with-dependencies.jar'), 'sim', '-d', a, b, '-n', n, '-s', str(seed), '-c', '120']
     t = subprocess.run(cmd, cwd=FD + '/forge-gui', capture_output=True, text=True, timeout=3600).stdout
     g = parse(t)
     if len(g) != int(n): raise RuntimeError(f'{jid}: {len(g)} games parsed')
