@@ -1,8 +1,25 @@
 diff --git a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
-index bea65799..e159d12a 100644
+index bea65799..410dbd09 100644
 --- a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
 +++ b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
-@@ -155,7 +155,14 @@ public class SimulateMatch {
+@@ -36,6 +36,16 @@ import forge.util.WordUtil;
+ import forge.util.storage.IStorage;
+ 
+ public class SimulateMatch {
++    // M1 research patch: FORGE_SIM_AI=full|hybrid enables Forge's look-ahead "Simulation AI"; unset = unchanged default AI
++    private static LobbyPlayer m1CreateAi(final String name) {
++        String m1Mode = System.getenv("FORGE_SIM_AI");
++        if (m1Mode != null && !m1Mode.isEmpty()) {
++            forge.ai.AIOption o = m1Mode.equalsIgnoreCase("hybrid") ? forge.ai.AIOption.USE_HYBRID_SIMULATION : forge.ai.AIOption.USE_FULL_SIMULATION;
++            return GamePlayerUtil.createAiPlayer(name, 0, 0, java.util.Collections.singleton(o));
++        }
++        return GamePlayerUtil.createAiPlayer(name, 0);
++    }
++
+     public static void simulate(String[] args) {
+         FModel.initialize(null, null);
+ 
+@@ -155,7 +165,14 @@ public class SimulateMatch {
                  } else {
                      rp = new RegisteredPlayer(d);
                  }
@@ -17,4 +34,22 @@ index bea65799..e159d12a 100644
 +                }
                  pp.add(rp);
                  i++;
+             }
+@@ -266,7 +283,7 @@ public class SimulateMatch {
+                 }
+ 
+                 deckGroup.addAiDeck(d);
+-                players.add(new TournamentPlayer(GamePlayerUtil.createAiPlayer(d.getName(), 0), numPlayers));
++                players.add(new TournamentPlayer(m1CreateAi(d.getName()), numPlayers));
+                 numPlayers++;
+             }
+         }
+@@ -285,7 +302,7 @@ public class SimulateMatch {
+                         return;
+                     }
+                     deckGroup.addAiDeck(d);
+-                    players.add(new TournamentPlayer(GamePlayerUtil.createAiPlayer(d.getName(), 0), numPlayers));
++                    players.add(new TournamentPlayer(m1CreateAi(d.getName()), numPlayers));
+                     numPlayers++;
+                 }
              }

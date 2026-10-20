@@ -1,0 +1,5 @@
+M1 timing pilot (6 decks round robin = 15 games, -c 120, Forge master 1e31bc3, 2 CPU / 7GB)
+normal (1.5GB): wall 104s, 15 games, mean 6.3 s/game
+hybrid (3GB):   wall 188s, 15 games, mean 12.0 s/game, slow-stops 0, OOM 0
+full   (3GB):   wall 323s, 4 games, mean 77 s/game, slow-stops 2, OOM 2  -> excluded
+first attempt (switch missed the tournament path): results identical to normal -> bug fixed
