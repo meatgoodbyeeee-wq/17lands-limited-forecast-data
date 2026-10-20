@@ -1,0 +1,20 @@
+diff --git a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
+index bea65799..e159d12a 100644
+--- a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
++++ b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
+@@ -155,7 +155,14 @@ public class SimulateMatch {
+                 } else {
+                     rp = new RegisteredPlayer(d);
+                 }
+-                rp.setPlayer(GamePlayerUtil.createAiPlayer(name, i - 1, profile));
++                // M1 research patch: FORGE_SIM_AI=full|hybrid turns on Forge's look-ahead "Simulation AI" for every player; unset = unchanged default AI
++                String m1Mode = System.getenv("FORGE_SIM_AI");
++                if (m1Mode != null && !m1Mode.isEmpty()) {
++                    forge.ai.AIOption m1Opt = m1Mode.equalsIgnoreCase("hybrid") ? forge.ai.AIOption.USE_HYBRID_SIMULATION : forge.ai.AIOption.USE_FULL_SIMULATION;
++                    rp.setPlayer(GamePlayerUtil.createAiPlayer(name, i - 1, 0, java.util.Collections.singleton(m1Opt), profile));
++                } else {
++                    rp.setPlayer(GamePlayerUtil.createAiPlayer(name, i - 1, profile));
++                }
+                 pp.add(rp);
+                 i++;
+             }
