@@ -8,6 +8,11 @@ trained on the 21 research sets + EOE, TLA, ECL, TMT, SOS, MSH, HOB. Seeds 20260
   python export_gih_c3_28set.py adopted --fra <pages>/data/target.json.gz --out <pages>/data/adopted-gih-fra.json.gz
   python export_gih_c3_28set.py range --fra <pages>/data/target.json.gz --adopted <pages>/data/adopted-gih-fra.json.gz \
       --out <pages>/data/gih-range-fra.json                           # M5 (unchanged method) refit on the new OOF residuals
+
+A new set uses the same model and the same commands with --set (default FRA); --fra is then the set's card file (same schema as
+target.json.gz), --c3 its C3 feature file (rows keyed "<SET>|<card id>"; research/newset/newset.py features), and --version
+the version string to write (default: the FRA production version, so FRA output is unchanged):
+  python export_gih_c3_28set.py adopted --set TRK --fra <cards>.json.gz --c3 <c3>.csv.gz --version gih-c3-28set-20260929-trk --out <out>.json.gz
 """
 import argparse
 import gzip
@@ -92,7 +97,8 @@ def cmd_oof(_a):
     print(json.dumps({"mae_pp": summ["mae_pp"], "spearman": summ["spearman"]}))
 
 
-def fra_frame(fra_path, base, cols, train):
+def fra_frame(fra_path, base, cols, train, set_code="FRA", c3_path=None):
+    """Feature frame for a not-yet-released set (FRA unless set_code says otherwise)."""
     fra = json.loads(gzip.open(fra_path, "rt", encoding="utf-8").read())["cards"]
     norm = [c3.normalize(c) for c in fra]
     f = pd.DataFrame([card_features(c) for c in norm])
@@ -108,10 +114,10 @@ def fra_frame(fra_path, base, cols, train):
     missing = [c for c in base if c not in f.columns]
     if missing:
         raise SystemExit(f"FRA feature table lacks {missing}")
-    x = pd.read_csv(c3.C3_OUT, keep_default_na=False).set_index("key")
-    keys = [f"FRA|{c['id']}" for c in fra]
+    x = pd.read_csv(c3_path or c3.C3_OUT, keep_default_na=False).set_index("key")
+    keys = [f"{set_code}|{c['id']}" for c in fra]
     if any(k not in x.index for k in keys):
-        raise SystemExit("C3 missing for some FRA cards")
+        raise SystemExit(f"C3 missing for some {set_code} cards")
     for c in cols:
         f[c] = x.loc[keys, c].to_numpy(dtype=float)
     return fra, f
@@ -123,7 +129,7 @@ def head():
 
 def cmd_adopted(a):
     pool, base, cols = training()
-    fra, f = fra_frame(a.fra, base, cols, pool)
+    fra, f = fra_frame(a.fra, base, cols, pool, a.set, a.c3)
     nums = base + cols
     c, t, x, p = predict(pool, f, nums)
     # Check that the component reconstruction matches the research model exactly.
@@ -133,7 +139,8 @@ def cmd_adopted(a):
     sd_ = 1.25 * .7 * (t - c) * 100
     td_ = 1.25 * .3 * (x - c) * 100
     out = {
-        "version": VERSION,
+        "version": a.version or VERSION,
+        "set": a.set,
         "source_repository": "meatgoodbyeeee-wq/17lands-limited-forecast-data",
         "source_head": head(),
         "fin_used": False,
@@ -193,9 +200,10 @@ def cmd_range(a):
         print(name, json.dumps(rep[name]), flush=True)
     m5 = gi.m5_fit(d, rcols)
     m4 = gi.m4_fit(d, rcols)
-    fra, f = fra_frame(a.fra, base, cols, pool)
+    fra, f = fra_frame(a.fra, base, cols, pool, a.set, a.c3)
+    version = a.version or VERSION
     adopted = {c["id"]: c for c in json.loads(gzip.open(a.adopted, "rt", encoding="utf-8").read())["cards"]}
-    if json.loads(gzip.open(a.adopted, "rt", encoding="utf-8").read())["version"] != VERSION:
+    if json.loads(gzip.open(a.adopted, "rt", encoding="utf-8").read())["version"] != version:
         raise SystemExit("adopted file is not the final-candidate export")
     f["pred_pp"] = [adopted[c["id"]]["gih"] for c in fra]
     sigma = np.maximum(m5["model"].predict(f[rcols]), gi.SIGMA_FLOOR)
@@ -204,10 +212,11 @@ def cmd_range(a):
         raise SystemExit("invalid FRA radii")
     fallback = {rar: {t: round(float(m4["cell"].get((rar, t), m4["rarity"][rar])), 4) for t in gi.TYPES} for rar in gi.RARITY.values()}
     out = {
-        "version": RANGE_VERSION,
+        "version": RANGE_VERSION if not a.version else a.version.replace("gih-", "gih-range-m5-", 1),
+        "set": a.set,
         "method": "M5 normalized conformal (method unchanged from research/gih_interval): ExtraTrees predicts |residual| of the final GIH model; range = pred ± q·sigma",
         "target_coverage": gi.TARGET, "fin_used": False, "mh3_used": False,
-        "gih_model_version": VERSION,
+        "gih_model_version": version,
         "training_sets": sorted(d.set.unique()),
         "q": round(float(m5["q"]), 6), "sigma_floor": gi.SIGMA_FLOOR,
         "loso": rep["M5_normalized"], "loso_fallback_m4": rep["M4_rarity_type"],
@@ -217,7 +226,8 @@ def cmd_range(a):
                    "mana_cost": c.get("mana_cost") or "", "radius": round(float(r), 4)} for c, r in zip(fra, radius)],
     }
     a.out.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
-    (HERE / "range_loso.json").write_text(json.dumps({"version": RANGE_VERSION, **rep, "q": out["q"]}, indent=2))
+    if a.set == "FRA" and not a.version:  # the LOSO report belongs to the production model; a new set reuses it unchanged
+        (HERE / "range_loso.json").write_text(json.dumps({"version": RANGE_VERSION, **rep, "q": out["q"]}, indent=2))
     s = pd.Series(radius)
     print(json.dumps({"cards": len(radius), "q": out["q"], "radius_min": round(s.min(), 3), "radius_median": round(s.median(), 3),
                       "radius_max": round(s.max(), 3)}))
@@ -226,7 +236,10 @@ def cmd_range(a):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["oof", "adopted", "range"])
-    ap.add_argument("--fra", type=Path)
+    ap.add_argument("--fra", type=Path, help="card file of the set to predict (target.json.gz schema)")
+    ap.add_argument("--set", default="FRA", help="set code of the card file (default FRA)")
+    ap.add_argument("--c3", type=Path, help="C3 feature csv for the set (default: research/gih_llm_extract/c3_features.csv.gz)")
+    ap.add_argument("--version", help="model version string to write (default: production FRA version)")
     ap.add_argument("--adopted", type=Path)
     ap.add_argument("--out", type=Path)
     a = ap.parse_args()
