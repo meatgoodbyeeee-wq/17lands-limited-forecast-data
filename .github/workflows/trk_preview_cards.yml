@@ -1,0 +1,34 @@
+name: TRK preview - card texts and features (Scryfall only)
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/trk-preview]
+    paths:
+      - research/trk_preview/trk_cards.py
+      - research/trk_preview/REFRESH
+      - .github/workflows/trk_preview_cards.yml
+permissions:
+  contents: write
+concurrency:
+  group: trk-preview-cards
+  cancel-in-progress: false
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - run: python research/trk_preview/trk_cards.py
+      - name: Commit TRK card texts and features
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/trk_preview/data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'TRK preview card texts and features (Scryfall only)'
+          git pull --rebase origin research/trk-preview
+          git push origin HEAD:research/trk-preview
