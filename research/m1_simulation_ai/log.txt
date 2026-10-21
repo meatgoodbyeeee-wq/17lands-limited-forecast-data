@@ -1,0 +1,31 @@
+games {'normal': 3040, 'hybrid': 3040} slow-stopped {'normal': 4, 'hybrid': 25} slow rate {'normal': 0.0013, 'hybrid': 0.0082}
+eligible per mode {'normal': 213, 'hybrid': 213} common 212 of MSH cards 278
+LOO MAE p-only (same for both) 2.297
+[normal] reliability 0.765  rho(e,a) +0.411  rho(e,res) +0.311 (one-sided p 1.96e-06)  LOO MAE p+e 2.212  AA e +10.03 rank 13/212 (a +8.30 p -3.02 res +11.32)
+[hybrid] reliability 0.702  rho(e,a) +0.445  rho(e,res) +0.320 (one-sided p 1e-06)  LOO MAE p+e 2.177  AA e +6.57 rank 24/212 (a +8.30 p -3.02 res +11.32)
+delta rho(e,a) H-C +0.034  95% CI [-0.070, +0.145]  (bootstrap over cards, 2000)
+--- H: e much lower than res
+                 name  n_hybrid  e_hybrid  e_normal    a    p  res
+Trickster's Stratagem       275     -13.0      -5.8  4.6  1.1  3.5
+            Dark Deed       246     -11.4     -10.8  3.4  1.1  2.3
+        Hawkeye's Bow       201     -12.5      -6.7 -3.2 -3.6  0.4
+ Leader, Super-Genius       197      -3.6       6.2 11.6  2.7  8.9
+   HYDRA Infiltration       296     -10.6      -4.8  0.6 -1.1  1.8
+  Visions of Villainy       209     -13.1      -7.8 -2.4 -1.5 -0.9
+Avengers Disassembled       199     -13.2     -13.1 -1.7 -0.0 -1.6
+  Doom Reigns Supreme       289      -7.3      -6.2 -3.6 -7.0  3.4
+           Super Suit       234      -7.7      -4.7 -0.5 -3.3  2.8
+   Super Intelligence       154      -9.3      -5.4 -2.9 -4.1  1.1
+--- H: e much higher than res
+                             name  n_hybrid  e_hybrid  e_normal     a    p  res
+       Invisible Woman, Sue Storm       279       1.8       5.8 -10.0 -1.6 -8.4
+                   Super Strength       269       9.4       6.3  -4.3 -3.3 -1.1
+             Thor, God of Thunder       221      11.1     -11.0   6.5  6.0  0.5
+                       The Vision       574      11.2       9.8   3.5  3.4  0.2
+      Mister Hyde, Monster Within       252      10.7       6.3  -0.3  0.3 -0.6
+     The Unbeatable Squirrel Girl       291       6.2       9.9   3.7  9.1 -5.3
+        Ant-Man, Colony Commander       109       8.8       4.2  -1.8  1.0 -2.8
+              Super-Soldier Serum       316      13.1      17.1  -1.1 -2.0  0.9
+Captain America, Wings of Freedom       341      15.4      12.2   5.9  3.7  2.2
+      The Sentry, Golden Guardian       271      12.6      14.9  -2.4  1.5 -3.9
+RULE M1: (a) CI low>0: False  (b) H MAE<C MAE: True  (c) H slow<5%: True (0.822%)  -> not supported
