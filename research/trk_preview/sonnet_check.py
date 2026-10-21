@@ -222,6 +222,7 @@ def cmd_score(a):
     preds['S'] = run(['c3', 'c4', 'c5', 'c9'])
     for k in ('c3', 'c4', 'c5', 'c9'):
         preds[f'only_{k}'] = run([k])
+    preds['c3c4c5'] = run(['c3', 'c4', 'c5'])  # reported after S1 failed: Sonnet everywhere except C9
     O = preds['O'][pos] * 100
     res = {'reproduce_frozen_maxdiff': repro, 'n': len(s)}
     for name, p in preds.items():

@@ -1,0 +1,322 @@
+{
+ "reproduce_frozen_maxdiff": 2.220446049250313e-16,
+ "n": 100,
+ "S": {
+  "mean_abs_pp": 0.679,
+  "mean_pp": -0.08,
+  "pearson": 0.9423,
+  "max_abs_pp": 6.97
+ },
+ "only_c3": {
+  "mean_abs_pp": 0.13,
+  "mean_pp": 0.071,
+  "pearson": 0.9967,
+  "max_abs_pp": 1.17
+ },
+ "only_c4": {
+  "mean_abs_pp": 0.059,
+  "mean_pp": 0.015,
+  "pearson": 0.9993,
+  "max_abs_pp": 0.54
+ },
+ "only_c5": {
+  "mean_abs_pp": 0.116,
+  "mean_pp": -0.032,
+  "pearson": 0.998,
+  "max_abs_pp": 0.61
+ },
+ "only_c9": {
+  "mean_abs_pp": 0.632,
+  "mean_pp": -0.126,
+  "pearson": 0.9495,
+  "max_abs_pp": 6.54
+ },
+ "c3c4c5": {
+  "mean_abs_pp": 0.232,
+  "mean_pp": 0.053,
+  "pearson": 0.9944,
+  "max_abs_pp": 1.18
+ },
+ "rule_S1": {
+  "mean_abs<=0.40": false,
+  "|mean|<=0.20": true,
+  "pearson>=0.95": false,
+  "pass": false
+ },
+ "S_by_rarity": {
+  "common": {
+   "mean_pp": 0.088,
+   "mean_abs_pp": 0.46
+  },
+  "uncommon": {
+   "mean_pp": 0.071,
+   "mean_abs_pp": 0.513
+  },
+  "rare": {
+   "mean_pp": -0.117,
+   "mean_abs_pp": 0.715
+  },
+  "mythic": {
+   "mean_pp": -0.469,
+   "mean_abs_pp": 1.158
+  }
+ },
+ "top10_by_O": [
+  {
+   "name": "Ajani Unrelenting",
+   "rarity": "mythic",
+   "O": 64.41,
+   "S": 62.38,
+   "rank_O": 1,
+   "rank_S": 3
+  },
+  {
+   "name": "Aerid Konstrari",
+   "rarity": "mythic",
+   "O": 62.52,
+   "S": 63.2,
+   "rank_O": 2,
+   "rank_S": 1
+  },
+  {
+   "name": "Garruk, Curse Breaker",
+   "rarity": "mythic",
+   "O": 62.25,
+   "S": 62.8,
+   "rank_O": 3,
+   "rank_S": 2
+  },
+  {
+   "name": "Chandra, Torch of Defiance",
+   "rarity": "mythic",
+   "O": 61.88,
+   "S": 61.58,
+   "rank_O": 4,
+   "rank_S": 5
+  },
+  {
+   "name": "Lyra, Tolarian Archangel",
+   "rarity": "rare",
+   "O": 61.23,
+   "S": 61.71,
+   "rank_O": 5,
+   "rank_S": 4
+  },
+  {
+   "name": "Uldaros Theorix",
+   "rarity": "mythic",
+   "O": 60.51,
+   "S": 60.95,
+   "rank_O": 6,
+   "rank_S": 7
+  },
+  {
+   "name": "Sublime Epiphany",
+   "rarity": "mythic",
+   "O": 60.29,
+   "S": 61.04,
+   "rank_O": 7,
+   "rank_S": 6
+  },
+  {
+   "name": "Hungering Puppetbeast",
+   "rarity": "rare",
+   "O": 59.97,
+   "S": 59.42,
+   "rank_O": 8,
+   "rank_S": 11
+  },
+  {
+   "name": "Craftwork Crusher",
+   "rarity": "uncommon",
+   "O": 59.73,
+   "S": 59.87,
+   "rank_O": 9,
+   "rank_S": 9
+  },
+  {
+   "name": "Lyra, Archangel of Dawn",
+   "rarity": "rare",
+   "O": 59.54,
+   "S": 59.71,
+   "rank_O": 10,
+   "rank_S": 10
+  }
+ ],
+ "labels": {
+  "C9_IMP": {
+   "spearman": 0.934,
+   "mean_sonnet": 1.833,
+   "mean_opus": 1.657
+  },
+  "C9_UNA": {
+   "spearman": 0.792,
+   "mean_sonnet": 1.56,
+   "mean_opus": 1.577
+  },
+  "C9_VAL": {
+   "spearman": 0.791,
+   "mean_sonnet": 1.36,
+   "mean_opus": 1.367
+  },
+  "C9_FLOOR": {
+   "spearman": 0.855,
+   "mean_sonnet": 2.04,
+   "mean_opus": 1.807
+  },
+  "C9_FLEX": {
+   "spearman": 0.87,
+   "mean_sonnet": 1.13,
+   "mean_opus": 1.313
+  },
+  "C9_PLAY": {
+   "spearman": 0.905,
+   "mean_sonnet": 2.393,
+   "mean_opus": 2.423
+  },
+  "C9_GRADE": {
+   "spearman": 0.914,
+   "mean_sonnet": 4.483,
+   "mean_opus": 4.64
+  },
+  "C3_removal": {
+   "exact": 0.97,
+   "mean_sonnet": 0.29,
+   "mean_opus": 0.38
+  },
+  "C3_sweeper": {
+   "exact": 0.98,
+   "mean_sonnet": 0.05,
+   "mean_opus": 0.03
+  },
+  "C3_bodies": {
+   "exact": 0.95,
+   "mean_sonnet": 0.65,
+   "mean_opus": 0.58
+  },
+  "C3_cards": {
+   "exact": 0.73,
+   "mean_sonnet": 0.44,
+   "mean_opus": 0.18
+  },
+  "C3_repeat": {
+   "exact": 0.78,
+   "mean_sonnet": 0.47,
+   "mean_opus": 0.24
+  },
+  "C3_modal": {
+   "exact": 0.89,
+   "mean_sonnet": 0.28,
+   "mean_opus": 0.17
+  },
+  "C3_dependency": {
+   "exact": 0.56,
+   "mean_sonnet": 0.8,
+   "mean_opus": 0.48
+  },
+  "C3_drawback": {
+   "exact": 0.87,
+   "mean_sonnet": 0.2,
+   "mean_opus": 0.06
+  },
+  "C3_trick": {
+   "exact": 0.98,
+   "mean_sonnet": 0.08,
+   "mean_opus": 0.06
+  },
+  "C3_sink": {
+   "exact": 0.92,
+   "mean_sonnet": 0.18,
+   "mean_opus": 0.2
+  },
+  "C4_DMG": {
+   "exact": 1.0,
+   "mean_sonnet": 0.52,
+   "mean_opus": 0.52
+  },
+  "C4_TGT": {
+   "exact": 1.0,
+   "mean_sonnet": 0.46,
+   "mean_opus": 0.46
+  },
+  "C4_SPD": {
+   "exact": 1.0,
+   "mean_sonnet": 0.29,
+   "mean_opus": 0.29
+  },
+  "C4_SWG": {
+   "exact": 0.95,
+   "mean_sonnet": 1.07,
+   "mean_opus": 1.06
+  },
+  "C4_EVA": {
+   "exact": 0.99,
+   "mean_sonnet": 0.31,
+   "mean_opus": 0.3
+  },
+  "C4_TURN": {
+   "exact": 0.96,
+   "mean_sonnet": 0.56,
+   "mean_opus": 0.53
+  },
+  "C4_DEAD": {
+   "exact": 0.79,
+   "mean_sonnet": 0.68,
+   "mean_opus": 0.68
+  },
+  "C4_SCALE": {
+   "exact": 0.91,
+   "mean_sonnet": 0.27,
+   "mean_opus": 0.31
+  },
+  "C4_TEMPO": {
+   "exact": 0.93,
+   "mean_sonnet": 0.13,
+   "mean_opus": 0.14
+  },
+  "C4_VULN": {
+   "exact": 0.95,
+   "mean_sonnet": 0.09,
+   "mean_opus": 0.12
+  },
+  "C4_STACK": {
+   "exact": 0.82,
+   "mean_sonnet": 2.14,
+   "mean_opus": 2.22
+  },
+  "C4_SYNO": {
+   "exact": 0.98,
+   "mean_sonnet": 0.18,
+   "mean_opus": 0.16
+  },
+  "C4_DRAIN": {
+   "exact": 0.97,
+   "mean_sonnet": 0.13,
+   "mean_opus": 0.09
+  },
+  "C4_MANA": {
+   "exact": 0.98,
+   "mean_sonnet": 0.21,
+   "mean_opus": 0.23
+  },
+  "C5_RATE": {
+   "exact": 0.73,
+   "mean_sonnet": 2.04,
+   "mean_opus": 2.12
+  },
+  "C5_CLK": {
+   "exact": 0.82,
+   "mean_sonnet": 1.09,
+   "mean_opus": 1.19
+  },
+  "C5_BLK": {
+   "exact": 0.83,
+   "mean_sonnet": 0.69,
+   "mean_opus": 0.72
+  },
+  "C5_ntags": {
+   "mean_sonnet": 3.32,
+   "mean_opus": 3.14
+  }
+ }
+}
