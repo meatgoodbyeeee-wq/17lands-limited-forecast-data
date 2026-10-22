@@ -36,8 +36,17 @@ def type_of(c):
     return c.get('type_line') or ' // '.join(f.get('type_line', '') for f in faces)
 
 
-def view_rows():
+def norm_name(n):
+    import unicodedata
+    return re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', n.lower().replace('’', "'")).encode('ascii', 'ignore').decode())
+
+
+def view_rows(gallery=None):
     cards = json.loads(gzip.open(RAW, 'rt', encoding='utf-8').read())['cards']
+    if gallery:  # official-gallery cards whose name is not in the Scryfall list yet (e.g. Stardates cards); same blinding
+        have = {norm_name(c['name']) for c in cards}
+        extra = [c for c in json.loads(gzip.open(gallery, 'rt', encoding='utf-8').read())['cards'] if norm_name(c['name']) not in have]
+        cards = cards + extra
     rows = []
     for c in cards:
         ty, tx = bi.gallery_to_scryfall(type_of(c)), bi.gallery_to_scryfall(text_of(c))
@@ -50,15 +59,17 @@ def view_rows():
     return x
 
 
-def cmd_queue(_a):
+def cmd_queue(a):
     LAB.mkdir(exist_ok=True)
     (LAB / 'input').mkdir(exist_ok=True)
     (LAB / 'raw').mkdir(exist_ok=True)
-    x = view_rows()
+    x = view_rows(a.gallery)
     idf = LAB / 'ids.csv'
     old = pd.read_csv(idf, keep_default_na=False) if idf.exists() else pd.DataFrame(columns=['key', 'id', 'batch'])
     have = set(old['key'])
-    new = x[~x['key'].isin(have)].copy()
+    oldq = pd.read_csv(LAB / 'cards.csv.gz', keep_default_na=False) if (LAB / 'cards.csv.gz').exists() else pd.DataFrame(columns=['name'])
+    seen = {norm_name(n) for n in oldq['name']}
+    new = x[~x['key'].isin(have) & ~x['name'].map(norm_name).isin(seen)].copy()
     batch = int(old['batch'].max()) + 1 if len(old) else 1
     rng = np.random.default_rng(SEED + batch)
     new = new.iloc[rng.permutation(len(new))]
@@ -68,6 +79,8 @@ def cmd_queue(_a):
     allids = pd.concat([old, new[['key', 'id', 'batch']]], ignore_index=True)
     allids.to_csv(idf, index=False)
     x = x.merge(allids, on='key')
+    if len(oldq) and 'key' in oldq.columns:  # keep earlier rows whose key is no longer in the current list
+        x = pd.concat([x, oldq[~oldq['key'].isin(x['key'])]], ignore_index=True)
     x.to_csv(LAB / 'cards.csv.gz', index=False, compression='gzip')
     todo = new[new['auto'] == 0]
     for p in PASSES:
@@ -107,16 +120,11 @@ def cmd_check(_a):
         raise SystemExit(1)
 
 
-def cmd_predict(_a):
+def label_tables(done, raws):
+    """C3/C4/C5/C9 feature tables (same construction as the production extractions) for rows with .id .auto .mv .type_line."""
     import c9
-    c5, e = c9.c5, c9.e
+    c5 = c9.c5
     import c3_research as c3
-    q = pd.read_csv(LAB / 'cards.csv.gz', keep_default_na=False)
-    raws = {p: d for p, (d, bad) in load_all().items()}
-    done = [r for r in q.itertuples() if r.auto == 1 or all(r.id in raws[p] for p in PASSES)]
-    cards = {f"TRK|{c['id']}": c for c in json.loads(gzip.open(RAW, 'rt', encoding='utf-8').read())['cards']}
-    d = pd.DataFrame(done)
-    keys = list(d['key'])
     # C3
     rows = []
     for r in done:
@@ -147,6 +155,21 @@ def cmd_predict(_a):
         d9['c9_impuna'] = m[0] + m[1]; d9['c9_valfloor'] = m[2] + m[3]; d9['c9_bomb'] = m[6] - 1.25 * m[5]
         t9r.append(d9)
     t4, t5, t9 = pd.DataFrame(t4r), pd.DataFrame(t5r), pd.DataFrame(t9r)
+    return t3, t4, t5, t9
+
+
+def cmd_predict(_a):
+    import c9
+    c5, e = c9.c5, c9.e
+    import c3_research as c3
+    q = pd.read_csv(LAB / 'cards.csv.gz', keep_default_na=False)
+    raws = {p: d for p, (d, bad) in load_all().items()}
+    done = [r for r in q.itertuples() if r.auto == 1 or all(r.id in raws[p] for p in PASSES)]
+    cards = {f"TRK|{c['id']}": c for c in json.loads(gzip.open(RAW, 'rt', encoding='utf-8').read())['cards']}
+    done = [r for r in done if r.key in cards]  # Scryfall-listed cards only; the gallery list is handled by export_b10.py
+    d = pd.DataFrame(done)
+    keys = list(d['key'])
+    t3, t4, t5, t9 = label_tables(done, raws)
     pool, base, cols = c9.load_pool()
     norm = [c3.normalize(cards[k]) for k in keys]
     f = pd.DataFrame([e.card_features(c) for c in norm])
@@ -176,7 +199,9 @@ def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest='cmd', required=True)
     for n, fn in (('queue', cmd_queue), ('check', cmd_check), ('predict', cmd_predict)):
-        sub.add_parser(n).set_defaults(f=fn)
+        p = sub.add_parser(n); p.set_defaults(f=fn)
+        if n == 'queue':
+            p.add_argument('--gallery', type=Path, help='official-gallery target.json.gz; adds cards whose name is not known yet')
     a = ap.parse_args(); a.f(a)
 
 
