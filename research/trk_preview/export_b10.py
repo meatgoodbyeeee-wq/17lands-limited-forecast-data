@@ -74,6 +74,10 @@ def main():
         'method': 'B10: ExtraTrees 600 leaf 8 max_features 0.6 on baseline + C3 + C4 + C5 + C9 features (+ word TF-IDF Ridge alpha 10); 70:30; fixed 1.25; seeds 20260922-24 averaged',
         'features': 'baseline pre-release card features + AI-read C3 effects, C4 fine effects, C5 atomic tags, C9 power questions x3 passes (research/c9_power_questions, Rule F10 passed on 28 sets)',
         'labellers': 'C3, C4, C5: Sonnet; C9 passes 1-3: Opus (research/trk_preview/RESULTS.md Step 1)',
+        'texts': {  # wording the Pages site shows for this model (lib/adopted-gih-core.mjs)
+            'structured_label': '構造化特徴量（AI抽出の効果・強さ判定を含む）',
+            'summary': '28セット（KHM〜HOB、FIN・MH3を除く）の発売前特徴量と、AIがルールテキストから読み取ったカード効果・強さの判定（C3〜C5・C9）から、構造化特徴量のExtraTreesとルールテキストのTF-IDF/Ridgeを70:30で合成し、固定係数で予測しています。プレビュー中の暫定版です。',
+            'note': 'GIH WR：28セットの構造化特徴量（AIが読み取ったカード効果と強さの判定を含む）＋ルールテキスト予測（暫定）。ALSAは従来の予測モデル。'},
         'seeds': e.SEEDS, 'base': round(c * 100, 5),
         'cards': [{'id': card['id'], 'name': card['name'], 'oracle_text': card.get('oracle_text') or '', 'type_line': card.get('type_line') or '',
                    'mana_cost': card.get('mana_cost') or '', 'gih': round(float(pp * 100), 6), 'structured_delta': round(float(s), 6),
