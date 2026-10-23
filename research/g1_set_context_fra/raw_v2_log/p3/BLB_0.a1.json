@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 14145,
+ "stop_reason": "end_turn",
+ "session_id": "0393c904-ded8-5de7-8245-16d9acaefdc5",
+ "total_cost_usd": 0.2500581,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 27183,
+  "cache_read_input_tokens": 15077,
+  "output_tokens": 1345,
+  "output_tokens_details": {
+   "thinking_tokens": 832
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 27183,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1345,
+    "cache_read_input_tokens": 15077,
+    "cache_creation_input_tokens": 27183,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 27183
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-haiku-5-5": {
+   "inputTokens": 26607,
+   "outputTokens": 20,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 0,
+   "costUSD": 0.0026707000000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 1345,
+   "cacheReadInputTokens": 15077,
+   "cacheCreationInputTokens": 27183,
+   "webSearchRequests": 0,
+   "costUSD": 0.24738739999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 832,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 1,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "62 1 1 2 3 1 3 5\n85 2 3 2 2 2 4 7\n30 1 1 1 2 2 3 5\n71 3 2 2 3 2 4 7\n72 1 1 1 1 1 1 3\n81 2 2 2 3 2 3 6\n89 2 2 2 3 1 3 6\n61 1 2 1 2 1 3 5\n41 1 2 1 1 1 2 4\n44 2 2 1 2 1 3 5\n49 3 2 2 2 1 4 6\n60 3 3 2 3 2 4 8\n46 2 2 1 3 2 3 6\n73 2 1 1 2 1 2 4\n53 1 1 1 1 1 1 3\n39 0 1 1 2 1 2 3\n70 2 3 2 3 2 3 6\n33 2 1 1 1 1 2 3\n47 0 1 1 2 1 1 2\n32 2 2 2 3 2 3 6\n45 3 4 3 3 2 4 8\n57 0 1 1 2 1 2 3\n66 2 1 2 1 1 2 3\n28 2 2 2 2 1 2 5\n91 3 3 3 3 2 4 8\n38 2 2 2 3 2 3 5\n83 2 2 1 2 2 3 5\n55 2 2 2 3 3 3 6\n76 1 1 1 1 1 1 3\n58 1 3 2 3 1 3 6\n64 3 2 2 2 1 3 6\n54 2 2 3 2 1 3 5",
+ "ttft_ms": 8659,
+ "type": "result",
+ "duration_ms": 13130,
+ "uuid": "d0798184-4e62-45c7-9c6f-03224338175e",
+ "ttft_stream_ms": 808,
+ "time_to_request_ms": 329,
+ "time_to_request_phases_ms": {
+  "other": 31,
+  "system_prompt": 225,
+  "resume_other": 1,
+  "process_user_input": 5,
+  "input_attachments": 21,
+  "input_hooks": 3,
+  "tool_pool_refresh": 1,
+  "init_message": 10,
+  "engine_pickup": 8,
+  "message_prep": 1,
+  "model_config_wait": 1,
+  "autocompact": 1,
+  "query_setup": 1,
+  "model_gates": 0,
+  "tool_schema_build": 8,
+  "message_normalization": 1,
+  "client_creation": 4,
+  "request_build": 7
+ },
+ "turn_start_resume_kind": "none",
+ "process_turn_index": 0,
+ "time_to_request_loop_lag_ms": 123,
+ "time_to_request_cpu_ms": 227,
+ "time_to_request_major_faults": 0,
+ "process_rss_mib_turn_start": 316,
+ "process_anon_mib_turn_start": 166,
+ "process_rss_mib_result": 286,
+ "process_anon_mib_result": 133,
+ "process_peak_rss_mib": 330,
+ "process_cpu_ms_turn": 742,
+ "process_wall_ms_turn": 13130,
+ "input_attachments_detail": {
+  "slowest_producer": "session_settings",
+  "slowest_producer_ms": 12,
+  "cpu_ms": 24,
+  "major_faults": 0
+ },
+ "first_content_frame_ms": 809,
+ "time_to_request_from_spawn_ms": 562524,
+ "warm_spare_claimed": false,
+ "flag_fetch_kick": "not_asked_warm",
+ "time_origin_ms": 1792728025313.6482,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 8715,
+ "stop_reason": "end_turn",
+ "session_id": "0393c904-ded8-5de7-8245-16d9acaefdc5",
+ "total_cost_usd": 0.1331836,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13989,
+  "cache_read_input_tokens": 15077,
+  "output_tokens": 843,
+  "output_tokens_details": {
+   "thinking_tokens": 451
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13989,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 843,
+    "cache_read_input_tokens": 15077,
+    "cache_creation_input_tokens": 13989,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 13989
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-haiku-5-5": {
+   "inputTokens": 13797,
+   "outputTokens": 17,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 0,
+   "costUSD": 0.0013882000000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 843,
+   "cacheReadInputTokens": 15077,
+   "cacheCreationInputTokens": 13989,
+   "webSearchRequests": 0,
+   "costUSD": 0.1317954,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 451,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 1,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "1015 2 2 1 2 1 3 5\n1016 1 2 1 1 1 2 4\n1017 1 2 1 2 2 3 5\n1018 2 2 1 2 2 3 5\n1019 1 1 1 1 1 1 3\n1020 2 3 2 2 2 4 7\n1021 3 4 4 3 3 4 9\n1022 2 3 3 3 2 3 6\n1023 2 2 1 2 2 4 6\n1024 0 1 1 1 1 1 2\n1025 0 0 1 3 2 3 4\n1026 2 3 2 2 2 3 6\n1027 2 1 2 2 2 3 6\n1028 3 3 3 3 2 4 7\n1029 1 2 2 1 1 2 4\n1030 2 2 1 2 1 2 4\n1031 2 1 1 2 1 2 4\n1032 1 1 1 2 2 3 4\n1033 1 2 2 1 1 2 4\n1034 2 1 1 1 1 3 5\n1035 2 2 1 3 2 4 6\n1036 2 2 1 2 1 3 5\n1037 0 0 1 3 2 3 4",
+ "ttft_ms": 9709,
+ "type": "result",
+ "duration_ms": 12571,
+ "uuid": "9f62200e-66ef-4a4f-b4e1-aa57124c896f",
+ "ttft_stream_ms": 5434,
+ "time_to_request_ms": 4852,
+ "time_to_request_phases_ms": {
+  "other": 38,
+  "system_prompt": 4726,
+  "resume_other": 0,
+  "process_user_input": 5,
+  "input_attachments": 25,
+  "input_hooks": 4,
+  "tool_pool_refresh": 0,
+  "init_message": 13,
+  "engine_pickup": 10,
+  "message_prep": 2,
+  "model_config_wait": 1,
+  "autocompact": 1,
+  "query_setup": 1,
+  "model_gates": 0,
+  "tool_schema_build": 12,
+  "message_normalization": 2,
+  "client_creation": 3,
+  "request_build": 9
+ },
+ "turn_start_resume_kind": "none",
+ "process_turn_index": 0,
+ "time_to_request_loop_lag_ms": 104,
+ "time_to_request_cpu_ms": 402,
+ "time_to_request_major_faults": 0,
+ "process_rss_mib_turn_start": 316,
+ "process_anon_mib_turn_start": 166,
+ "process_rss_mib_result": 279,
+ "process_anon_mib_result": 126,
+ "process_peak_rss_mib": 319,
+ "process_cpu_ms_turn": 752,
+ "process_wall_ms_turn": 12571,
+ "input_attachments_detail": {
+  "slowest_producer": "session_settings",
+  "slowest_producer_ms": 14,
+  "cpu_ms": 28,
+  "major_faults": 0
+ },
+ "first_content_frame_ms": 5434,
+ "time_to_request_from_spawn_ms": 421288,
+ "warm_spare_claimed": false,
+ "flag_fetch_kick": "not_asked_warm",
+ "time_origin_ms": 1792727879665.0635,
+ "queued_turn_count": 0,
+ "result_index": 0
+}
