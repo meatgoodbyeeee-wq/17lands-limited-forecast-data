@@ -114,5 +114,83 @@ def evaluate():
     print(json.dumps({k: v for k, v in res.items() if k != 'per_set_mae'}, indent=1, default=float))
 
 
+def fra_frame(fra_path, pool, base, cols):
+    """FRA feature frame with the B5 + C9 columns (as research/c9_power_questions/freeze_fra.py) and the set-context columns."""
+    fra, f = e.fra_frame(fra_path, base, cols, pool)
+    keys = [f"FRA|{c['id']}" for c in fra]
+    for src, names in ((c5.C4DIR / 'c4_features.csv.gz', c5.C4_NUM + c5.C4_ROLE), (c5.HERE / 'c5_features.csv.gz', c5.TAGC + c5.SCALE + c5.CNT),
+                       (ROOT / 'research/c9_power_questions/c9_features.csv.gz', c9.MEAN + c9.SD + c9.SUM)):
+        t = pd.read_csv(src).set_index('key')
+        assert all(k in t.index for k in keys)
+        for c in names:
+            f[c] = t.loc[keys, c].to_numpy(dtype=float)
+    sc = pd.read_csv(HERE / 'sc_features.csv.gz').set_index('key')
+    assert all(k in sc.index for k in keys)
+    for c in SC:
+        f[c] = sc.loc[keys, c].to_numpy(dtype=float)
+    return fra, f, keys
+
+
+def new_c9_columns(f, keys):
+    """Replace the 17 C9 columns of the judged FRA cards by the plan-1 answers (3 passes; same formulas as c9.features)."""
+    jc = pd.read_csv(HERE / 'judge_cards.csv')
+    raws = [json_raw(p) for p in ('p1', 'p2', 'p3')]
+    g = f.copy()
+    moved = []
+    for r in jc.itertuples():
+        if r.is_anchor:
+            continue
+        v = np.array([raws[i][r.id] for i in range(3)], float)
+        m, s = v.mean(0), v.std(0)
+        i = keys.index(r.key)
+        old = g.loc[i, c9.MEAN].to_numpy(float).copy()
+        g.loc[i, c9.MEAN] = m
+        g.loc[i, c9.SD] = s
+        g.loc[i, 'c9_impuna'] = m[0] + m[1]
+        g.loc[i, 'c9_valfloor'] = m[2] + m[3]
+        g.loc[i, 'c9_bomb'] = m[6] - 1.25 * m[5]
+        moved.append(dict(key=r.key, id=r.id, **{f'old_{k}': o for k, o in zip(c9.F, old)}, **{f'new_{k}': x for k, x in zip(c9.F, m)}))
+    return g, pd.DataFrame(moved)
+
+
+def json_raw(p):
+    sys.path.insert(0, str(HERE))
+    import g1_inputs as gi
+    raw, errs = gi.load_raw(p)
+    assert not errs, errs
+    return raw
+
+
+def freeze(which, fra_path):
+    """which: arm2 (set-context features, no AI) | arm1 (new judgments, B10 model) | arm12 (both). Writes fra_frozen_<which>.csv/.json."""
+    import hashlib
+    pool, base, cols, nums10, _ = load_pool()
+    fra, f, keys = fra_frame(fra_path, pool, base, cols)
+    nums = nums10 + SC if which in ('arm2', 'arm12') else nums10
+    if which in ('arm1', 'arm12'):
+        f, moved = new_c9_columns(f, keys)
+        moved.to_csv(HERE / 'grade_moves.csv', index=False)
+    _, _, _, p = e.predict(pool, f, nums)
+    out = pd.DataFrame({'id': [c['id'] for c in fra], 'name': [c['name'] for c in fra]})
+    base0 = pd.read_csv(ROOT / 'research/c9_power_questions/fra_frozen_predictions.csv').set_index('id')
+    out['pred_B10_frozen'] = out['id'].map(base0['pred_B10'])
+    out[f'pred_{which}'] = p
+    if which == 'arm2':    # drift check: the frozen B10 re-predicted in this environment
+        _, _, _, p0 = e.predict(pool, f, nums10)
+        out['pred_B10_rerun'] = p0
+    assert out.notna().all().all()
+    out.to_csv(HERE / f'fra_frozen_{which}.csv', index=False)
+    meta = {'arm': which, 'seeds': list(SEEDS), 'n_features': len(nums), 'sha256': hashlib.sha256((HERE / f'fra_frozen_{which}.csv').read_bytes()).hexdigest(),
+            'mean_abs_diff_vs_frozen_B10_pp': float((out[f'pred_{which}'] - out['pred_B10_frozen']).abs().mean() * 100),
+            'corr_vs_frozen_B10': float(np.corrcoef(out[f'pred_{which}'], out['pred_B10_frozen'])[0, 1])}
+    if 'pred_B10_rerun' in out:
+        meta['rerun_B10_mean_abs_diff_vs_frozen_pp'] = float((out['pred_B10_rerun'] - out['pred_B10_frozen']).abs().mean() * 100)
+    json.dump(meta, open(HERE / f'fra_frozen_{which}.json', 'w'), indent=1)
+    print(meta)
+
+
 if __name__ == '__main__':
-    {'arm': lambda: run_arm(sys.argv[2]), 'evaluate': evaluate}[sys.argv[1]]()
+    if sys.argv[1] == 'freeze':
+        freeze(sys.argv[2], Path(sys.argv[3]))
+    else:
+        {'arm': lambda: run_arm(sys.argv[2]), 'evaluate': evaluate}[sys.argv[1]]()
