@@ -1,0 +1,90 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 254, nonland 240, creatures 115, commons+uncommons 175. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 3 0.3/0.7; MV2 7 1.6/2.3; MV3 3 2.3/1.7; MV4 2 2/2.5; MV5 1 2/2 | total 16 avg 1.6/1.9
+  U: MV<=1 1 0/2; MV2 2 1.5/2; MV3 4 2.2/2.2; MV4 2 2.5/1.5; MV5 1 3/5 | total 10 avg 2/2.3
+  B: MV<=1 2 1/1; MV2 2 2/1.5; MV3 4 2.8/2; MV4 4 2.8/3.2; MV5 1 2/2 | total 13 avg 2.3/2.2
+  R: MV<=1 1 1/1; MV2 3 2/1.7; MV3 3 1.7/2; MV4 5 2/3.2; MV5 1 3/4 | total 13 avg 1.9/2.5
+  G: MV2 5 2.2/2.8; MV3 3 2.3/3; MV4 4 3.8/4; MV5 1 3/3; MV6+ 1 7/7 | total 14 avg 3.1/3.5
+  gold: MV2 11 1.9/2.1; MV3 10 2.2/2.3; MV4 11 3.5/4; MV5 8 3.4/4.2; MV6+ 3 4.3/3.7 | total 43 avg 2.8/3.1
+  colourless: MV<=1 1 0/4; MV2 1 2/1; MV3 2 1.5/3.5; MV4 1 2/1; MV6+ 1 4/5 | total 6 avg 1.8/3
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 3 0.3/0.7; MV2 5 1.6/2.2; MV3 1 2/1; MV4 2 2/2.5; MV5 1 2/2 | total 12 avg 1.4/1.8
+  U: MV<=1 1 0/2; MV2 2 1.5/2; MV3 3 2/2.3; MV4 1 3/1; MV5 1 3/5 | total 8 avg 1.9/2.4
+  B: MV<=1 2 1/1; MV2 2 2/1.5; MV3 2 3/2.5; MV4 3 2.7/3.3; MV5 1 2/2 | total 10 avg 2.2/2.2
+  R: MV<=1 1 1/1; MV2 2 2/1.5; MV3 3 1.7/2; MV4 3 2.3/3.3; MV5 1 3/4 | total 10 avg 2/2.4
+  G: MV2 4 2.2/3; MV3 3 2.3/3; MV4 2 4/3.5; MV5 1 3/3; MV6+ 1 7/7 | total 11 avg 3.1/3.5
+  gold: MV2 10 1.8/2.1; MV3 9 2.1/2.2; MV4 5 3/3.4; MV5 5 3.4/4; MV6+ 1 4/2 | total 30 avg 2.4/2.7
+  colourless: MV<=1 1 0/4; MV2 1 2/1; MV3 1 2/3; MV4 1 2/1; MV6+ 1 4/5 | total 5 avg 2/2.8
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 3|1; destroy 1 (4) | 0 (); exile 2 (3,3) | 0 (); sweeper 0 () | 1 (6)
+  U: any 2|0; exile 1 (2) | 0 (); bounce/tuck 1 (5) | 0 ()
+  B: any 3|1; destroy 1 (4) | 0 (); exile 1 (3) | 1 (4); -X/-X 1 (2) | 0 ()
+  R: any 5|0; damage 5 (3,3,3,5,8) | 0 ()
+  G: any 3|0; damage 1 (2) | 0 (); fight/bite 2 (2,3) | 0 ()
+  gold: any 7|8; destroy 2 (4,5) | 1 (2); damage 2 (2,7) | 3 (3,5,8); exile 1 (6) | 1 (2); bounce/tuck 1 (5) | 1 (3); -X/-X 0 () | 1 (2); fight/bite 1 (2) | 0 (); sweeper 0 () | 2 (2,4)
+  colourless: any 1|0; exile 1 (5) | 0 ()
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 12|4; flying 3|3; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|3; reach 0|0; can block fliers (flying or reach) 3|3; other cards that give flying 2|0
+  U: creatures 8|2; flying 3|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|1; reach 0|0; can block fliers (flying or reach) 3|1; other cards that give flying 0|0
+  B: creatures 10|3; flying 2|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|0; reach 0|0; can block fliers (flying or reach) 2|0; other cards that give flying 1|0
+  R: creatures 10|3; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 1|0; can block fliers (flying or reach) 1|1; other cards that give flying 0|0
+  G: creatures 11|3; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 2|0; can block fliers (flying or reach) 2|0; other cards that give flying 0|0
+  gold: creatures 30|13; flying 6|5; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 7|5; reach 0|0; can block fliers (flying or reach) 6|5; other cards that give flying 0|1
+  colourless: creatures 5|1; flying 1|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 1|0; can block fliers (flying or reach) 2|0; other cards that give flying 1|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (ability word; 22 cards, commons+uncommons 16; colours C/U|R/M: W 2|1, U 1|1, B 0|2, R 1|0, G 1|1, gold 10|1, colourless 1|0). Example text of a card: "Mechanism A — Whenever you cast or copy an instant or sorcery spell, target creature you control has base power 2 until end of turn."
+  Mechanism B (keyword; 21 cards, commons+uncommons 16; colours C/U|R/M: W 3|1, U 3|1, B 2|1, R 4|1, G 2|1, gold 2|0). Example text of a card: "When this creature dies, Mechanism B. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU: no gold uncommon in the list.
+  UB: no gold uncommon in the list.
+  BR: no gold uncommon in the list.
+  RG: no gold uncommon in the list.
+  GW: no gold uncommon in the list.
+  WB:
+    gold uncommon (MV 2 WB, Legendary Creature — Human Warlock 2/2): Lifelink / Menace (This creature can't be blocked except by two or more creatures.) / Spells you cast that target a creature cost {2} less to cast.
+    gold uncommon (MV 2 WB, Creature — Human Warlock 2/2): Mechanism A — Whenever you cast or copy an instant or sorcery spell, target creature gets +1/+0 until end of turn.
+    theme "life gain": have 40 [W 1|0, B 6|4, G 8|1, gold 15|4, colourless 1|0]
+    theme "instant cards": have 51 [W 5|1, U 9|0, B 5|1, R 7|0, G 4|0, gold 11|8]; refer 30 [W 2|1, U 2|1, B 0|2, R 2|1, G 2|1, gold 12|2, colourless 2|0]
+    theme "sorcery cards": have 62 [W 2|2, U 4|4, B 5|0, R 4|3, G 6|4, gold 17|6, colourless 4|1]; refer 29 [W 3|1, U 1|1, B 0|2, R 2|1, G 1|1, gold 12|2, colourless 2|0]
+  UR:
+    gold uncommon (MV 2 UR, Sorcery): Look at the top three cards of your library. Put one of them into your hand, put one of them on the bottom of your library, and exile one of them. You may play the exiled card this turn.
+    gold uncommon (MV 2 UR, Creature — Human Shaman 2/2): Mechanism A — Whenever you cast or copy an instant or sorcery spell, this creature can't be blocked this turn. If that spell has mana value 5 or greater, put a +1/+1 counter on this creature.
+    theme "instant cards": have 51 [W 5|1, U 9|0, B 5|1, R 7|0, G 4|0, gold 11|8]; refer 30 [W 2|1, U 2|1, B 0|2, R 2|1, G 2|1, gold 12|2, colourless 2|0]
+    theme "sorcery cards": have 62 [W 2|2, U 4|4, B 5|0, R 4|3, G 6|4, gold 17|6, colourless 4|1]; refer 29 [W 3|1, U 1|1, B 0|2, R 2|1, G 1|1, gold 12|2, colourless 2|0]
+    theme "+1/+1 counters": have 38 [W 5|2, U 1|0, B 5|1, R 2|0, G 4|1, gold 10|6, colourless 1|0]
+  BG:
+    gold uncommon (MV 2 BG, Instant): As an additional cost to cast this spell, sacrifice a creature. / Create X 1/1 black and green Pest creature tokens with "When this token dies, you gain 1 life," where X is the sacrificed creature's power.
+    gold uncommon (MV 2 BG, Sorcery): Each player sacrifices a creature or planeswalker of their choice. If you sacrificed a permanent this way, you may return another permanent card from your graveyard to your hand.
+    theme "tokens": have 45 [W 1|0, U 2|2, B 2|2, R 4|1, G 3|0, gold 12|14, colourless 1|1]
+    theme "life gain": have 40 [W 1|0, B 6|4, G 8|1, gold 15|4, colourless 1|0]
+    theme "sacrifice": have 16 [U 0|1, B 3|1, R 1|0, G 2|0, gold 4|3, colourless 1|0]
+  RW:
+    gold uncommon (MV 2 WR, Enchantment): At the beginning of your end step, mill a card. If a land card was milled this way, you gain 1 life. Otherwise, this enchantment deals 1 damage to each opponent. (To mill a card, put the top card of your library into your graveyard.) / {5}, Exile a creature card from your graveyard: Create a tapped 3/2 red and white Spirit creature token.
+    gold uncommon (MV 2 WR, Sorcery): Choose one — / • ~ deals 3 damage to target creature or planeswalker. / • Destroy target artifact or enchantment.
+    theme "tokens": have 45 [W 1|0, U 2|2, B 2|2, R 4|1, G 3|0, gold 12|14, colourless 1|1]
+    theme "life gain": have 40 [W 1|0, B 6|4, G 8|1, gold 15|4, colourless 1|0]
+    theme "the graveyard": have 42 [W 3|1, U 3|0, B 3|3, R 5|5, G 1|1, gold 8|7, colourless 2|0]
+  GU:
+    gold uncommon (MV 2 UG, Instant): Choose one — / • Target creature you control fights target creature you don't control. (Each deals damage equal to its power to the other.) / • Counter target noncreature spell unless its controller pays {3}.
+    gold uncommon (MV 2 UG, Creature — Human Wizard 2/2): Mechanism A — Whenever you cast or copy an instant or sorcery spell, look at the top three cards of your library. You may reveal a land card from among them and put that card into your hand. Put the rest on the bottom of your library in any order.
+    theme "instant cards": have 51 [W 5|1, U 9|0, B 5|1, R 7|0, G 4|0, gold 11|8]; refer 30 [W 2|1, U 2|1, B 0|2, R 2|1, G 2|1, gold 12|2, colourless 2|0]
+    theme "sorcery cards": have 62 [W 2|2, U 4|4, B 5|0, R 4|3, G 6|4, gold 17|6, colourless 4|1]; refer 29 [W 3|1, U 1|1, B 0|2, R 2|1, G 1|1, gold 12|2, colourless 2|0]
+Top creature types (cards; colours "C/U|R/M"):
+  Human 29: W 4|1, U 2|1, B 3|2, R 1|1, G 0|1, gold 10|3 (commons+uncommons 20)
+  Wizard 18: W 4|0, U 6|1, gold 5|2 (commons+uncommons 15)
+  Cleric 15: W 3|3, gold 4|5 (commons+uncommons 7)
+  Warlock 14: B 5|3, gold 6|0 (commons+uncommons 11)
+  Druid 13: G 5|3, gold 5|0 (commons+uncommons 10)
+  Shaman 12: R 5|2, gold 5|0 (commons+uncommons 10)
+  Spirit 12: W 5|1, R 3|0, gold 2|1 (commons+uncommons 10)
+  Bird 7: W 2|1, U 1|1, gold 2|0 (commons+uncommons 5)
+  Dragon 5: gold 0|5 (commons+uncommons 0)
+  Dwarf 5: R 3|0, gold 0|2 (commons+uncommons 3)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 5|1, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|1
+  U: instant 9|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 10|0
+  B: instant 5|1, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|1
+  R: instant 7|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|0
+  G: instant 4|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|0
+  gold: instant 11|8, flash 0|0, hand 2|1, swap 0|0, cyc-trigger 0|0 ; any 12|8
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0

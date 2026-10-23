@@ -1,0 +1,383 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 280, nonland 269, creatures 161, commons+uncommons 178. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1/0.5; MV2 6 2.2/1.2; MV3 7 2/2.6; MV4 4 2.2/3.2; MV5 2 3.5/4; MV6+ 1 0/7 | total 22 avg 2/2.5
+  U: MV<=1 2 1/1; MV2 9 1.2/1.8; MV3 6 2.5/2.2; MV4 4 3/3.5; MV5 2 3/7; MV6+ 1 4/6 | total 24 avg 2.1/2.7
+  B: MV<=1 2 1/1.5; MV2 5 1.8/1.6; MV3 9 2.5/2.6; MV4 3 3/2; MV5 2 6.5/3.5; MV6+ 1 6/4 | total 22 avg 2.8/2.3
+  R: MV<=1 2 1.5/1; MV2 7 1.9/1.4; MV3 5 2.4/2.4; MV4 4 2.5/3.5; MV5 4 4/4.2; MV6+ 2 3.5/3.5 | total 24 avg 2.5/2.6
+  G: MV<=1 1 1/1; MV2 7 2/1.6; MV3 6 2.3/2.2; MV4 3 4/3.7; MV5 3 4.7/4.7; MV6+ 4 5.8/6.2 | total 24 avg 3.4/3.1
+  gold: MV<=1 3 1/1.3; MV2 9 2/2.3; MV3 12 2.2/3.1; MV4 7 3.4/3.6; MV5 1 3/3; MV6+ 5 5.4/5 | total 37 avg 2.7/3.1
+  colourless: MV2 3 1/3; MV3 2 2/3; MV4 1 5/4; MV6+ 2 8/8 | total 8 avg 3.5/4.4
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV2 4 2/1; MV3 6 1.8/2.5; MV4 3 2.3/3.7; MV5 2 3.5/4; MV6+ 1 0/7 | total 16 avg 2.1/2.8
+  U: MV<=1 1 1/1; MV2 6 1.5/2; MV3 3 2.7/1.7; MV4 3 2.7/4; MV5 2 3/7; MV6+ 1 4/6 | total 16 avg 2.2/3.1
+  B: MV<=1 1 1/1; MV2 3 1.7/1.3; MV3 7 2.3/2.7; MV4 2 3/2; MV5 2 6.5/3.5; MV6+ 1 6/4 | total 16 avg 3/2.4
+  R: MV<=1 1 2/1; MV2 4 1.8/1.5; MV3 4 2.2/2.2; MV4 3 2/3.3; MV5 3 3.7/4; MV6+ 1 2/2 | total 16 avg 2.3/2.5
+  G: MV<=1 1 1/1; MV2 5 2/1.4; MV3 5 2.4/2.2; MV4 2 3/2.5; MV5 2 4.5/4.5; MV6+ 3 5.7/6.3 | total 18 avg 3.1/2.9
+  gold: MV<=1 3 1/1.3; MV2 6 1.7/2.3; MV3 6 1.8/2.8; MV4 4 3/3.8; MV5 1 3/3; MV6+ 2 5.5/4.5 | total 22 avg 2.3/2.8
+  colourless: MV2 2 1/3; MV3 1 3/2; MV4 1 5/4; MV6+ 1 4/4 | total 5 avg 2.8/3.2
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 5|3; destroy 3 (2,2,3) | 0 (); damage 0 () | 1 (2); exile 2 (2,3) | 0 (); sweeper 0 () | 2 (6,7)
+  U: any 2|3; bounce/tuck 1 (1) | 3 (1,4,6); lock-down 1 (3) | 0 ()
+  B: any 5|5; destroy 2 (2,2) | 2 (1,2); exile 1 (4) | 0 (); -X/-X 2 (2,3) | 1 (5); sweeper 0 () | 2 (5,6)
+  R: any 8|2; damage 8 (2,2,3,3,3,4,5,5) | 2 (1,4); sweeper 1 (3) | 0 ()
+  G: any 4|0; destroy 1 (2) | 0 (); damage 1 (2) | 0 (); fight/bite 3 (1,2,2) | 0 ()
+  gold: any 9|3; destroy 1 (5) | 1 (3); damage 4 (2,2,4,7) | 0 (); exile 0 () | 2 (2,3); -X/-X 2 (2,5) | 0 (); fight/bite 2 (2,6) | 0 ()
+  colourless: any 1|1; destroy 1 (6) | 0 (); sweeper 0 () | 1 (2)
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 16|6; flying 5|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|1; reach 0|0; can block fliers (flying or reach) 5|1; other cards that give flying 2|0
+  U: creatures 16|8; flying 5|3; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|3; reach 0|0; can block fliers (flying or reach) 5|3; other cards that give flying 0|0
+  B: creatures 16|6; flying 1|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|1; reach 0|0; can block fliers (flying or reach) 1|1; other cards that give flying 0|0
+  R: creatures 16|8; flying 0|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|2; reach 2|0; can block fliers (flying or reach) 2|2; other cards that give flying 0|0
+  G: creatures 18|6; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 4|0; can block fliers (flying or reach) 4|0; other cards that give flying 0|0
+  gold: creatures 22|15; flying 3|5; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|5; reach 0|0; can block fliers (flying or reach) 3|5; other cards that give flying 2|0
+  colourless: creatures 5|3; flying 1|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|1; reach 0|0; can block fliers (flying or reach) 1|1; other cards that give flying 2|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (keyword; 28 cards, commons+uncommons 24; colours C/U|R/M: W 5|0, U 6|2, B 4|1, R 3|0, G 4|0, gold 1|1, colourless 1|0). Example text of a card: "Counter target spell. Mechanism A Jace 1. (Put a loyalty counter on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)"
+  Mechanism B (keyword; 16 cards, commons+uncommons 11; colours C/U|R/M: W 1|0, U 1|2, B 1|1, R 1|2, G 1|0, gold 6|0). Example text of a card: "This creature enters Mechanism B. (While it's Mechanism B, you may cast a copy of its spell. Doing so unprepares it.)"
+  Mechanism C (ability word; 5 cards, commons+uncommons 4; colours C/U|R/M: B 3|0, gold 1|1). Example text of a card: "Mechanism C — This creature gets +1/+1 as long as there are seven or more cards in your graveyard."
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 2 WU, Instant): Choose one — / • Draw a card. Mechanism A Jace 2. / • Return target spell or creature to its owner's hand. / • Creatures you control get +1/+2 until end of turn.
+    gold uncommon (MV 3 WU, Creature — Dwarf Wizard 1/4): This creature enters Mechanism B. / Whenever you scry or surveil, creatures you control get +1/+0 until end of turn. This ability triggers only once each turn. / //Prep// / Peer Review / {2}{W/U} / Sorcery / Create a 2/2 colorless Wizard Soldier creature token named Cadet. Surveil 1.
+    theme "tokens": have 44 [W 3|3, U 1|4, B 1|2, R 4|4, G 4|3, gold 9|6]
+  UB:
+    gold uncommon (MV 2 UB, Creature — Octopus Wizard 1/3): At the beginning of your upkeep, if this creature isn't Mechanism B, it becomes Mechanism B. / {2}: Put target card from your graveyard on the bottom of your library. / //Prep// / Omit Variables / {U/B} / Sorcery / Mill three cards. (Put the top three cards of your library into your graveyard.)
+    gold uncommon (MV 2 UB, Instant): Choose one — / • Counter target noncreature spell unless its controller pays {2}. / • Target creature gets -2/-2 until end of turn. / • Mill three cards, then draw a card. (To mill three cards, put the top three cards of your library into your graveyard.)
+    theme "the graveyard": have 40 [W 3|2, U 3|3, B 7|4, R 1|1, G 2|2, gold 7|3, colourless 2|0]
+  BR:
+    gold uncommon (MV 1 BR, Creature — Goblin Sorcerer 1/2): At the beginning of your upkeep, if this creature isn't Mechanism B, it becomes Mechanism B. (While it's Mechanism B, you may cast a copy of its spell. Doing so unprepares it.) / //Prep// / Vicious Verse / {B/R} / Sorcery / Vicious Verse deals 1 damage to target opponent.
+    gold uncommon (MV 2 BR, Instant): Choose one — / • ~ deals 3 damage to any target. / • Target creature gains first strike and deathtouch until end of turn. / • Create a 2/2 colorless Wizard Soldier creature token named Cadet. It gains haste until end of turn.
+    theme "tokens": have 44 [W 3|3, U 1|4, B 1|2, R 4|4, G 4|3, gold 9|6]
+  RG:
+    gold uncommon (MV 2 RG, Instant): Choose one — / • ~ deals 6 damage to target creature with flying. / • Put two +1/+1 counters on target creature. It gains trample until end of turn. / • Add {C}{C}{C}.
+    gold uncommon (MV 3 RG, Creature — Cat Druid 3/3): At the beginning of your upkeep, if this creature isn't Mechanism B, it becomes Mechanism B. (While it's Mechanism B, you may cast a copy of its spell. Doing so unprepares it.) / //Prep// / Soul Tether / {2}{R/G} / Sorcery / Create a Heartwood token. (It's a red and green artifact with “{T}: Add {R} or {G}.”)
+    theme "+1/+1 counters": have 46 [W 10|3, U 1|1, B 4|1, R 5|0, G 5|1, gold 12|3]
+    theme "tokens": have 44 [W 3|3, U 1|4, B 1|2, R 4|4, G 4|3, gold 9|6]
+  GW:
+    gold uncommon (MV 2 WG, Instant): Choose one — / • Target permanent you control gains hexproof and indestructible until end of turn. / • You draw a card and gain 3 life. / • Put a +1/+1 counter on target creature you control. Then it fights target creature an opponent controls. (Each deals damage equal to its power to the other.)
+    gold uncommon (MV 2 WG, Creature — Troll Druid 2/2): This creature enters Mechanism B. (While it's Mechanism B, you may cast a copy of its spell. Doing so unprepares it.) / Each creature you control with a +1/+1 counter on it has vigilance. / //Prep// / Seed Suture / {G/W} / Sorcery / Put a +1/+1 counter on target creature. You gain 1 life.
+    theme "+1/+1 counters": have 46 [W 10|3, U 1|1, B 4|1, R 5|0, G 5|1, gold 12|3]
+    theme "life gain": have 34 [W 6|4, B 6|1, G 5|0, gold 7|2, colourless 3|0]
+  WB:
+    gold uncommon (MV 2 WB, Legendary Creature — Vampire Noble 2/3): Whenever another creature or planeswalker you control dies, you gain 1 life. / {2}, Sacrifice another creature or planeswalker: Put a +1/+1 counter on ~. He gains menace until end of turn. (He can't be blocked except by two or more creatures.)
+    gold uncommon (MV 5 WB, Sorcery): Destroy target nonland permanent. Put a +1/+1 counter on each creature target player controls.
+    theme "planeswalker cards": have 8 [W 0|1, U 0|3, B 0|1, R 0|2, G 0|1]; refer 21 [W 3|1, U 1|0, B 5|2, R 2|0, G 2|0, gold 3|2]
+    theme "+1/+1 counters": have 46 [W 10|3, U 1|1, B 4|1, R 5|0, G 5|1, gold 12|3]
+    theme "life gain": have 34 [W 6|4, B 6|1, G 5|0, gold 7|2, colourless 3|0]
+  UR:
+    gold uncommon (MV 3 UR, Instant): Choose target nonland permanent. Its owner may put it on the top of their library. If they do, ~ deals 2 damage to them. If they didn't put the card on top of their library, they put it on the bottom.
+    gold uncommon (MV 4 UR, Legendary Creature — Human Artificer 2/4): Thopters you control have haste. / Whenever you cast a noncreature spell, create a 1/1 colorless Thopter artifact creature token with flying.
+    theme "creature type Thopter": have 0 [none]; refer 1 [gold 1|0]
+    theme "noncreature cards": have 108 [W 11|7, U 11|8, B 11|8, R 11|6, G 9|5, gold 13|4, colourless 3|1]; refer 6 [U 2|0, R 2|0, gold 1|1]
+    theme "tokens": have 44 [W 3|3, U 1|4, B 1|2, R 4|4, G 4|3, gold 9|6]
+  BG:
+    gold uncommon (MV 3 BG, Creature — Wolf 2/1): Menace (This creature can't be blocked except by two or more creatures.) / When this creature enters, mill four cards. When you do, return target land card from your graveyard to the battlefield tapped. (To mill four cards, put the top four cards of your library into your graveyard.)
+    gold uncommon (MV 5 BG, Legendary Creature — Human Cleric 3/3): When ~ enters, for each opponent, put X -1/-1 counters on up to one target creature that player controls, where X is the greatest mana value among cards in your graveyard.
+    theme "the graveyard": have 40 [W 3|2, U 3|3, B 7|4, R 1|1, G 2|2, gold 7|3, colourless 2|0]
+  RW:
+    gold uncommon (MV 3 WR, Legendary Creature — Mouse Soldier 1/2): Whenever ~ or another creature you control enters, put a +1/+1 counter on target creature that entered this turn.
+    gold uncommon (MV 4 WR, Artifact — Equipment): When this Equipment enters, it deals 3 damage to any target and you gain 3 life. / Equipped creature gets +2/+1. / Equip {3}. This ability costs {1} less to activate for each +1/+1 counter on the creature it targets.
+    theme "+1/+1 counters": have 46 [W 10|3, U 1|1, B 4|1, R 5|0, G 5|1, gold 12|3]
+    theme "life gain": have 34 [W 6|4, B 6|1, G 5|0, gold 7|2, colourless 3|0]
+  GU:
+    gold uncommon (MV 3 UG, Legendary Creature — Merfolk Noble 2/4): Whenever you attack, if you've activated a loyalty ability this turn, untap target attacking creature. It can't be blocked this turn.﻿ / Planeswalkers you control have “[-8]: Create an 8/8 blue Leviathan creature token with hexproof.”
+    gold uncommon (MV 6 UG, Creature — Bird Fish Illusion 4/4): Flying / This creature has vigilance as long as you control a Jace planeswalker. / When this creature enters, it fights up to one target creature an opponent controls. (Each deals damage equal to its power to the other.)
+    theme "planeswalker cards": have 8 [W 0|1, U 0|3, B 0|1, R 0|2, G 0|1]; refer 21 [W 3|1, U 1|0, B 5|2, R 2|0, G 2|0, gold 3|2]
+    theme "tokens": have 44 [W 3|3, U 1|4, B 1|2, R 4|4, G 4|3, gold 9|6]
+Top creature types (cards; colours "C/U|R/M"):
+  Human 51: W 11|2, U 7|3, B 5|3, R 9|2, G 3|0, gold 3|3 (commons+uncommons 38)
+  Wizard 19: U 6|5, R 1|1, gold 4|2 (commons+uncommons 11)
+  Cleric 14: W 6|2, U 1|0, R 0|1, gold 3|1 (commons+uncommons 10)
+  Warlock 10: B 5|3, G 0|1, gold 0|1 (commons+uncommons 5)
+  Druid 8: G 5|1, gold 2|0 (commons+uncommons 7)
+  Construct 7: U 1|0, R 0|1, G 1|1, gold 1|0, colourless 1|1 (commons+uncommons 4)
+  Elder 7: W 1|0, G 1|0, gold 0|5 (commons+uncommons 2)
+  Elf 7: R 2|0, G 3|2 (commons+uncommons 5)
+  Sphinx 7: U 0|1, gold 0|5, colourless 1|0 (commons+uncommons 1)
+  Warrior 7: R 4|1, G 2|0 (commons+uncommons 6)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 3|2, flash 1|0, hand 0|1, swap 0|0, cyc-trigger 0|0 ; any 4|3
+  U: instant 6|4, flash 2|2, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 8|6
+  B: instant 5|1, flash 1|0, hand 1|0, swap 0|0, cyc-trigger 0|0 ; any 7|1
+  R: instant 5|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|0
+  G: instant 5|0, flash 1|0, hand 1|0, swap 0|0, cyc-trigger 1|0 ; any 8|0
+  gold: instant 8|1, flash 1|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 9|2
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#581 | MV 2 WU | Creature — Human Cleric | 3/1
+Whenever this creature or another creature you control enters, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+{W}{U}: Return this card from your graveyard to the battlefield with a finality counter on it. Activate only if you've scried or surveilled this turn. (If a creature with a finality counter on it would die, exile it instead.)
+
+#413 | MV 2 BG | Enchantment — Aura
+Flash
+Enchant creature
+Enchanted creature gets +1/+0 and has deathtouch.
+When enchanted creature dies, return that card to the battlefield tapped under its owner's control.
+
+#552 | MV 4 UB | Sorcery
+Create two 2/2 colorless Wizard Soldier creature tokens named Cadet. If this spell was cast from a graveyard, put a +1/+1 counter on each of them for every three cards in your graveyard.
+Flashback {6}{U}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+
+#515 | MV 3 WB | Instant
+Exile target creature or planeswalker. If that permanent's mana value was 3 or less, return it to the battlefield tapped under your control. Exile it at the beginning of the next end step.
+
+#429 | MV 1 U | Instant
+Replicate {1}
+Counter target triggered ability or colorless spell.
+
+#447 | MV 4 R | Instant
+~ deals 6 damage to target creature or planeswalker. If excess damage was dealt to that permanent this way, Mechanism A Jace X, where X is that excess damage. (Put that many loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)
+
+#448 | MV 2 W | Creature — Human Cleric | 2/1
+Ward {1} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {1}.)
+Whenever you gain life, put a +1/+1 counter on this creature.
+
+#432 | MV 3 W | Legendary Creature — Dog | 2/2
+If one or more +1/+1 counters would be put on a creature you control, that many plus one +1/+1 counters are put on it instead.
+{6}: Put a +1/+1 counter on target legendary creature.
+
+#605 | MV 2 B | Creature — Zombie Rat | 1/1
+When this creature enters, each opponent discards a card.
+
+#532 | MV 2 R | Legendary Enchantment
+When ~ enters, Mechanism A Jace 2. (Put two loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)
+Planeswalkers you control have “[+1]: Add {R}.”
+SET INFO: planeswalker cards: 8 of 268 nonland cards in the set (3%), 0 of 177 at common/uncommon. A typical deck that can play this card has about 0.1 of its 23 spells like this. 30 other cards also make such tokens (counting them, about 3.1 of the 23 spells).
+  MATCHING CARDS (8; commons+uncommons 0): by mana value MV2 1, MV3 1, MV4 2, MV5 3, MV6+ 1.
+
+#385 | MV 5 U | Legendary Planeswalker — Jace
++1: Mechanism A ~ X, where X is the number of Islands you control.
+−3: Until your next turn, whenever a creature attacks you or a planeswalker you control, it gets -5/-0 until end of turn.
+0: Exile all but the bottom card of each opponent's library. Activate only if there are twenty-five or more loyalty counters among ~s you control.
+SET INFO: planeswalker cards: 7 of 268 nonland cards in the set (3%), 0 of 178 at common/uncommon. A typical deck that can play this card has about 0.1 of its 23 spells like this. 31 other cards also make such tokens (counting them, about 4.0 of the 23 spells).
+  MATCHING CARDS (7; commons+uncommons 0): by mana value MV2 1, MV3 1, MV4 2, MV5 2, MV6+ 1.
+
+#488 | MV 5 W | Legendary Creature — Human Advisor | 4/4
+Flying
+Whenever you scry or surveil, create a 1/1 colorless Thopter artifact creature token with flying. This ability triggers only once each turn.
+
+#386 | MV 0 C | Land
+{T}: Add {C}.
+{5}: This land becomes a copy of target creature you control until end of turn. The “legend rule” doesn't apply to permanents you control this turn.
+
+#338 | MV 2 W | Creature — Kor Cleric | 2/1
+Lifelink
+At the beginning of your end step, if you gained life this turn, surveil 1. If you put a card with mana value less than or equal to the amount of life you gained this turn into your graveyard this way, put that card into your hand.
+
+#608 | MV 3 G | Legendary Creature — Beast Noble | 2/1
+{T}: Choose a color. Add one mana of that color for each different power among creatures you control.
+
+#430 | MV 3 W | Instant
+Destroy target creature or planeswalker with mana value 3 or greater. Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#360 | MV 2 W | Legendary Artifact
+Creature tokens you control get +1/+0 and have vigilance.
+{T}: Add one mana of any color. Spend this mana only to cast a planeswalker spell.
+{1}{W}, Discard this card: It deals 4 damage to target attacking or blocking creature.
+
+#491 | MV 10 WUBRG | Legendary Artifact Creature — Golem | 5/5
+Vigilance, trample
+When ~ enters, draw a card for each color among other artifacts you control.
+SET INFO: artifact cards: 21 of 268 nonland cards in the set (8%), 13 of 178 at common/uncommon. A typical deck that can play this card has about 1.9 of its 23 spells like this. 6 other cards also make such tokens (counting them, about 2.1 of the 23 spells).
+  MATCHING CARDS (21; commons+uncommons 13): by mana value MV<=1 3, MV2 7, MV3 3, MV4 3, MV5 2, MV6+ 3. Creatures among them: 12, average power/toughness 3.2/4 (commons+uncommons only 3.4/3.9). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact] At the beginning of your upkeep, surveil 1. Then if there are seven or more cards in your graveyard, sacrifice this artifact, it deals 2 damage to each opponent, and you gain 2 life. (To surveil 1, look at the top card of your li…" || "[MV 3 C | Artifact — Book] {T}: Add one mana of any color. / {2}, {T}, Discard a card: Draw a card." || "[MV 7 RG | Artifact Creature — Boar Construct | 7/5] Trample / When this creature enters, choose two — / • This creature deals 4 damage to target creature or planeswalker. / • Create a 2/2 colorless Wizard Soldier creature token named Cadet. / • Draw a card."
+
+#393 | MV 5 G | Legendary Creature — Werewolf Noble | 4/4
+Flash
+At the beginning of your end step, if you didn't cast a spell this turn, put two +1/+1 counters on ~.
+{4}{G}: Put a +1/+1 counter on each creature you control with a +1/+1 counter on it.
+
+#401 | MV 0 C | Land — Island
+({T}: Add {U}.)
+As this land enters, you may behold a Jace. If you don't, this land enters tapped. (To behold a Jace, choose a Jace you control or reveal a Jace card from your hand.)
+{2}{U}, {T}: Mechanism A Jace 2.
+
+#427 | MV 2 G | Legendary Creature — Elf Druid | 3/2
+Lands you control have hexproof. (They can't be the targets of spells or abilities your opponents control.)
+{2}: Return target land card from your graveyard to your hand.
+
+#593 | MV 7 G | Creature — Plant Kraken | 6/6
+At the beginning of each player's upkeep, you create a 3/3 green Forest Tentacle land creature token. (It has “{T}: Add {G}.” It's affected by summoning sickness until your next turn.)
+
+#530 | MV 0 C | Land
+This land enters tapped unless you control two or more other lands.
+{T}: Add {B} or {R}.
+
+#459 | MV 2 WG | Creature — Cat Soldier | 3/3
+Whenever an opponent casts a spell with mana value 2 or less, you gain 2 life.
+
+#583 | MV 3 R | Creature — Elemental Sorcerer | 3/3
+Prowess
+This creature enters Mechanism B. (While it's Mechanism B, you may cast a copy of its spell. Doing so unprepares it.)
+//Prep//
+Molten Tide
+{R}
+Instant
+Until end of turn, whenever you tap a Mountain for mana, add an additional {R}.
+
+#411 | MV 1 G | Instant
+Target creature gets +2/+2 and gains reach until end of turn. Untap it.
+
+#442 | MV 3 UG | Legendary Creature — Merfolk Noble | 2/4
+Whenever you attack, if you've activated a loyalty ability this turn, untap target attacking creature. It can't be blocked this turn.﻿
+Planeswalkers you control have “[−8]: Create an 8/8 blue Leviathan creature token with hexproof.”
+SET INFO: planeswalker cards: 8 of 268 nonland cards in the set (3%), 0 of 177 at common/uncommon. A typical deck that can play this card has about 0.2 of its 23 spells like this. 31 other cards also make such tokens (counting them, about 4.5 of the 23 spells).
+  MATCHING CARDS (8; commons+uncommons 0): by mana value MV2 1, MV3 1, MV4 2, MV5 3, MV6+ 1.
+
+#412 | MV 1 U | Creature — Dwarf Wizard | 1/1
+This creature enters Mechanism B. (While it's Mechanism B, you may cast a copy of its spell. Doing so unprepares it.)
+Whenever you scry or surveil, this creature gets +1/+1 until end of turn.
+//Prep//
+Unwind History
+{1}{U}
+Sorcery
+Return target creature an opponent controls with mana value 3 or less to its owner's hand. Surveil 1.
+
+#489 | MV 2 U | Instant
+Counter target white or black spell.
+
+#584 | MV 1 G | Instant
+Target creature or planeswalker an opponent controls that's red or white loses all abilities until end of turn. Target creature you control deals damage equal to its power to that permanent.
+
+#518 | MV 2 U | Legendary Creature — Human Wizard | 2/1
+Instant and sorcery spells you control have split second. (As long as a spell with split second is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)
+SET INFO: instant cards: 40 of 268 nonland cards in the set (15%), 32 of 178 at common/uncommon. A typical deck that can play this card has about 4.0 of its 23 spells like this.
+  MATCHING CARDS (40; commons+uncommons 32): by mana value MV<=1 7, MV2 18, MV3 11, MV4 2, MV5 1, MV6+ 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 U | Instant] Choose one — / • Target creature has base power and toughness 1/1 until end of turn. / • Target creature has base power and toughness 4/5 until end of turn." || "[MV 4 R | Instant] ~ deals 6 damage to target creature or planeswalker. If excess damage was dealt to that permanent this way, Mechanism A Jace X, where X is that excess damage. (Put that many loyalty counters on a Jace token you control. If you do…"
+SET INFO: sorcery cards: 29 of 268 nonland cards in the set (11%), 18 of 178 at common/uncommon. A typical deck that can play this card has about 2.4 of its 23 spells like this.
+  MATCHING CARDS (29; commons+uncommons 18): by mana value MV<=1 2, MV2 10, MV3 4, MV4 4, MV5 3, MV6+ 6. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Sorcery] Creatures you control gain first strike until end of turn. / Draw a card." || "[MV 6 W | Sorcery] Create three 2/2 colorless Wizard Soldier creature tokens named Cadet. Mechanism A Jace 2. (Put two loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: S…"
+
+#467 | MV 3 WUR | Legendary Creature — Gorgon Wizard | 3/3
+Artifact creatures you control have vigilance.
+Whenever you cast a noncreature spell, create a 1/1 colorless Sculpture Treasure artifact creature token with “{T}, Sacrifice this token: Add one mana of any color.”
+SET INFO: artifact cards: 22 of 268 nonland cards in the set (8%), 13 of 178 at common/uncommon. A typical deck that can play this card has about 2.6 of its 23 spells like this. 5 other cards also make such tokens (counting them, about 2.9 of the 23 spells).
+  MATCHING CARDS (22; commons+uncommons 13): by mana value MV<=1 3, MV2 7, MV3 3, MV4 3, MV5 2, MV6+ 4. Creatures among them: 13, average power/toughness 3.4/4.1 (commons+uncommons only 3.4/3.9). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact] At the beginning of your upkeep, surveil 1. Then if there are seven or more cards in your graveyard, sacrifice this artifact, it deals 2 damage to each opponent, and you gain 2 life. (To surveil 1, look at the top card of your li…" || "[MV 7 RG | Artifact Creature — Boar Construct | 7/5] Trample / When this creature enters, choose two — / • This creature deals 4 damage to target creature or planeswalker. / • Create a 2/2 colorless Wizard Soldier creature token named Cadet. / • Draw a card."
+SET INFO: noncreature spells: 108 of 268 nonland cards in the set (40%), 69 of 178 at common/uncommon. A typical deck that can play this card has about 9.9 of its 23 spells like this.
+  MATCHING CARDS (108; commons+uncommons 69): by mana value MV<=1 14, MV2 37, MV3 27, MV4 12, MV5 9, MV6+ 9. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact] At the beginning of your upkeep, surveil 1. Then if there are seven or more cards in your graveyard, sacrifice this artifact, it deals 2 damage to each opponent, and you gain 2 life. (To surveil 1, look at the top card of your li…" || "[MV 6 W | Sorcery] Create three 2/2 colorless Wizard Soldier creature tokens named Cadet. Mechanism A Jace 2. (Put two loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: S…"
+
+#569 | MV 0 C | Land
+This land enters tapped unless you control two or more other lands.
+{T}: Add {R} or {G}.
+
+#399 | MV 5 R | Creature — Minotaur Artificer | 4/5
+Reach
+When this creature enters, you may discard a card. When you do, this creature deals 2 damage to any target.
+
+#371 | MV 5 U | Legendary Enchantment
+When ~ enters, Mechanism A Jace 5. (Put five loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)
+Whenever you activate a loyalty ability, if you removed two or more loyalty counters to activate it, draw a card.
+
+#403 | MV 2 R | Sorcery
+~ deals 3 damage to any target.
+Mechanism A Jace 1. (Put a loyalty counter on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)
+
+#381 | MV 1 B | Sorcery
+Target player discards X cards at random.
+
+#591 | MV 4 UR | Legendary Creature — Human Artificer | 2/4
+Thopters you control have haste.
+Whenever you cast a noncreature spell, create a 1/1 colorless Thopter artifact creature token with flying.
+SET INFO: "Thopter" creatures: 0 of 160 creature cards in the set (0%), 0 of 108 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+SET INFO: noncreature spells: 108 of 268 nonland cards in the set (40%), 69 of 177 at common/uncommon. A typical deck that can play this card has about 9.9 of its 23 spells like this.
+  MATCHING CARDS (108; commons+uncommons 69): by mana value MV<=1 14, MV2 37, MV3 27, MV4 12, MV5 9, MV6+ 9. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact] At the beginning of your upkeep, surveil 1. Then if there are seven or more cards in your graveyard, sacrifice this artifact, it deals 2 damage to each opponent, and you gain 2 life. (To surveil 1, look at the top card of your li…" || "[MV 6 W | Sorcery] Create three 2/2 colorless Wizard Soldier creature tokens named Cadet. Mechanism A Jace 2. (Put two loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: S…"
+
+#531 | MV 4 WU | Creature — Kor Scout | 3/4
+Flying
+At the beginning of combat on your turn, another target creature you control gets +1/+1 until end of turn. If you've scried or surveilled this turn, put a +1/+1 counter on that creature instead.
+
+#435 | MV 3 UB | Creature — Shade Wizard | 2/3
+This creature enters Mechanism B. (While it's Mechanism B, you may cast a copy of its spell. Doing so unprepares it.)
+Mechanism C — This creature gets +1/+0 and has flying as long as there are seven or more cards in your graveyard.
+//Prep//
+Omit Variables
+{U/B}
+Sorcery
+Mill three cards. (Put the top three cards of your library into your graveyard.)
+
+#439 | MV 4 U | Legendary Creature — Human Wizard | 4/3
+When ~ enters, for each opponent, tap up to one target creature that player controls. Put a stun counter on each of those creatures. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+{2}{U}: Untap target creature.
+
+#460 | MV 2 UB | Creature — Octopus Wizard | 1/3
+At the beginning of your upkeep, if this creature isn't Mechanism B, it becomes Mechanism B.
+{2}: Put target card from your graveyard on the bottom of your library.
+//Prep//
+Omit Variables
+{U/B}
+Sorcery
+Mill three cards. (Put the top three cards of your library into your graveyard.)
+
+#339 | MV 7 R | Artifact Creature — Beast Construct | 5/5
+Haste
+When this creature enters, creatures you control gain trample and get +X/+0 until end of turn, where X is the number of artifacts you control.
+SET INFO: artifact cards: 21 of 268 nonland cards in the set (8%), 13 of 178 at common/uncommon. A typical deck that can play this card has about 3.7 of its 23 spells like this. 6 other cards also make such tokens (counting them, about 3.9 of the 23 spells).
+  MATCHING CARDS (21; commons+uncommons 13): by mana value MV<=1 3, MV2 7, MV3 3, MV4 3, MV5 2, MV6+ 3. Creatures among them: 12, average power/toughness 3.2/4 (commons+uncommons only 3.4/3.9). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact] At the beginning of your upkeep, surveil 1. Then if there are seven or more cards in your graveyard, sacrifice this artifact, it deals 2 damage to each opponent, and you gain 2 life. (To surveil 1, look at the top card of your li…" || "[MV 3 C | Artifact — Book] {T}: Add one mana of any color. / {2}, {T}, Discard a card: Draw a card." || "[MV 7 RG | Artifact Creature — Boar Construct | 7/5] Trample / When this creature enters, choose two — / • This creature deals 4 damage to target creature or planeswalker. / • Create a 2/2 colorless Wizard Soldier creature token named Cadet. / • Draw a card."
+
+#486 | MV 1 WB | Creature — Zombie Cleric | 1/1
+Lifelink
+{2}{W/B}: Return this card from your graveyard to your hand.
+
+#390 | MV 7 R | Sorcery
+For each creature target player controls, create a token that's a copy of that creature, except it has haste and “At the beginning of the end step, if you don't control a planeswalker, sacrifice this creature.”
+
+#370 | MV 2 R | Creature — Human Warrior | 2/1
+During your turn, this creature has first strike.
+{1}{R}: This creature gets +1/+0 until end of turn.
+
+#359 | MV 5 B | Legendary Creature — Human Assassin | 4/4
+Whenever another creature or planeswalker you control dies, ~ deals 1 damage to target opponent and you gain 1 life.
+Whenever an opponent is dealt noncombat damage, put a +1/+1 counter on ~.
+SET INFO: planeswalker cards: 8 of 268 nonland cards in the set (3%), 0 of 177 at common/uncommon. A typical deck that can play this card has about 0.1 of its 23 spells like this. 31 other cards also make such tokens (counting them, about 3.3 of the 23 spells).
+  MATCHING CARDS (8; commons+uncommons 0): by mana value MV2 1, MV3 1, MV4 2, MV5 3, MV6+ 1.
+
+#450 | MV 2 U | Instant
+Choose one —
+• Counter target creature or legendary spell unless its controller pays {3}.
+• Target creature gets -5/-0 until end of turn.
+
+#438 | MV 2 U | Legendary Creature — Spirit Cleric | 1/2
+Flying
+Noncreature spells you cast cost {1} less to cast.
+SET INFO: noncreature spells: 108 of 268 nonland cards in the set (40%), 69 of 177 at common/uncommon. A typical deck that can play this card has about 9.5 of its 23 spells like this.
+  MATCHING CARDS (108; commons+uncommons 69): by mana value MV<=1 14, MV2 37, MV3 27, MV4 12, MV5 9, MV6+ 9. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact] At the beginning of your upkeep, surveil 1. Then if there are seven or more cards in your graveyard, sacrifice this artifact, it deals 2 damage to each opponent, and you gain 2 life. (To surveil 1, look at the top card of your li…" || "[MV 2 R | Sorcery] ~ deals 3 damage to any target. / Mechanism A Jace 1. (Put a loyalty counter on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)" || "[MV 6 W | Sorcery] Create three 2/2 colorless Wizard Soldier creature tokens named Cadet. Mechanism A Jace 2. (Put two loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: S…"
+
+#571 | MV 3 R | Enchantment
+{3}{R}: Exile target creature or planeswalker you control. Reveal cards from the top of your library until you reveal a creature or planeswalker card. Put that card onto the battlefield and the rest on the bottom of your library in a random order. Activate only as a sorcery.
+
+#553 | MV 4 B | Creature — Phoenix | 3/2
+Flying, haste
+At the beginning of combat on your turn, if two or more creatures died this turn, return this card from your graveyard to the battlefield.
+
+#490 | MV 4 WU | Legendary Creature — Elder Sphinx | 3/4
+Flash
+Flying
+Whenever you scry or surveil, put a +1/+1 counter on each creature you control.
+
+#561 | MV 2 C | Legendary Artifact
+When ~ enters, draw a card, then discard a card.
+{5}, {T}, Exile ~: Destroy all creatures. Activate only as a sorcery.
+
+#514 | MV 3 U | Instant
+Until end of turn, you may activate loyalty abilities of Jace planeswalkers you control on any player's turn any time you could cast an instant.
+Mechanism A Jace 8. (Put eight loyalty counters on a Jace token you control. If you don't control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)
+
+#425 | MV 3 RG | Creature — Human Artificer | 1/1
+When this creature enters, you may sacrifice a land. If you do, create two tapped Heartwood tokens. (They're red and green artifacts with “{T}: Add {R} or {G}.”)
+Tap two untapped artifacts you control: Put two +1/+1 counters on this creature.
+
+#566 | MV 9 W | Legendary Creature — Elder Dinosaur | 0/7
+This spell costs {X} less to cast, where X is the greatest toughness among creatures you control.
+Creatures you control can attack as though they didn't have defender.
+Each creature you control with toughness greater than its power assigns combat damage equal to its toughness rather than its power.
+
+#477 | MV 1 B | Artifact — Equipment
+When this Equipment enters, you may pay {2}. When you do, for each opponent, destroy up to one target creature or planeswalker that player controls.
+Equipped creature gets +2/+1.
+Equip {2}
+
+#387 | MV 3 UR | Creature — Elemental | 4/4
+Trample, haste
+Whenever this creature deals combat damage to a player, draw two cards.
+At the beginning of the end step, sacrifice this creature.
+-- pass p3, batch FRA_2: 58 cards

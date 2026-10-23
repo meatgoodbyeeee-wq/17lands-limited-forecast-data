@@ -1,0 +1,312 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 215, nonland 208, creatures 118, commons+uncommons 149. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 4 1/1.5; MV2 6 1.8/1.8; MV3 5 2.2/2.2; MV4 4 2.8/2.8; MV5 3 2.7/3.7 | total 22 avg 2/2.3
+  U: MV<=1 1 3/3; MV2 5 1.8/2; MV3 5 2.2/2.6; MV4 4 3/2.8; MV5 2 2.5/5; MV6+ 3 5.3/5.7 | total 20 avg 2.8/3.2
+  B: MV<=1 1 1/1; MV2 4 1.8/2; MV3 6 2.5/2; MV4 4 3.5/3.5; MV5 3 3.3/7; MV6+ 3 5.7/5.7 | total 21 avg 3/3.5
+  R: MV<=1 2 1/1.5; MV2 6 1.5/1.5; MV3 4 2.8/2.5; MV4 3 4/3.3; MV5 2 3.5/3.5; MV6+ 2 6/5 | total 19 avg 2.8/2.6
+  G: MV<=1 2 1.5/1; MV2 5 1.4/1.6; MV3 4 2/2.8; MV4 3 2.7/3; MV5 2 2/3; MV6+ 3 6.5/6 | total 19 avg 2.4/2.7
+  gold: MV2 3 2.3/2.3; MV3 6 2/2.8; MV4 6 2.5/3.7; MV6+ 1 3/4 | total 16 avg 2.3/3.1
+  colourless: MV3 1 2/2 | total 1 avg 2/2
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 3 1/1.3; MV2 4 1.8/2; MV3 3 2.7/2; MV4 3 2.7/2.3; MV5 3 2.7/3.7 | total 16 avg 2.1/2.2
+  U: MV<=1 1 3/3; MV2 4 2/2; MV3 2 2.5/2.5; MV4 3 3/2.7; MV5 2 2.5/5; MV6+ 2 4.5/4.5 | total 14 avg 2.8/3.1
+  B: MV<=1 1 1/1; MV2 3 1.3/1.7; MV3 4 2.2/2.5; MV4 3 3/2.7; MV5 3 3.3/7 | total 14 avg 2.4/3.2
+  R: MV<=1 1 1/1; MV2 5 1.4/1.6; MV3 3 2.7/2.3; MV4 1 4/3; MV5 2 3.5/3.5; MV6+ 1 6/4 | total 13 avg 2.5/2.3
+  G: MV<=1 1 1/1; MV2 5 1.4/1.6; MV3 2 2/3; MV4 2 2.5/2; MV5 2 2/3; MV6+ 2 6.5/6 | total 14 avg 2.4/2.6
+  gold: MV2 3 2.3/2.3; MV3 2 2/2; MV4 3 2/3.7 | total 8 avg 2.1/2.8
+  colourless: MV3 1 2/2 | total 1 avg 2/2
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 5|1; destroy 2 (2,2) | 0 (); damage 1 (1) | 1 (2); exile 1 (2) | 0 (); lock-down 1 (3) | 0 ()
+  U: any 1|2; bounce/tuck 1 (2) | 1 (7); sweeper 0 () | 1 (4)
+  B: any 4|3; destroy 2 (3,6) | 0 (); damage 0 () | 1 (4); -X/-X 2 (4,4) | 1 (6); sweeper 0 () | 1 (3)
+  R: any 7|3; damage 6 (1,2,2,3,5,6) | 3 (3,4,6); fight/bite 1 (3) | 0 ()
+  G: any 2|0; destroy 1 (3) | 0 (); fight/bite 1 (3) | 0 ()
+  gold: any 1|1; -X/-X 1 (2) | 0 (); sweeper 0 () | 1 (3)
+  colourless: any 0|0
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 16|6; flying 5|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|1; reach 0|0; can block fliers (flying or reach) 5|1; other cards that give flying 1|3
+  U: creatures 14|6; flying 5|3; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|3; reach 0|0; can block fliers (flying or reach) 5|3; other cards that give flying 0|1
+  B: creatures 14|7; flying 1|3; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|3; reach 0|0; can block fliers (flying or reach) 1|3; other cards that give flying 0|0
+  R: creatures 13|6; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 0|0; can block fliers (flying or reach) 0|1; other cards that give flying 0|0
+  G: creatures 14|5; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 2|0; can block fliers (flying or reach) 2|0; other cards that give flying 0|0
+  gold: creatures 8|8; flying 2|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|1; reach 1|2; can block fliers (flying or reach) 3|3; other cards that give flying 0|0
+  colourless: creatures 1|0; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 0|0; can block fliers (flying or reach) 0|0; other cards that give flying 0|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (keyword; 12 cards, commons+uncommons 6; colours C/U|R/M: W 1|1, U 3|2, B 2|1, R 0|1, G 0|1). Example text of a card: "Mechanism A {1}{B}{B}{G} (You may cast this spell for its Mechanism A cost. If you do, remove the words in square brackets.)"
+  Mechanism B (keyword; 9 cards, commons+uncommons 7; colours C/U|R/M: U 3|1, B 3|1, gold 1|0). Example text of a card: "Mechanism B (When this creature enters, you may sacrifice a creature.)"
+  Mechanism C (keyword; 9 cards, commons+uncommons 6; colours C/U|R/M: W 3|2, G 3|0, gold 0|1). Example text of a card: "Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU: no gold uncommon in the list.
+  UB:
+    gold uncommon (MV 2 UB, Creature — Zombie 2/2): Mechanism B (When this creature enters, you may sacrifice a creature.) / Whenever a creature you control Mechanism B a nontoken creature, create a 2/2 black Zombie creature token.
+    theme "tokens": have 52 [W 3|2, U 2|2, B 8|7, R 9|4, G 2|2, gold 3|5, colourless 2|1]
+  BR:
+    gold uncommon (MV 2 BR, Creature — Vampire 3/2): When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.") / {T}, Sacrifice this creature: Target creature gets -X/-X until end of turn, where X is twice the number of Blood tokens you control. Activate only as a sorcery.
+    theme "tokens": have 52 [W 3|2, U 2|2, B 8|7, R 9|4, G 2|2, gold 3|5, colourless 2|1]
+    theme "sacrifice": have 20 [W 1|1, U 0|1, B 5|3, R 2|1, G 1|0, gold 2|1, colourless 1|1]
+  RG: no gold uncommon in the list.
+  GW:
+    gold uncommon (MV 4 WG, Creature — Human Knight 4/4): As long as you've put one or more +1/+1 counters on a creature this turn, this creature has trample and lifelink. / {1}{G}{W}: Target creature you control with a +1/+1 counter on it gains trample and lifelink until end of turn.
+    theme "+1/+1 counters": have 20 [W 3|3, U 0|1, B 2|0, R 1|0, G 4|3, gold 1|2]
+    theme "life gain": have 24 [W 6|2, B 5|1, G 4|1, gold 2|2, colourless 1|0]
+  WB:
+    gold uncommon (MV 3 WB, Creature — Vampire Cleric 2/3): Lifelink / At the beginning of your end step, if you gained life this turn, you may pay {2}. If you do, draw a card.
+    theme "life gain": have 24 [W 6|2, B 5|1, G 4|1, gold 2|2, colourless 1|0]
+  UR:
+    gold uncommon (MV 3 UR, Creature — Horror 2/1): Flying / When this creature enters, look at the top six cards of your library. You may reveal a noncreature, nonland card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  BG:
+    gold uncommon (MV 4 BG, Creature — Treefolk 1/4): Each creature you control with toughness greater than its power assigns combat damage equal to its toughness rather than its power.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  RW:
+    gold uncommon (MV 4 WR, Creature — Vampire 1/3): Flying, haste / At the beginning of combat on your turn, up to two target creatures you control each get +1/+0 until end of turn.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  GU:
+    gold uncommon (MV 2 UG, Creature — Spider 2/3): Reach / At the beginning of your upkeep, mill a card. (Put the top card of your library into your graveyard.) / {2}{G}{U}, {T}, Sacrifice this creature: Create a 1/1 green Insect creature token for each creature card in your graveyard. Activate only as a sorcery.
+    theme "tokens": have 52 [W 3|2, U 2|2, B 8|7, R 9|4, G 2|2, gold 3|5, colourless 2|1]
+    theme "the graveyard": have 39 [W 2|2, U 8|2, B 7|2, R 1|2, G 6|1, gold 1|2, colourless 2|1]
+    theme "sacrifice": have 20 [W 1|1, U 0|1, B 5|3, R 2|1, G 1|0, gold 2|1, colourless 1|1]
+Top creature types (cards; colours "C/U|R/M"):
+  Human 33: W 9|4, U 1|1, B 1|0, R 2|2, G 6|2, gold 1|4 (commons+uncommons 20)
+  Vampire 22: W 1|1, B 4|2, R 5|3, gold 3|3 (commons+uncommons 13)
+  Zombie 20: U 7|2, B 7|3, gold 1|0 (commons+uncommons 15)
+  Soldier 12: W 6|3, B 2|0, gold 0|1 (commons+uncommons 8)
+  Horror 10: U 4|3, B 0|1, G 1|0, gold 1|0 (commons+uncommons 6)
+  Spirit 10: W 4|1, U 2|2, G 1|0 (commons+uncommons 7)
+  Wolf 9: R 3|0, G 4|2 (commons+uncommons 7)
+  Cleric 7: W 3|1, B 1|0, gold 1|1 (commons+uncommons 5)
+  Knight 4: W 2|0, R 0|1, gold 1|0 (commons+uncommons 3)
+  Bird 3: W 1|0, U 2|0 (commons+uncommons 3)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 4|1, flash 0|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|2
+  U: instant 10|1, flash 1|2, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 11|3
+  B: instant 4|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 1|0 ; any 5|0
+  R: instant 5|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|0
+  G: instant 4|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|0
+  gold: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#1166 | MV 5 W | Creature — Angel Soldier | 3/3
+Flying
+When this creature enters, put a +1/+1 counter on each of up to two other target creatures.
+
+#1167 | MV 4 BR | Legendary Creature — Vampire | 4/5
+Whenever ~ and/or one or more other Vampires you control enter, create a Blood token. This ability triggers only once each turn. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+{2}, Sacrifice another creature or a Blood token: Each opponent loses 2 life and you gain 2 life.
+SET INFO: "Vampire" creatures: 21 of 117 creature cards in the set (18%), 13 of 80 at common/uncommon. A typical deck that can play this card has about 5.1 of its 15 creatures of this type.
+  MATCHING CARDS (21; commons+uncommons 13): by mana value MV<=1 2, MV2 3, MV3 8, MV4 4, MV5 2, MV6+ 2. Creatures among them: 21, average power/toughness 2.8/2.9 (commons+uncommons only 2.5/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Vampire Cleric | 1/2] Vigilance / {4}{W}: Put a +1/+1 counter on this creature." || "[MV 3 R | Creature — Vampire | 3/2] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card,…" || "[MV 5 B | Creature — Vampire Soldier | 4/4] Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card."
+
+#1168 | MV 3 B | Creature — Zombie Cleric | 3/2
+Whenever this creature or another Zombie you control dies, look at the top card of your library. If it's a Zombie card, you may reveal it and put it into your hand. If you don't put the card into your hand, you may put it into your graveyard.
+SET INFO: "Zombie" creatures: 19 of 117 creature cards in the set (16%), 14 of 79 at common/uncommon. A typical deck that can play this card has about 4.1 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 3.7 of the 23 spells).
+  MATCHING CARDS (19; commons+uncommons 14): by mana value MV<=1 1, MV2 7, MV3 3, MV4 3, MV5 4, MV6+ 1. Creatures among them: 19, average power/toughness 2.5/3.3 (commons+uncommons only 2.4/3.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 U | Creature — Zombie Horse | 3/3] As an additional cost to cast this spell, exile a creature card from your graveyard. / {3}{U}, Exile this card from your graveyard: Draw a card." || "[MV 3 U | Creature — Zombie | 3/2] Mechanism B (When this creature enters, you may sacrifice a creature.) / When this creature Mechanism B a creature, scry 1, then draw a card. (To scry 1, look at the top card of your library, then you may put that card on the bot…" || "[MV 5 B | Creature — Zombie Soldier | 1/13] This creature enters tapped."
+
+#1169 | MV 3 U | Instant
+This spell costs {1} less to cast if you control a Zombie.
+Tap target creature. It doesn't untap during its controller's next untap step.
+Draw a card.
+SET INFO: "Zombie" creatures: 20 of 118 creature cards in the set (17%), 15 of 80 at common/uncommon. A typical deck that can play this card has about 4.5 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 3.7 of the 23 spells).
+  MATCHING CARDS (20; commons+uncommons 15): by mana value MV<=1 1, MV2 7, MV3 4, MV4 3, MV5 4, MV6+ 1. Creatures among them: 20, average power/toughness 2.5/3.2 (commons+uncommons only 2.4/3.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 U | Creature — Zombie Horse | 3/3] As an additional cost to cast this spell, exile a creature card from your graveyard. / {3}{U}, Exile this card from your graveyard: Draw a card." || "[MV 3 U | Creature — Zombie | 3/2] Mechanism B (When this creature enters, you may sacrifice a creature.) / When this creature Mechanism B a creature, scry 1, then draw a card. (To scry 1, look at the top card of your library, then you may put that card on the bot…" || "[MV 5 B | Creature — Zombie Soldier | 1/13] This creature enters tapped."
+
+#1170 | MV 5 G | Creature — Human Ranger | 2/4
+Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+Whenever one or more +1/+1 counters are put on one or more Humans you control, draw a card. This ability triggers only once each turn.
+SET INFO: "Human" creatures: 32 of 117 creature cards in the set (27%), 19 of 79 at common/uncommon. A typical deck that can play this card has about 4.4 of its 15 creatures of this type.
+  MATCHING CARDS (32; commons+uncommons 19): by mana value MV<=1 4, MV2 7, MV3 11, MV4 10. Creatures among them: 32, average power/toughness 2/2.4 (commons+uncommons only 2.1/2.1). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Cleric | 1/1] Vigilance / Sacrifice this creature: Target creature you control with a +1/+1 counter on it gains lifelink and indestructible until end of turn." || "[MV 3 R | Creature — Human Warrior | 2/2] Haste (This creature can attack and {T} as soon as it comes under your control.) / When this creature enters, target creature gets +2/+0 until end of turn." || "[MV 4 U | Creature — Human Wizard | 3/2] Whenever you cast a noncreature spell, create a 1/1 white Spirit creature token with flying. This ability triggers only once each turn."
+
+#1171 | MV 3 B | Creature — Bat | 2/2
+Flying
+When this creature enters, if you gained life this turn, return up to one target creature card from your graveyard to your hand.
+
+#1172 | MV 2 G | Creature — Human Warlock | 2/2
+Whenever another Human you control enters, this creature gets +1/+1 until end of turn.
+SET INFO: "Human" creatures: 32 of 117 creature cards in the set (27%), 19 of 79 at common/uncommon. A typical deck that can play this card has about 4.1 of its 15 creatures of this type.
+  MATCHING CARDS (32; commons+uncommons 19): by mana value MV<=1 4, MV2 6, MV3 11, MV4 10, MV5 1. Creatures among them: 32, average power/toughness 2/2.5 (commons+uncommons only 2.1/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Cleric | 1/1] Vigilance / Sacrifice this creature: Target creature you control with a +1/+1 counter on it gains lifelink and indestructible until end of turn." || "[MV 3 G | Creature — Human Archer | 1/4] Reach / Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)" || "[MV 5 G | Creature — Human Ranger | 2/4] Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.) / Whenever one or more +1/+1 counters are put on one or more Humans you control, draw a card. This abili…"
+
+#1173 | MV 5 C | Artifact
+{1}, {T}, Exile a creature card from your graveyard: Create a token that's a copy of the exiled card, except it's a 0/0 Construct artifact in addition to its other types and it has "This token gets +1/+1 for each Construct you control." It gains haste until end of turn. Activate only as a sorcery.
+SET INFO: "Construct" creatures: 1 of 118 creature cards in the set (1%), 1 of 80 at common/uncommon. A typical deck that can play this card has about 0.6 of its 15 creatures of this type.
+  MATCHING CARDS (1; commons+uncommons 1): by mana value MV3 1. Creatures among them: 1, average power/toughness 2/2 (commons+uncommons only 2/2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 3 C | Artifact Creature — Construct | 2/2] When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")"
+
+#1174 | MV 3 R | Creature — Vampire | 3/3
+When this creature enters, gain control of target creature with mana value less than or equal to the number of Vampires you control until end of turn. Untap that creature. It gains haste until end of turn.
+SET INFO: "Vampire" creatures: 21 of 117 creature cards in the set (18%), 13 of 80 at common/uncommon. A typical deck that can play this card has about 3.6 of its 15 creatures of this type.
+  MATCHING CARDS (21; commons+uncommons 13): by mana value MV<=1 2, MV2 3, MV3 7, MV4 5, MV5 2, MV6+ 2. Creatures among them: 21, average power/toughness 2.9/3 (commons+uncommons only 2.5/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Vampire Cleric | 1/2] Vigilance / {4}{W}: Put a +1/+1 counter on this creature." || "[MV 3 R | Creature — Vampire | 3/2] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card,…" || "[MV 5 B | Creature — Vampire Soldier | 4/4] Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card."
+
+#1175 | MV 2 W | Instant
+Mechanism A {5}{W} (You may cast this spell for its Mechanism A cost. If you do, remove the words in square brackets.)
+Destroy target [attacking] creature.
+
+#1176 | MV 2 W | Creature — Spirit | 3/1
+{W}, Exile three cards from your graveyard: This creature gains first strike until end of turn.
+Discard a card: Exile this creature. Return it to the battlefield under its owner's control at the beginning of the next end step.
+
+#1177 | MV 3 U | Instant
+This spell costs {1} less to cast if you control a Spirit. It also costs {1} less to cast if you control an enchantment.
+Counter target spell unless its controller pays {3}.
+SET INFO: "Spirit" creatures: 10 of 118 creature cards in the set (8%), 7 of 80 at common/uncommon. A typical deck that can play this card has about 1.9 of its 15 creatures of this type. 4 other cards also make such creature tokens (counting them, about 1.8 of the 23 spells).
+  MATCHING CARDS (10; commons+uncommons 7): by mana value MV2 4, MV3 3, MV5 2, MV6+ 1. Creatures among them: 10, average power/toughness 2.7/3 (commons+uncommons only 2.9/3.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 U | Creature — Spirit | 3/3] Defender / Whenever an enchantment you control enters, this creature can attack this turn as though it didn't have defender." || "[MV 6 G | Creature — Wolf Spirit | 6/6] When this creature enters, you gain life equal to the greatest toughness among other creatures you control."
+SET INFO: enchantment cards: 19 of 207 nonland cards in the set (9%), 11 of 148 at common/uncommon. A typical deck that can play this card has about 1.9 of its 23 spells like this.
+  MATCHING CARDS (19; commons+uncommons 11): by mana value MV<=1 1, MV2 4, MV3 7, MV4 5, MV5 1, MV6+ 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Enchantment — Aura] Enchant creature / Enchanted creature gets +2/+2 as long as it's a Vampire. Otherwise, it gets -2/-2." || "[MV 4 G | Enchantment] Whenever a Human you control dies, draw a card. / Whenever a creature you control with a +1/+1 counter on it dies, you gain 2 life."
+
+#1178 | MV 3 U | Legendary Creature — Human Wizard | 1/4
+Zombies you control have flying.
+{U}, {T}, Sacrifice another nontoken creature: Create an X/X blue Zombie creature token, where X is the sacrificed creature's toughness.
+SET INFO: "Zombie" creatures: 20 of 117 creature cards in the set (17%), 15 of 80 at common/uncommon. A typical deck that can play this card has about 4.5 of its 15 creatures of this type.
+  MATCHING CARDS (20; commons+uncommons 15): by mana value MV<=1 1, MV2 7, MV3 4, MV4 3, MV5 4, MV6+ 1. Creatures among them: 20, average power/toughness 2.5/3.2 (commons+uncommons only 2.4/3.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 U | Creature — Zombie Horse | 3/3] As an additional cost to cast this spell, exile a creature card from your graveyard. / {3}{U}, Exile this card from your graveyard: Draw a card." || "[MV 3 U | Creature — Zombie | 3/2] Mechanism B (When this creature enters, you may sacrifice a creature.) / When this creature Mechanism B a creature, scry 1, then draw a card. (To scry 1, look at the top card of your library, then you may put that card on the bot…" || "[MV 5 B | Creature — Zombie Soldier | 1/13] This creature enters tapped."
+
+#1179 | MV 1 B | Enchantment — Aura
+Enchant creature
+Enchanted creature gets +2/+2 as long as it's a Vampire. Otherwise, it gets -2/-2.
+SET INFO: "Vampire" creatures: 22 of 118 creature cards in the set (19%), 13 of 80 at common/uncommon. A typical deck that can play this card has about 2.9 of its 15 creatures of this type.
+  MATCHING CARDS (22; commons+uncommons 13): by mana value MV<=1 2, MV2 3, MV3 8, MV4 5, MV5 2, MV6+ 2. Creatures among them: 22, average power/toughness 2.9/3 (commons+uncommons only 2.5/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Vampire Cleric | 1/2] Vigilance / {4}{W}: Put a +1/+1 counter on this creature." || "[MV 3 R | Creature — Vampire | 3/2] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card,…" || "[MV 5 B | Creature — Vampire Soldier | 4/4] Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card."
+
+#1180 | MV 4 UG | Legendary Creature — Frog | 3/3
+Whenever a Frog you control attacks, mill three cards.
+Whenever a permanent card is put into your graveyard from your library, exile it with a croak counter on it.
+You may play lands and cast spells from among cards you own in exile with croak counters on them.
+SET INFO: "Frog" creatures: 0 of 117 creature cards in the set (0%), 0 of 80 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#1181 | MV 4 W | Enchantment
+As long as you control seven or more enchantments, creatures you control have flying and vigilance.
+Whenever you cast an enchantment spell, create a white Spirit Cleric creature token with "This token's power and toughness are each equal to the number of Spirits you control."
+SET INFO: enchantment cards: 18 of 207 nonland cards in the set (9%), 11 of 149 at common/uncommon. A typical deck that can play this card has about 2.4 of its 23 spells like this.
+  MATCHING CARDS (18; commons+uncommons 11): by mana value MV<=1 1, MV2 4, MV3 7, MV4 4, MV5 1, MV6+ 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Enchantment — Aura] Enchant creature / Enchanted creature gets +2/+2 as long as it's a Vampire. Otherwise, it gets -2/-2." || "[MV 4 G | Enchantment] Whenever a Human you control dies, draw a card. / Whenever a creature you control with a +1/+1 counter on it dies, you gain 2 life."
+SET INFO: "Spirit" creatures: 10 of 118 creature cards in the set (8%), 7 of 80 at common/uncommon. A typical deck that can play this card has about 2.2 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 2.2 of the 23 spells).
+  MATCHING CARDS (10; commons+uncommons 7): by mana value MV2 4, MV3 3, MV5 2, MV6+ 1. Creatures among them: 10, average power/toughness 2.7/3 (commons+uncommons only 2.9/3.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 U | Creature — Spirit | 3/3] Defender / Whenever an enchantment you control enters, this creature can attack this turn as though it didn't have defender." || "[MV 6 G | Creature — Wolf Spirit | 6/6] When this creature enters, you gain life equal to the greatest toughness among other creatures you control."
+
+#1182 | MV 3 G | Creature — Human Warrior | 1/1
+Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+This creature enters with two +1/+1 counters on it for each other nontoken Human you control.
+SET INFO: "Human" creatures: 32 of 117 creature cards in the set (27%), 20 of 80 at common/uncommon. A typical deck that can play this card has about 4.5 of its 15 creatures of this type.
+  MATCHING CARDS (32; commons+uncommons 20): by mana value MV<=1 4, MV2 7, MV3 10, MV4 10, MV5 1. Creatures among them: 32, average power/toughness 2/2.5 (commons+uncommons only 2/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Cleric | 1/1] Vigilance / Sacrifice this creature: Target creature you control with a +1/+1 counter on it gains lifelink and indestructible until end of turn." || "[MV 3 G | Creature — Human Archer | 1/4] Reach / Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)" || "[MV 5 G | Creature — Human Ranger | 2/4] Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.) / Whenever one or more +1/+1 counters are put on one or more Humans you control, draw a card. This abili…"
+
+#1183 | MV 3 B | Creature — Zombie | 3/1
+Whenever this creature or another nontoken Zombie you control dies, create a 2/2 black Zombie creature token.
+SET INFO: "Zombie" creatures: 19 of 117 creature cards in the set (16%), 15 of 80 at common/uncommon. A typical deck that can play this card has about 4.2 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 3.8 of the 23 spells).
+  MATCHING CARDS (19; commons+uncommons 15): by mana value MV<=1 1, MV2 7, MV3 3, MV4 3, MV5 4, MV6+ 1. Creatures among them: 19, average power/toughness 2.5/3.4 (commons+uncommons only 2.4/3.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 U | Creature — Zombie Horse | 3/3] As an additional cost to cast this spell, exile a creature card from your graveyard. / {3}{U}, Exile this card from your graveyard: Draw a card." || "[MV 3 U | Creature — Zombie | 3/2] Mechanism B (When this creature enters, you may sacrifice a creature.) / When this creature Mechanism B a creature, scry 1, then draw a card. (To scry 1, look at the top card of your library, then you may put that card on the bot…" || "[MV 5 B | Creature — Zombie Soldier | 1/13] This creature enters tapped."
+
+#1184 | MV 5 W | Creature — Spirit | 3/3
+Flying
+{3}{W}, Exile this card from your graveyard: Create two 1/1 white Spirit creature tokens with flying. Activate only if you control an enchantment and only as a sorcery.
+SET INFO: enchantment cards: 19 of 207 nonland cards in the set (9%), 11 of 148 at common/uncommon. A typical deck that can play this card has about 2.5 of its 23 spells like this.
+  MATCHING CARDS (19; commons+uncommons 11): by mana value MV<=1 1, MV2 4, MV3 7, MV4 5, MV5 1, MV6+ 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Enchantment — Aura] Enchant creature / Enchanted creature gets +2/+2 as long as it's a Vampire. Otherwise, it gets -2/-2." || "[MV 3 G | Enchantment] At the beginning of your upkeep, you may mill two cards. (You may put the top two cards of your library into your graveyard.) / Whenever one or more creature cards are put into your graveyard from anywhere during your turn, creat…" || "[MV 4 G | Enchantment] Whenever a Human you control dies, draw a card. / Whenever a creature you control with a +1/+1 counter on it dies, you gain 2 life."
+
+#1185 | MV 3 G | Enchantment
+At the beginning of combat on your turn, target Wolf or Werewolf you control gets +2/+2 until end of turn.
+Whenever an opponent casts their second spell each turn, create a 2/2 green Wolf creature token.
+SET INFO: "Wolf" creatures: 9 of 118 creature cards in the set (8%), 7 of 80 at common/uncommon. A typical deck that can play this card has about 2.5 of its 15 creatures of this type.
+  MATCHING CARDS (9; commons+uncommons 7): by mana value MV<=1 2, MV2 4, MV3 1, MV4 1, MV6+ 1. Creatures among them: 9, average power/toughness 2.6/2.4 (commons+uncommons only 2.6/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Wolf | 1/1] {1}{G}: This creature gets +2/+2 until end of turn. Activate only once each turn." || "[MV 6 G | Creature — Wolf Spirit | 6/6] When this creature enters, you gain life equal to the greatest toughness among other creatures you control."
+SET INFO: "Werewolf" creatures: 0 of 118 creature cards in the set (0%), 0 of 80 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#1186 | MV 2 R | Creature — Wolf | 2/2
+As long as you control another Wolf or Werewolf, this creature gets +1/+0 and has trample.
+SET INFO: "Wolf" creatures: 8 of 117 creature cards in the set (7%), 6 of 79 at common/uncommon. A typical deck that can play this card has about 1.5 of its 15 creatures of this type.
+  MATCHING CARDS (8; commons+uncommons 6): by mana value MV<=1 2, MV2 3, MV3 1, MV4 1, MV6+ 1. Creatures among them: 8, average power/toughness 2.6/2.5 (commons+uncommons only 2.7/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Wolf | 1/1] {1}{G}: This creature gets +2/+2 until end of turn. Activate only once each turn." || "[MV 6 G | Creature — Wolf Spirit | 6/6] When this creature enters, you gain life equal to the greatest toughness among other creatures you control."
+SET INFO: "Werewolf" creatures: 0 of 117 creature cards in the set (0%), 0 of 79 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#1187 | MV 5 R | Sorcery
+~ deals 4 damage to target creature. Create a number of Blood tokens equal to the amount of excess damage dealt to that creature this way. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#1188 | MV 4 G | Enchantment
+Whenever a Human you control dies, draw a card.
+Whenever a creature you control with a +1/+1 counter on it dies, you gain 2 life.
+SET INFO: "Human" creatures: 33 of 118 creature cards in the set (28%), 20 of 80 at common/uncommon. A typical deck that can play this card has about 4.6 of its 15 creatures of this type.
+  MATCHING CARDS (33; commons+uncommons 20): by mana value MV<=1 4, MV2 7, MV3 11, MV4 10, MV5 1. Creatures among them: 33, average power/toughness 2/2.5 (commons+uncommons only 2/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Cleric | 1/1] Vigilance / Sacrifice this creature: Target creature you control with a +1/+1 counter on it gains lifelink and indestructible until end of turn." || "[MV 3 G | Creature — Human Archer | 1/4] Reach / Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)" || "[MV 5 G | Creature — Human Ranger | 2/4] Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.) / Whenever one or more +1/+1 counters are put on one or more Humans you control, draw a card. This abili…"
+
+#1189 | MV 3 R | Sorcery
+Choose one or both —
+• Creatures you control get +1/+0 until end of turn.
+• Target Vampire you control deals damage equal to its power to another target creature.
+SET INFO: "Vampire" creatures: 22 of 118 creature cards in the set (19%), 13 of 80 at common/uncommon. A typical deck that can play this card has about 3.7 of its 15 creatures of this type.
+  MATCHING CARDS (22; commons+uncommons 13): by mana value MV<=1 2, MV2 3, MV3 8, MV4 5, MV5 2, MV6+ 2. Creatures among them: 22, average power/toughness 2.9/3 (commons+uncommons only 2.5/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Vampire Cleric | 1/2] Vigilance / {4}{W}: Put a +1/+1 counter on this creature." || "[MV 3 R | Creature — Vampire | 3/2] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card,…" || "[MV 5 B | Creature — Vampire Soldier | 4/4] Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card."
+
+#1190 | MV 4 U | Enchantment
+Whenever a nontoken Zombie you control enters, create a token that's a copy of that creature.
+SET INFO: "Zombie" creatures: 20 of 118 creature cards in the set (17%), 15 of 80 at common/uncommon. A typical deck that can play this card has about 4.5 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 3.7 of the 23 spells).
+  MATCHING CARDS (20; commons+uncommons 15): by mana value MV<=1 1, MV2 7, MV3 4, MV4 3, MV5 4, MV6+ 1. Creatures among them: 20, average power/toughness 2.5/3.2 (commons+uncommons only 2.4/3.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 U | Creature — Zombie Horse | 3/3] As an additional cost to cast this spell, exile a creature card from your graveyard. / {3}{U}, Exile this card from your graveyard: Draw a card." || "[MV 3 U | Creature — Zombie | 3/2] Mechanism B (When this creature enters, you may sacrifice a creature.) / When this creature Mechanism B a creature, scry 1, then draw a card. (To scry 1, look at the top card of your library, then you may put that card on the bot…" || "[MV 5 B | Creature — Zombie Soldier | 1/13] This creature enters tapped."
+
+#1191 | MV 6 BR | Legendary Creature — Vampire Noble | 3/4
+Flying, haste
+Whenever ~ attacks, return target creature card from your graveyard to the battlefield tapped and attacking. It gains "When you don't control a legendary Vampire, exile this creature."
+SET INFO: "Vampire" creatures: 21 of 117 creature cards in the set (18%), 13 of 80 at common/uncommon. A typical deck that can play this card has about 5.1 of its 15 creatures of this type.
+  MATCHING CARDS (21; commons+uncommons 13): by mana value MV<=1 2, MV2 3, MV3 8, MV4 5, MV5 2, MV6+ 1. Creatures among them: 21, average power/toughness 2.9/3 (commons+uncommons only 2.5/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Vampire Cleric | 1/2] Vigilance / {4}{W}: Put a +1/+1 counter on this creature." || "[MV 3 R | Creature — Vampire | 3/2] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card,…" || "[MV 5 B | Creature — Vampire Soldier | 4/4] Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card."
+
+#1192 | MV 2 G | Creature — Wolf | 1/1
+At the beginning of combat on your turn, if you control another Wolf or Werewolf, put a +1/+1 counter on this creature.
+When this creature dies, you gain life equal to its power.
+SET INFO: "Wolf" creatures: 8 of 117 creature cards in the set (7%), 6 of 79 at common/uncommon. A typical deck that can play this card has about 2.3 of its 15 creatures of this type.
+  MATCHING CARDS (8; commons+uncommons 6): by mana value MV<=1 2, MV2 3, MV3 1, MV4 1, MV6+ 1. Creatures among them: 8, average power/toughness 2.8/2.6 (commons+uncommons only 2.8/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Wolf | 1/1] {1}{G}: This creature gets +2/+2 until end of turn. Activate only once each turn." || "[MV 6 G | Creature — Wolf Spirit | 6/6] When this creature enters, you gain life equal to the greatest toughness among other creatures you control."
+SET INFO: "Werewolf" creatures: 0 of 117 creature cards in the set (0%), 0 of 79 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#1193 | MV 3 R | Instant
+~ deals 5 damage to target creature or planeswalker. If that permanent is a Spirit, ~ also deals 2 damage to that permanent's controller.
+SET INFO: "Spirit" creatures: 10 of 118 creature cards in the set (8%), 7 of 80 at common/uncommon. A typical deck that can play this card has about 0.9 of its 15 creatures of this type. 4 other cards also make such creature tokens (counting them, about 0.9 of the 23 spells).
+  MATCHING CARDS (10; commons+uncommons 7): by mana value MV2 4, MV3 3, MV5 2, MV6+ 1. Creatures among them: 10, average power/toughness 2.7/3 (commons+uncommons only 2.9/3.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 U | Creature — Spirit | 3/3] Defender / Whenever an enchantment you control enters, this creature can attack this turn as though it didn't have defender." || "[MV 3 U | Creature — Spirit | 2/3] Flying / This creature can block only creatures with flying." || "[MV 6 G | Creature — Wolf Spirit | 6/6] When this creature enters, you gain life equal to the greatest toughness among other creatures you control."
+
+#1194 | MV 3 W | Creature — Human Soldier | 3/2
+When this creature enters, if you control another Human, draw a card.
+SET INFO: "Human" creatures: 32 of 117 creature cards in the set (27%), 19 of 79 at common/uncommon. A typical deck that can play this card has about 5.5 of its 15 creatures of this type.
+  MATCHING CARDS (32; commons+uncommons 19): by mana value MV<=1 4, MV2 7, MV3 10, MV4 10, MV5 1. Creatures among them: 32, average power/toughness 1.9/2.5 (commons+uncommons only 2/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Cleric | 1/1] Vigilance / Sacrifice this creature: Target creature you control with a +1/+1 counter on it gains lifelink and indestructible until end of turn." || "[MV 3 R | Creature — Human Warrior | 2/2] Haste (This creature can attack and {T} as soon as it comes under your control.) / When this creature enters, target creature gets +2/+0 until end of turn." || "[MV 5 G | Creature — Human Ranger | 2/4] Mechanism C (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.) / Whenever one or more +1/+1 counters are put on one or more Humans you control, draw a card. This abili…"
+
+#1195 | MV 2 R | Creature — Wolf | 2/2
+{3}{R}, {T}: This creature deals damage equal to the number of Wolves and Werewolves you control to target opponent.
+SET INFO: "Wolf" creatures: 8 of 117 creature cards in the set (7%), 6 of 79 at common/uncommon. A typical deck that can play this card has about 1.8 of its 15 creatures of this type.
+  MATCHING CARDS (8; commons+uncommons 6): by mana value MV<=1 2, MV2 3, MV3 1, MV4 1, MV6+ 1. Creatures among them: 8, average power/toughness 2.6/2.5 (commons+uncommons only 2.7/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Wolf | 1/1] {1}{G}: This creature gets +2/+2 until end of turn. Activate only once each turn." || "[MV 6 G | Creature — Wolf Spirit | 6/6] When this creature enters, you gain life equal to the greatest toughness among other creatures you control."
+SET INFO: "Werewolf" creatures: 0 of 117 creature cards in the set (0%), 0 of 79 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#1196 | MV 6 W | Enchantment
+Creatures you control with +1/+1 counters on them have base power and toughness 4/4, have flying, and are Angels in addition to their other types.
+SET INFO: "Angel" creatures: 1 of 118 creature cards in the set (1%), 1 of 80 at common/uncommon. A typical deck that can play this card has about 0.3 of its 15 creatures of this type.
+  MATCHING CARDS (1; commons+uncommons 1): by mana value MV5 1. Creatures among them: 1, average power/toughness 3/3 (commons+uncommons only 3/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 5 W | Creature — Angel Soldier | 3/3] Flying / When this creature enters, put a +1/+1 counter on each of up to two other target creatures."
+
+#1197 | MV 4 W | Enchantment — Aura
+This spell has flash as long as you control a Spirit.
+When you cast this spell, tap up to two target creatures you don't control.
+Enchant creature you control
+Enchanted creature gets +1/+2.
+SET INFO: "Spirit" creatures: 10 of 118 creature cards in the set (8%), 7 of 80 at common/uncommon. A typical deck that can play this card has about 2.2 of its 15 creatures of this type. 4 other cards also make such creature tokens (counting them, about 2.3 of the 23 spells).
+  MATCHING CARDS (10; commons+uncommons 7): by mana value MV2 4, MV3 3, MV5 2, MV6+ 1. Creatures among them: 10, average power/toughness 2.7/3 (commons+uncommons only 2.9/3.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 U | Creature — Spirit | 3/3] Defender / Whenever an enchantment you control enters, this creature can attack this turn as though it didn't have defender." || "[MV 3 U | Creature — Spirit | 2/3] Flying / This creature can block only creatures with flying." || "[MV 6 G | Creature — Wolf Spirit | 6/6] When this creature enters, you gain life equal to the greatest toughness among other creatures you control."
+
+#1198 | MV 7 B | Legendary Creature — Slug Horror | 7/7
+At the beginning of each end step, put a slime counter on each creature you don't control.
+Creatures you don't control get -1/-1 for each slime counter on them.
+Whenever a creature you don't control with a slime counter on it dies, create a 1/1 black Slug creature token.
+{U}{B}, Sacrifice a Slug: Draw a card.
+SET INFO: "Slug" creatures: 0 of 117 creature cards in the set (0%), 0 of 80 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#1199 | MV 2 W | Creature — Human Soldier | 2/2
+Whenever this creature deals damage to a Vampire, destroy that creature.
+SET INFO: "Vampire" creatures: 22 of 117 creature cards in the set (19%), 13 of 79 at common/uncommon. A typical deck that can play this card has about 2.0 of its 15 creatures of this type.
+  MATCHING CARDS (22; commons+uncommons 13): by mana value MV<=1 2, MV2 3, MV3 8, MV4 5, MV5 2, MV6+ 2. Creatures among them: 22, average power/toughness 2.9/3 (commons+uncommons only 2.5/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Vampire Cleric | 1/2] Vigilance / {4}{W}: Put a +1/+1 counter on this creature." || "[MV 3 R | Creature — Vampire | 3/2] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card,…" || "[MV 5 B | Creature — Vampire Soldier | 4/4] Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card."
+
+#1200 | MV 2 W | Creature — Spirit Cleric | 2/2
+Whenever you gain life, put a +1/+1 counter on this creature.
+As long as this creature has four or more +1/+1 counters on it, it has flying and vigilance.
+As long as this creature has ten or more +1/+1 counters on it, it has indestructible.
+
+#1201 | MV 0 C | Land
+{T}: Add {C}.
+{T}, Pay 1 life: Add one mana of any color. Spend this mana only to cast a Vampire spell.
+{5}, {T}: Create a Blood token. This ability costs {1} less to activate for each Vampire you control. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+SET INFO: "Vampire" creatures: 22 of 118 creature cards in the set (19%), 13 of 80 at common/uncommon. A typical deck that can play this card has about 2.2 of its 15 creatures of this type.
+  MATCHING CARDS (22; commons+uncommons 13): by mana value MV<=1 2, MV2 3, MV3 8, MV4 5, MV5 2, MV6+ 2. Creatures among them: 22, average power/toughness 2.9/3 (commons+uncommons only 2.5/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Vampire Cleric | 1/2] Vigilance / {4}{W}: Put a +1/+1 counter on this creature." || "[MV 3 R | Creature — Vampire | 3/2] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card,…" || "[MV 5 B | Creature — Vampire Soldier | 4/4] Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card."
+
+#1202 | MV 2 C | Artifact
+When this artifact enters, draw a card.
+{T}, Sacrifice this artifact: Target creature can't be blocked this turn. If it's a Vampire, it also gains lifelink until end of turn.
+SET INFO: "Vampire" creatures: 22 of 118 creature cards in the set (19%), 13 of 80 at common/uncommon. A typical deck that can play this card has about 2.2 of its 15 creatures of this type.
+  MATCHING CARDS (22; commons+uncommons 13): by mana value MV<=1 2, MV2 3, MV3 8, MV4 5, MV5 2, MV6+ 2. Creatures among them: 22, average power/toughness 2.9/3 (commons+uncommons only 2.5/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Vampire Cleric | 1/2] Vigilance / {4}{W}: Put a +1/+1 counter on this creature." || "[MV 3 R | Creature — Vampire | 3/2] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card,…" || "[MV 5 B | Creature — Vampire Soldier | 4/4] Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card."
+
+#1203 | MV 3 W | Creature — Vampire | 2/3
+Flying
+Whenever one or more other creatures you control with power 2 or less enter, draw a card. This ability triggers only once each turn.
+-- pass p1, batch VOW_0: 38 cards

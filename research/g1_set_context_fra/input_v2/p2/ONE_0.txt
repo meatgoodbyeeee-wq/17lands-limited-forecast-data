@@ -1,0 +1,184 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 253, nonland 238, creatures 133, commons+uncommons 174. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 4 1/1.2; MV2 6 1.8/1.7; MV3 3 2/2.7; MV4 5 3.2/4; MV5 2 3.5/5; MV6+ 1 4/4 | total 21 avg 2.3/2.7
+  U: MV<=1 1 0/3; MV2 6 1.5/1.3; MV3 5 1.6/2.6; MV4 4 2.5/4.5; MV5 1 4/3; MV6+ 1 4/4 | total 18 avg 1.9/2.7
+  B: MV<=1 1 1/1; MV2 5 1.6/2; MV3 7 2.4/2.7; MV4 6 3.8/3.7; MV5 3 5.3/3.7; MV6+ 1 5/5 | total 23 avg 3/3
+  R: MV<=1 4 0.8/1.2; MV2 2 1.5/2.5; MV3 6 2.7/2.7; MV4 3 4/3; MV5 2 4.5/5; MV6+ 2 5.5/4.5 | total 19 avg 2.8/2.8
+  G: MV<=1 3 0.7/1.3; MV2 5 1.8/2.2; MV3 4 2.5/3; MV4 4 4/4; MV5 3 4/4.3; MV6+ 4 6/6.5 | total 23 avg 3.2/3.6
+  gold: MV2 5 2/2.2; MV3 5 2.4/2.8; MV4 6 2.6/4; MV5 1 4/4; MV6+ 3 6/6 | total 20 avg 3/3.5
+  colourless: MV2 3 2.3/1; MV3 3 2/2.7; MV4 1 3/1; MV5 1 5/5; MV6+ 1 7/5 | total 9 avg 3.1/2.4
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 3 1/1.3; MV2 5 1.8/1.6; MV3 3 2/2.7; MV4 3 2.3/3.7; MV5 1 3/3; MV6+ 1 4/4 | total 16 avg 2/2.4
+  U: MV<=1 1 0/3; MV2 5 1.4/1.4; MV3 4 1.5/2.2; MV4 3 2.3/4.3; MV5 1 4/3; MV6+ 1 4/4 | total 15 avg 1.9/2.6
+  B: MV<=1 1 1/1; MV2 4 1.5/2; MV3 5 2.2/2.4; MV4 4 3/2.8; MV5 2 4/4; MV6+ 1 5/5 | total 17 avg 2.5/2.6
+  R: MV<=1 3 0.7/1; MV2 2 1.5/2.5; MV3 5 2.6/2.6; MV4 2 3.5/2.5; MV5 2 4.5/5; MV6+ 1 7/5 | total 15 avg 2.7/2.7
+  G: MV<=1 2 0.5/1; MV2 5 1.8/2.2; MV3 3 2/2.7; MV4 3 3.7/3.7; MV5 2 3.5/4; MV6+ 2 6/6 | total 17 avg 2.7/3.1
+  gold: MV2 2 2/1.5; MV3 2 2/3; MV4 3 1.5/4.5; MV5 1 4/4; MV6+ 1 5/5 | total 9 avg 2.5/3.4
+  colourless: MV2 2 2/1; MV3 3 2/2.7; MV4 1 3/1 | total 6 avg 2.2/1.8
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 4|2; damage 1 (3) | 0 (); exile 3 (2,3,3) | 1 (6); sweeper 0 () | 1 (2)
+  U: any 2|0; bounce/tuck 1 (2) | 0 (); lock-down 1 (3) | 0 ()
+  B: any 5|1; destroy 1 (1) | 0 (); exile 1 (2) | 0 (); -X/-X 3 (1,2,3) | 1 (1)
+  R: any 9|1; damage 6 (1,2,3,3,4,5) | 1 (4); fight/bite 1 (1) | 0 (); sweeper 2 (4,4) | 0 ()
+  G: any 3|0; destroy 1 (3) | 0 (); fight/bite 2 (2,2) | 0 ()
+  gold: any 3|3; destroy 1 (5) | 0 (); damage 1 (4) | 1 (5); exile 0 () | 2 (4,7); sweeper 1 (6) | 0 ()
+  colourless: any 1|2; destroy 0 () | 1 (5); damage 0 () | 1 (2); bounce/tuck 1 (1) | 0 (); sweeper 0 () | 1 (2)
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 16|5; flying 5|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|1; reach 0|0; can block fliers (flying or reach) 5|1; other cards that give flying 2|0
+  U: creatures 15|3; flying 6|1; protection 0|0; unblockable-type 0|1; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 6|2; reach 0|0; can block fliers (flying or reach) 6|1; other cards that give flying 2|0
+  B: creatures 17|6; flying 3|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|1; reach 0|0; can block fliers (flying or reach) 3|1; other cards that give flying 0|0
+  R: creatures 15|4; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 1|0; can block fliers (flying or reach) 1|1; other cards that give flying 0|1
+  G: creatures 17|6; flying 0|0; protection 0|0; unblockable-type 2|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|0; reach 2|1; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  gold: creatures 9|11; flying 4|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 4|2; reach 0|0; can block fliers (flying or reach) 4|2; other cards that give flying 0|1
+  colourless: creatures 6|3; flying 0|0; protection 0|1; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 0|0; can block fliers (flying or reach) 0|0; other cards that give flying 1|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (keyword; 30 cards, commons+uncommons 25; colours C/U|R/M: W 6|1, U 1|0, B 6|1, G 5|3, gold 4|0, colourless 3|0). Example text of a card: "Mechanism A 1 (Players dealt combat damage by this creature also get a poison counter.)"
+  Mechanism B (keyword; 20 cards, commons+uncommons 19; colours C/U|R/M: U 6|0, B 5|0, R 2|0, G 5|1, gold 1|0). Example text of a card: "Target creature gets -1/-1 until end of turn. Mechanism B. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)"
+  Mechanism C (ability word; 16 cards, commons+uncommons 15; colours C/U|R/M: W 4|1, U 2|0, B 6|0, G 1|0, gold 1|0, colourless 1|0). Example text of a card: "Mechanism C — {T}: Target 1/1 creature gets +2/+1 until end of turn. Activate only if an opponent has three or more poison counters."
+  Mechanism D (keyword; 5 cards, commons+uncommons 0; colours C/U|R/M: U 0|1, B 0|1, G 0|1, gold 0|2). Example text of a card: "Mechanism D ({R/W/P} can be paid with {R}, {W}, or 2 life. If life was paid, this planeswalker enters with two fewer loyalty counters.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 4 WU, Artifact Creature — Phyrexian Squid /5): Flying / ~'s power is equal to the number of artifacts you control.
+    theme "artifact cards": have 59 [W 9|2, U 9|2, B 3|0, R 6|2, G 2|1, gold 2|0, colourless 15|6]; refer 7 [W 1|0, U 1|0, B 1|0, R 2|1, gold 1|0]
+  UB:
+    gold uncommon (MV 2 UB, Creature — Phyrexian Bat 2/1): Flying / Mechanism A 1 (Players dealt combat damage by this creature also get a poison counter.) / When you Mechanism B, return this card from your graveyard to your hand.
+    theme "the graveyard": have 27 [W 1|0, U 2|1, B 6|3, R 3|1, G 3|1, gold 2|3, colourless 1|0]
+  BR:
+    gold uncommon (MV 3 BR, Creature — Phyrexian Beast 2/3): When this creature enters, create a 1/1 red Phyrexian Goblin creature token. / Whenever another creature or artifact you control is put into a graveyard from the battlefield, put an oil counter on this creature. / Remove three oil counters from this creature: Exile the top card of your library. You may play that card this turn.
+    theme "artifact cards": have 59 [W 9|2, U 9|2, B 3|0, R 6|2, G 2|1, gold 2|0, colourless 15|6]; refer 7 [W 1|0, U 1|0, B 1|0, R 2|1, gold 1|0]
+    theme "tokens": have 30 [W 5|5, U 0|1, B 2|0, R 3|2, G 2|1, gold 1|8]
+    theme "the graveyard": have 27 [W 1|0, U 2|1, B 6|3, R 3|1, G 3|1, gold 2|3, colourless 1|0]
+  RG:
+    gold uncommon (MV 6 RG, Creature — Phyrexian Warrior 5/5): This spell costs {1} less to cast for each permanent you control with oil counters on it. / Vigilance / When this creature enters, it deals 1 damage to each creature your opponents control.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  GW:
+    gold uncommon (MV 2 WG, Creature — Phyrexian Cleric 2/2): Mechanism A 2 (Players dealt combat damage by this creature also get two poison counters.) / Whenever another creature you control with Mechanism A attacks, it gets +1/+1 until end of turn.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  WB:
+    gold uncommon (MV 5 WB, Creature — Phyrexian Cleric 4/4): Vigilance / Mechanism C — When this creature enters, if an opponent has three or more poison counters, destroy target creature or planeswalker an opponent controls.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  UR:
+    gold uncommon (MV 4 UR, Creature — Phyrexian Chimera 2/4): Flying / Whenever you cast a noncreature spell, put an oil counter on this creature. / Remove three oil counters from this creature: Draw a card. Then you may discard a nonland card. When you discard a card this way, this creature deals 3 damage to target creature or planeswalker. Activate only as a sorcery.
+    theme "noncreature cards": have 105 [W 14|4, U 14|3, B 13|3, R 15|5, G 13|3, gold 1|5, colourless 9|3]; refer 8 [U 3|1, R 1|1, gold 1|1]
+  BG:
+    gold uncommon (MV 4 BG, Creature — Phyrexian Zombie Cleric 1/5): Mechanism A 2 (Players dealt combat damage by this creature also get two poison counters.) / Whenever a creature you control with Mechanism A deals combat damage to a player, that player gets an additional poison counter. / {1}{B}{G}: Target creature you control with Mechanism A gains deathtouch until end of turn.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  RW:
+    gold uncommon (MV 3 WR, Artifact — Equipment): For Mirrodin! (When this Equipment enters, create a 2/2 red Rebel creature token, then attach this to it.) / Equip abilities you activate of other Equipment cost {1} less to activate. / Equipped creature has double strike. / Equip {3}{R}{W}
+    theme "Equipment cards (incl. makers)": have 13 [W 4|0, U 0|1, R 3|1, G 1|0, gold 1|0, colourless 1|1]; refer 2 [W 0|1, R 1|0]
+  GU:
+    gold uncommon (MV 3 UG, Creature — Phyrexian Bird 2/3): Flying / Mechanism A 1 (Players dealt combat damage by this creature also get a poison counter.) / Whenever another creature you control enters, you may pay {2}. If you do, Mechanism B. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+    involved cards: no theme could be extracted by the rules (counts not given).
+Top creature types (cards; colours "C/U|R/M"):
+  Phyrexian 123: W 15|4, U 15|3, B 17|6, R 13|4, G 17|5, gold 9|9, colourless 4|2 (commons+uncommons 90)
+  Warrior 15: B 3|0, R 7|0, G 3|0, gold 1|1 (commons+uncommons 14)
+  Beast 12: U 1|0, R 3|0, G 3|2, gold 1|2 (commons+uncommons 8)
+  Horror 11: W 1|2, U 1|1, B 2|2, R 0|1, G 0|1 (commons+uncommons 4)
+  Cleric 10: W 4|1, B 1|0, G 1|0, gold 3|0 (commons+uncommons 9)
+  Wizard 9: U 4|0, R 2|1, gold 0|2 (commons+uncommons 6)
+  Elf 5: G 3|0, gold 0|2 (commons+uncommons 3)
+  Insect 5: B 3|0, G 1|0, colourless 1|0 (commons+uncommons 5)
+  Soldier 5: W 5|0 (commons+uncommons 5)
+  Bird 4: W 1|0, U 2|0, gold 1|0 (commons+uncommons 4)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 5|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|0
+  U: instant 6|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|0
+  B: instant 5|1, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|1
+  R: instant 6|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|0
+  G: instant 3|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|0
+  gold: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#986 | MV 3 R | Artifact
+At the beginning of combat on your turn, put an oil counter on this artifact, then create an X/1 red Phyrexian Horror creature token with trample and haste, where X is the number of oil counters on this artifact. Sacrifice that token at the beginning of the next end step.
+
+#985 | MV 4 R | Artifact Creature — Phyrexian Wizard | 4/2
+When this creature enters, it deals X damage to any target, where X is the number of permanents you control with oil counters on them.
+
+#984 | MV 3 U | Creature — Phyrexian Drake | 0/0
+Flying
+This creature enters with an oil counter on it.
+This creature gets +1/+1 for each oil counter on it.
+Whenever you cast a noncreature spell, put an oil counter on this creature.
+SET INFO: noncreature spells: 105 of 237 nonland cards in the set (44%), 79 of 173 at common/uncommon. A typical deck that can play this card has about 11.4 of its 23 spells like this.
+  MATCHING CARDS (105; commons+uncommons 79): by mana value MV<=1 22, MV2 32, MV3 22, MV4 14, MV5 10, MV6+ 5. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Sorcery] As an additional cost to cast this spell, pay {4} or sacrifice an artifact or creature. / Destroy target creature or planeswalker." || "[MV 2 B | Sorcery] Target creature gets -4/-4 until end of turn. Mechanism B. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)" || "[MV 6 G | Artifact — Equipment] For Mirrodin! (When this Equipment enters, create a 2/2 red Rebel creature token, then attach this to it.) / Equipped creature gets +4/+4 and has trample. / Equip {5}{G}{G}"
+
+#983 | MV 2 G | Instant
+Target creature gets +4/+4 until end of turn.
+
+#982 | MV 0 C | Land — Sphere
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast Phyrexian creature spells.
+Mechanism C — {T}: Target 1/1 creature gets +2/+1 until end of turn. Activate only if an opponent has three or more poison counters.
+SET INFO: "Phyrexian" creatures: 123 of 133 creature cards in the set (92%), 90 of 95 at common/uncommon. A typical deck that can play this card has about 13.5 of its 15 creatures of this type. 12 other cards also make such creature tokens (counting them, about 11.3 of the 23 spells).
+  MATCHING CARDS (123; commons+uncommons 90): by mana value MV<=1 13, MV2 29, MV3 31, MV4 28, MV5 11, MV6+ 11. Creatures among them: 123, average power/toughness 2.7/3 (commons+uncommons only 2.3/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Insect | 1/1] Deathtouch / Mechanism A 1 (Players dealt combat damage by this creature also get a poison counter.)" || "[MV 3 U | Creature — Phyrexian Artificer | 2/3] Mechanism A 1 (Players dealt combat damage by this creature also get a poison counter.) / When this creature enters, up to one target artifact you control becomes an artifact creature with base power and toughness 4/4 for as long…" || "[MV 7 G | Creature — Phyrexian Knight | 6/7] Mechanism A 6 (Players dealt combat damage by this creature also get six poison counters.) / This creature can't be blocked by creatures with power 2 or less."
+
+#981 | MV 0 C | Land — Sphere
+{T}: Add {C}.
+{1}, {T}: Add one mana of any color.
+{X}, {T}: This land becomes a copy of target nontoken artifact you control with mana value X.
+SET INFO: artifact cards: 59 of 238 nonland cards in the set (25%), 46 of 174 at common/uncommon. A typical deck that can play this card has about 8.1 of its 23 spells like this. 12 other cards also make such tokens (counting them, about 9.0 of the 23 spells).
+  MATCHING CARDS (59; commons+uncommons 46): by mana value MV<=1 12, MV2 16, MV3 16, MV4 9, MV5 4, MV6+ 2. Creatures among them: 24, average power/toughness 2.4/2.3 (commons+uncommons only 2.1/2.1). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Artifact] At the beginning of your upkeep, put an oil counter on another target nontoken artifact or creature you control. / {2}, {T}: Create a 1/1 red Phyrexian Goblin creature token. Activate only if an oil counter was removed from a per…" || "[MV 3 U | Artifact Creature — Phyrexian Cat | 3/2] Flash / When this creature enters, tap target creature an opponent controls." || "[MV 6 G | Artifact — Equipment] For Mirrodin! (When this Equipment enters, create a 2/2 red Rebel creature token, then attach this to it.) / Equipped creature gets +4/+4 and has trample. / Equip {5}{G}{G}"
+
+#980 | MV 4 BG | Creature — Phyrexian Zombie Cleric | 1/5
+Mechanism A 2 (Players dealt combat damage by this creature also get two poison counters.)
+Whenever a creature you control with Mechanism A deals combat damage to a player, that player gets an additional poison counter.
+{1}{B}{G}: Target creature you control with Mechanism A gains deathtouch until end of turn.
+
+#979 | MV 2 R | Sorcery
+As an additional cost to cast this spell, sacrifice an artifact or creature with mana value X.
+~ deals X damage divided as you choose among any number of target creatures.
+
+#978 | MV 4 C | Artifact Creature — Myr | 3/1
+When this creature enters, you may search your library for a Myr card, reveal it, put it into your hand, then shuffle.
+SET INFO: "Myr" creatures: 2 of 132 creature cards in the set (2%), 2 of 94 at common/uncommon. A typical deck that can play this card has about 0.7 of its 15 creatures of this type.
+  MATCHING CARDS (2; commons+uncommons 2): by mana value MV2 1, MV3 1. Creatures among them: 2, average power/toughness 2/2 (commons+uncommons only 2/2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 C | Artifact Creature — Phyrexian Myr | 2/1] Mechanism A 1 (Players dealt combat damage by this creature also get a poison counter.) / {T}, Pay 2 life: Add one mana of any color." || "[MV 3 C | Artifact Creature — Myr | 2/3] When this creature enters, scry 2. Then each opponent may scry 1. (To scry X, a player looks at the top X cards of their library, then puts any number of them on the bottom and the rest on top in any order.)"
+
+#977 | MV 3 G | Enchantment — Aura
+Flash
+Enchant creature
+When this Aura enters, if enchanted creature has Mechanism A, that creature gains hexproof until end of turn.
+Enchanted creature gets +2/+2.
+
+#976 | MV 2 W | Legendary Creature — Cat Cleric | 2/2
+Whenever ~ or another Cat you control enters, attach up to one target Equipment you control to that creature.
+Equipped creatures you control get +1/+1.
+{3}{W}{W}: Create a 2/2 white Cat creature token.
+SET INFO: "Cat" creatures: 2 of 132 creature cards in the set (2%), 2 of 95 at common/uncommon. A typical deck that can play this card has about 0.6 of its 15 creatures of this type.
+  MATCHING CARDS (2; commons+uncommons 2): by mana value MV3 2. Creatures among them: 2, average power/toughness 3/2 (commons+uncommons only 3/2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 3 U | Artifact Creature — Phyrexian Cat | 3/2] Flash / When this creature enters, tap target creature an opponent controls." || "[MV 3 W | Creature — Cat Rebel | 3/2] Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.) / As long as this creature is equipped, it gets +1/+1."
+SET INFO: Equipment cards (including cards that make one): 13 of 237 nonland cards in the set (5%), 10 of 174 at common/uncommon. A typical deck that can play this card has about 1.6 of its 23 spells like this.
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV<=1 1, MV2 3, MV3 4, MV4 2, MV5 2, MV6+ 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact — Equipment] Equipped creature gets +0/+2 and has Mechanism A 1. (Players dealt combat damage by equipped creature also get a poison counter.) / Equip {1}" || "[MV 6 G | Artifact — Equipment] For Mirrodin! (When this Equipment enters, create a 2/2 red Rebel creature token, then attach this to it.) / Equipped creature gets +4/+4 and has trample. / Equip {5}{G}{G}"
+
+#975 | MV 3 B | Legendary Creature — Phyrexian Rat | 3/3
+Mechanism A 1 (Players dealt combat damage by this creature also get a poison counter.)
+Other Rats you control have Mechanism A 1.
+When ~ enters, look at the top five cards of your library. You may reveal any number of Rat cards from among them and put the revealed cards into your hand. Put the rest on the bottom of your library in a random order.
+SET INFO: "Rat" creatures: 2 of 132 creature cards in the set (2%), 2 of 95 at common/uncommon. A typical deck that can play this card has about 0.7 of its 15 creatures of this type.
+  MATCHING CARDS (2; commons+uncommons 2): by mana value MV2 1, MV3 1. Creatures among them: 2, average power/toughness 1.5/3 (commons+uncommons only 1.5/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 B | Creature — Phyrexian Rat | 2/2] Mechanism A 1 (Players dealt combat damage by this creature also get a poison counter.) / When this creature dies, Mechanism B. (Choose any number of permanents and/or players, then give each another counter of each kind already …" || "[MV 3 B | Creature — Phyrexian Rat | 1/4] Mechanism C — Sacrifice an artifact or creature: Draw a card. Activate only if an opponent has three or more poison counters and only once each turn."
+
+#974 | MV 8 C | Legendary Artifact Creature — Juggernaut | 7/5
+Juggernauts you control attack each combat if able.
+Juggernauts you control can't be blocked by Walls.
+Other creatures you control have base power and toughness 5/3 and are Juggernauts in addition to their other creature types.
+SET INFO: "Juggernaut" creatures: 0 of 132 creature cards in the set (0%), 0 of 95 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+SET INFO: "Wall" creatures: 0 of 132 creature cards in the set (0%), 0 of 95 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#973 | MV 1 C | Artifact
+{1}, Sacrifice this artifact: Draw a card.
+{1}{R}, Sacrifice this artifact: Put two oil counters on target artifact or creature you control. Draw a card. Activate only as a sorcery.
+
+#972 | MV 2 U | Instant
+Look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order. Mechanism B. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+
+#971 | MV 7 WUBG | Legendary Creature — Phyrexian Angel | 7/7
+Flying, vigilance, deathtouch, lifelink
+When ~ enters, reveal the top ten cards of your library. For each card type, you may put a card of that type from among the revealed cards into your hand. Put the rest on the bottom of your library in a random order. (Artifact, battle, creature, enchantment, instant, land, planeswalker, and sorcery are card types.)
+
+#970 | MV 2 B | Instant
+Exile target creature if it has mana value 3 or less.
+Mechanism C — Exile that creature instead if its controller has three or more poison counters.
+-- pass p2, batch ONE_0: 17 cards

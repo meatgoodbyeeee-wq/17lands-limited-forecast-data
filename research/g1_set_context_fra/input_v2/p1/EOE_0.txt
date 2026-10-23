@@ -1,0 +1,156 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 257, nonland 245, creatures 138, commons+uncommons 179. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1.5/1; MV2 6 1.7/1.8; MV3 7 2.3/2.9; MV4 4 2.5/2.5; MV5 3 4/3.7; MV6+ 2 3.5/4.5 | total 24 avg 2.4/2.6
+  U: MV<=1 1 1/1; MV2 5 1.6/1.8; MV3 6 1.8/2.8; MV4 2 3/4; MV5 5 3.6/4.6; MV6+ 3 6/6 | total 22 avg 2.8/3.5
+  B: MV<=1 2 2.5/1; MV2 6 2.3/1.5; MV3 6 2.2/2; MV4 4 3/3.2; MV5 3 4/4; MV6+ 1 4/4 | total 22 avg 2.7/2.4
+  R: MV<=1 3 1.3/1.3; MV2 4 1.2/2.5; MV3 5 2.2/2.8; MV4 5 3.4/3.6; MV5 3 4.3/5; MV6+ 2 5/5 | total 22 avg 2.7/3.2
+  G: MV<=1 3 1.3/1.7; MV2 5 1.8/1.8; MV3 4 3.2/2.8; MV4 7 2.9/3.4; MV5 2 5/5; MV6+ 4 4/4.5 | total 25 avg 2.8/3
+  gold: MV2 8 1.5/2.2; MV3 4 2/3.2; MV4 2 2/3; MV5 2 3.5/3.5; MV6+ 1 4/4 | total 17 avg 2.1/2.8
+  colourless: MV2 1 2/1; MV3 2 2.5/2; MV4 1 1/3; MV6+ 2 8/7 | total 6 avg 4/3.7
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 1 1/1; MV2 5 1.4/1.8; MV3 5 2.2/2.6; MV4 4 2.5/2.5; MV5 1 3/2; MV6+ 2 3.5/4.5 | total 18 avg 2.2/2.4
+  U: MV<=1 1 1/1; MV2 4 2/1.2; MV3 6 1.8/2.8; MV4 1 3/4; MV5 3 3.7/4.3; MV6+ 2 5.5/5.5 | total 17 avg 2.6/3
+  B: MV<=1 2 2.5/1; MV2 5 2/1.6; MV3 5 2.2/1.8; MV4 3 2.7/3; MV5 2 4.5/4.5; MV6+ 1 4/4 | total 18 avg 2.6/2.3
+  R: MV<=1 2 1.5/1.5; MV2 4 1.2/2.5; MV3 4 2/2.8; MV4 4 3.5/3.2; MV5 2 4.5/5; MV6+ 2 5/5 | total 18 avg 2.7/3.2
+  G: MV<=1 3 1.3/1.7; MV2 4 1.5/1.8; MV3 4 3.2/2.8; MV4 4 3.2/3.2; MV5 2 5/5; MV6+ 3 5.3/6 | total 20 avg 3/3.1
+  gold: MV2 3 2/2.3; MV3 3 1.7/3.3; MV4 2 2/3; MV5 2 3.5/3.5 | total 10 avg 2.2/3
+  colourless: MV2 1 2/1; MV3 2 2.5/2; MV4 1 1/3; MV6+ 1 9/9 | total 5 avg 3.4/3.4
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 7|3; destroy 2 (3,4) | 0 (); damage 2 (1,1) | 0 (); exile 3 (1,3,4) | 1 (1); sweeper 0 () | 2 (3,5)
+  U: any 3|0; bounce/tuck 2 (2,6) | 0 (); lock-down 1 (4) | 0 ()
+  B: any 5|2; destroy 2 (1,4) | 0 (); exile 1 (4) | 1 (3); -X/-X 2 (1,3) | 0 (); sweeper 0 () | 1 (1)
+  R: any 8|6; damage 6 (1,2,3,4,5,7) | 3 (2,3,5); fight/bite 1 (3) | 2 (1,3); sweeper 1 (3) | 1 (6)
+  G: any 4|0; destroy 1 (3) | 0 (); damage 1 (2) | 0 (); fight/bite 2 (1,3) | 0 ()
+  gold: any 0|3; destroy 0 () | 1 (2); sweeper 0 () | 2 (6,7)
+  colourless: any 3|2; destroy 1 (1) | 1 (8); damage 2 (4,7) | 1 (5); sweeper 0 () | 1 (8)
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 18|6; flying 2|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|2; reach 0|0; can block fliers (flying or reach) 2|2; other cards that give flying 1|0
+  U: creatures 17|5; flying 5|2; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 6|2; reach 0|0; can block fliers (flying or reach) 5|2; other cards that give flying 0|1
+  B: creatures 18|4; flying 3|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|0; reach 0|0; can block fliers (flying or reach) 3|0; other cards that give flying 0|0
+  R: creatures 18|4; flying 1|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|1; reach 3|0; can block fliers (flying or reach) 4|1; other cards that give flying 1|0
+  G: creatures 20|5; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 3|0; can block fliers (flying or reach) 3|0; other cards that give flying 0|0
+  gold: creatures 10|7; flying 2|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|1; reach 0|0; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  colourless: creatures 5|1; flying 1|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 0|0; can block fliers (flying or reach) 1|0; other cards that give flying 0|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (keyword; 29 cards, commons+uncommons 19; colours C/U|R/M: W 5|2, U 4|2, B 2|0, R 3|2, G 4|2, gold 0|1, colourless 1|1). Example text of a card: "Mechanism A {X}{G} (You may cast this card from your hand for its Mechanism A cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)"
+  Mechanism B (keyword; 20 cards, commons+uncommons 12; colours C/U|R/M: W 2|2, U 2|1, B 2|1, R 2|1, G 2|1, colourless 2|2). Example text of a card: "Mechanism B (Tap another creature you control: Put charge counters equal to its power on this Planet. Mechanism B only as a sorcery.)"
+  Mechanism C (ability word; 14 cards, commons+uncommons 11; colours C/U|R/M: B 7|3, R 3|0, gold 1|0). Example text of a card: "Mechanism C — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was Mechanism A this turn, attach this Equipment to target creature you control."
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 2 WU, Creature — Lizard Artificer 2/2): Whenever you cast your second spell each turn, create a 1/1 colorless Drone artifact creature token with flying and "This token can block only creatures with flying."
+    theme "tokens": have 42 [W 7|3, U 3|1, B 3|1, R 6|2, G 7|1, gold 3|3, colourless 1|1]
+  UB:
+    gold uncommon (MV 3 UB, Legendary Creature — Human Cleric 2/3): When ~ enters, draw two cards. Then discard two cards unless you discard an artifact card. / During your turn, ~ has deathtouch.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  BR:
+    gold uncommon (MV 4 BR, Artifact Creature — Robot 2/2): Flying / When this creature enters, return target artifact or creature card from your graveyard to your hand. / Mechanism C — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was Mechanism A this turn, put a +1/+1 counter on this creature.
+    theme "+1/+1 counters": have 42 [W 11|2, U 2|0, B 3|3, R 4|1, G 7|3, gold 3|2, colourless 0|1]
+    theme "the graveyard": have 23 [W 2|2, U 2|1, B 3|4, R 1|1, G 1|1, gold 2|0, colourless 3|0]
+  RG:
+    gold uncommon (MV 3 RG, Legendary Creature — Kavu Pilot 2/4): Landfall — Whenever a land you control enters, ~ deals 1 damage to each opponent. If this is the second time this ability has resolved this turn, draw a card.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  GW:
+    gold uncommon (MV 5 WG, Legendary Creature — Human Soldier 3/3): Whenever ~ enters or attacks, put a +1/+1 counter on target creature you control. / Whenever one or more creatures you control with +1/+1 counters on them deal combat damage to a player, draw a card.
+    theme "+1/+1 counters": have 42 [W 11|2, U 2|0, B 3|3, R 4|1, G 7|3, gold 3|2, colourless 0|1]
+  WB:
+    gold uncommon (MV 5 WB, Legendary Creature — Human Knight 4/4): Deathtouch, lifelink / Whenever ~ enters or attacks, other creatures you control get +1/+0 and gain deathtouch until end of turn.
+    theme "life gain": have 21 [W 3|3, B 4|2, G 3|0, gold 1|2, colourless 3|0]
+  UR:
+    gold uncommon (MV 3 UR, Legendary Creature — Jellyfish Advisor 1/3): Flying / Whenever an artifact you control enters, put a +1/+1 counter on target creature.
+    theme "artifact cards": have 72 [W 6|3, U 12|2, B 9|2, R 10|3, G 6|1, gold 1|2, colourless 10|5]; refer 15 [W 1|1, U 2|1, B 5|0, R 1|1, gold 1|1, colourless 0|1]
+    theme "+1/+1 counters": have 42 [W 11|2, U 2|0, B 3|3, R 4|1, G 7|3, gold 3|2, colourless 0|1]
+  BG:
+    gold uncommon (MV 2 BG, Creature — Insect Citizen 2/3): When this creature enters, mill three cards. (Put the top three cards of your library into your graveyard.) / {3}{B}{G}, Sacrifice this creature: Return target creature or Spacecraft card from your graveyard to the battlefield. Activate only as a sorcery.
+    theme "the graveyard": have 23 [W 2|2, U 2|1, B 3|4, R 1|1, G 1|1, gold 2|0, colourless 3|0]
+    theme "sacrifice": have 31 [W 1|1, U 3|0, B 8|2, R 5|3, G 1|0, gold 1|2, colourless 4|0]
+  RW:
+    gold uncommon (MV 4 WR, Legendary Creature — Human Artificer 2/4): At the beginning of your end step, if you control two or more tapped creatures, create a tapped 2/2 colorless Robot artifact creature token.
+    theme "tokens": have 42 [W 7|3, U 3|1, B 3|1, R 6|2, G 7|1, gold 3|3, colourless 1|1]
+  GU:
+    gold uncommon (MV 2 UG, Creature — Insect Artificer 2/2): When this creature enters, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.") / {8}: Draw two cards and create a 2/2 colorless Robot artifact creature token.
+    theme "tokens": have 42 [W 7|3, U 3|1, B 3|1, R 6|2, G 7|1, gold 3|3, colourless 1|1]
+Top creature types (cards; colours "C/U|R/M"):
+  Human 33: W 13|3, U 0|1, B 5|4, G 1|0, gold 4|2 (commons+uncommons 23)
+  Robot 30: W 2|0, U 7|1, B 3|0, R 7|1, G 3|0, gold 1|1, colourless 4|0 (commons+uncommons 27)
+  Soldier 22: W 6|2, U 2|1, B 2|0, R 6|0, G 2|0, gold 1|0 (commons+uncommons 19)
+  Insect 19: B 5|0, G 8|2, gold 2|2 (commons+uncommons 15)
+  Artificer 13: W 2|0, U 3|0, B 1|0, R 2|1, gold 3|1 (commons+uncommons 11)
+  Kavu 10: R 7|2, gold 1|0 (commons+uncommons 8)
+  Jellyfish 9: U 7|1, gold 1|0 (commons+uncommons 8)
+  Knight 8: W 5|0, G 1|0, gold 1|1 (commons+uncommons 7)
+  Scout 8: B 1|0, R 3|0, G 3|1 (commons+uncommons 7)
+  Beast 6: R 1|0, G 4|1 (commons+uncommons 5)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 6|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|0
+  U: instant 8|1, flash 2|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 10|1
+  B: instant 3|1, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|1
+  R: instant 7|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|0
+  G: instant 4|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|0
+  gold: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#279 | MV 2 RG | Creature — Insect Scientist | 1/3
+When this creature enters, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+Whenever you sacrifice an artifact, this creature deals 2 damage to target opponent.
+
+#280 | MV 3 R | Instant
+~ deals 4 damage to target creature.
+
+#281 | MV 0 C | Land — Planet
+This land enters tapped.
+{T}: Add {G}.
+Mechanism B (Tap another creature you control: Put charge counters equal to its power on this Planet. Mechanism B only as a sorcery.)
+12+ | {G}, {T}: Add {G} for each creature you control.
+
+#282 | MV 1 U | Creature — Jellyfish Warrior | 1/1
+Flash
+Flying
+{2}, Sacrifice this creature: Draw a card.
+
+#283 | MV 5 R | Creature — Kavu Soldier | 4/5
+Reach
+Mechanism C — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was Mechanism A this turn, put a +1/+1 counter on this creature.
+
+#284 | MV 3 G | Creature — Insect Soldier | 3/3
+Whenever a creature you control with a +1/+1 counter on it dies, draw a card.
+
+#285 | MV 4 R | Creature — Kavu Soldier | 4/3
+During your turn, other creatures you control get +1/+0.
+Mechanism A {1}{R} (You may cast this card from your hand for its Mechanism A cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+
+#286 | MV 3 UR | Legendary Creature — Jellyfish Advisor | 1/3
+Flying
+Whenever an artifact you control enters, put a +1/+1 counter on target creature.
+SET INFO: artifact cards: 72 of 244 nonland cards in the set (30%), 54 of 178 at common/uncommon. A typical deck that can play this card has about 10.4 of its 23 spells like this. 26 other cards also make such tokens (counting them, about 12.2 of the 23 spells).
+  MATCHING CARDS (72; commons+uncommons 54): by mana value MV<=1 15, MV2 16, MV3 14, MV4 10, MV5 7, MV6+ 10. Creatures among them: 34, average power/toughness 2.4/2.5 (commons+uncommons only 2.6/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Artifact Creature — Robot Assassin | 1/1] Deathtouch" || "[MV 3 G | Artifact — Spacecraft | 3/3] When this Spacecraft enters, you may sacrifice a land or Lander. If you do, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle. / Mechanism B (Tap another creature you control: …" || "[MV 9 C | Artifact Creature — Robot Giant | 9/9] Mechanism A {3} (You may cast this card from your hand for its Mechanism A cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)"
+
+#287 | MV 7 C | Artifact — Spacecraft | 7/7
+When this Spacecraft enters, it deals 10 damage to up to one target creature.
+Mechanism B (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Mechanism B only as a sorcery. It's an artifact creature at 7+.)
+7+ | Flying
+
+#288 | MV 3 R | Creature — Kavu Artificer | 3/3
+Whenever this creature or another Kavu you control enters, exile the top card of your library. For as long as that card remains exiled, you may play it if you control a Kavu.
+Mechanism A {1}{R} (You may cast this card from your hand for its Mechanism A cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+SET INFO: "Kavu" creatures: 9 of 137 creature cards in the set (7%), 8 of 106 at common/uncommon. A typical deck that can play this card has about 2.4 of its 15 creatures of this type.
+  MATCHING CARDS (9; commons+uncommons 8): by mana value MV2 1, MV3 3, MV4 3, MV5 2. Creatures among them: 9, average power/toughness 3.1/3.4 (commons+uncommons only 3.1/3.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Kavu Scout | 2/1] When this creature enters, target opponent may have you create two Lander tokens. If they don't, put two +1/+1 counters on this creature. (A Lander token is an artifact with "{2}, {T}, Sacrifice this token: Search your library fo…" || "[MV 4 R | Creature — Kavu Soldier | 4/3] During your turn, other creatures you control get +1/+0. / Mechanism A {1}{R} (You may cast this card from your hand for its Mechanism A cost. Exile this creature at the beginning of the next end step, then you may cast it from e…" || "[MV 5 R | Creature — Kavu Soldier | 4/5] Reach / Mechanism C — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was Mechanism A this turn, put a +1/+1 counter on this creature."
+
+#289 | MV 4 WR | Legendary Creature — Human Artificer | 2/4
+At the beginning of your end step, if you control two or more tapped creatures, create a tapped 2/2 colorless Robot artifact creature token.
+
+#290 | MV 3 W | Sorcery
+Return up to three target creature cards with total mana value 3 or less from your graveyard to the battlefield. Put a +1/+1 counter on each of them.
+
+#291 | MV 6 UB | Sorcery
+Destroy all creatures, then any number of target players each mill half their library, rounded down.
+
+#292 | MV 3 B | Legendary Creature — Human Wizard | 2/3
+{T}: Return target creature card from your graveyard to the battlefield. It's a Skeleton in addition to its other types and has no abilities. Activate only as a sorcery.
+SET INFO: "Skeleton" creatures: 0 of 137 creature cards in the set (0%), 0 of 106 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#293 | MV 1 B | Sorcery
+Destroy all creatures with toughness X or less. You lose X life. If X is 6 or more, return a creature card put into a graveyard this way to the battlefield under your control.
+-- pass p1, batch EOE_0: 15 cards

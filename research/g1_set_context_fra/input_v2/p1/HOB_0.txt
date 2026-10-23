@@ -1,0 +1,423 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 179, nonland 171, creatures 112, commons+uncommons 114. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1/1; MV2 6 1.7/1.7; MV3 2 2.5/2.5; MV4 2 2.5/3; MV5 2 2/5 | total 14 avg 1.8/2.2
+  U: MV<=1 1 1/1; MV2 5 1.4/2; MV3 4 2.5/2.5; MV4 2 2/1.5; MV5 1 4/5; MV6+ 2 7/6.5 | total 15 avg 2.7/2.8
+  B: MV<=1 1 1/1; MV2 7 2/1.7; MV3 4 2.2/2.2; MV4 2 4/3; MV5 1 4/2; MV6+ 1 4/4 | total 16 avg 2.5/2.1
+  R: MV<=1 1 2/1; MV2 3 1.3/2; MV3 5 2.6/3; MV4 4 3.8/3; MV5 3 4/4.3; MV6+ 4 4/5 | total 20 avg 3.1/3.4
+  G: MV<=1 1 1/2; MV2 5 2/1.8; MV3 3 2/1.5; MV4 3 3.3/4.7; MV5 4 3.8/4.5; MV6+ 4 6/5.2 | total 20 avg 3.4/3.5
+  gold: MV2 5 2.2/1.8; MV3 7 2.6/2; MV4 5 2.6/3; MV5 5 5/5.2; MV6+ 2 3.5/5 | total 24 avg 3.1/3.1
+  colourless: MV2 2 1.5/1.5; MV3 1 2/2 | total 3 avg 1.7/1.7
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1/1; MV2 3 1.7/1.7; MV3 2 2.5/2.5; MV4 1 3/4; MV5 2 2/5 | total 10 avg 1.9/2.3
+  U: MV2 4 1.2/2; MV3 3 2.3/2.3; MV4 2 2/1.5; MV5 1 4/5; MV6+ 1 6/5 | total 11 avg 2.4/2.5
+  B: MV<=1 1 1/1; MV2 5 1.8/1.8; MV3 1 2/2; MV4 1 4/3; MV5 1 4/2; MV6+ 1 4/4 | total 10 avg 2.4/2.1
+  R: MV<=1 1 2/1; MV2 3 1.3/2; MV3 3 3.3/2.7; MV4 2 4/2.5; MV5 2 4/4.5; MV6+ 2 4.5/4 | total 13 avg 3.2/2.8
+  G: MV<=1 1 1/2; MV2 4 1.8/1.8; MV3 3 2/1.5; MV4 2 4/4.5; MV5 2 4/5.5; MV6+ 2 5/5.5 | total 14 avg 2.9/3.3
+  gold: MV2 2 2.5/2; MV3 5 2/1.8; MV4 3 2.7/2.7; MV5 2 5/5; MV6+ 1 4/5 | total 13 avg 2.8/2.8
+  colourless: MV2 2 1.5/1.5; MV3 1 2/2 | total 3 avg 1.7/1.7
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 3|1; destroy 1 (2) | 0 (); damage 1 (5) | 0 (); exile 1 (4) | 0 (); sweeper 0 () | 1 (4)
+  U: any 1|0; lock-down 1 (3) | 0 ()
+  B: any 4|0; destroy 2 (1,3) | 0 (); -X/-X 2 (2,3) | 0 ()
+  R: any 5|3; damage 4 (2,4,6,7) | 2 (4,7); fight/bite 0 () | 1 (4); sweeper 1 (4) | 0 ()
+  G: any 3|0; destroy 1 (2) | 0 (); fight/bite 2 (2,4) | 0 ()
+  gold: any 1|0; fight/bite 1 (5) | 0 ()
+  colourless: any 2|0; destroy 1 (1) | 0 (); damage 1 (3) | 0 ()
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 10|4; flying 1|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 0|0; can block fliers (flying or reach) 1|0; other cards that give flying 0|0
+  U: creatures 11|4; flying 2|2; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|2; reach 0|0; can block fliers (flying or reach) 2|2; other cards that give flying 0|0
+  B: creatures 10|6; flying 2|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|0; reach 0|0; can block fliers (flying or reach) 2|0; other cards that give flying 0|0
+  R: creatures 13|7; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 2|0; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  G: creatures 14|6; flying 0|0; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 2|0; can block fliers (flying or reach) 2|0; other cards that give flying 0|0
+  gold: creatures 13|11; flying 0|1; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|1; reach 2|1; can block fliers (flying or reach) 2|2; other cards that give flying 1|0
+  colourless: creatures 3|0; flying 1|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 1|0; can block fliers (flying or reach) 2|0; other cards that give flying 0|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (keyword; 9 cards, commons+uncommons 6; colours C/U|R/M: W 2|2, R 2|1, gold 2|0). Example text of a card: "Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.)"
+  Mechanism B (keyword; 8 cards, commons+uncommons 6; colours C/U|R/M: W 3|0, U 2|1, gold 1|1). Example text of a card: "When this creature dies, Mechanism B. (Draw a card, then discard a card. If you discarded a nonland card, create a 1/1 white Human Soldier creature token.)"
+  Mechanism C (keyword; 7 cards, commons+uncommons 7; colours C/U|R/M: B 2|0, R 4|0, gold 1|0). Example text of a card: "Mechanism C Goblins 1. If this spell was cast from a graveyard, Mechanism C Goblins 3 instead. (To Mechanism C Goblins X, put X +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature tok"
+  Mechanism D (ability word; 6 cards, commons+uncommons 6; colours C/U|R/M: B 2|0, G 3|0, gold 1|0). Example text of a card: "Mechanism D — At the beginning of combat on your turn, if you control a creature with power 4 or greater, put a +1/+1 counter on this creature."
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 3 WU, Legendary Creature — Human Archer 1/3): Reach / Whenever you draw your second card each turn, put a +1/+1 counter on target creature. It gains lifelink until end of turn.
+    gold uncommon (MV 4 WU, Enchantment — Aura): Enchant creature / Enchanted creature gets +2/+2 and has flying. / {2}{W/U}{W/U}: Return this card from your graveyard to the battlefield attached to target creature you control with power 1 or less. Activate only as a sorcery.
+    theme "+1/+1 counters": have 23 [W 2|1, U 2|0, B 2|2, G 7|2, gold 4|1]
+    theme "life gain": have 13 [W 2|2, B 4|1, gold 1|1, colourless 2|0]
+    theme "the graveyard": have 16 [W 2|0, U 3|3, B 2|2, R 1|0, gold 2|1]
+  UB: no gold uncommon in the list.
+  BR:
+    gold uncommon (MV 3 BR, Creature — Goblin Soldier 1/1): When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+    gold uncommon (MV 5 BR, Legendary Creature — Goblin Soldier 5/5): When ~ enters, you may sacrifice another creature. When you do, ~ deals damage equal to that creature's power to another target creature. If excess damage was dealt this way, Mechanism C Goblins X, where X is that excess damage. (Put X +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+    theme "creature type Goblin": have 13 [B 3|1, R 5|0, gold 2|2]; refer 7 [B 3|2, R 1|0, gold 1|0]
+    theme "sacrifice": have 14 [B 3|2, R 1|2, gold 1|2, colourless 2|1]
+  RG: no gold uncommon in the list.
+  GW: no gold uncommon in the list.
+  WB: no gold uncommon in the list.
+  UR: no gold uncommon in the list.
+  BG:
+    gold uncommon (MV 4 BG, Legendary Creature — Wolf 3/3): Menace (This creature can't be blocked except by two or more creatures.) / Mechanism D — Whenever you attack while you control a creature with power 4 or greater, you draw a card and lose 1 life.
+    gold uncommon (MV 5 BG, Creature — Bear 5/5): Reach, trample, haste
+    involved cards: no theme could be extracted by the rules (counts not given).
+  RW:
+    gold uncommon (MV 2 WR, Legendary Creature — Dwarf Noble 3/2): Trample / Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / As long as you have an enduring story, artifacts and creatures you control have ward {1}.
+    gold uncommon (MV 6 WR, Legendary Creature — Dwarf Bard 4/5): Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have an enduring story, if a triggered ability of a Dwarf you control triggers, that ability triggers an additional time.
+    theme "artifact cards": have 15 [W 1|0, U 0|1, B 1|0, R 1|0, gold 1|0, colourless 6|4]; refer 2 [U 0|1, gold 1|0]
+    theme "creature type Dwarf": have 21 [W 5|2, R 6|3, gold 3|2]; refer 2 [W 1|0, colourless 1|0]
+    theme "+1/+1 counters": have 23 [W 2|1, U 2|0, B 2|2, G 7|2, gold 4|1]
+  GU:
+    gold uncommon (MV 4 UG, Legendary Creature — Elf Noble 2/3): Other Elves you control get +1/+1. / Landfall — Whenever a land you control enters, create a 1/1 green Elf creature token. Mill four cards, then put up to two land cards from among them into your hand. (Then exile this card. You may cast the creature later from exile.)
+    gold uncommon (MV 4 UG, Creature — Elf Citizen 3/2): When this creature enters, draw a card, then discard a card. If you discard a land card this way, put it from your graveyard onto the battlefield tapped. / Landfall — Whenever a land you control enters, you may pay {1}{G}{U}. If you do, return this card from your graveyard to your hand.
+    theme "creature type Elf": have 16 [U 3|1, G 6|1, gold 3|2]; refer 1 [G 0|1]
+    theme "tokens": have 25 [W 2|4, B 0|2, R 2|4, G 0|4, gold 2|3, colourless 1|1]
+    theme "the graveyard": have 16 [W 2|0, U 3|3, B 2|2, R 1|0, gold 2|1]
+Top creature types (cards; colours "C/U|R/M"):
+  Dwarf 21: W 5|2, R 6|3, gold 3|2 (commons+uncommons 14)
+  Elf 16: U 3|1, G 6|1, gold 3|2 (commons+uncommons 12)
+  Goblin 13: B 3|1, R 5|0, gold 2|2 (commons+uncommons 10)
+  Human 13: W 3|1, U 3|0, B 0|1, G 1|0, gold 2|2 (commons+uncommons 9)
+  Soldier 13: W 2|0, B 2|1, R 2|0, G 1|1, gold 2|2 (commons+uncommons 9)
+  Wolf 11: B 3|2, G 2|1, gold 2|1 (commons+uncommons 7)
+  Noble 10: W 1|1, U 0|2, R 0|1, gold 2|3 (commons+uncommons 3)
+  Halfling 9: W 0|1, U 2|1, B 2|2, G 0|1 (commons+uncommons 4)
+  Warrior 9: R 5|1, G 0|1, gold 0|2 (commons+uncommons 5)
+  Bard 8: W 1|0, U 1|0, B 1|0, R 2|1, gold 2|0 (commons+uncommons 7)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 4|3, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|3
+  U: instant 5|1, flash 0|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|2
+  B: instant 2|0, flash 0|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 2|1
+  R: instant 2|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 2|0
+  G: instant 2|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 3|0
+  gold: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+  colourless: instant 0|0, flash 2|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 2|1
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#616 | MV 3 B | Enchantment
+When this enchantment enters, return target creature card from your graveyard to your hand.
+Whenever a creature card leaves your graveyard, Mechanism C Goblins 1.
+{1}{B}: Goblins and Orcs you control gain menace until end of turn.
+SET INFO: "Goblin" creatures: 13 of 112 creature cards in the set (12%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 2.7 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 3.9 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV2 5, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+SET INFO: "Orc" creatures: 0 of 112 creature cards in the set (0%), 0 of 74 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#617 | MV 4 W | Enchantment // Sorcery — Adventure
+As this enchantment enters, choose a creature type.
+Creatures you control of the chosen type get +2/+2. Create X 2/2 red Dwarf creature tokens. (Then exile this card. You may cast the enchantment later from exile.)
+SET INFO: the creature type is chosen when the card is played: the best type for this card's colours has 21 of 112 creature cards in the set (19%), 14 of 74 at common/uncommon; in its best two-colour pair a deck built around that type has about 7.0 of its 15 creatures of one type (best case; an ordinary deck has fewer).
+  MATCHING CARDS (21; commons+uncommons 14): by mana value MV<=1 2, MV2 9, MV3 4, MV4 3, MV5 2, MV6+ 1. Creatures among them: 21, average power/toughness 2.5/2.6 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 W | Creature — Dwarf Citizen | 2/2] {3}{W}: Creatures you control get +1/+1 until end of turn." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+
+#618 | MV 3 B | Legendary Creature — Goblin Soldier | 1/3
+When ~ enters, destroy up to one other target creature. Its controller amasses Goblins X, where X is that creature's power. If you controlled that creature, draw a card. (To Mechanism C Goblins X, that player puts X +1/+1 counters on an Army they control. It's also a Goblin. If they don't control an Army, they create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 2.6 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 3.8 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 10): by mana value MV2 5, MV3 3, MV4 1, MV5 2, MV6+ 1. Creatures among them: 12, average power/toughness 2.6/2.4 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#619 | MV 5 R | Legendary Creature — Dwarf Bard | 4/4
+Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.)
+Whenever ~ or another Dwarf you control enters, you may discard your hand. Draw X cards, where X is the number of cards discarded this way. If you have an enduring story, ~ deals X damage to each opponent.
+SET INFO: "Dwarf" creatures: 20 of 111 creature cards in the set (18%), 14 of 74 at common/uncommon. A typical deck that can play this card has about 4.1 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 3.9 of the 23 spells).
+  MATCHING CARDS (20; commons+uncommons 14): by mana value MV<=1 2, MV2 9, MV3 4, MV4 3, MV5 1, MV6+ 1. Creatures among them: 20, average power/toughness 2.4/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 W | Creature — Dwarf Citizen | 2/2] {3}{W}: Creatures you control get +1/+1 until end of turn." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+
+#620 | MV 4 WU | Creature — Human Citizen | 2/3
+You may cast this spell as though it had flash if you control a Human.
+Other creatures you control get +1/+1.
+Whenever this creature enters or attacks, Mechanism B. (Draw a card, then discard a card. If you discarded a nonland card, create a 1/1 white Human Soldier creature token.)
+SET INFO: "Human" creatures: 12 of 111 creature cards in the set (11%), 9 of 74 at common/uncommon. A typical deck that can play this card has about 4.4 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 5.0 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 9): by mana value MV<=1 1, MV2 3, MV3 3, MV4 1, MV5 2, MV6+ 2. Creatures among them: 12, average power/toughness 2.5/3 (commons+uncommons only 2.5/3.1). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Scout | 1/1] When this creature dies, Mechanism B. (Draw a card, then discard a card. If you discarded a nonland card, create a 1/1 white Human Soldier creature token.)" || "[MV 3 WU | Creature — Human Citizen | 2/2] Vigilance / When this creature enters, Mechanism B. (Draw a card, then discard a card. If you discarded a nonland card, create a 1/1 white Human Soldier creature token.)" || "[MV 6 U | Creature — Human Citizen | 6/5] Vigilance / Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.) Exile two target creatures and/or lands you control, then return them to the bat…"
+
+#621 | MV 2 G | Creature — Wolf | 3/2
+Trample
+Whenever this creature deals combat damage to a player, choose one —
+• Put a +1/+1 counter on target Wolf you control.
+• Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+SET INFO: "Wolf" creatures: 10 of 111 creature cards in the set (9%), 7 of 74 at common/uncommon. A typical deck that can play this card has about 1.5 of its 15 creatures of this type.
+  MATCHING CARDS (10; commons+uncommons 7): by mana value MV<=1 1, MV2 3, MV3 3, MV4 2, MV5 1. Creatures among them: 10, average power/toughness 2.8/2.5 (commons+uncommons only 2.3/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Wolf | 1/1] Menace (This creature can't be blocked except by two or more creatures.) / Mechanism D — Whenever this creature attacks while you control a creature with power 4 or greater, this creature gets +2/+2 until end of turn." || "[MV 2 B | Creature — Wolf | 2/2] Pay 2 life: This creature gets +2/+2 until end of turn. Activate only once each turn." || "[MV 5 G | Creature — Wolf | 3/6] Mechanism D — Whenever this creature attacks while you control a creature with power 4 or greater, put a +1/+1 counter on each creature you control."
+
+#622 | MV 5 G | Legendary Creature — Bear Shapeshifter Warrior | 6/6
+Trample
+Other Bears you control get +2/+2.
+At the beginning of combat on your turn, put a trample counter on up to one target creature you control. It becomes a Bear in addition to its other types. Then if you control three or more Bears, draw two cards.
+SET INFO: "Bear" creatures: 5 of 111 creature cards in the set (5%), 4 of 74 at common/uncommon. A typical deck that can play this card has about 2.2 of its 15 creatures of this type.
+  MATCHING CARDS (5; commons+uncommons 4): by mana value MV3 1, MV4 1, MV5 2, MV6+ 1. Creatures among them: 5, average power/toughness 5.4/4.8 (commons+uncommons only 4.2/4.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 3 G | Creature — Bear | 3/2] Flash / When this creature enters, untap another target creature you control. If that creature is a Bear, put a +1/+1 counter on it." || "[MV 5 BG | Creature — Bear | 5/5] Reach, trample, haste" || "[MV 5 G | Legendary Creature — Human Bear Shapeshifter | 5/5] Trample You may play an additional land this turn. (Then exile this card. You may cast the creature later from exile.)"
+
+#623 | MV 6 WR | Legendary Creature — Dwarf Bard | 4/5
+Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.)
+Whenever ~ enters or attacks, put a +1/+1 counter on target creature.
+As long as you have an enduring story, if a triggered ability of a Dwarf you control triggers, that ability triggers an additional time.
+SET INFO: "Dwarf" creatures: 20 of 111 creature cards in the set (18%), 13 of 73 at common/uncommon. A typical deck that can play this card has about 6.9 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 6.8 of the 23 spells).
+  MATCHING CARDS (20; commons+uncommons 13): by mana value MV<=1 2, MV2 9, MV3 4, MV4 3, MV5 2. Creatures among them: 20, average power/toughness 2.4/2.5 (commons+uncommons only 2.5/2.3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 WR | Legendary Creature — Dwarf Bard | 2/2] Whenever ~ attacks, target attacking creature gains first strike until end of turn." || "[MV 5 R | Creature — Dwarf Warrior | 4/5] Reach, trample / When this creature enters, attach target Equipment you control to up to one target creature you control."
+
+#624 | MV 5 BR | Legendary Creature — Goblin Soldier | 5/5
+When ~ enters, you may sacrifice another creature. When you do, ~ deals damage equal to that creature's power to another target creature. If excess damage was dealt this way, Mechanism C Goblins X, where X is that excess damage. (Put X +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 9 of 73 at common/uncommon. A typical deck that can play this card has about 4.7 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 6.5 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 9): by mana value MV2 5, MV3 4, MV4 1, MV5 1, MV6+ 1. Creatures among them: 12, average power/toughness 2.2/2.2 (commons+uncommons only 2.3/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 R | Creature — Goblin Ranger | 2/3] Sacrifice another creature or artifact: Exile the top card of your library. You may play it until the end of your next turn. Activate only during your turn and only once each turn." || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#625 | MV 2 BR | Creature — Goblin Soldier | 2/2
+This creature has haste as long as you control another Goblin.
+{T}, Sacrifice another Goblin: Add {B}{R}.
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 4.8 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 6.6 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 10): by mana value MV2 4, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 12, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#626 | MV 2 R | Creature — Goblin Bard | 2/2
+Whenever you cast a noncreature spell, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 9 of 73 at common/uncommon. A typical deck that can play this card has about 2.7 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 3.5 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 9): by mana value MV2 4, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 12, average power/toughness 2.5/2.5 (commons+uncommons only 2.7/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+SET INFO: noncreature spells: 59 of 170 nonland cards in the set (35%), 40 of 113 at common/uncommon. A typical deck that can play this card has about 9.3 of its 23 spells like this.
+  MATCHING CARDS (59; commons+uncommons 40): by mana value MV<=1 6, MV2 17, MV3 20, MV4 11, MV5 4, MV6+ 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Sorcery] As an additional cost to cast this spell, sacrifice an artifact or creature or pay {4}. / Destroy target creature." || "[MV 6 U | Instant] Counter target spell. If a permanent spell is countered this way, exile it instead of putting it into its owner's graveyard. You may cast that card without paying its mana cost for as long as it remains exiled."
+
+#627 | MV 6 G | Creature — Elf Soldier | 4/3
+Affinity for Elves (This spell costs {1} less to cast for each Elf you control.)
+When this creature enters, mill four cards, then put all Elf cards from among them into your hand.
+SET INFO: "Elf" creatures: 15 of 111 creature cards in the set (14%), 12 of 74 at common/uncommon. A typical deck that can play this card has about 3.5 of its 15 creatures of this type.
+  MATCHING CARDS (15; commons+uncommons 12): by mana value MV2 3, MV3 6, MV4 4, MV5 1, MV6+ 1. Creatures among them: 15, average power/toughness 2.7/2.9 (commons+uncommons only 2.5/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Elf Soldier | 2/2] Trample / {5}{G}{G}: Put three +1/+1 counters on this creature." || "[MV 3 G | Creature — Elf Scout | 1/1] When this creature enters, search your library for a Forest card, put that card onto the battlefield, then shuffle." || "[MV 6 G | Creature — Elf Scout | 4/4] When this creature enters, look at the top four cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. / Landfall — Whenever…"
+
+#628 | MV 3 BG | Creature — Wolf | 5/3
+Trample
+This creature can't attack unless you control two or more other Wolves.
+At the beginning of your upkeep, create a 2/2 green Wolf creature token.
+SET INFO: "Wolf" creatures: 10 of 111 creature cards in the set (9%), 7 of 74 at common/uncommon. A typical deck that can play this card has about 3.2 of its 15 creatures of this type.
+  MATCHING CARDS (10; commons+uncommons 7): by mana value MV<=1 1, MV2 4, MV3 2, MV4 2, MV5 1. Creatures among them: 10, average power/toughness 2.6/2.4 (commons+uncommons only 2.3/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Wolf | 1/1] Menace (This creature can't be blocked except by two or more creatures.) / Mechanism D — Whenever this creature attacks while you control a creature with power 4 or greater, this creature gets +2/+2 until end of turn." || "[MV 2 B | Creature — Wolf | 2/2] Pay 2 life: This creature gets +2/+2 until end of turn. Activate only once each turn." || "[MV 5 G | Creature — Wolf | 3/6] Mechanism D — Whenever this creature attacks while you control a creature with power 4 or greater, put a +1/+1 counter on each creature you control."
+
+#629 | MV 2 B | Creature — Wolf | 2/2
+Pay 2 life: This creature gets +2/+2 until end of turn. Activate only once each turn.
+
+#630 | MV 4 R | Sorcery
+~ deals 3 damage to each non-Dragon creature.
+Add four mana in any combination of colors. Spend this mana only to cast Dragon spells.
+SET INFO: "Dragon" creatures: 4 of 112 creature cards in the set (4%), 1 of 74 at common/uncommon. A typical deck that can play this card has about 0.9 of its 15 creatures of this type.
+  MATCHING CARDS (4; commons+uncommons 1): by mana value MV4 1, MV5 1, MV6+ 2. Creatures among them: 4, average power/toughness 3.5/4.5 (commons+uncommons only 5/5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 7 R | Legendary Creature — Dragon | 5/5] Flying Spew Flame deals 5 damage to target creature. (Then exile this card. You may cast the creature later from exile.)"
+
+#631 | MV 3 G | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)
+I — Search your library for a basic land card, reveal it, put it into your hand, then shuffle.
+II — This Saga gains "Landfall — Whenever a land you control enters, create a 1/1 green Elf creature token."
+III, IV — Elves you control get +1/+0 and gain vigilance until end of turn.
+SET INFO: "Elf" creatures: 16 of 112 creature cards in the set (14%), 12 of 74 at common/uncommon. A typical deck that can play this card has about 3.5 of its 15 creatures of this type.
+  MATCHING CARDS (16; commons+uncommons 12): by mana value MV2 3, MV3 6, MV4 4, MV5 1, MV6+ 2. Creatures among them: 16, average power/toughness 2.8/2.9 (commons+uncommons only 2.5/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Elf Soldier | 2/2] Trample / {5}{G}{G}: Put three +1/+1 counters on this creature." || "[MV 3 G | Creature — Elf Scout | 1/1] When this creature enters, search your library for a Forest card, put that card onto the battlefield, then shuffle." || "[MV 6 G | Creature — Elf Scout | 4/4] When this creature enters, look at the top four cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. / Landfall — Whenever…"
+
+#632 | MV 3 B | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)
+I — Target opponent reveals their hand. You choose a nonland card from it. That player discards that card.
+II — Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+III, IV — Target opponent loses 1 life and you gain 1 life.
+SET INFO: "Goblin" creatures: 13 of 112 creature cards in the set (12%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 2.7 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.6 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV2 5, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#633 | MV 2 C | Artifact — Equipment
+When this Equipment enters, attach it to target Dwarf you control.
+Equipped creature gets +2/+2 and has ward {1}. (Whenever equipped creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {1}.)
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)
+SET INFO: "Dwarf" creatures: 21 of 112 creature cards in the set (19%), 14 of 74 at common/uncommon. A typical deck that can play this card has about 2.5 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 2.5 of the 23 spells).
+  MATCHING CARDS (21; commons+uncommons 14): by mana value MV<=1 2, MV2 9, MV3 4, MV4 3, MV5 2, MV6+ 1. Creatures among them: 21, average power/toughness 2.5/2.6 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 W | Creature — Dwarf Citizen | 2/2] {3}{W}: Creatures you control get +1/+1 until end of turn." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+
+#634 | MV 2 WR | Creature — Dwarf Warrior | 2/2
+This creature has lifelink as long as you control another Dwarf.
+When this creature enters, look at the top four cards of your library. You may reveal a Dwarf or Equipment card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+SET INFO: "Dwarf" creatures: 20 of 111 creature cards in the set (18%), 14 of 74 at common/uncommon. A typical deck that can play this card has about 7.0 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 6.9 of the 23 spells).
+  MATCHING CARDS (20; commons+uncommons 14): by mana value MV<=1 2, MV2 8, MV3 4, MV4 3, MV5 2, MV6+ 1. Creatures among them: 20, average power/toughness 2.5/2.6 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 W | Creature — Dwarf Citizen | 2/2] {3}{W}: Creatures you control get +1/+1 until end of turn." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+
+#635 | MV 4 WU | Enchantment — Aura
+Enchant creature
+Enchanted creature gets +2/+2 and has flying.
+{2}{W/U}{W/U}: Return this card from your graveyard to the battlefield attached to target creature you control with power 1 or less. Activate only as a sorcery.
+
+#636 | MV 0 C | Land
+{T}, Pay 1 life, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. You may behold an Elf. If you do, untap that land. (To behold an Elf, choose an Elf you control or reveal an Elf card from your hand.)
+SET INFO: "Elf" creatures: 16 of 112 creature cards in the set (14%), 12 of 74 at common/uncommon. A typical deck that can play this card has about 2.0 of its 15 creatures of this type.
+  MATCHING CARDS (16; commons+uncommons 12): by mana value MV2 3, MV3 6, MV4 4, MV5 1, MV6+ 2. Creatures among them: 16, average power/toughness 2.8/2.9 (commons+uncommons only 2.5/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Elf Soldier | 2/2] Trample / {5}{G}{G}: Put three +1/+1 counters on this creature." || "[MV 3 G | Creature — Elf Scout | 1/1] When this creature enters, search your library for a Forest card, put that card onto the battlefield, then shuffle." || "[MV 6 G | Creature — Elf Scout | 4/4] When this creature enters, look at the top four cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. / Landfall — Whenever…"
+
+#637 | MV 0 C | Land
+This land enters tapped.
+{T}: Add {G} or {U}.
+{2}{G}{U}, {T}, Sacrifice this land: Put two +1/+1 counters on target Elf you control. Activate only as a sorcery.
+SET INFO: "Elf" creatures: 16 of 112 creature cards in the set (14%), 12 of 74 at common/uncommon. A typical deck that can play this card has about 2.0 of its 15 creatures of this type.
+  MATCHING CARDS (16; commons+uncommons 12): by mana value MV2 3, MV3 6, MV4 4, MV5 1, MV6+ 2. Creatures among them: 16, average power/toughness 2.8/2.9 (commons+uncommons only 2.5/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Elf Soldier | 2/2] Trample / {5}{G}{G}: Put three +1/+1 counters on this creature." || "[MV 3 G | Creature — Elf Scout | 1/1] When this creature enters, search your library for a Forest card, put that card onto the battlefield, then shuffle." || "[MV 6 G | Creature — Elf Scout | 4/4] When this creature enters, look at the top four cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. / Landfall — Whenever…"
+
+#638 | MV 3 BR | Creature — Goblin Soldier | 1/1
+When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 9 of 73 at common/uncommon. A typical deck that can play this card has about 4.7 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 6.5 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 9): by mana value MV2 5, MV3 3, MV4 1, MV5 2, MV6+ 1. Creatures among them: 12, average power/toughness 2.6/2.6 (commons+uncommons only 2.8/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 R | Creature — Goblin Ranger | 2/3] Sacrifice another creature or artifact: Exile the top card of your library. You may play it until the end of your next turn. Activate only during your turn and only once each turn." || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#639 | MV 4 W | Legendary Creature — Dwarf Scout | 2/2
+Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.)
+As long as you have an enduring story, creatures you control get +1/+1.
+Whenever ~ or another nontoken Dwarf you control enters, create a 2/2 red Dwarf creature token.
+SET INFO: "Dwarf" creatures: 20 of 111 creature cards in the set (18%), 14 of 74 at common/uncommon. A typical deck that can play this card has about 3.7 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 3.9 of the 23 spells).
+  MATCHING CARDS (20; commons+uncommons 14): by mana value MV<=1 2, MV2 9, MV3 4, MV4 2, MV5 2, MV6+ 1. Creatures among them: 20, average power/toughness 2.5/2.6 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 W | Creature — Dwarf Citizen | 2/2] {3}{W}: Creatures you control get +1/+1 until end of turn." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+
+#640 | MV 3 R | Legendary Creature — Avatar Wizard // Sorcery — Adventure | 2/3
+Whenever you cast a noncreature spell, ~ gets +1/+1 until end of turn and deals 1 damage to each opponent. Look at the top two cards of your library and exile them face down. For as long as they remain exiled, you may play them if you control a Wizard.
+SET INFO: noncreature spells: 59 of 170 nonland cards in the set (35%), 40 of 114 at common/uncommon. A typical deck that can play this card has about 9.3 of its 23 spells like this.
+  MATCHING CARDS (59; commons+uncommons 40): by mana value MV<=1 6, MV2 17, MV3 20, MV4 11, MV5 4, MV6+ 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Sorcery] As an additional cost to cast this spell, sacrifice an artifact or creature or pay {4}. / Destroy target creature." || "[MV 6 U | Instant] Counter target spell. If a permanent spell is countered this way, exile it instead of putting it into its owner's graveyard. You may cast that card without paying its mana cost for as long as it remains exiled."
+SET INFO: "Wizard" creatures: 3 of 111 creature cards in the set (3%), 2 of 74 at common/uncommon. A typical deck that can play this card has about 0.5 of its 15 creatures of this type.
+  MATCHING CARDS (3; commons+uncommons 2): by mana value MV4 1, MV5 1, MV6+ 1. Creatures among them: 3, average power/toughness 3.3/4.3 (commons+uncommons only 4/4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 5 U | Legendary Creature — Avatar Wizard | 4/5] Ward {3} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.) / {6}: ~'s owner shuffles him into their library and draws three cards." || "[MV 6 R | Legendary Creature — Avatar Wizard | 4/3] Reach / When ~ enters, he deals 3 damage divided as you choose among one, two, or three targets."
+
+#641 | MV 4 B | Sorcery
+Return up to one target creature card from your graveyard to your hand.
+Mechanism C Goblins 3. (Put three +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 13 of 112 creature cards in the set (12%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 2.7 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.6 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV2 5, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#642 | MV 2 BR | Artifact — Equipment
+When this Equipment enters, Mechanism C Goblins 1, then attach this Equipment to the Mechanism C Army. (To Mechanism C Goblins 1, put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+Equipped creature gets +1/+0 and has menace.
+Equip {4}
+SET INFO: "Goblin" creatures: 13 of 112 creature cards in the set (12%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 4.9 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 6.2 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV2 5, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#643 | MV 0 C | Land
+This land enters tapped.
+{T}: Add {B} or {R}.
+{2}{B}{R}, {T}, Sacrifice this land: Put two +1/+1 counters on target Goblin or Orc you control. Activate only as a sorcery.
+SET INFO: "Goblin" creatures: 13 of 112 creature cards in the set (12%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 1.7 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 2.4 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV2 5, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+SET INFO: "Orc" creatures: 0 of 112 creature cards in the set (0%), 0 of 74 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#644 | MV 2 R | Creature — Goblin Soldier | 1/1
+Haste
+When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 9 of 73 at common/uncommon. A typical deck that can play this card has about 2.3 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 3.1 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 9): by mana value MV2 4, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 12, average power/toughness 2.6/2.6 (commons+uncommons only 2.8/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 B | Creature — Goblin Soldier | 2/2] When this creature dies, target creature an opponent controls gets -1/-1 until end of turn." || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#645 | MV 6 B | Creature — Goblin Soldier // Sorcery — Adventure | 4/4
+Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 9 of 73 at common/uncommon. A typical deck that can play this card has about 2.4 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 3.6 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 9): by mana value MV2 5, MV3 4, MV4 1, MV5 2. Creatures among them: 12, average power/toughness 2.3/2.3 (commons+uncommons only 2.4/2.3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 R | Creature — Goblin Ranger | 2/3] Sacrifice another creature or artifact: Exile the top card of your library. You may play it until the end of your next turn. Activate only during your turn and only once each turn." || "[MV 5 R | Creature — Goblin Soldier | 4/4] Whenever you attack, Mechanism C Goblins 2. (Put two +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)"
+
+#646 | MV 0 C | Land
+This land enters tapped.
+{T}: Add {R} or {W}.
+{2}{R}{W}, {T}, Sacrifice this land: Put two +1/+1 counters on target Dwarf you control. Activate only as a sorcery.
+SET INFO: "Dwarf" creatures: 21 of 112 creature cards in the set (19%), 14 of 74 at common/uncommon. A typical deck that can play this card has about 2.5 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 2.5 of the 23 spells).
+  MATCHING CARDS (21; commons+uncommons 14): by mana value MV<=1 2, MV2 9, MV3 4, MV4 3, MV5 2, MV6+ 1. Creatures among them: 21, average power/toughness 2.5/2.6 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 W | Creature — Dwarf Citizen | 2/2] {3}{W}: Creatures you control get +1/+1 until end of turn." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+
+#647 | MV 2 W | Legendary Creature — Dwarf Scout | 1/2
+Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.)
+As long as you have an enduring story, you may pay {0} rather than pay the equip cost of the first equip ability you activate each turn.
+Whenever another Dwarf or Equipment you control enters, draw a card. This ability triggers only once each turn.
+SET INFO: "Dwarf" creatures: 20 of 111 creature cards in the set (18%), 14 of 74 at common/uncommon. A typical deck that can play this card has about 3.7 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 3.9 of the 23 spells).
+  MATCHING CARDS (20; commons+uncommons 14): by mana value MV<=1 2, MV2 8, MV3 4, MV4 3, MV5 2, MV6+ 1. Creatures among them: 20, average power/toughness 2.5/2.6 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+SET INFO: Equipment cards (including cards that make one): 10 of 170 nonland cards in the set (6%), 7 of 114 at common/uncommon. A typical deck that can play this card has about 2.3 of its 23 spells like this.
+  MATCHING CARDS (10; commons+uncommons 7): by mana value MV<=1 1, MV2 4, MV3 4, MV4 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact — Equipment] When this Equipment enters, you gain 2 life. / Equipped creature gets +1/+1. / Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)" || "[MV 4 W | Artifact — Equipment] When this Equipment enters, create a 2/2 red Dwarf creature token, then attach this Equipment to it. / Equipped creature gets +1/+2. / Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)"
+
+#648 | MV 0 C | Land
+This land enters tapped.
+{T}: Add {W} or {U}.
+{2}{W}{U}, {T}, Sacrifice this land: Put two +1/+1 counters on target Human you control. Activate only as a sorcery.
+SET INFO: "Human" creatures: 13 of 112 creature cards in the set (12%), 9 of 74 at common/uncommon. A typical deck that can play this card has about 1.7 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 2.1 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 9): by mana value MV<=1 1, MV2 3, MV3 3, MV4 2, MV5 2, MV6+ 2. Creatures among them: 13, average power/toughness 2.5/3 (commons+uncommons only 2.5/3.1). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Scout | 1/1] When this creature dies, Mechanism B. (Draw a card, then discard a card. If you discarded a nonland card, create a 1/1 white Human Soldier creature token.)" || "[MV 3 WU | Creature — Human Citizen | 2/2] Vigilance / When this creature enters, Mechanism B. (Draw a card, then discard a card. If you discarded a nonland card, create a 1/1 white Human Soldier creature token.)" || "[MV 6 U | Creature — Human Citizen | 6/5] Vigilance / Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.) Exile two target creatures and/or lands you control, then return them to the bat…"
+
+#649 | MV 3 G | Creature — Bear | 3/2
+Flash
+When this creature enters, untap another target creature you control. If that creature is a Bear, put a +1/+1 counter on it.
+SET INFO: "Bear" creatures: 5 of 111 creature cards in the set (5%), 3 of 73 at common/uncommon. A typical deck that can play this card has about 1.6 of its 15 creatures of this type.
+  MATCHING CARDS (5; commons+uncommons 3): by mana value MV4 1, MV5 3, MV6+ 1. Creatures among them: 5, average power/toughness 6/5.6 (commons+uncommons only 4.7/5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 4 G | Creature — Bear | 4/5] " || "[MV 5 BG | Creature — Bear | 5/5] Reach, trample, haste" || "[MV 5 G | Legendary Creature — Human Bear Shapeshifter | 5/5] Trample You may play an additional land this turn. (Then exile this card. You may cast the creature later from exile.)"
+
+#650 | MV 0 C | Land
+This land enters tapped.
+{T}: Add {B} or {G}.
+{2}{B}{G}, {T}, Sacrifice this land: Put two +1/+1 counters on target Bear, Spider, or Wolf you control. Activate only as a sorcery.
+SET INFO: "Bear" creatures: 6 of 112 creature cards in the set (5%), 4 of 74 at common/uncommon. A typical deck that can play this card has about 0.9 of its 15 creatures of this type.
+  MATCHING CARDS (6; commons+uncommons 4): by mana value MV3 1, MV4 1, MV5 3, MV6+ 1. Creatures among them: 6, average power/toughness 5.5/5 (commons+uncommons only 4.2/4.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 3 G | Creature — Bear | 3/2] Flash / When this creature enters, untap another target creature you control. If that creature is a Bear, put a +1/+1 counter on it." || "[MV 5 G | Legendary Creature — Human Bear Shapeshifter | 5/5] Trample You may play an additional land this turn. (Then exile this card. You may cast the creature later from exile.)"
+SET INFO: "Spider" creatures: 2 of 112 creature cards in the set (2%), 2 of 74 at common/uncommon. A typical deck that can play this card has about 0.4 of its 15 creatures of this type.
+  MATCHING CARDS (2; commons+uncommons 2): by mana value MV2 1, MV6+ 1. Creatures among them: 2, average power/toughness 4/4 (commons+uncommons only 4/4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Spider | 2/1] Reach, deathtouch / Landfall — Whenever a land you control enters, this creature gets +1/+1 until end of turn." || "[MV 6 G | Creature — Spider | 6/7] Reach / This creature can't be blocked by creatures with power 2 or less. / Whenever this creature becomes the target of a spell or ability an opponent controls, draw a card."
+SET INFO: "Wolf" creatures: 11 of 112 creature cards in the set (10%), 7 of 74 at common/uncommon. A typical deck that can play this card has about 1.1 of its 15 creatures of this type.
+  MATCHING CARDS (11; commons+uncommons 7): by mana value MV<=1 1, MV2 4, MV3 3, MV4 2, MV5 1. Creatures among them: 11, average power/toughness 2.8/2.5 (commons+uncommons only 2.3/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Wolf | 1/1] Menace (This creature can't be blocked except by two or more creatures.) / Mechanism D — Whenever this creature attacks while you control a creature with power 4 or greater, this creature gets +2/+2 until end of turn." || "[MV 5 G | Creature — Wolf | 3/6] Mechanism D — Whenever this creature attacks while you control a creature with power 4 or greater, put a +1/+1 counter on each creature you control."
+
+#651 | MV 5 R | Creature — Goblin Soldier | 4/4
+Whenever you attack, Mechanism C Goblins 2. (Put two +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 9 of 73 at common/uncommon. A typical deck that can play this card has about 2.7 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 3.5 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 9): by mana value MV2 5, MV3 4, MV4 1, MV5 1, MV6+ 1. Creatures among them: 12, average power/toughness 2.3/2.3 (commons+uncommons only 2.4/2.3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 R | Creature — Goblin Ranger | 2/3] Sacrifice another creature or artifact: Exile the top card of your library. You may play it until the end of your next turn. Activate only during your turn and only once each turn." || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#652 | MV 3 C | Legendary Artifact — Equipment
+Equipped creature gets +2/+2 and has trample.
+Whenever equipped creature deals combat damage to a player, choose a creature type. Create a Treasure token for each creature you control of that type.
+Equip {3}
+SET INFO: the creature type is chosen when the card is played: the best type for this card's colours has 21 of 112 creature cards in the set (19%), 14 of 74 at common/uncommon; in its best two-colour pair a deck built around that type has about 7.0 of its 15 creatures of one type (best case; an ordinary deck has fewer).
+  MATCHING CARDS (21; commons+uncommons 14): by mana value MV<=1 2, MV2 9, MV3 4, MV4 3, MV5 2, MV6+ 1. Creatures among them: 21, average power/toughness 2.5/2.6 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 W | Creature — Dwarf Citizen | 2/2] {3}{W}: Creatures you control get +1/+1 until end of turn." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+
+#653 | MV 3 B | Sorcery
+You draw a card and lose 1 life.
+Mechanism C Goblins 2. (Put two +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 13 of 112 creature cards in the set (12%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 2.7 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.3 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV2 5, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#654 | MV 3 B | Creature — Wolf | 3/2
+Whenever this creature attacks, you may sacrifice another creature. If you do, put a number of +1/+1 counters on this creature equal to the sacrificed creature's power.
+When this creature dies, Mechanism C Goblins X, where X is this creature's power. (Put X +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+SET INFO: "Goblin" creatures: 13 of 111 creature cards in the set (12%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 2.7 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.8 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV2 5, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#655 | MV 2 C | Legendary Artifact — Equipment
+Flash
+When ~ enters, put a hone counter on ~ for each creature target opponent controls. Attach ~ to up to one target creature you control. (Each hone counter on an Equipment grants +1/+0 to equipped creature.)
+Equip {3}
+
+#656 | MV 2 B | Creature — Goblin Bard | 1/1
+When this creature enters, each opponent discards a card.
+
+#657 | MV 3 C | Legendary Artifact — Equipment
+Flash
+When ~ enters, it deals 1 damage to any target. If a Dragon is dealt damage this way, destroy it.
+Equipped creature gets +1/+1 and has reach.
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+SET INFO: "Dragon" creatures: 4 of 112 creature cards in the set (4%), 1 of 74 at common/uncommon. A typical deck that can play this card has about 0.4 of its 15 creatures of this type.
+  MATCHING CARDS (4; commons+uncommons 1): by mana value MV4 1, MV5 1, MV6+ 2. Creatures among them: 4, average power/toughness 3.5/4.5 (commons+uncommons only 5/5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 7 R | Legendary Creature — Dragon | 5/5] Flying Spew Flame deals 5 damage to target creature. (Then exile this card. You may cast the creature later from exile.)"
+
+#658 | MV 3 BR | Legendary Creature — Goblin Noble | 3/2
+Whenever you put one or more counters on a Goblin, Orc, or Army you control, ~ deals 2 damage to target opponent.
+Whenever another Goblin, Orc, or Army you control dies, exile the top card of your library. You may play it until the end of your next turn.
+SET INFO: "Goblin" creatures: 12 of 111 creature cards in the set (11%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 4.8 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 6.6 of the 23 spells).
+  MATCHING CARDS (12; commons+uncommons 10): by mana value MV2 5, MV3 3, MV4 1, MV5 2, MV6+ 1. Creatures among them: 12, average power/toughness 2.4/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+SET INFO: "Orc" creatures: 0 of 111 creature cards in the set (0%), 0 of 74 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#659 | MV 5 G | Legendary Creature — Halfling Advisor | 1/1
+When ~ enter, if they're not a token, create two tokens that are copies of them, except the tokens aren't legendary.
+{T}: Add {C} for each Halfling you control.
+SET INFO: "Halfling" creatures: 8 of 111 creature cards in the set (7%), 4 of 74 at common/uncommon. A typical deck that can play this card has about 0.5 of its 15 creatures of this type.
+  MATCHING CARDS (8; commons+uncommons 4): by mana value MV2 6, MV3 1, MV4 1. Creatures among them: 8, average power/toughness 2.2/1.8 (commons+uncommons only 2.2/1.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 U | Legendary Creature — Halfling Rogue | 1/1] ~ can't be blocked. / Whenever ~ deals combat damage to a player, draw a card, then discard a card. Exchange control of two target nonland permanents that share a card type. (Then exile this card. You may cast the creature later …" || "[MV 3 U | Legendary Creature — Halfling Rogue | 2/1] When ~ enters, draw a card. Scry 2. (Then exile this card. You may cast the creature later from exile.)" || "[MV 4 B | Legendary Creature — Halfling Horror | 4/3] Menace (This creature can't be blocked except by two or more creatures.) Put a +1/+1 counter on up to one target creature. Target player gains 2 life. (Then exile this card. You may cast the creature later from exile.)"
+
+#660 | MV 4 UG | Creature — Elf Soldier | 3/4
+As long as you control another Elf, you may play an additional land on each of your turns.
+Landfall — Whenever a land you control enters, put two +1/+1 counters on target creature you control. It gains vigilance until end of turn.
+SET INFO: "Elf" creatures: 15 of 111 creature cards in the set (14%), 12 of 74 at common/uncommon. A typical deck that can play this card has about 5.4 of its 15 creatures of this type.
+  MATCHING CARDS (15; commons+uncommons 12): by mana value MV2 3, MV3 6, MV4 3, MV5 1, MV6+ 2. Creatures among them: 15, average power/toughness 2.8/2.9 (commons+uncommons only 2.5/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Elf Soldier | 2/2] Trample / {5}{G}{G}: Put three +1/+1 counters on this creature." || "[MV 3 G | Creature — Elf Scout | 1/1] When this creature enters, search your library for a Forest card, put that card onto the battlefield, then shuffle." || "[MV 6 G | Creature — Elf Scout | 4/4] When this creature enters, look at the top four cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. / Landfall — Whenever…"
+
+#661 | MV 4 UG | Legendary Creature — Elf Noble // Sorcery — Adventure | 2/3
+Other Elves you control get +1/+1.
+Landfall — Whenever a land you control enters, create a 1/1 green Elf creature token. Mill four cards, then put up to two land cards from among them into your hand. (Then exile this card. You may cast the creature later from exile.)
+SET INFO: "Elf" creatures: 15 of 111 creature cards in the set (14%), 11 of 73 at common/uncommon. A typical deck that can play this card has about 5.3 of its 15 creatures of this type.
+  MATCHING CARDS (15; commons+uncommons 11): by mana value MV2 3, MV3 6, MV4 3, MV5 1, MV6+ 2. Creatures among them: 15, average power/toughness 2.9/2.9 (commons+uncommons only 2.5/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Elf Soldier | 2/2] Trample / {5}{G}{G}: Put three +1/+1 counters on this creature." || "[MV 3 UG | Creature — Elf Ranger | 3/2] When this creature enters, return up to one other target permanent you control to its owner's hand. If you do, put a +1/+1 counter on this creature." || "[MV 6 G | Creature — Elf Scout | 4/4] When this creature enters, look at the top four cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. / Landfall — Whenever…"
+
+#662 | MV 5 UBG | Legendary Creature — Elf Noble | 5/6
+~ has all activated abilities of all Elf cards in your graveyard.
+Whenever another legendary Elf you control enters, draw two cards, then discard a card.
+SET INFO: "Elf" creatures: 15 of 111 creature cards in the set (14%), 12 of 74 at common/uncommon. A typical deck that can play this card has about 3.9 of its 15 creatures of this type.
+  MATCHING CARDS (15; commons+uncommons 12): by mana value MV2 3, MV3 6, MV4 4, MV6+ 2. Creatures among them: 15, average power/toughness 2.6/2.7 (commons+uncommons only 2.5/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Elf Soldier | 2/2] Trample / {5}{G}{G}: Put three +1/+1 counters on this creature." || "[MV 6 G | Creature — Elf Scout | 4/4] When this creature enters, look at the top four cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. / Landfall — Whenever…"
+SET INFO: legendary (nonland) cards: 53 of 170 nonland cards in the set (31%), 25 of 114 at common/uncommon. A typical deck that can play this card has about 3.6 of its 23 spells like this.
+  MATCHING CARDS (53; commons+uncommons 25): by mana value MV<=1 1, MV2 15, MV3 14, MV4 9, MV5 9, MV6+ 5. Creatures among them: 47, average power/toughness 3/3.1 (commons+uncommons only 3/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Legendary Creature — Dwarf Scout | 1/1] Lifelink Target artifact or creature you control gains hexproof and indestructible until end of turn. (Then exile this card. You may cast the creature later from exile.)" || "[MV 7 R | Legendary Creature — Dragon | 5/5] Flying Spew Flame deals 5 damage to target creature. (Then exile this card. You may cast the creature later from exile.)"
+
+#663 | MV 1 R | Sorcery
+Mechanism C Goblins 1. If this spell was cast from a graveyard, Mechanism C Goblins 3 instead. (To Mechanism C Goblins X, put X +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)
+Flashback {3}{R} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+SET INFO: "Goblin" creatures: 13 of 112 creature cards in the set (12%), 10 of 74 at common/uncommon. A typical deck that can play this card has about 2.9 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.1 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 10): by mana value MV2 5, MV3 4, MV4 1, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.5 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Goblin Soldier | 1/1] Haste / When this creature enters, Mechanism C Goblins 1. (Put a +1/+1 counter on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 3 BR | Creature — Goblin Soldier | 1/1] When this creature dies, Mechanism C Goblins 4. (Put four +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)" || "[MV 6 B | Creature — Goblin Soldier | 4/4] Each creature you control with a +1/+1 counter on it has menace. (It can't be blocked except by two or more creatures.) Mechanism C Goblins 2. (Then exile this card. You may cast the creature later from exile.)"
+
+#664 | MV 2 W | Instant
+Untap target creature you control. It gets +2/+2 until end of turn. If it's a Dwarf, you may attach an Equipment you control to it.
+SET INFO: "Dwarf" creatures: 21 of 112 creature cards in the set (19%), 14 of 74 at common/uncommon. A typical deck that can play this card has about 3.8 of its 15 creatures of this type. 3 other cards also make such creature tokens (counting them, about 4.1 of the 23 spells).
+  MATCHING CARDS (21; commons+uncommons 14): by mana value MV<=1 2, MV2 9, MV3 4, MV4 3, MV5 2, MV6+ 1. Creatures among them: 21, average power/toughness 2.5/2.6 (commons+uncommons only 2.6/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Dwarf Warrior | 2/1] Equip abilities you activate that target this creature cost {2} less to activate." || "[MV 2 W | Creature — Dwarf Citizen | 2/2] {3}{W}: Creatures you control get +1/+1 until end of turn." || "[MV 6 WR | Legendary Creature — Dwarf Bard | 4/5] Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.) / Whenever ~ enters or attacks, put a +1/+1 counter on target creature. / As long as you have a…"
+
+#665 | MV 2 G | Creature — Elf Druid | 1/2
+Vigilance
+Whenever another Elf you control enters, this creature gets +1/+1 until end of turn.
+{T}: Add X mana of any one color, where X is this creature's power. Spend this mana only to cast Elf spells and activate abilities of Elf sources.
+SET INFO: "Elf" creatures: 15 of 111 creature cards in the set (14%), 11 of 73 at common/uncommon. A typical deck that can play this card has about 3.3 of its 15 creatures of this type.
+  MATCHING CARDS (15; commons+uncommons 11): by mana value MV2 2, MV3 6, MV4 4, MV5 1, MV6+ 2. Creatures among them: 15, average power/toughness 2.9/3 (commons+uncommons only 2.6/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 G | Creature — Elf Soldier | 2/2] Trample / {5}{G}{G}: Put three +1/+1 counters on this creature." || "[MV 3 G | Creature — Elf Scout | 1/1] When this creature enters, search your library for a Forest card, put that card onto the battlefield, then shuffle." || "[MV 6 G | Creature — Elf Scout | 4/4] When this creature enters, look at the top four cards of your library. You may reveal a permanent card from among them and put it into your hand. Put the rest on the bottom of your library in a random order. / Landfall — Whenever…"
+
+#666 | MV 2 R | Legendary Creature — Dwarf Warrior | 1/3
+Mechanism A (If you control three or more artifacts, legendaries, and/or Sagas, you have an enduring story for the rest of the game.)
+As long as you have an enduring story, Óin gets +1/+0 and has haste.
+{1}, {T}, Discard a card: Draw a card.
+-- pass p1, batch HOB_0: 51 cards

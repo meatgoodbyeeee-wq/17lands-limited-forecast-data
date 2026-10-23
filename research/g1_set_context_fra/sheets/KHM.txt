@@ -1,0 +1,109 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 251, nonland 227, creatures 117, commons+uncommons 166. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 3 1.3/1.3; MV2 4 1.5/2.8; MV3 8 2.2/2.6; MV4 3 3/3; MV5 1 4/4; MV6+ 2 3/4.5 | total 21 avg 2.2/2.8
+  U: MV<=1 3 1/1.7; MV2 3 1/2.7; MV3 2 2/3; MV4 6 2.8/3.2; MV5 2 3/4.5; MV6+ 3 6.7/7 | total 19 avg 2.8/3.6
+  B: MV<=1 1 1/2; MV2 6 1.2/2; MV3 4 2.5/2; MV4 7 2.9/3.1; MV5 1 4/4; MV6+ 2 4.5/6.5 | total 21 avg 2.4/2.9
+  R: MV<=1 1 1/1; MV2 7 1.9/1.7; MV3 3 3/2.3; MV4 3 3.7/3.3; MV5 3 4.7/4; MV6+ 2 5.5/5 | total 19 avg 3.1/2.7
+  G: MV<=1 1 1/2; MV2 5 1.4/2.2; MV3 6 3/2.7; MV4 5 2/2.6; MV5 3 5.3/4.7; MV6+ 2 6/6 | total 22 avg 2.9/3.1
+  gold: MV2 1 2/2; MV3 5 2.6/2.8; MV4 2 3.5/3; MV5 4 2/2.5; MV6+ 1 6/6 | total 13 avg 2.8/2.9
+  colourless: MV3 2 2/2.5 | total 2 avg 2/2.5
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 3 1.3/1.3; MV2 4 1.5/2.8; MV3 4 2.2/2.2; MV4 2 3/2.5; MV5 1 4/4; MV6+ 2 3/4.5 | total 16 avg 2.2/2.6
+  U: MV<=1 2 1/2; MV2 3 1/2.7; MV3 2 2/3; MV4 4 2.8/3.2; MV5 2 3/4.5; MV6+ 1 5/6 | total 14 avg 2.2/3.3
+  B: MV<=1 1 1/2; MV2 4 1/2; MV3 3 2.7/1.7; MV4 5 2.4/3; MV5 1 4/4; MV6+ 1 3/7 | total 15 avg 2.1/2.7
+  R: MV<=1 1 1/1; MV2 5 1.8/1.8; MV3 2 3/2; MV4 2 4/3; MV5 1 5/4; MV6+ 2 5.5/5 | total 13 avg 3.1/2.6
+  G: MV<=1 1 1/2; MV2 4 1.2/2.2; MV3 4 3/2.2; MV4 4 2.2/3; MV5 2 5/4.5; MV6+ 1 6/6 | total 16 avg 2.7/2.9
+  gold: MV2 1 2/2; MV3 4 2.5/2.8; MV4 1 4/3; MV5 4 2/2.5 | total 10 avg 2.4/2.6
+  colourless: MV3 2 2/2.5 | total 2 avg 2/2.5
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 2|2; damage 1 (3) | 0 (); exile 1 (2) | 1 (3); sweeper 0 () | 1 (5)
+  U: any 4|1; exile 1 (3) | 0 (); bounce/tuck 2 (2,6) | 0 (); fight/bite 1 (1) | 0 (); lock-down 1 (1) | 0 (); sweeper 0 () | 1 (7)
+  B: any 5|1; destroy 2 (3,4) | 0 (); exile 1 (4) | 0 (); -X/-X 2 (1,2) | 0 (); sweeper 0 () | 1 (6)
+  R: any 7|1; damage 6 (1,3,4,4,5,5) | 1 (3); sweeper 1 (3) | 0 ()
+  G: any 4|0; destroy 1 (3) | 0 (); damage 1 (2) | 0 (); fight/bite 2 (1,4) | 0 ()
+  gold: any 3|6; destroy 1 (4) | 1 (4); damage 1 (4) | 1 (3); exile 0 () | 1 (5); -X/-X 0 () | 1 (4); fight/bite 1 (2) | 1 (3); sweeper 0 () | 1 (3)
+  colourless: any 0|0
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 16|5; flying 4|3; protection 0|1; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 4|4; reach 0|0; can block fliers (flying or reach) 4|3; other cards that give flying 1|0
+  U: creatures 14|5; flying 3|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|1; reach 0|0; can block fliers (flying or reach) 3|1; other cards that give flying 1|0
+  B: creatures 15|6; flying 2|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|2; reach 0|0; can block fliers (flying or reach) 2|2; other cards that give flying 1|0
+  R: creatures 13|6; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 0|0; can block fliers (flying or reach) 0|1; other cards that give flying 0|0
+  G: creatures 16|6; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 2|0; can block fliers (flying or reach) 2|0; other cards that give flying 0|0
+  gold: creatures 10|3; flying 2|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|1; reach 0|0; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  colourless: creatures 2|0; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 0|0; can block fliers (flying or reach) 0|0; other cards that give flying 1|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (keyword; 34 cards, commons+uncommons 26; colours C/U|R/M: W 6|2, U 5|3, B 6|2, R 5|0, G 3|1, colourless 1|0). Example text of a card: "Mechanism A {U} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its Mechanism A cost.)"
+  Mechanism B (ability word; 15 cards, commons+uncommons 11; colours C/U|R/M: W 4|0, B 2|2, R 4|2, G 1|0). Example text of a card: "Mechanism B — {1}: Target opponent loses 1 life and you gain 1 life. (Activate only if this creature attacked this turn and only once each turn.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 3 WU, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I — You gain 2 life for each foretold card you own in exile. / II — Add {W}{U}. Spend this mana only to Mechanism A cards or cast spells that have Mechanism A. / III — Return target card with Mechanism A from your graveyard to your hand.
+    gold uncommon (MV 3 WU, Legendary Creature — Bird Spirit 2/2): Flying / Whenever you cast a spell from anywhere other than your hand, draw a card.
+    theme "life gain": have 22 [W 5|1, B 4|1, R 0|1, G 2|0, gold 5|1, colourless 1|1]
+    theme "the graveyard": have 36 [W 4|2, U 4|0, B 5|3, R 1|1, G 3|0, gold 6|6, colourless 1|0]
+  UB:
+    gold uncommon (MV 4 UB, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I — You may exchange control of two target creatures. / II — You may exchange control of two target nonbasic, noncreature permanents that share a card type. / III — Target player loses 3 life and you gain 3 life.
+    gold uncommon (MV 5 UB, Legendary Snow Creature — Zombie Wizard 4/3): Other snow and Zombie creatures you control get +1/+1. / {S}{S}{S}: Return this card from your graveyard to the battlefield tapped. ({S} can be paid with one mana from a snow source.)
+    theme "life gain": have 22 [W 5|1, B 4|1, R 0|1, G 2|0, gold 5|1, colourless 1|1]
+    theme "creature type Zombie": have 18 [U 4|1, B 5|1, G 3|1, gold 2|0, colourless 1|0]; refer 0 [none]
+    theme "the graveyard": have 36 [W 4|2, U 4|0, B 5|3, R 1|1, G 3|0, gold 6|6, colourless 1|0]
+  BR:
+    gold uncommon (MV 4 BR, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I — You may sacrifice a creature. When you do, this Saga deals 3 damage to any target. / II — Each player discards a card. / III — Return target creature card from your graveyard to the battlefield. Put a +1/+1 counter on it. It gains haste until your next turn.
+    gold uncommon (MV 4 BR, Legendary Creature — Demon Berserker 4/3): When ~ enters, until your next turn, creatures your opponents control attack each combat if able and attack a player other than you if able. / Whenever an attacking creature dies, each opponent loses 1 life and you gain 1 life.
+    theme "+1/+1 counters": have 24 [W 2|1, U 1|1, B 2|0, R 1|0, G 5|2, gold 4|4, colourless 1|0]
+    theme "the graveyard": have 36 [W 4|2, U 4|0, B 5|3, R 1|1, G 3|0, gold 6|6, colourless 1|0]
+    theme "sacrifice": have 12 [B 4|1, R 0|2, G 1|1, gold 1|2]
+  RG:
+    gold uncommon (MV 2 RG, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I — Target creature you control fights up to one target creature you don't control. / II — Add {R}. Put two +1/+1 counters on up to one target creature you control. / III — You gain life equal to the greatest power among creatures you control.
+    gold uncommon (MV 3 RG, Legendary Snow Creature — Troll Warrior 2/4): {3}, {T}: Create a colorless snow artifact token named Icy Manalith with "{T}: Add one mana of any color." / {6}{R}{G}, {T}: Look at the top four cards of your library. You may cast a spell from among them without paying its mana cost. Put the rest on the bottom of your library in a random order.
+    theme "+1/+1 counters": have 24 [W 2|1, U 1|1, B 2|0, R 1|0, G 5|2, gold 4|4, colourless 1|0]
+    theme "life gain": have 22 [W 5|1, B 4|1, R 0|1, G 2|0, gold 5|1, colourless 1|1]
+    theme "tokens": have 45 [W 5|1, U 2|2, B 3|1, R 5|3, G 3|4, gold 4|9, colourless 2|1]
+  GW:
+    gold uncommon (MV 3 WG, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I, II — Put a +1/+1 counter on up to one target creature. / III — Exile a creature with the greatest power among creatures target opponent controls.
+    gold uncommon (MV 5 WG, Legendary Creature — Human Warrior 2/3): Other creatures you control get +1/+1. / Landfall — Whenever a land you control enters, create a 1/1 white Human Warrior creature token.
+    theme "+1/+1 counters": have 24 [W 2|1, U 1|1, B 2|0, R 1|0, G 5|2, gold 4|4, colourless 1|0]
+    theme "tokens": have 45 [W 5|1, U 2|2, B 3|1, R 5|3, G 3|4, gold 4|9, colourless 2|1]
+  WB:
+    gold uncommon (MV 3 WB, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I, II — Choose a creature you control. Until your next turn, all damage that would be dealt to creatures you control is dealt to that creature instead. / III — Return target creature card from your graveyard to the battlefield with a flying counter on it. That creature is an Angel Warrior in addition to its other types.
+    gold uncommon (MV 5 WB, Legendary Creature — Angel Cleric 2/4): Flying, lifelink / Whenever you cast your second spell each turn, look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.
+    theme "creature type Angel": have 18 [W 2|3, U 2|1, B 2|1, G 3|1, gold 2|0, colourless 1|0]; refer 3 [U 0|1, gold 1|1]
+    theme "creature type Warrior": have 32 [W 8|3, U 2|1, G 9|3, gold 5|0, colourless 1|0]; refer 2 [U 0|1, gold 1|0]
+    theme "the graveyard": have 36 [W 4|2, U 4|0, B 5|3, R 1|1, G 3|0, gold 6|6, colourless 1|0]
+  UR:
+    gold uncommon (MV 2 UR, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I — Scry 2. / II — Draw a card. Then you may reveal a Giant card from your hand. When you do, this Saga deals 2 damage to target opponent or planeswalker. / III — The next Giant spell you cast this turn costs {2} less to cast.
+    gold uncommon (MV 3 UR, Legendary Creature — Giant Wizard 3/3): Whenever a creature or planeswalker an opponent controls is dealt excess damage, if a Giant, Wizard, or spell you controlled dealt damage to it this turn, draw a card.
+    theme "creature type Giant": have 20 [U 5|2, R 4|2, G 3|1, gold 2|0, colourless 1|0]; refer 3 [U 1|0, R 1|0, gold 1|0]
+  BG:
+    gold uncommon (MV 3 BG, Legendary Creature — Elf Warrior 3/2): Menace (This creature can't be blocked except by two or more creatures.) / When ~ enters, look at the top five cards of your library. You may reveal an Elf, Warrior, or Tyvar card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+    gold uncommon (MV 4 BG, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I — Destroy target nonland permanent an opponent controls. / II — Search your library for a Forest card, put it onto the battlefield tapped, then shuffle. / III — Creatures you control gain deathtouch until end of turn.
+    theme "creature type Elf": have 22 [U 2|1, B 5|1, G 8|2, gold 2|0, colourless 1|0]; refer 4 [B 1|0, G 1|1, gold 0|1]
+    theme "creature type Warrior": have 32 [W 8|3, U 2|1, G 9|3, gold 5|0, colourless 1|0]; refer 2 [U 0|1, gold 1|0]
+  RW:
+    gold uncommon (MV 2 WR, Legendary Creature — Dwarf Warrior 2/2): Whenever another nontoken creature you control dies, if it was enchanted or equipped, return it to its owner's hand. / Creature tokens you control that are enchanted or equipped get +1/+1.
+    gold uncommon (MV 3 WR, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I, II — Create a Treasure token. / III — Search your library for a card named Halvar, God of Battle or an Equipment card, reveal it, put it into your hand, then shuffle.
+    theme "tokens": have 45 [W 5|1, U 2|2, B 3|1, R 5|3, G 3|4, gold 4|9, colourless 2|1]
+    theme "creature type God": have 9 [U 2|1, G 3|1, gold 1|0, colourless 1|0]; refer 2 [W 0|1, gold 1|0]
+  GU:
+    gold uncommon (MV 2 UG, Enchantment — Saga): (As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) / I — Mill three cards. / II — Return up to two target snow permanent cards from your graveyard to your hand. / III — Choose three cards in each graveyard. Their owners shuffle those cards into their libraries.
+    gold uncommon (MV 5 UG, Legendary Snow Creature — Shapeshifter 0/0): Changeling (This card is every creature type.) / You may have ~ enter as a copy of a permanent you control, except it's legendary and snow in addition to its other types and, if it's a creature, it enters with two additional +1/+1 counters on it and has changeling.
+    theme "the graveyard": have 36 [W 4|2, U 4|0, B 5|3, R 1|1, G 3|0, gold 6|6, colourless 1|0]
+    theme "+1/+1 counters": have 24 [W 2|1, U 1|1, B 2|0, R 1|0, G 5|2, gold 4|4, colourless 1|0]
+Top creature types (cards; colours "C/U|R/M"):
+  Berserker 23: B 5|3, R 9|5, gold 1|0 (commons+uncommons 15)
+  Warrior 23: W 8|3, G 6|2, gold 4|0 (commons+uncommons 18)
+  Human 16: W 4|1, U 4|0, B 1|0, R 1|2, G 2|0, gold 1|0 (commons+uncommons 13)
+  Cleric 15: W 3|2, B 7|2, gold 1|0 (commons+uncommons 11)
+  Elf 13: B 5|1, G 5|1, gold 1|0 (commons+uncommons 11)
+  Dwarf 11: W 4|1, R 4|1, gold 1|0 (commons+uncommons 9)
+  Giant 11: U 3|1, R 4|2, gold 1|0 (commons+uncommons 8)
+  Wizard 11: U 6|1, B 1|0, R 1|0, gold 2|0 (commons+uncommons 10)
+  Angel 9: W 2|3, B 2|1, gold 1|0 (commons+uncommons 5)
+  Shapeshifter 9: U 2|1, G 3|1, gold 1|0, colourless 1|0 (commons+uncommons 7)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 6|0, flash 0|2, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|2
+  U: instant 5|2, flash 3|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 8|3
+  B: instant 6|1, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|1
+  R: instant 6|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|0
+  G: instant 3|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 3|0
+  gold: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0

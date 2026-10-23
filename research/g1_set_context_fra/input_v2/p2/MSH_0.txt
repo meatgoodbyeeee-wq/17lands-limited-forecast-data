@@ -1,0 +1,392 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 273, nonland 253, creatures 170, commons+uncommons 177. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 3 1.7/1.3; MV2 7 1.9/1.9; MV3 8 2.5/2.1; MV4 6 2.8/3.3; MV5 3 3.7/4.3 | total 27 avg 2.4/2.5
+  U: MV<=1 3 1/1; MV2 5 1.8/1.8; MV3 7 1.8/2.7; MV4 6 2.7/3.5; MV5 3 3.3/4 | total 24 avg 2.1/2.7
+  B: MV<=1 2 1.5/2; MV2 5 1.4/1.6; MV3 8 2.4/2.5; MV4 6 3/3.5; MV5 3 3/2.7; MV6+ 2 4/4.5 | total 26 avg 2.5/2.7
+  R: MV<=1 2 1/1.5; MV2 6 2/1.8; MV3 6 2.2/2.5; MV4 3 2.7/3.7; MV5 3 4.7/4.7; MV6+ 1 6/7 | total 21 avg 2.6/2.9
+  G: MV<=1 3 0.7/2; MV2 7 1.9/1.6; MV3 6 2.3/2.3; MV4 3 4/4; MV5 3 3.3/4; MV6+ 2 7/6.5 | total 24 avg 2.7/2.8
+  gold: MV<=1 1; MV2 6 1.8/1.8; MV3 19 2.7/3.1; MV4 13 2.8/3.8; MV5 2 5/4.5 | total 41 avg 2.8/3.2
+  colourless: MV2 2 1/3; MV3 3 2/3; MV4 2 2/3 | total 7 avg 1.8/3
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1.5/1.5; MV2 6 1.8/1.8; MV3 6 2.3/2.3; MV4 5 2.4/3; MV5 2 3/4.5 | total 21 avg 2.2/2.5
+  U: MV<=1 3 1/1; MV2 3 1.7/2.3; MV3 5 2/2.4; MV4 4 2.8/3.2; MV5 2 3.5/4 | total 17 avg 2.1/2.5
+  B: MV<=1 2 1.5/2; MV2 4 1.2/1.8; MV3 7 2.3/2.4; MV4 4 2.8/3.2; MV5 2 3.5/3; MV6+ 1 5/6 | total 20 avg 2.4/2.6
+  R: MV<=1 1 1/2; MV2 5 2/1.8; MV3 5 2.2/2.4; MV4 2 2.5/3; MV5 2 4.5/4.5; MV6+ 1 6/7 | total 16 avg 2.6/2.8
+  G: MV<=1 3 0.7/2; MV2 6 1.8/1.5; MV3 5 2.6/2.6; MV4 2 4/4; MV5 3 3.3/4; MV6+ 2 7/6.5 | total 21 avg 2.8/2.9
+  gold: MV3 9 2.6/2.8; MV4 9 2.7/3.4; MV5 2 5/4.5 | total 20 avg 2.9/3.2
+  colourless: MV2 1 1/3; MV3 2 2/2.5; MV4 1 2/1 | total 4 avg 1.8/2.2
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 5|0; destroy 1 (3) | 0 (); damage 1 (1) | 0 (); exile 3 (2,2,3) | 0 ()
+  U: any 2|1; exile 1 (5) | 1 (3); bounce/tuck 1 (3) | 0 ()
+  B: any 5|2; destroy 1 (4) | 1 (4); damage 0 () | 1 (4); exile 1 (3) | 0 (); -X/-X 3 (2,2,3) | 0 ()
+  R: any 7|3; destroy 1 (2) | 0 (); damage 5 (2,2,3,4,4) | 2 (4,5); fight/bite 2 (2,3) | 0 (); sweeper 0 () | 2 (3,4)
+  G: any 3|1; destroy 1 (2) | 0 (); damage 1 (3) | 0 (); fight/bite 1 (1) | 1 (3)
+  gold: any 3|6; destroy 1 (4) | 1 (5); damage 1 (3) | 1 (2); exile 0 () | 1 (3); fight/bite 1 (4) | 2 (4,5); sweeper 0 () | 1 (3)
+  colourless: any 0|0
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 21|6; flying 3|3; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|3; reach 0|0; can block fliers (flying or reach) 3|3; other cards that give flying 1|0
+  U: creatures 17|7; flying 7|4; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 8|4; reach 1|1; can block fliers (flying or reach) 8|5; other cards that give flying 2|0
+  B: creatures 20|6; flying 3|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|2; reach 0|0; can block fliers (flying or reach) 3|2; other cards that give flying 0|0
+  R: creatures 16|5; flying 2|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|2; reach 3|1; can block fliers (flying or reach) 5|3; other cards that give flying 0|0
+  G: creatures 21|3; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 3|0; can block fliers (flying or reach) 3|0; other cards that give flying 0|0
+  gold: creatures 20|21; flying 3|3; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|3; reach 2|0; can block fliers (flying or reach) 5|3; other cards that give flying 1|1
+  colourless: creatures 4|3; flying 2|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|1; reach 0|1; can block fliers (flying or reach) 2|2; other cards that give flying 0|1
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (ability word; 24 cards, commons+uncommons 19; colours C/U|R/M: W 1|2, U 3|1, B 2|0, R 4|1, G 5|0, gold 2|1, colourless 2|0). Example text of a card: "Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)"
+  Mechanism B (keyword; 12 cards, commons+uncommons 11; colours C/U|R/M: W 2|0, U 2|0, B 3|0, R 3|0, G 1|1). Example text of a card: "Mechanism B 2 (As an additional cost to cast this spell, you may tap any number of creatures you control with total power 2 or more.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 3 WU, Legendary Creature — Human Soldier Hero 3/4): Vigilance / Whenever a creature you control becomes tapped during your turn, if it's the first time that creature has become tapped this turn, untap it.
+    gold uncommon (MV 4 WU, Legendary Creature — Spider Human Spy Hero 1/4): Flash / When ~ enters, tap target creature an opponent controls. That creature can't become untapped for as long as you control ~.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  UB:
+    gold uncommon (MV 3 UB, Legendary Creature — Human Rogue Villain 2/2): Flash / Intangibility — ~ can't be blocked.
+    gold uncommon (MV 4 UB, Legendary Creature — Human Villain 3/4): Whenever ~ attacks, he connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.) / Whenever you draw your second card each turn, each opponent loses 1 life and you gain 1 life.
+    theme "life gain": have 22 [W 6|1, B 5|2, G 3|1, gold 1|2, colourless 0|1]
+  BR:
+    gold uncommon (MV 3 BR, Legendary Creature — Human Assassin Villain 2/3): When ~ enters, you may sacrifice an artifact or discard a nonland card. When you do, ~ deals 2 damage to any target. / {3}, {T}, Sacrifice an artifact or discard a nonland card: ~ deals 2 damage to any target.
+    gold uncommon (MV 4 BR, Legendary Creature — Human Villain 2/3): Whenever you cast a Villain spell, create a 2/1 black Villain creature token with menace. (It can't be blocked except by two or more creatures.)
+    theme "sacrifice": have 17 [W 1|0, U 2|0, B 3|2, R 3|0, G 2|0, gold 2|2]
+    theme "creature type Villain": have 69 [W 3|0, U 4|4, B 18|5, R 7|1, G 5|1, gold 8|9, colourless 2|2]; refer 6 [B 2|2, R 1|0, gold 0|1]
+    theme "tokens": have 40 [W 3|1, U 4|2, B 5|3, R 3|0, G 4|3, gold 4|5, colourless 2|1]
+  RG:
+    gold uncommon (MV 4 RG, Legendary Creature — Gamma Villain 4/4): Trample / Mechanism A — {5}{R/G}{R/G}: Put a +1/+1 counter on ~. He fights up to one target creature an opponent controls. (Activate each Mechanism A ability only once. Reduce the cost by his mana cost if he entered this turn.)
+    gold uncommon (MV 5 RG, Legendary Creature — Gamma Berserker Hero 6/5): Reach, trample / Mechanism A abilities of other creatures you control cost {3} less to activate. / Mechanism A — {6}{R}{G}: Put five +1/+1 counters on ~. (Activate each Mechanism A ability only once. Reduce the cost by his mana cost if he entered this turn.)
+    theme "+1/+1 counters": have 64 [W 8|4, U 6|1, B 4|1, R 6|2, G 17|2, gold 4|7, colourless 2|0]
+  GW:
+    gold uncommon (MV 3 WG, Legendary Creature — Spider Human Hero 3/2): Flash / Reach, vigilance / No One Dies! — When ~ enters, you may tap him. When you do, another target nonattacking creature you control gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+    gold uncommon (MV 4 WG, Legendary Creature — Human Warrior Hero 4/4): Whenever another nontoken Hero you control enters, choose one — / • Create a 1/1 white Soldier creature token. / • Creatures you control get +1/+1 until end of turn.
+    theme "creature type Hero": have 91 [W 16|6, U 9|3, B 2|1, R 8|4, G 13|2, gold 13|12, colourless 1|1]; refer 5 [W 0|2, B 1|1, G 1|0]
+    theme "tokens": have 40 [W 3|1, U 4|2, B 5|3, R 3|0, G 4|3, gold 4|5, colourless 2|1]
+  WB:
+    gold uncommon (MV 3 WB, Legendary Creature — Human Hero Villain 3/2): Deathtouch / Whenever a creature you control attacks alone, it gains first strike and menace until end of turn. (It can't be blocked except by two or more creatures.)
+    gold uncommon (MV 4 WB, Legendary Creature — Human Soldier Hero 3/2): When ~ enters, create a colorless Equipment artifact token named Sturdy Shield with "Equipped creature gets +1/+2" and equip {2}. Attach it to ~.
+    theme "tokens": have 40 [W 3|1, U 4|2, B 5|3, R 3|0, G 4|3, gold 4|5, colourless 2|1]
+  UR:
+    gold uncommon (MV 3 UR, Legendary Creature — Human Hero 2/2): Whenever a player casts a spell that targets ~, he gets +2/+2 until end of turn. You may choose new targets for that spell.
+    gold uncommon (MV 4 UR, Legendary Artifact Creature — Human Hero 1/4): Flying, vigilance / ~ gets +1/+0 for each other artifact you control. / Whenever ~ attacks, if an artifact entered the battlefield under your control this turn, draw a card.
+    theme "artifact cards": have 38 [W 2|1, U 7|2, B 3|1, R 5|1, gold 2|1, colourless 7|6]; refer 5 [U 1|0, B 0|1, R 0|1, gold 0|2]
+  BG:
+    gold uncommon (MV 3 BG, Legendary Creature — Human Villain 5/5): As an additional cost to cast this spell, discard a card or pay {2}. / Ward—Discard a card or pay {2}. (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player discards a card or pays {2}.)
+    gold uncommon (MV 4 BG, Legendary Creature — Human Mercenary Villain 3/3): When ~ enters, you may sacrifice another creature. When you do, destroy target nonland permanent an opponent controls. / As long as there are two or more creature cards in your graveyard, ~ gets +2/+1.
+    theme "the graveyard": have 24 [W 2|0, U 1|0, B 10|1, R 0|1, G 3|2, gold 1|3]
+    theme "sacrifice": have 17 [W 1|0, U 2|0, B 3|2, R 3|0, G 2|0, gold 2|2]
+  RW:
+    gold uncommon (MV 3 WR, Legendary Artifact Creature — Human Hero 1/3): Flying / At the beginning of combat on your turn, another target creature you control gets +X/+0 until end of turn, where X is ~'s power.
+    gold uncommon (MV 5 WR, Legendary Creature — God Warrior Hero 4/4): Flying, vigilance, prowess, prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn twice.)
+    involved cards: no theme could be extracted by the rules (counts not given).
+  GU:
+    gold uncommon (MV 3 UG, Legendary Creature — Human Rogue Hero 2/2): Whenever ~ attacks, you may pay {1}. When you do, put a +1/+1 counter on target creature. / Whenever you put a +1/+1 counter on a creature, create a 1/1 green Insect creature token. This ability triggers only once each turn.
+    gold uncommon (MV 4 UG, Legendary Creature — Mutant Scientist Hero 3/3): As long as you've put one or more +1/+1 counters on ~ this turn, he has flying. / Whenever ~ deals combat damage to a player, draw a card.
+    theme "+1/+1 counters": have 64 [W 8|4, U 6|1, B 4|1, R 6|2, G 17|2, gold 4|7, colourless 2|0]
+    theme "tokens": have 40 [W 3|1, U 4|2, B 5|3, R 3|0, G 4|3, gold 4|5, colourless 2|1]
+Top creature types (cards; colours "C/U|R/M"):
+  Human 112: W 17|6, U 8|3, B 17|4, R 9|1, G 11|3, gold 16|17 (commons+uncommons 78)
+  Hero 91: W 16|6, U 9|3, B 2|1, R 8|4, G 13|2, gold 13|12, colourless 1|1 (commons+uncommons 62)
+  Villain 69: W 3|0, U 4|4, B 18|5, R 7|1, G 5|1, gold 8|9, colourless 2|2 (commons+uncommons 47)
+  Robot 14: W 1|0, U 3|0, R 3|0, colourless 4|3 (commons+uncommons 11)
+  Soldier 13: W 4|2, U 1|0, B 2|0, G 2|0, gold 2|0 (commons+uncommons 11)
+  Spy 12: W 6|2, B 2|1, gold 1|0 (commons+uncommons 9)
+  Warrior 11: W 2|0, U 1|0, R 2|1, G 1|1, gold 2|1 (commons+uncommons 8)
+  Mutant 10: U 2|2, R 1|2, gold 1|2 (commons+uncommons 4)
+  Scientist 10: U 3|1, B 1|1, gold 1|3 (commons+uncommons 5)
+  God 7: U 1|1, R 1|1, gold 1|2 (commons+uncommons 3)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 3|0, flash 3|2, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|2
+  U: instant 4|0, flash 2|2, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|2
+  B: instant 5|0, flash 1|1, hand 0|0, swap 0|1, cyc-trigger 0|0 ; any 6|2
+  R: instant 7|0, flash 1|0, hand 0|1, swap 0|0, cyc-trigger 0|0 ; any 8|1
+  G: instant 3|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|0
+  gold: instant 0|0, flash 3|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 3|1
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#936 | MV 2 B | Legendary Creature — Human Rogue Villain | 1/2
+Flying
+Whenever another Villain you control enters, ~ gets +1/+0 and gains lifelink until end of turn.
+SET INFO: "Villain" creatures: 68 of 169 creature cards in the set (40%), 46 of 118 at common/uncommon. A typical deck that can play this card has about 9.1 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 8.9 of the 23 spells).
+  MATCHING CARDS (68; commons+uncommons 46): by mana value MV<=1 4, MV2 13, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 68, average power/toughness 2.5/2.9 (commons+uncommons only 2.5/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 R | Artifact Creature — Robot Villain | 2/2] Trample / Whenever another artifact you control enters, put a +1/+1 counter on this creature." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#935 | MV 5 G | Creature — Human Soldier Hero | 4/4
+Vigilance
+When this creature enters, put a +1/+1 counter on target creature. If that creature is another Hero, put two +1/+1 counters on it instead.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 61 of 118 at common/uncommon. A typical deck that can play this card has about 6.4 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 61): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 12, MV6+ 1. Creatures among them: 90, average power/toughness 2.5/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 U | Legendary Creature — Human Hero | 1/4] Vigilance / {1}, {T}: Copy target activated or triggered ability you control from a creature source. You may choose new targets for the copy. (Mana abilities can't be targeted.)" || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#934 | MV 3 B | Instant
+This spell costs {1} less to cast if you control a Villain.
+You draw two cards and lose 2 life.
+SET INFO: "Villain" creatures: 69 of 170 creature cards in the set (41%), 47 of 119 at common/uncommon. A typical deck that can play this card has about 9.2 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 9.2 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 47): by mana value MV<=1 4, MV2 14, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 69, average power/toughness 2.5/2.9 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#933 | MV 0 C | Land
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a Villain spell or to activate an ability of a Villain source.
+{3}, {T}: Target Villain you control connives. Activate only as a sorcery. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)
+SET INFO: "Villain" creatures: 69 of 170 creature cards in the set (41%), 47 of 119 at common/uncommon. A typical deck that can play this card has about 6.6 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 6.4 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 47): by mana value MV<=1 4, MV2 14, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 69, average power/toughness 2.5/2.9 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#932 | MV 3 C | Legendary Artifact Creature — Robot Villain | 2/4
+Whenever another nontoken artifact you control enters, you may pay {2}. If you do, create a token that's a copy of it. If the token isn't a creature, it becomes a 2/2 Robot Villain creature in addition to its other types.
+SET INFO: artifact cards: 37 of 252 nonland cards in the set (15%), 26 of 177 at common/uncommon. A typical deck that can play this card has about 5.5 of its 23 spells like this. 11 other cards also make such tokens (counting them, about 6.3 of the 23 spells).
+  MATCHING CARDS (37; commons+uncommons 26): by mana value MV<=1 5, MV2 11, MV3 10, MV4 7, MV5 4. Creatures among them: 22, average power/toughness 2/2.8 (commons+uncommons only 1.9/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Artifact — Equipment] Equipped creature gets +1/+0 and has reach. / Whenever equipped creature becomes tapped, it deals 1 damage to each opponent. / Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)" || "[MV 3 C | Legendary Artifact Creature — Robot Hero | 2/2] Flying / Cybernetic Senses — Whenever ~ attacks, draw a card if her power is 4 or greater. / Mechanism A — {7}: Put two +1/+1 counters on ~. (Activate each Mechanism A ability only once. Reduce the cost by her mana cost if she en…" || "[MV 5 R | Artifact Creature — Kree Robot Villain | 5/5] Reach / Basic landcycling {2} ({2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)"
+
+#931 | MV 4 B | Enchantment
+Flash
+Whenever a Villain you control dies, return it to the battlefield under its owner's control with a finality counter on it. That creature is a Hero in addition to its other types. (If a creature with a finality counter on it would die, exile it instead.)
+SET INFO: "Villain" creatures: 69 of 170 creature cards in the set (41%), 47 of 119 at common/uncommon. A typical deck that can play this card has about 9.2 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 9.1 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 47): by mana value MV<=1 4, MV2 14, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 69, average power/toughness 2.5/2.9 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+SET INFO: "Hero" creatures: 91 of 170 creature cards in the set (54%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 4.1 of its 15 creatures of this type.
+  MATCHING CARDS (91; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 91, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#930 | MV 4 G | Legendary Creature — Squirrel Human Hero | 4/4
+Do You Like Squirrels? — Whenever ~ enters or attacks, create a 1/1 green Squirrel creature token.
+I LOVE Squirrels! — {1}{G}{G}{G}: Create X 1/1 green Squirrel creature tokens, where X is the number of Squirrels you control.
+SET INFO: "Squirrel" creatures: 0 of 169 creature cards in the set (0%), 0 of 119 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#929 | MV 6 G | Legendary Creature — Human Hero | 7/7
+Trample
+Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 61 of 118 at common/uncommon. A typical deck that can play this card has about 6.5 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 61): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 13. Creatures among them: 90, average power/toughness 2.5/2.8 (commons+uncommons only 2.4/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 U | Legendary Creature — Human Hero | 1/4] Vigilance / {1}, {T}: Copy target activated or triggered ability you control from a creature source. You may choose new targets for the copy. (Mana abilities can't be targeted.)" || "[MV 5 G | Legendary Creature — Human Barbarian Hero | 3/2] You may look at the top card of your library any time. / You may play lands from the top of your library. / When ~ enters, create Zabu, a legendary 2/2 green Cat creature token with "Landfall — Whenever a land you control enters,…"
+
+#928 | MV 4 W | Legendary Creature — Human Hero | 5/5
+Flying, vigilance, indestructible
+When ~ enters, target opponent creates The Void, a legendary 5/5 black Horror Villain creature token with flying, indestructible, and "The Void attacks each combat if able."
+
+#927 | MV 6 B | Legendary Creature — Human Villain | 5/6
+Other Villains you control get +2/+1.
+{1}{B}, Discard this card: Search your library for a Plan card, reveal it, put it into your hand, then shuffle.
+SET INFO: "Villain" creatures: 68 of 169 creature cards in the set (40%), 46 of 118 at common/uncommon. A typical deck that can play this card has about 9.1 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 8.9 of the 23 spells).
+  MATCHING CARDS (68; commons+uncommons 46): by mana value MV<=1 4, MV2 14, MV3 26, MV4 18, MV5 4, MV6+ 2. Creatures among them: 68, average power/toughness 2.5/2.8 (commons+uncommons only 2.4/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#926 | MV 4 UB | Legendary Creature — Human Mercenary Villain | 3/5
+Photographic Reflexes — At the beginning of your first main phase, until your next turn, ~ becomes a copy of up to one target creature on the battlefield or creature card in a graveyard, except his name is ~ and he's a legendary Human Mercenary Villain creature.
+SET INFO: "Human" creatures: 111 of 169 creature cards in the set (66%), 78 of 119 at common/uncommon. A typical deck that can play this card has about 8.4 of its 15 creatures of this type.
+  MATCHING CARDS (111; commons+uncommons 78): by mana value MV<=1 10, MV2 28, MV3 38, MV4 23, MV5 9, MV6+ 3. Creatures among them: 111, average power/toughness 2.4/2.7 (commons+uncommons only 2.3/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+SET INFO: "Mercenary" creatures: 2 of 169 creature cards in the set (1%), 2 of 119 at common/uncommon. A typical deck that can play this card has about 0.2 of its 15 creatures of this type.
+  MATCHING CARDS (2; commons+uncommons 2): by mana value MV4 2. Creatures among them: 2, average power/toughness 3/3 (commons+uncommons only 3/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 4 B | Legendary Creature — Human Mercenary Villain | 3/3] Deathtouch / Whenever another Villain you control enters, put a +1/+1 counter on ~. He deals 2 damage to each opponent. This ability triggers only once each turn." || "[MV 4 BG | Legendary Creature — Human Mercenary Villain | 3/3] When ~ enters, you may sacrifice another creature. When you do, destroy target nonland permanent an opponent controls. / As long as there are two or more creature cards in your graveyard, ~ gets +2/+1."
+SET INFO: "Villain" creatures: 68 of 169 creature cards in the set (40%), 47 of 119 at common/uncommon. A typical deck that can play this card has about 9.2 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 8.7 of the 23 spells).
+  MATCHING CARDS (68; commons+uncommons 47): by mana value MV<=1 4, MV2 14, MV3 26, MV4 17, MV5 4, MV6+ 3. Creatures among them: 68, average power/toughness 2.5/2.8 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#925 | MV 2 B | Legendary Creature — Human Hero Villain | 2/2
+Whenever another Villain you control enters, attach up to one target Equipment you control to target creature you control.
+Whenever an equipped creature you control attacks, it connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)
+SET INFO: "Villain" creatures: 68 of 169 creature cards in the set (40%), 46 of 118 at common/uncommon. A typical deck that can play this card has about 9.1 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 8.9 of the 23 spells).
+  MATCHING CARDS (68; commons+uncommons 46): by mana value MV<=1 4, MV2 13, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 68, average power/toughness 2.5/2.9 (commons+uncommons only 2.5/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+SET INFO: Equipment cards (including cards that make one): 9 of 252 nonland cards in the set (4%), 6 of 176 at common/uncommon. A typical deck that can play this card has about 1.3 of its 23 spells like this.
+  MATCHING CARDS (9; commons+uncommons 6): by mana value MV<=1 3, MV2 4, MV3 1, MV4 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Artifact — Equipment] Equipped creature gets +1/+0 and has reach. / Whenever equipped creature becomes tapped, it deals 1 damage to each opponent. / Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)" || "[MV 2 U | Artifact — Equipment] When this Equipment enters, attach it to target creature you control. / Equipped creature gets +1/+1 and has flying and ward {1}. (Whenever equipped creature becomes the target of a spell or ability an opponent controls, counter …"
+
+#924 | MV 2 W | Enchantment — Aura
+Enchant creature
+Enchanted creature gets +2/+2, has first strike and vigilance, and is a legendary Soldier in addition to its other types.
+Whenever enchanted creature attacks or blocks, attach any number of target Equipment you control to it.
+SET INFO: "Soldier" creatures: 13 of 170 creature cards in the set (8%), 11 of 119 at common/uncommon. A typical deck that can play this card has about 2.0 of its 15 creatures of this type. 4 other cards also make such creature tokens (counting them, about 2.5 of the 23 spells).
+  MATCHING CARDS (13; commons+uncommons 11): by mana value MV<=1 1, MV2 2, MV3 7, MV4 1, MV5 2. Creatures among them: 13, average power/toughness 2.6/2.4 (commons+uncommons only 2.5/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Artifact Creature — Zombie Soldier | 1/2] {2}{B}: Return this card from your graveyard to your hand." || "[MV 5 G | Creature — Human Soldier Hero | 4/4] Vigilance / When this creature enters, put a +1/+1 counter on target creature. If that creature is another Hero, put two +1/+1 counters on it instead."
+SET INFO: legendary (nonland) cards: 131 of 252 nonland cards in the set (52%), 77 of 177 at common/uncommon. A typical deck that can play this card has about 6.9 of its 23 spells like this.
+  MATCHING CARDS (131; commons+uncommons 77): by mana value MV<=1 9, MV2 27, MV3 44, MV4 33, MV5 14, MV6+ 4. Creatures among them: 128, average power/toughness 2.6/3 (commons+uncommons only 2.6/2.9). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+SET INFO: Equipment cards (including cards that make one): 9 of 252 nonland cards in the set (4%), 6 of 177 at common/uncommon. A typical deck that can play this card has about 1.3 of its 23 spells like this.
+  MATCHING CARDS (9; commons+uncommons 6): by mana value MV<=1 3, MV2 4, MV3 1, MV4 1. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Artifact — Equipment] Equipped creature gets +1/+0 and has reach. / Whenever equipped creature becomes tapped, it deals 1 damage to each opponent. / Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)" || "[MV 2 U | Artifact — Equipment] When this Equipment enters, attach it to target creature you control. / Equipped creature gets +1/+1 and has flying and ward {1}. (Whenever equipped creature becomes the target of a spell or ability an opponent controls, counter …"
+
+#923 | MV 1 G | Legendary Creature — Human Advisor | 0/3
+{3}, {T}: Mill four cards. You may put a Hero or enchantment card from among those cards into your hand. (To mill four cards, put the top four cards of your library into your graveyard.)
+SET INFO: "Hero" creatures: 91 of 169 creature cards in the set (54%), 62 of 118 at common/uncommon. A typical deck that can play this card has about 6.7 of its 15 creatures of this type.
+  MATCHING CARDS (91; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 91, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#922 | MV 1 G | Legendary Creature — Human Hero | 1/2
+Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance.
+Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 6/6 and gains trample.
+SET INFO: "Dinosaur" creatures: 2 of 169 creature cards in the set (1%), 1 of 118 at common/uncommon. A typical deck that can play this card has about 0.5 of its 15 creatures of this type.
+  MATCHING CARDS (2; commons+uncommons 1): by mana value MV3 1, MV6+ 1. Creatures among them: 2, average power/toughness 4.5/4 (commons+uncommons only 7/6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 6 G | Creature — Dinosaur | 7/6] Trample / Basic landcycling {2} ({2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)"
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 61 of 118 at common/uncommon. A typical deck that can play this card has about 6.5 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 61): by mana value MV<=1 6, MV2 22, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 U | Legendary Creature — God Hero Villain | 1/1] Each creature you control that you've put one or more +1/+1 counters on this turn has hexproof. / Whenever you draw your second card each turn, put a +1/+1 counter on ~." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#921 | MV 1 W | Enchantment — Plan
+Whenever a creature you control enters, scry 1 and put a plan counter on this enchantment.
+When the fourth plan counter is put on this enchantment, sacrifice it, draw a card, and put a +1/+1 counter on each creature you control.
+
+#920 | MV 2 W | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — Scry 2.
+II — You may put a Hero creature card with mana value 3 or less from your hand onto the battlefield. If you don't, draw a card.
+III — Put a +1/+1 counter on each creature you control.
+SET INFO: "Hero" creatures: 91 of 170 creature cards in the set (54%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 7.7 of its 15 creatures of this type.
+  MATCHING CARDS (91; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 91, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#919 | MV 4 W | Legendary Creature — Human Warrior Hero | 3/2
+When ~ enters, create two 1/1 white Soldier creature tokens.
+Attacking creature tokens you control have first strike.
+
+#918 | MV 1 W | Legendary Creature — Human Spy Hero | 2/1
+Mechanism A — {W}{U}{B}{R}{G}: Put two +1/+1 counters on ~, then look at the top seven cards of your library. You may put a Hero, Equipment, or Vehicle card from among them onto the battlefield. If it's a double-faced card, you may transform it. Put the rest on the bottom of your library in a random order. (Activate each Mechanism A ability only once. Reduce the cost by his mana cost if he entered this turn.)
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 7.7 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 62): by mana value MV<=1 6, MV2 22, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#917 | MV 3 U | Legendary Creature — Mutant Merfolk Villain | /4
+Flying
+~'s power is equal to the number of Merfolk you control.
+Whenever you cast a noncreature spell with one or more blue mana symbols in its mana cost, create that many 1/1 blue Merfolk creature tokens.
+SET INFO: "Merfolk" creatures: 2 of 169 creature cards in the set (1%), 2 of 119 at common/uncommon. A typical deck that can play this card has about 0.7 of its 15 creatures of this type.
+  MATCHING CARDS (2; commons+uncommons 2): by mana value MV3 1, MV4 1. Creatures among them: 2, average power/toughness 3/3 (commons+uncommons only 3/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 3 U | Creature — Merfolk Soldier | 3/2] Vigilance / Whenever you draw your second card each turn, put a +1/+1 counter on this creature." || "[MV 4 U | Legendary Creature — Merfolk Warrior Villain | 3/4] Other Merfolk you control get +1/+1. / Whenever one or more Merfolk you control attack a player, draw a card."
+SET INFO: noncreature spells: 83 of 252 nonland cards in the set (33%), 58 of 177 at common/uncommon. A typical deck that can play this card has about 9.5 of its 23 spells like this.
+  MATCHING CARDS (83; commons+uncommons 58): by mana value MV<=1 12, MV2 25, MV3 23, MV4 13, MV5 7, MV6+ 3. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 U | Enchantment — Aura] Enchant creature / At the beginning of the upkeep of enchanted creature's controller, that player draws a card." || "[MV 7 U | Sorcery] Mechanism B 4 (As an additional cost to cast this spell, you may tap any number of creatures you control with total power 4 or more.) / Choose one. If this spell was cast using Mechanism B, choose both instead. / • Target player …"
+
+#916 | MV 4 BR | Legendary Creature — Human Villain | 2/3
+Whenever you cast a Villain spell, create a 2/1 black Villain creature token with menace. (It can't be blocked except by two or more creatures.)
+SET INFO: "Villain" creatures: 68 of 169 creature cards in the set (40%), 46 of 118 at common/uncommon. A typical deck that can play this card has about 10.6 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 10.2 of the 23 spells).
+  MATCHING CARDS (68; commons+uncommons 46): by mana value MV<=1 4, MV2 14, MV3 26, MV4 17, MV5 4, MV6+ 3. Creatures among them: 68, average power/toughness 2.5/2.8 (commons+uncommons only 2.5/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#915 | MV 5 W | Legendary Creature — Human Hero | 2/5
+Lifelink
+Whenever you put one or more +1/+1 counters on one or more other Heroes you control, you may create a 0/4 colorless Wall creature token with defender.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 61 of 118 at common/uncommon. A typical deck that can play this card has about 7.6 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 61): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 12, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 U | Legendary Creature — Human Hero | 1/4] Vigilance / {1}, {T}: Copy target activated or triggered ability you control from a creature source. You may choose new targets for the copy. (Mana abilities can't be targeted.)" || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#914 | MV 3 R | Legendary Creature — Human Hero | 2/2
+Flying
+Whenever you draw a card, if you control another Hero, ~ deals 1 damage to target opponent.
+Mechanism A — {6}{R}: Put three +1/+1 counters on ~. (Activate each Mechanism A ability only once. Reduce the cost by his mana cost if he entered this turn.)
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 61 of 118 at common/uncommon. A typical deck that can play this card has about 5.9 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 61): by mana value MV<=1 7, MV2 22, MV3 28, MV4 19, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#913 | MV 3 W | Creature — Human Hero | 2/2
+When this creature enters, draw a card. If you control another Hero, you gain 2 life.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 61 of 118 at common/uncommon. A typical deck that can play this card has about 7.5 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 61): by mana value MV<=1 7, MV2 22, MV3 28, MV4 19, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 U | Legendary Creature — Human Hero | 1/4] Vigilance / {1}, {T}: Copy target activated or triggered ability you control from a creature source. You may choose new targets for the copy. (Mana abilities can't be targeted.)" || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#912 | MV 3 B | Creature — Human Soldier Villain | 3/2
+When this creature enters, create a tapped 2/1 black Villain creature token with menace if there are two or more creature cards in your graveyard. Otherwise, mill two cards. (Put the top two cards of your library into your graveyard.)
+
+#911 | MV 2 R | Artifact Creature — Robot Villain | 1/3
+Whenever another Villain and/or artifact you control enters, this creature deals 1 damage to target opponent.
+SET INFO: "Villain" creatures: 68 of 169 creature cards in the set (40%), 46 of 118 at common/uncommon. A typical deck that can play this card has about 6.6 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 6.4 of the 23 spells).
+  MATCHING CARDS (68; commons+uncommons 46): by mana value MV<=1 4, MV2 13, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 68, average power/toughness 2.5/2.8 (commons+uncommons only 2.5/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+SET INFO: artifact cards: 37 of 252 nonland cards in the set (15%), 25 of 176 at common/uncommon. A typical deck that can play this card has about 5.9 of its 23 spells like this. 11 other cards also make such tokens (counting them, about 6.9 of the 23 spells).
+  MATCHING CARDS (37; commons+uncommons 25): by mana value MV<=1 5, MV2 10, MV3 11, MV4 7, MV5 4. Creatures among them: 22, average power/toughness 2/2.8 (commons+uncommons only 2/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Artifact — Equipment] Equipped creature gets +1/+0 and has reach. / Whenever equipped creature becomes tapped, it deals 1 damage to each opponent. / Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)" || "[MV 5 R | Artifact Creature — Kree Robot Villain | 5/5] Reach / Basic landcycling {2} ({2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)"
+
+#910 | MV 4 U | Creature — Insect | 3/2
+Flash
+Flying
+When this creature enters, choose one —
+• Tap target nonland permanent.
+• Untap target nonland permanent.
+
+#909 | MV 0 C | Land
+This land enters tapped.
+When this land enters, you gain 1 life.
+{T}: Add {W} or {B}.
+
+#908 | MV 3 R | Sorcery
+Gain control of target creature until end of turn. If you control a Villain with greater mana value than that creature, gain control of that creature until the end of your next turn instead. Untap that creature. It gains haste until end of turn.
+SET INFO: "Villain" creatures: 69 of 170 creature cards in the set (41%), 47 of 119 at common/uncommon. A typical deck that can play this card has about 6.9 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 6.7 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 47): by mana value MV<=1 4, MV2 14, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 69, average power/toughness 2.5/2.9 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#907 | MV 2 B | Enchantment — Plan
+Whenever a Villain you control enters, each opponent loses 1 life and you gain 1 life. Put a plan counter on this enchantment.
+When the fifth plan counter is put on this enchantment, sacrifice it. When you do, target opponent exiles the top five cards of their library. You may cast up to two spells from among the exiled cards without paying their mana costs.
+SET INFO: "Villain" creatures: 69 of 170 creature cards in the set (41%), 47 of 119 at common/uncommon. A typical deck that can play this card has about 9.2 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 9.1 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 47): by mana value MV<=1 4, MV2 14, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 69, average power/toughness 2.5/2.9 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#906 | MV 2 B | Instant
+Choose one or both —
+• Return target Villain card from your graveyard to your hand.
+• Return target Hero card from your graveyard to your hand.
+SET INFO: "Villain" creatures: 69 of 170 creature cards in the set (41%), 47 of 119 at common/uncommon. A typical deck that can play this card has about 9.2 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 9.2 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 47): by mana value MV<=1 4, MV2 14, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 69, average power/toughness 2.5/2.9 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+SET INFO: "Hero" creatures: 91 of 170 creature cards in the set (54%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 4.1 of its 15 creatures of this type.
+  MATCHING CARDS (91; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 91, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#905 | MV 4 WR | Legendary Creature — Human Hero | 3/4
+Vigilance, haste
+Radar Sense — You may look at the top card of your library any time.
+Whenever you attack, you may exile the top card of your library. If that card is a Hero card, ~ gets +2/+1 until end of turn. You may play that card this turn.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 8.2 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 29, MV4 18, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#904 | MV 4 B | Legendary Creature — Human Mercenary Villain | 3/3
+Deathtouch
+Whenever another Villain you control enters, put a +1/+1 counter on ~. He deals 2 damage to each opponent. This ability triggers only once each turn.
+SET INFO: "Villain" creatures: 68 of 169 creature cards in the set (40%), 46 of 118 at common/uncommon. A typical deck that can play this card has about 9.1 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 8.9 of the 23 spells).
+  MATCHING CARDS (68; commons+uncommons 46): by mana value MV<=1 4, MV2 14, MV3 26, MV4 17, MV5 4, MV6+ 3. Creatures among them: 68, average power/toughness 2.5/2.8 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#903 | MV 5 W | Legendary Creature — Kree Soldier Hero | 4/4
+Flying, vigilance
+Cosmic Awareness — As long as an opponent has cast a spell this turn, you may cast spells as though they had flash.
+
+#902 | MV 3 W | Legendary Creature — Human Soldier Hero | 3/1
+Flying, first strike, ward {1}
+Whenever ~ attacks, each other Hero you control gets +X/+X until end of turn, where X is ~'s toughness.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 7.7 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 28, MV4 19, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#901 | MV 3 W | Legendary Creature — Human Soldier Hero | 3/2
+First strike
+~ enters with a shield counter on him. (If he would be dealt damage or destroyed, remove a shield counter from him instead.)
+As long as ~ has a shield counter on him, you and other Heroes you control have hexproof.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 7.7 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 28, MV4 19, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#900 | MV 2 U | Creature — Human Scientist | 1/3
+Mechanism A — {5}{U}: Put a +1/+1 counter on this creature and draw two cards. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)
+
+#899 | MV 4 WG | Legendary Creature — Human Warrior Hero | 4/4
+Whenever another nontoken Hero you control enters, choose one —
+• Create a 1/1 white Soldier creature token.
+• Creatures you control get +1/+1 until end of turn.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 61 of 118 at common/uncommon. A typical deck that can play this card has about 8.7 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 61): by mana value MV<=1 7, MV2 22, MV3 29, MV4 18, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.5/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 U | Legendary Creature — Human Hero | 1/4] Vigilance / {1}, {T}: Copy target activated or triggered ability you control from a creature source. You may choose new targets for the copy. (Mana abilities can't be targeted.)" || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#898 | MV 3 B | Legendary Creature — Human Villain | 2/2
+Villain spells you cast cost {1} less to cast.
+Whenever another Villain you control enters, you may have it connive. Do this only once each turn. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)
+SET INFO: "Villain" creatures: 68 of 169 creature cards in the set (40%), 46 of 118 at common/uncommon. A typical deck that can play this card has about 9.1 of its 15 creatures of this type. 6 other cards also make such creature tokens (counting them, about 8.9 of the 23 spells).
+  MATCHING CARDS (68; commons+uncommons 46): by mana value MV<=1 4, MV2 14, MV3 25, MV4 18, MV5 4, MV6+ 3. Creatures among them: 68, average power/toughness 2.5/2.9 (commons+uncommons only 2.5/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#897 | MV 4 BR | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — Create two 2/1 black Villain creature tokens with menace.
+II — This Saga deals 2 damage to each non-Villain creature and each opponent.
+III — Create a Treasure token for each Villain you control.
+SET INFO: "Villain" creatures: 69 of 170 creature cards in the set (41%), 47 of 119 at common/uncommon. A typical deck that can play this card has about 10.6 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 10.3 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 47): by mana value MV<=1 4, MV2 14, MV3 26, MV4 18, MV5 4, MV6+ 3. Creatures among them: 69, average power/toughness 2.5/2.9 (commons+uncommons only 2.4/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Creature — Human Snake Villain | 1/1] Deathtouch / Mechanism A — {3}{G}: Put two +1/+1 counters on this creature. (Activate each Mechanism A ability only once. Reduce the cost by its mana cost if it entered this turn.)" || "[MV 3 B | Legendary Creature — Human Rogue Villain | 2/2] Sonic Attack — When ~ enters, target player reveals a number of cards from their hand equal to one plus the number of creature cards in your graveyard. You choose one of them. That player discards that card." || "[MV 6 R | Legendary Creature — Gamma Berserker Villain | 6/7] Reach, trample / Enrage — Whenever ~ is dealt damage, put a +1/+1 counter on him. When you do, he deals damage equal to the number of +1/+1 counters on him to any other target."
+
+#896 | MV 0 C | Land
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a Hero spell or to activate an ability of a Hero source.
+{4}, {T}: Look at the top three cards of your library. You may reveal a Hero card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+SET INFO: "Hero" creatures: 91 of 170 creature cards in the set (54%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 6.1 of its 15 creatures of this type.
+  MATCHING CARDS (91; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 91, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#895 | MV 5 W | Enchantment
+Flash
+Heroes you control get +2/+2.
+At the beginning of each end step, if you attacked with a Hero this turn or a Hero entered the battlefield under your control this turn, draw a card.
+SET INFO: "Hero" creatures: 91 of 170 creature cards in the set (54%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 7.7 of its 15 creatures of this type.
+  MATCHING CARDS (91; commons+uncommons 62): by mana value MV<=1 7, MV2 22, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 91, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+
+#894 | MV 4 U | Legendary Creature — Merfolk Warrior Villain | 3/4
+Other Merfolk you control get +1/+1.
+Whenever one or more Merfolk you control attack a player, draw a card.
+SET INFO: "Merfolk" creatures: 2 of 169 creature cards in the set (1%), 1 of 118 at common/uncommon. A typical deck that can play this card has about 0.5 of its 15 creatures of this type.
+  MATCHING CARDS (2; commons+uncommons 1): by mana value MV3 2. Creatures among them: 2, average power/toughness 3/2 (commons+uncommons only 3/2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 3 U | Creature — Merfolk Soldier | 3/2] Vigilance / Whenever you draw your second card each turn, put a +1/+1 counter on this creature."
+
+#893 | MV 4 UR | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — You may draw a card for each artifact you control. If you do, each opponent draws a card.
+II — Artifact spells you cast this turn cost {1} less to cast.
+III — This Saga deals X damage to target opponent, where X is the greatest mana value among artifacts you control.
+SET INFO: artifact cards: 38 of 252 nonland cards in the set (15%), 26 of 177 at common/uncommon. A typical deck that can play this card has about 7.8 of its 23 spells like this. 11 other cards also make such tokens (counting them, about 8.4 of the 23 spells).
+  MATCHING CARDS (38; commons+uncommons 26): by mana value MV<=1 5, MV2 11, MV3 11, MV4 7, MV5 4. Creatures among them: 23, average power/toughness 2/2.8 (commons+uncommons only 1.9/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Artifact — Equipment] Equipped creature gets +1/+0 and has reach. / Whenever equipped creature becomes tapped, it deals 1 damage to each opponent. / Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)" || "[MV 3 C | Legendary Artifact Creature — Robot Hero | 2/2] Flying / Cybernetic Senses — Whenever ~ attacks, draw a card if her power is 4 or greater. / Mechanism A — {7}: Put two +1/+1 counters on ~. (Activate each Mechanism A ability only once. Reduce the cost by her mana cost if she en…" || "[MV 5 R | Artifact Creature — Kree Robot Villain | 5/5] Reach / Basic landcycling {2} ({2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)"
+
+#892 | MV 3 UG | Legendary Creature — Human Rogue Hero | 2/2
+Whenever ~ attacks, you may pay {1}. When you do, put a +1/+1 counter on target creature.
+Whenever you put a +1/+1 counter on a creature, create a 1/1 green Insect creature token. This ability triggers only once each turn.
+
+#891 | MV 2 W | Legendary Creature — Human Spy Hero | 2/2
+Vigilance
+{T}: Put a +1/+1 counter on each other Hero you control.
+SET INFO: "Hero" creatures: 90 of 169 creature cards in the set (53%), 62 of 119 at common/uncommon. A typical deck that can play this card has about 7.7 of its 15 creatures of this type.
+  MATCHING CARDS (90; commons+uncommons 62): by mana value MV<=1 7, MV2 21, MV3 29, MV4 19, MV5 13, MV6+ 1. Creatures among them: 90, average power/toughness 2.6/2.8 (commons+uncommons only 2.5/2.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Legendary Creature — Human Hero | 1/2] Brontosaurus — {3}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance. / Tyrannosaurus Rex — {6}: Until end of turn, ~ becomes a Dinosaur Hero with base power and toughne…" || "[MV 3 W | Creature — Human Hero | 2/2] When this creature enters, draw a card. If you control another Hero, you gain 2 life." || "[MV 6 G | Legendary Creature — Human Hero | 7/7] Trample / Whenever one or more Heroes you control deal damage to a player, put two +1/+1 counters on ~."
+-- pass p2, batch MSH_0: 46 cards

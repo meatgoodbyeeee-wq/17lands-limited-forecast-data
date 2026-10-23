@@ -1,0 +1,109 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 257, nonland 238, creatures 151, commons+uncommons 170. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 1 0/3; MV2 9 1.9/1.9; MV3 5 2.4/2; MV4 5 2/3.2; MV5 3 4/4.3; MV6+ 1 4/4 | total 24 avg 2.3/2.6
+  U: MV<=1 1 1/1; MV2 6 1.5/2.2; MV3 6 1.8/2.6; MV4 3 2.7/3.3; MV5 3 4.3/4; MV6+ 2 4.5/4.5 | total 21 avg 2.5/2.9
+  B: MV<=1 3 1.3/1; MV2 7 2.3/1.9; MV3 5 2.4/2.6; MV4 5 3.2/3.5; MV5 1 3/3; MV6+ 1 5/5 | total 22 avg 2.5/2.4
+  R: MV<=1 3 0.7/0.7; MV2 7 1.7/1.7; MV3 5 2/2.4; MV4 3 3/3.7; MV5 2 4.5/4; MV6+ 1 5/5 | total 21 avg 2.2/2.4
+  G: MV<=1 1 1/1; MV2 10 1.5/2.1; MV3 5 2.8/2.2; MV4 2 3/4.5; MV5 5 5/5.5; MV6+ 2 5.5/6.5 | total 25 avg 2.9/3.3
+  gold: MV2 8 1.6/2.2; MV3 9 2.6/3; MV4 11 3.3/3.4; MV5 5 4.4/4.2; MV6+ 1 4/4 | total 34 avg 2.9/3.2
+  colourless: MV<=1 1 0/3; MV2 1 1/3; MV3 1 3/2; MV4 1 1/3 | total 4 avg 1.2/2.8
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 1 0/3; MV2 7 1.9/1.9; MV3 4 2.2/1.8; MV4 3 1.3/2.7; MV5 1 3/4; MV6+ 1 4/4 | total 17 avg 1.9/2.3
+  U: MV<=1 1 1/1; MV2 4 1.5/2.2; MV3 3 1.7/3.3; MV4 3 2.7/3.3; MV5 1 4/4; MV6+ 2 4.5/4.5 | total 14 avg 2.4/3.1
+  B: MV<=1 2 1.5/1; MV2 5 2.4/2; MV3 4 2.2/2.5; MV4 3 2.5/2.5; MV5 1 3/3; MV6+ 1 5/5 | total 16 avg 2.5/2.3
+  R: MV<=1 2 1/1; MV2 5 1.6/2; MV3 3 2/2.3; MV4 2 2.5/3.5; MV5 2 4.5/4; MV6+ 1 5/5 | total 15 avg 2.3/2.6
+  G: MV<=1 1 1/1; MV2 6 1.6/2.2; MV3 4 2.5/2; MV4 2 3/4.5; MV5 3 4.5/4.5; MV6+ 2 5.5/6.5 | total 18 avg 2.8/3.2
+  gold: MV2 5 1.4/2.4; MV3 5 2.3/3; MV4 6 3/3.3; MV5 3 4/3.7; MV6+ 1 4/4 | total 20 avg 2.7/3.1
+  colourless: MV<=1 1 0/3; MV2 1 1/3; MV3 1 3/2; MV4 1 1/3 | total 4 avg 1.2/2.8
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 6|3; destroy 2 (1,2) | 0 (); damage 2 (2,3) | 1 (4); exile 2 (3,4) | 1 (6); sweeper 0 () | 1 (3)
+  U: any 2|1; bounce/tuck 2 (1,3) | 0 (); sweeper 0 () | 1 (4)
+  B: any 6|1; destroy 3 (1,1,4) | 0 (); -X/-X 2 (2,2) | 0 (); sweeper 1 (3) | 1 (4)
+  R: any 9|3; destroy 1 (2) | 0 (); damage 6 (2,2,2,3,5,5) | 1 (4); bounce/tuck 1 (2) | 0 (); fight/bite 1 (3) | 0 (); sweeper 1 (2) | 2 (4,5)
+  G: any 4|0; destroy 1 (3) | 0 (); exile 1 (2) | 0 (); fight/bite 2 (1,2) | 0 ()
+  gold: any 0|1; destroy 0 () | 1 (4)
+  colourless: any 1|3; damage 1 (5) | 1 (4); sweeper 0 () | 2 (3,4)
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 17|7; flying 5|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|2; reach 0|0; can block fliers (flying or reach) 5|2; other cards that give flying 0|0
+  U: creatures 14|7; flying 5|3; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 6|3; reach 0|0; can block fliers (flying or reach) 5|3; other cards that give flying 0|0
+  B: creatures 16|6; flying 3|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|0; reach 0|0; can block fliers (flying or reach) 3|0; other cards that give flying 0|0
+  R: creatures 15|6; flying 2|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|1; reach 1|0; can block fliers (flying or reach) 3|1; other cards that give flying 0|0
+  G: creatures 18|7; flying 0|0; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 2|1; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  gold: creatures 20|14; flying 3|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|2; reach 0|1; can block fliers (flying or reach) 3|3; other cards that give flying 1|0
+  colourless: creatures 4|0; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 0|0; can block fliers (flying or reach) 0|0; other cards that give flying 0|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (ability word; 21 cards, commons+uncommons 15; colours C/U|R/M: W 1|1, U 1|1, B 1|1, R 1|1, G 6|2, gold 4|0, colourless 1|0). Example text of a card: "Mechanism A — Target creature gets +1/+1 until end of turn for each basic land type among lands you control."
+  Mechanism B (keyword; 10 cards, commons+uncommons 9; colours C/U|R/M: W 3|1, R 3|0, G 3|0). Example text of a card: "Mechanism B (As this creature attacks, you may tap a nonattacking creature you control without summoning sickness. When you do, add its power to this creature's until end of turn.)"
+  Mechanism C (keyword; 9 cards, commons+uncommons 5; colours C/U|R/M: W 1|0, U 1|1, B 1|1, R 1|1, G 1|1). Example text of a card: "Mechanism C (Choose a chapter and start with that many lore counters. Add one after your draw step. Skipped chapters don't trigger. Sacrifice after III.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 2 WU, Legendary Creature — Human Wizard 1/3): Whenever you cast an instant or sorcery spell, you may tap two untapped creatures you control. If you do, draw a card. / {3}{W}{W}: Creatures you control get +1/+1 and gain vigilance until end of turn.
+    gold uncommon (MV 5 WU, Legendary Creature — Human Knight 3/3): Flying / Whenever you cast an instant or sorcery spell, create a 1/1 white Soldier creature token.
+    theme "instant cards": have 35 [W 6|0, U 9|0, B 5|0, R 8|0, G 7|0]; refer 12 [U 4|1, R 2|1, gold 4|0]
+    theme "sorcery cards": have 21 [W 2|0, U 3|1, B 6|1, R 3|1, G 2|2]; refer 13 [U 4|1, B 1|0, R 2|1, gold 4|0]
+    theme "tokens": have 31 [W 5|1, U 1|3, B 1|1, R 2|3, G 3|1, gold 5|4, colourless 0|1]
+  UB:
+    gold uncommon (MV 2 UB, Legendary Creature — Phyrexian Merfolk Wizard 1/2): {T}: Draw a card, then discard a card. If you discarded an instant or sorcery card this way, each opponent loses 1 life and you gain 1 life. / {2}, Sacrifice ~: You may cast target instant or sorcery card from your graveyard this turn. If that spell would be put into your graveyard, exile it instead. Activate only as a sorcery.
+    gold uncommon (MV 4 UB, Legendary Creature — Human Wizard 3/4): Whenever you cast an instant or sorcery spell, each opponent loses 1 life. / You may cast this card from your graveyard by discarding two cards in addition to paying its other costs.
+    theme "life gain": have 26 [W 6|3, U 1|0, B 5|2, R 1|0, G 1|2, gold 3|2]
+    theme "the graveyard": have 30 [W 1|3, U 3|2, B 10|1, R 1|1, G 0|2, gold 4|2]
+    theme "sacrifice": have 22 [W 1|0, U 0|1, B 5|3, R 5|0, gold 4|2, colourless 1|0]
+  BR:
+    gold uncommon (MV 3 BR, Legendary Creature — Human Shaman 1/3): At the beginning of combat on your turn, create a 2/1 red Elemental creature token with trample and haste. Sacrifice it at the beginning of the next end step. / {T}: Search your library for a card, put it into your hand, then shuffle. Activate only if five or more creatures died this turn.
+    gold uncommon (MV 4 BR, Legendary Creature — Human Berserker 4/3): Whenever another creature you control dies, draw a card if it was attacking. Otherwise, ~ deals 1 damage to each opponent.
+    theme "tokens": have 31 [W 5|1, U 1|3, B 1|1, R 2|3, G 3|1, gold 5|4, colourless 0|1]
+    theme "sacrifice": have 22 [W 1|0, U 0|1, B 5|3, R 5|0, gold 4|2, colourless 1|0]
+  RG:
+    gold uncommon (MV 4 RG, Legendary Creature — Elf Warrior 3/3): Mechanism A — Whenever ~ becomes tapped, another target creature you control gets +X/+X until end of turn, where X is the number of basic land types among lands you control.
+    gold uncommon (MV 4 RG, Legendary Creature — Goblin 3/3): Menace (This creature can't be blocked except by two or more creatures.) / Whenever ~ attacks, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped. If you didn't put a card onto the battlefield this way, create a 1/1 red Goblin creature token.
+    theme "tokens": have 31 [W 5|1, U 1|3, B 1|1, R 2|3, G 3|1, gold 5|4, colourless 0|1]
+  GW:
+    gold uncommon (MV 3 WG, Legendary Creature — Elf Noble): ~'s power and toughness are each equal to the number of creatures you control. / If one or more creature tokens would be created under your control, those tokens plus a 1/1 white Soldier creature token are created instead.
+    gold uncommon (MV 5 WG, Legendary Creature — Cat Warrior 4/4): Mechanism A — Whenever ~ becomes tapped, put a +1/+1 counter on each creature you control with toughness less than the number of basic land types among lands you control.
+    theme "creature type Soldier": have 8 [W 4|2, gold 1|1]; refer 1 [gold 1|0]
+    theme "tokens": have 31 [W 5|1, U 1|3, B 1|1, R 2|3, G 3|1, gold 5|4, colourless 0|1]
+    theme "+1/+1 counters": have 21 [W 4|1, U 1|1, B 2|1, R 3|1, G 1|2, gold 2|2]
+  WB:
+    gold uncommon (MV 2 WB, Legendary Creature — Phyrexian Kor Cleric 2/2): Deathtouch / Whenever another creature you control enters, you gain 1 life. / Whenever another creature you control dies, each opponent loses 1 life.
+    gold uncommon (MV 3 WB, Legendary Creature — Phyrexian Human 3/3): Menace (This creature can't be blocked except by two or more creatures.) / {W}{B}, {T}, Sacrifice another creature: Put a +1/+1 counter on each creature you control.
+    theme "life gain": have 26 [W 6|3, U 1|0, B 5|2, R 1|0, G 1|2, gold 3|2]
+    theme "+1/+1 counters": have 21 [W 4|1, U 1|1, B 2|1, R 3|1, G 1|2, gold 2|2]
+    theme "sacrifice": have 22 [W 1|0, U 0|1, B 5|3, R 5|0, gold 4|2, colourless 1|0]
+  UR:
+    gold uncommon (MV 2 UR, Legendary Creature — Bird Wizard 1/3): Flying / Whenever you cast an instant or sorcery spell, creatures you control get +1/+0 and gain trample until end of turn.
+    gold uncommon (MV 5 UR, Legendary Creature — Efreet Wizard 5/4): You may cast sorcery spells as though they had flash. / Whenever ~ attacks, you may pay {2}. If you do, when you next cast an instant or sorcery spell this turn, copy it. You may choose new targets for the copy.
+    theme "instant cards": have 35 [W 6|0, U 9|0, B 5|0, R 8|0, G 7|0]; refer 12 [U 4|1, R 2|1, gold 4|0]
+    theme "sorcery cards": have 21 [W 2|0, U 3|1, B 6|1, R 3|1, G 2|2]; refer 13 [U 4|1, B 1|0, R 2|1, gold 4|0]
+  BG:
+    gold uncommon (MV 3 BG, Legendary Creature — Frog Beast /5): ~'s power is equal to the number of land cards in your graveyard. / At the beginning of your upkeep, surveil 1. (Look at the top card of your library. You may put that card into your graveyard.) / {B}{G}, Sacrifice a land: You gain 2 life.
+    gold uncommon (MV 6 BG, Legendary Creature — Troll Shaman 4/4): Mechanism A — When ~ enters, if you cast it, choose target creature card in your graveyard. Return that card to the battlefield if its mana value is less than or equal to the number of basic land types among lands you control. Otherwise, put it into your hand.
+    theme "life gain": have 26 [W 6|3, U 1|0, B 5|2, R 1|0, G 1|2, gold 3|2]
+    theme "the graveyard": have 30 [W 1|3, U 3|2, B 10|1, R 1|1, G 0|2, gold 4|2]
+    theme "sacrifice": have 22 [W 1|0, U 0|1, B 5|3, R 5|0, gold 4|2, colourless 1|0]
+  RW:
+    gold uncommon (MV 2 WR, Legendary Creature — Human Soldier 2/2): At the beginning of your end step, if you control a creature with power greater than its base power, create a 1/1 white Soldier creature token.
+    gold uncommon (MV 4 WR, Legendary Creature — Human Knight 3/3): Vigilance, trample / Whenever ~ attacks, all other attacking creatures you control get +1/+1 until end of turn. Other red attacking creatures you control gain trample until end of turn. Untap each other white attacking creature you control.
+    theme "tokens": have 31 [W 5|1, U 1|3, B 1|1, R 2|3, G 3|1, gold 5|4, colourless 0|1]
+  GU:
+    gold uncommon (MV 3 UG, Legendary Creature — Merfolk Druid 3/3): Land creatures you control have flying. / Whenever a land you control enters, if you control seven or more lands, up to one target land you control becomes a 3/3 Elemental creature with haste. It's still a land.
+    gold uncommon (MV 4 UG, Legendary Creature — Elf Scout 2/4): Flying / Mechanism A — Whenever ~ deals combat damage to a player, look at the top X cards of your library, where X is the number of basic land types among lands you control. Put up to one of them on top of your library and the rest on the bottom in a random order. Then if there are five basic land types among lands you control, draw a card.
+    theme "haste (keyword)": have 4 [R 2|2]; refer 1 [gold 1|0]
+Top creature types (cards; colours "C/U|R/M"):
+  Human 44: W 12|4, U 2|2, B 2|3, R 2|2, gold 8|7 (commons+uncommons 26)
+  Wizard 21: U 4|4, B 0|1, R 2|0, G 1|0, gold 5|4 (commons+uncommons 12)
+  Phyrexian 20: W 2|1, U 0|1, B 8|2, R 0|1, G 0|1, gold 3|1 (commons+uncommons 13)
+  Warrior 15: W 1|0, B 1|0, R 3|2, G 3|1, gold 2|2 (commons+uncommons 10)
+  Elf 12: R 1|0, G 5|2, gold 3|1 (commons+uncommons 9)
+  Cleric 8: W 4|1, B 1|1, gold 1|0 (commons+uncommons 6)
+  Knight 8: W 4|1, B 1|0, gold 2|0 (commons+uncommons 7)
+  Soldier 8: W 4|2, gold 1|1 (commons+uncommons 5)
+  Druid 7: W 1|0, R 1|0, G 2|2, gold 1|0 (commons+uncommons 5)
+  Goblin 6: B 1|0, R 2|2, gold 1|0 (commons+uncommons 4)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 6|0, flash 3|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 9|1
+  U: instant 9|0, flash 0|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 9|1
+  B: instant 5|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|0
+  R: instant 8|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 8|0
+  G: instant 7|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|0
+  gold: instant 0|0, flash 0|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|1
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0

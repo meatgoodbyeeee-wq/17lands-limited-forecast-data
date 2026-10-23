@@ -1,0 +1,96 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 256, nonland 237, creatures 133, commons+uncommons 177. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1.5/1; MV2 6 1.7/1.5; MV3 5 2.6/2.2; MV4 3 2/3; MV5 2 4.5/4; MV6+ 1 4/4 | total 19 avg 2.4/2.3
+  U: MV<=1 2 1/1; MV2 4 1/2.5; MV3 6 2.2/3.2; MV4 3 2.7/3; MV5 2 3/4.5; MV6+ 3 5.3/6 | total 20 avg 2.5/3.4
+  B: MV<=1 1 1/2; MV2 6 2/1.3; MV3 8 2.4/2.6; MV4 4 3/3; MV5 2 4/4; MV6+ 1 5/5 | total 22 avg 2.6/2.5
+  R: MV<=1 3 1.3/1.3; MV2 8 1.6/2; MV3 5 2.8/2.2; MV4 5 3/3.4; MV5 1 3/6; MV6+ 1 5/4 | total 23 avg 2.3/2.5
+  G: MV<=1 2 1/1; MV2 9 1.7/2; MV3 4 2.2/3; MV4 2 3.5/3; MV5 3 4.7/4.3; MV6+ 1 6/5 | total 21 avg 2.5/2.7
+  gold: MV2 4 1.8/2.2; MV3 5 2.8/3; MV4 2 3.5/3.5; MV5 3 4/3.7; MV6+ 1 6/5 | total 15 avg 3.1/3.1
+  colourless: MV<=1 1 0/0; MV2 4 1.5/1.5; MV3 4 1.5/2.8; MV4 2 2/2.5; MV5 1 3/2; MV6+ 1 8/8 | total 13 avg 2.1/2.5
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1.5/1; MV2 4 1.8/1.5; MV3 4 2.5/2.2; MV4 2 1.5/3; MV5 1 4/4; MV6+ 1 4/4 | total 14 avg 2.2/2.2
+  U: MV<=1 1 1/1; MV2 3 1.3/2; MV3 5 2.2/3.2; MV4 3 2.7/3; MV5 2 3/4.5; MV6+ 1 5/7 | total 15 avg 2.3/3.2
+  B: MV<=1 1 1/2; MV2 5 1.8/1.4; MV3 5 2/2.6; MV4 3 2.7/2.7; MV5 1 3/3; MV6+ 1 5/5 | total 16 avg 2.2/2.4
+  R: MV<=1 3 1.3/1.3; MV2 5 1.6/2.2; MV3 4 2.8/2; MV4 3 2.7/3.3; MV5 1 3/6; MV6+ 1 5/4 | total 17 avg 2.3/2.5
+  G: MV<=1 2 1/1; MV2 6 1.7/1.8; MV3 3 2/3; MV4 2 3.5/3; MV5 1 4/4; MV6+ 1 6/5 | total 15 avg 2.3/2.5
+  gold: MV2 3 2/2; MV3 1 2/1; MV5 2 4/3.5; MV6+ 1 6/5 | total 7 avg 3.1/2.7
+  colourless: MV<=1 1 0/0; MV2 4 1.5/1.5; MV3 4 1.5/2.8; MV4 2 2/2.5; MV5 1 3/2; MV6+ 1 8/8 | total 13 avg 2.1/2.5
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 4|3; destroy 1 (2) | 0 (); damage 1 (2) | 0 (); exile 2 (3,4) | 2 (1,4); sweeper 0 () | 1 (6)
+  U: any 2|0; exile 1 (2) | 0 (); bounce/tuck 1 (4) | 0 ()
+  B: any 6|3; destroy 4 (1,2,4,4) | 0 (); damage 0 () | 2 (1,4); exile 0 () | 1 (3); -X/-X 1 (2) | 0 (); sweeper 1 (3) | 0 ()
+  R: any 6|1; damage 6 (1,1,2,2,3,4) | 1 (10)
+  G: any 3|0; destroy 1 (2) | 0 (); fight/bite 2 (2,2) | 0 ()
+  gold: any 1|0; bounce/tuck 1 (7) | 0 ()
+  colourless: any 1|1; damage 1 (1) | 1 (4)
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 14|5; flying 2|3; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|3; reach 0|0; can block fliers (flying or reach) 2|3; other cards that give flying 0|1
+  U: creatures 15|5; flying 5|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|2; reach 0|0; can block fliers (flying or reach) 5|2; other cards that give flying 0|1
+  B: creatures 16|6; flying 2|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|1; reach 0|0; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  R: creatures 17|6; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 1|0; can block fliers (flying or reach) 1|1; other cards that give flying 0|0
+  G: creatures 15|6; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 3|1; can block fliers (flying or reach) 3|2; other cards that give flying 0|0
+  gold: creatures 7|8; flying 2|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|1; reach 0|0; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  colourless: creatures 13|0; flying 1|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 0|0; can block fliers (flying or reach) 1|0; other cards that give flying 0|1
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (ability word; 18 cards, commons+uncommons 17; colours C/U|R/M: W 3|0, U 4|0, R 3|0, G 6|1, gold 1|0). Example text of a card: "Mechanism A — {3}{B}, Discard this card: Mill three cards, then return a creature or planeswalker card from your graveyard to your hand. This ability costs {1} less to activate for each legendary creature you control."
+  Mechanism B (keyword; 14 cards, commons+uncommons 11; colours C/U|R/M: W 1|0, U 4|1, B 4|1, G 1|1, gold 1|0). Example text of a card: "Mechanism B {2}{U}{U} ({2}{U}{U}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)"
+  Mechanism C (keyword; 14 cards, commons+uncommons 8; colours C/U|R/M: W 0|2, U 2|1, B 2|1, R 3|2, G 1|0). Example text of a card: "Mechanism C {2} ({2}: Attach to target creature you control; or unattach from a creature. Mechanism C only as a sorcery. While attached, this isn't a creature.)"
+  Mechanism D (keyword; 3 cards, commons+uncommons 2; colours C/U|R/M: U 1|0, G 0|1, gold 1|0). Example text of a card: "Mechanism D creatures you control can attack as though they didn't have defender. (Equipment, Auras you control, and counters are modifications.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 3 WU, Artifact — Vehicle 3/4): Whenever one or more Vehicles you control attack, create a 1/1 colorless Pilot creature token with "This token crews Vehicles as though its power were 2 greater." / Crew 2 (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+    theme "Vehicle cards (incl. makers)": have 13 [W 2|0, U 2|1, B 0|1, gold 1|0, colourless 3|3]; refer 5 [W 2|2, G 1|0]
+    theme "tokens": have 28 [W 4|1, U 2|1, B 1|1, R 4|2, G 1|2, gold 3|3, colourless 1|2]
+  UB:
+    gold uncommon (MV 2 UB, Creature — Rat Ninja 2/2): Mechanism B {U}{B} ({U}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.) / Mechanism B abilities you activate cost {1} less to activate. / Other Ninja and Rogue creatures you control get +1/+1.
+    theme "creature type Ninja": have 22 [W 1|0, U 5|1, B 5|3, G 3|1, gold 1|2]; refer 2 [B 2|0]
+    theme "creature type Rogue": have 3 [U 2|0, B 1|0]; refer 4 [U 1|0, B 2|0, gold 1|0]
+  BR:
+    gold uncommon (MV 2 BR, Artifact): Whenever one or more artifacts you control leave the battlefield during your turn, create a 1/1 colorless Construct artifact creature token. This ability triggers only once each turn. / {T}, Sacrifice an artifact: This artifact deals 1 damage to each opponent. You gain 1 life.
+    theme "artifact cards": have 69 [W 4|2, U 11|2, B 7|2, R 11|2, G 1|0, gold 3|0, colourless 20|4]; refer 13 [W 2|0, U 2|2, B 4|1, R 1|0, gold 1|0]
+    theme "tokens": have 28 [W 4|1, U 2|1, B 1|1, R 4|2, G 1|2, gold 3|3, colourless 1|2]
+    theme "life gain": have 22 [W 5|1, B 6|2, G 3|0, gold 2|0, colourless 1|2]
+  RG:
+    gold uncommon (MV 3 RG, Enchantment): This enchantment enters with four +1/+1 counters on it. / Mechanism D creatures you control have haste. (Equipment, Auras you control, and counters are modifications.) / Remove a +1/+1 counter from this enchantment: Put a +1/+1 counter on target creature you control. Activate only as a sorcery and only once each turn.
+    theme "+1/+1 counters": have 30 [W 3|4, U 3|0, B 2|1, R 1|1, G 9|1, gold 1|0, colourless 4|0]
+  GW:
+    gold uncommon (MV 2 WG, Enchantment Creature — Human Monk 2/2): Lifelink / Enchantment spells you cast cost {1} less to cast.
+    theme "enchantment cards": have 43 [W 9|0, U 5|0, B 4|0, R 6|0, G 12|2, gold 4|1]; refer 14 [W 4|0, B 4|2, G 1|1, gold 1|0, colourless 1|0]
+    theme "life gain": have 22 [W 5|1, B 6|2, G 3|0, gold 2|0, colourless 1|2]
+  WB:
+    gold uncommon (MV 5 WB, Legendary Creature — Human Advisor 4/4): Whenever ~ enters or attacks, if you control an artifact and an enchantment, create a 2/2 white Samurai creature token with vigilance.
+    theme "artifact cards": have 69 [W 4|2, U 11|2, B 7|2, R 11|2, G 1|0, gold 3|0, colourless 20|4]; refer 13 [W 2|0, U 2|2, B 4|1, R 1|0, gold 1|0]
+    theme "enchantment cards": have 43 [W 9|0, U 5|0, B 4|0, R 6|0, G 12|2, gold 4|1]; refer 14 [W 4|0, B 4|2, G 1|1, gold 1|0, colourless 1|0]
+    theme "tokens": have 28 [W 4|1, U 2|1, B 1|1, R 4|2, G 1|2, gold 3|3, colourless 1|2]
+  UR:
+    gold uncommon (MV 2 UR, Artifact Creature — Goblin Artificer 2/2): Flying / Artifact spells you cast cost {1} less to cast.
+    theme "artifact cards": have 69 [W 4|2, U 11|2, B 7|2, R 11|2, G 1|0, gold 3|0, colourless 20|4]; refer 13 [W 2|0, U 2|2, B 4|1, R 1|0, gold 1|0]
+  BG:
+    gold uncommon (MV 3 BG, Enchantment Creature — Cat Beast 2/1): Menace (This creature can't be blocked except by two or more creatures.) / When this creature enters, return target permanent card from your graveyard to your hand. / If this creature would die, exile it instead.
+    theme "the graveyard": have 29 [W 2|3, U 0|2, B 3|2, R 2|1, G 1|3, gold 2|5, colourless 3|0]
+  RW:
+    gold uncommon (MV 5 WR, Creature — Human Samurai 4/3): Haste / Whenever a Samurai or Warrior you control attacks alone, it gets +1/+0 until end of turn for each Samurai or Warrior you control.
+    theme "creature type Samurai": have 21 [W 7|0, U 1|0, B 1|0, R 5|1, G 2|0, gold 1|3]; refer 1 [W 1|0]
+    theme "creature type Warrior": have 4 [W 1|0, R 3|0]; refer 10 [W 5|0, R 3|0, gold 1|1]
+  GU:
+    gold uncommon (MV 7 UG, Enchantment Creature — Turtle 6/5): Flying, ward {2} / Mechanism A — {2}{G}, Discard this card: Return target card from your graveyard to your hand. / Mechanism A — {1}{U}, Discard this card: Return target creature to its owner's hand.
+    theme "the graveyard": have 29 [W 2|3, U 0|2, B 3|2, R 2|1, G 1|3, gold 2|5, colourless 3|0]
+Top creature types (cards; colours "C/U|R/M"):
+  Human 35: W 5|0, U 5|1, B 4|2, R 6|0, G 3|0, gold 3|6 (commons+uncommons 26)
+  Ninja 22: W 1|0, U 5|1, B 5|3, G 3|1, gold 1|2 (commons+uncommons 15)
+  Samurai 21: W 7|0, U 1|0, B 1|0, R 5|1, G 2|0, gold 1|3 (commons+uncommons 17)
+  Spirit 18: W 0|2, U 0|1, B 4|1, R 1|2, G 3|3, gold 0|1 (commons+uncommons 8)
+  Equipment 14: W 0|2, U 2|1, B 2|1, R 3|2, G 1|0 (commons+uncommons 8)
+  Construct 9: colourless 9|0 (commons+uncommons 9)
+  Fox 8: W 7|1 (commons+uncommons 7)
+  Goblin 7: R 4|2, gold 1|0 (commons+uncommons 5)
+  Snake 7: G 5|2 (commons+uncommons 5)
+  Artificer 6: U 1|0, R 2|1, gold 1|0, colourless 1|0 (commons+uncommons 5)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 5|1, flash 0|2, hand 2|0, swap 1|0, cyc-trigger 0|0 ; any 8|3
+  U: instant 8|1, flash 2|0, hand 3|0, swap 4|1, cyc-trigger 0|0 ; any 17|2
+  B: instant 6|1, flash 0|0, hand 0|0, swap 4|1, cyc-trigger 0|0 ; any 10|2
+  R: instant 6|1, flash 0|0, hand 2|0, swap 0|0, cyc-trigger 0|0 ; any 8|1
+  G: instant 5|0, flash 0|0, hand 5|1, swap 1|1, cyc-trigger 0|0 ; any 11|2
+  gold: instant 0|0, flash 0|0, hand 1|0, swap 1|0, cyc-trigger 0|0 ; any 2|0
+  colourless: instant 0|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 1|0

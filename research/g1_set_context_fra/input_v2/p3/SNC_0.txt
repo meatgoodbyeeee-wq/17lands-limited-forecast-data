@@ -1,0 +1,205 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 255, nonland 240, creatures 136, commons+uncommons 170. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 1 0/4; MV2 5 1.4/1.2; MV3 5 2.6/1.4; MV4 3 2.3/1.7; MV5 2 3/4; MV6+ 2 4/4 | total 18 avg 2.3/2.1
+  U: MV<=1 3 0.7/2; MV2 4 1.8/2.2; MV3 3 1.3/2.7; MV4 3 2.7/3; MV5 1 3/2; MV6+ 2 4.5/5 | total 16 avg 2.1/2.8
+  B: MV<=1 1 1/1; MV2 4 2.2/1.8; MV3 6 2.5/2.2; MV4 2 3/2; MV5 3 3.7/3; MV6+ 2 6/5.5 | total 18 avg 3/2.5
+  R: MV<=1 2 1/1; MV2 3 2/1.7; MV3 5 2/2.2; MV4 3 2.7/2; MV5 3 4/4.3 | total 16 avg 2.4/2.3
+  G: MV<=1 1 1/2; MV2 5 2/1.4; MV3 4 3/3; MV4 3 2.3/3.3; MV5 3 3.7/3.3; MV6+ 3 6.3/5.3 | total 19 avg 3.2/3
+  gold: MV2 8 1.9/2; MV3 13 2.5/2.3; MV4 14 3.3/3.4; MV5 3 3.7/4; MV6+ 6 5/5.5 | total 44 avg 3/3.1
+  colourless: MV2 2 1/2.5; MV3 2 3.5/1.5; MV4 1 2/2 | total 5 avg 2.2/2
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 1 0/4; MV2 4 1.2/1; MV3 4 2.5/1.2; MV4 3 2.3/1.7; MV5 2 3/4; MV6+ 1 3/3 | total 15 avg 2.1/1.9
+  U: MV<=1 2 1/1.5; MV2 3 2/2; MV3 3 1.3/2.7; MV4 1 2/3; MV5 1 3/2; MV6+ 1 4/6 | total 11 avg 1.9/2.5
+  B: MV<=1 1 1/1; MV2 3 2/1.7; MV3 4 1.8/1.5; MV4 1 3/1; MV5 2 3/3; MV6+ 1 5/4 | total 12 avg 2.3/1.9
+  R: MV<=1 2 1/1; MV2 3 2/1.7; MV3 3 2.3/1.7; MV4 2 3/1.5; MV5 2 4/4.5 | total 12 avg 2.4/2
+  G: MV<=1 1 1/2; MV2 4 2.2/1.5; MV3 3 2.7/2.7; MV4 3 2.3/3.3; MV5 2 3/3.5; MV6+ 2 6/4.5 | total 15 avg 2.9/2.8
+  gold: MV2 4 2/2.2; MV3 8 2.8/2; MV4 8 2.9/3.5; MV5 2 4.5/3.5; MV6+ 3 4.3/4.7 | total 25 avg 3/3
+  colourless: MV2 2 1/2.5; MV3 2 3.5/1.5; MV4 1 2/2 | total 5 avg 2.2/2
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 4|1; destroy 1 (3) | 0 (); damage 1 (3) | 0 (); exile 1 (5) | 0 (); lock-down 1 (2) | 0 (); sweeper 0 () | 1 (4)
+  U: any 3|0; bounce/tuck 2 (4,5) | 0 (); lock-down 1 (4) | 0 ()
+  B: any 4|0; destroy 1 (3) | 0 (); -X/-X 3 (3,4,4) | 0 ()
+  R: any 7|0; damage 7 (1,1,2,3,3,5,5) | 0 ()
+  G: any 3|0; destroy 1 (3) | 0 (); damage 1 (3) | 0 (); fight/bite 1 (2) | 0 ()
+  gold: any 4|8; destroy 1 (3) | 1 (3); damage 2 (3,3) | 3 (3,3,4); fight/bite 1 (3) | 1 (6); sweeper 0 () | 3 (3,3,5)
+  colourless: any 3|1; damage 2 (1,1) | 0 (); bounce/tuck 0 () | 1 (3); lock-down 1 (1) | 0 ()
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 15|3; flying 5|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|2; reach 0|0; can block fliers (flying or reach) 5|2; other cards that give flying 1|0
+  U: creatures 11|5; flying 3|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|2; reach 0|0; can block fliers (flying or reach) 3|2; other cards that give flying 2|0
+  B: creatures 12|6; flying 2|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|1; reach 0|0; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  R: creatures 12|4; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 1|0; can block fliers (flying or reach) 1|0; other cards that give flying 0|0
+  G: creatures 15|4; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 1|1; can block fliers (flying or reach) 1|1; other cards that give flying 0|0
+  gold: creatures 25|19; flying 5|5; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|5; reach 0|0; can block fliers (flying or reach) 5|5; other cards that give flying 0|0
+  colourless: creatures 5|0; flying 1|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 0|0; can block fliers (flying or reach) 1|0; other cards that give flying 1|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (ability word; 10 cards, commons+uncommons 8; colours C/U|R/M: W 2|0, R 2|1, G 4|1). Example text of a card: "Mechanism A — Whenever another creature you control enters, choose one that hasn't been chosen this turn —"
+  Mechanism B (keyword; 10 cards, commons+uncommons 8; colours C/U|R/M: B 2|0, R 4|1, G 2|1). Example text of a card: "Mechanism B {1}{R} (If you cast this spell for its Mechanism B cost, it gains haste and "When this creature dies, draw a card." Sacrifice it at the beginning of the next end step.)"
+  Mechanism C (keyword; 10 cards, commons+uncommons 8; colours C/U|R/M: U 3|1, B 3|1, R 2|0). Example text of a card: "Mechanism C 1 (As you cast this spell, you may sacrifice a creature with power 1 or greater. When you do, copy this spell and you may choose a new target for the copy.)"
+  Mechanism D (keyword; 4 cards, commons+uncommons 0; colours C/U|R/M: W 0|1, U 0|1, R 0|1, G 0|1). Example text of a card: "Mechanism D 5 (When this enchantment enters, look at the top five cards of your library, exile one face down, then put the rest on the bottom in a random order.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 3 WU, Instant): Create two 1/1 blue Fish creature tokens with "This token can't be blocked." Then for each kind of counter among creatures you control, put a counter of that kind on either of those tokens.
+    gold uncommon (MV 4 WU, Creature — Angel Soldier 3/1): Flying / Whenever you attack with one or more creatures with counters on them, draw a card.
+    theme "tokens": have 51 [W 3|4, U 3|1, B 3|0, R 6|4, G 7|5, gold 5|8, colourless 2|0]
+  UB:
+    gold uncommon (MV 2 UB, Instant): Draw two cards. Then discard a card unless there are five or more mana values among cards in your graveyard.
+    gold uncommon (MV 4 UB, Creature — Vampire Wizard 3/3): Flying / As long as there are five or more mana values among cards in your graveyard, this creature gets +2/+2.
+    theme "the graveyard": have 31 [W 2|1, U 2|1, B 4|3, R 0|1, G 1|0, gold 8|6, colourless 1|1]
+  BR:
+    gold uncommon (MV 2 BR, Sorcery): As an additional cost to cast this spell, sacrifice a nonland permanent. / Each opponent chooses a permanent they control that shares a card type with the sacrificed permanent and sacrifices it. / Draw a card.
+    gold uncommon (MV 4 BR, Creature — Human Warrior 3/4): Whenever you sacrifice one or more other creatures, this creature deals 2 damage to each opponent. This ability triggers only once each turn.
+    theme "sacrifice": have 24 [W 3|0, B 3|1, R 3|2, G 2|1, gold 5|3, colourless 1|0]
+  RG:
+    gold uncommon (MV 4 RG, Enchantment): When this enchantment enters, create two Treasure tokens. (They're artifacts with "{T}, Sacrifice this token: Add one mana of any color.") / Sacrifice a Treasure: Create a 1/1 green and white Citizen creature token.
+    gold uncommon (MV 4 RG, Creature — Rhino Warrior 5/4): You may pay {R}{G} rather than pay this spell's mana cost. Spend only mana produced by Treasures to cast it this way.
+    theme "tokens": have 51 [W 3|4, U 3|1, B 3|0, R 6|4, G 7|5, gold 5|8, colourless 2|0]
+    theme "sacrifice": have 24 [W 3|0, B 3|1, R 3|2, G 2|1, gold 5|3, colourless 1|0]
+  GW:
+    gold uncommon (MV 3 WG, Artifact — Equipment): Equipped creature gets +2/+1 and has trample. / Equip Citizen {1} / Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)
+    gold uncommon (MV 4 WG, Creature — Elf Citizen 2/4): Other Citizens you control get +1/+0. / Whenever this creature attacks, create a 1/1 green and white Citizen creature token.
+    theme "creature type Citizen": have 24 [W 6|0, U 2|0, B 1|0, R 4|0, G 5|0, gold 4|2]; refer 4 [W 1|0, U 1|0, G 1|0, gold 1|0]
+    theme "tokens": have 51 [W 3|4, U 3|1, B 3|0, R 6|4, G 7|5, gold 5|8, colourless 2|0]
+  WB: no gold uncommon in the list.
+  UR: no gold uncommon in the list.
+  BG: no gold uncommon in the list.
+  RW: no gold uncommon in the list.
+  GU: no gold uncommon in the list.
+Top creature types (cards; colours "C/U|R/M"):
+  Human 39: W 6|1, U 5|1, B 5|1, R 4|2, G 7|0, gold 5|2 (commons+uncommons 32)
+  Rogue 30: W 2|1, U 6|2, B 3|2, R 1|0, G 2|0, gold 8|3 (commons+uncommons 22)
+  Warrior 27: W 1|0, B 3|2, R 4|3, G 3|1, gold 6|3, colourless 1|0 (commons+uncommons 18)
+  Citizen 24: W 6|0, U 2|0, B 1|0, R 4|0, G 5|0, gold 4|2 (commons+uncommons 22)
+  Elf 13: W 2|0, G 4|1, gold 4|2 (commons+uncommons 10)
+  Vampire 11: B 3|1, gold 4|3 (commons+uncommons 7)
+  Cat 10: W 2|0, G 1|0, gold 3|3, colourless 1|0 (commons+uncommons 7)
+  Druid 10: W 1|0, G 4|1, gold 2|2 (commons+uncommons 7)
+  Angel 9: W 2|2, B 0|1, gold 3|0, colourless 1|0 (commons+uncommons 6)
+  Bird 9: W 3|0, U 2|1, gold 1|2 (commons+uncommons 6)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 5|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|0
+  U: instant 9|1, flash 2|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 11|2
+  B: instant 5|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|0
+  R: instant 5|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|0
+  G: instant 6|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|0
+  gold: instant 7|3, flash 0|2, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|5
+  colourless: instant 0|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 1|0
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#1026 | MV 3 UBR | Creature — Vampire Warrior | 1/4
+Deathtouch, haste
+Whenever this creature attacks, if you don't control a Devil token, create a tapped and attacking 1/1 red Devil creature token with "When this token dies, it deals 1 damage to any target."
+SET INFO: "Devil" creatures: 4 of 135 creature cards in the set (3%), 3 of 95 at common/uncommon. A typical deck that can play this card has about 1.3 of its 15 creatures of this type.
+  MATCHING CARDS (4; commons+uncommons 3): by mana value MV2 2, MV3 2. Creatures among them: 4, average power/toughness 1.8/2.2 (commons+uncommons only 2/2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Devil Warrior | 1/2] Menace (This creature can't be blocked except by two or more creatures.) / Whenever this creature attacks, target creature gets +1/+0 until end of turn. / Mechanism B {1}{R} (If you cast this spell for its Mechanism B cost, it ga…" || "[MV 2 BR | Creature — Devil Warrior | 2/2] Whenever you sacrifice another creature, put a +1/+1 counter on this creature. / {B}{R}, Sacrifice another creature: This creature gains menace until end of turn. (It can't be blocked except by two or more creatures.)" || "[MV 3 R | Creature — Devil Citizen | 3/2] Mechanism A — Whenever another creature you control enters, this creature deals 1 damage to each opponent."
+
+#1037 | MV 0 C | Land — Island Swamp Mountain
+({T}: Add {U}, {B}, or {R}.)
+This land enters tapped.
+Cycling {3} ({3}, Discard this card: Draw a card.)
+
+#1036 | MV 3 R | Creature — Devil Citizen | 3/2
+Mechanism A — Whenever another creature you control enters, this creature deals 1 damage to each opponent.
+
+#1028 | MV 3 BR | Legendary Planeswalker — Nixilis
+Mechanism C X. The copy isn't legendary and has starting loyalty X. (As you cast this spell, you may sacrifice a creature with power X. When you do, copy this spell. The copy becomes a token.)
++1: Each opponent loses 2 life unless they discard a card. If you control a Demon or Devil, you gain 2 life.
+−2: Create a 1/1 red Devil creature token with "When this token dies, it deals 1 damage to any target."
+−7: Target player draws seven cards and loses 7 life.
+SET INFO: "Demon" creatures: 5 of 136 creature cards in the set (4%), 0 of 95 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS (5; commons+uncommons 0): by mana value MV3 1, MV4 2, MV6+ 2. Creatures among them: 5, average power/toughness 4.2/4.6.
+SET INFO: "Devil" creatures: 4 of 136 creature cards in the set (3%), 3 of 95 at common/uncommon. A typical deck that can play this card has about 1.9 of its 15 creatures of this type.
+  MATCHING CARDS (4; commons+uncommons 3): by mana value MV2 2, MV3 2. Creatures among them: 4, average power/toughness 1.8/2.2 (commons+uncommons only 2/2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 R | Creature — Devil Warrior | 1/2] Menace (This creature can't be blocked except by two or more creatures.) / Whenever this creature attacks, target creature gets +1/+0 until end of turn. / Mechanism B {1}{R} (If you cast this spell for its Mechanism B cost, it ga…" || "[MV 3 R | Creature — Devil Citizen | 3/2] Mechanism A — Whenever another creature you control enters, this creature deals 1 damage to each opponent."
+
+#1024 | MV 3 R | Artifact — Treasure
+{T}: Add {R}. Put a stash counter on this artifact.
+{T}, Sacrifice this artifact: Add X mana of any one color, where X is the number of stash counters on this artifact.
+
+#1032 | MV 2 R | Creature — Lizard Citizen | 2/2
+{1}{B/G}: This creature gains deathtouch until end of turn.
+
+#1022 | MV 5 UBR | Legendary Creature — Vampire Rogue | 2/5
+Flash
+Whenever ~ or another Vampire you control enters, exile the top card of each player's library with a collection counter on it.
+Once each turn, you may play a card from exile with a collection counter on it if it was exiled by an ability you controlled, and you may spend mana as though it were mana of any color to cast it.
+SET INFO: "Vampire" creatures: 10 of 135 creature cards in the set (7%), 7 of 95 at common/uncommon. A typical deck that can play this card has about 2.0 of its 15 creatures of this type.
+  MATCHING CARDS (10; commons+uncommons 7): by mana value MV<=1 1, MV3 4, MV4 2, MV5 1, MV6+ 2. Creatures among them: 10, average power/toughness 2.5/3.3 (commons+uncommons only 2.3/2.9). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Vampire Warrior | 1/1] Pay 1 life: This creature gets +1/+0 until end of turn. Activate only once each turn." || "[MV 4 UB | Creature — Vampire Wizard | 3/3] Flying / As long as there are five or more mana values among cards in your graveyard, this creature gets +2/+2." || "[MV 6 UBR | Creature — Vampire Rogue | 4/5] When this creature enters, it deals 2 damage to each opponent and you scry 2. / {2}, Exile this card from your hand: Target land gains "{T}: Add {U}, {B}, or {R}" until this card is cast from exile. You may cast this card for as …"
+
+#1019 | MV 1 B | Creature — Vampire Warrior | 1/1
+Pay 1 life: This creature gets +1/+0 until end of turn. Activate only once each turn.
+
+#1034 | MV 5 G | Sorcery
+Creatures you control get +2/+2 until end of turn. Citizens you control get an additional +1/+1 and gain vigilance until end of turn.
+SET INFO: "Citizen" creatures: 24 of 136 creature cards in the set (18%), 22 of 95 at common/uncommon. A typical deck that can play this card has about 3.9 of its 15 creatures of this type. 11 other cards also make such creature tokens (counting them, about 4.4 of the 23 spells).
+  MATCHING CARDS (24; commons+uncommons 22): by mana value MV<=1 4, MV2 6, MV3 7, MV4 4, MV5 2, MV6+ 1. Creatures among them: 24, average power/toughness 2.2/2.2 (commons+uncommons only 2.2/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Human Citizen | 1/1] When this creature dies, exile the top two cards of your library. Until your next end step, you may play one of those cards." || "[MV 3 R | Creature — Devil Citizen | 3/2] Mechanism A — Whenever another creature you control enters, this creature deals 1 damage to each opponent." || "[MV 6 G | Creature — Human Citizen | 6/6] When this creature enters, choose one — / • Destroy target artifact. / • Destroy target enchantment. / • Exile target card from a graveyard. / • You gain 4 life."
+
+#1017 | MV 3 WG | Artifact — Equipment
+Equipped creature gets +2/+1 and has trample.
+Equip Citizen {1}
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)
+SET INFO: "Citizen" creatures: 24 of 136 creature cards in the set (18%), 22 of 95 at common/uncommon. A typical deck that can play this card has about 5.5 of its 15 creatures of this type. 11 other cards also make such creature tokens (counting them, about 6.1 of the 23 spells).
+  MATCHING CARDS (24; commons+uncommons 22): by mana value MV<=1 4, MV2 6, MV3 7, MV4 4, MV5 2, MV6+ 1. Creatures among them: 24, average power/toughness 2.2/2.2 (commons+uncommons only 2.2/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Human Citizen | 1/1] When this creature dies, exile the top two cards of your library. Until your next end step, you may play one of those cards." || "[MV 3 R | Creature — Devil Citizen | 3/2] Mechanism A — Whenever another creature you control enters, this creature deals 1 damage to each opponent." || "[MV 6 G | Creature — Human Citizen | 6/6] When this creature enters, choose one — / • Destroy target artifact. / • Destroy target enchantment. / • Exile target card from a graveyard. / • You gain 4 life."
+
+#1030 | MV 4 WUB | Legendary Creature — Octopus Advisor | 3/4
+Whenever you draw a card, target opponent loses 1 life and you gain 1 life.
+
+#1020 | MV 4 WG | Creature — Elf Citizen | 2/4
+Other Citizens you control get +1/+0.
+Whenever this creature attacks, create a 1/1 green and white Citizen creature token.
+SET INFO: "Citizen" creatures: 23 of 135 creature cards in the set (17%), 21 of 94 at common/uncommon. A typical deck that can play this card has about 5.3 of its 15 creatures of this type. 11 other cards also make such creature tokens (counting them, about 5.9 of the 23 spells).
+  MATCHING CARDS (23; commons+uncommons 21): by mana value MV<=1 4, MV2 6, MV3 7, MV4 3, MV5 2, MV6+ 1. Creatures among them: 23, average power/toughness 2.2/2.2 (commons+uncommons only 2.2/2.1). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Human Citizen | 1/1] When this creature dies, exile the top two cards of your library. Until your next end step, you may play one of those cards." || "[MV 3 U | Creature — Bird Citizen | 2/2] Flying / {1}{W/B}: This creature gains lifelink until end of turn." || "[MV 6 G | Creature — Human Citizen | 6/6] When this creature enters, choose one — / • Destroy target artifact. / • Destroy target enchantment. / • Exile target card from a graveyard. / • You gain 4 life."
+
+#1016 | MV 2 BR | Creature — Devil Warrior | 2/2
+Whenever you sacrifice another creature, put a +1/+1 counter on this creature.
+{B}{R}, Sacrifice another creature: This creature gains menace until end of turn. (It can't be blocked except by two or more creatures.)
+
+#1035 | MV 1 U | Enchantment — Aura
+Enchant creature
+Enchanted creature loses all abilities and is a green and white Citizen creature with base power and toughness 1/1 named Legitimate Businessperson. (It loses all other colors, card types, creature types, and names.)
+SET INFO: "Citizen" creatures: 24 of 136 creature cards in the set (18%), 22 of 95 at common/uncommon. A typical deck that can play this card has about 3.2 of its 15 creatures of this type. 11 other cards also make such creature tokens (counting them, about 2.9 of the 23 spells).
+  MATCHING CARDS (24; commons+uncommons 22): by mana value MV<=1 4, MV2 6, MV3 7, MV4 4, MV5 2, MV6+ 1. Creatures among them: 24, average power/toughness 2.2/2.2 (commons+uncommons only 2.2/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Human Citizen | 1/1] When this creature dies, exile the top two cards of your library. Until your next end step, you may play one of those cards." || "[MV 3 R | Creature — Devil Citizen | 3/2] Mechanism A — Whenever another creature you control enters, this creature deals 1 damage to each opponent." || "[MV 6 G | Creature — Human Citizen | 6/6] When this creature enters, choose one — / • Destroy target artifact. / • Destroy target enchantment. / • Exile target card from a graveyard. / • You gain 4 life."
+
+#1033 | MV 4 RG | Enchantment
+When this enchantment enters, create two Treasure tokens. (They're artifacts with "{T}, Sacrifice this token: Add one mana of any color.")
+Sacrifice a Treasure: Create a 1/1 green and white Citizen creature token.
+
+#1021 | MV 5 W | Legendary Planeswalker — Elspeth
++1: Choose up to one target creature. Put a +1/+1 counter and a counter from among flying, first strike, lifelink, or vigilance on it.
+−3: Look at the top seven cards of your library. You may put a permanent card with mana value 3 or less from among them onto the battlefield with a shield counter on it. Put the rest on the bottom of your library in a random order.
+−7: Create five 3/3 white Angel creature tokens with flying.
+
+#1027 | MV 3 B | Creature — Human Warrior | 2/2
+When this creature enters, creatures your opponents control get -1/-1 until end of turn.
+Mechanism B {2}{B} (If you cast this spell for its Mechanism B cost, it gains haste and "When this creature dies, draw a card." Sacrifice it at the beginning of the next end step.)
+
+#1023 | MV 2 W | Legendary Creature — Angel | 2/2
+Flying, vigilance
+Each other Angel you control enters with an additional +1/+1 counter on it for each Angel you already control.
+{T}: Add {W}. Spend this mana only to cast an Angel spell.
+SET INFO: "Angel" creatures: 8 of 135 creature cards in the set (6%), 6 of 95 at common/uncommon. A typical deck that can play this card has about 1.6 of its 15 creatures of this type.
+  MATCHING CARDS (8; commons+uncommons 6): by mana value MV3 2, MV4 2, MV5 1, MV6+ 3. Creatures among them: 8, average power/toughness 3.2/2.8 (commons+uncommons only 2.7/2.3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 3 WU | Creature — Angel Advisor | 2/3] Flying / When this creature enters, choose target creature you don't control and tap it. If you control a creature with a counter on it, the chosen creature doesn't untap during its controller's next untap step." || "[MV 4 C | Artifact Creature — Angel Warrior | 2/2] Flying / {3}: This creature gets +1/+1 until end of turn. If exactly three colors of mana were spent to activate this ability, put a +1/+1 counter on it instead." || "[MV 7 WUB | Creature — Angel Rogue | 4/4] Flying / When this creature enters, you gain 3 life. / {2}, Exile this card from your hand: Target land gains "{T}: Add {W}, {U}, or {B}" until this card is cast from exile. You may cast this card for as long as it remains exiled."
+
+#1031 | MV 2 W | Instant
+Target creature gets +2/+2 until end of turn. If it has a counter on it, it also gains flying and lifelink until end of turn.
+
+#1018 | MV 2 WG | Creature — Cat Citizen | 2/3
+Whenever this creature attacks, you may tap another untapped Citizen you control. If you do, this creature gets +1/+0 and gains lifelink until end of turn.
+SET INFO: "Citizen" creatures: 23 of 135 creature cards in the set (17%), 21 of 94 at common/uncommon. A typical deck that can play this card has about 5.1 of its 15 creatures of this type. 11 other cards also make such creature tokens (counting them, about 5.7 of the 23 spells).
+  MATCHING CARDS (23; commons+uncommons 21): by mana value MV<=1 4, MV2 5, MV3 7, MV4 4, MV5 2, MV6+ 1. Creatures among them: 23, average power/toughness 2.2/2.2 (commons+uncommons only 2.2/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Human Citizen | 1/1] When this creature dies, exile the top two cards of your library. Until your next end step, you may play one of those cards." || "[MV 3 R | Creature — Devil Citizen | 3/2] Mechanism A — Whenever another creature you control enters, this creature deals 1 damage to each opponent." || "[MV 6 G | Creature — Human Citizen | 6/6] When this creature enters, choose one — / • Destroy target artifact. / • Destroy target enchantment. / • Exile target card from a graveyard. / • You gain 4 life."
+
+#1015 | MV 6 W | Creature — Angel Advisor | 3/3
+Affinity for Citizens (This spell costs {1} less to cast for each Citizen you control.)
+Flying
+SET INFO: "Citizen" creatures: 24 of 135 creature cards in the set (18%), 22 of 94 at common/uncommon. A typical deck that can play this card has about 4.7 of its 15 creatures of this type. 11 other cards also make such creature tokens (counting them, about 4.5 of the 23 spells).
+  MATCHING CARDS (24; commons+uncommons 22): by mana value MV<=1 4, MV2 6, MV3 7, MV4 4, MV5 2, MV6+ 1. Creatures among them: 24, average power/toughness 2.2/2.2 (commons+uncommons only 2.2/2.2). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 R | Creature — Human Citizen | 1/1] When this creature dies, exile the top two cards of your library. Until your next end step, you may play one of those cards." || "[MV 3 R | Creature — Devil Citizen | 3/2] Mechanism A — Whenever another creature you control enters, this creature deals 1 damage to each opponent." || "[MV 6 G | Creature — Human Citizen | 6/6] When this creature enters, choose one — / • Destroy target artifact. / • Destroy target enchantment. / • Exile target card from a graveyard. / • You gain 4 life."
+
+#1029 | MV 3 WUB | Enchantment
+Whenever you cast a spell, if its mana value is equal to 1 plus the number of soul counters on this enchantment, put a soul counter on this enchantment, then create a 2/2 white Spirit creature token with flying.
+As long as there are five or more soul counters on this enchantment, Spirits you control get +3/+3.
+SET INFO: "Spirit" creatures: 0 of 136 creature cards in the set (0%), 0 of 95 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#1025 | MV 0 C | Land — Mountain Forest Plains
+({T}: Add {R}, {G}, or {W}.)
+This land enters tapped.
+Cycling {3} ({3}, Discard this card: Draw a card.)
+-- pass p3, batch SNC_0: 23 cards

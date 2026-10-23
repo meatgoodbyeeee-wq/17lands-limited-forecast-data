@@ -1,0 +1,222 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 215, nonland 205, creatures 118, commons+uncommons 151. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 0.5/1.5; MV2 4 2/1.5; MV3 7 2.3/2.6; MV4 3 2/2.7; MV5 4 3.5/3.5; MV6+ 1 3/4 | total 21 avg 2.3/2.5
+  U: MV<=1 1 1/1; MV2 4 1.2/2; MV3 4 1.8/3; MV4 3 3/3.3; MV5 1 4/4; MV6+ 2 4/5 | total 15 avg 2.3/3
+  B: MV<=1 2 0.5/1; MV2 3 1.7/1.7; MV3 5 2.4/2.4; MV4 2 2/3; MV5 2 3.5/4.5; MV6+ 3 5.3/5 | total 17 avg 2.6/2.9
+  R: MV<=1 1 1/1; MV2 4 1.5/2.2; MV3 3 2.3/1.7; MV4 4 3.2/3.5; MV5 2 4/3; MV6+ 2 4.5/4.5 | total 16 avg 2.8/2.8
+  G: MV<=1 1 1/1; MV2 5 1.6/1.8; MV3 5 2.4/1.8; MV4 3 2.3/2.3; MV5 2 3/3.5; MV6+ 3 6.7/6.3 | total 19 avg 2.8/2.7
+  gold: MV2 3 1.3/1.3; MV3 7 2.1/3.1; MV4 4 3.5/3.8; MV5 9 3.9/4.2; MV6+ 4 10.8/7.8 | total 27 avg 4.1/4.1
+  colourless: MV3 2 2/2; MV6+ 1 4/5 | total 3 avg 2.7/3
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 1 0/1; MV2 3 2/1.3; MV3 5 2.2/2.6; MV4 3 2/2.7; MV5 2 3/3; MV6+ 1 3/4 | total 15 avg 2.1/2.4
+  U: MV<=1 1 1/1; MV2 3 1/2.3; MV3 3 1.7/2.7; MV4 2 3/3; MV5 1 4/4; MV6+ 2 4/5 | total 12 avg 2.2/3
+  B: MV<=1 2 0.5/1; MV2 2 1.5/1.5; MV3 4 2.2/2.5; MV4 2 2/3; MV5 1 3/5; MV6+ 2 4.5/4.5 | total 13 avg 2.2/2.7
+  R: MV<=1 1 1/1; MV2 3 1.3/2.3; MV3 2 3/2; MV4 3 3/3.3; MV5 2 4/3; MV6+ 2 4.5/4.5 | total 13 avg 2.8/2.8
+  G: MV<=1 1 1/1; MV2 4 1.5/1.5; MV3 5 2.4/1.8; MV4 2 1.5/2; MV5 2 3/3.5; MV6+ 2 7/6.5 | total 16 avg 2.6/2.5
+  gold: MV2 3 1.3/1.3; MV3 4 2/2.8; MV4 1 3/3; MV5 1 2/3 | total 9 avg 1.9/2.3
+  colourless: MV3 2 2/2; MV6+ 1 4/5 | total 3 avg 2.7/3
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 4|1; destroy 1 (3) | 0 (); damage 1 (1) | 0 (); exile 2 (3,6) | 0 (); sweeper 0 () | 1 (5)
+  U: any 1|0; bounce/tuck 1 (3) | 0 ()
+  B: any 7|1; destroy 3 (1,3,4) | 1 (4); exile 1 (6) | 0 (); -X/-X 2 (2,3) | 0 (); sweeper 1 (3) | 0 ()
+  R: any 5|3; damage 5 (1,2,3,4,6) | 1 (3); fight/bite 0 () | 1 (3); sweeper 0 () | 1 (3)
+  G: any 3|0; destroy 1 (2) | 0 (); fight/bite 2 (2,3) | 0 ()
+  gold: any 0|3; damage 0 () | 1 (5); exile 0 () | 1 (5); fight/bite 0 () | 1 (6)
+  colourless: any 1|0; destroy 1 (1) | 0 ()
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 15|6; flying 2|2; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|2; reach 0|0; can block fliers (flying or reach) 2|2; other cards that give flying 1|1
+  U: creatures 12|3; flying 4|3; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|3; reach 0|0; can block fliers (flying or reach) 4|3; other cards that give flying 1|0
+  B: creatures 13|4; flying 1|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|1; reach 0|0; can block fliers (flying or reach) 1|1; other cards that give flying 0|0
+  R: creatures 13|3; flying 1|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|1; reach 1|0; can block fliers (flying or reach) 2|1; other cards that give flying 0|0
+  G: creatures 16|3; flying 0|0; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 2|0; can block fliers (flying or reach) 2|0; other cards that give flying 0|0
+  gold: creatures 9|18; flying 2|5; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|5; reach 0|0; can block fliers (flying or reach) 2|5; other cards that give flying 0|0
+  colourless: creatures 3|0; flying 0|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|0; reach 1|0; can block fliers (flying or reach) 1|0; other cards that give flying 1|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (keyword; 18 cards, commons+uncommons 17; colours C/U|R/M: W 5|1, U 2|0, B 4|0, R 2|0, G 2|0, gold 2|0). Example text of a card: "When this creature enters, Mechanism A 3 X times. (To Mechanism A 3, create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)"
+  Mechanism B (keyword; 17 cards, commons+uncommons 14; colours C/U|R/M: W 4|1, U 1|0, B 3|1, R 3|1, G 3|0). Example text of a card: "Mechanism B 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 2 WU, Creature — Human Knight 2/2): Other Knights you control get +1/+1. / {W}{U}, {T}: Tap another target creature.
+    theme "creature type Knight": have 14 [W 8|1, U 4|0, gold 1|0]; refer 0 [none]
+  UB:
+    gold uncommon (MV 3 UB, Creature — Faerie Rogue 3/1): Flying / When this creature enters, you may pay {X}. When you do, you may cast target instant or sorcery card with mana value X from a graveyard without paying its mana cost. If that spell would be put into a graveyard, exile it instead.
+    theme "the graveyard": have 27 [W 0|1, U 5|1, B 5|3, R 0|1, G 2|2, gold 1|3, colourless 1|2]
+  BR:
+    gold uncommon (MV 3 BR, Creature — Ogre Warrior 2/2): {1}, Sacrifice another creature or artifact: Put a +1/+1 counter on this creature and draw a card. Activate only as a sorcery.
+    theme "+1/+1 counters": have 17 [W 2|2, B 1|1, G 4|3, gold 4|0]
+    theme "sacrifice": have 16 [B 5|2, R 1|1, gold 1|4, colourless 1|1]
+  RG:
+    gold uncommon (MV 4 RG, Creature — Dinosaur Beast 3/3): Trample, haste / Whenever you attack, target attacking creature gets +1/+1 until end of turn. If it's attacking a battle, put a +1/+1 counter on it instead.
+    theme "+1/+1 counters": have 17 [W 2|2, B 1|1, G 4|3, gold 4|0]
+  GW:
+    gold uncommon (MV 2 WG, Creature — Elemental Warrior 0/0): Trample / This creature enters with two +1/+1 counters on it. / Whenever one or more +1/+1 counters are put on another permanent you control, if it's the first time +1/+1 counters have been put on that permanent this turn, put a +1/+1 counter on this creature.
+    theme "+1/+1 counters": have 17 [W 2|2, B 1|1, G 4|3, gold 4|0]
+  WB:
+    gold uncommon (MV 4 WB, Enchantment): When this enchantment enters, Mechanism A 2. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.) / Phyrexians you control get +1/+1.
+    theme "creature type Phyrexian": have 30 [W 7|1, U 1|1, B 8|2, R 4|0, G 2|0, gold 1|2, colourless 1|0]; refer 5 [W 1|0, B 1|1, G 1|0, gold 1|0]
+  UR:
+    gold uncommon (MV 5 UR, Creature — Human Shaman 2/3): When this creature enters, create two 1/1 blue and red Elemental creature tokens. / Whenever you cast a spell that has convoke, this creature deals 1 damage to each opponent and each battle they protect.
+    theme "convoke (keyword)": have 23 [W 2|1, U 6|3, B 1|2, R 5|1, G 0|1, colourless 1|0]; refer 1 [gold 1|0]
+    theme "tokens": have 20 [W 3|3, U 2|1, B 1|0, R 3|0, gold 2|5]
+  BG:
+    gold uncommon (MV 3 BG, Creature — Phyrexian Elf 3/3): When this creature enters, Mechanism A 2. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.) / {5}: Transform target Incubator token you control. Double the number of +1/+1 counters on it.
+    theme "+1/+1 counters": have 17 [W 2|2, B 1|1, G 4|3, gold 4|0]
+    theme "tokens": have 20 [W 3|3, U 2|1, B 1|0, R 3|0, gold 2|5]
+  RW:
+    gold uncommon (MV 2 WR, Creature — Human Soldier 2/2): Vigilance / Whenever a creature you control becomes the target of a Mechanism B ability, copy that ability. You may choose new targets for the copy. This ability triggers only once each turn.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  GU:
+    gold uncommon (MV 3 UG, Creature — Vedalken Mutant 0/5): Flying, vigilance / This creature gets +1/+0 for each transformed permanent you control.
+    involved cards: no theme could be extracted by the rules (counts not given).
+Top creature types (cards; colours "C/U|R/M"):
+  Phyrexian 30: W 7|1, U 1|1, B 8|2, R 4|0, G 2|0, gold 1|2, colourless 1|0 (commons+uncommons 24)
+  Human 26: W 5|2, U 5|0, B 1|1, R 1|0, G 1|1, gold 3|6 (commons+uncommons 16)
+  Knight 14: W 8|1, U 4|0, gold 1|0 (commons+uncommons 13)
+  Warrior 11: W 0|1, B 1|0, R 2|1, G 3|1, gold 2|0 (commons+uncommons 8)
+  Dinosaur 7: R 1|1, G 1|1, gold 1|2 (commons+uncommons 3)
+  Elf 6: B 1|0, G 3|0, gold 1|1 (commons+uncommons 5)
+  Rogue 6: U 1|1, B 2|0, R 1|0, gold 1|0 (commons+uncommons 5)
+  Vampire 6: W 0|1, B 2|0, R 0|1, gold 0|2 (commons+uncommons 2)
+  Dragon 5: U 1|0, B 0|1, R 1|0, gold 0|2 (commons+uncommons 2)
+  Angel 4: W 0|2, gold 0|2 (commons+uncommons 0)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 7|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|0
+  U: instant 9|3, flash 2|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 11|4
+  B: instant 8|1, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 9|1
+  R: instant 5|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|0
+  G: instant 6|0, flash 1|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 7|0
+  gold: instant 0|0, flash 0|1, hand 0|1, swap 0|0, cyc-trigger 0|0 ; any 0|2
+  colourless: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#869 | MV 7 B | Sorcery
+Each player mills ten cards. For each player, choose a creature or planeswalker card in that player's graveyard. Put those cards onto the battlefield under your control. Then each creature you control becomes a Phyrexian in addition to its other types.
+SET INFO: "Phyrexian" creatures: 30 of 118 creature cards in the set (25%), 24 of 81 at common/uncommon. A typical deck that can play this card has about 6.1 of its 15 creatures of this type.
+  MATCHING CARDS (30; commons+uncommons 24): by mana value MV<=1 3, MV2 6, MV3 8, MV4 4, MV5 4, MV6+ 5. Creatures among them: 30, average power/toughness 2.6/3 (commons+uncommons only 2.6/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+
+#884 | MV 3 C | Legendary Artifact
+{2}, {T}: Target opponent mills three cards. Put a land card from their graveyard onto the battlefield tapped under your control. It gains "If this land would leave the battlefield, exile it instead of putting it anywhere else."
+{10}, {T}, Sacrifice ~: Search your library for any number of Praetor cards, put them onto the battlefield, then shuffle.
+SET INFO: "Praetor" creatures: 0 of 118 creature cards in the set (0%), 0 of 81 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#878 | MV 5 U | Creature — Zombie | 4/4
+When this creature enters, each player mills two cards. Then you may put an instant, sorcery, or battle card from your graveyard on top of your library. (To mill two cards, a player puts the top two cards of their library into their graveyard.)
+
+#888 | MV 5 G | Enchantment
+When this enchantment enters, you gain 5 life and Mechanism A 5. (Create an Incubator token with five +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+Phyrexians you control have reach.
+SET INFO: "Phyrexian" creatures: 30 of 118 creature cards in the set (25%), 24 of 81 at common/uncommon. A typical deck that can play this card has about 3.6 of its 15 creatures of this type.
+  MATCHING CARDS (30; commons+uncommons 24): by mana value MV<=1 3, MV2 6, MV3 8, MV4 4, MV5 4, MV6+ 5. Creatures among them: 30, average power/toughness 2.6/3 (commons+uncommons only 2.6/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+
+#866 | MV 4 W | Legendary Planeswalker — Elspeth
++1: Create a 1/1 white Soldier creature token with lifelink.
+−2: Put two +1/+1 counters on target creature. It becomes an Angel in addition to its other types and gains flying.
+−6: Return all nonland permanent cards with mana value 3 or less from your graveyard to the battlefield.
+SET INFO: "Angel" creatures: 4 of 118 creature cards in the set (3%), 0 of 81 at common/uncommon. A typical deck that can play this card has about 0.3 of its 15 creatures of this type.
+  MATCHING CARDS (4; commons+uncommons 0): by mana value MV3 2, MV4 1, MV5 1. Creatures among them: 4, average power/toughness 3/3.5.
+
+#879 | MV 2 WU | Creature — Human Knight | 2/2
+Other Knights you control get +1/+1.
+{W}{U}, {T}: Tap another target creature.
+SET INFO: "Knight" creatures: 13 of 117 creature cards in the set (11%), 12 of 80 at common/uncommon. A typical deck that can play this card has about 5.5 of its 15 creatures of this type.
+  MATCHING CARDS (13; commons+uncommons 12): by mana value MV2 2, MV3 5, MV4 3, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.5/2.7 (commons+uncommons only 2.3/2.6). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 W | Creature — Human Knight | 3/1] This creature has first strike as long as another Knight entered the battlefield under your control this turn." || "[MV 3 W | Creature — Human Knight | 3/3] Whenever another Knight you control enters, this creature gets +1/+1 and gains vigilance until end of turn." || "[MV 6 U | Creature — Human Knight | 3/4] Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.) / Flying"
+
+#886 | MV 1 W | Instant
+You and permanents you control gain hexproof until end of turn. Prevent all damage that black and/or red sources would deal to creatures you control this turn.
+
+#871 | MV 3 W | Instant
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Destroy target planeswalker that was activated this turn or tapped creature.
+
+#875 | MV 2 B | Enchantment
+When this enchantment enters, Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+Whenever a Phyrexian you control dies, surveil 1. (Look at the top card of your library. You may put that card into your graveyard.)
+SET INFO: "Phyrexian" creatures: 30 of 118 creature cards in the set (25%), 24 of 81 at common/uncommon. A typical deck that can play this card has about 6.1 of its 15 creatures of this type.
+  MATCHING CARDS (30; commons+uncommons 24): by mana value MV<=1 3, MV2 6, MV3 8, MV4 4, MV5 4, MV6+ 5. Creatures among them: 30, average power/toughness 2.6/3 (commons+uncommons only 2.6/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+
+#889 | MV 3 W | Creature — Human Knight | 3/3
+Whenever another Knight you control enters, this creature gets +1/+1 and gains vigilance until end of turn.
+SET INFO: "Knight" creatures: 13 of 117 creature cards in the set (11%), 12 of 80 at common/uncommon. A typical deck that can play this card has about 3.7 of its 15 creatures of this type.
+  MATCHING CARDS (13; commons+uncommons 12): by mana value MV2 3, MV3 4, MV4 3, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.4/2.6 (commons+uncommons only 2.2/2.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 WU | Creature — Human Knight | 2/2] Other Knights you control get +1/+1. / {W}{U}, {T}: Tap another target creature." || "[MV 3 W | Creature — Human Knight | 2/2] Mechanism B 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.) / Vigilance" || "[MV 6 U | Creature — Human Knight | 3/4] Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.) / Flying"
+
+#872 | MV 4 WB | Legendary Creature — Vampire Angel | 3/4
+Flying, vigilance
+Activated abilities of creatures your opponents control can't be activated.
+~ has all activated abilities of all creatures your opponents control. You may spend mana as though it were mana of any color to activate those abilities.
+
+#885 | MV 4 WB | Enchantment
+When this enchantment enters, Mechanism A 2. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+Phyrexians you control get +1/+1.
+SET INFO: "Phyrexian" creatures: 30 of 118 creature cards in the set (25%), 24 of 81 at common/uncommon. A typical deck that can play this card has about 7.3 of its 15 creatures of this type.
+  MATCHING CARDS (30; commons+uncommons 24): by mana value MV<=1 3, MV2 6, MV3 8, MV4 4, MV5 4, MV6+ 5. Creatures among them: 30, average power/toughness 2.6/3 (commons+uncommons only 2.6/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+
+#880 | MV 2 W | Creature — Phyrexian Knight | 1/1
+When this creature enters, Mechanism A 2. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+Whenever a permanent you control transforms into a Phyrexian, put a +1/+1 counter on it.
+SET INFO: "Phyrexian" creatures: 29 of 117 creature cards in the set (25%), 23 of 80 at common/uncommon. A typical deck that can play this card has about 4.9 of its 15 creatures of this type.
+  MATCHING CARDS (29; commons+uncommons 23): by mana value MV<=1 3, MV2 5, MV3 8, MV4 4, MV5 4, MV6+ 5. Creatures among them: 29, average power/toughness 2.7/3.1 (commons+uncommons only 2.7/3.1). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+
+#881 | MV 3 W | Enchantment
+When this enchantment enters, Mechanism A 4. (Create an Incubator token with four +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+Phyrexians you control have vigilance.
+SET INFO: "Phyrexian" creatures: 30 of 118 creature cards in the set (25%), 24 of 81 at common/uncommon. A typical deck that can play this card has about 5.1 of its 15 creatures of this type.
+  MATCHING CARDS (30; commons+uncommons 24): by mana value MV<=1 3, MV2 6, MV3 8, MV4 4, MV5 4, MV6+ 5. Creatures among them: 30, average power/toughness 2.6/3 (commons+uncommons only 2.6/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+
+#882 | MV 4 U | Creature — Human Knight | 3/4
+When this creature enters, tap target creature an opponent controls. Put a stun counter on that creature if you control another Knight. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+SET INFO: "Knight" creatures: 13 of 117 creature cards in the set (11%), 12 of 80 at common/uncommon. A typical deck that can play this card has about 2.4 of its 15 creatures of this type.
+  MATCHING CARDS (13; commons+uncommons 12): by mana value MV2 3, MV3 5, MV4 2, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.4/2.5 (commons+uncommons only 2.2/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 WU | Creature — Human Knight | 2/2] Other Knights you control get +1/+1. / {W}{U}, {T}: Tap another target creature." || "[MV 3 W | Creature — Human Knight | 2/2] Mechanism B 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.) / Vigilance" || "[MV 6 U | Creature — Human Knight | 3/4] Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.) / Flying"
+
+#874 | MV 4 G | Instant
+Target player searches their library for a basic land card, puts it onto the battlefield tapped, then shuffles. Put two +1/+1 counters on up to one target artifact or creature.
+
+#870 | MV 3 B | Creature — Phyrexian Elf Warrior | 2/3
+{1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+
+#873 | MV 1 W | Creature — Human Scout | 0/1
+Mechanism B 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.)
+When this creature dies, put its counters on target creature you control.
+
+#890 | MV 5 WUR | Legendary Creature — Orc Dragon | 4/4
+Flying, haste
+~ has hexproof as long as it entered this turn.
+Whenever one or more Dragons you control deal combat damage to a player or battle, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order. You may return one of those Dragons to its owner's hand.
+SET INFO: "Dragon" creatures: 4 of 117 creature cards in the set (3%), 2 of 81 at common/uncommon. A typical deck that can play this card has about 0.6 of its 15 creatures of this type.
+  MATCHING CARDS (4; commons+uncommons 2): by mana value MV4 1, MV5 1, MV6+ 2. Creatures among them: 4, average power/toughness 4.8/4 (commons+uncommons only 3.5/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 4 U | Creature — Phyrexian Dragon | 3/2] Flying / As long as you control a transformed permanent, this creature has "When this creature dies, draw a card."" || "[MV 7 R | Creature — Dragon | 4/4] Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.) / Flying, haste"
+
+#887 | MV 2 W | Creature — Human Knight | 3/1
+This creature has first strike as long as another Knight entered the battlefield under your control this turn.
+SET INFO: "Knight" creatures: 13 of 117 creature cards in the set (11%), 12 of 80 at common/uncommon. A typical deck that can play this card has about 3.6 of its 15 creatures of this type.
+  MATCHING CARDS (13; commons+uncommons 12): by mana value MV2 2, MV3 5, MV4 3, MV5 2, MV6+ 1. Creatures among them: 13, average power/toughness 2.4/2.8 (commons+uncommons only 2.2/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 WU | Creature — Human Knight | 2/2] Other Knights you control get +1/+1. / {W}{U}, {T}: Tap another target creature." || "[MV 3 W | Creature — Human Knight | 3/3] Whenever another Knight you control enters, this creature gets +1/+1 and gains vigilance until end of turn." || "[MV 6 U | Creature — Human Knight | 3/4] Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.) / Flying"
+
+#868 | MV 5 W | Creature — Angel Warrior | 4/4
+Mechanism B 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following abilities until end of turn.)
+Flying, first strike, lifelink
+
+#867 | MV 3 B | Creature — Phyrexian | 3/2
+Sacrifice another Phyrexian: Put a +1/+1 counter on this creature.
+When this creature dies, Mechanism A X, where X is its power. (Create an Incubator token with X +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+SET INFO: "Phyrexian" creatures: 29 of 117 creature cards in the set (25%), 24 of 81 at common/uncommon. A typical deck that can play this card has about 6.0 of its 15 creatures of this type.
+  MATCHING CARDS (29; commons+uncommons 24): by mana value MV<=1 3, MV2 6, MV3 7, MV4 4, MV5 4, MV6+ 5. Creatures among them: 29, average power/toughness 2.6/3.1 (commons+uncommons only 2.6/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+
+#883 | MV 2 W | Enchantment — Aura
+Enchant artifact or creature
+Enchanted permanent can't attack or block, and its activated abilities can't be activated unless they're mana abilities.
+
+#877 | MV 2 B | Creature — Phyrexian Samurai | 2/2
+When this creature enters, Phyrexians you control gain menace until end of turn.
+Other Phyrexians you control get +1/+1.
+{3}{B}, Sacrifice an artifact or creature: Return this card from your graveyard to the battlefield. Activate only as a sorcery.
+SET INFO: "Phyrexian" creatures: 29 of 117 creature cards in the set (25%), 24 of 81 at common/uncommon. A typical deck that can play this card has about 6.0 of its 15 creatures of this type.
+  MATCHING CARDS (29; commons+uncommons 24): by mana value MV<=1 3, MV2 5, MV3 8, MV4 4, MV5 4, MV6+ 5. Creatures among them: 29, average power/toughness 2.6/3.1 (commons+uncommons only 2.6/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+
+#876 | MV 5 BG | Legendary Creature — Phyrexian Zombie Elf | 3/5
+At the beginning of combat on your turn, choose one —
+• Mechanism A 2 twice. (To Mechanism A 2, create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)
+• Transform all Incubator tokens you control.
+• Phyrexians you control gain first strike and deathtouch until end of turn.
+SET INFO: "Phyrexian" creatures: 29 of 117 creature cards in the set (25%), 24 of 81 at common/uncommon. A typical deck that can play this card has about 5.3 of its 15 creatures of this type.
+  MATCHING CARDS (29; commons+uncommons 24): by mana value MV<=1 3, MV2 6, MV3 8, MV4 4, MV5 3, MV6+ 5. Creatures among them: 29, average power/toughness 2.6/3 (commons+uncommons only 2.6/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 B | Creature — Phyrexian Vampire | 1/1] Lifelink / {B}, Exile this card from your graveyard: Mechanism A 2. Activate only as a sorcery. (Create an Incubator token with two +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact…" || "[MV 3 B | Creature — Phyrexian Elf Warrior | 2/3] {1}, {T}, Sacrifice another creature or artifact: Mechanism A 3. (Create an Incubator token with three +1/+1 counters on it and "{2}: Transform this token." It transforms into a 0/0 Phyrexian artifact creature.)" || "[MV 8 G | Creature — Phyrexian Bear Rhino | 8/8] Trample / Hexproof (This creature can't be the target of spells or abilities your opponents control.)"
+-- pass p3, batch MOM_0: 25 cards

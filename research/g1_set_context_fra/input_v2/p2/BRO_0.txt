@@ -1,0 +1,252 @@
+ENVIRONMENT SHEET (counted by a script from the complete card list of the set the cards come from; the set is not named). Cards in list: 257, nonland 245, creatures 147, commons+uncommons 173. "C/U" = commons and uncommons, "R/M" = the two higher rarities; "gold" = two or more colours.
+Creatures, all cards (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1.5/1; MV2 3 1.7/1.7; MV3 5 2/2.4; MV4 3 2.7/3.3; MV5 2 3/3 | total 15 avg 2.1/2.3
+  U: MV2 5 1.6/1.4; MV3 5 1.8/3; MV4 2 2.5/4; MV5 2 2.5/4 | total 14 avg 1.9/2.7
+  B: MV<=1 2 1/1; MV2 3 2/1.7; MV3 6 2/2.7; MV4 2 3/3; MV5 1 4/5; MV6+ 1 4/4 | total 15 avg 2.3/2.5
+  R: MV<=1 2 1/2; MV2 5 1.6/2.4; MV3 5 2.6/1.8; MV4 1 2/4; MV6+ 1 4/5 | total 14 avg 2.1/2.4
+  G: MV<=1 3 1/1; MV2 5 1.8/1.6; MV3 5 3/2.8; MV4 2 3/3.5; MV5 1 4/5; MV6+ 1 5/5 | total 17 avg 2.5/2.5
+  gold: MV2 5 2.2/2; MV3 4 2/2.8; MV4 7 2.9/3.6; MV5 4 3.2/4; MV6+ 1 7/6 | total 21 avg 2.8/3.2
+  colourless: MV<=1 5 1/1.4; MV2 6 2.3/1.5; MV3 6 1.7/2.2; MV4 4 2.2/2; MV5 9 3.8/4.7; MV6+ 21 5.8/5.5 | total 51 avg 3.8/3.8
+Creatures, commons and uncommons only (count, average power/toughness; "MV<=1" includes MV0):
+  W: MV<=1 2 1.5/1; MV2 3 1.7/1.7; MV3 3 2/3; MV4 2 2.5/3; MV5 2 3/3 | total 12 avg 2.1/2.3
+  U: MV2 4 1.5/1.5; MV3 3 1.7/2.7; MV4 2 2.5/4; MV5 2 2.5/4 | total 11 avg 1.9/2.7
+  B: MV<=1 1 1/1; MV2 2 2/1.5; MV3 5 1.8/2.6; MV4 1 2/3; MV5 1 4/5; MV6+ 1 4/4 | total 11 avg 2.2/2.6
+  R: MV<=1 2 1/2; MV2 4 1.5/2.5; MV3 5 2.6/1.8; MV4 1 2/4 | total 12 avg 1.9/2.2
+  G: MV<=1 2 1/1; MV2 4 1.8/1.5; MV3 3 3.3/2.3; MV4 2 3/3.5; MV5 1 4/5; MV6+ 1 5/5 | total 13 avg 2.6/2.5
+  gold: MV2 3 1.7/1.7; MV3 2 2/2; MV4 4 2.8/3.5; MV5 1 3/2 | total 10 avg 2.3/2.5
+  colourless: MV<=1 5 1/1.4; MV2 4 2/1.5; MV3 2 1.5/2; MV4 3 2.3/2; MV5 5 3.8/3.8; MV6+ 14 5.9/5.9 | total 33 avg 3.8/3.8
+Removal that can hit an opponent's creature, by colour; each entry "C/U n (MVs) | R/M n (MVs)" (a card with two kinds is counted in both; "any" = distinct cards):
+  W: any 3|2; damage 1 (2) | 0 (); exile 1 (4) | 2 (2,3); lock-down 1 (3) | 0 ()
+  U: any 1|1; bounce/tuck 1 (2) | 0 (); sweeper 0 () | 1 (5)
+  B: any 6|1; destroy 2 (2,2) | 0 (); damage 1 (6) | 0 (); exile 1 (5) | 0 (); -X/-X 2 (1,1) | 0 (); sweeper 0 () | 1 (5)
+  R: any 4|3; damage 4 (2,3,4,5) | 2 (1,6); sweeper 0 () | 1 (3)
+  G: any 3|0; exile 1 (4) | 0 (); fight/bite 2 (1,2) | 0 ()
+  gold: any 2|1; destroy 1 (4) | 0 (); damage 1 (3) | 0 (); exile 0 () | 1 (3)
+  colourless: any 2|3; destroy 1 (1) | 1 (8); exile 1 (1) | 0 (); -X/-X 0 () | 1 (5); sweeper 0 () | 1 (3)
+Evasion (menace and trample are not counted) and blockers for fliers; "C/U|R/M" counts of creature cards:
+  W: creatures 12|3; flying 3|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|0; reach 0|0; can block fliers (flying or reach) 3|0; other cards that give flying 1|0
+  U: creatures 11|3; flying 3|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 3|1; reach 0|0; can block fliers (flying or reach) 3|1; other cards that give flying 2|0
+  B: creatures 11|4; flying 2|0; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 2|0; reach 0|0; can block fliers (flying or reach) 2|0; other cards that give flying 1|0
+  R: creatures 12|2; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 1|0; can block fliers (flying or reach) 1|1; other cards that give flying 0|1
+  G: creatures 13|4; flying 0|0; protection 0|0; unblockable-type 1|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 1|0; reach 1|1; can block fliers (flying or reach) 1|1; other cards that give flying 0|0
+  gold: creatures 10|11; flying 0|1; protection 0|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 0|1; reach 1|0; can block fliers (flying or reach) 1|1; other cards that give flying 0|1
+  colourless: creatures 33|18; flying 4|2; protection 1|0; unblockable-type 0|0; shadow 0|0; other (fear, skulk, landwalk ...) 0|0; any evasion 5|2; reach 2|1; can block fliers (flying or reach) 6|3; other cards that give flying 1|0
+Set mechanics (names replaced by neutral labels; the same labels are used in the card texts you are shown):
+  Mechanism A (keyword; 17 cards, commons+uncommons 11; colours C/U|R/M: colourless 11|6). Example text of a card: "Mechanism A {1}{G} — 2/3 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)"
+  Mechanism B (keyword; 15 cards, commons+uncommons 12; colours C/U|R/M: colourless 12|3). Example text of a card: "Mechanism B {W} ({W}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Mechanism B only as a sorcery.)"
+Archetypes (the ten two-colour pairs). For each pair: the gold uncommon(s) of that pair, then for the themes they point at, how many cards of the set are involved: "have" = the card is / has the thing, "refer" = another card whose text depends on it; counts by colour as "C/U|R/M":
+  WU:
+    gold uncommon (MV 4 WU, Creature — Human Soldier 3/4): Other Soldiers you control get +1/+1.
+    theme "creature type Soldier": have 31 [W 7|2, U 4|1, B 2|0, R 3|0, G 4|0, gold 3|2, colourless 3|0]; refer 1 [colourless 1|0]
+  UB:
+    gold uncommon (MV 2 UB, Creature — Phyrexian Human Cleric 2/3): When this creature enters, draw a card, then discard a card. / As long as you've drawn two or more cards this turn, this creature gets +1/+0 and has menace.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  BR:
+    gold uncommon (MV 3 BR, Creature — Human Artificer 2/2): When this creature enters, create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.") / {1}{B}{R}, Sacrifice another creature or artifact: Until end of turn, other creatures you control get +1/+0 and gain menace and haste.
+    theme "artifact cards": have 69 [U 0|1, colourless 46|22]; refer 21 [W 3|0, U 3|1, B 2|0, R 1|0, G 2|1, gold 3|5]
+    theme "tokens": have 46 [W 5|3, U 4|3, B 2|1, R 5|1, G 2|3, gold 3|4, colourless 5|5]
+    theme "sacrifice": have 25 [B 4|3, R 5|0, gold 2|2, colourless 7|2]
+  RG:
+    gold uncommon (MV 3 RG, Creature — Human Artificer 2/2): When this creature enters, choose one — / • This creature deals 1 damage to any target. / • Put a +1/+1 counter on target creature. It gains trample and haste until end of turn. / • Create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+    theme "+1/+1 counters": have 34 [W 3|2, U 4|1, B 5|1, R 1|0, G 4|3, gold 2|0, colourless 3|5]
+    theme "tokens": have 46 [W 5|3, U 4|3, B 2|1, R 5|1, G 2|3, gold 3|4, colourless 5|5]
+  GW:
+    gold uncommon (MV 2 WG, Creature — Human Artificer 1/1): Whenever an artifact you control enters, put a +1/+1 counter on target creature you control.
+    theme "artifact cards": have 69 [U 0|1, colourless 46|22]; refer 21 [W 3|0, U 3|1, B 2|0, R 1|0, G 2|1, gold 3|5]
+    theme "+1/+1 counters": have 34 [W 3|2, U 4|1, B 5|1, R 1|0, G 4|3, gold 2|0, colourless 3|5]
+  WB:
+    gold uncommon (MV 5 WB, Creature — Human Soldier 3/2): When this creature enters, return target artifact or creature card with mana value 3 or less from your graveyard to the battlefield. / Creatures you control with mana value 3 or less get +1/+0.
+    theme "the graveyard": have 43 [W 4|0, U 2|0, B 10|4, G 6|2, gold 2|3, colourless 5|5]
+  UR:
+    gold uncommon (MV 2 UR, Creature — Human Monk 2/1): Whenever you cast a noncreature spell, create a 1/1 colorless Soldier artifact creature token.
+    theme "noncreature cards": have 98 [W 12|5, U 13|4, B 13|4, R 10|5, G 10|3, gold 0|2, colourless 13|4]; refer 2 [U 0|1, gold 1|0]
+    theme "tokens": have 46 [W 5|3, U 4|3, B 2|1, R 5|1, G 2|3, gold 3|4, colourless 5|5]
+  BG:
+    gold uncommon (MV 4 BG, Creature — Spider 3/3): Reach / When this creature enters, you may sacrifice another creature. When you do, destroy target nonland permanent. / When this creature dies, you may gain 1 life for each creature card in your graveyard. If you do, exile this card from your graveyard.
+    theme "life gain": have 26 [W 5|1, B 3|2, R 1|0, G 2|3, gold 1|1, colourless 5|2]
+    theme "the graveyard": have 43 [W 4|0, U 2|0, B 10|4, G 6|2, gold 2|3, colourless 5|5]
+    theme "sacrifice": have 25 [B 4|3, R 5|0, gold 2|2, colourless 7|2]
+  RW:
+    gold uncommon (MV 4 WR, Creature — Human Soldier 2/3): First strike / Whenever this creature or another creature you control enters, target creature gets +2/+0 until end of turn.
+    involved cards: no theme could be extracted by the rules (counts not given).
+  GU:
+    gold uncommon (MV 4 UG, Creature — Human Artificer 3/4): Creatures you control have "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell." / Whenever you cast an artifact spell with mana value 6 or greater, draw a card.
+    theme "artifact cards": have 69 [U 0|1, colourless 46|22]; refer 21 [W 3|0, U 3|1, B 2|0, R 1|0, G 2|1, gold 3|5]
+Top creature types (cards; colours "C/U|R/M"):
+  Human 64: W 12|3, U 10|3, B 5|1, R 6|1, G 5|0, gold 9|9 (commons+uncommons 47)
+  Soldier 31: W 7|2, U 4|1, B 2|0, R 3|0, G 4|0, gold 3|2, colourless 3|0 (commons+uncommons 26)
+  Artificer 23: W 4|1, U 2|1, B 0|1, R 2|1, G 1|0, gold 4|6 (commons+uncommons 13)
+  Construct 15: colourless 10|5 (commons+uncommons 10)
+  Phyrexian 11: B 4|2, gold 1|1, colourless 1|2 (commons+uncommons 6)
+  Wizard 7: U 3|1, R 1|0, colourless 1|1 (commons+uncommons 5)
+  Beast 5: B 1|0, R 1|0, G 2|0, colourless 0|1 (commons+uncommons 4)
+  Horror 5: B 4|0, colourless 1|0 (commons+uncommons 5)
+  Assembly-Worker 4: colourless 3|1 (commons+uncommons 3)
+  Druid 4: G 3|1 (commons+uncommons 3)
+Instant-speed interaction by colour ("C/U|R/M" card counts): instant = Instant cards; flash = cards with flash; hand = ability you activate from hand by discarding the card itself (not pure draw/search/scry/gain-life); swap = return an unblocked attacker to put the card onto the battlefield; cyc-trigger = effect when the card is cycled/discarded:
+  W: instant 4|1, flash 2|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 6|1
+  U: instant 8|1, flash 2|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 10|1
+  B: instant 5|1, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 5|1
+  R: instant 4|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|0
+  G: instant 4|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 4|0
+  gold: instant 0|0, flash 0|0, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 0|0
+  colourless: instant 0|0, flash 2|1, hand 0|0, swap 0|0, cyc-trigger 0|0 ; any 2|1
+
+CARDS (answer one line per card, in this order; ids are the numbers after #)
+
+#119 | MV 2 U | Creature — Human Soldier | 2/1
+Flash
+Flying
+When this creature enters, return up to one other target creature you control to its owner's hand. If it was a Soldier, put a +1/+1 counter on this creature.
+SET INFO: "Soldier" creatures: 30 of 146 creature cards in the set (21%), 25 of 101 at common/uncommon. A typical deck that can play this card has about 2.9 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 2.9 of the 23 spells).
+  MATCHING CARDS (30; commons+uncommons 25): by mana value MV<=1 5, MV2 7, MV3 9, MV4 6, MV5 3. Creatures among them: 30, average power/toughness 2.3/2.5 (commons+uncommons only 2.2/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 W | Creature — Human Cleric Soldier | 1/4] Lifelink" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+
+#118 | MV 4 WU | Creature — Human Soldier | 3/4
+Other Soldiers you control get +1/+1.
+SET INFO: "Soldier" creatures: 30 of 146 creature cards in the set (21%), 25 of 101 at common/uncommon. A typical deck that can play this card has about 4.0 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.9 of the 23 spells).
+  MATCHING CARDS (30; commons+uncommons 25): by mana value MV<=1 5, MV2 8, MV3 9, MV4 5, MV5 3. Creatures among them: 30, average power/toughness 2.3/2.4 (commons+uncommons only 2.2/2.3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 U | Creature — Human Soldier | 2/2] Flying / Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+
+#117 | MV 3 C | Artifact — Equipment
+Equipped creature gets +2/+0.
+Equip Soldier {W}
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+SET INFO: "Soldier" creatures: 31 of 147 creature cards in the set (21%), 26 of 102 at common/uncommon. A typical deck that can play this card has about 3.0 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.2 of the 23 spells).
+  MATCHING CARDS (31; commons+uncommons 26): by mana value MV<=1 5, MV2 8, MV3 9, MV4 6, MV5 3. Creatures among them: 31, average power/toughness 2.3/2.5 (commons+uncommons only 2.2/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 W | Creature — Human Cleric Soldier | 1/4] Lifelink" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+
+#116 | MV 3 WU | Legendary Creature — Human Artificer | 2/4
+Artifact, instant, and sorcery spells you cast cost {1} less to cast.
+{7}: If you both own and control ~ and an artifact named The Mightstone and Weakstone, exile them, then meld them into ~, Planeswalker. Activate only as a sorcery.
+SET INFO: instant cards: 28 of 244 nonland cards in the set (11%), 25 of 173 at common/uncommon. A typical deck that can play this card has about 3.4 of its 23 spells like this.
+  MATCHING CARDS (28; commons+uncommons 25): by mana value MV<=1 4, MV2 10, MV3 5, MV4 5, MV5 4. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Instant] Target artifact or creature gains hexproof and indestructible until end of turn. Scry 1." || "[MV 5 R | Instant] ~ deals 5 damage to target creature or planeswalker and 2 damage to that permanent's controller."
+SET INFO: sorcery cards: 31 of 244 nonland cards in the set (13%), 21 of 173 at common/uncommon. A typical deck that can play this card has about 1.0 of its 23 spells like this.
+  MATCHING CARDS (31; commons+uncommons 21): by mana value MV<=1 4, MV2 7, MV3 9, MV4 4, MV5 4, MV6+ 3. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Sorcery] Choose one — / • Search your library for a basic land card, reveal it, put it into your hand, then shuffle. / • Target creature you control fights target creature you don't control. (Each deals damage equal to its power to the ot…" || "[MV 6 B | Sorcery] ~ deals damage to any target equal to the number of Swamps you control. You gain life equal to the damage dealt this way."
+SET INFO: artifact cards: 69 of 244 nonland cards in the set (28%), 46 of 173 at common/uncommon. A typical deck that can play this card has about 10.8 of its 23 spells like this. 31 other cards also make such tokens (counting them, about 12.7 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 46): by mana value MV<=1 7, MV2 13, MV3 10, MV4 6, MV5 10, MV6+ 23. Creatures among them: 51, average power/toughness 3.8/3.8 (commons+uncommons only 3.8/3.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact] Flash / {7}, {T}, Sacrifice this artifact: Destroy target permanent." || "[MV 10 C | Artifact Creature — Construct | 10/10] Mechanism A {3}{G}{G} — 3/5 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.) / Reach, trample"
+
+#115 | MV 3 C | Artifact Creature — Assembly-Worker | 1/3
+Reach
+{T}: Add {C}. If you control creatures named Mine Worker and Power Plant Worker, add {C}{C}{C} instead.
+SET INFO: "Plant" creatures: 0 of 146 creature cards in the set (0%), 0 of 101 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#114 | MV 5 UG | Legendary Creature — Human Artificer | 3/5
+Whenever you cast a Beast or Bird creature spell, you may copy it, except the copy is an artifact in addition to its other types. (The copy becomes a token.)
+SET INFO: "Beast" creatures: 5 of 146 creature cards in the set (3%), 4 of 102 at common/uncommon. A typical deck that can play this card has about 0.5 of its 15 creatures of this type.
+  MATCHING CARDS (5; commons+uncommons 4): by mana value MV3 2, MV4 1, MV5 2. Creatures among them: 5, average power/toughness 3.6/4.2 (commons+uncommons only 4/3.5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 3 R | Creature — Dinosaur Beast | 4/3] Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.) / Players can't gain life." || "[MV 5 B | Creature — Beast Horror | 4/5] As long as you've drawn two or more cards this turn, this creature has deathtouch and lifelink."
+SET INFO: "Bird" creatures: 1 of 146 creature cards in the set (1%), 1 of 102 at common/uncommon. A typical deck that can play this card has about 0.3 of its 15 creatures of this type.
+  MATCHING CARDS (1; commons+uncommons 1): by mana value MV5 1. Creatures among them: 1, average power/toughness 3/3 (commons+uncommons only 3/3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 5 U | Creature — Bird | 3/3] Flash / Flying / When this creature enters, create a tapped Powerstone token. (It's an artifact with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")"
+SET INFO: artifact cards: 69 of 244 nonland cards in the set (28%), 46 of 173 at common/uncommon. A typical deck that can play this card has about 11.0 of its 23 spells like this. 31 other cards also make such tokens (counting them, about 12.4 of the 23 spells).
+  MATCHING CARDS (69; commons+uncommons 46): by mana value MV<=1 7, MV2 13, MV3 10, MV4 6, MV5 10, MV6+ 23. Creatures among them: 51, average power/toughness 3.8/3.8 (commons+uncommons only 3.8/3.8). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 C | Artifact] Flash / {7}, {T}, Sacrifice this artifact: Destroy target permanent." || "[MV 10 C | Artifact Creature — Construct | 10/10] Mechanism A {3}{G}{G} — 3/5 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.) / Reach, trample"
+
+#113 | MV 3 C | Artifact
+Flash
+When this artifact enters, target creature you control gets +2/+2 until end of turn.
+{4}, {T}, Sacrifice this artifact: Draw a card.
+
+#112 | MV 3 U | Creature — Human Soldier | 2/3
+Flying
+Whenever this creature attacks, create a 1/1 colorless Soldier artifact creature token.
+Tap three untapped Soldiers you control: Draw a card.
+SET INFO: "Soldier" creatures: 30 of 146 creature cards in the set (21%), 26 of 102 at common/uncommon. A typical deck that can play this card has about 3.0 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.0 of the 23 spells).
+  MATCHING CARDS (30; commons+uncommons 26): by mana value MV<=1 5, MV2 8, MV3 8, MV4 6, MV5 3. Creatures among them: 30, average power/toughness 2.3/2.4 (commons+uncommons only 2.2/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 W | Creature — Human Cleric Soldier | 1/4] Lifelink" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+
+#111 | MV 3 W | Creature — Human Soldier | 2/2
+At the beginning of combat on your turn, put a +1/+1 counter on target creature you control.
+Whenever another nontoken Soldier you control dies, create a 1/1 colorless Soldier artifact creature token.
+SET INFO: "Soldier" creatures: 30 of 146 creature cards in the set (21%), 26 of 102 at common/uncommon. A typical deck that can play this card has about 3.7 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.8 of the 23 spells).
+  MATCHING CARDS (30; commons+uncommons 26): by mana value MV<=1 5, MV2 8, MV3 8, MV4 6, MV5 3. Creatures among them: 30, average power/toughness 2.3/2.5 (commons+uncommons only 2.2/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 W | Creature — Human Cleric Soldier | 1/4] Lifelink" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+
+#110 | MV 5 C | Artifact Creature — Assembly-Worker | 4/4
+{3}: This creature gets +2/+2 until end of turn. If you control creatures named Mine Worker and Tower Worker, put two +1/+1 counters on this creature instead. Activate only once each turn.
+
+#109 | MV 9 C | Artifact
+When this artifact enters, each opponent sacrifices three creatures of their choice.
+At the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control. It's a Phyrexian in addition to its other types.
+SET INFO: "Phyrexian" creatures: 11 of 147 creature cards in the set (7%), 6 of 102 at common/uncommon. A typical deck that can play this card has about 0.8 of its 15 creatures of this type.
+  MATCHING CARDS (11; commons+uncommons 6): by mana value MV2 2, MV3 4, MV4 3, MV6+ 2. Creatures among them: 11, average power/toughness 2.9/3.1 (commons+uncommons only 2.2/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 UB | Creature — Phyrexian Human Cleric | 2/3] When this creature enters, draw a card, then discard a card. / As long as you've drawn two or more cards this turn, this creature gets +1/+0 and has menace." || "[MV 3 B | Creature — Phyrexian Horror | 1/3] Flying / Whenever you draw your second card each turn, put a +1/+1 counter on this creature. / When this creature dies, return another target creature card with mana value less than or equal to this creature's power from your gra…" || "[MV 6 B | Creature — Phyrexian Human | 4/4] When this creature enters, search your library for up to three artifact cards, put them into your graveyard, then shuffle."
+
+#108 | MV 2 R | Sorcery
+~ deals 4 damage to target creature or planeswalker. If that creature or planeswalker would die this turn, exile it instead.
+
+#107 | MV 4 W | Legendary Creature — Human Soldier | 3/4
+During your turn, your opponents can't cast spells or activate abilities of artifacts, creatures, or enchantments.
+Whenever ~ attacks, create X 1/1 colorless Soldier artifact creature tokens, where X is the number of Soldiers you control.
+SET INFO: "Soldier" creatures: 30 of 146 creature cards in the set (21%), 26 of 102 at common/uncommon. A typical deck that can play this card has about 3.8 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.9 of the 23 spells).
+  MATCHING CARDS (30; commons+uncommons 26): by mana value MV<=1 5, MV2 8, MV3 9, MV4 5, MV5 3. Creatures among them: 30, average power/toughness 2.3/2.4 (commons+uncommons only 2.2/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 W | Creature — Human Cleric Soldier | 1/4] Lifelink" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+
+#106 | MV 4 BR | Legendary Creature — Phyrexian Human Artificer | 3/5
+Whenever you attack, each opponent loses X life and you gain X life, where X is the number of attacking creatures. If ~ and a creature named Phyrexian Dragon Engine are attacking, and you both own and control them, exile them, then meld them into ~, Lost to Phyrexia. It enters tapped and attacking.
+SET INFO: "Phyrexian" creatures: 10 of 146 creature cards in the set (7%), 6 of 102 at common/uncommon. A typical deck that can play this card has about 1.4 of its 15 creatures of this type.
+  MATCHING CARDS (10; commons+uncommons 6): by mana value MV2 2, MV3 4, MV4 2, MV6+ 2. Creatures among them: 10, average power/toughness 2.9/2.9 (commons+uncommons only 2.2/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 UB | Creature — Phyrexian Human Cleric | 2/3] When this creature enters, draw a card, then discard a card. / As long as you've drawn two or more cards this turn, this creature gets +1/+0 and has menace." || "[MV 6 B | Creature — Phyrexian Human | 4/4] When this creature enters, search your library for up to three artifact cards, put them into your graveyard, then shuffle."
+SET INFO: "Dragon" creatures: 3 of 146 creature cards in the set (2%), 1 of 102 at common/uncommon. A typical deck that can play this card has about 0.2 of its 15 creatures of this type.
+  MATCHING CARDS (3; commons+uncommons 1): by mana value MV3 1, MV6+ 2. Creatures among them: 3, average power/toughness 3.7/4 (commons+uncommons only 5/5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 8 C | Artifact Creature — Dragon | 5/5] Mechanism A {2}{R} — 1/3 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.) / Flying / {2}: This creature gets +1/+0 until end of turn."
+
+#105 | MV 5 C | Artifact Creature — Juggernaut | 5/3
+Trample
+This creature attacks each combat if able.
+Mechanism B {5}{R} ({5}{R}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Mechanism B only as a sorcery.)
+
+#104 | MV 2 C | Artifact Creature — Assembly-Worker | 2/1
+{T}: You gain 1 life. If you control creatures named Power Plant Worker and Tower Worker, you gain 3 life instead.
+SET INFO: "Plant" creatures: 0 of 146 creature cards in the set (0%), 0 of 101 at common/uncommon. A typical deck that can play this card has about 0.0 of its 15 creatures of this type.
+  MATCHING CARDS: none.
+
+#103 | MV 5 U | Creature — Human Wizard | 2/5
+{3}: Put target artifact, instant, or sorcery card from a graveyard on the bottom of its owner's library.
+
+#102 | MV 3 U | Legendary Creature — Human Wizard Advisor | 2/4
+At the beginning of your end step, if you've cast a noncreature spell this turn, reveal the top five cards of your library. For each card type among noncreature spells you've cast this turn, you may put a card of that type from among the revealed cards into your hand. Put the rest on the bottom of your library in a random order.
+SET INFO: noncreature spells: 98 of 244 nonland cards in the set (40%), 71 of 173 at common/uncommon. A typical deck that can play this card has about 9.0 of its 23 spells like this.
+  MATCHING CARDS (98; commons+uncommons 71): by mana value MV<=1 14, MV2 27, MV3 24, MV4 16, MV5 11, MV6+ 6. Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 G | Sorcery] Choose one — / • Search your library for a basic land card, reveal it, put it into your hand, then shuffle. / • Target creature you control fights target creature you don't control. (Each deals damage equal to its power to the ot…" || "[MV 2 R | Sorcery] ~ deals 4 damage to target creature or planeswalker. If that creature or planeswalker would die this turn, exile it instead." || "[MV 6 B | Sorcery] ~ deals damage to any target equal to the number of Swamps you control. You gain life equal to the damage dealt this way."
+
+#101 | MV 2 WU | Legendary Creature — Human Soldier | 3/2
+Flying
+Whenever you attack with five or more Soldiers, creatures you control get +1/+1 and gain flying until end of turn.
+SET INFO: "Soldier" creatures: 30 of 146 creature cards in the set (21%), 26 of 102 at common/uncommon. A typical deck that can play this card has about 4.1 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.9 of the 23 spells).
+  MATCHING CARDS (30; commons+uncommons 26): by mana value MV<=1 5, MV2 7, MV3 9, MV4 6, MV5 3. Creatures among them: 30, average power/toughness 2.3/2.5 (commons+uncommons only 2.2/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 W | Creature — Human Cleric Soldier | 1/4] Lifelink" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+
+#100 | MV 3 G | Legendary Creature — Elf Druid Scout | 2/3
+{T}: Add two mana in any combination of colors. Spend this mana only to cast creature spells or activate abilities of creature sources.
+Whenever you cast a creature spell with power 5 or greater, put a +1/+1 counter on ~ and untap it.
+
+#99 | MV 0 C | Land
+As this land enters, you may reveal a Soldier card from your hand. This land enters tapped unless you revealed a Soldier card this way or you control a Soldier.
+{T}: Add {W} or {U}.
+{5}, {T}: Soldiers you control get +1/+1 until end of turn.
+SET INFO: "Soldier" creatures: 31 of 147 creature cards in the set (21%), 26 of 102 at common/uncommon. A typical deck that can play this card has about 3.0 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.2 of the 23 spells).
+  MATCHING CARDS (31; commons+uncommons 26): by mana value MV<=1 5, MV2 8, MV3 9, MV4 6, MV5 3. Creatures among them: 31, average power/toughness 2.3/2.5 (commons+uncommons only 2.2/2.4). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 W | Creature — Human Cleric Soldier | 1/4] Lifelink" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+
+#98 | MV 5 G | Sorcery
+Create three tapped Powerstone tokens. You gain 3 life. (The tokens are artifacts with "{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.")
+
+#97 | MV 3 R | Enchantment — Aura
+Enchant creature
+Enchanted creature gets +1/+1 and has flying, haste, and "{1}: This creature gets +1/+0 until end of turn." It's a Dragon in addition to its other types.
+When enchanted creature dies, return this card to its owner's hand.
+SET INFO: "Dragon" creatures: 3 of 147 creature cards in the set (2%), 1 of 102 at common/uncommon. A typical deck that can play this card has about 0.2 of its 15 creatures of this type.
+  MATCHING CARDS (3; commons+uncommons 1): by mana value MV3 1, MV6+ 2. Creatures among them: 3, average power/toughness 3.7/4 (commons+uncommons only 5/5). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 8 C | Artifact Creature — Dragon | 5/5] Mechanism A {2}{R} — 1/3 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.) / Flying / {2}: This creature gets +1/+0 until end of turn."
+
+#96 | MV 2 U | Instant
+Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+Draw a card.
+
+#95 | MV 3 B | Creature — Human Soldier | 1/4
+{5}, {T}: Each opponent loses 2 life. This ability costs {1} less to activate for each creature card in your graveyard.
+
+#94 | MV 5 C | Artifact Creature — Assembly-Worker | 4/5
+Mechanism A {1}{W} — 2/2 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)
+Vigilance
+{1}, {T}: Put a +1/+1 counter on target Assembly-Worker you control.
+SET INFO: "Assembly-Worker" creatures: 3 of 146 creature cards in the set (2%), 3 of 102 at common/uncommon. A typical deck that can play this card has about 1.0 of its 15 creatures of this type.
+  MATCHING CARDS (3; commons+uncommons 3): by mana value MV2 1, MV3 1, MV5 1. Creatures among them: 3, average power/toughness 2.3/2.7 (commons+uncommons only 2.3/2.7). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 2 C | Artifact Creature — Assembly-Worker | 2/1] {T}: You gain 1 life. If you control creatures named Power Plant Worker and Tower Worker, you gain 3 life instead." || "[MV 3 C | Artifact Creature — Assembly-Worker | 1/3] Reach / {T}: Add {C}. If you control creatures named Mine Worker and Power Plant Worker, add {C}{C}{C} instead." || "[MV 5 C | Artifact Creature — Assembly-Worker | 4/4] {3}: This creature gets +2/+2 until end of turn. If you control creatures named Mine Worker and Tower Worker, put two +1/+1 counters on this creature instead. Activate only once each turn."
+
+#93 | MV 3 W | Creature — Human Cleric | 1/1
+Flying
+When this creature enters, mill three cards. You may put a Plains card or a creature card with mana value 3 or less from among the cards milled this way into your hand. If you don't, put a +1/+1 counter on this creature. (To mill a card, put the top card of your library into your graveyard.)
+
+#92 | MV 5 W | Creature — Human Soldier | 3/4
+Flying
+When this creature enters, put a +1/+1 counter on another target Soldier you control.
+SET INFO: "Soldier" creatures: 30 of 146 creature cards in the set (21%), 25 of 101 at common/uncommon. A typical deck that can play this card has about 3.5 of its 15 creatures of this type. 5 other cards also make such creature tokens (counting them, about 3.6 of the 23 spells).
+  MATCHING CARDS (30; commons+uncommons 25): by mana value MV<=1 5, MV2 8, MV3 9, MV4 6, MV5 2. Creatures among them: 30, average power/toughness 2.3/2.4 (commons+uncommons only 2.2/2.3). Examples (a common/uncommon with the lowest, a middle and the highest mana value): "[MV 1 W | Creature — Human Soldier | 1/1] First strike / {1}{W}, Exile this card from your graveyard: Scry 2." || "[MV 3 U | Creature — Human Soldier | 2/2] Flying / Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)" || "[MV 5 G | Creature — Centaur Soldier | 4/5] Whenever this creature attacks, if there are three or more creature cards in your graveyard, draw a card."
+-- pass p2, batch BRO_0: 28 cards
