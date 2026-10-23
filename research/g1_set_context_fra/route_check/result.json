@@ -1,0 +1,56 @@
+{
+ "n": 60,
+ "fields": {
+  "IMP": {
+   "spearman": 0.849,
+   "mean_old": 1.8,
+   "mean_new": 2.067,
+   "mean_diff": 0.267,
+   "exact": 0.7
+  },
+  "UNA": {
+   "spearman": 0.86,
+   "mean_old": 1.8,
+   "mean_new": 1.933,
+   "mean_diff": 0.133,
+   "exact": 0.833
+  },
+  "VAL": {
+   "spearman": 0.818,
+   "mean_old": 1.433,
+   "mean_new": 1.617,
+   "mean_diff": 0.183,
+   "exact": 0.817
+  },
+  "FLOOR": {
+   "spearman": 0.868,
+   "mean_old": 1.817,
+   "mean_new": 1.917,
+   "mean_diff": 0.1,
+   "exact": 0.833
+  },
+  "FLEX": {
+   "spearman": 0.919,
+   "mean_old": 1.45,
+   "mean_new": 1.533,
+   "mean_diff": 0.083,
+   "exact": 0.883
+  },
+  "PLAY": {
+   "spearman": 0.865,
+   "mean_old": 2.45,
+   "mean_new": 2.55,
+   "mean_diff": 0.1,
+   "exact": 0.8
+  },
+  "GRADE": {
+   "spearman": 0.896,
+   "mean_old": 4.783,
+   "mean_new": 4.983,
+   "mean_diff": 0.2,
+   "exact": 0.633
+  }
+ },
+ "stop": false,
+ "reference": "old C9 inter-pass GRADE Spearman 0.825-0.898 (agreement.json)"
+}
