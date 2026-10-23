@@ -125,9 +125,11 @@ def fra_frame(fra_path, pool, base, cols):
         for c in names:
             f[c] = t.loc[keys, c].to_numpy(dtype=float)
     sc = pd.read_csv(HERE / 'sc_features.csv.gz').set_index('key')
-    assert all(k in sc.index for k in keys)
+    # the 10 lands of rarity 'land' (basic-slot lands) of the FRA card file are not in the set lists: no reference, zeros
+    missing = [k for k in keys if k not in sc.index]
+    assert len(missing) == 10 and all('Land' in c['type_line'] for c, k in zip(fra, keys) if k in missing), missing
     for c in SC:
-        f[c] = sc.loc[keys, c].to_numpy(dtype=float)
+        f[c] = [float(sc.loc[k, c]) if k in sc.index else 0.0 for k in keys]
     return fra, f, keys
 
 

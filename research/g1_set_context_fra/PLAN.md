@@ -115,7 +115,7 @@ Rules: answer every question for every card (lands and odd cards included: judge
 
 ## 5. 案2: 密度の特徴量と LOSO 評価(AI トークンなし)
 - 特徴量(カードごと、support 参照のみ。参照が無ければ 0): `sc_n_sup`(参照の数)、`sc_sup_share_max` / `sc_sup_share_min`(デッキ内の割合の最大・最小)、`sc_sup_E_max` / `sc_sup_E_min`(期待枚数)、種類別の割合 `sc_tribe_share` `sc_chosen_share` `sc_kw_share` `sc_ctyp_share` `sc_ncsub_share`、`sc_sup_mk_n`(トークンを作る他カード数)、target 参照用に `sc_n_tgt` `sc_tgt_share_max`。計13列。探索・選別はしない(上の13列を固定)。
-- 学習・評価: B10 の列(B5 + C9 の MEAN, SD, SUM)に13列を追加(`B10SC`)。本番と同じ評価: 28セット leave-one-set-out、本番モデル(ExtraTrees 70% + TF-IDF/Ridge 30%、×1.25)、seed 20260922–24 の3本平均。基準は B10 の既存 OOF(`c9_power_questions/oof_B10.csv.gz`)。環境差の確認のため B10 の再実行(`B10re`)も同じ環境で行い、既存 OOF との差を報告する。
+- 学習・評価: B10 の列(B5 + C9 の MEAN, SD, SUM)に13列を追加(`B10SC`)。本番と同じ評価: 28セット leave-one-set-out、本番モデル(ExtraTrees 70% + TF-IDF/Ridge 30%、×1.25)、seed 20260922–24 の3本平均。基準は B10 の既存 OOF(`c9_power_questions/oof_B10.csv.gz`)。環境差の確認のため B10 の再実行(`B10re`)は、FRA 凍結時に B10 を同じ環境で再計算して凍結済みの予測と一致するかで代える。
 - **シャッフル対照**(1 seed、seed 20261023): 各セット内で13列をカード間で入れ替える。
 - **採用条件(Rule G1-LOSO)** — 全部満たしたら「支持」:
   1. pooled MAE が B10 より 0.01 pp 以上改善

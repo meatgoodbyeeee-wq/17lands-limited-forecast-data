@@ -79,7 +79,8 @@ def main():
     jc = pd.read_csv(HERE / 'judge_cards.csv'); ref_ids = set(jc.loc[jc.is_anchor == 0, 'id'])
     sc = pd.read_csv(HERE / 'sc_features.csv.gz'); sc = sc[sc.key.str.startswith('FRA|')]
     df['ref1'] = df['id'].isin(ref_ids)
-    df['ref2'] = df['id'].map(lambda i: sc.loc[sc.key == f'FRA|{i}', 'sc_n_sup'].iloc[0] > 0)
+    nsup = sc.set_index('key')['sc_n_sup']
+    df['ref2'] = df['id'].map(lambda i: nsup.get(f'FRA|{i}', 0) > 0)
     rng = np.random.default_rng(SEED)
     res = {'n': len(df), 'arm0': metrics(df, 'arm0')}
     for x in frames:
