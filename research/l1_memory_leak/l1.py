@@ -204,6 +204,11 @@ def parse():
 
 def score():
     s = pd.read_csv(HERE / 'sample_key.csv')
+    # FRA cards are keyed by 17Lands id in cards.csv; real names come from the frozen FRA prediction file
+    fn = pd.read_csv(C9 / 'fra_frozen_predictions.csv').set_index('id')['name']
+    isf = s['grp'] == 'FRA'
+    s.loc[isf, 'name'] = s.loc[isf, 'key'].str.split('|', n=1).str[1].map(fn)
+    assert s['name'].notna().all()
     rows, bad = parse()
     s['ans_name'] = s['qid'].map(lambda q: rows.get(q, ('', '', -1))[0])
     s['ans_set'] = s['qid'].map(lambda q: rows.get(q, ('', '', -1))[1])
@@ -231,9 +236,10 @@ def score():
 
 # ---------------------------------------------------------------- analyze
 def spear(a, b):
+    from scipy.stats import rankdata
     if len(a) < 4 or np.std(a) == 0 or np.std(b) == 0:
         return np.nan
-    return pd.Series(a).rank().corr(pd.Series(b).rank())
+    return float(np.corrcoef(rankdata(a), rankdata(b))[0, 1])
 
 
 def gap_table():
@@ -254,8 +260,9 @@ def gap_table():
     return d[['key', 'c9_m_GRADE', 'act_rel', 'gap']]
 
 
-def stats(g):
-    return dict(n=len(g), abs_gap=g['gap'].abs().mean(), gap=g['gap'].mean(), rho=spear(g['c9_m_GRADE'].values, g['act_rel'].values))
+def stats(X):
+    """X columns: grade, act_rel, gap"""
+    return dict(n=len(X), abs_gap=np.abs(X[:, 2]).mean(), gap=X[:, 2].mean(), rho=spear(X[:, 0], X[:, 1]))
 
 
 def analyze():
@@ -265,41 +272,52 @@ def analyze():
     assert d['gap'].notna().all()
     d['detD'] = d['name_ok']; d['detD2'] = d['name_ok'] | d['set_ok']
     rng = np.random.default_rng(SEED + 1)
-    sets = sorted(d['set'].unique()); bysets = {k: g for k, g in d.groupby('set')}
+    sets = sorted(d['set'].unique())
     res = []
     for grp in ('RM', 'CU', 'ALL'):
         dd = d if grp == 'ALL' else d[d['grp'] == grp]
         for dcol in ('detD', 'detD2'):
-            def comp(x):
-                a, b = x[x[dcol]], x[~x[dcol]]
-                sa, sb = stats(a), stats(b)
+            per = {k: (g[['c9_m_GRADE', 'act_rel', 'gap']].values, g[dcol].values.astype(bool)) for k, g in dd.groupby('set')}
+
+            def comp(X, det):
+                sa, sb = stats(X[det]), stats(X[~det])
                 return sa, sb, {k: sa[k] - sb[k] for k in ('abs_gap', 'gap', 'rho')}
-            sa, sb, df = comp(dd)
+            X = np.vstack([v[0] for v in per.values()]); det = np.concatenate([v[1] for v in per.values()])
+            sa, sb, df = comp(X, det)
             boots = []
             for _ in range(NB):
-                pick = rng.choice(sets, len(sets))
-                x = pd.concat([dd[dd['set'] == k] for k in pick])
-                if x[dcol].sum() < 3 or (~x[dcol]).sum() < 3:
+                pick = rng.choice(len(sets), len(sets))
+                ks = [sets[i] for i in pick]
+                x = np.vstack([per[k][0] for k in ks]); dt = np.concatenate([per[k][1] for k in ks])
+                if dt.sum() < 3 or (~dt).sum() < 3:
                     continue
-                a, b, dif = comp(x)
+                a, b, dif = comp(x, dt)
                 boots.append({**{f'D_{k}': a[k] for k in ('abs_gap', 'gap', 'rho')}, **{f'N_{k}': b[k] for k in ('abs_gap', 'gap', 'rho')}, **{f'diff_{k}': dif[k] for k in dif}})
             B = pd.DataFrame(boots)
             row = dict(stratum=grp, definition=dcol, n_det=sa['n'], n_non=sb['n'], boot_valid=len(B))
             for k in ('abs_gap', 'gap', 'rho'):
                 for tag, v in (('D', sa[k]), ('N', sb[k]), ('diff', df[k])):
-                    col = f'{tag}_{k}' if tag != 'diff' else f'diff_{k}'
+                    col = f'{tag}_{k}'
                     lo, hi = np.nanpercentile(B[col], [2.5, 97.5]) if len(B) else (np.nan, np.nan)
-                    row[f'{col}'] = v; row[f'{col}_lo'] = lo; row[f'{col}_hi'] = hi
+                    row[col] = v; row[col + '_lo'] = lo; row[col + '_hi'] = hi
             res.append(row)
     R = pd.DataFrame(res); R.to_csv(HERE / 'leak_effect.csv', index=False)
     pd.set_option('display.width', 250); pd.set_option('display.max_columns', 50)
     print(R.round(3).T.to_string())
-    # per-card table for the detected cards (for the write-up)
     d[d['detD']][['key', 'grp', 'c9_m_GRADE', 'act_rel', 'gap', 'conf']].to_csv(HERE / 'detected_cards.csv', index=False)
-    sa = s[s['grp'] == 'RM']
-    acc = sa['name_ok'].mean()
-    summ = dict(rm_name_acc=acc, rm_name_n=int(sa['name_ok'].sum()), rm_n=len(sa))
-    json.dump(summ, open(HERE / 'summary.json', 'w'), indent=1); print(summ)
+    # name accuracy with set-level bootstrap CI (R/M, C/U) and FRA
+    out = {}
+    for g in ('RM', 'CU', 'FRA'):
+        x = s[s['grp'] == g]
+        by = {k: v['name_ok'].values for k, v in x.groupby('set')}
+        ks = list(by); bs = []
+        r2 = np.random.default_rng(SEED + 2)
+        for _ in range(NB):
+            arr = np.concatenate([by[ks[i]] for i in r2.choice(len(ks), len(ks))]); bs.append(arr.mean())
+        out[g] = dict(n=len(x), name_ok=int(x['name_ok'].sum()), name_acc=float(x['name_ok'].mean()),
+                      ci=[float(np.percentile(bs, 2.5)), float(np.percentile(bs, 97.5))] if g != 'FRA' else None,
+                      set_acc=float(x['set_ok'].mean()))
+    json.dump(out, open(HERE / 'summary.json', 'w'), indent=1); print(out)
 
 
 if __name__ == '__main__':
