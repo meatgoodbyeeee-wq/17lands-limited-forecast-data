@@ -141,7 +141,8 @@ def main():
         return 0
     gate_f = HERE / 'eval_v2' / 'past_gate.json'
     gate = json.loads(gate_f.read_text()) if gate_f.exists() else {}
-    if a.sets == 'fra' and not (gate.get('all_pass') is True and gate.get('selftest') is False):
+    posthoc = HERE / 'eval_v2' / 'posthoc_rm.json'  # PLAN_v2 13: post-hoc user decision to test R/M-only on FRA
+    if a.sets == 'fra' and not (gate.get('all_pass') is True and gate.get('selftest') is False) and not posthoc.exists():
         sys.exit('FRA judging is allowed only after the P1-P4 gate passes (eval_v2/past_gate.json).')
     with ThreadPoolExecutor(a.jobs) as ex:
         res = list(ex.map(lambda pb: judge_batch(*pb), todo))

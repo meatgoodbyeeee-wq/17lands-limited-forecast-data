@@ -61,7 +61,8 @@ def verify(frozen_dir, selftest):
     if not selftest:
         assert gate.exists(), 'eval_v2/past_gate.json missing: run g1v2_eval.py on the past sets first'
         g = json.loads(gate.read_text())
-        assert g.get('all_pass') and not g.get('selftest'), f'past-set gate not passed: {g}'
+        posthoc = HERE / 'eval_v2' / 'posthoc_rm.json'  # PLAN_v2 13 (post-hoc R/M-only test)
+        assert (g.get('all_pass') and not g.get('selftest')) or posthoc.exists(), f'past-set gate not passed: {g}'
     return pd.read_csv(f)
 
 
@@ -126,6 +127,14 @@ def main():
         s = df[m]
         res[f'split_{name}'] = {'n': int(len(s)), 'mae_arm0': float((s.pred_arm0 - s.actual).abs().mean() * 100),
                                 'mae_v2': float((s.pred_v2 - s.actual).abs().mean() * 100), 'mean_grade_move': float(s.grade_move.mean())}
+    # PLAN_v2 13: R/M-only report (not used for the verdict)
+    if 'is_rm' in df:
+        rm = df[df.is_rm == 1]
+        a0, v2 = metrics(rm, 'pred_arm0'), metrics(rm, 'pred_v2')
+        res['rm_only_report'] = {'n': int(len(rm)), 'arm0': a0, 'pred_v2': v2, 'delta': {k: v2[k] - a0[k] for k in a0}}
+    if 'pred_v2_all' in df:
+        m = metrics(df, 'pred_v2_all')
+        res['pred_v2_all_report'] = {**m, 'delta': {k: m[k] - res['arm0'][k] for k in m}}
     res['verdict'] = {'F1_mae_not_worse': bool(F1), 'F2_top20_shrinks_top10_not_larger': bool(F2), 'F3_spearman_not_worse': bool(F3),
                       'P4_fra_reported': p4, 'adopt_proposal': bool(F1 and F2 and F3)}
     moves = df.copy()
