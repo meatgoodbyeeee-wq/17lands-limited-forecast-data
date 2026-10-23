@@ -1,0 +1,79 @@
+{
+ "RM": {
+  "n_cards": 2018,
+  "mean_gap": -0.00030955336443259777,
+  "mean_resid": 0.17810511247474473,
+  "mean_act_rel": 1.6434300072391221,
+  "corr_grade_actrel": 0.6208986739727899,
+  "tau2_gap": 0.3616165333511115,
+  "tau2_resid": 0.1101406319478904,
+  "class_counts": {
+   "none": 59,
+   "B_gap_corrected": 28,
+   "A1_resid_GRADE_linked": 18,
+   "A2_resid_not_GRADE": 11,
+   "ref": 10
+  },
+  "exploratory_slope_resid_on_gap": 0.8688246103138892
+ },
+ "CU": {
+  "n_cards": 4903,
+  "mean_gap": -0.0018575970335263957,
+  "mean_resid": -0.07330534712911022,
+  "mean_act_rel": -0.6764107188677448,
+  "corr_grade_actrel": 0.3420838376253964,
+  "tau2_gap": 0.2375578609836713,
+  "tau2_resid": 0.024817296862586637,
+  "class_counts": {
+   "none": 68,
+   "B_gap_corrected": 46,
+   "A1_resid_GRADE_linked": 9,
+   "ref": 4,
+   "A2_resid_not_GRADE": 1
+  },
+  "exploratory_slope_resid_on_gap": 0.7821700302431047
+ },
+ "top10": {
+  "n_cards": 280,
+  "mean_gap": 4.702528382937868,
+  "mean_resid": 4.595482867218718,
+  "mean_act_rel": 9.056979854878799,
+  "rarity_counts": {
+   "1": 15,
+   "2": 155,
+   "3": 110
+  },
+  "class_counts": {
+   "none": 38,
+   "B_gap_corrected": 29,
+   "A2_resid_not_GRADE": 15,
+   "A1_resid_GRADE_linked": 10
+  },
+  "by_grade_band": {
+   "<=4": {
+    "n": 11,
+    "gap": 9.512,
+    "resid": 9.046,
+    "act_rel": 7.784
+   },
+   "4-5.5": {
+    "n": 37,
+    "gap": 6.857,
+    "resid": 6.53,
+    "act_rel": 7.95
+   },
+   "5.5-7": {
+    "n": 118,
+    "gap": 5.241,
+    "resid": 4.871,
+    "act_rel": 8.925
+   },
+   ">7": {
+    "n": 114,
+    "gap": 2.981,
+    "resid": 3.254,
+    "act_rel": 9.676
+   }
+  }
+ }
+}
