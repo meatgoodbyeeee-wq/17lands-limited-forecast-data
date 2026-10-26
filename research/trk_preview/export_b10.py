@@ -25,7 +25,10 @@ import c3_research as c3  # noqa: E402
 import trk_label as t  # noqa: E402
 c5, e = c9.c5, c9.e
 
-VERSION = 'gih-b10-28set-20260929-trk-preview'
+VERSION = 'gih-b10s-28set-20260929-trk-preview'
+# B10S (Rule F22 arm S, supported on FRA item 11; adopted for TRK by the user 2026-10-26):
+# pred = set mean + B10S_B * (B10 - set mean). B10S_B is the slope fitted on the 28 sets (research/g2_bias_spread/fra_frozen_predictions.json).
+B10S_B = 1.1048276852200558
 OOF_B10 = R / 'c9_power_questions/oof_B10.csv.gz'
 
 
@@ -66,18 +69,20 @@ def main():
             f[c] = tab[c].to_numpy(dtype=float)
     nums = c5.arm_nums('B5', base, cols) + c9.MEAN + c9.SD + c9.SUM
     c, tr, tx, p = e.predict(pool, f, nums)
-    sd_, td_ = 1.25 * .7 * (tr - c) * 100, 1.25 * .3 * (tx - c) * 100
+    m = float(np.mean(p))
+    p = m + B10S_B * (p - m)  # B10S
+    sd_, td_ = B10S_B * 1.25 * .7 * (tr - c) * 100, B10S_B * 1.25 * .3 * (tx - c) * 100
     out = {
         'version': VERSION, 'set': code, 'preliminary': True,
         'source_repository': 'meatgoodbyeeee-wq/17lands-limited-forecast-data', 'source_head': e.head(),
         'fin_used': False, 'mh3_used': False, 'training_sets': sorted(set(pool['set'])),
-        'method': 'B10: ExtraTrees 600 leaf 8 max_features 0.6 on baseline + C3 + C4 + C5 + C9 features (+ word TF-IDF Ridge alpha 10); 70:30; fixed 1.25; seeds 20260922-24 averaged',
+        'method': 'B10S = set mean + 1.1048 x (B10 - set mean). B10: ExtraTrees 600 leaf 8 max_features 0.6 on baseline + C3 + C4 + C5 + C9 features (+ word TF-IDF Ridge alpha 10); 70:30; fixed 1.25; seeds 20260922-24 averaged',
         'features': 'baseline pre-release card features + AI-read C3 effects, C4 fine effects, C5 atomic tags, C9 power questions x3 passes (research/c9_power_questions, Rule F10 passed on 28 sets)',
         'labellers': 'C3, C4, C5: Sonnet; C9 passes 1-3: Opus (research/trk_preview/RESULTS.md Step 1)',
         'texts': {  # wording the Pages site shows for this model (lib/adopted-gih-core.mjs)
             'structured_label': '構造化特徴量（AI抽出の効果・強さ判定を含む）',
-            'summary': '28セット（KHM〜HOB、FIN・MH3を除く）の発売前特徴量と、AIがルールテキストから読み取ったカード効果・強さの判定（C3〜C5・C9）から、構造化特徴量のExtraTreesとルールテキストのTF-IDF/Ridgeを70:30で合成し、固定係数で予測しています。プレビュー中の暫定版です。',
-            'note': 'GIH WR：28セットの構造化特徴量（AIが読み取ったカード効果と強さの判定を含む）＋ルールテキスト予測（暫定）。ALSAは従来の予測モデル。'},
+            'summary': '28セット（KHM〜HOB、FIN・MH3を除く）の発売前特徴量と、AIがルールテキストから読み取ったカード効果・強さの判定（C3〜C5・C9）から、構造化特徴量のExtraTreesとルールテキストのTF-IDF/Ridgeを70:30で合成し、固定係数で予測しています。予測の広がりを過去28セットの実測に合わせて広げる補正（B10S：セット平均からの差を1.105倍）を加えています。プレビュー中の暫定版です。',
+            'note': 'GIH WR：28セットの構造化特徴量（AIが読み取ったカード効果と強さの判定を含む）＋ルールテキスト予測＋予測の広がり補正（B10S）（暫定）。ALSAは従来の予測モデル。'},
         'seeds': e.SEEDS, 'base': round(c * 100, 5),
         'cards': [{'id': card['id'], 'name': card['name'], 'oracle_text': card.get('oracle_text') or '', 'type_line': card.get('type_line') or '',
                    'mana_cost': card.get('mana_cost') or '', 'gih': round(float(pp * 100), 6), 'structured_delta': round(float(s), 6),
@@ -94,6 +99,7 @@ def main():
     # range: production range code with the B10 out-of-fold residuals
     pool_t = pool[['set', 'name', 'type_line']].drop_duplicates(['set', 'name'])
     o = pd.read_csv(OOF_B10).merge(pool_t, on=['set', 'name'], how='left', validate='one_to_one')
+    o['pred'] = o.groupby('set')['pred'].transform(lambda x: x.mean() + B10S_B * (x - x.mean()))  # range from B10S residuals
     assert o['type_line'].notna().all()
     oof = tmp / 'oof_b10_for_range.csv.gz'
     o[['set', 'name', 'rarity_ord', 'type_line', 'actual_gih', 'pred']].to_csv(oof, index=False, compression='gzip')
