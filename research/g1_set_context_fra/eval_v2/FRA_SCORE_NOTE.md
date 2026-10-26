@@ -8,3 +8,8 @@
 ## G1 arm 2 (reference, run once, same actual CSV)
 - `g1_score.py --actual fra_actual_public_20261017.csv --arms arm2` (only arm 2 is frozen). Outputs `fra_score.json`, `fra_score_cards.csv`.
 - vs arm0 (B10): MAE −0.0016, Spearman −0.0007, top-10 under −0.003, top-20 under +0.016 → criteria: MAE true, Spearman false, top-20/10 false → not supported (practically no change).
+
+## Post-hoc: past 28 sets without the scale conversion (exploration after the FRA score)
+`g1v2_pred_eval.py --no-conv` (same as §14 but alpha=0, beta=1). Outputs `pred_eval_noconv.json`, `_cards.csv.gz`, `.log`.
+B_rm (352 R/M): MAE −0.121 (conv −0.127), top-20 under −1.02 (conv −0.31), top-10 −1.02 (conv −0.25), Spearman +0.002 (conv +0.004), mean bias −0.92 (conv −0.33).
+Reading: removing the conversion mostly raises the judged cards' predictions by about 0.9pp as a block; MAE and ranking do not improve beyond the converted version.
