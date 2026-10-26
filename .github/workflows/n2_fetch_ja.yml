@@ -1,0 +1,19 @@
+name: N2 review cards in Japanese (Scryfall)
+on:
+  push:
+    branches: [research/n2-near-duplicate]
+    paths: [research/n2_near_duplicate/review_cards.json, research/n2_near_duplicate/fetch_ja.py, .github/workflows/n2_fetch_ja.yml]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: cd research/n2_near_duplicate && python fetch_ja.py review_cards.json review_cards_ja.json
+      - run: |
+          git config user.name "github-actions[bot]"; git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add research/n2_near_duplicate/review_cards_ja.json && git commit -m "N2: Japanese texts for review cards (Scryfall)" && git push
