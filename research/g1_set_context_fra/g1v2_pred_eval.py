@@ -45,7 +45,7 @@ def c9_row(m, sd):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--sets'); ap.add_argument('--identity', action='store_true')
+    ap.add_argument('--sets'); ap.add_argument('--identity', action='store_true'); ap.add_argument('--no-conv', action='store_true', help='use the new answers without the old/new scale conversion (alpha=0, beta=1)')
     ap.add_argument('--boot', type=int, default=10000); ap.add_argument('--out', default=str(HERE / 'eval_v2' / 'pred_eval'))
     a = ap.parse_args()
     pool, base, cols, nums10, _ = g1.load_pool()
@@ -72,6 +72,8 @@ def main():
         Us = U[U.set == s]
         coef = ev.fit_conv(U[U.nonref_nosi & (U.set != s)])
         beta = np.array([coef[f][1] for f in F]); alpha = np.array([coef[f][0] for f in F])
+        if a.no_conv:
+            beta = np.ones(len(F)); alpha = np.zeros(len(F))
         rm = (Us.rarity_ord >= 2).to_numpy(); si = Us.setinfo.to_numpy()
         masks = {'B_rm': rm, 'A_all': np.ones(len(Us), bool), 'C_si': si, 'D_rmsi': rm & si}
         frames, owner = [pool.iloc[te]], [('base', te)]
