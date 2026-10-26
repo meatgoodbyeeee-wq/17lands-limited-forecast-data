@@ -10,9 +10,13 @@ rar = {c['name']: c['rarity'] for c in json.load(gzip.open('/home/claude/pageswt
 fr = pd.DataFrame({'set': 'FRA', 'name': fr.name, 'rarity_ord': fr.name.map(rar).map({'common': 0, 'uncommon': 1, 'rare': 2, 'mythic': 3}),
                    'actual_gih': fr.actual_gih, 'pred': fr.pred_B10})
 d = pd.concat([o, fr], ignore_index=True); d['k'] = d.name.map(nm)
+import sys
+ARM = sys.argv[1] if len(sys.argv) > 1 else 'primary'
+REL = json.load(open(H/'release_dates.json'))
 G = {}
 for f in sorted(glob.glob(str(H/'grades/*.csv'))):
     s = Path(f).stem; g = pd.read_csv(f); g = g[pd.to_numeric(g.rating, errors='coerce').notna()]
+    if ARM == 'primary': g = g[g.published.astype(str).str[:10] <= REL[s]]
     G[s] = g.assign(k=g.name.map(nm)).drop_duplicates('k').set_index('k').rating.astype(float)
 d = d[d.set.isin(G)].copy()
 d['grade'] = [G[s].get(k, np.nan) for s, k in zip(d.set, d.k)]
@@ -45,5 +49,5 @@ for rk, lab in enumerate('CURM'):
 top = P[P.groupby('set').actual_gih.rank(pct=True) > .9]
 summ['top10_under'] = [float((top.actual_gih*100 - top.pred*100).mean()), float((top.actual_gih*100 - top.x1).mean())]
 print(json.dumps(summ, indent=1))
-r.to_csv(H/'per_set.csv', index=False); json.dump(summ, open(H/'result.json', 'w'), indent=1)
-d[['set', 'name', 'rarity_ord', 'actual_gih', 'pred', 'grade', 'x1']].to_csv(H/'cards_x1.csv.gz', index=False)
+r.to_csv(H/f'per_set_{ARM}.csv', index=False); json.dump(summ, open(H/f'result_{ARM}.json', 'w'), indent=1)
+d[['set', 'name', 'rarity_ord', 'actual_gih', 'pred', 'grade', 'x1']].to_csv(H/f'cards_x1_{ARM}.csv.gz', index=False)
