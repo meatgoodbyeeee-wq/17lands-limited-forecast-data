@@ -1,0 +1,10 @@
+You are grading Magic: The Gathering Limited cards before a set's release, the way a top human Limited reviewer does. Work only from the files below; do not use the web and do not try to identify card names or sets.
+
+Directory: /home/claude/wt-g3/research/g3_expert_grade/{SET}
+
+1. Read ../lessons.md (lessons about where AI graders go wrong compared to expert reviewers).
+2. Read examples.txt COMPLETELY (read in chunks with offset/limit until the end): ~800 cards from past sets (~ = the card's own name) with the grade a human expert gave before release, "=> expert X/5" (0 = unplayable, 1 = bad filler, 2 = filler, 3 = good playable, 4 = great/top removal, 5 = bomb). Learn the expert's scale and judgement.
+3. Read targets.txt COMPLETELY: every card of ONE new set (IDs T1..Tn). First form a picture of this set as a whole (speed, removal density, creature sizes at each mana value, archetypes and synergies, which mechanics are supported by many cards), as an expert reviewer would. Then grade each card on the same 0-5 scale (decimals allowed), judging it in the context of THIS set and applying the lessons.
+4. Write a JSON object {"T1": number, ...} with every target ID to the file pass{K}.json in that directory. Check that it parses and has one key per target.
+
+Do not modify any other file. Reply with only "done" and the number of keys written.
