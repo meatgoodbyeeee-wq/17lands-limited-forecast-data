@@ -81,9 +81,10 @@ def main():
     ap.add_argument("--days", type=int, default=28)
     ap.add_argument("--chunksize", type=int, default=20000)
     ap.add_argument("--out-dir", type=Path, default=Path("out"))
+    ap.add_argument("--allow-fra", action="store_true", help="FRA verification only (PENDING_FRA item 8)")
     a = ap.parse_args()
     s = a.set.upper()
-    if s in REFUSE:
+    if s in REFUSE and not (s == "FRA" and a.allow_fra):
         raise SystemExit(f"{s} refused")
     a.out_dir.mkdir(parents=True, exist_ok=True)
     raw = a.out_dir / f"game_data_public.{s}.{FMT}.csv.gz"
