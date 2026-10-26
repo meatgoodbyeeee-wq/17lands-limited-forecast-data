@@ -17,3 +17,14 @@
   with B10 (non-linear C9 use) needs G3 on the training sets.
 - Pass agreement 0.77–0.94 (TMT pass 1 diverged).
 - Tokens: ≈ 0.2M per pass, 9 passes ≈ 1.8M, plus lessons 0.14M.
+
+## Addendum (post-hoc, after the user's review): the fair comparison is G3 vs C9, not "beyond B10"
+B10 already contains C9, so "Spearman with the B10 residual" asked G3 to add information on top of
+C9 — the wrong bar for a replacement. Fair measure: Spearman with the residual of B5 (B10 without C9).
+| set | C9 | G3 | G3 − C9 (95% bootstrap CI) |
+|---|---|---|---|
+| FRA | +0.168 | +0.211 | +0.043 [−0.030, +0.114] |
+| TMT | −0.187 | −0.023 | +0.164 [+0.051, +0.271] |
+| ECL | −0.034 | +0.170 | +0.205 [+0.114, +0.296] |
+G3 carries more information beyond B5 than C9 on all three sets (two significant). This is a
+post-hoc reading; the proper test is retraining B10 with G3 in place of C9 (needs G3 on training sets).
