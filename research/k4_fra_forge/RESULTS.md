@@ -9,3 +9,9 @@ Forge の実行は完了。FRA の実測(17Lands)は未参照。
 ## 採点の手順(10/28、FRA 28日データが揃ってから)
 `python3 -I k4.py games_FRA/base ../c9_power_questions/fra_frozen_predictions.csv <FRA実測csv: name,actual_gih,gih_games> result.json`
 判定は PLAN.md の Rule K4(MAE と Spearman の両方で p + 0.1e が p より良ければ支持)。
+
+## 採点(2026-10-26、事後の変更: 28日データではなく 17Lands 公開データ 10/17 更新分、ユーザー決定)
+- 実測: `fra_actual_public_20261017.csv`(`scripts/aggregate_17lands.py` で集計、PENDING_FRA・G1 と同じデータ)。対象 210 枚。
+- 最初の実行は実測を pp 単位で渡したため a が 100 倍になり MAE が無意味な値になった(`result_unit_error_pp.json`)。入力形式の誤りなので小数に直して再計算(`result.json`)。Spearman は単位に依存せず、両方で同じ値。
+- **Rule K4: 不支持**。MAE p 2.380 → p+0.1e 2.428(悪化)、Spearman 0.622 → 0.588(悪化)。
+- 報告のみ: ρ(e,a) 0.132、ρ(e,残差) −0.020(片側 p 0.61)、信頼性 0.845、当てはめ直した e の係数 −0.047。
