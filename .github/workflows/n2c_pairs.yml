@@ -24,3 +24,36 @@ jobs:
         with:
           name: n2c-${{ matrix.chunk }}
           path: out
+  collect:
+    needs: fit
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: n2c-*
+          path: dl
+          merge-multiple: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install pandas==3.0.5
+      - name: combine and commit
+        run: |
+          cat dl/repro.txt
+          python - <<'PY'
+          import glob, os, pandas as pd
+          fs = sorted(f for f in glob.glob('dl/*.csv'))
+          d = pd.concat([pd.read_csv(f).assign(pair=os.path.basename(f)[:-4]) for f in fs], ignore_index=True)
+          print(len(fs), 'pair fits', len(d), 'rows')
+          d.to_csv('research/n2_near_duplicate/n2c_fits.csv.gz', index=False, compression='gzip')
+          PY
+          cp dl/repro.txt research/n2_near_duplicate/n2c_repro.txt
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add research/n2_near_duplicate/n2c_fits.csv.gz research/n2_near_duplicate/n2c_repro.txt
+          git commit -m "N2c: pair-fit predictions (87 fits, both sets excluded)"
+          git pull --rebase origin research/n2-near-duplicate
+          git push origin HEAD:research/n2-near-duplicate
