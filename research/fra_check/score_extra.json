@@ -1,0 +1,104 @@
+{
+ "n_gih_cards": 276,
+ "item11": {
+  "sha256": "54a7ed7ab51c0d4409a51a0680c1d1be4c8a92a79762ef54ef7a8d736b797ffe",
+  "b": 1.1048276852200558,
+  "n_cards": 271,
+  "k_top10pct": 28,
+  "B10": {
+   "mae_centred_pp": 2.31629980198224,
+   "mae_raw_pp": 2.3162294122601823,
+   "spearman": 0.603885181349219,
+   "top10pct_mean_a_minus_p_centred": 1.3153403354467421,
+   "top10pct_mean_a_minus_p_raw": 1.2962647207692235,
+   "pred_sd_pp": 2.262757279459245
+  },
+  "B10S": {
+   "mae_centred_pp": 2.293742247913991,
+   "mae_raw_pp": 2.293914797683869,
+   "spearman": 0.603885181349219,
+   "top10pct_mean_a_minus_p_centred": 0.8195595641028657,
+   "top10pct_mean_a_minus_p_raw": 0.7671988636433138,
+   "pred_sd_pp": 2.4999568872797893
+  },
+  "slope_actual_on_pred": {
+   "B10": 1.17534133035583,
+   "B10S": 1.0638232061696837
+  },
+  "front_face_matches": [],
+  "gih_not_in_frozen": [
+   "Forest",
+   "Island",
+   "Mountain",
+   "Plains",
+   "Swamp"
+  ],
+  "S_beats_B10_mae_centred": true,
+  "S_beats_B10_mae_raw": true
+ },
+ "item12": {
+  "sha256": "aefd48005fa868f5c47f6e672e324b85243c1ad9e22fe6e63bb061ea56af8c46",
+  "q": 1.598678,
+  "target": 0.8,
+  "overall": {
+   "n": 271,
+   "cov_b10": 0.8007380073800738,
+   "width_b10": 7.049836900369003,
+   "cov_prod": 0.7896678966789668,
+   "width_prod": 7.482901845018452
+  },
+  "by_rarity": {
+   "common": {
+    "n": 71,
+    "cov_b10": 0.7887323943661971,
+    "width_b10": 5.633549295774649,
+    "cov_prod": 0.8309859154929577,
+    "width_prod": 5.823729577464789
+   },
+   "uncommon": {
+    "n": 105,
+    "cov_b10": 0.8095238095238095,
+    "width_b10": 6.85708,
+    "cov_prod": 0.8095238095238095,
+    "width_prod": 7.129579047619048
+   },
+   "rare": {
+    "n": 55,
+    "cov_b10": 0.8363636363636363,
+    "width_b10": 8.448323636363636,
+    "cov_prod": 0.7636363636363637,
+    "width_prod": 9.18421090909091
+   },
+   "mythic": {
+    "n": 30,
+    "cov_b10": 0.8,
+    "width_b10": 9.43374666666667,
+    "cov_prod": 0.7,
+    "width_prod": 10.457806666666666
+   },
+   "land": {
+    "n": 10,
+    "cov_b10": 0.6,
+    "width_b10": 4.28602,
+    "cov_prod": 0.7,
+    "width_prod": 4.691000000000001
+   }
+  },
+  "rarity_missing": 0,
+  "prod_missing": 0,
+  "front_face_matches": [],
+  "gih_not_in_frozen": [
+   "Forest",
+   "Island",
+   "Mountain",
+   "Plains",
+   "Swamp"
+  ],
+  "pages_sha256": {
+   "adopted-gih-fra.json.gz": "8091bfd474d25c3858d95c92028b1699dac946363c7e0bcbf58c3d6991e70c8f",
+   "gih-range-fra.json": "b6c9b0b408b2d19c002be23c441f6726c42430c23c771e3dc429a0182a4966fb"
+  },
+  "b10_mae_raw_pp": 2.3162294122601823,
+  "prod_mae_raw_pp": 2.3897071395809197
+ }
+}
