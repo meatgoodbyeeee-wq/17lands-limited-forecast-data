@@ -19,6 +19,8 @@ Data status: `live/fra-public-game.json`, updated daily by `.github/workflows/fr
 
 Case 2 sha256 at freeze: `9d1d0e692764f91f353913b775647cceb4db881c389a5e8f19f9cfdfd65d309b`.
 
+**Scored 2026-10-26 on public data to 2026-10-17 (post-hoc window change, user decision); all 10 items done, see `research/fra_check/RESULTS.md`.**
+
 After scoring, write `research/fra_check/RESULTS.md`, open a PR, and report to the user in Japanese. Mark each item done here.
 
 C4 freeze note: FRA early 17Lands data (247 cards, 2026-10) was looked at earlier in the project for the early check, before C4 was designed; C4 design, rubric and training did not use it. The freeze is therefore prospective in intent but not blind to the early numbers; the 28-day data decides.
