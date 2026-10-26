@@ -1,0 +1,25 @@
+name: EMB1 card text embeddings
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/emb1-text-embedding]
+    paths: [".github/workflows/emb1_embed.yml", "research/emb1_text_embedding/embed.py"]
+permissions:
+  contents: write
+jobs:
+  embed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install --index-url https://download.pytorch.org/whl/cpu torch && pip install sentence-transformers pandas
+      - run: python research/emb1_text_embedding/embed.py
+      - name: Commit embeddings
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898299+github-actions[bot]@users.noreply.github.com
+          git add research/emb1_text_embedding/emb_*.npz
+          git commit -m "EMB1: card text embeddings"
+          git push
