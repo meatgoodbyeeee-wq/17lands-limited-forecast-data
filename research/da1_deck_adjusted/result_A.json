@@ -1,0 +1,118 @@
+{
+ "n_pairs": 101,
+ "n_cards": 127,
+ "matches_n2b_card_set": true,
+ "mean_abs_pair_diff_raw": 1.7445688939171657,
+ "n_raw": 101,
+ "mean_abs_pair_diff_deck": 0.7380025853628043,
+ "n_deck": 101,
+ "mean_abs_pair_diff_player": 1.181419382281317,
+ "n_player": 74,
+ "mean_abs_pair_diff_colour": 1.3867307843955707,
+ "n_colour": 85,
+ "n_pairs_all_four": 74,
+ "mean_abs_pair_diff_raw_allfour": 1.5687538967985906,
+ "mean_abs_pair_diff_deck_allfour": 0.7338842794646695,
+ "mean_abs_pair_diff_player_allfour": 1.181419382281317,
+ "mean_abs_pair_diff_colour_allfour": 1.3727255645530925,
+ "mean_abs_pair_diff_raw_over_sd": 0.45573040236086015,
+ "mean_abs_pair_diff_deck_over_sd": 0.38082131510513256,
+ "mean_abs_pair_diff_player_over_sd": 0.3866197830721947,
+ "mean_abs_pair_diff_colour_over_sd": 0.3805534655442091,
+ "random_same_category_pair_diff_raw": 3.4847032456979212,
+ "pair_over_random_raw": 0.5006362869122192,
+ "random_same_category_pair_diff_deck": 1.5917959096020415,
+ "pair_over_random_deck": 0.46362889922698025,
+ "random_same_category_pair_diff_player": 2.5878749383074857,
+ "pair_over_random_player": 0.4565210492953672,
+ "random_same_category_pair_diff_colour": 3.245596576118365,
+ "pair_over_random_colour": 0.4272652968022473,
+ "pairs_deck_lower_than_raw": 77,
+ "variance": {
+  "raw": {
+   "between_var": 0.5473335326566741,
+   "within_var": 14.652065679377804,
+   "between_share": 0.036010208365558946,
+   "sd_set_means": 0.7398199325894607,
+   "total_var": 15.17300119074526
+  },
+  "deck": {
+   "between_var": 0.09652447571240916,
+   "within_var": 3.7550167692924,
+   "between_share": 0.025061259784662813,
+   "sd_set_means": 0.31068388389552676,
+   "total_var": 3.850812860839931
+  }
+ },
+ "variance_player_colour_sets": null,
+ "named": [
+  {
+   "card": "DMU|Shore Up",
+   "games": 72711,
+   "raw": 57.442477754397544,
+   "deck": 1.011317274691249,
+   "player": 1.5846611079006003,
+   "colour": 1.0318688247074845,
+   "raw_c": 0.9159798804070576,
+   "deck_c": 0.289893720475604,
+   "player_c": 0.25105727400098043,
+   "colour_c": 0.9073420048456031
+  },
+  {
+   "card": "BLB|Shore Up",
+   "games": 43241,
+   "raw": 53.69441039753937,
+   "deck": 1.4450313177081788,
+   "player": 0.4604066902630287,
+   "colour": 0.5641265471517561,
+   "raw_c": -1.8972713783448967,
+   "deck_c": -0.05144480985170752,
+   "player_c": -1.6488061247203873,
+   "colour_c": -0.7034083963600567
+  },
+  {
+   "card": "TLA|Octopus Form",
+   "games": 49596,
+   "raw": 58.17404629405597,
+   "deck": 1.3310151760766311,
+   "player": 2.9587770248467233,
+   "colour": 1.9512744423155433,
+   "raw_c": 1.9778693718122895,
+   "deck_c": 0.3905116302385936,
+   "player_c": 0.8076555126693243,
+   "colour_c": 1.5697252261838182
+  }
+ ],
+ "named_pair_diffs": {
+  "DMU|Shore Up vs BLB|Shore Up": {
+   "raw": 2.8132512587519543,
+   "deck": 0.34133853032731154,
+   "player": 1.8998633987213678,
+   "colour": 1.6107504012056597,
+   "in_n2b_primary": false
+  },
+  "DMU|Shore Up vs TLA|Octopus Form": {
+   "raw": 1.061889491405232,
+   "deck": 0.10061790976298957,
+   "player": 0.5565982386683439,
+   "colour": 0.662383221338215,
+   "in_n2b_primary": true
+  },
+  "BLB|Shore Up vs TLA|Octopus Form": {
+   "raw": 3.875140750157186,
+   "deck": 0.4419564400903011,
+   "player": 2.4564616373897117,
+   "colour": 2.2731336225438747,
+   "in_n2b_primary": true
+  }
+ },
+ "corr_raw_c_vs_deck_c": 0.8513564362381615,
+ "corr_raw_c_vs_colour_c": 0.9570853428081179,
+ "corr_raw_c_vs_player_c": 0.9791790255194246,
+ "sd_within_set": {
+  "raw": 3.8280722218215475,
+  "deck": 1.9379235249977156,
+  "player": 3.0557654678025283,
+  "colour": 3.64398411774409
+ }
+}
