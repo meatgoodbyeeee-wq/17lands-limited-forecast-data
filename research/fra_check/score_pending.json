@@ -1,0 +1,422 @@
+{
+ "matching_rule": "exact name; else front face (text before \" // \") of both sides when unique; others listed in unmatched",
+ "n_gih_cards": 276,
+ "frozen_sha256_checked": {
+  "item1": "771c8ef81363f4fab13c16be9c0d743e5bb7068562939b69dc1b8b76b9287989",
+  "item6": "50a77d48c510e7cff1dd67fe933f325f57319a669a14cf61ade4e72852599dad",
+  "item7": "ff62fb0998f2e57ae84abce509eff5e70058297bb52018d58c819e7cc7ecb0e2",
+  "item8": "316dfc3d7e21213f8ca653fcbffa8b1bdd2346eb5a0c1277c2921a02f2137425",
+  "item9": "03d987042cf32763095e0889b565fcbd267846eae39230e26c021dca0068dfbd",
+  "item10": "b53b21493e4d21022adf9e48df313f2b2307e6ee645dd54e6a9a055758f041dc",
+  "item2_3": "9d1d0e692764f91f353913b775647cceb4db881c389a5e8f19f9cfdfd65d309b"
+ },
+ "unmatched": {
+  "item1": {
+   "gih_not_in_frozen": [
+    "Forest",
+    "Island",
+    "Mountain",
+    "Plains",
+    "Swamp"
+   ],
+   "frozen_not_in_gih": 19,
+   "front_face_matches": []
+  },
+  "item2": {
+   "gih_not_in_frozen": [
+    "Forest",
+    "Island",
+    "Mountain",
+    "Plains",
+    "Swamp"
+   ],
+   "frozen_not_in_gih": 19,
+   "front_face_matches": []
+  },
+  "item3": {
+   "gih_not_in_frozen": [
+    "Forest",
+    "Island",
+    "Mountain",
+    "Plains",
+    "Swamp"
+   ],
+   "frozen_not_in_gih": 19,
+   "front_face_matches": []
+  },
+  "item4": {
+   "gih_not_in_frozen": "n/a (5 cards only)",
+   "frozen_not_in_gih": [
+    "Essence Burn",
+    "Flourishing Grapple",
+    "Precise Redaction"
+   ],
+   "front_face_matches": []
+  },
+  "item5": {
+   "gih_not_in_frozen": [
+    "Forest",
+    "Island",
+    "Mountain",
+    "Plains",
+    "Swamp"
+   ],
+   "frozen_not_in_gih": 19,
+   "front_face_matches": []
+  },
+  "item6": {
+   "gih_not_in_frozen": [
+    "Forest",
+    "Island",
+    "Mountain",
+    "Plains",
+    "Swamp"
+   ],
+   "frozen_not_in_gih": 19,
+   "front_face_matches": []
+  },
+  "item7": {
+   "gih_not_in_frozen": [
+    "Forest",
+    "Island",
+    "Mountain",
+    "Plains",
+    "Swamp"
+   ],
+   "frozen_not_in_gih": 19,
+   "front_face_matches": []
+  },
+  "item10": {
+   "gih_not_in_frozen": [
+    "Forest",
+    "Island",
+    "Mountain",
+    "Plains",
+    "Swamp"
+   ],
+   "frozen_not_in_gih": 19,
+   "front_face_matches": []
+  }
+ },
+ "pair_wr": [
+  {
+   "pair": "WU",
+   "games": 19968,
+   "wr": 58.148,
+   "y": 2.8392
+  },
+  {
+   "pair": "WB",
+   "games": 6660,
+   "wr": 54.0991,
+   "y": -1.2098
+  },
+  {
+   "pair": "WR",
+   "games": 7959,
+   "wr": 54.8561,
+   "y": -0.4527
+  },
+  {
+   "pair": "WG",
+   "games": 14817,
+   "wr": 55.1326,
+   "y": -0.1762
+  },
+  {
+   "pair": "UB",
+   "games": 22244,
+   "wr": 56.4871,
+   "y": 1.1783
+  },
+  {
+   "pair": "UR",
+   "games": 13704,
+   "wr": 56.8301,
+   "y": 1.5213
+  },
+  {
+   "pair": "UG",
+   "games": 4078,
+   "wr": 51.4223,
+   "y": -3.8866
+  },
+  {
+   "pair": "BR",
+   "games": 13557,
+   "wr": 54.4663,
+   "y": -0.8425
+  },
+  {
+   "pair": "BG",
+   "games": 8072,
+   "wr": 55.005,
+   "y": -0.3039
+  },
+  {
+   "pair": "RG",
+   "games": 17623,
+   "wr": 56.6419,
+   "y": 1.333
+  }
+ ],
+ "items": [
+  {
+   "item": 1,
+   "title": "Case 1: C3 LLM features",
+   "n_cards": 271,
+   "arms": {
+    "c3": {
+     "mae_pp": 2.4543157400126807,
+     "spearman": 0.5455162397107095
+    },
+    "baseline21": {
+     "mae_pp": 2.604846478128607,
+     "spearman": 0.4416144978589604
+    }
+   },
+   "columns": {
+    "c3": "pred_c3_pp",
+    "baseline21": "pred_baseline21_pp"
+   },
+   "beats": {
+    "baseline21": true
+   },
+   "verdict": "supported",
+   "rule": "c3 beats baseline21 on both MAE and within-set Spearman"
+  },
+  {
+   "item": 2,
+   "title": "Case 2: BT rankings (adj_w0.3)",
+   "n_cards": 271,
+   "arms": {
+    "adj_w0.3": {
+     "mae_pp": 2.4332697120562496,
+     "spearman": 0.5765815305211875
+    },
+    "pred_gih": {
+     "mae_pp": 2.3897069919794434,
+     "spearman": 0.5862349656954856
+    }
+   },
+   "columns": {
+    "adj_w0.3": "adj_w0.3",
+    "pred_gih": "pred_gih"
+   },
+   "verdict": "reported only"
+  },
+  {
+   "item": 3,
+   "title": "Case 2b: debiased BT (adj2b_w0.3), Rule P-FRA",
+   "n_cards": 271,
+   "arms": {
+    "adj2b_w0.3": {
+     "mae_pp": 2.408525603317282,
+     "spearman": 0.5980717748353954
+    },
+    "pred_gih": {
+     "mae_pp": 2.3897069919794434,
+     "spearman": 0.5862349656954856
+    }
+   },
+   "columns": {
+    "adj2b_w0.3": "adj2b_w0.3",
+    "pred_gih": "pred_gih"
+   },
+   "beats": {
+    "pred_gih": false
+   },
+   "verdict": "not supported",
+   "rule": "adj2b_w0.3 beats pred_gih on both MAE and within-set Spearman"
+  },
+  {
+   "item": 4,
+   "title": "Colour-hoser mixture (5 hosers)",
+   "n_cards": 2,
+   "cards": [
+    {
+     "card": "Refute Destiny",
+     "actual_pp": 53.649956024626206,
+     "published": 56.3119,
+     "adjusted": 54.1149,
+     "abs_err_published": 2.661943975373795,
+     "abs_err_adjusted": 0.4649439753737923,
+     "adjusted_closer": true
+    },
+    {
+     "card": "Terminal Criticism",
+     "actual_pp": 52.57958287596048,
+     "published": 56.5091,
+     "adjusted": 54.3649,
+     "abs_err_published": 3.9295171240395135,
+     "abs_err_adjusted": 1.7853171240395156,
+     "adjusted_closer": true
+    }
+   ],
+   "columns": {
+    "candidate": "adjusted",
+    "baseline": "published"
+   },
+   "verdict": "reported only",
+   "mae_published": 3.2957305497066542,
+   "mae_adjusted": 1.125130549706654,
+   "n_adjusted_closer": 2,
+   "note": "per-card comparison only; no hash recorded for this file; n too small for Spearman"
+  },
+  {
+   "item": 5,
+   "title": "Production forecast itself (gih-c3-28set-20260929) with 80% range",
+   "n_cards": 271,
+   "columns": {
+    "pred": "adopted-gih-fra.json.gz cards[].gih",
+    "range": "gih-range-fra.json cards[].radius (range = gih +- radius, per its method note)"
+   },
+   "mae_pp": 2.3897071395809197,
+   "spearman": 0.5862349656954856,
+   "coverage_80": 0.7896678966789668,
+   "target_coverage": 0.8,
+   "n_range_missing": 0,
+   "pages_sha256": {
+    "adopted-gih-fra.json.gz": "8091bfd474d25c3858d95c92028b1699dac946363c7e0bcbf58c3d6991e70c8f",
+    "gih-range-fra.json": "b6c9b0b408b2d19c002be23c441f6726c42430c23c771e3dc429a0182a4966fb"
+   },
+   "verdict": "reported only"
+  },
+  {
+   "item": 6,
+   "title": "C4 finer card effects, Rule F",
+   "n_cards": 271,
+   "arms": {
+    "B": {
+     "mae_pp": 2.3843905022232543,
+     "spearman": 0.5616497663102735
+    },
+    "A": {
+     "mae_pp": 2.389707121569877,
+     "spearman": 0.5862349656954856
+    }
+   },
+   "columns": {
+    "B": "pred_B",
+    "A": "pred_A"
+   },
+   "beats": {
+    "A": false
+   },
+   "verdict": "not supported",
+   "rule": "B beats A on both MAE and within-set Spearman"
+  },
+  {
+   "item": 7,
+   "title": "C5 atomic effects, Rule F5",
+   "n_cards": 271,
+   "arms": {
+    "B5": {
+     "mae_pp": 2.415026254165739,
+     "spearman": 0.5526128518637103
+    },
+    "B": {
+     "mae_pp": 2.3843905022232543,
+     "spearman": 0.5616497663102735
+    },
+    "A": {
+     "mae_pp": 2.3897071215698773,
+     "spearman": 0.5862349656954856
+    }
+   },
+   "columns": {
+    "B5": "pred_B5",
+    "B": "pred_B",
+    "A": "pred_A"
+   },
+   "beats": {
+    "B": false,
+    "A": false
+   },
+   "verdict": "not supported",
+   "rule": "B5 beats B and A on both MAE and within-set Spearman"
+  },
+  {
+   "item": 8,
+   "title": "Colour-pair strength D_B5",
+   "n_pairs": 10,
+   "arms": {
+    "pred_D_B5": {
+     "spearman": -0.01818181818181818,
+     "mae_pp": 1.6072335934718374
+    },
+    "F0_A": {
+     "spearman": 0.09090909090909088,
+     "mae_pp": 1.30285158824187
+    }
+   },
+   "verdict": "reported only",
+   "columns": {
+    "pred": "pred_D_B5",
+    "baseline": "F0_A",
+    "target": "centred non-splash pair win rate (pp)"
+   },
+   "scale": "pred_D_B5 is already in pp (ridge fitted on centred pair WR of 26 sets, d9/freeze_fra.py). F0_A scaled by through-origin slope 696.0720 = sum(F0*y)/sum(F0^2) over the 260 rows of d9_colour_strength/pair_table.csv (d9 dm.loso_scale, fitted on all 26 sets instead of leave-one-out)."
+  },
+  {
+   "item": 9,
+   "title": "AI reading of FRA (D10)",
+   "n_pairs": 10,
+   "arms": {
+    "pred_AI": {
+     "spearman": -0.22424242424242422,
+     "mae_pp": null
+    },
+    "pred_D_B5": {
+     "spearman": -0.01818181818181818,
+     "mae_pp": null
+    },
+    "F0_A": {
+     "spearman": 0.09090909090909088,
+     "mae_pp": null
+    },
+    "z_mean(pred_AI,pred_D_B5)": {
+     "spearman": -0.2727272727272727,
+     "mae_pp": null
+    }
+   },
+   "verdict": "reported only",
+   "columns": {
+    "pred": "pred_AI",
+    "baselines": "pred_D_B5, F0_A",
+    "combo": "mean of within-set z-scores (population sd) of pred_AI and pred_D_B5"
+   },
+   "mae_note": "MAE not specified for item 9 and pred_AI (0-10 score) has no scale in the PLAN; left blank. See item 8 for pred_D_B5 and F0_A MAE."
+  },
+  {
+   "item": 10,
+   "title": "C9 power questions x3, Rule F10",
+   "n_cards": 271,
+   "arms": {
+    "B10": {
+     "mae_pp": 2.3162294122601823,
+     "spearman": 0.603885181349219
+    },
+    "B5": {
+     "mae_pp": 2.415026254165739,
+     "spearman": 0.5526128518637103
+    },
+    "A": {
+     "mae_pp": 2.3897071215698773,
+     "spearman": 0.5862349656954856
+    }
+   },
+   "columns": {
+    "B10": "pred_B10",
+    "B5": "pred_B5",
+    "A": "pred_A"
+   },
+   "beats": {
+    "B5": true,
+    "A": true
+   },
+   "verdict": "supported",
+   "rule": "B10 beats B5 and A on both MAE and within-set Spearman"
+  }
+ ]
+}
