@@ -1,0 +1,109 @@
+{
+ "primary": {
+  "arm": "primary",
+  "n_cards": 127,
+  "n_pairs": 101,
+  "mean_n": 1.5905511811023623,
+  "mae_corr_B10": 1.4977762000338768,
+  "mae_corr_new": 1.737571069958388,
+  "d_mean": 0.2397948699245114,
+  "ci_lo": 0.10499540556900445,
+  "ci_hi": 0.3751233296609418,
+  "frac_improved": 0.3700787401574803,
+  "pooled_B10": 2.2310530635972268,
+  "pooled_new": 2.2353575086121262,
+  "sp_B10": 0.6248084658734818,
+  "sp_new": 0.6236189382906808,
+  "corr_sd": 0.8545747047538843,
+  "corr_resid": -0.22320207583859278,
+  "cards_by_cat": {
+   "Instant": 59,
+   "Creature": 44,
+   "Enchantment": 8,
+   "Sorcery": 8,
+   "Equipment": 6,
+   "Aura": 2
+  },
+  "pairs_by_cat": {
+   "Instant": 41,
+   "Creature": 39,
+   "Enchantment": 13,
+   "Sorcery": 4,
+   "Equipment": 3,
+   "Aura": 1
+  },
+  "R1": false,
+  "R2": false,
+  "R3": false,
+  "R4": 0.0,
+  "pass": false
+ },
+ "arm_a_nc090": {
+  "arm": "arm_a_nc090",
+  "n_cards": 162,
+  "n_pairs": 121,
+  "mean_n": 1.4938271604938271,
+  "mae_corr_B10": 1.626052882709359,
+  "mae_corr_new": 1.9311732634958376,
+  "d_mean": 0.3051203807864784,
+  "ci_lo": 0.15905516691647711,
+  "ci_hi": 0.45628361926063576,
+  "frac_improved": 0.38271604938271603,
+  "pooled_B10": 2.2310530635972268,
+  "pooled_new": 2.2380395656025143,
+  "sp_B10": 0.6248084658734818,
+  "sp_new": 0.6225190521536824,
+  "corr_sd": 1.0521163490608028,
+  "corr_resid": -0.2888277177268918,
+  "cards_by_cat": {
+   "Instant": 76,
+   "Creature": 44,
+   "Sorcery": 13,
+   "Aura": 11,
+   "Equipment": 10,
+   "Enchantment": 8
+  },
+  "pairs_by_cat": {
+   "Instant": 51,
+   "Creature": 39,
+   "Enchantment": 13,
+   "Sorcery": 7,
+   "Aura": 6,
+   "Equipment": 5
+  },
+  "R1": false,
+  "R2": false,
+  "R3": false,
+  "R4": 0.0,
+  "pass": false
+ },
+ "arm_b_lands080": {
+  "arm": "arm_b_lands080",
+  "n_cards": 137,
+  "n_pairs": 613,
+  "mean_n": 8.94890510948905,
+  "mae_corr_B10": 1.3555215891971073,
+  "mae_corr_new": 1.487319035921295,
+  "d_mean": 0.13179744672418786,
+  "ci_lo": 0.04619976460907825,
+  "ci_hi": 0.21677339541770352,
+  "frac_improved": 0.39416058394160586,
+  "pooled_B10": 2.2310530635972268,
+  "pooled_new": 2.2336051837670094,
+  "sp_B10": 0.6248084658734818,
+  "sp_new": 0.6236752246035663,
+  "corr_sd": 0.5472878040285843,
+  "corr_resid": -0.18396438067713575,
+  "cards_by_cat": {
+   "Land": 137
+  },
+  "pairs_by_cat": {
+   "Land": 613
+  },
+  "R1": false,
+  "R2": false,
+  "R3": false,
+  "R4": 0.0,
+  "pass": false
+ }
+}
