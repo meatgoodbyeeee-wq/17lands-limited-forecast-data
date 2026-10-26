@@ -18,3 +18,11 @@ Pass (all): pooled MAE over the grade sets improves ≥ 0.05 pp vs B10; within-s
 MAE lower in ≥ 2/3 of the grade sets. Reported: per set, by rarity, top-10% under-prediction,
 B10S comparison, and FRA scored with coefficients fitted on the past sets only (out of sample).
 Caveats: one source/reviewer family; incomplete pages (noted per set); name matching by front face.
+
+## Amendment before any past-set result was computed (2026-10-26)
+Collection showed some sections were published on/after the 17Lands window start (e.g. DFT
+02-11..02-25 vs window 02-11; FDN 11-04..11-16 vs 11-12; TDM 04-08..04-14 vs 04-08). Primary arm:
+grades from a section published AFTER the set's window_start date are treated as missing (B10 used).
+Same-day publication counts as pre-release. Reported arm: all grades regardless of date.
+Window starts for sets without a manifest here are taken from the 17Lands public dataset dates
+(release day) and listed in release_dates.json.
