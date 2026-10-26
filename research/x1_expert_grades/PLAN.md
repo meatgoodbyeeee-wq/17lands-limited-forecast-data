@@ -26,3 +26,4 @@ grades from a section published AFTER the set's window_start date are treated as
 Same-day publication counts as pre-release. Reported arm: all grades regardless of date.
 Window starts for sets without a manifest here are taken from the 17Lands public dataset dates
 (release day) and listed in release_dates.json.
+- OTJ (4 cards) and LCI (1 card) whose grade came from the tier list (possibly post-release) were removed from grades/.
