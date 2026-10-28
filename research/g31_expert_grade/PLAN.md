@@ -27,3 +27,6 @@ The answer keys (targets_key.csv, with actual GIH and expert grades) were stored
 the judge inputs. Transcript check: only TMT pass 2 opened one (it read 3 rows: T1, T2, T187 — grades
 unchanged per its report); all other passes only listed file names. Keys moved to keys/<SET>.csv.
 G3 (research/g3_expert_grade) had the same layout; its transcripts show no reads of key contents.
+- Shared scratch file: FRA pass 2 and ECL pass 1 wrote intermediate grades to the same temporary
+  file (scratchpad/g.txt) and got mixed (FRA p1–p2 agreement 0.22). Both discarded and re-run with
+  a private work file; ECL pass 2 had rebuilt its grades from its own notes (agreement 0.87 with ECL p1).
