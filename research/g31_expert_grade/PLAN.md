@@ -21,3 +21,9 @@ Pass: (a) G3.1 > G3 on ≥ 2 of 3 sets AND (b) the 3-set mean of (b) improves by
 Reported: overall Spearman with actual, by rarity, agreement with the expert.
 Note: these 3 sets were already used for the G3 pilot and the C/U gap analysis that motivated this.
 Resume: README_RESUME.md / status.py.
+
+## Note (2026-10-28, during judging)
+The answer keys (targets_key.csv, with actual GIH and expert grades) were stored in the same folders as
+the judge inputs. Transcript check: only TMT pass 2 opened one (it read 3 rows: T1, T2, T187 — grades
+unchanged per its report); all other passes only listed file names. Keys moved to keys/<SET>.csv.
+G3 (research/g3_expert_grade) had the same layout; its transcripts show no reads of key contents.

@@ -48,7 +48,7 @@ P = A[A.grade.notna()].reset_index(drop=True)
 vec = TfidfVectorizer(ngram_range=(1, 2), min_df=2, sublinear_tf=True).fit((A.typ+' '+A.txt).tolist())
 PV = vec.transform((P.typ+' '+P.txt).tolist())
 for T in TARGETS:
-    out = H/T; out.mkdir(exist_ok=True)
+    out = H/T; out.mkdir(exist_ok=True); (H/'keys').mkdir(exist_ok=True)
     pool = P[P.set != T]; pv = PV[(P.set != T).values]
     cal = pool.sample(300, random_state=1)
     (out/'calibration.txt').write_text('\n'.join(fmt(f'#E{i+1}', r, True)+f"\n=> expert {r.grade:.1f}/5\n" for i, r in enumerate(cal.itertuples())))
@@ -65,6 +65,6 @@ for T in TARGETS:
                 q = pool.iloc[j]; f.write(f"    - {RAR[q.rar]} | MV {q.mv} {q.col or 'C'} | {q.typ}{' | '+q.pt if q.pt else ''} | {q.txt[:140]} => {q.grade:.1f}\n")
             f.write('\n')
     g3 = pd.read_csv(R/f'research/g3_expert_grade/{T}/targets_key.csv')
-    tg[['tid', 'key', 'name', 'sec']].merge(g3.drop(columns='tid'), on=['key', 'name'], how='left').to_csv(out/'targets_key.csv', index=False)
+    tg[['tid', 'key', 'name', 'sec']].merge(g3.drop(columns='tid'), on=['key', 'name'], how='left').to_csv(H/'keys'/f'{T}.csv', index=False)
     print(T, len(tg), 'cal', len(cal), 'sections', tg.sec.value_counts().sort_index().to_dict())
 print('lesson cu rows', len(L))

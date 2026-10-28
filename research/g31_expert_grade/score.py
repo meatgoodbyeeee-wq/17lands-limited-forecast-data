@@ -9,7 +9,7 @@ g3 = pd.read_csv(R/'research/g3_expert_grade/scored.csv.gz').set_index('key').g3
 sp = lambda a, b: float(spearmanr(a, b, nan_policy='omit')[0])
 out = {}; allk = []
 for s in ['FRA', 'TMT', 'ECL']:
-    k = pd.read_csv(H/s/'targets_key.csv'); P = []
+    k = pd.read_csv(H/'keys'/f'{s}.csv'); P = []
     for f in sorted((H/s).glob('pass*.json')):
         d = json.load(open(f)); assert len(d) == len(k); k[f.stem] = k.tid.map(d).astype(float); P.append(f.stem)
     k['g31'] = k[P].mean(axis=1); k['g3'] = k.key.map(g3)
