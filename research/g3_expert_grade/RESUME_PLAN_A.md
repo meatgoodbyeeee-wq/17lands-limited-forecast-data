@@ -1,15 +1,18 @@
-# Plan A: resume guide (user decision 2026-10-28: adopt G3 for TRK, replace C9 with G3; do NOT use MTGAZone TRK reviews for TRK)
-Worktree /home/claude/wt-g3, branch research/g3-expert-grade (if missing: clone data repo, checkout the branch; pageswt only needed for FRA text).
+# 再開手順 (Plan A: G3 を28セットに付与 → B10 の C9 を G3 に置換して再学習)
+決定 (2026-10-28 ユーザー): TRK から G3 を採用 / 既試算の TRK 予測は C9→G3 に差し替え / MTGAZone の TRK レビューは TRK 予測に使わない (X1 は TRK に適用しない)。案A で進行 (案B は予備)。
 
-## Step 1 — G3 on the 28 training sets (1 pass each)
-1. `cd research/g3_expert_grade && python3 status_all.py` → list of missing sets (inputs all/<SET>/, keys keys_all/<SET>.csv; ECL/TMT copied from pilot).
-2. For each missing set launch one Opus subagent: prompt =
-   "Read /home/claude/wt-g3/research/g3_expert_grade/prompt_judge_all.txt and follow it exactly with {SET}=<SET>. Only touch all/<SET>/pass1.json. Do not read any other file under research/ (especially keys_all/). Use no shared scratch files."
-   Run ≤6 in parallel. Priority: non-lesson sets first (AFR BRO DMU HOB KHM LTR MID MOM MSH NEO ONE SNC STX VOW WOE), then lesson sets (BLB DFT DSK EOE FDN LCI MKM OTJ SOS TDM TLA).
-3. After each batch run `./commit_progress.sh` (commits + pushes). A pass.json is valid only if it parses and has one key per target (status_all checks).
-## Step 2 — retrain ("B11g")
-Replace C9 features with G3 (z-score within set, 1 column) in the B10 feature table (research/c9_power_questions/c9.py builds B10 = B5 + C9 columns; B5 = research/c5_atomic_effects). LOSO 28 sets, ExtraTrees+Ridge 70:30, same as B10. Compare MAE/Spearman vs B10 (oof_B10.csv.gz: MAE 2.231, Spearman 0.6248) pooled and on the 17 non-lesson sets (lesson sets leak: BLB DFT DSK EOE FDN LCI MKM OTJ SOS TDM TLA). Also a TMT/ECL/FRA check (FRA: B10 2.316, B5 2.415). Rule: adopt B11g for TRK if non-lesson-17 MAE <= B10 and Spearman >= B10; else report to user (user already decided to adopt G3 → still use it, but tell the user the numbers).
-## Step 3 — TRK (after all cards are revealed 10/31)
-G3 on TRK cards: 3 passes, whole set in context, examples from all 13 graded past sets (no outcomes), lessons.md. Recompute TRK forecast with B11g + B10S-style scaling; no X1/MTGAZone. Rebuild export (research/trk_preview/export_b10.py), forecast-trk.json, private preview artifact (rebuild JS bundle). User confirms before publishing (`available: true`, ~11/3).
-## Step 4 — docs
-Update Projects doc claude/sakiyomi-g3-expert-grade-2026-10-27.md and claude/trk-plan-2026-10-21.md with results/decision.
+## 状態確認
+git checkout research/g3-expert-grade && cd research/g3_expert_grade && python3 status_all.py   # 不足セット一覧
+## Step 1: 不足セットの判定 (1セット = Opus 1 エージェント、約0.2Mトークン)
+Agent(model=opus) に prompt_judge_all.txt を読ませ {SET} を指定。出力 all/<SET>/pass1.json。
+優先順: 検証に使う非教訓セット (AFR BRO DMU HOB KHM LTR MID MOM MSH NEO ONE SNC STX VOW WOE; ECL/TMT はパイロットから流用済み) → 教訓セット11 (BLB DFT DSK EOE FDN LCI MKM OTJ SOS TDM TLA)。
+各セット完了ごとに git add/commit/push。答え (keys_all/) は判定フォルダに置かない・エージェントに読ませない。
+## Step 2: 検証 (全セット完了後、または非教訓17セットが揃った時点)
+G3特徴表 = all/<SET>/pass1.json × keys_all/<SET>.csv (key, g3)。c9_features.csv.gz の c9_m_GRADE を g3 に置換した B10 ("B11g") を、B10 と同じ28セット LOSO で学習 (research/c9_power_questions/c9.py を参照)。
+比較は B10 と、教訓リストに使っていない17セットで判断 (MAE, within-set Spearman, 上位カードの過小予測)。採用基準は事前に PLAN に書いてから実行。
+## Step 3: TRK
+全カード公開 (10/31) 後に TRK を G3 で判定 (3パス; build.py の FRA 同様に target を作る) → B11g を TRK に適用 (B10S 同様のスケーリング) → export (research/trk_preview/export_b10.py の VERSION 名変更) → forecast-trk.json → 非公開アーティファクト再構築 (JS を再生成) → freeze。公開 (available:true, 11/3 頃) はユーザー確認後。
+## 予備 (案B)
+上限に当たった場合: B5 + G3 の一次式 (FRAでは B10 より MAE +0.03pp, 3セット平均 +0.05pp 悪い=改善なし) を暫定版として使用。
+## 注意
+並列の判定は各自の出力ファイルのみ書く (共有scratch禁止)。stop hook: git push + git update-ref refs/remotes/origin/<branch> $(git rev-parse HEAD)。
