@@ -1,0 +1,863 @@
+#T1 | C | MV 5 W | Creature — Spirit | 2/5
+{W}, {T}: Tap target creature.
+
+#T2 | R | MV 3 B | Enchantment
+Whenever you discard one or more cards, create a tapped 2/2 black Zombie creature token. This ability triggers only once each turn.
+
+#T3 | U | MV 3 G | Sorcery
+Return up to one target creature card and up to one target noncreature permanent card from your graveyard to your hand. Exile ~.
+
+#T4 | C | MV 6 B | Sorcery
+Destroy target creature or planeswalker. Create two Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T5 | C | MV 5 R | Creature — Vampire | 4/4
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, create two Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T6 | R | MV 6 R | Creature — Vampire | 6/6
+Menace
+Whenever this creature deals damage, create that many Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+{2}{R}: This creature deals 1 damage to any target.
+
+#T7 | C | MV 1 C | Artifact — Equipment
+Equipped creature gets +1/+0 and has "Whenever this creature deals combat damage, create a Blood token." (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#T8 | U | MV 3 B | Instant
+Destroy target creature or planeswalker.
+
+#T9 | U | MV 7 G | Creature — Wurm | 7/6
+Reach, trample
+When this creature enters, you gain 5 life.
+{2}{G}, Exile this card from your graveyard: You gain 5 life.
+
+#T10 | U | MV 2 R | Artifact
+When this artifact enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+Whenever you sacrifice a Blood token, you may have this artifact become a 3/3 Vampire artifact creature with haste until end of turn.
+
+#T11 | U | MV 5 G | Creature — Human Ranger | 2/4
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+Whenever one or more +1/+1 counters are put on one or more Humans you control, draw a card. This ability triggers only once each turn.
+
+#T12 | C | MV 3 U | Instant
+Counter target creature or planeswalker spell. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T13 | C | MV 2 U | Creature — Zombie | 1/3
+{T}, Discard a creature card: Draw a card.
+
+#T14 | C | MV 0 C | Basic Land — Island
+({T}: Add {U}.)
+
+#T15 | R | MV 3 U | Sorcery
+Cleave {3}{U}{U} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Draw three cards. [Your maximum hand size is reduced by three for the rest of the game.]
+
+#T16 | R | MV 1 R | Creature — Human Knight | 1/2
+Menace
+{2}{R}, {T}, Exile three cards from your graveyard: Create a 3/2 red Wolf creature token.
+
+#T17 | U | MV 2 G | Creature — Wolf | 1/1
+At the beginning of combat on your turn, if you control another Wolf or Werewolf, put a +1/+1 counter on this creature.
+When this creature dies, you gain life equal to its power.
+
+#T18 | M | MV 7 G | Creature — Plant Beast
+Trample
+~'s power and toughness are each equal to the number of lands you control.
+When this creature enters, you may put a land card from your hand onto the battlefield tapped. If you do, draw a card and repeat this process.
+
+#T19 | R | MV 4 U | Sorcery
+Each player chooses a nonland permanent they control. Return all nonland permanents not chosen this way to their owners' hands. Then you draw a card for each opponent who has more cards in their hand than you.
+
+#T20 | R | MV 2 W | Creature — Spirit Cleric | 2/2
+Whenever you gain life, put a +1/+1 counter on this creature.
+As long as this creature has four or more +1/+1 counters on it, it has flying and vigilance.
+As long as this creature has ten or more +1/+1 counters on it, it has indestructible.
+
+#T21 | C | MV 2 G | Sorcery
+Reveal the top four cards of your library. Put all land cards revealed this way into your hand and the rest into your graveyard.
+
+#T22 | C | MV 5 U | Creature — Zombie Drake | 2/5
+Flying
+When this creature enters, you may exile two creature cards from your graveyard. If you do, draw a card.
+
+#T23 | C | MV 0 C | Basic Land — Swamp
+({T}: Add {B}.)
+
+#T24 | R | MV 3 B | Sorcery
+Cleave {4}{W}{B} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Destroy all creatures [with mana value 2 or less].
+
+#T25 | U | MV 2 UG | Creature — Spider | 2/3
+Reach
+At the beginning of your upkeep, mill a card. (Put the top card of your library into your graveyard.)
+{2}{G}{U}, {T}, Sacrifice this creature: Create a 1/1 green Insect creature token for each creature card in your graveyard. Activate only as a sorcery.
+
+#T26 | M | MV 4 B | Legendary Planeswalker — Sorin
++1: Look at the top card of your library. You may reveal that card and put it into your hand. If you do, you lose life equal to its mana value.
+−2: Create a 2/3 black Vampire creature token with flying and lifelink.
+−7: ~ deals 13 damage to any target. You gain 13 life.
+
+#T27 | R | MV 3 R | Sorcery
+Cleave {4}{U}{U}{R} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Take an extra turn after this one. During that turn, damage can't be prevented. [At the beginning of that turn's end step, you lose the game.]
+Exile ~.
+
+#T28 | R | MV 5 G | Enchantment
+At the beginning of combat on your turn, choose one —
+• Creatures you control get +1/+1 and gain trample until end of turn.
+• Target land gains "{T}: Add {G}{G}{G}" until end of turn.
+• Draw a card if you control a creature with power 3 or greater.
+• You gain 3 life.
+
+#T29 | U | MV 3 B | Creature — Zombie Cleric | 3/2
+Whenever this creature or another Zombie you control dies, look at the top card of your library. If it's a Zombie card, you may reveal it and put it into your hand. If you don't put the card into your hand, you may put it into your graveyard.
+
+#T30 | C | MV 4 B | Instant
+Target creature gets -13/-13 until end of turn. If that creature would die this turn, exile it instead.
+
+#T31 | U | MV 1 C | Artifact
+When this artifact enters, exile target card from a graveyard.
+{1}, {T}, Exile this artifact: Exile all cards from all graveyards, then draw a card.
+
+#T32 | U | MV 3 UR | Creature — Horror | 2/1
+Flying
+When this creature enters, look at the top six cards of your library. You may reveal a noncreature, nonland card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+
+#T33 | R | MV 1 G | Creature — Wolf | 2/1
+This creature enters with a +1/+1 counter on it if you control a permanent with mana value 4 or greater.
+Whenever you cast a spell with mana value 4 or greater, put a +1/+1 counter on this creature.
+
+#T34 | C | MV 2 W | Creature — Human Soldier | 2/2
+Whenever this creature deals damage to a Vampire, destroy that creature.
+
+#T35 | C | MV 2 B | Creature — Human | 1/1
+When this creature dies, create a 2/2 black Zombie creature token.
+
+#T36 | U | MV 4 BG | Creature — Treefolk | 1/4
+Each creature you control with toughness greater than its power assigns combat damage equal to its toughness rather than its power.
+
+#T37 | C | MV 2 W | Enchantment — Aura
+Enchant creature
+Enchanted creature has "Whenever a creature you control enters, this creature gets +1/+1 until end of turn."
+When this Aura enters, create a 1/1 white Spirit creature token with flying.
+
+#T38 | U | MV 3 R | Instant
+~ deals 5 damage to target creature or planeswalker. If that permanent is a Spirit, ~ also deals 2 damage to that permanent's controller.
+
+#T39 | R | MV 1 W | Creature — Human Warlock | 1/2
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+{2}{W}, Remove two +1/+1 counters from among creatures you control: Destroy target artifact or enchantment.
+
+#T40 | R | MV 3 U | Instant
+Cleave {4}{G}{U} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Draw a card for each creature you control [with flying].
+
+#T41 | C | MV 2 W | Instant
+Cleave {5}{W} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Destroy target [attacking] creature.
+
+#T42 | C | MV 3 G | Instant
+Choose one —
+• Destroy target creature with flying.
+• Destroy target enchantment.
+
+#T43 | U | MV 3 R | Instant
+~ deals 2 damage to each non-Vampire creature. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T44 | R | MV 3 UR | Legendary Creature — Human Wizard | 2/4
+If you would draw a card, exile the top two cards of your library instead. You may play those cards this turn.
+
+#T45 | C | MV 1 U | Instant
+Cleave {1}{U} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Return target nonland permanent [you control] to its owner's hand.
+
+#T46 | C | MV 6 U | Creature — Crab Horror | 5/5
+Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+{3}{U}{U}: This creature can't be blocked this turn. Activate only if you own a card in exile.
+
+#T47 | U | MV 2 B | Artifact — Equipment
+Equipped creature gets +2/+0. It gets an additional +0/+2 and has deathtouch as long as an Equipment named Bride's Gown is attached to a creature you control.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#T48 | R | MV 3 G | Enchantment
+At the beginning of combat on your turn, target Wolf or Werewolf you control gets +2/+2 until end of turn.
+Whenever an opponent casts their second spell each turn, create a 2/2 green Wolf creature token.
+
+#T49 | U | MV 2 B | Creature — Zombie | 1/2
+When this creature enters, mill three cards. (Put the top three cards of your library into your graveyard.)
+When this creature dies, you may exile it. When you do, return target creature card from your graveyard to your hand.
+
+#T50 | C | MV 3 B | Creature — Bat | 2/2
+Flying
+When this creature enters, if you gained life this turn, return up to one target creature card from your graveyard to your hand.
+
+#T51 | U | MV 3 U | Sorcery
+Target player shuffles up to four target cards from their graveyard into their library. You look at the top four cards of your library, then put one of those cards into your hand and the rest on the bottom of your library in a random order.
+
+#T52 | C | MV 3 U | Creature — Spirit | 2/3
+Flying
+This creature can block only creatures with flying.
+
+#T53 | C | MV 1 B | Artifact
+When this artifact enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+{3}{B}, {T}, Sacrifice this artifact: Return up to two target creature cards from your graveyard to your hand.
+
+#T54 | U | MV 3 B | Creature — Zombie Scorpion | 3/2
+Deathtouch
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, target player draws two cards and loses 2 life.
+
+#T55 | C | MV 3 R | Creature — Human Warrior | 2/2
+Haste (This creature can attack and {T} as soon as it comes under your control.)
+When this creature enters, target creature gets +2/+0 until end of turn.
+
+#T56 | U | MV 2 B | Instant
+Cleave {1}{B}{B} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+~ deals 3 damage to target [Human] creature. You gain 3 life.
+
+#T57 | R | MV 3 WR | Legendary Creature — Vampire Soldier | 3/3
+When ~ enters, create X Blood tokens, where X is the number of abilities from among flying, first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, menace, reach, trample, and vigilance found among creatures you control. (Count each ability only once.)
+
+#T58 | M | MV 3 WB | Legendary Planeswalker — Kaya
++1: Creatures you control gain deathtouch until end of turn. Put a +1/+1 counter on up to one target creature token you control.
+−2: Until end of turn, if one or more tokens would be created under your control, twice that many of those tokens are created instead.
+−6: Exile all cards from all graveyards, then create a 1/1 white Spirit creature token with flying for each card exiled this way.
+
+#T59 | U | MV 3 C | Artifact
+Creatures attacking you get -1/-0.
+At the beginning of each end step, if you were dealt 4 or more damage this turn, exile this artifact.
+
+#T60 | U | MV 2 R | Creature — Elemental | 0/0
+This creature enters with X +1/+1 counters on it.
+If damage would be dealt to this creature while it has a +1/+1 counter on it, prevent that damage and remove that many +1/+1 counters from it. When one or more counters are removed from this creature this way, it deals that much damage to any target.
+
+#T61 | M | MV 3 U | Creature — Spirit | 2/3
+Flying
+Whenever this creature enters or attacks, exile a card from a graveyard.
+You may look at the top card of your library any time.
+Once each turn, you may cast a spell from the top of your library if it shares a card type with a card exiled with this creature.
+
+#T62 | C | MV 1 B | Enchantment — Aura
+Enchant creature
+Enchanted creature gets +2/+2 as long as it's a Vampire. Otherwise, it gets -2/-2.
+
+#T63 | U | MV 4 WR | Creature — Vampire | 1/3
+Flying, haste
+At the beginning of combat on your turn, up to two target creatures you control each get +1/+0 until end of turn.
+
+#T64 | U | MV 1 W | Creature — Human Cleric | 1/1
+Vigilance
+Sacrifice this creature: Target creature you control with a +1/+1 counter on it gains lifelink and indestructible until end of turn.
+
+#T65 | C | MV 2 C | Artifact
+When this artifact enters, draw a card.
+{T}, Sacrifice this artifact: Target creature can't be blocked this turn. If it's a Vampire, it also gains lifelink until end of turn.
+
+#T66 | C | MV 3 G | Creature — Fungus | 3/2
+When this creature dies, draw a card.
+
+#T67 | C | MV 2 R | Creature — Vampire | 2/1
+This creature has first strike as long as it's attacking.
+When this creature dies, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T68 | M | MV 2 R | Creature — Vampire | 2/1
+First strike
+When this creature enters, exile a card from a graveyard.
+Whenever a player plays a land or casts a spell, if it shares a card type with the exiled card, this creature deals 2 damage to that player.
+
+#T69 | C | MV 6 G | Creature — Wolf Spirit | 6/6
+When this creature enters, you gain life equal to the greatest toughness among other creatures you control.
+
+#T70 | C | MV 2 G | Instant
+Target creature gets +3/+3 and gains reach until end of turn. Untap it.
+
+#T71 | R | MV 4 R | Enchantment
+At the beginning of your end step, create a 1/1 red Human creature token. Then if you control exactly thirteen permanents, you may sacrifice this enchantment. When you do, it deals 7 damage to any target.
+
+#T72 | C | MV 3 W | Creature — Human Knight | 2/1
+Flying
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+
+#T73 | C | MV 3 B | Creature — Vampire | 1/4
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+Whenever you sacrifice a Blood token, you gain 1 life.
+
+#T74 | C | MV 2 U | Enchantment — Aura
+Enchant creature
+When this Aura enters, mill two cards. (Put the top two cards of your library into your graveyard.)
+Enchanted creature gets -X/-0, where X is the number of cards in your graveyard.
+
+#T75 | C | MV 2 U | Enchantment — Aura
+Flash
+Enchant creature you control
+When this Aura enters, enchanted creature gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)
+Enchanted creature gets +1/+1.
+
+#T76 | U | MV 3 W | Creature — Human Soldier | 3/2
+When this creature enters, if you control another Human, draw a card.
+
+#T77 | R | MV 3 B | Creature — Vampire | 3/1
+Flying
+This creature can't block.
+Whenever this creature deals combat damage to a player, create a Blood token.
+{B}, Sacrifice two Blood tokens: Return this card from your graveyard to the battlefield.
+
+#T78 | C | MV 5 G | Creature — Insect Horror | 2/2
+When this creature enters, mill three cards, then put a +1/+1 counter on this creature for each creature card in your graveyard. (To mill three cards, put the top three cards of your library into your graveyard.)
+
+#T79 | C | MV 3 R | Creature — Vampire | 3/2
+Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)
+Whenever this creature deals combat damage to a player, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T80 | U | MV 3 R | Sorcery
+Choose one or both —
+• Creatures you control get +1/+0 until end of turn.
+• Target Vampire you control deals damage equal to its power to another target creature.
+
+#T81 | M | MV 3 W | Creature — Human Soldier | 1/2
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+Whenever this creature trains, exile up to one other target creature from the battlefield or creature card from a graveyard.
+When this creature leaves the battlefield, put the exiled cards onto the battlefield under their owners' control.
+
+#T82 | C | MV 1 R | Sorcery
+Target creature gains trample and gets +X/+0 until end of turn, where X is 1 plus the number of cards named ~ in your graveyard.
+Draw a card.
+
+#T83 | C | MV 1 B | Instant
+Until end of turn, target creature gains "When this creature dies, return it to the battlefield tapped under its owner's control with a +1/+1 counter on it."
+
+#T84 | C | MV 2 W | Sorcery
+Destroy target artifact or enchantment. You gain 3 life.
+
+#T85 | C | MV 1 W | Creature — Vampire Cleric | 1/2
+Vigilance
+{4}{W}: Put a +1/+1 counter on this creature.
+
+#T86 | R | MV 3 BG | Legendary Creature — Human Peasant | 1/4
+When ~ enters and at the beginning of your upkeep, mill a card. If a land card is milled this way, create a Treasure token. If a creature card is milled this way, create a 1/1 green Insect creature token. If a noncreature, nonland card is milled this way, create a Blood token.
+
+#T87 | C | MV 4 W | Enchantment — Aura
+This spell has flash as long as you control a Spirit.
+When you cast this spell, tap up to two target creatures you don't control.
+Enchant creature you control
+Enchanted creature gets +1/+2.
+
+#T88 | R | MV 3 WG | Legendary Creature — Human Cleric | 2/2
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+Whenever you cast a creature spell, create a 1/1 green and white Human Soldier creature token with training.
+
+#T89 | C | MV 0 C | Basic Land — Forest
+({T}: Add {G}.)
+
+#T90 | C | MV 2 G | Artifact — Equipment
+When this Equipment enters, attach it to target creature you control.
+Equipped creature gets +2/+1.
+Equip {4} ({4}: Attach to target creature you control. Equip only as a sorcery.)
+
+#T91 | C | MV 3 C | Artifact
+{T}: Add one mana of any color.
+{2}, {T}: Exile target card from a graveyard.
+
+#T92 | U | MV 1 U | Instant
+Cleave {1}{U}{U} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Counter target spell [that wasn't cast from its owner's hand].
+
+#T93 | R | MV 4 BR | Legendary Creature — Vampire | 4/5
+Whenever ~ and/or one or more other Vampires you control enter, create a Blood token. This ability triggers only once each turn. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+{2}, Sacrifice another creature or a Blood token: Each opponent loses 2 life and you gain 2 life.
+
+#T94 | R | MV 1 G | Sorcery
+Cleave {1}{B}{B}{G} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Search your library for a [basic land] card, [reveal it,] put it into your hand, then shuffle.
+
+#T95 | R | MV 5 W | Sorcery
+Choose a number between 0 and 13. Each player sacrifices that many creatures of their choice.
+
+#T96 | C | MV 2 B | Creature — Zombie | 2/2
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, each opponent exiles a card from their hand.
+
+#T97 | C | MV 2 G | Creature — Scorpion | 1/1
+Deathtouch
+When this creature enters, another target creature you control gains deathtouch until end of turn.
+
+#T98 | R | MV 7 U | Creature — Kraken Horror | 7/8
+Flash
+This spell can't be countered.
+Whenever you cast a spell, choose up to one —
+• Return target spell you don't control to its owner's hand.
+• Return target nonland permanent to its owner's hand.
+
+#T99 | M | MV 4 W | Creature — Human Soldier | 3/4
+Flash
+When this creature enters, exile a card from a graveyard.
+Whenever you play a land or cast a spell, if it shares a card type with the exiled card, create a 1/1 white Human creature token.
+
+#T100 | U | MV 3 G | Enchantment
+At the beginning of your upkeep, you may mill two cards. (You may put the top two cards of your library into your graveyard.)
+Whenever one or more creature cards are put into your graveyard from anywhere during your turn, create a 1/1 green Insect creature token. This ability triggers only once each turn.
+
+#T101 | C | MV 2 R | Instant
+Target creature gets +3/+0 and gains first strike until end of turn. (It deals combat damage before creatures without first strike.)
+
+#T102 | R | MV 3 R | Creature — Vampire | 3/3
+When this creature enters, gain control of target creature with mana value less than or equal to the number of Vampires you control until end of turn. Untap that creature. It gains haste until end of turn.
+
+#T103 | C | MV 3 U | Creature — Zombie | 3/2
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, scry 1, then draw a card. (To scry 1, look at the top card of your library, then you may put that card on the bottom.)
+
+#T104 | M | MV 4 W | Enchantment
+As long as you control seven or more enchantments, creatures you control have flying and vigilance.
+Whenever you cast an enchantment spell, create a white Spirit Cleric creature token with "This token's power and toughness are each equal to the number of Spirits you control."
+
+#T105 | C | MV 3 R | Sorcery
+Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T106 | C | MV 5 B | Creature — Zombie Soldier | 1/13
+This creature enters tapped.
+
+#T107 | R | MV 0 C | Land
+This land enters tapped unless you control two or more other lands.
+{T}: Add {U} or {R}.
+
+#T108 | C | MV 1 G | Creature — Wolf | 1/1
+{1}{G}: This creature gets +2/+2 until end of turn. Activate only once each turn.
+
+#T109 | U | MV 2 R | Creature — Wolf | 2/2
+{3}{R}, {T}: This creature deals damage equal to the number of Wolves and Werewolves you control to target opponent.
+
+#T110 | R | MV 4 UG | Legendary Creature — Frog | 3/3
+Whenever a Frog you control attacks, mill three cards.
+Whenever a permanent card is put into your graveyard from your library, exile it with a croak counter on it.
+You may play lands and cast spells from among cards you own in exile with croak counters on them.
+
+#T111 | C | MV 1 W | Instant
+~ deals 2 damage to target attacking or blocking creature. Scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+
+#T112 | R | MV 3 U | Creature — Spirit | 3/1
+Flying
+At the beginning of combat on your turn, choose up to one —
+• Tap target creature.
+• Target creature doesn't untap during its controller's next untap step.
+
+#T113 | U | MV 2 U | Creature — Drake | 2/1
+Flying
+Whenever this creature becomes the target of a spell you control, draw a card.
+
+#T114 | U | MV 4 G | Creature — Human Archer | 4/3
+When this creature enters, choose up to one —
+• Destroy target artifact an opponent controls.
+• This creature fights target Zombie an opponent controls.
+
+#T115 | C | MV 0 C | Basic Land — Plains
+({T}: Add {W}.)
+
+#T116 | R | MV 2 W | Instant
+Cleave {X}{R}{W} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+~ deals X damage to target creature or planeswalker and you gain X life. [X is the number of creatures you control.]
+
+#T117 | C | MV 4 U | Creature — Bird Horror | 3/3
+Flying
+Whenever you cast a noncreature spell, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+
+#T118 | M | MV 3 R | Legendary Planeswalker — Chandra
++1: Add {R}. ~ deals 1 damage to up to one target player or planeswalker.
++1: Exile the top card of your library. If it's red, you may cast it this turn.
+−7: Exile the top five cards of your library. You may cast red spells from among them this turn. You get an emblem with "Whenever you cast a red spell, this emblem deals X damage to any target, where X is the amount of mana spent to cast that spell."
+
+#T119 | U | MV 5 B | Sorcery
+Return target creature card from your graveyard to the battlefield.
+When you discard this card, you may pay {B}. When you do, return target creature card from your graveyard to your hand.
+
+#T120 | U | MV 2 W | Creature — Spirit Warlock | 1/3
+Whenever you cast an enchantment spell, you gain 2 life.
+
+#T121 | M | MV 6 BR | Legendary Creature — Vampire Noble | 3/4
+Flying, haste
+Whenever ~ attacks, return target creature card from your graveyard to the battlefield tapped and attacking. It gains "When you don't control a legendary Vampire, exile this creature."
+
+#T122 | R | MV 4 G | Creature — Human Shaman | 3/5
+Whenever this creature attacks, you may search your library for a basic land card that doesn't share a land type with a land you control, put that card onto the battlefield, then shuffle.
+{5}{G}: Create a 1/1 green Insect creature token. Put X +1/+1 counters on it, where X is the number of basic land types among lands you control. Activate only as a sorcery.
+
+#T123 | U | MV 3 WB | Creature — Vampire Cleric | 2/3
+Lifelink
+At the beginning of your end step, if you gained life this turn, you may pay {2}. If you do, draw a card.
+
+#T124 | U | MV 3 R | Creature — Vampire | 3/3
+This creature can't block.
+Whenever you sacrifice one or more Blood tokens, target creature can't block this turn. This ability triggers only once each turn.
+
+#T125 | C | MV 4 B | Creature — Vampire | 3/3
+Menace
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+Whenever this creature attacks, you may sacrifice a Blood token. If you do, it gets +2/+2 until end of turn.
+
+#T126 | C | MV 2 G | Creature — Wolf | 2/2
+During your turn, this creature gets +0/+2.
+
+#T127 | U | MV 4 WG | Creature — Human Knight | 4/4
+As long as you've put one or more +1/+1 counters on a creature this turn, this creature has trample and lifelink.
+{1}{G}{W}: Target creature you control with a +1/+1 counter on it gains trample and lifelink until end of turn.
+
+#T128 | R | MV 4 R | Creature — Human Rogue | 4/3
+Haste
+Whenever this creature attacks, if you attacked with exactly one other creature this combat, you may have that creature's base power and toughness become 4/3 until end of turn.
+
+#T129 | C | MV 4 W | Creature — Human Soldier | 4/2
+Whenever this creature attacks, you may pay {1}. If you do, it gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#T130 | U | MV 2 W | Creature — Spirit | 3/1
+{W}, Exile three cards from your graveyard: This creature gains first strike until end of turn.
+Discard a card: Exile this creature. Return it to the battlefield under its owner's control at the beginning of the next end step.
+
+#T131 | C | MV 5 R | Sorcery
+~ deals 4 damage to target creature. Create a number of Blood tokens equal to the amount of excess damage dealt to that creature this way. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T132 | U | MV 3 W | Sorcery
+Until end of turn, target creature gets +3/+3, up to one other target creature gets +2/+2, and up to one other target creature gets +1/+1. Those creatures gain vigilance until end of turn.
+
+#T133 | U | MV 5 U | Creature — Zombie | 3/5
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, target creature's owner puts it on their choice of the top or bottom of their library.
+
+#T134 | U | MV 5 B | Creature — Vampire Soldier | 4/4
+Whenever this creature attacks, you may sacrifice a Blood token. If you do, put a +1/+1 counter on this creature and draw a card.
+
+#T135 | C | MV 3 G | Creature — Human Archer | 1/4
+Reach
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+
+#T136 | M | MV 6 B | Creature — Zombie | 4/4
+Menace
+When this creature enters or dies, exile another card from a graveyard. When you do, choose one —
+• Remove X counters from target permanent, where X is the mana value of the exiled card.
+• Target creature an opponent controls gets -X/-X until end of turn, where X is the mana value of the exiled card.
+
+#T137 | U | MV 1 U | Creature — Zombie Horse | 3/3
+As an additional cost to cast this spell, exile a creature card from your graveyard.
+{3}{U}, Exile this card from your graveyard: Draw a card.
+
+#T138 | C | MV 1 U | Instant
+Counter target spell unless its controller pays {X}. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
+
+#T139 | R | MV 5 C | Artifact
+{1}, {T}, Exile a creature card from your graveyard: Create a token that's a copy of the exiled card, except it's a 0/0 Construct artifact in addition to its other types and it has "This token gets +1/+1 for each Construct you control." It gains haste until end of turn. Activate only as a sorcery.
+
+#T140 | C | MV 4 U | Instant
+Look at the top four cards of your library. Put two of those cards into your hand and the rest into your graveyard.
+
+#T141 | R | MV 3 W | Creature — Vampire | 2/3
+Flying
+Whenever one or more other creatures you control with power 2 or less enter, draw a card. This ability triggers only once each turn.
+
+#T142 | R | MV 4 RG | Legendary Creature — Human Ranger | 2/3
+Reach (This creature can block creatures with flying.)
+First strike (This creature deals combat damage before creatures without first strike.)
+At the beginning of combat on your turn, put X +1/+1 counters on another target creature you control, where X is ~'s power. That creature gains haste until end of turn.
+
+#T143 | U | MV 1 B | Sorcery
+Cleave {2}{B} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Target player reveals their hand. You choose a nonland card from it [with mana value 2 or less]. That player discards that card.
+
+#T144 | R | MV 2 W | Legendary Creature — Human Soldier | 2/1
+First strike
+Noncreature spells cost {1} more to cast.
+
+#T145 | C | MV 3 U | Instant
+This spell costs {1} less to cast if you control a Zombie.
+Tap target creature. It doesn't untap during its controller's next untap step.
+Draw a card.
+
+#T146 | C | MV 1 W | Creature — Human Cleric | 1/1
+{T}: Target creature gets +1/+0 until end of turn. You gain 1 life. Activate only as a sorcery.
+
+#T147 | R | MV 0 C | Land
+This land enters tapped unless you control two or more other lands.
+{T}: Add {B} or {G}.
+
+#T148 | U | MV 6 U | Creature — Bird Horror | 4/4
+Flying
+Whenever you attack with one or more creatures, target player mills that many cards. (To mill a card, a player puts the top card of their library into their graveyard.)
+{2}{U}: Put this card from your graveyard into your library second from the top.
+
+#T149 | R | MV 3 R | Enchantment — Aura Curse
+Enchant player
+Creatures attacking enchanted player have trample.
+Whenever a creature deals combat damage to enchanted player, that player exiles the top card of their library. Until end of turn, that creature's controller may play that card and they may spend mana as though it were mana of any color to cast that spell.
+
+#T150 | C | MV 2 W | Creature — Human Soldier | 1/2
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+When this creature dies, put its counters on target creature you control.
+
+#T151 | C | MV 4 W | Creature — Bird | 2/3
+Flying
+If you would gain life, you gain that much life plus 1 instead.
+{1}{W}: This creature gains lifelink until end of turn.
+
+#T152 | C | MV 1 R | Instant
+~ deals 2 damage to target creature or planeswalker. If that creature or planeswalker would die this turn, exile it instead.
+
+#T153 | C | MV 2 U | Instant
+Until end of turn, target creature becomes a blue Serpent with base power and toughness 5/5.
+
+#T154 | C | MV 5 B | Creature — Zombie Kraken | 5/4
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, each opponent sacrifices a creature of their choice.
+
+#T155 | U | MV 3 U | Instant
+This spell costs {1} less to cast if you control a Spirit. It also costs {1} less to cast if you control an enchantment.
+Counter target spell unless its controller pays {3}.
+
+#T156 | C | MV 1 B | Creature — Skeleton | 1/1
+{2}{B}: Return this card from your graveyard to the battlefield tapped.
+
+#T157 | U | MV 3 R | Artifact — Vehicle | 5/5
+Trample
+Tap two untapped creatures you control: This Vehicle becomes an artifact creature until end of turn.
+
+#T158 | C | MV 3 W | Creature — Human Soldier | 3/3
+This creature can't attack alone.
+Whenever this creature attacks, untap target creature.
+
+#T159 | C | MV 3 W | Enchantment — Aura
+Enchant creature
+Enchanted creature can't attack or block.
+{4}{W}: Exile enchanted creature. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T160 | U | MV 2 U | Instant
+Cleave {3}{U} (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Return target [Wolf or Werewolf] creature to its owner's hand.
+Draw a card.
+
+#T161 | R | MV 2 B | Creature — Zombie Warrior | 3/3
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, destroy target planeswalker.
+At the beginning of your upkeep, this creature deals 1 damage to you.
+
+#T162 | C | MV 2 W | Instant
+Target creature gets +2/+2 and gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+
+#T163 | U | MV 4 G | Enchantment
+Whenever a Human you control dies, draw a card.
+Whenever a creature you control with a +1/+1 counter on it dies, you gain 2 life.
+
+#T164 | M | MV 7 B | Legendary Creature — Slug Horror | 7/7
+At the beginning of each end step, put a slime counter on each creature you don't control.
+Creatures you don't control get -1/-1 for each slime counter on them.
+Whenever a creature you don't control with a slime counter on it dies, create a 1/1 black Slug creature token.
+{U}{B}, Sacrifice a Slug: Draw a card.
+
+#T165 | C | MV 4 R | Creature — Wolf | 4/3
+{1}{R}: This creature gains first strike until end of turn. Activate only as a sorcery.
+
+#T166 | C | MV 3 C | Artifact Creature — Construct | 2/2
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T167 | U | MV 4 U | Creature — Human Wizard | 3/2
+Whenever you cast a noncreature spell, create a 1/1 white Spirit creature token with flying. This ability triggers only once each turn.
+
+#T168 | C | MV 4 B | Creature — Zombie Bear | 2/3
+Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)
+When this creature enters, exile up to one target card from a graveyard. If a creature card was exiled this way, each opponent loses 2 life and you gain 2 life.
+
+#T169 | C | MV 1 R | Creature — Vampire | 1/1
+When this creature enters, it deals 1 damage to each opponent. Create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T170 | U | MV 4 G | Sorcery
+Look at the top seven cards of your library. Put up to two land cards from among them onto the battlefield tapped. Put the rest on the bottom of your library in a random order.
+
+#T171 | C | MV 0 C | Basic Land — Mountain
+({T}: Add {R}.)
+
+#T172 | R | MV 0 C | Land
+{T}: Add {C}.
+{T}, Pay 1 life: Add one mana of any color. Spend this mana only to cast a Vampire spell.
+{5}, {T}: Create a Blood token. This ability costs {1} less to activate for each Vampire you control. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T173 | C | MV 2 G | Creature — Human Warlock | 2/2
+Whenever another Human you control enters, this creature gets +1/+1 until end of turn.
+
+#T174 | R | MV 3 B | Creature — Zombie | 3/1
+Whenever this creature or another nontoken Zombie you control dies, create a 2/2 black Zombie creature token.
+
+#T175 | U | MV 2 BR | Creature — Vampire | 3/2
+When this creature enters, create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+{T}, Sacrifice this creature: Target creature gets -X/-X until end of turn, where X is twice the number of Blood tokens you control. Activate only as a sorcery.
+
+#T176 | U | MV 2 W | Enchantment
+When this enchantment enters, exile target creature an opponent controls with mana value 3 or less until this enchantment leaves the battlefield.
+Whenever an opponent casts a Vampire spell with the same name as a card exiled with this enchantment, you gain 2 life.
+
+#T177 | U | MV 3 G | Artifact — Equipment
+Equipped creature gets +3/+3.
+Whenever equipped creature attacks, you may sacrifice a Forest. If you do, that creature gains trample until end of turn.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)
+
+#T178 | U | MV 5 R | Creature — Devil | 3/3
+Haste
+Whenever you cast a noncreature spell, this creature gets +2/+2 until end of turn.
+
+#T179 | C | MV 1 G | Instant
+Target creature gets +2/+2 and gains trample until end of turn.
+
+#T180 | M | MV 3 G | Creature — Wolf | 3/4
+Vigilance
+Whenever this creature enters or attacks, exile a card from a graveyard.
+Spells you cast cost {1} less to cast for each card type they share with cards exiled with this creature.
+
+#T181 | U | MV 4 B | Creature — Vampire Assassin | 4/2
+When this creature enters, target creature an opponent controls gets -2/-2 until end of turn if that opponent controls no other creatures.
+
+#T182 | U | MV 5 W | Creature — Angel Soldier | 3/3
+Flying
+When this creature enters, put a +1/+1 counter on each of up to two other target creatures.
+
+#T183 | R | MV 0 C | Land
+This land enters tapped unless you control two or more other lands.
+{T}: Add {G} or {U}.
+
+#T184 | C | MV 3 G | Instant
+Target creature you control gets +2/+0 until end of turn if it's night. Then it deals damage equal to its power to target creature you don't control.
+
+#T185 | C | MV 2 U | Creature — Zombie Horror | 2/1
+When this creature dies, you may search your library for a card named ~, reveal it, put it into your hand, then shuffle.
+
+#T186 | C | MV 4 G | Creature — Human Peasant | 1/1
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+When this creature enters, create a 3/1 green Boar creature token.
+
+#T187 | C | MV 5 W | Creature — Spirit | 3/3
+Flying
+{3}{W}, Exile this card from your graveyard: Create two 1/1 white Spirit creature tokens with flying. Activate only if you control an enchantment and only as a sorcery.
+
+#T188 | C | MV 2 R | Creature — Human Shaman | 1/3
+Whenever you cast a noncreature spell, this creature deals 1 damage to each opponent.
+
+#T189 | C | MV 2 R | Creature — Wolf | 2/2
+As long as you control another Wolf or Werewolf, this creature gets +1/+0 and has trample.
+
+#T190 | C | MV 0 C | Land
+{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
+
+#T191 | U | MV 4 W | Creature — Human Knight | 2/2
+Flying
+Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+Whenever this creature attacks, you may pay {1}{W}. If you do, target attacking creature without flying gains flying until end of turn.
+
+#T192 | C | MV 2 U | Creature — Spirit | 3/3
+Defender
+Whenever an enchantment you control enters, this creature can attack this turn as though it didn't have defender.
+
+#T193 | C | MV 3 G | Enchantment — Aura
+Enchant creature or land
+As long as enchanted permanent is a creature, it gets +2/+2.
+As long as enchanted permanent is a land, it has "{T}: Add two mana of any one color."
+
+#T194 | R | MV 7 B | Creature — Demon | 6/6
+Flying
+At the beginning of your end step, sacrifice a non-Demon creature. If you do, create a token that's a copy of this creature.
+
+#T195 | U | MV 3 U | Instant
+Draw three cards. Then discard two cards unless you discard a basic land card.
+
+#T196 | C | MV 3 B | Sorcery
+Choose one —
+• Exile target Zombie.
+• Target opponent exiles two cards from their hand.
+
+#T197 | C | MV 1 R | Sorcery
+~ deals 1 damage to each opponent and each creature and planeswalker they control.
+
+#T198 | U | MV 2 G | Creature — Human Druid | 1/2
+This creature gets +3/+2 as long as there are four or more creature cards in your graveyard.
+{T}: Add one mana of any color.
+
+#T199 | R | MV 3 U | Legendary Creature — Human Wizard | 1/4
+Zombies you control have flying.
+{U}, {T}, Sacrifice another nontoken creature: Create an X/X blue Zombie creature token, where X is the sacrificed creature's toughness.
+
+#T200 | U | MV 2 W | Artifact — Equipment
+Equipped creature gets +2/+0. It gets an additional +0/+2 and has first strike as long as an Equipment named Groom's Finery is attached to a creature you control.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+
+#T201 | R | MV 2 U | Creature — Zombie Horror | 1/2
+{2}{U}: Exile target creature card from your graveyard and put a +1/+1 counter on this creature.
+This creature has all activated abilities of all creature cards exiled with it.
+
+#T202 | C | MV 3 G | Enchantment — Aura
+Enchant creature
+When this Aura enters, draw a card.
+Enchanted creature gets +1/+3.
+
+#T203 | R | MV 3 G | Creature — Human Warrior | 1/1
+Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+This creature enters with two +1/+1 counters on it for each other nontoken Human you control.
+
+#T204 | U | MV 2 UB | Creature — Zombie | 2/2
+Exploit (When this creature enters, you may sacrifice a creature.)
+Whenever a creature you control exploits a nontoken creature, create a 2/2 black Zombie creature token.
+
+#T205 | C | MV 6 R | Creature — Elemental | 6/4
+When this creature dies, it deals 3 damage to any target.
+
+#T206 | R | MV 0 C | Land
+This land enters tapped unless you control two or more other lands.
+{T}: Add {W} or {B}.
+
+#T207 | M | MV 4 R | Creature — Dragon | 4/4
+Flying
+Whenever you cast a noncreature spell, create an X/X red Dragon Illusion creature token with flying and haste, where X is the amount of mana spent to cast that spell. Exile that token at the beginning of the next end step.
+
+#T208 | C | MV 2 R | Sorcery
+Exile the top two cards of your library. Until the end of your next turn, you may play those cards.
+
+#T209 | R | MV 4 U | Creature — Zombie Horror | 3/3
+Flash
+Flying
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, counter target spell, activated ability, or triggered ability.
+
+#T210 | R | MV 6 W | Enchantment
+Creatures you control with +1/+1 counters on them have base power and toughness 4/4, have flying, and are Angels in addition to their other types.
+
+#T211 | R | MV 2 C | Artifact — Book Clue
+This artifact enters with a number of suspect counters on it equal to the greatest number of creatures a player controls.
+{2}, {T}, Remove a suspect counter from this artifact: Draw a card.
+{2}, Sacrifice this artifact: Draw a card.
+
+#T212 | C | MV 2 B | Sorcery
+Target player loses 2 life and you gain 2 life. Create two Blood tokens. (They're artifacts with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T213 | C | MV 3 B | Sorcery
+You draw two cards, lose 2 life, then create a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+
+#T214 | R | MV 4 B | Creature — Vampire | 5/6
+Flying, trample
+Whenever an opponent casts a spell, that player creates a Blood token. (It's an artifact with "{1}, {T}, Discard a card, Sacrifice this token: Draw a card.")
+Whenever this creature attacks, it gets +1/+0 until end of turn for each Blood token defending player controls.
+
+#T215 | C | MV 2 R | Instant
+Choose one —
+• ~ deals 3 damage to target creature.
+• Destroy target artifact.
+
+#T216 | U | MV 2 W | Instant
+Choose one —
+• Target creature gains indestructible until end of turn. (Damage and effects that say "destroy" don't destroy it.)
+• Destroy target creature with toughness 4 or greater.
+
+#T217 | R | MV 0 C | Land
+This land enters tapped unless you control two or more other lands.
+{T}: Add {R} or {W}.
+
+#T218 | M | MV 4 U | Enchantment
+Whenever a nontoken Zombie you control enters, create a token that's a copy of that creature.
+
+#T219 | C | MV 4 U | Creature — Zombie | 3/3
+Exploit (When this creature enters, you may sacrifice a creature.)
+When this creature exploits a creature, return target instant or sorcery card from your graveyard to your hand.
+
+#T220 | U | MV 4 R | Sorcery
+It becomes night. Discard any number of cards, then draw that many cards plus one.

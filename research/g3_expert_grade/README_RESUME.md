@@ -8,3 +8,8 @@ Branch: research/g3-expert-grade. All inputs are committed; each finished output
    - "<SET> passK": prompt = prompt_judge.txt with {SET} and {K} replaced.
    Paths in the prompts assume the worktree at /home/claude/wt-g3; adjust if different.
 3. Commit each new output; when status.py shows none missing: `python3 score.py` → score.json, RESULTS.md.
+
+## Plan A (G3 on all 28 training sets, 1 pass each)
+`python3 build_all.py` (inputs in all/<SET>/, keys in keys_all/<SET>.csv — keys are NOT in judge folders), `python3 status_all.py`.
+For each missing set launch one Opus subagent with prompt_judge_all.txt ({SET} replaced); it writes all/<SET>/pass1.json. Commit each.
+ECL/TMT pass1 are copied from the pilot. When none missing: build G3-feature table, retrain B10 with G3 for C9 ("B11g"), LOSO vs B10; judge on the 17 non-lesson sets.
