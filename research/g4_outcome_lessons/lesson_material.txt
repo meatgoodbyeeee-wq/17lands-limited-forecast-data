@@ -1,0 +1,2342 @@
+Each card: [set] name, then text. model = B10 prediction (pp vs set mean, rank in set); actual = real GIH WR (pp vs set mean); miss = actual - model; expert = pre-release human grade 0-5 (if any).
+
+[TLA] Fire Lord Azula | R | MV 4 UBR | Legendary Creature — Human Noble | 4/4
+Firebending 2 (Whenever this creature attacks, add {R}{R}. This mana lasts until end of combat.)
+Whenever you cast a spell while ~ is attacking, copy that spell. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)
+model -0.2 (rank 136/282) | actual -5.1 | miss -4.9 | expert 2.5/5
+
+[LCI] Acolyte of Aclazotz | C | MV 3 B | Creature — Vampire Cleric | 1/4
+{T}, Sacrifice another creature or artifact: Each opponent loses 1 life and you gain 1 life.
+model -1.7 (rank 197/252) | actual -7.2 | miss -5.4 | expert 1.5/5
+
+[BLB] Stormsplitter | M | MV 4 R | Creature — Otter Wizard | 1/4
+Haste
+Whenever you cast an instant or sorcery spell, create a token that's a copy of this creature. Exile that token at the beginning of the next end step.
+model -2.1 (rank 224/266) | actual -13.3 | miss -11.2 | expert 2.0/5
+
+[LCI] Ruin-Lurker Bat | U | MV 1 W | Creature — Bat | 1/1
+Flying, lifelink
+At the beginning of your end step, if you descended this turn, scry 1. (You descended if a permanent card was put into your graveyard from anywhere.)
+model +1.2 (rank 62/252) | actual +5.6 | miss +4.5 | expert 2.5/5
+
+[LCI] The Mycotyrant | M | MV 3 BG | Legendary Creature — Elder Fungus
+Trample
+~'s power and toughness are each equal to the number of creatures you control that are Fungi and/or Saprolings.
+At the beginning of your end step, create X 1/1 black Fungus creature tokens with "This token can't block," where X is the number of times you descended this turn. (You descend each time a permanent card is put into your graveyard from anywhere.)
+model +1.7 (rank 46/252) | actual -2.9 | miss -4.6 | expert 3.0/5
+
+[EOE] Devastating Onslaught | M | MV 1 R | Sorcery
+Create X tokens that are copies of target artifact or creature you control. Those tokens gain haste until end of turn. Sacrifice them at the beginning of the next end step.
+model -2.3 (rank 233/262) | actual +1.7 | miss +4.0 | expert 2.0/5
+
+[SOS] Ennis, Debate Moderator | U | MV 2 W | Legendary Creature — Human Cleric | 1/1
+When ~ enters, exile up to one other target creature you control. Return that card to the battlefield under its owner's control at the beginning of the next end step.
+At the beginning of your end step, if one or more cards were put into exile this turn, put a +1/+1 counter on ~.
+model +0.7 (rank 87/269) | actual -4.2 | miss -5.0 | expert 3.0/5
+
+[SOS] Divergent Equation | U | MV 1 U | Instant
+Return up to X target instant and/or sorcery cards from your graveyard to your hand.
+Exile ~.
+model -5.1 (rank 263/269) | actual +2.9 | miss +8.0 | expert 2.5/5
+
+[LCI] Tectonic Hazard | C | MV 1 R | Sorcery
+~ deals 1 damage to each opponent and each creature they control.
+model -1.8 (rank 201/252) | actual -7.4 | miss -5.6 | expert 1.0/5
+
+[BLB] Valley Questcaller | R | MV 2 W | Creature — Rabbit Warrior | 2/3
+Whenever one or more other Rabbits, Bats, Birds, and/or Mice you control enter, scry 1.
+Other Rabbits, Bats, Birds, and Mice you control get +1/+1.
+model +1.3 (rank 63/266) | actual +8.7 | miss +7.4 | expert 4.0/5
+
+[LCI] Malicious Eclipse | U | MV 3 B | Sorcery
+All creatures get -2/-2 until end of turn. If a creature an opponent controls would die this turn, exile it instead.
+model -0.9 (rank 163/252) | actual -5.4 | miss -4.5 | expert 2.0/5
+
+[EOE] Sunset Saboteur | R | MV 2 B | Creature — Human Rogue | 4/1
+Menace
+Ward—Discard a card.
+Whenever this creature attacks, put a +1/+1 counter on target creature an opponent controls.
+model +2.0 (rank 49/262) | actual +5.7 | miss +3.7 | expert 2.0/5
+
+[FDN] Sire of Seven Deaths | M | MV 7 C | Creature — Eldrazi | 7/7
+Reach, first strike
+Vigilance, menace
+Trample, lifelink
+Ward—Pay 7 life.
+model +3.9 (rank 19/273) | actual +7.8 | miss +3.9 | expert 4.0/5
+
+[TDM] Arashin Sunshield | C | MV 4 W | Creature — Human Warrior | 3/4
+When this creature enters, exile up to two target cards from a single graveyard.
+{W}, {T}: Tap target creature.
+model +0.7 (rank 78/258) | actual -3.7 | miss -4.5 | expert 1.5/5
+
+[DSK] Sheltered by Ghosts | U | MV 2 W | Enchantment — Aura
+Enchant creature you control
+When this Aura enters, exile target nonland permanent an opponent controls until this Aura leaves the battlefield.
+Enchanted creature gets +1/+0 and has lifelink and ward {2}.
+model +2.5 (rank 34/270) | actual +6.6 | miss +4.1 | expert 3.0/5
+
+[DSK] Winter, Misanthropic Guide | R | MV 4 BRG | Legendary Creature — Human Warlock | 3/4
+Ward {2}
+At the beginning of your upkeep, each player draws two cards.
+Delirium — As long as there are four or more card types among cards in your graveyard, each opponent's maximum hand size is equal to seven minus the number of those card types.
+model +0.8 (rank 83/270) | actual -6.5 | miss -7.3 | expert 1.5/5
+
+[BLB] Valley Mightcaller | R | MV 1 G | Creature — Frog Warrior | 1/1
+Trample
+Whenever another Frog, Rabbit, Raccoon, or Squirrel you control enters, put a +1/+1 counter on this creature.
+model +0.1 (rank 127/266) | actual +4.7 | miss +4.6 | expert 3.5/5
+
+[OTJ] Giant Beaver | C | MV 4 G | Creature — Beaver Mount | 4/4
+Vigilance
+Whenever this creature attacks while saddled, put a +1/+1 counter on target creature that saddled it this turn.
+Saddle 3 (Tap any number of other creatures you control with total power 3 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+model -2.8 (rank 252/275) | actual +1.4 | miss +4.1 | expert 2.5/5
+
+[SOS] Strife Scholar | C | MV 3 R | Creature — Orc Sorcerer // Sorcery | 3/2
+Ward—Pay 2 life.
+This creature enters prepared. (While it's prepared, you may cast a copy of its spell. Doing so unprepares it.) Create two 2/2 red and white Spirit creature tokens.
+model +2.8 (rank 24/269) | actual -4.3 | miss -7.1 | expert 2.5/5
+
+[FDN] Empyrean Eagle | U | MV 3 WU | Creature — Bird Spirit | 2/3
+Flying
+Other creatures you control with flying get +1/+1.
+model +0.5 (rank 101/273) | actual +4.7 | miss +4.2 | expert 2.5/5
+
+[SOS] Arcane Omens | U | MV 5 B | Sorcery
+Converge — Target player discards X cards, where X is the number of colors of mana spent to cast this spell.
+model -3.9 (rank 258/269) | actual +5.0 | miss +8.9 | expert 1.0/5
+
+[BLB] Thought-Stalker Warlock | U | MV 3 B | Creature — Lizard Warlock | 2/2
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, choose target opponent. If they lost life this turn, they reveal their hand, you choose a nonland card from it, and they discard that card. Otherwise, they discard a card.
+model +1.2 (rank 70/266) | actual +5.2 | miss +4.0 | expert 3.5/5
+
+[BLB] Splash Portal | U | MV 1 U | Sorcery
+Exile target creature you control, then return it to the battlefield under its owner's control. If that creature is a Bird, Frog, Otter, or Rat, draw a card.
+model -4.9 (rank 261/266) | actual -1.2 | miss +3.7 | expert 2.0/5
+
+[BLB] Wishing Well | R | MV 4 U | Artifact
+{T}: Put a coin counter on this artifact. When you do, you may cast target instant or sorcery card with mana value equal to the number of coin counters on this artifact from your graveyard without paying its mana cost. If that spell would be put into your graveyard, exile it instead. Activate only as a sorcery.
+model -5.1 (rank 264/266) | actual +0.3 | miss +5.4 | expert 2.0/5
+
+[EOE] Requiem Monolith | R | MV 3 B | Artifact
+{T}: Until end of turn, target creature gains "Whenever this creature is dealt damage, you draw that many cards and lose that much life." That creature's controller may have this artifact deal 1 damage to it. Activate only as a sorcery.
+model -5.2 (rank 255/262) | actual +0.2 | miss +5.4 | expert 3.0/5
+
+[MKM] Warleader's Call | R | MV 3 WR | Enchantment
+Creatures you control get +1/+1.
+Whenever a creature you control enters, this enchantment deals 1 damage to each opponent.
+model +0.7 (rank 79/271) | actual +5.6 | miss +4.9 | expert 4.0/5
+
+[FDN] Elenda, Saint of Dusk | R | MV 4 WB | Legendary Creature — Vampire Knight | 4/4
+Lifelink, hexproof from instants
+As long as your life total is greater than your starting life total, ~ gets +1/+1 and has menace. ~ gets an additional +5/+5 as long as your life total is at least 10 greater than your starting life total.
+model +2.6 (rank 38/273) | actual +7.2 | miss +4.7 | expert 3.5/5
+
+[TDM] Hundred-Battle Veteran | U | MV 4 B | Creature — Zombie Warrior | 4/2
+As long as there are three or more different kinds of counters among creatures you control, this creature gets +2/+4.
+You may cast this card from your graveyard. If you do, it enters with a finality counter on it. (If a creature with a finality counter on it would die, exile it instead.)
+model -0.2 (rank 128/258) | actual -6.2 | miss -6.0 | expert 2.5/5
+
+[TDM] Ureni, the Song Unending | M | MV 8 URG | Legendary Creature — Spirit Dragon | 10/10
+Flying, protection from white and from black
+When ~ enters, it deals X damage divided as you choose among any number of target creatures and/or planeswalkers your opponents control, where X is the number of lands you control.
+model +6.3 (rank 5/258) | actual +12.2 | miss +5.9 | expert 4.0/5
+
+[DSK] Ghostly Dancers | R | MV 5 W | Creature — Spirit | 2/5
+Flying
+When this creature enters, return an enchantment card from your graveyard to your hand or unlock a locked door of a Room you control.
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, create a 3/1 white Spirit creature token with flying.
+model +1.5 (rank 58/270) | actual +9.1 | miss +7.6 | expert 3.5/5
+
+[FDN] Twinflame Tyrant | M | MV 5 R | Creature — Dragon | 3/5
+Flying
+If a source you control would deal damage to an opponent or a permanent an opponent controls, it deals double that damage instead.
+model +1.9 (rank 54/273) | actual +5.9 | miss +3.9 | expert 4.0/5
+
+[SOS] Shattered Sanctum | R | MV 0 C | Land
+This land enters tapped unless you control two or more other lands.
+{T}: Add {W} or {B}.
+model -1.7 (rank 215/269) | actual +2.1 | miss +3.8 | expert 2.5/5
+
+[TLA] Fatal Fissure | U | MV 2 B | Instant
+Choose target creature. When that creature dies this turn, you earthbend 4. (Target land you control becomes a 0/0 creature with haste that's still a land. Put four +1/+1 counters on it. When it dies or is exiled, return it to the battlefield tapped.)
+model -3.9 (rank 277/282) | actual -9.6 | miss -5.7 | expert 1.0/5
+
+[DSK] Dazzling Theater // Prop Room | R | MV 7 W | Enchantment — Room // Enchantment — Room
+Creature spells you cast have convoke. (Your creatures can help cast those spells. Each creature you tap while casting a creature spell pays for {1} or one mana of that creature's color.)
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) Untap each creature you control during each other player's untap step.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+model -4.3 (rank 264/270) | actual -15.6 | miss -11.3 | expert 0.5/5
+
+[OTJ] Spinewoods Armadillo | U | MV 6 G | Creature — Armadillo | 7/7
+Reach
+Ward {3} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)
+{1}{G}, Discard this card: Search your library for a basic land card or a Desert card, reveal it, put it into your hand, then shuffle. You gain 3 life.
+model +0.6 (rank 90/275) | actual +6.2 | miss +5.6 | expert 3.0/5
+
+[BLB] Fecund Greenshell | R | MV 5 G | Creature — Elemental Turtle | 4/6
+Reach
+As long as you control ten or more lands, creatures you control get +2/+2.
+Whenever this creature or another creature you control with toughness greater than its power enters, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped. Otherwise, put it into your hand.
+model +4.6 (rank 15/266) | actual +8.1 | miss +3.6 | expert 4.0/5
+
+[TLA] The Mechanist, Aerial Artisan | R | MV 3 U | Legendary Creature — Human Artificer Ally | 1/3
+Whenever you cast a noncreature spell, create a Clue token. (It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+{T}: Until end of turn, target artifact token you control becomes a 3/1 Construct artifact creature with flying.
+model +0.3 (rank 114/282) | actual +3.6 | miss +3.3 | expert 2.5/5
+
+[EOE] Emissary Escort | R | MV 2 U | Artifact Creature — Robot Soldier | 0/4
+This creature gets +X/+0, where X is the greatest mana value among other artifacts you control.
+model -1.9 (rank 220/262) | actual +2.0 | miss +3.9 | expert 2.0/5
+
+[BLB] Burrowguard Mentor | U | MV 2 WG | Creature — Rabbit Soldier
+Trample
+~'s power and toughness are each equal to the number of creatures you control.
+model +1.2 (rank 71/266) | actual +4.7 | miss +3.5 | expert 3.0/5
+
+[FDN] Healer's Hawk | C | MV 1 W | Creature — Bird | 1/1
+Flying
+Lifelink (Damage dealt by this creature also causes you to gain that much life.)
+model -0.2 (rank 141/273) | actual +3.1 | miss +3.3 | expert 2.0/5
+
+[MKM] Kylox, Visionary Inventor | R | MV 7 UR | Legendary Creature — Lizard Artificer | 4/4
+Menace, ward {2}, haste
+Whenever ~ attacks, sacrifice any number of other creatures, then exile the top X cards of your library, where X is their total power. You may cast any number of instant and/or sorcery spells from among the exiled cards without paying their mana costs.
+model -0.2 (rank 137/271) | actual -10.1 | miss -9.9 | expert 1.5/5
+
+[OTJ] Trained Arynx | C | MV 2 W | Creature — Cat Beast Mount | 3/1
+Whenever this creature attacks while saddled, it gains first strike until end of turn. Scry 1. (Look at the top card of your library. You may put that card on the bottom.)
+Saddle 2 (Tap any number of other creatures you control with total power 2 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+model -1.5 (rank 205/275) | actual +2.8 | miss +4.3 | expert 2.0/5
+
+[TDM] Temur Battlecrier | R | MV 3 URG | Creature — Orc Ranger | 4/3
+During your turn, spells you cast cost {1} less to cast for each creature you control with power 4 or greater.
+model -1.3 (rank 188/258) | actual +3.3 | miss +4.6 | expert 3.0/5
+
+[BLB] Patchwork Banner | U | MV 3 C | Artifact
+As this artifact enters, choose a creature type.
+Creatures you control of the chosen type get +1/+1.
+{T}: Add one mana of any color.
+model -1.8 (rank 214/266) | actual +3.5 | miss +5.4 | expert 3.0/5
+
+[TLA] Earthbender Ascension | R | MV 3 G | Enchantment
+When this enchantment enters, earthbend 2. Then search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
+Landfall — Whenever a land you control enters, put a quest counter on this enchantment. When you do, if it has four or more quest counters on it, put a +1/+1 counter on target creature you control. It gains trample until end of turn.
+model +1.7 (rank 47/282) | actual +6.8 | miss +5.1 | expert 3.5/5
+
+[BLB] Finch Formation | C | MV 3 U | Creature — Bird Scout | 2/2
+Offspring {3} (You may pay an additional {3} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)
+Flying
+When this creature enters, target creature you control gains flying until end of turn.
+model +1.6 (rank 53/266) | actual -4.4 | miss -6.0 | expert 2.0/5
+
+[OTJ] Gisa, the Hellraiser | M | MV 5 B | Legendary Creature — Human Warlock | 4/4
+Ward—{2}, Pay 2 life.
+Skeletons and Zombies you control get +1/+1 and have menace.
+Whenever you commit a crime, create two tapped 2/2 blue and black Zombie Rogue creature tokens. This ability triggers only once each turn. (Targeting opponents, anything they control, and/or cards in their graveyards is a crime.)
+model +3.9 (rank 14/275) | actual +7.3 | miss +3.4 | expert 4.5/5
+
+[LCI] Bedrock Tortoise | R | MV 4 G | Creature — Turtle | 0/6
+During your turn, creatures you control have hexproof.
+Each creature you control with toughness greater than its power assigns combat damage equal to its toughness rather than its power.
+model +0.2 (rank 95/252) | actual +5.0 | miss +4.8 | expert 4.0/5
+
+[FDN] Searslicer Goblin | R | MV 2 R | Creature — Goblin Warrior | 2/1
+Raid — At the beginning of your end step, if you attacked this turn, create a 1/1 red Goblin creature token.
+model +2.3 (rank 45/273) | actual +5.9 | miss +3.7 | expert 3.0/5
+
+[TLA] Watery Grasp | C | MV 1 U | Enchantment — Aura
+Enchant creature
+Enchanted creature doesn't untap during its controller's untap step.
+Waterbend {5}: Enchanted creature's owner shuffles it into their library. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)
+model -1.8 (rank 233/282) | actual +2.3 | miss +4.1 | expert 2.0/5
+
+[DFT] Transit Mage | U | MV 3 U | Creature — Human Wizard | 2/2
+When this creature enters, you may search your library for an artifact card with mana value 4 or 5, reveal it, put it into your hand, then shuffle.
+model +0.2 (rank 105/272) | actual +3.7 | miss +3.5 | expert 2.5/5
+
+[DSK] Charred Foyer // Warped Space | M | MV 10 R | Enchantment — Room // Enchantment — Room
+At the beginning of your upkeep, exile the top card of your library. You may play it this turn.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) Once each turn, you may pay {0} rather than pay the mana cost for a spell you cast from exile.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+model -0.6 (rank 159/270) | actual -5.3 | miss -4.7 | expert 3.5/5
+
+[TLA] Wan Shi Tong, Librarian | M | MV 2 U | Legendary Creature — Bird Spirit | 1/1
+Flash
+Flying, vigilance
+When ~ enters, put X +1/+1 counters on him. Then draw half X cards, rounded down.
+Whenever an opponent searches their library, put a +1/+1 counter on ~ and draw a card.
+model +4.2 (rank 16/282) | actual +9.6 | miss +5.4 | expert 4.0/5
+
+[DFT] Stampeding Scurryfoot | C | MV 1 G | Creature — Mouse | 1/1
+Exhaust — {3}{G}: Put a +1/+1 counter on this creature. Create a 3/3 green Elephant creature token. (Activate each exhaust ability only once.)
+model -0.2 (rank 139/272) | actual +3.5 | miss +3.6 | expert 2.5/5
+
+[DFT] Thunderhead Gunner | C | MV 5 R | Creature — Shark Pirate | 4/5
+Reach
+Discard a card: Draw a card. Activate only as a sorcery and only once each turn.
+model -2.9 (rank 259/272) | actual +0.3 | miss +3.3 | expert 2.5/5
+
+[TLA] Octopus Form | C | MV 1 U | Instant — Lesson
+Target creature you control gets +1/+1 and gains hexproof until end of turn. Untap it. (It can't be the target of spells or abilities your opponents control.)
+model -1.9 (rank 238/282) | actual +2.0 | miss +3.9 | expert 1.5/5
+
+[SOS] Echocasting Symposium | M | MV 6 U | Sorcery — Lesson
+Target player creates a token that's a copy of target creature you control.
+Paradigm (Then exile this spell. After you first resolve a spell with this name, you may cast a copy of it from exile without paying its mana cost at the beginning of each of your first main phases.)
+model -0.2 (rank 143/269) | actual +3.2 | miss +3.4 | expert 3.5/5
+
+[EOE] Virulent Silencer | U | MV 3 C | Artifact Creature — Robot Assassin | 2/3
+Whenever a nontoken artifact creature you control deals combat damage to a player, that player gets two poison counters. (A player with ten or more poison counters loses the game.)
+model -1.7 (rank 209/262) | actual -6.3 | miss -4.6 | expert 1.5/5
+
+[DSK] Screaming Nemesis | M | MV 3 R | Creature — Spirit | 3/3
+Haste
+Whenever this creature is dealt damage, it deals that much damage to any other target. If a player is dealt damage this way, they can't gain life for the rest of the game.
+model +2.2 (rank 39/270) | actual +6.5 | miss +4.3 | expert 3.5/5
+
+[MKM] Living Conundrum | U | MV 5 U | Creature — Elemental | 2/5
+Hexproof
+If you would draw a card while your library has no cards in it, skip that draw instead.
+As long as there are no cards in your library, this creature has base power and toughness 10/10 and has flying and vigilance.
+model -2.1 (rank 236/271) | actual -8.1 | miss -6.0 | expert 3.0/5
+
+[MKM] Ill-Timed Explosion | R | MV 4 UR | Sorcery
+Draw two cards. Then you may discard two cards. When you do, ~ deals X damage to each creature, where X is the greatest mana value among cards discarded this way.
+model +1.5 (rank 51/271) | actual +5.8 | miss +4.3 | expert 3.5/5
+
+[EOE] Elegy Acolyte | R | MV 4 B | Creature — Human Cleric | 4/4
+Lifelink
+Whenever one or more creatures you control deal combat damage to a player, you draw a card and lose 1 life.
+Void — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was warped this turn, create a 2/2 colorless Robot artifact creature token.
+model +6.1 (rank 3/262) | actual +10.2 | miss +4.1 | expert 3.5/5
+
+[LCI] Pirate Hat | C | MV 2 U | Artifact — Equipment
+Equipped creature gets +1/+1 and has "Whenever this creature attacks, draw a card, then discard a card."
+Equip Pirate {1}
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+model -4.3 (rank 248/252) | actual -0.8 | miss +3.4 | expert 1.5/5
+
+[DSK] Kona, Rescue Beastie | R | MV 4 G | Legendary Creature — Beast Survivor | 4/3
+Survival — At the beginning of your second main phase, if ~ is tapped, you may put a permanent card from your hand onto the battlefield.
+model +0.7 (rank 84/270) | actual -4.9 | miss -5.6 | expert 3.0/5
+
+[OTJ] Stubborn Burrowfiend | U | MV 2 G | Creature — Badger Beast Mount | 2/2
+Whenever this creature becomes saddled for the first time each turn, mill two cards, then this creature gets +X/+X until end of turn, where X is the number of creature cards in your graveyard.
+Saddle 2 (Tap any number of other creatures you control with total power 2 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+model -0.9 (rank 185/275) | actual +3.5 | miss +4.4 | expert 3.0/5
+
+[TLA] Gran-Gran | U | MV 1 U | Legendary Creature — Human Peasant Ally | 1/2
+Whenever ~ becomes tapped, draw a card, then discard a card.
+Noncreature spells you cast cost {1} less to cast as long as there are three or more Lesson cards in your graveyard.
+model +0.2 (rank 119/282) | actual +3.8 | miss +3.6 | expert 2.0/5
+
+[DFT] Riptide Gearhulk | M | MV 5 WU | Artifact Creature — Construct | 2/5
+Double strike
+Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)
+When this creature enters, for each opponent, put up to one target nonland permanent that player controls into its owner's library third from the top.
+model +4.6 (rank 12/272) | actual +10.1 | miss +5.5 | expert 3.5/5
+
+[OTJ] Bristly Bill, Spine Sower | M | MV 2 G | Legendary Creature — Plant Druid | 2/2
+Landfall — Whenever a land you control enters, put a +1/+1 counter on target creature.
+{3}{G}{G}: Double the number of +1/+1 counters on each creature you control.
+model +5.6 (rank 7/275) | actual +9.0 | miss +3.4 | expert 4.5/5
+
+[LCI] Swashbuckler's Whip | U | MV 1 C | Artifact — Equipment
+Equipped creature has reach, "{2}, {T}: Tap target artifact or creature," and "{8}, {T}: Discover 10." (Exile cards from the top of your library until you exile a nonland card with mana value 10 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)
+Equip {1}
+model -1.9 (rank 204/252) | actual -7.0 | miss -5.1 | expert 1.0/5
+
+[TDM] Death Begets Life | M | MV 8 UBG | Sorcery
+Destroy all creatures and enchantments. Draw a card for each permanent destroyed this way.
+model +1.2 (rank 63/258) | actual +5.2 | miss +4.0 | expert 3.5/5
+
+[FDN] Leyline Axe | R | MV 4 C | Artifact — Equipment
+If this card is in your opening hand, you may begin the game with it on the battlefield.
+Equipped creature gets +1/+1 and has double strike and trample.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)
+model +0.5 (rank 102/273) | actual +6.8 | miss +6.3 | expert 3.5/5
+
+[SOS] Postmortem Professor | R | MV 2 B | Creature — Zombie Warlock | 2/2
+This creature can't block.
+Whenever this creature attacks, each opponent loses 1 life and you gain 1 life.
+{1}{B}, Exile an instant or sorcery card from your graveyard: Return this card from your graveyard to the battlefield.
+model +0.3 (rank 112/269) | actual +4.1 | miss +3.8 | expert 3.0/5
+
+[SOS] Tablet of Discovery | U | MV 3 R | Artifact
+When this artifact enters, mill a card. You may play that card this turn. (To mill a card, put the top card of your library into your graveyard.)
+{T}: Add {R}.
+{T}: Add {R}{R}. Spend this mana only to cast instant and sorcery spells.
+model -2.3 (rank 244/269) | actual +1.1 | miss +3.3 | expert 0.5/5
+
+[FDN] Battlesong Berserker | U | MV 4 R | Creature — Human Berserker | 3/4
+Whenever you attack, target creature you control gets +1/+0 and gains menace until end of turn. (It can't be blocked except by two or more creatures.)
+model -1.4 (rank 198/273) | actual +3.1 | miss +4.4 | expert 1.5/5
+
+[FDN] Pilfer | C | MV 2 B | Sorcery
+Target opponent reveals their hand. You choose a nonland card from it. That player discards that card.
+model -3.2 (rank 256/273) | actual +1.1 | miss +4.4 | expert 2.0/5
+
+[FDN] Vampire Gourmand | U | MV 2 B | Creature — Vampire | 2/2
+Whenever this creature attacks, you may sacrifice another creature. If you do, draw a card and this creature can't be blocked this turn.
+model +0.1 (rank 123/273) | actual +4.0 | miss +3.9 | expert 2.0/5
+
+[BLB] Starforged Sword | U | MV 4 C | Artifact — Equipment
+Gift a tapped Fish (You may promise an opponent a gift as you cast this spell. If you do, when it enters, they create a tapped 1/1 blue Fish creature token.)
+When this Equipment enters, if the gift was promised, attach this Equipment to target creature you control.
+Equipped creature gets +3/+3 and loses flying.
+Equip {3}
+model -2.4 (rank 230/266) | actual -6.9 | miss -4.5 | expert 1.0/5
+
+[SOS] Resonating Lute | R | MV 4 UR | Artifact
+Lands you control have "{T}: Add two mana of any one color. Spend this mana only to cast instant and sorcery spells."
+{T}: Draw a card. Activate only if you have seven or more cards in your hand.
+model -5.7 (rank 266/269) | actual +0.9 | miss +6.6 | expert 1.0/5
+
+[OTJ] Shifting Grift | U | MV 2 U | Sorcery
+Spree (Choose one or more additional costs.)
++ {2} — Exchange control of two target creatures.
++ {1} — Exchange control of two target artifacts.
++ {1} — Exchange control of two target enchantments.
+model -0.5 (rank 165/275) | actual -8.2 | miss -7.8 | expert 1.5/5
+
+[TDM] Jeskai Revelation | M | MV 7 WUR | Instant
+Return target spell or permanent to its owner's hand. ~ deals 4 damage to any target. Create two 1/1 white Monk creature tokens with prowess. Draw two cards. You gain 4 life.
+model +5.1 (rank 10/258) | actual +12.8 | miss +7.7 | expert 4.0/5
+
+[OTJ] Magebane Lizard | U | MV 2 R | Creature — Lizard | 1/4
+Whenever a player casts a noncreature spell, this creature deals damage to that player equal to the number of noncreature spells they've cast this turn.
+model -1.5 (rank 206/275) | actual -8.5 | miss -7.0 | expert 1.5/5
+
+[TLA] Zuko, Conflicted | R | MV 2 BR | Legendary Creature — Human Rogue | 2/3
+At the beginning of your first main phase, choose one that hasn't been chosen and you lose 2 life —
+• Draw a card.
+• Put a +1/+1 counter on ~.
+• Add {R}.
+• Exile ~, then return him to the battlefield under an opponent's control.
+model +0.5 (rank 105/282) | actual -5.1 | miss -5.6 | expert 2.5/5
+
+[FDN] Micromancer | U | MV 4 U | Creature — Human Wizard | 3/3
+When this creature enters, you may search your library for an instant or sorcery card with mana value 1, reveal it, put it into your hand, then shuffle.
+model +1.2 (rank 80/273) | actual +4.7 | miss +3.5 | expert 2.0/5
+
+[LCI] Miner's Guidewing | C | MV 1 W | Creature — Bird | 1/1
+Flying, vigilance
+When this creature dies, target creature you control explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard.)
+model +0.1 (rank 113/252) | actual +3.8 | miss +3.7 | expert 2.0/5
+
+[BLB] Wear Down | U | MV 2 G | Sorcery
+Gift a card (You may promise an opponent a gift as you cast this spell. If you do, they draw a card before its other effects.)
+Destroy target artifact or enchantment. If the gift was promised, instead destroy two target artifacts and/or enchantments.
+model -5.0 (rank 263/266) | actual -10.1 | miss -5.1 | expert 1.0/5
+
+[EOE] Genemorph Imago | R | MV 2 UG | Creature — Insect Druid | 1/3
+Flying
+Landfall — Whenever a land you control enters, target creature has base power and toughness 3/3 until end of turn. If you control six or more lands, that creature has base power and toughness 6/6 until end of turn instead.
+model +2.8 (rank 22/262) | actual +7.3 | miss +4.4 | expert 3.5/5
+
+[TLA] Great Divide Guide | R | MV 2 G | Creature — Human Scout Ally | 2/3
+Each land and Ally you control has "{T}: Add one mana of any color."
+model -0.2 (rank 137/282) | actual +6.4 | miss +6.6 | expert 3.0/5
+
+[DSK] Unnerving Grasp | U | MV 3 U | Sorcery
+Return up to one target nonland permanent to its owner's hand. Manifest dread. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+model +1.3 (rank 62/270) | actual +5.2 | miss +3.8 | expert 2.5/5
+
+[SOS] Stirring Hopesinger | R | MV 3 W | Creature — Bird Bard | 1/3
+Flying, lifelink
+Repartee — Whenever you cast an instant or sorcery spell that targets a creature, put a +1/+1 counter on each creature you control.
+model +1.9 (rank 40/269) | actual +6.9 | miss +5.0 | expert 4.0/5
+
+[TLA] South Pole Voyager | R | MV 2 W | Creature — Human Scout Ally | 2/2
+Whenever this creature or another Ally you control enters, you gain 1 life. If this is the second time this ability has resolved this turn, draw a card.
+model +1.0 (rank 79/282) | actual +5.4 | miss +4.4 | expert 3.0/5
+
+[SOS] Molten Note | U | MV 2 WR | Sorcery
+~ deals damage to target creature equal to the amount of mana spent to cast this spell. Untap all creatures you control.
+Flashback {6}{R}{W} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+model +0.6 (rank 97/269) | actual +4.2 | miss +3.6 | expert 3.0/5
+
+[TDM] Spectral Denial | U | MV 1 U | Instant
+This spell costs {1} less to cast for each creature you control with power 4 or greater.
+Counter target spell unless its controller pays {X}.
+model -2.6 (rank 233/258) | actual +2.1 | miss +4.7 | expert 2.5/5
+
+[LCI] Spyglass Siren | U | MV 1 U | Creature — Siren Pirate | 1/1
+Flying
+When this creature enters, create a Map token. (It's an artifact with "{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.")
+model +2.1 (rank 34/252) | actual +7.4 | miss +5.3 | expert 3.5/5
+
+[TDM] Rakshasa's Bargain | U | MV 6 UBG | Instant
+Look at the top four cards of your library. Put two of them into your hand and the rest into your graveyard.
+model -2.9 (rank 243/258) | actual +2.6 | miss +5.5 | expert 2.5/5
+
+[FDN] Mischievous Mystic | U | MV 2 U | Creature — Human Wizard | 2/1
+Flying
+Whenever you draw your second card each turn, create a 1/1 blue Faerie creature token with flying.
+model +1.7 (rank 59/273) | actual +5.1 | miss +3.4 | expert 2.5/5
+
+[DFT] Count on Luck | R | MV 3 R | Enchantment
+At the beginning of your upkeep, exile the top card of your library. You may play that card this turn.
+model -0.1 (rank 120/272) | actual -4.9 | miss -4.9 | expert 3.0/5
+
+[DFT] Bloodghast | R | MV 2 B | Creature — Vampire Spirit | 2/1
+This creature can't block.
+This creature has haste as long as an opponent has 10 or less life.
+Landfall — Whenever a land you control enters, you may return this card from your graveyard to the battlefield.
+model +0.5 (rank 89/272) | actual -6.2 | miss -6.7 | expert 1.5/5
+
+[LCI] Deconstruction Hammer | C | MV 1 W | Artifact — Equipment
+Equipped creature gets +1/+1 and has "{3}, {T}, Sacrifice ~: Destroy target artifact or enchantment."
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+model -3.5 (rank 245/252) | actual +0.5 | miss +4.0 | expert 1.5/5
+
+[DSK] Marina Vendrell | R | MV 5 WUBRG | Legendary Creature — Human Warlock | 3/5
+When ~ enters, reveal the top seven cards of your library. Put all enchantment cards from among them into your hand and the rest on the bottom of your library in a random order.
+{T}: Lock or unlock a door of target Room you control. Activate only as a sorcery.
+model -0.9 (rank 183/270) | actual -5.5 | miss -4.5 | expert 0.5/5
+
+[SOS] Mathemagics | M | MV 2 U | Sorcery
+Target player draws 2ˣ cards. (2⁰ = 1, 2¹ = 2, 2² = 4, 2³ = 8, 2⁴ = 16, 2⁵ = 32, and so on.)
+model -1.3 (rank 198/269) | actual +7.0 | miss +8.3 | expert 2.5/5
+
+[EOE] Ouroboroid | M | MV 4 G | Creature — Plant Wurm | 1/3
+At the beginning of combat on your turn, put X +1/+1 counters on each creature you control, where X is this creature's power.
+model +5.3 (rank 5/262) | actual +11.6 | miss +6.3 | expert 3.5/5
+
+[SOS] Vastlands Scavenger | R | MV 3 G | Creature — Bear Druid // Instant | 4/4
+Deathtouch
+This creature enters prepared. (While it's prepared, you may cast a copy of its spell. Doing so unprepares it.) Mill seven cards. Then put a creature card from among them onto the battlefield.
+model +5.4 (rank 10/269) | actual +0.9 | miss -4.6 | expert 3.5/5
+
+[DFT] Terrian, World Tyrant | U | MV 5 G | Legendary Creature — Dinosaur Ooze | 9/7
+
+model -1.5 (rank 213/272) | actual +3.2 | miss +4.6 | expert 2.5/5
+
+[LCI] Inti, Seneschal of the Sun | R | MV 2 R | Legendary Creature — Human Knight | 2/2
+Whenever you attack, you may discard a card. When you do, put a +1/+1 counter on target attacking creature. It gains trample until end of turn.
+Whenever you discard one or more cards, exile the top card of your library. You may play that card until your next end step.
+model +3.0 (rank 21/252) | actual +6.6 | miss +3.6 | expert 4.0/5
+
+[TLA] The Legend of Kuruk | M | MV 4 U | Enchantment — Saga // Legendary Creature — Avatar
+(As this Saga enters and after your draw step, add a lore counter.)
+I, II — Scry 2, then draw a card.
+III — Exile this Saga, then return it to the battlefield transformed under your control. Whenever you cast a spell, create a 1/1 colorless Spirit creature token with "This token can't block or be blocked by non-Spirit creatures."
+Exhaust — Waterbend {20}: Take an extra turn after this one. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}. Activate each exhaust ability only once.)
+model +4.9 (rank 12/282) | actual +10.2 | miss +5.3 | expert 3.5/5
+
+[LCI] Disturbed Slumber | C | MV 2 G | Instant
+Until end of turn, target land you control becomes a 4/4 Dinosaur creature with reach and haste. It's still a land. It must be blocked this turn if able.
+model -2.5 (rank 221/252) | actual -7.9 | miss -5.5 | expert 1.0/5
+
+[LCI] Poetic Ingenuity | R | MV 3 R | Enchantment
+Whenever one or more Dinosaurs you control attack, create that many Treasure tokens.
+Whenever you cast an artifact spell, create a 3/1 red Dinosaur creature token. This ability triggers only once each turn.
+model -3.4 (rank 241/252) | actual +2.5 | miss +5.9 | expert 2.5/5
+
+[OTJ] Throw from the Saddle | C | MV 2 G | Sorcery
+Target creature you control gets +1/+1 until end of turn. Put a +1/+1 counter on it instead if it's a Mount. Then it deals damage equal to its power to target creature you don't control.
+model +0.9 (rank 79/275) | actual +4.4 | miss +3.5 | expert 3.0/5
+
+[OTJ] Riku of Many Paths | R | MV 3 URG | Legendary Creature — Human Wizard | 3/3
+Whenever you cast a modal spell, choose up to X, where X is the number of times you chose a mode for that spell —
+• Exile the top card of your library. Until the end of your next turn, you may play it.
+• Put a +1/+1 counter on ~. It gains trample until end of turn.
+• Create a 1/1 blue Bird creature token with flying.
+model +0.0 (rank 125/275) | actual -4.8 | miss -4.8 | expert 3.0/5
+
+[MKM] Repulsive Mutation | U | MV 2 UG | Instant
+Put X +1/+1 counters on target creature you control. Then counter up to one target spell unless its controller pays mana equal to the greatest power among creatures you control.
+model +0.7 (rank 85/271) | actual +4.8 | miss +4.1 | expert 3.5/5
+
+[DFT] Cursecloth Wrappings | R | MV 4 B | Artifact
+Zombies you control get +1/+1.
+{T}: Target creature card in your graveyard gains embalm until end of turn. The embalm cost is equal to its mana cost. (Exile that card and pay its embalm cost: Create a token that's a copy of it, except it's a white Zombie in addition to its other types and has no mana cost. Embalm only as a sorcery.)
+model -1.3 (rank 203/272) | actual +4.7 | miss +6.0 | expert 3.5/5
+
+[TDM] Barrensteppe Siege | R | MV 4 WB | Enchantment
+As this enchantment enters, choose Abzan or Mardu.
+• Abzan — At the beginning of your end step, put a +1/+1 counter on each creature you control.
+• Mardu — At the beginning of your end step, if a creature died under your control this turn, each opponent sacrifices a creature of their choice.
+model +3.6 (rank 18/258) | actual -4.0 | miss -7.5 | expert 2.5/5
+
+[TLA] Yue, the Moon Spirit | R | MV 4 U | Legendary Creature — Spirit Ally | 3/3
+Flying, vigilance
+Waterbend {5}, {T}: You may cast a noncreature spell from your hand without paying its mana cost. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)
+model +2.3 (rank 32/282) | actual -3.0 | miss -5.4 | expert 2.0/5
+
+[OTJ] Lively Dirge | U | MV 2 B | Sorcery
+Spree (Choose one or more additional costs.)
++ {1} — Search your library for a card, put it into your graveyard, then shuffle.
++ {2} — Return up to two creature cards with total mana value 4 or less from your graveyard to the battlefield.
+model -2.0 (rank 230/275) | actual +1.4 | miss +3.4 | expert 2.0/5
+
+[DFT] Stock Up | U | MV 3 U | Sorcery
+Look at the top five cards of your library. Put two of them into your hand and the rest on the bottom of your library in any order.
+model +0.1 (rank 109/272) | actual +4.0 | miss +3.9 | expert 2.0/5
+
+[TDM] Rediscover the Way | R | MV 3 WUR | Enchantment — Saga
+(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I, II — Look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+III — Whenever you cast a noncreature spell this turn, target creature you control gains double strike until end of turn.
+model -0.8 (rank 164/258) | actual +3.0 | miss +3.8 | expert 2.5/5
+
+[MKM] Reckless Detective | U | MV 2 R | Creature — Devil Detective | 0/3
+Whenever this creature attacks, you may sacrifice an artifact or discard a card. If you do, draw a card and this creature gets +2/+0 until end of turn.
+model -1.0 (rank 187/271) | actual +4.0 | miss +5.0 | expert 2.5/5
+
+[EOE] Alpharael, Stonechosen | M | MV 5 B | Legendary Creature — Human Cleric | 3/3
+Ward—Discard a card at random.
+Void — Whenever ~ attacks, if a nonland permanent left the battlefield this turn or a spell was warped this turn, defending player loses half their life, rounded up.
+model +0.6 (rank 95/262) | actual -4.9 | miss -5.5 | expert 1.0/5
+
+[EOE] Weftwalking | M | MV 6 U | Enchantment
+When this enchantment enters, if you cast it, shuffle your hand and graveyard into your library, then draw seven cards.
+The first spell each player casts during each of their turns may be cast without paying its mana cost.
+model -2.0 (rank 223/262) | actual +3.1 | miss +5.1 | expert 3.5/5
+
+[DSK] Oblivious Bookworm | U | MV 2 UG | Creature — Human Wizard | 2/3
+At the beginning of your end step, you may draw a card. If you do, discard a card unless a permanent entered the battlefield face down under your control this turn or you turned a permanent face up this turn.
+model +1.1 (rank 75/270) | actual +4.7 | miss +3.6 | expert 3.5/5
+
+[SOS] Ral Zarek, Guest Lecturer | M | MV 3 B | Legendary Planeswalker — Ral
++1: Surveil 2.
+−1: Any number of target players each discard a card.
+−2: Return target creature card with mana value 3 or less from your graveyard to the battlefield.
+−7: Flip five coins. Target opponent skips their next X turns, where X is the number of coins that came up heads.
+model +3.4 (rank 18/269) | actual -2.0 | miss -5.4 | expert 4.0/5
+
+[DSK] Ethereal Armor | U | MV 1 W | Enchantment — Aura
+Enchant creature
+Enchanted creature gets +1/+1 for each enchantment you control and has first strike.
+model -3.5 (rank 257/270) | actual +2.5 | miss +6.0 | expert 2.0/5
+
+[BLB] Innkeeper's Talent | R | MV 2 G | Enchantment — Class
+(Gain the next level as a sorcery to add its ability.)
+At the beginning of combat on your turn, put a +1/+1 counter on target creature you control.
+{G}: Level 2
+Permanents you control with counters on them have ward {1}.
+{3}{G}: Level 3
+If you would put one or more counters on a permanent or player, put twice that many of each of those kinds of counters on that permanent or player instead.
+model +2.6 (rank 32/266) | actual +7.2 | miss +4.6 | expert 4.5/5
+
+[TLA] Badgermole Cub | M | MV 2 G | Creature — Badger Mole | 2/2
+When this creature enters, earthbend 1. (Target land you control becomes a 0/0 creature with haste that's still a land. Put a +1/+1 counter on it. When it dies or is exiled, return it to the battlefield tapped.)
+Whenever you tap a creature for mana, add an additional {G}.
+model +2.7 (rank 29/282) | actual +7.7 | miss +5.0 | expert 3.5/5
+
+[DSK] Vengeful Possession | U | MV 3 R | Sorcery
+Gain control of target creature until end of turn. Untap it. It gains haste until end of turn. You may discard a card. If you do, draw a card.
+model -2.3 (rank 239/270) | actual +1.8 | miss +4.2 | expert 1.5/5
+
+[SOS] Great Hall of the Biblioplex | R | MV 0 C | Land
+{T}: Add {C}.
+{T}, Pay 1 life: Add one mana of any color. Spend this mana only to cast an instant or sorcery spell.
+{5}: If this land isn't a creature, it becomes a 2/4 Wizard creature with "Whenever you cast an instant or sorcery spell, this creature gets +1/+0 until end of turn." It's still a land.
+model -0.9 (rank 174/269) | actual +3.2 | miss +4.1 | expert 3.0/5
+
+[OTJ] The Key to the Vault | R | MV 2 U | Legendary Artifact — Equipment
+Whenever equipped creature deals combat damage to a player, look at that many cards from the top of your library. You may exile a nonland card from among them. Put the rest on the bottom of your library in a random order. You may cast the exiled card without paying its mana cost.
+Equip {2}{U}
+model -3.2 (rank 262/275) | actual -10.2 | miss -6.9 | expert 2.5/5
+
+[DFT] Salvation Engine | M | MV 5 W | Artifact — Vehicle | 6/10
+Other artifact creatures you control get +2/+2.
+Whenever this Vehicle attacks, return up to one target artifact card from your graveyard to the battlefield.
+Crew 6
+model -1.4 (rank 208/272) | actual +2.0 | miss +3.4 | expert 3.5/5
+
+[EOE] Pull Through the Weft | U | MV 5 G | Sorcery
+Return up to two target nonland permanent cards from your graveyard to your hand, then return up to two target land cards from your graveyard to the battlefield tapped.
+model -1.2 (rank 183/262) | actual -5.6 | miss -4.5 | expert 1.5/5
+
+[MKM] Sumala Sentry | U | MV 2 WG | Creature — Elf Archer | 1/3
+Reach
+Whenever a face-down permanent you control is turned face up, put a +1/+1 counter on it and a +1/+1 counter on this creature.
+model -1.2 (rank 194/271) | actual +2.6 | miss +3.8 | expert 2.5/5
+
+[BLB] Harnesser of Storms | U | MV 3 R | Creature — Otter Wizard | 1/4
+Whenever you cast a noncreature or Otter spell, you may exile the top card of your library. Until end of turn, you may play that card. This ability triggers only once each turn.
+model -1.5 (rank 205/266) | actual -6.4 | miss -4.9 | expert 2.5/5
+
+[EOE] Loading Zone | R | MV 4 G | Enchantment
+If one or more counters would be put on a creature, Spacecraft, or Planet you control, twice that many of each of those kinds of counters are put on it instead.
+Warp {G} (You may cast this card from your hand for its warp cost. Exile this enchantment at the beginning of the next end step, then you may cast it from exile on a later turn.)
+model -7.9 (rank 262/262) | actual -13.9 | miss -6.0 | expert 0.5/5
+
+[LCI] Dreadmaw's Ire | U | MV 1 R | Instant
+Until end of turn, target attacking creature gets +2/+2 and gains trample and "Whenever this creature deals combat damage to a player, destroy target artifact that player controls."
+model -2.2 (rank 214/252) | actual +2.6 | miss +4.8 | expert 3.5/5
+
+[SOS] Ark of Hunger | R | MV 4 WR | Artifact
+Whenever one or more cards leave your graveyard, this artifact deals 1 damage to each opponent and you gain 1 life.
+{T}: Mill a card. You may play that card this turn.
+model -2.9 (rank 254/269) | actual +7.8 | miss +10.6 | expert 4.0/5
+
+[TDM] Dragonstorm Globe | C | MV 3 C | Artifact
+Each Dragon you control enters with an additional +1/+1 counter on it.
+{T}: Add one mana of any color.
+model -3.8 (rank 252/258) | actual +0.5 | miss +4.3 | expert 2.0/5
+
+[TDM] Jeskai Monument | U | MV 2 C | Artifact
+When this artifact enters, search your library for a basic Island, Mountain, or Plains card, reveal it, put it into your hand, then shuffle.
+{1}{U}{R}{W}, {T}, Sacrifice this artifact: Create two 1/1 white Bird creature tokens with flying. Activate only as a sorcery.
+model -1.5 (rank 202/258) | actual +2.2 | miss +3.8 | expert 2.5/5
+
+[FDN] Essence Scatter | U | MV 2 U | Instant
+Counter target creature spell.
+model -0.3 (rank 145/273) | actual +3.6 | miss +3.9 | expert 2.5/5
+
+[LCI] The Millennium Calendar | M | MV 1 C | Legendary Artifact
+Whenever you untap one or more permanents during your untap step, put that many time counters on ~.
+{2}, {T}: Double the number of time counters on ~.
+When there are 1,000 or more time counters on ~, sacrifice it and each opponent loses 1,000 life.
+model -6.5 (rank 252/252) | actual -13.2 | miss -6.8 | expert 0.5/5
+
+[TDM] Unrooted Ancestor | U | MV 3 B | Creature — Spirit Cleric | 3/2
+Flash
+{1}, Sacrifice another creature: This creature gains indestructible until end of turn. Tap it. (Damage and effects that say "destroy" don't destroy it.)
+model -0.7 (rank 162/258) | actual -6.6 | miss -5.9 | expert 2.0/5
+
+[EOE] Pinnacle Starcage | R | MV 3 W | Artifact
+When this artifact enters, exile all artifacts and creatures with mana value 2 or less until this artifact leaves the battlefield.
+{6}{W}{W}: Put each card exiled with this artifact into its owner's graveyard, then create a 2/2 colorless Robot artifact creature token for each card put into a graveyard this way. Sacrifice this artifact.
+model -0.1 (rank 138/262) | actual -7.5 | miss -7.4 | expert n/a
+
+[TLA] Planetarium of Wan Shi Tong | M | MV 6 C | Legendary Artifact
+{1}, {T}: Scry 2.
+Whenever you scry or surveil, look at the top card of your library. You may cast that card without paying its mana cost. Do this only once each turn. (Look at the card after you scry or surveil.)
+model -3.3 (rank 272/282) | actual +2.2 | miss +5.5 | expert 2.0/5
+
+[EOE] Synthesizer Labship | R | MV 1 U | Artifact — Spacecraft | 4/4
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 9+.)
+2+ | At the beginning of combat on your turn, up to one other target artifact you control becomes an artifact creature with base power and toughness 2/2 and gains flying until end of turn.
+9+ | Flying, vigilance
+model -3.6 (rank 252/262) | actual +4.3 | miss +7.9 | expert 2.5/5
+
+[LCI] Ancestors' Aid | C | MV 2 R | Instant
+Target creature gets +2/+0 and gains first strike until end of turn.
+Create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+model -2.3 (rank 216/252) | actual +1.1 | miss +3.3 | expert 1.5/5
+
+[DSK] Killer's Mask | U | MV 3 B | Artifact — Equipment
+When this Equipment enters, manifest dread, then attach this Equipment to that creature. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+Equipped creature has menace.
+Equip {2}
+model +1.6 (rank 51/270) | actual -4.2 | miss -5.8 | expert 2.0/5
+
+[TLA] Foggy Swamp Visions | R | MV 3 B | Sorcery
+As an additional cost to cast this spell, waterbend {X}. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)
+Exile X target creature cards from graveyards. For each creature card exiled this way, create a token that's a copy of it. At the beginning of your next end step, sacrifice those tokens.
+model -2.7 (rank 262/282) | actual -11.2 | miss -8.4 | expert n/a
+
+[EOE] Quantum Riddler | M | MV 5 U | Creature — Sphinx | 4/6
+Flying
+When this creature enters, draw a card.
+As long as you have one or fewer cards in hand, if you would draw one or more cards, you draw that many cards plus one instead.
+Warp {1}{U}
+model +6.5 (rank 2/262) | actual +10.7 | miss +4.2 | expert 4.0/5
+
+[TLA] Meteor Sword | U | MV 7 C | Artifact — Equipment
+When this Equipment enters, destroy target permanent.
+Equipped creature gets +3/+3.
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)
+model +0.8 (rank 90/282) | actual -3.9 | miss -4.7 | expert 2.0/5
+
+[LCI] Bat Colony | U | MV 3 W | Enchantment
+When this enchantment enters, create a 1/1 black Bat creature token with flying for each mana from a Cave spent to cast it.
+Whenever a Cave you control enters, put a +1/+1 counter on target creature you control.
+model -5.0 (rank 251/252) | actual -0.8 | miss +4.1 | expert 1.5/5
+
+[DFT] Push the Limit | U | MV 7 R | Sorcery
+Return all Mount and Vehicle cards from your graveyard to the battlefield. Sacrifice them at the beginning of the next end step.
+Vehicles you control become artifact creatures until end of turn. Creatures you control gain haste until end of turn.
+model -5.1 (rank 270/272) | actual -0.7 | miss +4.4 | expert 0.0/5
+
+[DFT] Point the Way | U | MV 1 G | Enchantment
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+{3}{G}, Sacrifice this enchantment: Search your library for up to X basic land cards, where X is your speed. Put those cards onto the battlefield tapped, then shuffle.
+model -4.7 (rank 266/272) | actual -10.7 | miss -6.0 | expert 1.0/5
+
+[TDM] Sage of the Skies | R | MV 3 W | Creature — Human Monk | 2/3
+When you cast this spell, if you've cast another spell this turn, copy this spell. (The copy becomes a token.)
+Flying, lifelink
+model +3.0 (rank 23/258) | actual +9.2 | miss +6.1 | expert 2.0/5
+
+[DFT] Veteran Beastrider | U | MV 3 WG | Creature — Human Knight | 3/4
+At the beginning of your end step, untap each creature you control.
+{2}{G}{W}: Creatures you control get +1/+1 until end of turn.
+model +0.8 (rank 74/272) | actual +4.2 | miss +3.4 | expert 2.5/5
+
+[SOS] Dina's Guidance | R | MV 3 BG | Instant
+Search your library for a creature card, reveal it, put it into your hand or graveyard, then shuffle.
+model -2.6 (rank 253/269) | actual -10.4 | miss -7.8 | expert 0.5/5
+
+[EOE] Terminal Velocity | R | MV 6 R | Sorcery
+You may put an artifact or creature card from your hand onto the battlefield. That permanent gains haste, "When this permanent leaves the battlefield, it deals damage equal to its mana value to each creature," and "At the beginning of your end step, sacrifice this permanent."
+model -2.5 (rank 240/262) | actual -8.2 | miss -5.7 | expert 0.5/5
+
+[MKM] Reenact the Crime | R | MV 4 U | Instant
+Exile target nonland card in a graveyard that was put there from anywhere this turn. Copy it. You may cast the copy without paying its mana cost.
+model -3.5 (rank 263/271) | actual -10.7 | miss -7.2 | expert 1.0/5
+
+[TLA] The Fire Nation Drill | R | MV 4 B | Legendary Artifact — Vehicle | 6/3
+Trample
+When ~ enters, you may tap it. When you do, destroy target creature with power 4 or less.
+{1}: Permanents your opponents control lose hexproof and indestructible until end of turn.
+Crew 2
+model +5.7 (rank 6/282) | actual +10.5 | miss +4.8 | expert 3.5/5
+
+[FDN] Fleeting Distraction | C | MV 1 U | Instant
+Target creature gets -1/-0 until end of turn.
+Draw a card.
+model -2.8 (rank 245/273) | actual +0.8 | miss +3.5 | expert 2.0/5
+
+[SOS] Graduation Day | U | MV 1 W | Enchantment
+Repartee — Whenever you cast an instant or sorcery spell that targets a creature, put a +1/+1 counter on target creature you control.
+model -7.5 (rank 269/269) | actual -3.8 | miss +3.7 | expert 1.0/5
+
+[TLA] The Earth King | R | MV 4 G | Legendary Creature — Human Noble Ally | 2/2
+When ~ enters, create a 4/4 green Bear creature token.
+Whenever one or more creatures you control with power 4 or greater attack, search your library for up to that many basic land cards, put them onto the battlefield tapped, then shuffle.
+model +6.0 (rank 3/282) | actual +9.4 | miss +3.4 | expert 3.5/5
+
+[TLA] Phoenix Fleet Airship | M | MV 4 B | Artifact — Vehicle | 4/4
+Flying
+At the beginning of your end step, if you sacrificed a permanent this turn, create a token that's a copy of this Vehicle.
+As long as you control eight or more permanents named ~, this Vehicle is an artifact creature.
+Crew 1
+model +1.3 (rank 63/282) | actual +6.2 | miss +4.9 | expert 3.5/5
+
+[DSK] Doomsday Excruciator | R | MV 6 B | Creature — Demon | 6/6
+Flying
+When this creature enters, if it was cast, each player exiles all but the bottom six cards of their library face down.
+At the beginning of your upkeep, draw a card.
+model +3.5 (rank 21/270) | actual -11.4 | miss -14.9 | expert 0.5/5
+
+[DFT] Mu Yanling, Wind Rider | M | MV 4 U | Legendary Creature — Human Wizard Pilot | 2/4
+When ~ enters, create a 3/2 colorless Vehicle artifact token with crew 1.
+Vehicles you control have flying.
+Whenever one or more creatures you control with flying deal combat damage to a player, draw a card.
+model +5.8 (rank 6/272) | actual +10.4 | miss +4.6 | expert 3.5/5
+
+[EOE] Ragost, Deft Gastronaut | R | MV 2 WR | Legendary Creature — Lobster Citizen | 2/2
+Artifacts you control are Foods in addition to their other types and have "{2}, {T}, Sacrifice this artifact: You gain 3 life."
+{1}, {T}, Sacrifice a Food: ~ deals 3 damage to each opponent.
+At the beginning of each end step, if you gained life this turn, untap ~.
+model +0.9 (rank 87/262) | actual -4.3 | miss -5.2 | expert 2.0/5
+
+[SOS] Emil, Vastlands Roamer | U | MV 3 G | Legendary Creature — Elf Druid | 3/3
+Creatures you control with +1/+1 counters on them have trample.
+{4}{G}, {T}: Create a 0/0 green and blue Fractal creature token. Put X +1/+1 counters on it, where X is the number of differently named lands you control.
+model +2.6 (rank 29/269) | actual -2.0 | miss -4.6 | expert 2.5/5
+
+[EOE] Moonlit Meditation | R | MV 3 U | Enchantment — Aura
+Enchant artifact or creature you control
+The first time you would create one or more tokens each turn, you may instead create that many tokens that are copies of enchanted permanent.
+model -7.2 (rank 261/262) | actual -14.1 | miss -6.9 | expert 0.0/5
+
+[LCI] Get Lost | R | MV 2 W | Instant
+Destroy target creature, enchantment, or planeswalker. Its controller creates two Map tokens. (They're artifacts with "{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.")
+model +0.2 (rank 98/252) | actual -4.6 | miss -4.8 | expert 2.5/5
+
+[MKM] Doppelgang | R | MV 2 UG | Sorcery
+For each of X target permanents, create X tokens that are copies of that permanent.
+model +1.6 (rank 49/271) | actual +7.5 | miss +5.9 | expert 3.5/5
+
+[BLB] Hunter's Talent | U | MV 2 G | Enchantment — Class
+(Gain the next level as a sorcery to add its ability.)
+When this Class enters, target creature you control deals damage equal to its power to target creature you don't control.
+{1}{G}: Level 2
+Whenever you attack, target attacking creature gets +1/+0 and gains trample until end of turn.
+{3}{G}: Level 3
+At the beginning of your end step, if you control a creature with power 4 or greater, draw a card.
+model +2.1 (rank 44/266) | actual +5.8 | miss +3.7 | expert 4.0/5
+
+[LCI] Palani's Hatcher | R | MV 5 RG | Creature — Dinosaur | 5/3
+Other Dinosaurs you control have haste.
+When this creature enters, create two 0/1 green Dinosaur Egg creature tokens.
+At the beginning of combat on your turn, if you control one or more Eggs, sacrifice an Egg, then create a 3/3 green Dinosaur creature token.
+model +8.6 (rank 1/252) | actual +12.3 | miss +3.7 | expert 4.5/5
+
+[TLA] Invasion Submersible | U | MV 3 U | Artifact — Vehicle | 0/0
+When this Vehicle enters, return up to one other target nonland permanent to its owner's hand.
+Exhaust — Waterbend {3}: This Vehicle becomes an artifact creature. Put three +1/+1 counters on it. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}. Activate each exhaust ability only once.)
+model +1.6 (rank 53/282) | actual +6.3 | miss +4.6 | expert 2.5/5
+
+[OTJ] Miriam, Herd Whisperer | U | MV 2 WG | Legendary Creature — Human Druid | 3/2
+During your turn, Mounts and Vehicles you control have hexproof.
+Whenever a Mount or Vehicle you control attacks, put a +1/+1 counter on it.
+model +1.4 (rank 59/275) | actual +4.7 | miss +3.3 | expert 3.0/5
+
+[DSK] Unholy Annex // Ritual Chamber | R | MV 8 B | Enchantment — Room // Enchantment — Room
+At the beginning of your end step, draw a card. If you control a Demon, each opponent loses 2 life and you gain 2 life. Otherwise, you lose 2 life.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) When you unlock this door, create a 6/6 black Demon creature token with flying.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+model +5.1 (rank 9/270) | actual +9.5 | miss +4.4 | expert 4.0/5
+
+[TDM] All-Out Assault | M | MV 5 WBR | Enchantment
+Creatures you control get +1/+1 and have deathtouch.
+When this enchantment enters, if it's your main phase, there is an additional combat phase after this phase followed by an additional main phase. When you next attack this turn, untap each creature you control.
+model +0.5 (rank 89/258) | actual +4.3 | miss +3.8 | expert 2.5/5
+
+[BLB] Wick's Patrol | U | MV 6 B | Creature — Rat Warlock | 5/3
+When this creature enters, mill three cards. When you do, target creature an opponent controls gets -X/-X until end of turn, where X is the greatest mana value among cards in your graveyard.
+model +1.2 (rank 68/266) | actual +4.6 | miss +3.4 | expert 3.5/5
+
+[TLA] Secret Tunnel | R | MV 0 C | Land — Cave
+This land can't be blocked.
+{T}: Add {C}.
+{4}, {T}: Two target creatures you control that share a creature type can't be blocked this turn.
+model -1.5 (rank 218/282) | actual +3.3 | miss +4.7 | expert 2.5/5
+
+[SOS] Witherbloom, the Balancer | M | MV 8 BG | Legendary Creature — Elder Dragon | 5/5
+Affinity for creatures (This spell costs {1} less to cast for each creature you control.)
+Flying, deathtouch
+Instant and sorcery spells you cast have affinity for creatures.
+model +1.7 (rank 51/269) | actual -4.9 | miss -6.6 | expert 3.0/5
+
+[DSK] Cackling Slasher | C | MV 4 B | Creature — Human Assassin | 3/3
+Deathtouch
+This creature enters with a +1/+1 counter on it if a creature died this turn.
+model -1.9 (rank 220/270) | actual -8.7 | miss -6.8 | expert 1.5/5
+
+[TLA] Destined Confrontation | U | MV 4 W | Sorcery
+Each player chooses any number of creatures they control with total power 4 or less, then sacrifices all other creatures they control.
+model -2.6 (rank 258/282) | actual -9.7 | miss -7.1 | expert n/a
+
+[SOS] Ambitious Augmenter | R | MV 1 G | Creature — Turtle Wizard | 1/1
+Increment (Whenever you cast a spell, if the amount of mana you spent is greater than this creature's power or toughness, put a +1/+1 counter on this creature.)
+When this creature dies, if it had one or more counters on it, create a 0/0 green and blue Fractal creature token, then put this creature's counters on that token.
+model +0.9 (rank 76/269) | actual +4.3 | miss +3.4 | expert 3.5/5
+
+[FDN] Fishing Pole | U | MV 1 C | Artifact — Equipment
+Equipped creature has "{1}, {T}, Tap ~: Put a bait counter on ~."
+Whenever equipped creature becomes untapped, remove a bait counter from this Equipment. If you do, create a 1/1 blue Fish creature token.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)
+model -5.2 (rank 268/273) | actual -11.7 | miss -6.5 | expert 1.5/5
+
+[FDN] Lathril, Blade of the Elves | R | MV 4 BG | Legendary Creature — Elf Noble | 2/3
+Menace (This creature can't be blocked except by two or more creatures.)
+Whenever ~ deals combat damage to a player, create that many 1/1 green Elf Warrior creature tokens.
+{T}, Tap ten untapped Elves you control: Each opponent loses 10 life and you gain 10 life.
+model +2.9 (rank 32/273) | actual -5.2 | miss -8.1 | expert 1.5/5
+
+[DSK] Tyvar, the Pummeler | M | MV 3 G | Legendary Creature — Elf Warrior | 3/3
+Tap another untapped creature you control: ~ gains indestructible until end of turn. Tap it.
+{3}{G}{G}: Creatures you control get +X/+X until end of turn, where X is the greatest power among creatures you control.
+model +3.4 (rank 23/270) | actual +7.9 | miss +4.6 | expert 4.0/5
+
+[FDN] Refute | C | MV 3 U | Instant
+Counter target spell. Draw a card, then discard a card.
+model -1.2 (rank 193/273) | actual +3.1 | miss +4.3 | expert 2.5/5
+
+[FDN] Blasphemous Edict | R | MV 5 B | Sorcery
+You may pay {B} rather than pay this spell's mana cost if there are thirteen or more creatures on the battlefield.
+Each player sacrifices thirteen creatures of their choice.
+model -2.8 (rank 247/273) | actual +4.7 | miss +7.5 | expert 3.5/5
+
+[SOS] Arnyn, Deathbloom Botanist | U | MV 3 B | Legendary Creature — Vampire Druid | 2/2
+Deathtouch
+Whenever a creature you control with power or toughness 1 or less dies, target opponent loses 2 life and you gain 2 life.
+model +0.6 (rank 94/269) | actual -5.6 | miss -6.2 | expert 2.5/5
+
+[DFT] Full Throttle | R | MV 6 R | Sorcery
+After this main phase, there are two additional combat phases.
+At the beginning of each combat this turn, untap all creatures that attacked this turn.
+model -5.2 (rank 271/272) | actual -9.7 | miss -4.5 | expert 1.5/5
+
+[SOS] Colorstorm Stallion | R | MV 3 UR | Creature — Elemental Horse | 3/3
+Ward {1}, haste
+Opus — Whenever you cast an instant or sorcery spell, this creature gets +1/+1 until end of turn. If five or more mana was spent to cast that spell, create a token that's a copy of this creature.
+model +1.7 (rank 50/269) | actual +6.5 | miss +4.8 | expert 3.5/5
+
+[FDN] Niv-Mizzet, Visionary | M | MV 6 UR | Legendary Creature — Dragon Wizard | 5/5
+Flying
+You have no maximum hand size.
+Whenever a source you control deals noncombat damage to an opponent, you draw that many cards.
+model +3.3 (rank 28/273) | actual -7.9 | miss -11.2 | expert 1.5/5
+
+[LCI] Zoyowa's Justice | U | MV 2 R | Instant
+The owner of target artifact or creature with mana value 1 or greater shuffles it into their library. Then that player discovers X, where X is its mana value. (They exile cards from the top of their library until they exile a nonland card with that mana value or less. They cast it without paying its mana cost or put it into their hand. They put the rest on the bottom in a random order.)
+model -0.7 (rank 153/252) | actual -11.9 | miss -11.3 | expert 1.0/5
+
+[DFT] Sita Varma, Masked Racer | R | MV 2 UG | Legendary Creature — Human Rogue | 2/3
+Exhaust — {X}{G}{G}{U}: Put X +1/+1 counters on ~. Then you may have the base power and toughness of each other creature you control become equal to ~'s power until end of turn. (Activate each exhaust ability only once.)
+model +1.5 (rank 52/272) | actual +5.6 | miss +4.1 | expert 3.5/5
+
+[LCI] Intrepid Paleontologist | R | MV 2 G | Creature — Human Druid | 2/2
+{T}: Add one mana of any color.
+{2}: Exile target card from a graveyard.
+You may cast Dinosaur creature spells from among cards you own exiled with this creature. If you cast a spell this way, that creature enters with a finality counter on it. (If a creature with a finality counter on it would die, exile it instead.)
+model +2.4 (rank 28/252) | actual +5.8 | miss +3.5 | expert 4.0/5
+
+[EOE] Sami, Wildcat Captain | M | MV 6 WR | Legendary Creature — Human Artificer Rogue | 4/4
+Double strike, vigilance
+Spells you cast have affinity for artifacts. (They cost {1} less to cast for each artifact you control.)
+model +1.3 (rank 67/262) | actual -4.4 | miss -5.7 | expert 2.5/5
+
+[MKM] Izoni, Center of the Web | R | MV 6 BG | Legendary Creature — Elf Detective | 5/4
+Menace
+Whenever ~ enters or attacks, you may collect evidence 4. If you do, create two 2/1 black and green Spider creature tokens with reach and menace.
+Sacrifice four tokens: Surveil 2, then draw two cards. You gain 2 life.
+model +5.7 (rank 9/271) | actual +10.4 | miss +4.7 | expert 5.0/5
+
+[TLA] Cruel Administrator | U | MV 5 BR | Creature — Human Soldier | 5/4
+Raid — This creature enters with a +1/+1 counter on it if you attacked this turn.
+Whenever this creature attacks, create a 2/2 red Soldier creature token with firebending 1. (Whenever it attacks, add {R}. This mana lasts until end of combat.)
+model +2.0 (rank 38/282) | actual -3.6 | miss -5.6 | expert 2.5/5
+
+[SOS] Chelonian Tackle | U | MV 3 G | Sorcery
+Target creature you control gets +0/+10 until end of turn. Then it fights up to one target creature an opponent controls. (Each deals damage equal to its power to the other.)
+model +2.1 (rank 38/269) | actual -5.0 | miss -7.1 | expert 2.0/5
+
+[LCI] Warden of the Inner Sky | R | MV 1 W | Creature — Human Soldier | 1/2
+As long as this creature has three or more counters on it, it has flying and vigilance.
+Tap three untapped artifacts and/or creatures you control: Put a +1/+1 counter on this creature. Scry 1. Activate only as a sorcery.
+model +1.6 (rank 51/252) | actual +7.7 | miss +6.1 | expert 3.0/5
+
+[MKM] Magnifying Glass | C | MV 3 C | Artifact
+{T}: Add {C}.
+{4}, {T}: Investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+model -2.5 (rank 247/271) | actual -7.7 | miss -5.2 | expert 1.0/5
+
+[TLA] Honest Work | U | MV 1 U | Enchantment — Aura
+Enchant creature an opponent controls
+When this Aura enters, tap enchanted creature and remove all counters from it.
+Enchanted creature loses all abilities and is a Citizen with base power and toughness 1/1 and "{T}: Add {C}" named Humble Merchant. (It loses all other creature types and names.)
+model +0.9 (rank 85/282) | actual -5.7 | miss -6.5 | expert 1.5/5
+
+[MKM] Aurelia's Vindicator | M | MV 4 W | Creature — Angel | 4/2
+Flying, lifelink, ward {2}
+Disguise {X}{3}{W}
+When this creature is turned face up, exile up to X other target creatures from the battlefield and/or creature cards from graveyards.
+When this creature leaves the battlefield, return the exiled cards to their owners' hands.
+model +6.2 (rank 5/271) | actual +13.7 | miss +7.4 | expert 4.5/5
+
+[OTJ] Breeches, the Blastmaker | R | MV 3 UR | Legendary Creature — Goblin Pirate | 3/3
+Menace
+Whenever you cast your second spell each turn, you may sacrifice an artifact. If you do, flip a coin. When you win the flip, copy that spell. You may choose new targets for the copy. When you lose the flip, ~ deals damage equal to that spell's mana value to any target.
+model +0.1 (rank 117/275) | actual -5.6 | miss -5.7 | expert 3.5/5
+
+[TDM] Cori-Steel Cutter | R | MV 2 R | Artifact — Equipment
+Equipped creature gets +1/+1 and has trample and haste.
+Flurry — Whenever you cast your second spell each turn, create a 1/1 white Monk creature token with prowess. You may attach this Equipment to it. (Whenever you cast a noncreature spell, the token gets +1/+1 until end of turn.)
+Equip {1}{R}
+model -1.5 (rank 198/258) | actual +3.8 | miss +5.3 | expert 2.5/5
+
+[BLB] Scavenger's Talent | R | MV 1 B | Enchantment — Class
+(Gain the next level as a sorcery to add its ability.)
+Whenever one or more creatures you control die, create a Food token. This ability triggers only once each turn.
+{1}{B}: Level 2
+Whenever you sacrifice a permanent, target player mills two cards.
+{2}{B}: Level 3
+At the beginning of your end step, you may sacrifice three other nonland permanents. If you do, return a creature card from your graveyard to the battlefield with a finality counter on it.
+model -3.1 (rank 249/266) | actual +1.0 | miss +4.1 | expert 2.0/5
+
+[SOS] Exhibition Tidecaller | R | MV 1 U | Creature — Djinn Wizard | 0/2
+Opus — Whenever you cast an instant or sorcery spell, target player mills three cards. If five or more mana was spent to cast that spell, that player mills ten cards instead.
+model -1.9 (rank 233/269) | actual +5.2 | miss +7.1 | expert 2.5/5
+
+[DSK] Final Vengeance | C | MV 1 B | Sorcery
+As an additional cost to cast this spell, sacrifice a creature or enchantment.
+Exile target creature.
+model -2.0 (rank 227/270) | actual +1.3 | miss +3.3 | expert 1.5/5
+
+[SOS] Pensive Professor | R | MV 3 U | Creature — Human Wizard | 0/2
+Increment (Whenever you cast a spell, if the amount of mana you spent is greater than this creature's power or toughness, put a +1/+1 counter on this creature.)
+Whenever one or more +1/+1 counters are put on this creature, draw a card.
+model -0.7 (rank 168/269) | actual +2.7 | miss +3.4 | expert 3.5/5
+
+[SOS] Spellbook Seeker | C | MV 4 U | Creature — Bird Wizard // Sorcery | 3/3
+Flying
+This creature enters prepared. (While it's prepared, you may cast a copy of its spell. Doing so unprepares it.) Draw two cards, then discard two cards.
+model -0.0 (rank 132/269) | actual -4.5 | miss -4.5 | expert 2.0/5
+
+[SOS] Efflorescence | C | MV 3 G | Instant
+Put two +1/+1 counters on target creature.
+Infusion — If you gained life this turn, that creature also gains trample and indestructible until end of turn.
+model -0.6 (rank 161/269) | actual -6.2 | miss -5.7 | expert 1.0/5
+
+[OTJ] Ornery Tumblewagg | R | MV 3 G | Creature — Brushwagg Mount | 2/2
+At the beginning of combat on your turn, put a +1/+1 counter on target creature.
+Whenever this creature attacks while saddled, double the number of +1/+1 counters on target creature.
+Saddle 2 (Tap any number of other creatures you control with total power 2 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+model +3.8 (rank 16/275) | actual +8.1 | miss +4.3 | expert 4.5/5
+
+[MKM] Case of the Gateway Express | U | MV 2 W | Enchantment — Case
+When this Case enters, choose target creature you don't control. Each creature you control deals 1 damage to that creature.
+To solve — Three or more creatures attacked this turn. (If unsolved, solve at the beginning of your end step.)
+Solved — Creatures you control get +1/+0.
+model +0.4 (rank 97/271) | actual +3.7 | miss +3.3 | expert 3.0/5
+
+[SOS] Growth Curve | U | MV 2 UG | Sorcery
+Put a +1/+1 counter on target creature you control, then double the number of +1/+1 counters on that creature.
+model -1.7 (rank 218/269) | actual -6.3 | miss -4.6 | expert n/a
+
+[OTJ] Bonny Pall, Clearcutter | R | MV 6 UG | Legendary Creature — Giant Scout | 6/5
+Reach
+When ~ enters, create Beau, a legendary blue Ox creature token with "Beau's power and toughness are each equal to the number of lands you control."
+Whenever you attack, draw a card, then you may put a land card from your hand or graveyard onto the battlefield.
+model +8.6 (rank 1/275) | actual +12.1 | miss +3.5 | expert 5.0/5
+
+[MKM] Vein Ripper | M | MV 6 B | Creature — Vampire Assassin | 6/5
+Flying
+Ward—Sacrifice a creature.
+Whenever a creature dies, target opponent loses 2 life and you gain 2 life.
+model +4.8 (rank 13/271) | actual +8.9 | miss +4.1 | expert 4.5/5
+
+[TDM] Elspeth, Storm Slayer | M | MV 5 W | Legendary Planeswalker — Elspeth
+If one or more tokens would be created under your control, twice that many of those tokens are created instead.
++1: Create a 1/1 white Soldier creature token.
+0: Put a +1/+1 counter on each creature you control. Those creatures gain flying until your next turn.
+−3: Destroy target creature an opponent controls with mana value 3 or greater.
+model +7.4 (rank 1/258) | actual +10.7 | miss +3.3 | expert 4.0/5
+
+[LCI] Child of the Volcano | C | MV 4 R | Creature — Elemental | 3/3
+Trample
+At the beginning of your end step, if you descended this turn, put a +1/+1 counter on this creature. (You descended if a permanent card was put into your graveyard from anywhere.)
+model -2.6 (rank 228/252) | actual -7.4 | miss -4.8 | expert 1.5/5
+
+[BLB] Artist's Talent | R | MV 2 R | Enchantment — Class
+(Gain the next level as a sorcery to add its ability.)
+Whenever you cast a noncreature spell, you may discard a card. If you do, draw a card.
+{2}{R}: Level 2
+Noncreature spells you cast cost {1} less to cast.
+{2}{R}: Level 3
+If a source you control would deal noncombat damage to an opponent or a permanent an opponent controls, it deals that much damage plus 2 instead.
+model -4.0 (rank 257/266) | actual -9.5 | miss -5.5 | expert 1.0/5
+
+[OTJ] Duelist of the Mind | R | MV 2 U | Creature — Human Advisor | /3
+Flying, vigilance
+~'s power is equal to the number of cards you've drawn this turn.
+Whenever you commit a crime, you may draw a card. If you do, discard a card. This ability triggers only once each turn.
+model -0.2 (rank 139/275) | actual +3.0 | miss +3.2 | expert 3.5/5
+
+[TDM] Mardu Monument | U | MV 2 C | Artifact
+When this artifact enters, search your library for a basic Mountain, Plains, or Swamp card, reveal it, put it into your hand, then shuffle.
+{2}{R}{W}{B}, {T}, Sacrifice this artifact: Create three 1/1 red Warrior creature tokens. They gain menace and haste until end of turn. Activate only as a sorcery. (A creature with menace can't be blocked except by two or more creatures.)
+model -2.3 (rank 230/258) | actual +3.1 | miss +5.4 | expert 2.5/5
+
+[MKM] Kylox's Voltstrider | M | MV 3 UR | Artifact — Vehicle | 4/4
+Collect evidence 6: This Vehicle becomes an artifact creature until end of turn.
+Whenever this Vehicle attacks, you may cast an instant or sorcery spell from among cards exiled with it. If that spell would be put into a graveyard, put it on the bottom of its owner's library instead.
+Crew 2
+model -1.5 (rank 209/271) | actual +1.9 | miss +3.4 | expert 3.0/5
+
+[LCI] Deeproot Pilgrimage | R | MV 2 U | Enchantment
+Whenever one or more nontoken Merfolk you control become tapped, create a 1/1 blue Merfolk creature token with hexproof.
+model -4.3 (rank 250/252) | actual -8.9 | miss -4.6 | expert 1.5/5
+
+[TLA] Waterbender Ascension | R | MV 2 U | Enchantment
+Whenever a creature you control deals combat damage to a player, put a quest counter on this enchantment. Then if it has four or more quest counters on it, draw a card.
+Waterbend {4}: Target creature can't be blocked this turn. (While paying a waterbend cost, you can tap your artifacts and creatures to help. Each one pays for {1}.)
+model -5.3 (rank 281/282) | actual -10.5 | miss -5.3 | expert 0.0/5
+
+[SOS] Rubble Rouser | C | MV 3 R | Creature — Dwarf Sorcerer | 1/4
+When this creature enters, you may discard a card. If you do, draw a card.
+{T}, Exile a card from your graveyard: Add {R}. When you do, this creature deals 1 damage to each opponent.
+model -1.1 (rank 186/269) | actual +2.5 | miss +3.6 | expert 2.0/5
+
+[BLB] Beza, the Bounding Spring | M | MV 4 W | Legendary Creature — Elemental Elk | 4/5
+When ~ enters, create a Treasure token if an opponent controls more lands than you. You gain 4 life if an opponent has more life than you. Create two 1/1 blue Fish creature tokens if an opponent controls more creatures than you. Draw a card if an opponent has more cards in hand than you.
+model +4.1 (rank 18/266) | actual +7.3 | miss +3.2 | expert 4.0/5
+
+[TDM] Lotuslight Dancers | R | MV 5 UBG | Creature — Zombie Bard | 3/6
+Lifelink
+When this creature enters, search your library for a black card, a green card, and a blue card. Put those cards into your graveyard, then shuffle.
+model -0.7 (rank 161/258) | actual +2.5 | miss +3.2 | expert 2.5/5
+
+[BLB] Scales of Shale | C | MV 3 B | Instant
+Affinity for Lizards (This spell costs {1} less to cast for each Lizard you control.)
+Target creature gets +2/+0 and gains lifelink and indestructible until end of turn.
+model -1.1 (rank 184/266) | actual +2.2 | miss +3.3 | expert 1.5/5
+
+[TDM] Roiling Dragonstorm | U | MV 2 U | Enchantment
+When this enchantment enters, draw two cards, then discard a card.
+When a Dragon you control enters, return this enchantment to its owner's hand.
+model -1.3 (rank 191/258) | actual +3.2 | miss +4.5 | expert 2.5/5
+
+[LCI] Defossilize | U | MV 5 B | Sorcery
+Return target creature card from your graveyard to the battlefield. That creature explores, then it explores again. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard. Then repeat this process.)
+model -1.5 (rank 192/252) | actual +2.1 | miss +3.6 | expert 3.0/5
+
+[DFT] The Aetherspark | M | MV 4 C | Legendary Artifact Planeswalker — Equipment
+As long as ~ is attached to a creature, ~ can't be attacked and has "Whenever equipped creature deals combat damage during your turn, put that many loyalty counters on ~."
++1: Attach ~ to up to one target creature you control. Put a +1/+1 counter on that creature.
+−5: Draw two cards.
+−10: Add ten mana of any one color.
+model +2.7 (rank 31/272) | actual +6.6 | miss +3.9 | expert 3.5/5
+
+[MKM] Leyline of the Guildpact | R | MV 4 WUBRG | Enchantment
+If this card is in your opening hand, you may begin the game with it on the battlefield.
+Each nonland permanent you control is all colors.
+Lands you control are every basic land type in addition to their other types.
+model -8.4 (rank 271/271) | actual -13.2 | miss -4.8 | expert 0.5/5
+
+[SOS] Fix What's Broken | R | MV 4 WB | Sorcery
+As an additional cost to cast this spell, pay X life.
+Return each artifact and creature card with mana value X from your graveyard to the battlefield.
+model -3.4 (rank 256/269) | actual -8.8 | miss -5.4 | expert 1.0/5
+
+[MKM] Case of the Gorgon's Kiss | U | MV 1 B | Enchantment — Case
+When this Case enters, destroy up to one target creature that was dealt damage this turn.
+To solve — Three or more creature cards were put into graveyards from anywhere this turn. (If unsolved, solve at the beginning of your end step.)
+Solved — This Case is a 4/4 Gorgon creature with deathtouch and lifelink in addition to its other types.
+model -1.2 (rank 197/271) | actual -5.9 | miss -4.7 | expert 3.5/5
+
+[OTJ] Redrock Sentinel | U | MV 3 C | Artifact Creature — Golem | 2/4
+Defender
+{2}, {T}, Sacrifice a land: Draw a card and create a Treasure token. (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+model -3.0 (rank 261/275) | actual +0.3 | miss +3.3 | expert 2.0/5
+
+[MKM] Pyrotechnic Performer | R | MV 2 R | Creature — Lizard Assassin | 3/2
+Disguise {R} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)
+Whenever this creature or another creature you control is turned face up, that creature deals damage equal to its power to each opponent.
+model +1.0 (rank 74/271) | actual +4.9 | miss +3.9 | expert 3.0/5
+
+[FDN] Doubling Season | M | MV 5 G | Enchantment
+If an effect would create one or more tokens under your control, it creates twice that many of those tokens instead.
+If an effect would put one or more counters on a permanent you control, it puts twice that many of those counters on that permanent instead.
+model -3.8 (rank 262/273) | actual -15.1 | miss -11.3 | expert 0.5/5
+
+[TLA] Iroh, Grand Lotus | R | MV 6 URG | Legendary Creature — Human Noble Ally | 5/5
+Firebending 2
+During your turn, each non-Lesson instant and sorcery card in your graveyard has flashback. The flashback cost is equal to that card's mana cost. (You may cast a card from your graveyard for its flashback cost. Then exile it.)
+During your turn, each Lesson card in your graveyard has flashback {1}.
+model -1.0 (rank 183/282) | actual +3.4 | miss +4.4 | expert 3.5/5
+
+[DFT] Cloudspire Skycycle | U | MV 4 WR | Artifact — Vehicle | 2/3
+Flying
+When this Vehicle enters, distribute two +1/+1 counters among one or two other target Vehicles and/or creatures you control.
+Crew 1
+model +1.4 (rank 57/272) | actual -4.4 | miss -5.7 | expert 2.0/5
+
+[DFT] Agonasaur Rex | R | MV 5 G | Creature — Dinosaur | 8/8
+Trample
+Cycling {2}{G} ({2}{G}, Discard this card: Draw a card.)
+When you cycle this card, put two +1/+1 counters on up to one target creature or Vehicle. It gains trample and indestructible until end of turn.
+model +5.4 (rank 10/272) | actual +9.4 | miss +4.0 | expert 4.0/5
+
+[BLB] Cache Grab | C | MV 2 G | Instant
+Mill four cards. You may put a permanent card from among the cards milled this way into your hand. If you control a Squirrel or returned a Squirrel card to your hand this way, create a Food token. (To mill four cards, put the top four cards of your library into your graveyard. A Food token is an artifact with "{2}, {T}, Sacrifice this token: You gain 3 life.")
+model -1.5 (rank 203/266) | actual +1.9 | miss +3.4 | expert 2.5/5
+
+[SOS] Campus Composer | U | MV 4 U | Creature — Merfolk Bard // Sorcery | 3/4
+Ward {2}
+This creature enters prepared. (While it's prepared, you may cast a copy of its spell. Doing so unprepares it.) Create a 3/3 blue and red Elemental creature token with flying.
+model +3.9 (rank 13/269) | actual -1.7 | miss -5.6 | expert 3.0/5
+
+[FDN] Drakuseth, Maw of Flames | R | MV 7 R | Legendary Creature — Dragon | 7/7
+Flying
+Whenever ~ attacks, ~ deals 4 damage to any target and 3 damage to each of up to two other targets.
+model +6.8 (rank 4/273) | actual -0.0 | miss -6.8 | expert 2.0/5
+
+[DFT] Reckless Velocitaur | U | MV 4 R | Creature — Minotaur Pilot | 3/3
+Whenever this creature saddles a Mount or crews a Vehicle during your main phase, that Mount or Vehicle gets +2/+0 and gains trample until end of turn.
+model -1.6 (rank 216/272) | actual -6.1 | miss -4.5 | expert 1.5/5
+
+[EOE] Gigastorm Titan | U | MV 5 U | Creature — Elemental | 4/4
+This spell costs {3} less to cast if you've cast another spell this turn.
+model -1.4 (rank 198/262) | actual +2.1 | miss +3.6 | expert 1.5/5
+
+[DFT] Alacrian Armory | U | MV 4 W | Artifact
+Creatures you control get +0/+1 and have vigilance.
+At the beginning of combat on your turn, choose up to one target Mount or Vehicle you control. Until end of turn, that permanent becomes saddled if it's a Mount and becomes an artifact creature if it's a Vehicle.
+model -2.2 (rank 240/272) | actual -8.5 | miss -6.3 | expert 1.0/5
+
+[SOS] Wisdom of Ages | R | MV 7 U | Sorcery
+Return all instant and sorcery cards from your graveyard to your hand. You have no maximum hand size for the rest of the game.
+Exile ~.
+model -4.1 (rank 259/269) | actual +3.3 | miss +7.4 | expert n/a
+
+[OTJ] Vraska Joins Up | R | MV 2 BG | Legendary Enchantment
+When ~ enters, put a deathtouch counter on each creature you control.
+Whenever a legendary creature you control deals combat damage to a player, draw a card.
+model -0.5 (rank 162/275) | actual -11.1 | miss -10.6 | expert n/a
+
+[EOE] Larval Scoutlander | U | MV 3 G | Artifact — Spacecraft | 3/3
+When this Spacecraft enters, you may sacrifice a land or Lander. If you do, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle.
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 7+.)
+7+ | Flying
+model -0.3 (rank 144/262) | actual +4.2 | miss +4.5 | expert 2.0/5
+
+[EOE] Debris Field Crusher | U | MV 5 R | Artifact — Spacecraft | 1/5
+When this Spacecraft enters, it deals 3 damage to any target.
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 8+.)
+8+ | Flying
+{1}{R}: This Spacecraft gets +2/+0 until end of turn.
+model +2.5 (rank 31/262) | actual -2.3 | miss -4.9 | expert 2.0/5
+
+[SOS] Planar Engineering | R | MV 4 G | Sorcery
+Sacrifice two lands. Search your library for four basic land cards, put them onto the battlefield tapped, then shuffle.
+model -5.7 (rank 265/269) | actual +0.2 | miss +5.9 | expert 0.5/5
+
+[OTJ] Beastbond Outcaster | U | MV 3 G | Creature — Human Druid | 3/3
+When this creature enters, if you control a creature with power 4 or greater, draw a card.
+Plot {1}{G} (You may pay {1}{G} and exile this card from your hand. Cast it as a sorcery on a later turn without paying its mana cost. Plot only as a sorcery.)
+model +0.5 (rank 95/275) | actual +3.9 | miss +3.4 | expert 3.0/5
+
+[DSK] Rip, Spawn Hunter | R | MV 4 WG | Legendary Creature — Human Survivor | 4/4
+Survival — At the beginning of your second main phase, if ~ is tapped, reveal the top X cards of your library, where X is its power. Put any number of creature and/or Vehicle cards with different powers from among them into your hand. Put the rest on the bottom of your library in a random order.
+model +3.7 (rank 19/270) | actual -1.3 | miss -5.0 | expert 3.0/5
+
+[TLA] Trusty Boomerang | U | MV 1 C | Artifact — Equipment
+Equipped creature has "{1}, {T}: Tap target creature. Return ~ to its owner's hand."
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+model -3.8 (rank 276/282) | actual -8.5 | miss -4.7 | expert 1.0/5
+
+[OTJ] Rakdos, the Muscle | M | MV 5 BR | Legendary Creature — Demon Mercenary | 6/5
+Flying, trample
+Whenever you sacrifice another creature, exile cards equal to its mana value from the top of target player's library. Until your next end step, you may play those cards, and mana of any type can be spent to cast those spells.
+Sacrifice another creature: ~ gains indestructible until end of turn. Tap it. Activate only once each turn.
+model +5.5 (rank 8/275) | actual +9.7 | miss +4.2 | expert 5.0/5
+
+[MKM] Proft's Eidetic Memory | R | MV 2 U | Legendary Enchantment
+When ~ enters, draw a card.
+You have no maximum hand size.
+At the beginning of combat on your turn, if you've drawn more than one card this turn, put X +1/+1 counters on target creature you control, where X is the number of cards you've drawn this turn minus one.
+model -1.2 (rank 195/271) | actual +4.2 | miss +5.4 | expert 2.0/5
+
+[MKM] A Killer Among Us | U | MV 5 G | Enchantment
+When this enchantment enters, create a 1/1 white Human creature token, a 1/1 blue Merfolk creature token, and a 1/1 red Goblin creature token. Then secretly choose Human, Merfolk, or Goblin.
+Sacrifice this enchantment, Reveal the creature type you chose: If target attacking creature token is the chosen type, put three +1/+1 counters on it and it gains deathtouch until end of turn.
+model +1.7 (rank 46/271) | actual +5.5 | miss +3.7 | expert 3.5/5
+
+[TDM] Corroding Dragonstorm | U | MV 2 B | Enchantment
+When this enchantment enters, each opponent loses 2 life and you gain 2 life. Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+When a Dragon you control enters, return this enchantment to its owner's hand.
+model -0.3 (rank 132/258) | actual -5.0 | miss -4.7 | expert 2.0/5
+
+[OTJ] Caught in the Crossfire | U | MV 2 R | Instant
+Spree (Choose one or more additional costs.)
++ {1} — ~ deals 2 damage to each outlaw creature. (Assassins, Mercenaries, Pirates, Rogues, and Warlocks are outlaws.)
++ {1} — ~ deals 2 damage to each non-outlaw creature.
+model +0.2 (rank 114/275) | actual -6.1 | miss -6.3 | expert 3.0/5
+
+[DSK] Fear of Being Hunted | U | MV 3 R | Enchantment Creature — Nightmare | 4/2
+Haste
+This creature must be blocked if able.
+model -2.6 (rank 247/270) | actual +1.9 | miss +4.5 | expert 2.0/5
+
+[EOE] Bygone Colossus | U | MV 9 C | Artifact Creature — Robot Giant | 9/9
+Warp {3} (You may cast this card from your hand for its warp cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+model -1.7 (rank 211/262) | actual -9.8 | miss -8.1 | expert n/a
+
+[SOS] Scolding Administrator | U | MV 2 WB | Creature — Dwarf Cleric | 2/2
+Menace (This creature can't be blocked except by two or more creatures.)
+Repartee — Whenever you cast an instant or sorcery spell that targets a creature, put a +1/+1 counter on this creature.
+When this creature dies, if it had counters on it, put those counters on up to one target creature.
+model +0.8 (rank 81/269) | actual +4.4 | miss +3.6 | expert 2.5/5
+
+[DSK] Skullsnap Nuisance | U | MV 2 UB | Creature — Insect Skeleton | 1/4
+Flying
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+model +1.5 (rank 57/270) | actual -3.1 | miss -4.6 | expert 2.0/5
+
+[OTJ] Hollow Marauder | U | MV 7 B | Creature — Specter Rogue | 4/2
+This spell costs {1} less to cast for each creature card in your graveyard.
+Flying
+When this creature enters, any number of target opponents each discard a card. For each of those opponents who didn't discard a card with mana value 4 or greater, draw a card.
+model +1.2 (rank 67/275) | actual +4.7 | miss +3.5 | expert 3.5/5
+
+[SOS] Garrison Excavator | U | MV 4 R | Creature — Orc Sorcerer | 3/4
+Menace (This creature can't be blocked except by two or more creatures.)
+Whenever one or more cards leave your graveyard, create a 2/2 red and white Spirit creature token.
+model -1.7 (rank 220/269) | actual +1.5 | miss +3.3 | expert 2.0/5
+
+[LCI] Oaken Siren | C | MV 2 U | Artifact Creature — Siren Pirate | 1/2
+Flying, vigilance
+{T}: Add {U}. Spend this mana only to cast an artifact spell or activate an ability of an artifact source.
+model -1.7 (rank 196/252) | actual +2.9 | miss +4.6 | expert 2.5/5
+
+[TDM] Reverberating Summons | U | MV 2 R | Enchantment
+At the beginning of each combat, if you've cast two or more spells this turn, this enchantment becomes a 3/3 Monk creature with haste in addition to its other types until end of turn.
+{1}{R}, Discard your hand, Sacrifice this enchantment: Draw two cards.
+model -3.4 (rank 250/258) | actual -8.2 | miss -4.7 | expert 2.0/5
+
+[BLB] Baylen, the Haymaker | R | MV 3 WRG | Legendary Creature — Rabbit Warrior | 4/3
+Tap two untapped tokens you control: Add one mana of any color.
+Tap three untapped tokens you control: Draw a card.
+Tap four untapped tokens you control: Put three +1/+1 counters on ~. It gains trample until end of turn.
+model +0.5 (rank 99/266) | actual -4.4 | miss -4.9 | expert 3.5/5
+
+[SOS] Snarl Song | U | MV 6 G | Sorcery
+Converge — Create two 0/0 green and blue Fractal creature tokens. Put X +1/+1 counters on each of them and you gain X life, where X is the number of colors of mana spent to cast this spell.
+model -0.3 (rank 147/269) | actual +5.9 | miss +6.2 | expert 2.5/5
+
+[LCI] Captain Storm, Cosmium Raider | U | MV 2 UR | Legendary Creature — Human Pirate | 2/2
+Whenever an artifact you control enters, put a +1/+1 counter on target Pirate you control.
+model +0.5 (rank 84/252) | actual +5.0 | miss +4.5 | expert 3.5/5
+
+[FDN] Scrawling Crawler | R | MV 3 C | Artifact Creature — Phyrexian Construct | 3/2
+At the beginning of your upkeep, each player draws a card.
+Whenever an opponent draws a card, that player loses 1 life.
+model -0.5 (rank 154/273) | actual +3.1 | miss +3.6 | expert 2.5/5
+
+[SOS] Improvisation Capstone | M | MV 7 R | Sorcery — Lesson
+Exile cards from the top of your library until you exile cards with total mana value 4 or greater. You may cast any number of spells from among them without paying their mana costs.
+Paradigm (Then exile this spell. After you first resolve a spell with this name, you may cast a copy of it from exile without paying its mana cost at the beginning of each of your first main phases.)
+model +0.6 (rank 93/269) | actual +7.3 | miss +6.7 | expert 3.0/5
+
+[DSK] Fear of Missing Out | R | MV 2 R | Enchantment Creature — Nightmare | 2/3
+When this creature enters, discard a card, then draw a card.
+Delirium — Whenever this creature attacks for the first time each turn, if there are four or more card types among cards in your graveyard, untap target creature. After this phase, there is an additional combat phase.
+model +1.3 (rank 64/270) | actual +4.7 | miss +3.4 | expert 3.0/5
+
+[BLB] Gev, Scaled Scorch | R | MV 2 BR | Legendary Creature — Lizard Mercenary | 3/2
+Ward—Pay 2 life.
+Other creatures you control enter with an additional +1/+1 counter on them for each opponent who lost life this turn.
+Whenever you cast a Lizard spell, ~ deals 1 damage to target opponent.
+model +1.0 (rank 75/266) | actual +5.9 | miss +4.9 | expert 4.0/5
+
+[TDM] Ugin, Eye of the Storms | M | MV 7 C | Legendary Planeswalker — Ugin
+When you cast this spell, exile up to one target permanent that's one or more colors.
+Whenever you cast a colorless spell, exile up to one target permanent that's one or more colors.
++2: You gain 3 life and draw a card.
+0: Add {C}{C}{C}.
+−11: Search your library for any number of colorless nonland cards, exile them, then shuffle. Until end of turn, you may cast those cards without paying their mana costs.
+model +6.4 (rank 4/258) | actual +12.9 | miss +6.5 | expert 4.0/5
+
+[DFT] Sab-Sunen, Luxa Embodied | M | MV 5 UG | Legendary Creature — God | 6/6
+Reach, trample, indestructible
+~ can't attack or block unless it has an even number of counters on it. (Zero is even.)
+At the beginning of your first main phase, put a +1/+1 counter on ~. Then if it has an odd number of counters on it, draw two cards.
+model +6.5 (rank 3/272) | actual +12.8 | miss +6.3 | expert 4.0/5
+
+[FDN] Etali, Primal Storm | R | MV 6 R | Legendary Creature — Elder Dinosaur | 6/6
+Whenever ~ attacks, exile the top card of each player's library, then you may cast any number of spells from among those cards without paying their mana costs.
+model +3.9 (rank 20/273) | actual -1.2 | miss -5.1 | expert 3.5/5
+
+[DFT] Valor's Flagship | M | MV 7 W | Legendary Artifact — Vehicle | 7/7
+Flying, first strike, lifelink
+Crew 3
+Cycling {X}{2}{W} ({X}{2}{W}, Discard this card: Draw a card.)
+When you cycle this card, create X 1/1 colorless Pilot creature tokens with "This token saddles Mounts and crews Vehicles as though its power were 2 greater."
+model +6.6 (rank 2/272) | actual +1.6 | miss -5.0 | expert 3.5/5
+
+[DSK] Meathook Massacre II | M | MV 4 B | Legendary Enchantment
+When ~ enters, each player sacrifices X creatures of their choice.
+Whenever a creature you control dies, you may pay 3 life. If you do, return that card under your control with a finality counter on it.
+Whenever a creature an opponent controls dies, they may pay 3 life. If they don't, return that card under your control with a finality counter on it.
+model +3.2 (rank 25/270) | actual -6.0 | miss -9.2 | expert 2.0/5
+
+[DSK] Stay Hidden, Stay Silent | U | MV 2 U | Enchantment — Aura
+Enchant creature
+When this Aura enters, tap enchanted creature.
+Enchanted creature doesn't untap during its controller's untap step.
+{4}{U}{U}: Shuffle enchanted creature into its owner's library, then manifest dread. Activate only as a sorcery.
+model -0.6 (rank 161/270) | actual +3.4 | miss +4.0 | expert 3.0/5
+
+[EOE] Uthros Psionicist | U | MV 3 U | Creature — Jellyfish Scientist | 2/4
+The second spell you cast each turn costs {2} less to cast.
+model -2.9 (rank 242/262) | actual +2.2 | miss +5.1 | expert 1.5/5
+
+[LCI] Kitesail Larcenist | R | MV 3 U | Creature — Human Pirate | 2/3
+Flying, ward {1}
+When this creature enters, for each player, choose up to one other target artifact or creature that player controls. For as long as this creature remains on the battlefield, the chosen permanents become Treasure artifacts with "{T}, Sacrifice this artifact: Add one mana of any color" and lose all other abilities.
+model +5.2 (rank 10/252) | actual +10.8 | miss +5.6 | expert 4.0/5
+
+[OTJ] Hell to Pay | R | MV 1 R | Sorcery
+~ deals X damage to target creature. Create a number of tapped Treasure tokens equal to the amount of excess damage dealt to that creature this way.
+model +2.5 (rank 35/275) | actual -3.0 | miss -5.5 | expert 2.5/5
+
+[TLA] United Front | M | MV 2 W | Sorcery
+Create X 1/1 white Ally creature tokens, then put a +1/+1 counter on each creature you control.
+model +5.3 (rank 10/282) | actual +9.7 | miss +4.5 | expert 4.0/5
+
+[MKM] Case of the Locked Hothouse | R | MV 4 G | Enchantment — Case
+You may play an additional land on each of your turns.
+To solve — You control seven or more lands. (If unsolved, solve at the beginning of your end step.)
+Solved — You may look at the top card of your library any time, and you may play lands and cast creature and enchantment spells from the top of your library.
+model -4.9 (rank 265/271) | actual +1.6 | miss +6.6 | expert 3.5/5
+
+[FDN] Dazzling Angel | C | MV 3 W | Creature — Angel | 2/3
+Flying
+Whenever another creature you control enters, you gain 1 life.
+model -0.2 (rank 139/273) | actual +3.4 | miss +3.5 | expert 2.0/5
+
+[TLA] Fire Lord Zuko | R | MV 3 WBR | Legendary Creature — Human Noble Ally | 2/4
+Firebending X, where X is ~'s power. (Whenever this creature attacks, add X {R}. This mana lasts until end of combat.)
+Whenever you cast a spell from exile and whenever a permanent you control enters from exile, put a +1/+1 counter on each creature you control.
+model +0.0 (rank 128/282) | actual -9.7 | miss -9.7 | expert 2.0/5
+
+[DFT] Riverchurn Monument | R | MV 2 U | Artifact
+{1}, {T}: Any number of target players each mill two cards. (Each of them puts the top two cards of their library into their graveyard.)
+Exhaust — {2}{U}{U}, {T}: Any number of target players each mill cards equal to the number of cards in their graveyard. (Activate each exhaust ability only once.)
+model -5.0 (rank 269/272) | actual +4.5 | miss +9.6 | expert 3.0/5
+
+[DFT] Broodheart Engine | U | MV 2 BG | Artifact
+At the beginning of your upkeep, surveil 1.
+{2}{B}{G}, {T}, Sacrifice this artifact: Return target creature or Vehicle card from your graveyard to the battlefield. Activate only as a sorcery.
+model -3.3 (rank 263/272) | actual +1.8 | miss +5.1 | expert 2.5/5
+
+[TDM] Felothar, Dawn of the Abzan | R | MV 3 WBG | Legendary Creature — Human Warrior | 3/3
+Trample
+Whenever ~ enters or attacks, you may sacrifice a nonland permanent. When you do, put a +1/+1 counter on each creature you control.
+model +1.8 (rank 45/258) | actual -3.3 | miss -5.2 | expert 2.0/5
+
+[DSK] Mirror Room // Fractured Realm | M | MV 10 U | Enchantment — Room // Enchantment — Room
+When you unlock this door, create a token that's a copy of target creature you control, except it's a Reflection in addition to its other creature types.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) If a triggered ability of a permanent you control triggers, that ability triggers an additional time.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+model -3.0 (rank 252/270) | actual +0.3 | miss +3.3 | expert 2.0/5
+
+[DSK] Midnight Mayhem | U | MV 4 WR | Sorcery
+Create three 1/1 red Gremlin creature tokens. Gremlins you control gain menace, lifelink, and haste until end of turn. (A creature with menace can't be blocked except by two or more creatures.)
+model +1.2 (rank 68/270) | actual +5.6 | miss +4.3 | expert 3.0/5
+
+[OTJ] Caustic Bronco | R | MV 2 B | Creature — Snake Horse Mount | 2/2
+Whenever this creature attacks, reveal the top card of your library and put it into your hand. You lose life equal to that card's mana value if this creature isn't saddled. Otherwise, each opponent loses that much life.
+Saddle 3 (Tap any number of other creatures you control with total power 3 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+model +0.5 (rank 94/275) | actual +4.2 | miss +3.7 | expert 3.5/5
+
+[DSK] Unwanted Remake | U | MV 1 W | Instant
+Destroy target creature. Its controller manifests dread. (That player looks at the top two cards of their library, then puts one onto the battlefield face down as a 2/2 creature and the other into their graveyard. If it's a creature card, it can be turned face up any time for its mana cost.)
+model -0.4 (rank 139/270) | actual -7.2 | miss -6.9 | expert 1.5/5
+
+[SOS] Hardened Academic | R | MV 2 WR | Creature — Bird Cleric | 2/1
+Flying, haste
+Discard a card: This creature gains lifelink until end of turn.
+Whenever one or more cards leave your graveyard, put a +1/+1 counter on target creature you control.
+model +1.2 (rank 63/269) | actual +5.3 | miss +4.1 | expert 3.5/5
+
+[OTJ] Reach for the Sky | C | MV 4 G | Enchantment — Aura
+Flash
+Enchant creature
+Enchanted creature gets +3/+2 and has reach.
+When this Aura is put into a graveyard from the battlefield, draw a card.
+model -2.5 (rank 246/275) | actual +0.9 | miss +3.5 | expert 1.5/5
+
+[FDN] Think Twice | C | MV 2 U | Instant
+Draw a card.
+Flashback {2}{U} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+model -1.2 (rank 194/273) | actual +2.0 | miss +3.3 | expert 2.0/5
+
+[EOE] Atmospheric Greenhouse | U | MV 5 G | Artifact — Spacecraft | 5/4
+When this Spacecraft enters, put a +1/+1 counter on each creature you control.
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 8+.)
+8+ | Flying, trample
+model +1.1 (rank 79/262) | actual -4.2 | miss -5.3 | expert 2.0/5
+
+[FDN] Rogue's Passage | U | MV 0 C | Land
+{T}: Add {C}.
+{4}, {T}: Target creature can't be blocked this turn.
+model -2.5 (rank 231/273) | actual +1.1 | miss +3.6 | expert 2.0/5
+
+[OTJ] Kellan Joins Up | R | MV 3 WUG | Legendary Enchantment
+When ~ enters, you may exile a nonland card with mana value 3 or less from your hand. If you do, it becomes plotted. (You may cast it as a sorcery on a later turn without paying its mana cost.)
+Whenever a legendary creature you control enters, put a +1/+1 counter on each creature you control.
+model -4.1 (rank 267/275) | actual -12.2 | miss -8.1 | expert 0.5/5
+
+[SOS] Together as One | R | MV 6 C | Sorcery
+Converge — Target player draws X cards, ~ deals X damage to any target, and you gain X life, where X is the number of colors of mana spent to cast this spell.
+model -0.3 (rank 150/269) | actual +10.2 | miss +10.5 | expert 3.5/5
+
+[DSK] Zimone, All-Questioning | R | MV 3 UG | Legendary Creature — Human Wizard | 1/1
+At the beginning of your end step, if a land entered the battlefield under your control this turn and you control a prime number of lands, create Primo, the Indivisible, a legendary 0/0 green and blue Fractal creature token, then put that many +1/+1 counters on it. (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, and 31 are prime numbers.)
+model +0.3 (rank 98/270) | actual +6.6 | miss +6.3 | expert 4.0/5
+
+[EOE] Seedship Impact | U | MV 2 G | Instant
+Destroy target artifact or enchantment. If its mana value was 2 or less, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+model -3.6 (rank 251/262) | actual +2.9 | miss +6.5 | expert n/a
+
+[FDN] Hidetsugu's Second Rite | U | MV 4 R | Instant
+If target player has exactly 10 life, ~ deals 10 damage to that player.
+model -7.4 (rank 271/273) | actual +1.9 | miss +9.3 | expert 0.0/5
+
+[TDM] Dragonclaw Strike | U | MV 6 URG | Sorcery
+Double the power and toughness of target creature you control until end of turn. Then it fights up to one target creature an opponent controls. (Each deals damage equal to its power to the other.)
+model -2.6 (rank 235/258) | actual +0.7 | miss +3.2 | expert 2.5/5
+
+[SOS] Antiquities on the Loose | R | MV 3 W | Sorcery
+Create two 2/2 red and white Spirit creature tokens. Then if this spell was cast from anywhere other than your hand, put a +1/+1 counter on each Spirit you control.
+Flashback {4}{W}{W} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+model +6.3 (rank 4/269) | actual +9.6 | miss +3.3 | expert 4.0/5
+
+[TDM] Dragonback Assault | M | MV 6 URG | Enchantment
+When this enchantment enters, it deals 3 damage to each creature and each planeswalker.
+Landfall — Whenever a land you control enters, create a 4/4 red Dragon creature token with flying.
+model +5.1 (rank 9/258) | actual +11.5 | miss +6.4 | expert 3.5/5
+
+[FDN] Spinner of Souls | R | MV 3 G | Creature — Spider Spirit | 4/3
+Reach
+Whenever another nontoken creature you control dies, you may reveal cards from the top of your library until you reveal a creature card. Put that card into your hand and the rest on the bottom of your library in a random order.
+model +3.3 (rank 29/273) | actual +7.8 | miss +4.5 | expert 3.0/5
+
+[DFT] Mindspring Merfolk | R | MV 1 U | Creature — Merfolk Wizard | 1/1
+Exhaust — {X}{U}{U}, {T}: Draw X cards. Put a +1/+1 counter on each Merfolk creature you control. (Activate each exhaust ability only once.)
+model +0.0 (rank 116/272) | actual +4.2 | miss +4.1 | expert 2.5/5
+
+[EOE] Dawnsire, Sunstar Dreadnought | M | MV 5 C | Legendary Artifact — Spacecraft | 20/20
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 20+.)
+10+ | Whenever you attack, ~ deals 100 damage to up to one target creature or planeswalker.
+20+ | Flying
+model +0.8 (rank 92/262) | actual -6.4 | miss -7.2 | expert 1.0/5
+
+[DFT] Racers' Scoreboard | U | MV 4 C | Artifact
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+When this artifact enters, draw two cards, then discard a card.
+Max speed — Spells you cast cost {1} less to cast.
+model -0.5 (rank 157/272) | actual -7.3 | miss -6.8 | expert 0.0/5
+
+[TDM] Sandskitter Outrider | C | MV 4 B | Creature — Goblin Soldier | 2/1
+Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, it endures 2. (Put two +1/+1 counters on it or create a 2/2 white Spirit creature token.)
+model +0.9 (rank 73/258) | actual -3.7 | miss -4.5 | expert 2.0/5
+
+[LCI] Queen's Bay Paladin | R | MV 5 B | Creature — Vampire Knight | 5/4
+Whenever this creature enters or attacks, return up to one target Vampire card from your graveyard to the battlefield with a finality counter on it. You lose life equal to its mana value. (If a creature with a finality counter on it would die, exile it instead.)
+model +1.4 (rank 58/252) | actual -3.6 | miss -5.0 | expert 3.5/5
+
+[BLB] Ruthless Negotiation | U | MV 1 B | Sorcery
+Target opponent exiles a card from their hand. If this spell was cast from a graveyard, draw a card.
+Flashback {4}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+model -3.2 (rank 252/266) | actual +2.0 | miss +5.2 | expert 1.5/5
+
+[MKM] Karlov Watchdog | U | MV 4 W | Creature — Dog | 3/2
+Vigilance
+Permanents your opponents control can't be turned face up during your turn.
+Whenever you attack with three or more creatures, creatures you control get +1/+1 until end of turn.
+model -2.1 (rank 235/271) | actual +1.4 | miss +3.4 | expert 2.5/5
+
+[LCI] Orazca Puzzle-Door | C | MV 1 U | Artifact
+{1}, {T}, Sacrifice this artifact: Look at the top two cards of your library. Put one of those cards into your hand and the other into your graveyard.
+model -2.8 (rank 232/252) | actual +0.4 | miss +3.2 | expert 2.0/5
+
+[MKM] Hide in Plain Sight | R | MV 4 G | Sorcery
+Look at the top five cards of your library, cloak two of them, and put the rest on the bottom of your library in a random order. (To cloak a card, put it onto the battlefield face down as a 2/2 creature with ward {2}. Turn it face up any time for its mana cost if it's a creature card.)
+model +4.2 (rank 16/271) | actual +8.4 | miss +4.3 | expert 3.5/5
+
+[DSK] Optimistic Scavenger | U | MV 1 W | Creature — Human Scout | 1/1
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, put a +1/+1 counter on target creature.
+model -0.6 (rank 162/270) | actual +5.4 | miss +6.0 | expert 3.0/5
+
+[LCI] Bonehoard Dracosaur | M | MV 5 R | Creature — Dinosaur Dragon | 5/5
+Flying, first strike
+At the beginning of your upkeep, exile the top two cards of your library. You may play them this turn. If you exiled a land card this way, create a 3/1 red Dinosaur creature token. If you exiled a nonland card this way, create a Treasure token.
+model +7.4 (rank 3/252) | actual +15.4 | miss +8.0 | expert 5.0/5
+
+[EOE] Secluded Starforge | R | MV 0 C | Land
+{T}: Add {C}.
+{2}, {T}, Tap X untapped artifacts you control: Target creature gets +X/+0 until end of turn. Activate only as a sorcery.
+{5}, {T}: Create a 2/2 colorless Robot artifact creature token.
+model +0.4 (rank 103/262) | actual +4.4 | miss +4.0 | expert 2.0/5
+
+[LCI] Akal Pakal, First Among Equals | R | MV 3 U | Legendary Creature — Human Advisor | 1/5
+At the beginning of each player's end step, if an artifact entered the battlefield under your control this turn, look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.
+model -1.2 (rank 181/252) | actual +7.3 | miss +8.5 | expert 4.0/5
+
+[TDM] Temur Tawnyback | C | MV 6 URG | Creature — Beast | 4/3
+When this creature enters, draw a card, then discard a card.
+model -2.4 (rank 232/258) | actual +1.3 | miss +3.7 | expert 2.5/5
+
+[BLB] Shoreline Looter | U | MV 2 U | Creature — Rat Rogue | 1/1
+This creature can't be blocked.
+Threshold — Whenever this creature deals combat damage to a player, draw a card. Then discard a card unless there are seven or more cards in your graveyard.
+model -0.3 (rank 135/266) | actual +3.9 | miss +4.2 | expert 3.5/5
+
+[TLA] The Last Agni Kai | R | MV 2 R | Instant
+Target creature you control fights target creature an opponent controls. If the creature the opponent controls is dealt excess damage this way, add that much {R}.
+Until end of turn, you don't lose unspent red mana as steps and phases end.
+model +0.2 (rank 115/282) | actual -6.6 | miss -6.9 | expert 2.5/5
+
+[OTJ] Congregation Gryff | U | MV 3 WG | Creature — Hippogriff Mount | 1/4
+Flying, lifelink
+Whenever this creature attacks while saddled, it gets +X/+X until end of turn, where X is the number of Mounts you control.
+Saddle 3 (Tap any number of other creatures you control with total power 3 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+model +0.3 (rank 106/275) | actual +3.6 | miss +3.2 | expert 3.0/5
+
+[TLA] Avatar Destiny | R | MV 4 G | Enchantment — Aura
+Enchant creature you control
+Enchanted creature gets +1/+1 for each creature card in your graveyard and is an Avatar in addition to its other types.
+When enchanted creature dies, mill cards equal to its power. Return this card to its owner's hand and up to one creature card milled this way to the battlefield under your control.
+model -1.5 (rank 221/282) | actual -7.9 | miss -6.4 | expert 3.5/5
+
+[MKM] Knife | U | MV 1 R | Artifact — Clue Equipment
+During your turn, equipped creature gets +1/+0 and has first strike.
+{2}, Sacrifice this Equipment: Draw a card.
+Equip {2}
+model -1.7 (rank 218/271) | actual -6.5 | miss -4.8 | expert 1.5/5
+
+[LCI] Amalia Benavides Aguirre | R | MV 2 WB | Legendary Creature — Vampire Scout | 2/2
+Ward—Pay 3 life.
+Whenever you gain life, ~ explores. Then destroy all other creatures if its power is exactly 20. (To have this creature explore, reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)
+model +1.9 (rank 40/252) | actual -2.9 | miss -4.8 | expert 2.5/5
+
+[TLA] Abandoned Air Temple | R | MV 0 C | Land
+This land enters tapped unless you control a basic land.
+{T}: Add {W}.
+{3}{W}, {T}: Put a +1/+1 counter on each creature you control.
+model +0.9 (rank 83/282) | actual +5.7 | miss +4.8 | expert 3.5/5
+
+[EOE] Warmaker Gunship | R | MV 3 R | Artifact — Spacecraft | 4/3
+When this Spacecraft enters, it deals damage equal to the number of artifacts you control to target creature an opponent controls.
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 6+.)
+6+ | Flying
+model +2.7 (rank 27/262) | actual +6.4 | miss +3.7 | expert 3.5/5
+
+[TDM] Bone-Cairn Butcher | U | MV 4 WBR | Creature — Demon | 4/4
+Mobilize 2 (Whenever this creature attacks, create two tapped and attacking 1/1 red Warrior creature tokens. Sacrifice them at the beginning of the next end step.)
+Attacking tokens you control have deathtouch.
+model +0.9 (rank 70/258) | actual -3.7 | miss -4.6 | expert 2.5/5
+
+[MKM] Slime Against Humanity | C | MV 3 G | Sorcery
+Create a 0/0 green Ooze creature token with trample. Put X +1/+1 counters on it, where X is two plus the total number of cards you own in exile and in your graveyard that are Oozes or are named ~.
+A deck can have any number of cards named ~.
+model -0.9 (rank 179/271) | actual -10.9 | miss -10.0 | expert 1.0/5
+
+[SOS] Biblioplex Tomekeeper | C | MV 4 C | Artifact Creature — Construct | 3/4
+When this creature enters, choose up to one —
+• Target creature becomes prepared. (Only creatures with prepare spells can become prepared.)
+• Target creature becomes unprepared.
+model -2.1 (rank 242/269) | actual -10.5 | miss -8.4 | expert 0.5/5
+
+[DSK] Overlord of the Mistmoors | M | MV 7 W | Enchantment Creature — Avatar Horror | 6/6
+Impending 4—{2}{W}{W} (If you cast this spell for its impending cost, it enters with four time counters and isn't a creature until the last is removed. At the beginning of your end step, remove a time counter from it.)
+Whenever this permanent enters or attacks, create two 2/1 white Insect creature tokens with flying.
+model +7.8 (rank 1/270) | actual +12.9 | miss +5.1 | expert 4.0/5
+
+[DSK] Patchwork Beastie | U | MV 1 G | Artifact Creature — Beast | 3/3
+Delirium — This creature can't attack or block unless there are four or more card types among cards in your graveyard.
+At the beginning of your upkeep, you may mill a card. (You may put the top card of your library into your graveyard.)
+model -0.9 (rank 188/270) | actual +2.6 | miss +3.6 | expert 2.5/5
+
+[TDM] Dragonback Lancer | C | MV 4 W | Creature — Human Soldier | 3/3
+Flying
+Mobilize 1 (Whenever this creature attacks, create a tapped and attacking 1/1 red Warrior creature token. Sacrifice it at the beginning of the next end step.)
+model +0.1 (rank 119/258) | actual -4.8 | miss -4.9 | expert 2.0/5
+
+[DSK] Shardmage's Rescue | U | MV 1 W | Enchantment — Aura
+Flash
+Enchant creature you control
+As long as this Aura entered this turn, enchanted creature has hexproof.
+Enchanted creature gets +1/+1.
+model -3.1 (rank 253/270) | actual +1.4 | miss +4.5 | expert 3.0/5
+
+[BLB] Gossip's Talent | U | MV 2 U | Enchantment — Class
+(Gain the next level as a sorcery to add its ability.)
+Whenever a creature you control enters, surveil 1.
+{1}{U}: Level 2
+Whenever you attack, target attacking creature with power 3 or less can't be blocked this turn.
+{3}{U}: Level 3
+Whenever a creature you control deals combat damage to a player, you may exile it, then return it to the battlefield under its owner's control.
+model -2.4 (rank 235/266) | actual -7.1 | miss -4.7 | expert 1.0/5
+
+[EOE] Memorial Vault | R | MV 4 R | Artifact
+{T}, Sacrifice another artifact: Exile the top X cards of your library, where X is one plus the mana value of the sacrificed artifact. You may play those cards this turn.
+model -6.4 (rank 260/262) | actual -2.1 | miss +4.3 | expert 1.0/5
+
+[LCI] Pugnacious Hammerskull | R | MV 3 G | Creature — Dinosaur | 6/6
+Whenever this creature attacks while you don't control another Dinosaur, put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+model +1.5 (rank 54/252) | actual +9.0 | miss +7.5 | expert 4.0/5
+
+[DSK] Fear of Isolation | U | MV 2 U | Enchantment Creature — Nightmare | 2/3
+As an additional cost to cast this spell, return a permanent you control to its owner's hand.
+Flying
+model -0.2 (rank 131/270) | actual +4.2 | miss +4.4 | expert 2.0/5
+
+[FDN] Celestial Armor | R | MV 3 W | Artifact — Equipment
+Flash (You may cast this spell any time you could cast an instant.)
+When this Equipment enters, attach it to target creature you control. That creature gains hexproof and indestructible until end of turn.
+Equipped creature gets +2/+0 and has flying.
+Equip {3}{W} ({3}{W}: Attach to target creature you control. Equip only as a sorcery.)
+model +2.6 (rank 35/273) | actual +7.6 | miss +4.9 | expert 3.5/5
+
+[MKM] Neighborhood Guardian | U | MV 2 W | Creature — Unicorn | 2/2
+Whenever another creature you control with power 2 or less enters, target creature you control gets +1/+1 until end of turn.
+model -0.1 (rank 127/271) | actual +4.0 | miss +4.1 | expert 2.0/5
+
+[LCI] Canonized in Blood | U | MV 2 B | Enchantment
+At the beginning of your end step, if you descended this turn, put a +1/+1 counter on target creature you control. (You descended if a permanent card was put into your graveyard from anywhere.)
+{5}{B}{B}, Sacrifice this enchantment: Create a 4/3 white and black Vampire Demon creature token with flying.
+model -2.2 (rank 213/252) | actual -10.4 | miss -8.2 | expert 1.0/5
+
+[SOS] Practiced Offense | R | MV 3 W | Sorcery
+Put a +1/+1 counter on each creature target player controls. Target creature gains your choice of double strike or lifelink until end of turn.
+Flashback {1}{W} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+model +2.7 (rank 28/269) | actual +9.2 | miss +6.5 | expert 4.0/5
+
+[SOS] Suspend Aggression | R | MV 3 WR | Instant
+Exile target nonland permanent and the top card of your library. For each of those cards, its owner may play it until the end of their next turn.
+model -0.9 (rank 171/269) | actual +2.5 | miss +3.3 | expert 3.0/5
+
+[BLB] Harvestrite Host | U | MV 3 W | Creature — Rabbit Citizen | 3/3
+Whenever this creature or another Rabbit you control enters, target creature you control gets +1/+0 until end of turn. Then draw a card if this is the second time this ability has resolved this turn.
+model -0.4 (rank 150/266) | actual +3.1 | miss +3.6 | expert 3.0/5
+
+[BLB] Hired Claw | R | MV 1 R | Creature — Lizard Mercenary | 1/2
+Whenever you attack with one or more Lizards, this creature deals 1 damage to target opponent.
+{1}{R}: Put a +1/+1 counter on this creature. Activate only if an opponent lost life this turn and only once each turn.
+model +0.7 (rank 90/266) | actual +4.3 | miss +3.6 | expert 3.5/5
+
+[BLB] Dreamdew Entrancer | R | MV 4 UG | Creature — Frog Wizard | 3/4
+Reach
+When this creature enters, tap up to one target creature and put three stun counters on it. If you control that creature, draw two cards.
+model +4.8 (rank 11/266) | actual +9.0 | miss +4.2 | expert 4.0/5
+
+[BLB] Alania, Divergent Storm | R | MV 5 UR | Legendary Creature — Otter Wizard | 3/5
+Whenever you cast a spell, if it's the first instant spell, the first sorcery spell, or the first Otter spell other than ~ you've cast this turn, you may have target opponent draw a card. If you do, copy that spell. You may choose new targets for the copy.
+model -1.1 (rank 188/266) | actual -6.7 | miss -5.5 | expert 3.5/5
+
+[DSK] Disturbing Mirth | U | MV 2 BR | Enchantment
+When this enchantment enters, you may sacrifice another enchantment or creature. If you do, draw two cards.
+When you sacrifice this enchantment, manifest dread. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+model -2.1 (rank 230/270) | actual +3.3 | miss +5.4 | expert 2.5/5
+
+[FDN] Day of Judgment | R | MV 4 W | Sorcery
+Destroy all creatures.
+model +1.1 (rank 81/273) | actual +4.7 | miss +3.6 | expert 3.5/5
+
+[TDM] Delta Bloodflies | C | MV 2 B | Creature — Insect | 1/2
+Flying
+Whenever this creature attacks, if you control a creature with a counter on it, each opponent loses 1 life.
+model -0.7 (rank 160/258) | actual -5.2 | miss -4.5 | expert 1.5/5
+
+[EOE] Cosmogrand Zenith | M | MV 3 W | Creature — Human Soldier | 2/4
+Whenever you cast your second spell each turn, choose one —
+• Create two 1/1 white Human Soldier creature tokens.
+• Put a +1/+1 counter on each creature you control.
+model +2.6 (rank 30/262) | actual +8.6 | miss +6.0 | expert 3.5/5
+
+[BLB] Sunspine Lynx | R | MV 4 R | Creature — Elemental Cat | 5/4
+Players can't gain life.
+Damage can't be prevented.
+When this creature enters, it deals damage to each player equal to the number of nonbasic lands that player controls.
+model +1.6 (rank 52/266) | actual -4.1 | miss -5.7 | expert 3.0/5
+
+[SOS] Lecturing Scornmage | U | MV 1 B | Creature — Human Warlock | 1/1
+Repartee — Whenever you cast an instant or sorcery spell that targets a creature, put a +1/+1 counter on this creature.
+model -1.1 (rank 187/269) | actual +2.3 | miss +3.4 | expert 2.5/5
+
+[DSK] Dissection Tools | R | MV 5 C | Artifact — Equipment
+When this Equipment enters, manifest dread, then attach this Equipment to that creature.
+Equipped creature gets +2/+2 and has deathtouch and lifelink.
+Equip—Sacrifice a creature.
+model +2.9 (rank 28/270) | actual +7.2 | miss +4.4 | expert 4.0/5
+
+[DFT] Stall Out | C | MV 2 U | Sorcery
+Tap target creature or Vehicle, then put three stun counters on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+Cycling {2} ({2}, Discard this card: Draw a card.)
+model -1.0 (rank 183/272) | actual -6.2 | miss -5.2 | expert 1.0/5
+
+[TDM] Krumar Initiate | U | MV 2 B | Creature — Human Cleric | 2/2
+{X}{B}, {T}, Pay X life: This creature endures X. Activate only as a sorcery. (Put X +1/+1 counters on it or create an X/X white Spirit creature token.)
+model +1.7 (rank 51/258) | actual -3.5 | miss -5.2 | expert 2.5/5
+
+[SOS] Restoration Seminar | M | MV 7 W | Sorcery — Lesson
+Return target nonland permanent card from your graveyard to the battlefield.
+Paradigm (Then exile this spell. After you first resolve a spell with this name, you may cast a copy of it from exile without paying its mana cost at the beginning of each of your first main phases.)
+model -1.5 (rank 207/269) | actual +2.3 | miss +3.8 | expert 4.0/5
+
+[DSK] Valgavoth's Onslaught | R | MV 1 G | Sorcery
+Manifest dread X times, then put X +1/+1 counters on each of those creatures. (To manifest dread, look at the top two cards of your library, then put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+model +5.3 (rank 7/270) | actual +10.9 | miss +5.6 | expert 4.0/5
+
+[MKM] Cryptic Coat | R | MV 3 U | Artifact — Equipment
+When this Equipment enters, cloak the top card of your library, then attach this Equipment to it. (To cloak a card, put it onto the battlefield face down as a 2/2 creature with ward {2}. Turn it face up any time for its mana cost if it's a creature card.)
+Equipped creature gets +1/+0 and can't be blocked.
+{1}{U}: Return this Equipment to its owner's hand.
+model +3.9 (rank 18/271) | actual +8.4 | miss +4.4 | expert 4.0/5
+
+[BLB] Season of Loss | M | MV 5 B | Sorcery
+Choose up to five {P} worth of modes. You may choose the same mode more than once.
+{P} — Each player sacrifices a creature of their choice.
+{P}{P} — Draw a card for each creature that died under your control this turn.
+{P}{P}{P} — Each opponent loses X life, where X is the number of creature cards in your graveyard.
+model +2.3 (rank 36/266) | actual +10.6 | miss +8.3 | expert 4.5/5
+
+[TDM] Dragonbroods' Relic | U | MV 2 G | Artifact
+{T}, Tap an untapped creature you control: Add one mana of any color.
+{3}{W}{U}{B}{R}{G}, Sacrifice this artifact: Create a 4/4 Dragon creature token named Reliquary Dragon that's all colors. It has flying, lifelink, and "When this token enters, it deals 3 damage to any target." Activate only as a sorcery.
+model -2.7 (rank 239/258) | actual +2.3 | miss +5.1 | expert n/a
+
+[LCI] The Ancient One | M | MV 2 UB | Legendary Creature — Spirit God | 8/8
+Descend 8 — ~ can't attack or block unless there are eight or more permanent cards in your graveyard.
+{2}{U}{B}: Draw a card, then discard a card. When you discard a card this way, target player mills cards equal to its mana value.
+model -0.2 (rank 132/252) | actual +3.0 | miss +3.2 | expert 2.0/5
+
+[DSK] Dollmaker's Shop // Porcelain Gallery | M | MV 8 W | Enchantment — Room // Enchantment — Room
+Whenever one or more non-Toy creatures you control attack a player, create a 1/1 white Toy artifact creature token.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) Creatures you control have base power and toughness each equal to the number of creatures you control.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+model +0.6 (rank 89/270) | actual +7.1 | miss +6.5 | expert 3.5/5
+
+[SOS] Borrowed Knowledge | U | MV 4 WR | Sorcery
+Choose one —
+• Discard your hand, then draw cards equal to the number of cards in target opponent's hand.
+• Discard your hand, then draw cards equal to the number of cards discarded this way.
+model -4.4 (rank 262/269) | actual -9.4 | miss -5.0 | expert 0.5/5
+
+[FDN] Bloodthirsty Conqueror | M | MV 5 B | Creature — Vampire Knight | 5/5
+Flying, deathtouch
+Whenever an opponent loses life, you gain that much life. (Damage causes loss of life.)
+model +3.5 (rank 26/273) | actual +8.6 | miss +5.1 | expert 3.5/5
+
+[EOE] Mm'menon, the Right Hand | R | MV 5 U | Legendary Creature — Jellyfish Advisor | 3/4
+Flying
+You may look at the top card of your library any time.
+You may cast artifact spells from the top of your library.
+Artifacts you control have "{T}: Add {U}. Spend this mana only to cast a spell from anywhere other than your hand."
+model +1.6 (rank 60/262) | actual -4.1 | miss -5.7 | expert 3.0/5
+
+[TDM] Cori Mountain Monastery | R | MV 0 C | Land
+This land enters tapped unless you control a Plains or an Island.
+{T}: Add {R}.
+{3}{R}, {T}: Exile the top card of your library. Until the end of your next turn, you may play that card.
+model -1.0 (rank 174/258) | actual +3.1 | miss +4.1 | expert 2.0/5
+
+[FDN] Swiftfoot Boots | U | MV 2 C | Artifact — Equipment
+Equipped creature has hexproof and haste. (It can't be the target of spells or abilities your opponents control. It can attack and {T} no matter when it came under your control.)
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)
+model -4.5 (rank 266/273) | actual -10.7 | miss -6.2 | expert 0.5/5
+
+[OTJ] Railway Brawler | M | MV 5 G | Creature — Rhino Warrior | 5/5
+Reach, trample
+Whenever another creature you control enters, put X +1/+1 counters on it, where X is its power.
+Plot {3}{G} (You may pay {3}{G} and exile this card from your hand. Cast it as a sorcery on a later turn without paying its mana cost. Plot only as a sorcery.)
+model +5.4 (rank 9/275) | actual +11.0 | miss +5.6 | expert 4.5/5
+
+[DFT] Molt Tender | U | MV 1 G | Creature — Insect Druid | 1/1
+{T}: Mill a card. (Put the top card of your library into your graveyard.)
+{T}, Exile a card from your graveyard: Add one mana of any color.
+model -1.3 (rank 199/272) | actual +2.2 | miss +3.5 | expert 2.5/5
+
+[MKM] Judith, Carnage Connoisseur | R | MV 5 BR | Legendary Creature — Human Shaman | 3/4
+Whenever you cast an instant or sorcery spell, choose one —
+• That spell gains deathtouch and lifelink.
+• Create a 2/2 red Imp creature token with "When this token dies, it deals 2 damage to each opponent."
+model +2.6 (rank 33/271) | actual -4.6 | miss -7.2 | expert 4.0/5
+
+[OTJ] Bucolic Ranch | U | MV 0 C | Land — Desert
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a Mount spell.
+{3}, {T}: Look at the top card of your library. If it's a Mount card, you may reveal it and put it into your hand. If you don't put it into your hand, you may put it on the bottom of your library.
+model -1.7 (rank 219/275) | actual +2.4 | miss +4.1 | expert 2.0/5
+
+[BLB] Camellia, the Seedmiser | R | MV 3 BG | Legendary Creature — Squirrel Warlock | 3/3
+Menace
+Other Squirrels you control have menace.
+Whenever you sacrifice one or more Foods, create a 1/1 green Squirrel creature token.
+{2}, Forage: Put a +1/+1 counter on each other Squirrel you control. (To forage, exile three cards from your graveyard or sacrifice a Food.)
+model +2.7 (rank 29/266) | actual +6.1 | miss +3.4 | expert 4.5/5
+
+[DFT] March of the World Ooze | M | MV 6 G | Enchantment
+Creatures you control have base power and toughness 6/6 and are Oozes in addition to their other types.
+Whenever an opponent casts a spell, if it's not their turn, you create a 3/3 green Elephant creature token.
+model +1.9 (rank 44/272) | actual +7.7 | miss +5.8 | expert 3.5/5
+
+[LCI] Sanguine Evangelist | R | MV 3 W | Creature — Vampire Cleric | 2/1
+Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)
+When this creature enters or dies, create a 1/1 black Bat creature token with flying.
+model +5.5 (rank 8/252) | actual +10.1 | miss +4.6 | expert 4.0/5
+
+[MKM] Fuss // Bother | U | MV 9 WUR | Instant // Sorcery
+Put a +1/+1 counter on each attacking creature you control. Create three 1/1 colorless Thopter artifact creature tokens with flying. Surveil 2.
+model -1.1 (rank 190/271) | actual +4.4 | miss +5.5 | expert 2.5/5
+
+[OTJ] Colossal Rattlewurm | R | MV 4 G | Creature — Wurm | 6/5
+~ has flash as long as you control a Desert.
+Trample
+{1}{G}, Exile this card from your graveyard: Search your library for a Desert card, put it onto the battlefield tapped, then shuffle.
+model +3.0 (rank 28/275) | actual +6.3 | miss +3.2 | expert 4.5/5
+
+[DSK] Grievous Wound | R | MV 5 B | Enchantment — Aura
+Enchant player
+Enchanted player can't gain life.
+Whenever enchanted player is dealt damage, they lose half their life, rounded up.
+model -5.1 (rank 268/270) | actual -12.0 | miss -6.9 | expert 1.5/5
+
+[EOE] Space-Time Anomaly | R | MV 4 WU | Sorcery
+Target player mills cards equal to your life total.
+model -6.3 (rank 258/262) | actual -1.3 | miss +5.0 | expert 1.0/5
+
+[FDN] Goblin Negotiation | U | MV 2 R | Sorcery
+~ deals X damage to target creature. Create a number of 1/1 red Goblin creature tokens equal to the amount of excess damage dealt to that creature this way.
+model +2.6 (rank 36/273) | actual -2.5 | miss -5.1 | expert 2.5/5
+
+[TLA] Aang, Swift Savior | R | MV 3 WU | Legendary Creature — Human Avatar Ally // Legendary Creature — Avatar Spirit Ally
+Flash
+Flying
+When ~ enters, airbend up to one other target creature or spell. (Exile it. While it's exiled, its owner may cast it for {2} rather than its mana cost.)
+Waterbend {8}: Transform ~. Reach, trample
+Whenever ~ and La attack, put a +1/+1 counter on each tapped creature you control.
+model +5.8 (rank 5/282) | actual +9.8 | miss +3.9 | expert 2.5/5
+
+[TDM] Riverwheel Sweep | U | MV 6 WUR | Sorcery
+Tap target creature. Put three stun counters on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+Exile the top two cards of your library. Choose one of them. Until the end of your next turn, you may play that card.
+model -1.4 (rank 193/258) | actual +2.4 | miss +3.8 | expert 2.0/5
+
+[FDN] Kiora, the Rising Tide | R | MV 3 U | Legendary Creature — Merfolk Noble | 3/2
+When ~ enters, draw two cards, then discard two cards.
+Threshold — Whenever ~ attacks, if there are seven or more cards in your graveyard, you may create Scion of the Deep, a legendary 8/8 blue Octopus creature token.
+model +2.4 (rank 40/273) | actual +6.0 | miss +3.6 | expert 3.5/5
+
+[MKM] Torch the Witness | U | MV 1 R | Sorcery
+~ deals twice X damage to target creature. If excess damage was dealt to that creature this way, investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+model +1.7 (rank 47/271) | actual +5.3 | miss +3.6 | expert 3.5/5
+
+[DSK] Painter's Studio // Defaced Gallery | U | MV 5 R | Enchantment — Room // Enchantment — Room
+When you unlock this door, exile the top two cards of your library. You may play them until the end of your next turn.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.) Whenever you attack, attacking creatures you control get +1/+0 until end of turn.
+(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)
+model -1.7 (rank 214/270) | actual +2.1 | miss +3.8 | expert 1.5/5
+
+[MKM] Krenko's Buzzcrusher | R | MV 4 R | Artifact Creature — Insect Thopter | 4/4
+Flying, trample
+When this creature enters, for each player, destroy up to one nonbasic land that player controls. For each land destroyed this way, its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle.
+model +4.5 (rank 15/271) | actual -0.5 | miss -5.0 | expert 3.0/5
+
+[OTJ] Wrangler of the Damned | U | MV 5 WU | Creature — Human Soldier | 1/4
+Flash
+At the beginning of your end step, if you haven't cast a spell from your hand this turn, create a 2/2 white Spirit creature token with flying.
+model +0.8 (rank 82/275) | actual -3.9 | miss -4.7 | expert n/a
+
+[FDN] Seeker's Folly | U | MV 3 B | Sorcery
+Choose one —
+• Target opponent discards two cards.
+• Creatures your opponents control get -1/-1 until end of turn.
+model -1.2 (rank 192/273) | actual +2.1 | miss +3.3 | expert 2.0/5
+
+[OTJ] Fblthp, Lost on the Range | R | MV 3 U | Legendary Creature — Homunculus | 1/1
+Ward {2}
+You may look at the top card of your library any time.
+The top card of your library has plot. The plot cost is equal to its mana cost.
+You may plot nonland cards from the top of your library.
+model +0.3 (rank 100/275) | actual -6.7 | miss -7.1 | expert 3.5/5
+
+[SOS] Choreographed Sparks | R | MV 2 R | Instant
+This spell can't be copied.
+Choose one or both —
+• Copy target instant or sorcery spell you control. You may choose new targets for the copy.
+• Copy target creature spell you control. The copy gains haste and "At the beginning of the end step, sacrifice this token."
+model -5.2 (rank 264/269) | actual -10.5 | miss -5.3 | expert 0.5/5
+
+[TLA] Earth King's Lieutenant | R | MV 2 WG | Creature — Human Soldier Ally | 1/1
+Trample
+When this creature enters, put a +1/+1 counter on each other Ally creature you control.
+Whenever another Ally you control enters, put a +1/+1 counter on this creature.
+model +0.9 (rank 84/282) | actual +4.8 | miss +3.9 | expert 3.0/5
+
+[TLA] Fated Firepower | M | MV 3 R | Enchantment
+Flash
+This enchantment enters with X fire counters on it.
+If a source you control would deal damage to an opponent or a permanent an opponent controls, it deals that much damage plus an amount of damage equal to the number of fire counters on this enchantment instead.
+model -4.3 (rank 278/282) | actual +2.6 | miss +6.8 | expert 3.5/5
+
+[DSK] Paranormal Analyst | U | MV 2 U | Creature — Human Detective | 1/3
+Whenever you manifest dread, put a card you put into your graveyard this way into your hand.
+model -2.4 (rank 241/270) | actual +1.2 | miss +3.6 | expert 3.0/5
+
+[LCI] Staunch Crewmate | U | MV 2 U | Creature — Human Pirate | 2/1
+When this creature enters, look at the top four cards of your library. You may reveal an artifact or Pirate card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+model +1.0 (rank 69/252) | actual +5.5 | miss +4.5 | expert 3.0/5
+
+[LCI] Cogwork Wrestler | C | MV 1 U | Artifact Creature — Gnome | 1/2
+Flash
+When this creature enters, target creature an opponent controls gets -2/-0 until end of turn.
+model -1.0 (rank 172/252) | actual +3.2 | miss +4.2 | expert 2.0/5
+
+[LCI] Subterranean Schooner | R | MV 2 U | Artifact — Vehicle | 3/4
+Whenever this Vehicle attacks, target creature that crewed it this turn explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard.)
+Crew 1
+model +2.1 (rank 35/252) | actual +6.1 | miss +4.0 | expert 4.0/5
+
+[BLB] Mudflat Village | U | MV 0 C | Land
+{T}: Add {C}.
+{T}: Add {B}. Spend this mana only to cast a creature spell.
+{1}{B}, {T}, Sacrifice this land: Return target Bat, Lizard, Rat, or Squirrel card from your graveyard to your hand.
+model -1.9 (rank 218/266) | actual +2.0 | miss +3.9 | expert 3.0/5
+
+[SOS] Pursue the Past | C | MV 2 WR | Sorcery
+You gain 2 life. You may discard a card. If you do, draw two cards.
+Flashback {2}{R}{W} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+model -1.6 (rank 211/269) | actual +3.6 | miss +5.2 | expert 2.5/5
+
+[SOS] Flashback | R | MV 1 R | Instant
+Target instant or sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost. (You may cast that card from your graveyard for its flashback cost. Then exile it.)
+model -4.4 (rank 261/269) | actual -0.7 | miss +3.7 | expert 2.0/5
+
+[MKM] Private Eye | U | MV 3 WU | Creature — Homunculus Detective | 3/3
+Other Detectives you control get +1/+1.
+Whenever you draw your second card each turn, target Detective can't be blocked this turn.
+model +0.5 (rank 94/271) | actual +4.0 | miss +3.5 | expert 3.5/5
+
+[EOE] The Seriema | R | MV 3 W | Legendary Artifact — Spacecraft | 5/5
+When ~ enters, search your library for a legendary creature card, reveal it, put it into your hand, then shuffle.
+Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery. It's an artifact creature at 7+.)
+7+ | Flying
+Other tapped legendary creatures you control have indestructible.
+model +1.0 (rank 83/262) | actual +5.3 | miss +4.3 | expert 2.5/5
+
+[LCI] Breeches, Eager Pillager | R | MV 3 R | Legendary Creature — Goblin Pirate | 3/3
+First strike
+Whenever a Pirate you control attacks, choose one that hasn't been chosen this turn —
+• Create a Treasure token.
+• Target creature can't block this turn.
+• Exile the top card of your library. You may play it this turn.
+model +4.0 (rank 16/252) | actual +9.8 | miss +5.8 | expert 4.0/5
+
+[DFT] Dredger's Insight | U | MV 2 G | Enchantment
+Whenever one or more artifact and/or creature cards leave your graveyard, you gain 1 life.
+When this enchantment enters, mill four cards. You may put an artifact, creature, or land card from among the milled cards into your hand. (To mill four cards, put the top four cards of your library into your graveyard.)
+model -1.4 (rank 209/272) | actual +2.0 | miss +3.4 | expert 2.0/5
+
+[LCI] Dusk Rose Reliquary | U | MV 1 W | Artifact
+As an additional cost to cast this spell, sacrifice an artifact or creature.
+Ward {2}
+When this artifact enters, exile target artifact or creature an opponent controls until this artifact leaves the battlefield.
+model -1.6 (rank 194/252) | actual +3.2 | miss +4.8 | expert 3.0/5
+
+[FDN] Scavenging Ooze | R | MV 2 G | Creature — Ooze | 2/2
+{G}: Exile target card from a graveyard. If it was a creature card, put a +1/+1 counter on this creature and you gain 1 life.
+model +2.6 (rank 37/273) | actual +7.3 | miss +4.7 | expert 3.5/5
+
+[EOE] Hylderblade | U | MV 1 B | Artifact — Equipment
+Equipped creature gets +3/+1.
+Void — At the beginning of your end step, if a nonland permanent left the battlefield this turn or a spell was warped this turn, attach this Equipment to target creature you control.
+Equip {4} ({4}: Attach to target creature you control. Equip only as a sorcery.)
+model -4.4 (rank 254/262) | actual -0.7 | miss +3.8 | expert 1.5/5
+
+[FDN] Imprisoned in the Moon | U | MV 3 U | Enchantment — Aura
+Enchant creature, land, or planeswalker
+Enchanted permanent is a colorless land with "{T}: Add {C}" and loses all other card types and abilities.
+model +1.3 (rank 79/273) | actual -4.4 | miss -5.6 | expert 2.0/5
+
+[FDN] Secluded Courtyard | U | MV 0 C | Land
+As this land enters, choose a creature type.
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type or activate an ability of a creature source of the chosen type.
+model -2.2 (rank 219/273) | actual -7.9 | miss -5.6 | expert 1.0/5
+
+[DFT] Lumbering Worldwagon | R | MV 3 G | Artifact — Vehicle | /4
+This Vehicle's power is equal to the number of lands you control.
+Whenever this Vehicle enters or attacks, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
+Crew 4
+model +0.2 (rank 106/272) | actual +9.9 | miss +9.7 | expert 4.0/5
+
+[MKM] Forum Familiar | U | MV 1 W | Creature — Cat | 1/1
+Disguise {1}{W} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)
+When this creature is turned face up, return another target permanent you control to its owner's hand and put a +1/+1 counter on this creature.
+model +0.5 (rank 93/271) | actual -4.1 | miss -4.6 | expert 2.5/5
+
+[SOS] Render Speechless | C | MV 4 WB | Sorcery
+Target opponent reveals their hand. You choose a nonland card from it. That player discards that card.
+Put two +1/+1 counters on up to one target creature.
+model -1.2 (rank 193/269) | actual +2.1 | miss +3.3 | expert 2.0/5
+
+[TDM] Winternight Stories | R | MV 3 U | Sorcery
+Draw three cards. Then discard two cards unless you discard a creature card.
+Harmonize {4}{U} (You may cast this card from your graveyard for its harmonize cost. You may tap a creature you control to reduce that cost by {X}, where X is its power. Then exile this spell.)
+model +0.7 (rank 76/258) | actual +4.8 | miss +4.1 | expert 2.5/5
+
+[SOS] Informed Inkwright | R | MV 2 W | Creature — Human Wizard | 2/2
+Vigilance
+Repartee — Whenever you cast an instant or sorcery spell that targets a creature, create a 1/1 white and black Inkling creature token with flying.
+model +2.5 (rank 31/269) | actual +6.0 | miss +3.5 | expert 3.5/5
+
+[SOS] Potioner's Trove | C | MV 3 C | Artifact
+{T}: Add one mana of any color.
+{T}: You gain 2 life. Activate only if you've cast an instant or sorcery spell this turn.
+model -3.1 (rank 255/269) | actual +1.0 | miss +4.1 | expert 2.0/5
+
+[EOE] Sinister Cryologist | C | MV 3 U | Creature — Jellyfish Wizard | 2/3
+When this creature enters, target creature an opponent controls gets -3/-0 until end of turn.
+Warp {U} (You may cast this card from your hand for its warp cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+model -0.5 (rank 153/262) | actual -7.2 | miss -6.7 | expert 1.0/5
+
+[BLB] For the Common Good | R | MV 1 G | Sorcery
+Create X tokens that are copies of target token you control. Then tokens you control gain indestructible until your next turn. You gain 1 life for each token you control.
+model -2.7 (rank 243/266) | actual -10.4 | miss -7.7 | expert 1.0/5
+
+[DSK] Entity Tracker | R | MV 3 U | Creature — Human Scout | 2/3
+Flash
+Eerie — Whenever an enchantment you control enters and whenever you fully unlock a Room, draw a card.
+model +0.2 (rank 104/270) | actual +6.1 | miss +5.8 | expert 3.5/5
+
+[LCI] Diamond Pick-Axe | U | MV 1 R | Artifact — Equipment
+Indestructible (Effects that say "destroy" don't destroy this Equipment.)
+Equipped creature gets +1/+1 and has "Whenever this creature attacks, create a Treasure token." (It's an artifact with "{T}, Sacrifice this token: Add one mana of any color.")
+Equip {2}
+model -2.5 (rank 222/252) | actual +1.9 | miss +4.3 | expert 3.0/5
+
+[OTJ] Outcaster Greenblade | U | MV 3 G | Creature — Human Mercenary | 1/2
+When this creature enters, search your library for a basic land card or a Desert card, reveal it, put it into your hand, then shuffle.
+This creature gets +1/+1 for each Desert you control.
+model +0.1 (rank 121/275) | actual +6.6 | miss +6.5 | expert 3.5/5
+
+[TLA] Zuko's Exile | C | MV 5 C | Instant — Lesson
+Exile target artifact, creature, or enchantment. Its controller creates a Clue token. (It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+model -1.7 (rank 227/282) | actual -7.3 | miss -5.6 | expert 1.5/5
+
+[TLA] Fire Nation Raider | C | MV 4 R | Creature — Human Soldier | 4/2
+Raid — When this creature enters, if you attacked this turn, create a Clue token. (It's an artifact with "{2}, Sacrifice this token: Draw a card.")
+model -0.3 (rank 144/282) | actual -4.8 | miss -4.5 | expert 2.0/5
+
+[DFT] Perilous Snare | R | MV 3 W | Artifact
+Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+When this artifact enters, exile target nonland permanent an opponent controls until this artifact leaves the battlefield.
+Max speed — {T}: Put a +1/+1 counter on target creature or Vehicle you control. Activate only as a sorcery.
+model +3.0 (rank 24/272) | actual +6.8 | miss +3.9 | expert 3.0/5
+
+[LCI] The Skullspore Nexus | M | MV 8 G | Legendary Artifact
+This spell costs {X} less to cast, where X is the greatest power among creatures you control.
+Whenever one or more nontoken creatures you control die, create a green Fungus Dinosaur creature token with base power and toughness each equal to the total power of those creatures.
+{2}, {T}: Double target creature's power until end of turn.
+model +0.9 (rank 72/252) | actual +6.5 | miss +5.6 | expert 4.0/5
+
+[FDN] Dreadwing Scavenger | U | MV 3 UB | Creature — Nightmare Bird | 2/2
+Flying
+Whenever this creature enters or attacks, draw a card, then discard a card.
+Threshold — This creature gets +1/+1 and has deathtouch as long as there are seven or more cards in your graveyard.
+model +2.3 (rank 46/273) | actual +6.1 | miss +3.8 | expert 3.0/5
+
+[DSK] Under the Skin | U | MV 3 G | Sorcery
+Manifest dread. (Look at the top two cards of your library. Put one onto the battlefield face down as a 2/2 creature and the other into your graveyard. Turn it face up any time for its mana cost if it's a creature card.)
+You may return a permanent card from your graveyard to your hand.
+model +0.4 (rank 95/270) | actual +4.6 | miss +4.2 | expert 2.5/5
+
+[EOE] The Endstone | M | MV 7 C | Legendary Artifact
+Whenever you play a land or cast a spell, draw a card.
+At the beginning of your end step, your life total becomes half your starting life total, rounded up.
+model -6.3 (rank 259/262) | actual +0.7 | miss +7.0 | expert 3.5/5
+
+[BLB] Caretaker's Talent | R | MV 3 W | Enchantment — Class
+(Gain the next level as a sorcery to add its ability.)
+Whenever one or more tokens you control enter, draw a card. This ability triggers only once each turn.
+{W}: Level 2
+When this Class becomes level 2, create a token that's a copy of target token you control.
+{3}{W}: Level 3
+Creature tokens you control get +2/+2.
+model -1.3 (rank 199/266) | actual +2.6 | miss +3.9 | expert 2.5/5
+
+[LCI] Zoetic Glyph | U | MV 3 U | Enchantment — Aura
+Enchant artifact
+Enchanted artifact is a Golem creature with base power and toughness 5/4 in addition to its other types.
+When this Aura is put into a graveyard from the battlefield, discover 3.
+model -4.1 (rank 247/252) | actual +7.9 | miss +12.0 | expert 2.5/5
+
+[OTJ] Jem Lightfoote, Sky Explorer | U | MV 4 WU | Legendary Creature — Human Scout | 3/3
+Flying, vigilance
+At the beginning of your end step, if you haven't cast a spell from your hand this turn, draw a card.
+model +2.0 (rank 44/275) | actual -3.4 | miss -5.4 | expert 3.5/5
+
+[TLA] The Rise of Sozin | M | MV 6 B | Enchantment — Saga // Legendary Creature — Human Noble
+(As this Saga enters and after your draw step, add a lore counter.)
+I — Destroy all creatures.
+II — Choose a card name. Search target opponent's graveyard, hand, and library for up to four cards with that name and exile them. Then that player shuffles.
+III — Exile this Saga, then return it to the battlefield transformed under your control. Menace, firebending 3 (Whenever this creature attacks, add {R}{R}{R}. This mana lasts until end of combat.)
+Whenever Fire Lord Sozin deals combat damage to a player, you may pay {X}. When you do, put any number of target creature cards with total mana value X or less from that player's graveyard onto the battlefield under your control.
+model +5.5 (rank 8/282) | actual +11.3 | miss +5.8 | expert 4.0/5
+
+[OTJ] Seraphic Steed | R | MV 2 WG | Creature — Unicorn Mount | 2/2
+First strike, lifelink
+Whenever this creature attacks while saddled, create a 3/3 white Angel creature token with flying.
+Saddle 4 (Tap any number of other creatures you control with total power 4 or more: This Mount becomes saddled until end of turn. Saddle only as a sorcery.)
+model +4.0 (rank 13/275) | actual +8.4 | miss +4.4 | expert 4.0/5
+
+[TLA] The Legend of Yangchen | M | MV 5 W | Enchantment — Saga // Legendary Creature — Avatar
+(As this Saga enters and after your draw step, add a lore counter.)
+I — Starting with you, each player chooses up to one permanent with mana value 3 or greater from among permanents your opponents control. Exile those permanents.
+II — You may have target opponent draw three cards. If you do, draw three cards.
+III — Exile this Saga, then return it to the battlefield transformed under your control. Flying
+Whenever you cast your second spell each turn, airbend up to one other target nonland permanent. (Exile it. While it's exiled, its owner may cast it for {2} rather than its mana cost.)
+model +6.6 (rank 2/282) | actual +9.9 | miss +3.2 | expert 3.5/5
+
+[DFT] Marshals' Pathcruiser | U | MV 3 C | Artifact — Vehicle | 6/5
+When this Vehicle enters, search your library for a basic land card, reveal it, put it into your hand, then shuffle.
+Exhaust — {W}{U}{B}{R}{G}: This Vehicle becomes an artifact creature. Put two +1/+1 counters on it. (Activate each exhaust ability only once.)
+Crew 5
+model -2.7 (rank 256/272) | actual +3.2 | miss +5.9 | expert 2.5/5
+
+[DFT] Rangers' Refueler | U | MV 2 U | Artifact — Vehicle | 3/3
+Whenever you activate an exhaust ability, draw a card.
+Exhaust — {4}: This Vehicle becomes an artifact creature. Put a +1/+1 counter on it. (Activate each exhaust ability only once.)
+Crew 2
+model -0.5 (rank 154/272) | actual +3.6 | miss +4.1 | expert 3.0/5
+
+[OTJ] Akul the Unrepentant | R | MV 4 BR | Legendary Creature — Scorpion Dragon Rogue | 5/5
+Flying, trample
+Sacrifice three other creatures: You may put a creature card from your hand onto the battlefield. Activate only as a sorcery and only once each turn.
+model +3.6 (rank 22/275) | actual -0.9 | miss -4.5 | expert 4.0/5
+
+[EOE] Bioengineered Future | R | MV 3 G | Enchantment
+When this enchantment enters, create a Lander token. (It's an artifact with "{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.")
+Each creature you control enters with an additional +1/+1 counter on it for each land that entered the battlefield under your control this turn.
+model -1.3 (rank 186/262) | actual -10.1 | miss -8.8 | expert 2.0/5
+
+[OTJ] Another Round | R | MV 3 W | Sorcery
+Exile any number of creatures you control, then return them to the battlefield under their owner's control. Then repeat this process X more times.
+model -5.6 (rank 274/275) | actual -14.8 | miss -9.2 | expert 1.0/5
+
+[DSK] Ghost Vacuum | R | MV 1 C | Artifact
+{T}: Exile target card from a graveyard.
+{6}, {T}, Sacrifice this artifact: Put each creature card exiled with this artifact onto the battlefield under your control with a flying counter on it. Each of them is a 1/1 Spirit in addition to its other types. Activate only as a sorcery.
+model -3.9 (rank 261/270) | actual +0.9 | miss +4.8 | expert 2.0/5
+
+[DFT] Broken Wings | C | MV 3 G | Instant
+Destroy target artifact, enchantment, or creature with flying.
+model -4.6 (rank 265/272) | actual -0.0 | miss +4.6 | expert 2.0/5
+
+[MKM] Rope | U | MV 1 G | Artifact — Clue Equipment
+Equipped creature gets +1/+2, has reach, and can't be blocked by more than one creature.
+{2}, Sacrifice this Equipment: Draw a card.
+Equip {3}
+model -2.0 (rank 231/271) | actual -7.8 | miss -5.8 | expert 2.0/5
+
+[OTJ] Outcaster Trailblazer | R | MV 3 G | Creature — Human Druid | 4/2
+When this creature enters, add one mana of any color.
+Whenever another creature you control with power 4 or greater enters, draw a card.
+Plot {2}{G} (You may pay {2}{G} and exile this card from your hand. Cast it as a sorcery on a later turn without paying its mana cost. Plot only as a sorcery.)
+model +1.3 (rank 65/275) | actual +4.7 | miss +3.5 | expert 3.0/5
+
+[OTJ] Double Down | M | MV 4 U | Enchantment
+Whenever you cast an outlaw spell, copy that spell. (Assassins, Mercenaries, Pirates, Rogues, and Warlocks are outlaws. Copies of permanent spells become tokens.)
+model -6.0 (rank 275/275) | actual -0.4 | miss +5.5 | expert 4.0/5
+
+[FDN] Inspiring Call | U | MV 3 G | Instant
+Draw a card for each creature you control with a +1/+1 counter on it. Those creatures gain indestructible until end of turn. (Damage and effects that say "destroy" don't destroy them.)
+model -3.4 (rank 257/273) | actual -8.6 | miss -5.2 | expert 1.5/5
+
+[FDN] Thousand-Year Storm | R | MV 6 UR | Enchantment
+Whenever you cast an instant or sorcery spell, copy it for each other instant and sorcery spell you've cast before it this turn. You may choose new targets for the copies.
+model -8.5 (rank 273/273) | actual -19.5 | miss -11.0 | expert 0.0/5
+
+[BLB] Manifold Mouse | R | MV 2 R | Creature — Mouse Soldier | 1/2
+Offspring {2} (You may pay an additional {2} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)
+At the beginning of combat on your turn, target Mouse you control gains your choice of double strike or trample until end of turn.
+model +2.1 (rank 42/266) | actual +7.1 | miss +4.9 | expert 3.5/5
+
+[BLB] Hoarder's Overflow | U | MV 2 R | Enchantment
+When this enchantment enters and whenever you expend 4, put a stash counter on it. (You expend 4 as you spend your fourth total mana to cast spells during a turn.)
+{1}{R}, Sacrifice this enchantment: Discard your hand, then draw cards equal to the number of stash counters on this enchantment.
+model -5.0 (rank 262/266) | actual -10.8 | miss -5.8 | expert 1.5/5
+
+[MKM] Assemble the Players | R | MV 2 W | Enchantment
+You may look at the top card of your library any time.
+Once each turn, you may cast a creature spell with power 2 or less from the top of your library.
+model -1.7 (rank 220/271) | actual -7.1 | miss -5.4 | expert 3.0/5
+
+[EOE] Gene Pollinator | C | MV 1 G | Artifact Creature — Robot Insect | 1/2
+{T}, Tap an untapped permanent you control: Add one mana of any color.
+model -1.5 (rank 201/262) | actual +2.4 | miss +3.8 | expert 2.0/5
+
+[LCI] Fabrication Foundry | R | MV 2 W | Artifact
+{T}: Add {W}. Spend this mana only to cast an artifact spell or activate an ability of an artifact source.
+{2}{W}, {T}, Exile one or more other artifacts you control with total mana value X: Return target artifact card with mana value X or less from your graveyard to the battlefield. Activate only as a sorcery.
+model -3.6 (rank 246/252) | actual -8.2 | miss -4.5 | expert 1.0/5
+
+[OTJ] Cactarantula | C | MV 6 G | Creature — Plant Spider | 6/5
+This spell costs {1} less to cast if you control a Desert.
+Reach
+Whenever this creature becomes the target of a spell or ability an opponent controls, you may draw a card.
+model -1.8 (rank 222/275) | actual +2.2 | miss +4.0 | expert 1.5/5
+
+[TDM] Karakyk Guardian | U | MV 6 URG | Creature — Dragon | 6/5
+Flying, vigilance, trample
+This creature has hexproof as long as it hasn't dealt damage yet. (It can't be the target of spells or abilities your opponents control.)
+model +0.3 (rank 104/258) | actual +4.7 | miss +4.4 | expert 3.0/5
+
