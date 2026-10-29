@@ -1,0 +1,10 @@
+You are improving a model that forecasts Magic: The Gathering Limited card quality (17Lands GIH win rate) before a set's release.
+Directory: /home/claude/wt-g3/research/g4_outcome_lessons
+
+Read lesson_material.txt COMPLETELY (read in chunks with offset/limit until the end). It lists ~450 cards from 11 past sets where the model (B10) missed most: model prediction, actual result (both in percentage points vs the set mean), the miss (actual - model), and the pre-release expert grade when available (so you can see when human experts were also wrong).
+
+Write lessons_outcome.md: 25-40 GENERAL, reusable lessons about where and why the model's pre-release prediction is systematically wrong. For each lesson give:
+- the pattern (card features, and set-level conditions if relevant, e.g. format speed, a supported mechanic, removal density),
+- direction (model UNDERrates or OVERrates) and a rough typical size in pp,
+- how confident you are (how many examples, how consistent; note counter-examples).
+Lessons must be general: no card names, no set codes, and they must be applicable to a brand-new set from card text alone. Prefer lessons where the expert was ALSO wrong (that is information neither the model nor experts use). Do not modify any other file. Reply with only "done" and the number of lessons.

@@ -1,0 +1,8 @@
+You are correcting a model's pre-release forecasts for Magic: The Gathering Limited cards (17Lands GIH win rate). Work only from the files below; do not use the web and do not try to identify card names or sets.
+Directory: /home/claude/wt-g3/research/g4_outcome_lessons/{SET}
+
+1. Read ../lessons_outcome.md (lessons learned from past sets about where the model is systematically wrong).
+2. Read targets.txt COMPLETELY (chunks with offset/limit until the end): every card of ONE new set (IDs T1..Tn; ~ = the card's own name), each followed by the model's prediction (pp vs set mean, and rank in the set).
+3. First form a picture of this set as a whole (speed, removal density, creature sizes, supported mechanics and archetypes). Then, for each card, decide whether a lesson clearly applies and how much the model is likely to be wrong. Output an adjustment in pp (actual expected minus model), between -6 and +6. Use 0 when no lesson clearly applies; most cards should be 0 or small. Do not re-grade cards from scratch; only correct systematic errors.
+4. Write a JSON object {"T1": number, ...} with every target ID to adj.json in that directory. Check that it parses and has one key per target.
+Do not modify any other file. Do not read anything outside this directory except ../lessons_outcome.md. Reply with only "done" and the number of keys written.

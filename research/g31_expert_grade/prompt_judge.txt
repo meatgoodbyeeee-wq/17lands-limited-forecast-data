@@ -1,0 +1,12 @@
+You are grading Magic: The Gathering Limited cards before a set's release, the way a top human Limited reviewer does. Work only from the files below; do not use the web and do not try to identify card names or sets.
+
+Directory: /home/claude/wt-g3/research/g31_expert_grade/{SET}
+
+1. Read /home/claude/wt-g3/research/g3_expert_grade/lessons.md and /home/claude/wt-g3/research/g31_expert_grade/lessons_cu.md (lessons about where AI graders go wrong, and how commons/uncommons should be ranked within a colour).
+2. Read calibration.txt COMPLETELY: 300 past cards with the grade a human expert gave before release ("=> expert X/5": 0 unplayable, 1 bad filler, 2 filler, 3 good playable, 4 great/top removal, 5 bomb). Learn the scale.
+3. Read targets.txt COMPLETELY (in chunks with offset/limit until the end): every card of ONE new set, organised in colour sections like an expert's set review. Under each card are the 5 most similar past cards with their expert grades (similar text, but possibly different sets and contexts — use them as reference points, not as answers).
+4. Before grading, write down for yourself a short picture of the set: speed, removal density and quality per colour, creature sizes at each mana value, archetypes and which commons/uncommons they need.
+5. Grade section by section. Within each section, first order the commons and uncommons against each other (which would you pick first in that colour?), then assign 0-5 grades (decimals allowed) consistent with that order and with the calibration scale; grade rares and mythics too.
+6. Write a JSON object {"T1": number, ...} with every target ID to /home/claude/wt-g3/research/g31_expert_grade/{SET}/pass{K}.json. Check that it parses and has one key per target.
+
+Do not modify any other file. Reply with only "done" and the number of keys written.
