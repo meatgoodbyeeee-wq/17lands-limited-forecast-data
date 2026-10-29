@@ -31,6 +31,27 @@ def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
+def targets(cards):
+    """Judged cards in judging order and the targets.txt text (deterministic; export_b11g.py recomputes it to check the key)."""
+    q = pd.read_csv(t.LAB / 'cards.csv.gz', keep_default_na=False)
+    byname = {}
+    for r in q.itertuples():
+        byname.setdefault(t.norm_name(r.name), r)
+    miss = [c['name'] for c in cards if t.norm_name(c['name']) not in byname]
+    if miss:
+        raise SystemExit(f'not in label/cards.csv.gz yet (run trk_label.py queue first): {miss[:20]}')
+    seen, rows = set(), []
+    for c in cards:
+        r = byname[t.norm_name(c['name'])]
+        if r.auto == 1 or c.get('booster') is False or t.norm_name(c['name']) in seen:
+            continue
+        seen.add(t.norm_name(c['name']))
+        rows.append((c, r))
+    order = np.random.default_rng(3).permutation(len(rows))
+    rows = [rows[i] for i in order]
+    return rows, '\n\n'.join(fmt(f'#T{i+1}', RAR[c['rarity']], r.mv, r.colors, r.type_line, r.pt, r.btext) for i, (c, r) in enumerate(rows)) + '\n'
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--cards', type=Path, required=True)
@@ -42,29 +63,13 @@ def main():
     gal = json.loads(gzip.open(a.cards, 'rt', encoding='utf-8').read())
     if not gal.get('complete'):
         print('warning: the gallery list is not marked complete', file=sys.stderr)
-    q = pd.read_csv(t.LAB / 'cards.csv.gz', keep_default_na=False)
-    byname = {}
-    for r in q.itertuples():
-        byname.setdefault(t.norm_name(r.name), r)
-    miss = [c['name'] for c in gal['cards'] if t.norm_name(c['name']) not in byname]
-    if miss:
-        raise SystemExit(f'not in label/cards.csv.gz yet (run trk_label.py queue first): {miss[:20]}')
-    seen, rows = set(), []
-    for c in gal['cards']:
-        r = byname[t.norm_name(c['name'])]
-        if r.auto == 1 or c.get('booster') is False or t.norm_name(c['name']) in seen:
-            continue
-        seen.add(t.norm_name(c['name']))
-        rows.append((c, r))
+    rows, text = targets(gal['cards'])
     ex = [H / 'all' / s / 'examples.txt' for s in ('AFR', 'KHM', 'MID')]
     if len({sha(p) for p in ex}) != 1:
         raise SystemExit('training examples differ between non-past sets')
-    order = np.random.default_rng(3).permutation(len(rows))
-    rows = [rows[i] for i in order]
     OUT.mkdir(exist_ok=True); KEYS.mkdir(exist_ok=True)
     (OUT / 'examples.txt').write_bytes(ex[0].read_bytes())
-    (OUT / 'targets.txt').write_text('\n\n'.join(fmt(f'#T{i+1}', RAR[c['rarity']], r.mv, r.colors, r.type_line, r.pt, r.btext)
-                                                for i, (c, r) in enumerate(rows)) + '\n')
+    (OUT / 'targets.txt').write_text(text)
     pd.DataFrame({'tid': [f'T{i+1}' for i in range(len(rows))], 'key': [r.key for _, r in rows], 'name': [c['name'] for c, _ in rows],
                   'rarity': [c['rarity'] for c, _ in rows]}).to_csv(KEYS / f'TRK_{a.run}.csv', index=False)
     meta = {'run': a.run, 'cards_file': str(a.cards.name), 'cards_retrieved_at': gal.get('retrieved_at'), 'cards_complete': bool(gal.get('complete')),

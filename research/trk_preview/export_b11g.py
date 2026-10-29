@@ -12,14 +12,14 @@ and, with --explain, the per-card contributions that reasons_b11g.py turns into 
 
 Labels: C3, C4, C5 (Sonnet) from label/cards.csv.gz by card name; C9 is not used.
 G3: research/g3_expert_grade/TRK_<run>/pass{1,2,3}.json (Opus, build_trk.py --run <run>) via keys_trk/TRK_<run>.csv; g3 = mean of the 3 passes,
---g3-run preview = provisional judging of the revealed cards (preview page only), full = judging after every card is out; the key must list
-exactly the judged cards of --cards (same card-list time), so passes made for another card list are refused;
+--g3-run preview = provisional judging of the revealed cards (preview page only), full = judging after every card is out; the judged cards
+are rebuilt from --cards and must match the key's targets text exactly, so passes made for other or changed cards are refused;
 g3_z = within-set z-score, cards not judged (basic lands, blank text) are filled like training (research/g3_retrain/b11.py).
 Spread (B10S-style factor): Rule F22 arm S on the B11g OOF is NOT supported (research/g3_retrain/spread_b11g.json: gain 0.004pp < 0.01pp),
 so no factor is applied: the user decided on 2026-10-29 that B11g for TRK has no spread factor (--spread is kept for research only).
 FIN, MH3, FRA outcomes are not used. MTGAZone's TRK review is not used.
 """
-import argparse, gzip, json, sys
+import argparse, gzip, hashlib, json, sys
 from pathlib import Path
 import numpy as np, pandas as pd
 
@@ -31,6 +31,8 @@ sys.path.insert(0, str(HERE))
 import b11  # noqa: E402
 import c3_research as c3  # noqa: E402
 import trk_label as t  # noqa: E402
+sys.path.insert(0, str(R / 'g3_expert_grade'))
+import build_trk as bt  # noqa: E402
 c9 = b11.c9
 c5, e = c9.c5, c9.e
 
@@ -45,10 +47,11 @@ def g3_for(rows, gal, code, run, retrieved_at):
     """g3 (mean of the passes) and g3_z per row; rows not judged get the training fill (b11.run_arm)."""
     key = pd.read_csv(G3 / 'keys_trk' / f'{code}_{run}.csv')
     meta = json.loads((G3 / 'keys_trk' / f'{code}_{run}.meta.json').read_text())
-    want = {t.norm_name(c['name']) for c, r in zip(gal, rows) if not r.auto and c.get('booster') is not False}
-    if meta.get('cards_retrieved_at') != retrieved_at or set(key.name.map(t.norm_name)) != want:
+    # the judged cards must be exactly what build_trk.py makes from THIS card list (same cards, same text, same order)
+    jrows, jtext = bt.targets(gal)
+    if hashlib.sha256(jtext.encode()).hexdigest() != meta.get('targets_sha256') or list(key.key) != [r.key for _, r in jrows]:
         raise SystemExit(f'G3 {run} judging was made for another card list ({meta.get("cards_retrieved_at")}, {len(key)} cards); '
-                         f'this list is {retrieved_at}, {len(want)} cards to judge: rebuild with build_trk.py --run {run} and judge again')
+                         f'this list ({retrieved_at}) gives {len(jrows)} other or changed cards to judge: rebuild with build_trk.py --run {run} and judge again')
     passes = [json.load(open(G3 / f'{code}_{run}' / f'pass{k}.json')) for k in range(1, G3_PASSES + 1)]
     for k, d in enumerate(passes, 1):
         if set(d) != set(key.tid):
