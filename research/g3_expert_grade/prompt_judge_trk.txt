@@ -1,6 +1,6 @@
 You are grading Magic: The Gathering Limited cards before a set's release, the way a top human Limited reviewer does. Work only from the files below; do not use the web and do not try to identify card names or sets.
 
-Directory: {DIR}/research/g3_expert_grade/TRK_full   ({DIR} = the repository checkout)
+Directory: {DIR}/research/g3_expert_grade/TRK_{RUN}   ({DIR} = the repository checkout)
 
 1. Read ../lessons.md (lessons about where AI graders go wrong compared to expert reviewers).
 2. Read examples.txt COMPLETELY (read in chunks with offset/limit until the end): ~800 cards from past sets (~ = the card's own name) with the grade a human expert gave before release, "=> expert X/5" (0 = unplayable, 1 = bad filler, 2 = filler, 3 = good playable, 4 = great/top removal, 5 = bomb). Learn the expert's scale and judgement.

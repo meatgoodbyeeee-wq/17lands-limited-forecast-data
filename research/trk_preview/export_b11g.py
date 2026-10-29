@@ -8,10 +8,12 @@ Writes the two files that limited-forecast-pages/scripts/build-set-forecast.mjs 
 and, with --explain, the per-card contributions that reasons_b11g.py turns into the one-line reason (local only, not published):
   <explain>             structured part: SHAP per feature; text part: Ridge coefficient x TF-IDF per n-gram; both in final pp
 
-  python3 export_b11g.py --cards <pages>/data/trk/target.json.gz --out-dir <pages>/data/trk [--set TRK] [--explain export_tmp/trk_b11g_explain.json.gz]
+  python3 export_b11g.py --g3-run <preview|full> --cards <pages>/data/trk/target.json.gz --out-dir <pages>/data/trk [--set TRK] [--explain export_tmp/trk_b11g_explain.json.gz]
 
 Labels: C3, C4, C5 (Sonnet) from label/cards.csv.gz by card name; C9 is not used.
-G3: research/g3_expert_grade/TRK_full/pass{1,2,3}.json (Opus, build_trk.py) via keys_trk/TRK.csv; g3 = mean of the 3 passes,
+G3: research/g3_expert_grade/TRK_<run>/pass{1,2,3}.json (Opus, build_trk.py --run <run>) via keys_trk/TRK_<run>.csv; g3 = mean of the 3 passes,
+--g3-run preview = provisional judging of the revealed cards (preview page only), full = judging after every card is out; the key must list
+exactly the judged cards of --cards (same card-list time), so passes made for another card list are refused;
 g3_z = within-set z-score, cards not judged (basic lands, blank text) are filled like training (research/g3_retrain/b11.py).
 Spread (B10S-style factor): Rule F22 arm S on the B11g OOF is NOT supported (research/g3_retrain/spread_b11g.json: gain 0.004pp < 0.01pp),
 so no factor is applied: the user decided on 2026-10-29 that B11g for TRK has no spread factor (--spread is kept for research only).
@@ -32,20 +34,25 @@ import trk_label as t  # noqa: E402
 c9 = b11.c9
 c5, e = c9.c5, c9.e
 
-VERSION = 'gih-b11g-28set-20261029-trk-preview'
+VERSION = 'gih-b11g-28set-20261029-trk'  # + '-preview' for --g3-run preview
 G3 = R / 'g3_expert_grade'
 OOF_B11G = R / 'g3_retrain/oof_B11g.csv.gz'
 SPREAD = json.loads((R / 'g3_retrain/spread_b11g.json').read_text())
 G3_PASSES = 3
 
 
-def g3_for(rows, code):
+def g3_for(rows, gal, code, run, retrieved_at):
     """g3 (mean of the passes) and g3_z per row; rows not judged get the training fill (b11.run_arm)."""
-    key = pd.read_csv(G3 / 'keys_trk' / f'{code}.csv')
-    passes = [json.load(open(G3 / f'{code}_full' / f'pass{k}.json')) for k in range(1, G3_PASSES + 1)]
+    key = pd.read_csv(G3 / 'keys_trk' / f'{code}_{run}.csv')
+    meta = json.loads((G3 / 'keys_trk' / f'{code}_{run}.meta.json').read_text())
+    want = {t.norm_name(c['name']) for c, r in zip(gal, rows) if not r.auto and c.get('booster') is not False}
+    if meta.get('cards_retrieved_at') != retrieved_at or set(key.name.map(t.norm_name)) != want:
+        raise SystemExit(f'G3 {run} judging was made for another card list ({meta.get("cards_retrieved_at")}, {len(key)} cards); '
+                         f'this list is {retrieved_at}, {len(want)} cards to judge: rebuild with build_trk.py --run {run} and judge again')
+    passes = [json.load(open(G3 / f'{code}_{run}' / f'pass{k}.json')) for k in range(1, G3_PASSES + 1)]
     for k, d in enumerate(passes, 1):
         if set(d) != set(key.tid):
-            raise SystemExit(f'G3 pass{k} does not cover exactly the targets in keys_trk/{code}.csv')
+            raise SystemExit(f'G3 pass{k} does not cover exactly the targets in keys_trk/{code}_{run}.csv')
     key['g3'] = np.mean([key.tid.map(d).astype(float) for d in passes], axis=0)
     key['g3_z'] = (key.g3 - key.g3.mean()) / key.g3.std()
     by = {t.norm_name(n): (g, z) for n, g, z in zip(key.name, key.g3, key.g3_z)}
@@ -58,7 +65,7 @@ def g3_for(rows, code):
     z = np.array([by[t.norm_name(r.name)][1] if j else m for j, r in zip(judged, rows)])
     agree = [float(np.corrcoef(key.tid.map(passes[a]).astype(float), key.tid.map(passes[b]).astype(float))[0, 1])
              for a, b in ((0, 1), (0, 2), (1, 2))]
-    return g, z, {'targets': len(key), 'pass_pearson': [round(x, 3) for x in agree], 'mean': round(m, 4)}
+    return g, z, {'run': run, 'cards_retrieved_at': retrieved_at, 'targets': len(key), 'pass_pearson': [round(x, 3) for x in agree], 'mean': round(m, 4)}
 
 
 def fit_seed(train, test, nums, seed):
@@ -100,12 +107,15 @@ def main():
     ap.add_argument('--cards', type=Path, required=True)
     ap.add_argument('--out-dir', type=Path, required=True)
     ap.add_argument('--set', default='TRK')
+    ap.add_argument('--g3-run', choices=['preview', 'full'], required=True)
     ap.add_argument('--spread', action='store_true', help='apply the B11g 28-set spread factor (not supported by Rule F22)')
     ap.add_argument('--explain', type=Path, help='write per-card contributions (local, not published)')
     ap.add_argument('--check', action='store_true', help='also run e.predict and require identical predictions')
     a = ap.parse_args()
     code = a.set.upper()
-    gal = json.loads(gzip.open(a.cards, 'rt', encoding='utf-8').read())['cards']
+    gall = json.loads(gzip.open(a.cards, 'rt', encoding='utf-8').read())
+    gal = gall['cards']
+    version = VERSION + ('-preview' if a.g3_run == 'preview' else '') + ('-s' if a.spread else '')
     q = pd.read_csv(t.LAB / 'cards.csv.gz', keep_default_na=False)
     byname = {}
     for r in q.itertuples():
@@ -119,7 +129,7 @@ def main():
         if not r.auto and not all(r.id in raws[p] for p in ('c3', 'c4', 'c5')):
             raise SystemExit(f'labels incomplete for {r.name}')
     t3, t4, t5, _ = t.label_tables(rows, raws, with_c9=False)
-    g3, g3z, g3meta = g3_for(rows, code)
+    g3, g3z, g3meta = g3_for(rows, gal, code, a.g3_run, gall.get('retrieved_at'))
 
     x = pd.DataFrame([r.auto == 1 and [0] * 10 + ['-'] or raws['c3'][r.id] for r in rows], columns=c3.FIELDS + ['dep'])
     c3csv = pd.concat([pd.DataFrame({'key': [f"{code}|{c['id']}" for c in gal]}), x, t3], axis=1)
@@ -154,7 +164,7 @@ def main():
     sd_, td_ = b * 1.25 * .7 * (tr - c) * 100, b * 1.25 * .3 * (tx - c) * 100
     spread_txt = (f'予測の広がりを過去28セットの実測に合わせて広げる補正（セット平均からの差を{b:.3f}倍）を加えています。' if a.spread else '')
     out = {
-        'version': VERSION + ('-s' if a.spread else ''), 'set': code, 'preliminary': True,
+        'version': version, 'set': code, 'preliminary': a.g3_run == 'preview',
         'source_repository': 'meatgoodbyeeee-wq/17lands-limited-forecast-data', 'source_head': e.head(),
         'fin_used': False, 'mh3_used': False, 'mtgazone_trk_used': False, 'training_sets': sorted(set(pool['set'])),
         'method': ('B11g: ExtraTrees 600 leaf 8 max_features 0.6 on baseline + C3 + C4 + C5 + G3 features (+ word TF-IDF Ridge alpha 10); 70:30; '
@@ -167,9 +177,9 @@ def main():
             'structured_label': '構造化特徴量（AI抽出の効果・評価を含む）',
             'summary': '28セット（KHM〜HOB、FIN・MH3を除く）の発売前特徴量と、AIがルールテキストから読み取ったカード効果（C3〜C5）、'
                        '過去の専門家の評価を手本にAIがセット全体を見て付けた評価（G3）から、構造化特徴量のExtraTreesとルールテキストの'
-                       'TF-IDF/Ridgeを70:30で合成し、固定係数で予測しています。' + spread_txt + 'プレビュー中の暫定版です。',
+                       'TF-IDF/Ridgeを70:30で合成し、固定係数で予測しています。' + spread_txt + ('プレビュー中の暫定版です。' if a.g3_run == 'preview' else ''),
             'note': 'GIH WR：28セットの構造化特徴量（AIが読み取ったカード効果と、専門家の評価を手本にしたAIの評価を含む）＋ルールテキスト予測'
-                    + ('＋予測の広がり補正' if a.spread else '') + '（暫定）。ALSAは従来の予測モデル。'},
+                    + ('＋予測の広がり補正' if a.spread else '') + ('（暫定）' if a.g3_run == 'preview' else '') + '。ALSAは従来の予測モデル。'},
         'seeds': c9.SEEDS, 'base': round(c * 100, 5),
         'cards': [{'id': card['id'], 'name': card['name'], 'oracle_text': card.get('oracle_text') or '', 'type_line': card.get('type_line') or '',
                    'mana_cost': card.get('mana_cost') or '', 'gih': round(float(pp * 100), 6), 'structured_delta': round(float(s), 6),
