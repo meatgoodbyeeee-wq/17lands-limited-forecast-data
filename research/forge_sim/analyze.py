@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Forge self-play, step 3: colour-pair win rates from the games and their agreement with 17Lands.
 
-  python3 research/forge_sim/analyze.py research/forge_sim/runs/<games>.csv [--actual research/fra_check/fra-actual-color-ratings.json]
+  python3 research/forge_sim/analyze.py research/forge_sim/runs/<games>.csv [<games2>.csv ...] [--actual research/fra_check/fra-actual-color-ratings.json]
 
+Several runs are pooled (rounds kept apart for the bootstrap).
 Pair win rate = wins / decided games of that pair's decks against other pairs (mirror games and draws left out).
 Agreement: Spearman over the 10 pairs with the centred 17Lands Color Ratings win rate (FRA: 28 days; --actual picks non-splash two-colour or splash combined),
 with a 95% interval from resampling rounds (bootstrap, 2000 draws).
@@ -45,10 +46,11 @@ def actual_pairs(path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('games')
+    ap.add_argument('games', nargs='+')
     ap.add_argument('--actual', default=str(Path(__file__).resolve().parents[1] / 'fra_check/fra-actual-color-ratings.json'))
     a = ap.parse_args()
-    g = pd.read_csv(a.games, keep_default_na=False)
+    g = pd.concat([pd.read_csv(f, keep_default_na=False).assign(round=lambda d, i=i: i * 1000 + d['round'].astype(int))
+                   for i, f in enumerate(a.games)], ignore_index=True)
     y = actual_pairs(Path(a.actual)).loc[PAIRS]; y = y - y.mean()
     t = pair_wr(g)
     t['sim_centred'] = t.wr - t.wr.mean(); t['actual_centred'] = y

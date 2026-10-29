@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Forge self-play, step 4: card win rates when drawn, against 17Lands GIH WR (which cards the AI plays badly).
 
-  python3 research/forge_sim/card_wr.py research/forge_sim/runs/<games>.csv [--gih research/fra_check/fra_actual_gih500.csv]
+  python3 research/forge_sim/card_wr.py research/forge_sim/runs/<games>.csv [<games2>.csv ...] [--gih research/fra_check/fra_actual_gih500.csv]
          [--min-games 150] [--out <cards.csv>]
 
-Reads <games>.csv and <games>_seen.csv or .csv.gz (run_sim.py --seen). Per card (basics left out), over decided games:
+Reads <games>.csv and <games>_seen.csv or .csv.gz (run_sim.py --seen); several runs are pooled. Per card (basics left out), over decided games:
   sim_gih  win rate of the player-games where at least one copy left the library (opening hand or drawn; mill counts too)
   sim_gns  win rate of the player-games where the card was in the deck but not drawn
   sim_iwd  sim_gih - sim_gns (within the same decks, so the deck and colour-pair strength cancel)
@@ -35,15 +35,18 @@ def deck_lists(deck_dir):
 def main():
     here = Path(__file__).resolve().parent
     ap = argparse.ArgumentParser()
-    ap.add_argument('games')
+    ap.add_argument('games', nargs='+')
     ap.add_argument('--gih', default=str(here.parent / 'fra_check/fra_actual_gih500.csv'))
     ap.add_argument('--decks', default=str(here / 'decks_fra'))
     ap.add_argument('--min-games', type=int, default=150)
     ap.add_argument('--out')
     a = ap.parse_args()
-    games = pd.read_csv(a.games)
-    sp = Path(a.games).with_name(Path(a.games).stem + '_seen.csv')
-    seen = pd.read_csv(sp if sp.exists() else sp.with_name(sp.name + '.gz'))
+    games, seen = [], []
+    for i, f in enumerate(a.games):
+        sp = Path(f).with_name(Path(f).stem + '_seen.csv')
+        games.append(pd.read_csv(f).assign(game=lambda d, i=i: f'{i}:' + d.game.astype(str)))
+        seen.append(pd.read_csv(sp if sp.exists() else sp.with_name(sp.name + '.gz')).assign(game=lambda d, i=i: f'{i}:' + d.game.astype(str)))
+    games, seen = pd.concat(games, ignore_index=True), pd.concat(seen, ignore_index=True)
     games = games[games.winner.notna() & (games.winner != '')]
     pg = pd.concat([games.assign(deck=games.deck1), games.assign(deck=games.deck2)])
     pg['win'] = (pg.winner == pg.deck).astype(int)
