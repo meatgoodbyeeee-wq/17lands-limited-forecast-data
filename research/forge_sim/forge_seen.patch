@@ -1,0 +1,28 @@
+diff --git a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
+index 66fde34d..44d0dd15 100644
+--- a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
++++ b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
+@@ -275,6 +275,23 @@ public class SimulateMatch {
+             System.out.println(l);
+         }
+ 
++        // Research hook (FORGE_SIM_SEEN=1): per player, every own non-token card that left the library during the game
++        // (opening hand and draws, approximately: mill and library exile count too), with its final zone.
++        if (System.getenv("FORGE_SIM_SEEN") != null) {
++            for (forge.game.player.Player p : g1.getRegisteredPlayers()) {
++                StringBuilder seen = new StringBuilder();
++                for (forge.game.card.Card c : p.getAllCards()) {
++                    if (c.isToken() || c.getOwner() != p || c.getPaperCard() == null || c.getZone() == null
++                            || c.getZone().getZoneType() == forge.game.zone.ZoneType.Library) {
++                        continue;
++                    }
++                    seen.append(c.getPaperCard().getName()).append('@').append(c.getZone().getZoneType()).append('|');
++                }
++                System.out.printf("Seen: %d\t%s\t%s\t%d\t%s%n", 1 + iGame, p.getName(),
++                        p.equals(g1.getStartingPlayer()) ? "play" : "draw", g1.getPhaseHandler().getTurn(), seen);
++            }
++        }
++
+         // If both players life totals to 0 in a single turn, the game should end in a draw
+         if (g1.getOutcome().isDraw()) {
+             System.out.printf("\nGame Result: Game %d ended in a Draw! Took %d ms.%n", 1 + iGame, sw.getTime());
