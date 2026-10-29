@@ -23,6 +23,8 @@ import sonnet_check as sc  # noqa: E402  (parsers: parse(), formats)
 LAB = HERE / 'label'
 RAW = HERE / 'data/trk_scryfall_raw.json.gz'
 PASSES = sc.PASSES
+# B11g (TRK model from 2026-10-29) replaces C9 by G3: new batches are labelled for C3, C4, C5 only; earlier C9 labels stay as they are
+LABEL_PASSES = ['c3', 'c4', 'c5']
 SEED = 20261022
 
 
@@ -52,7 +54,7 @@ def view_rows(gallery=None):
         ty, tx = bi.gallery_to_scryfall(type_of(c)), bi.gallery_to_scryfall(text_of(c))
         rows.append({'key': f"TRK|{c['id']}", 'name': c['name'], 'rarity': c.get('rarity'), 'type_line': ty, 'text': tx,
                      'mv': bi.fmt_num(c.get('cmc')), 'colors': ''.join(c.get('colors') or []),
-                     'pt': '' if c.get('power') is None else f"{bi.fmt_num(c.get('power'))}/{bi.fmt_num(c.get('toughness'))}"})
+                     'pt': '' if c.get('power') in (None, '') else f"{bi.fmt_num(c.get('power'))}/{bi.fmt_num(c.get('toughness'))}"})
     x = pd.DataFrame(rows)
     x['btext'] = [bi.blind(t, n, ty) for t, n, ty in zip(x['text'], x['name'], x['type_line'])]
     x['auto'] = np.where(x['type_line'].str.contains('Basic Land') | (x['btext'].str.strip() == ''), 1, 0)
@@ -83,7 +85,7 @@ def cmd_queue(a):
         x = pd.concat([x, oldq[~oldq['key'].isin(x['key'])]], ignore_index=True)
     x.to_csv(LAB / 'cards.csv.gz', index=False, compression='gzip')
     todo = new[new['auto'] == 0]
-    for p in PASSES:
+    for p in LABEL_PASSES:
         cards = [sc.card_view(r, r.id) for r in todo.itertuples()]
         if p == 'c9p2':
             cards = cards[::-1]
@@ -115,7 +117,7 @@ def cmd_check(_a):
     ok = True
     for p, (d, bad) in load_all().items():
         print(p, 'labelled', len(d), 'missing', len(need - set(d)), 'extra', len(set(d) - need), 'errors', bad[:5])
-        ok &= not (bad or need - set(d) or set(d) - need)
+        ok &= not (bad or (p in LABEL_PASSES and need - set(d)) or set(d) - need)  # C9 may be missing (not used by B11g)
     if not ok:
         raise SystemExit(1)
 
