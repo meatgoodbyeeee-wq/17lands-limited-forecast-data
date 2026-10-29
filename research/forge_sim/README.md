@@ -31,6 +31,17 @@ Card tables: `runs/fra_default_pool_cards.csv`, `runs/fra_fixed_pool_cards.csv`.
 shrink the pair spread, but the pair order still does not match (fixed: WR 1st vs actual 9th, RG 9th vs 3rd, UR 10th vs 4th).
 Runs agree with each other (run-to-run Spearman 0.66–0.81), so the mismatch is systematic (AI play or the fixed-rule decks), not noise.
 
+## Why UR is last (fixed runs, `fra_fixed_mcoff_s1/s2`)
+- Short games: UR wins 32% of games of 12 turns or fewer (both players' turns; WR and WB win 77% of them) vs 42–49% of longer games.
+- Decks: the fixed-rule builder gives UR the fewest creatures of mana value ≤ 2 (3.5 per deck; RG 7.0, WB and WG 6.3) and the highest
+  average mana value (3.30). One deck, FRA_UR_01, wins 28.5% of 144 games.
+- Card types: against 17Lands, the AI gets less out of instants and sorceries than out of creatures (mean percentile gap of
+  within-deck win rate vs GIH WR: creatures +0.09, instants/sorceries −0.18, removal among them −0.23). UR's 6.5 spells per deck and
+  burn (Wrath of the Bloodmane: cast in 97% of draws, 38% win rate in UR when drawn) suffer from this.
+- Prepare (21 FRA cards) works: in a 15-game probe the AI cast the prepared spells (e.g. Unwind History 7 times for 7 Diviners).
+- Still held but legitimately: second copies of legendary cards (Way of the … enchantments, Mabel, Kiora, Ruric Thar), board wipes
+  (Overwrite the Multiverse, Austere Command), Proft (threshold). The one remaining AI gap was Jace's Machinations (fix 4).
+
 ## Cards the AI misplays (`runs/fra_default_mcoff_seen_cards.csv`, card_wr.py)
 Forge's AI has no logic for FRA's Empower Jace (`ApiType.Empower` is missing from forge-ai `SpellApiToAi`, so it falls back to
 `CannotPlayAi`): any spell with Empower, even as a rider, is never cast. 35 FRA cards use Empower; Protege's Awakening,
@@ -45,6 +56,8 @@ of the baseline. Card win rate when drawn agrees little with 17Lands GIH WR (Spe
    Witchstalker, Yoshimaru, Seasoned Cryomancer and others stayed in hand 31–85% of the games they were drawn.
 3. `CountersPutAllAi.chkDrawback`: a beneficial counter sweep as a spell's rider is fine unless it helps the opponent more
    (Command the Stage was refused with no other Wizard tokens: 94% held).
+4. Card script `jaces_machinations.txt`: `AILogic$ Always` (its main `Effect` had no AI logic: 91% held even after fix 1;
+   probe: cast in 8 of 8 draws). Added after the two fixed runs; the runs above do not include it.
 Probe (66 games, 12 decks): share of drawn spells held to the end 17.0% → 8.9%; Empower spells 85–92% → 4–8% (Countersculpt 55%,
 a counterspell waiting for a target). Known leftovers: Sublime Epiphany's copy mode has no drawback AI (`CopyPermanentAi`);
 Violent Echoes' `Excess` SVar warns before resolution (it is cast).
