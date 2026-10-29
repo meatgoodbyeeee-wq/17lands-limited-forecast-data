@@ -1,0 +1,317 @@
+{
+ "actual": {
+  "source": "17Lands Card Data + Color Ratings, PremierDraft 2026-09-29..2026-10-26 (final)",
+  "deviation": "pre-registered Public Game Data not complete (file of 2026-10-19, S3 403); user chose aggregated 17Lands data 2026-10-29",
+  "cards_ge500": 279,
+  "actual_csv_sha256": "3d5a366dd1d96bf4d40252fce187a2d125a3fc82175863cdbe30ea25cec0f836"
+ },
+ "sha256_verified": true,
+ "1_C3": {
+  "baseline21": {
+   "n": 279,
+   "mae_pp": 2.756599677419355,
+   "spearman": 0.442281387042396,
+   "mean_a_minus_p_pp": -0.8062993118279569,
+   "pred_top10pct_a_minus_p_pp": 0.5242959259259263
+  },
+  "C3": {
+   "n": 279,
+   "mae_pp": 2.611034458781362,
+   "spearman": 0.5475260422727031,
+   "mean_a_minus_p_pp": -0.7558226093189963,
+   "pred_top10pct_a_minus_p_pp": 1.0951383703703699
+  },
+  "C3_vs_baseline21": {
+   "mae_better": true,
+   "spearman_better": true,
+   "mae_diff_pp": -0.145565218637993,
+   "spearman_diff": 0.10524465523030707
+  },
+  "supported": true
+ },
+ "2_3_case2": {
+  "pred_gih": {
+   "n": 279,
+   "mae_pp": 2.605362702508961,
+   "spearman": 0.5825093419850632,
+   "mean_a_minus_p_pp": -0.9572996702508959,
+   "pred_top10pct_a_minus_p_pp": 1.1061681481481476
+  },
+  "adj_w0.3": {
+   "n": 279,
+   "mae_pp": 2.6347268028673843,
+   "spearman": 0.5728851020566036,
+   "mean_a_minus_p_pp": -0.956837663082437,
+   "pred_top10pct_a_minus_p_pp": 2.2812507407407403
+  },
+  "adj2b_w0.3": {
+   "n": 279,
+   "mae_pp": 2.614247870967742,
+   "spearman": 0.5919979223994076,
+   "mean_a_minus_p_pp": -0.9622326451612903,
+   "pred_top10pct_a_minus_p_pp": 2.417239555555555
+  },
+  "case2_vs_prod": {
+   "mae_better": false,
+   "spearman_better": false,
+   "mae_diff_pp": 0.029364100358423073,
+   "spearman_diff": -0.009624239928459621
+  },
+  "case2b_vs_prod": {
+   "mae_better": false,
+   "spearman_better": true,
+   "mae_diff_pp": 0.008885168458780957,
+   "spearman_diff": 0.009488580414344416
+  },
+  "rule_P_FRA_case2b_supported": false
+ },
+ "4_hosers": [
+  {
+   "name": "Essence Burn",
+   "actual": 48.12099,
+   "n_ok": true,
+   "published_err": 6.616610000000001,
+   "adjusted_err": 6.3548100000000005
+  },
+  {
+   "name": "Flourishing Grapple",
+   "actual": 43.914081,
+   "n_ok": true,
+   "published_err": 12.769618999999999,
+   "adjusted_err": 9.920418999999995
+  },
+  {
+   "name": "Refute Destiny",
+   "actual": 53.484438,
+   "n_ok": true,
+   "published_err": 2.827462000000004,
+   "adjusted_err": 0.6304620000000014
+  },
+  {
+   "name": "Precise Redaction",
+   "actual": NaN,
+   "n_ok": false,
+   "published_err": NaN,
+   "adjusted_err": NaN
+  },
+  {
+   "name": "Terminal Criticism",
+   "actual": 52.144772,
+   "n_ok": true,
+   "published_err": 4.364327999999993,
+   "adjusted_err": 2.2201279999999954
+  }
+ ],
+ "5_production": {
+  "version": "gih-c3-28set-20260929",
+  "card": {
+   "n": 279,
+   "mae_pp": 2.6053607849462366,
+   "spearman": 0.5825093419850632,
+   "mean_a_minus_p_pp": -0.9572958387096774,
+   "pred_top10pct_a_minus_p_pp": 1.1061717037037022
+  },
+  "range80": {
+   "n": 279,
+   "coverage": 0.7598566308243727,
+   "mean_width_pp": 7.550001433691755,
+   "by_rarity": {
+    "common": 0.8028169014084507,
+    "land": 1.0,
+    "mythic": 0.7419354838709677,
+    "rare": 0.7796610169491526,
+    "uncommon": 0.7037037037037037
+   }
+  }
+ },
+ "6_C4": {
+  "A": {
+   "n": 279,
+   "mae_pp": 2.6053607704047153,
+   "spearman": 0.5825093419850632,
+   "mean_a_minus_p_pp": -0.9572958134072163,
+   "pred_top10pct_a_minus_p_pp": 1.1061716921500542
+  },
+  "B": {
+   "n": 279,
+   "mae_pp": 2.5869925325644156,
+   "spearman": 0.5631490756427558,
+   "mean_a_minus_p_pp": -0.9549516057153442,
+   "pred_top10pct_a_minus_p_pp": 0.8797777187614589
+  },
+  "B_vs_A": {
+   "mae_better": true,
+   "spearman_better": false,
+   "mae_diff_pp": -0.018368237840299617,
+   "spearman_diff": -0.019360266342307364
+  },
+  "supported": false
+ },
+ "7_C5": {
+  "B5": {
+   "n": 279,
+   "mae_pp": 2.5651837254948617,
+   "spearman": 0.5660660359911381,
+   "mean_a_minus_p_pp": -0.9149760913299317,
+   "pred_top10pct_a_minus_p_pp": 1.2687634687071836
+  },
+  "B5_vs_B": {
+   "mae_better": true,
+   "spearman_better": true,
+   "mae_diff_pp": -0.021808807069553904,
+   "spearman_diff": 0.0029169603483822915
+  },
+  "B5_vs_A": {
+   "mae_better": true,
+   "spearman_better": false,
+   "mae_diff_pp": -0.04017704490985352,
+   "spearman_diff": -0.016443305993925073
+  },
+  "supported": false
+ },
+ "10_C9": {
+  "B10": {
+   "n": 279,
+   "mae_pp": 2.4937841137111176,
+   "spearman": 0.6189592960137889,
+   "mean_a_minus_p_pp": -0.9515840141145793,
+   "pred_top10pct_a_minus_p_pp": 0.6466999857550617
+  },
+  "B10_vs_B5": {
+   "mae_better": true,
+   "spearman_better": true,
+   "mae_diff_pp": -0.0713996117837441,
+   "spearman_diff": 0.05289326002265071
+  },
+  "B10_vs_A": {
+   "mae_better": true,
+   "spearman_better": true,
+   "mae_diff_pp": -0.11157665669359762,
+   "spearman_diff": 0.03644995402872564
+  },
+  "supported": true
+ },
+ "11_B10S": {
+  "B10S": {
+   "n": 279,
+   "mae_pp": 2.4730847394424504,
+   "spearman": 0.6189592960137889,
+   "mean_a_minus_p_pp": -0.9751910250396743,
+   "pred_top10pct_a_minus_p_pp": 0.10928809208492607
+  },
+  "B10S_vs_B10": {
+   "mae_better": true,
+   "spearman_better": false,
+   "mae_diff_pp": -0.020699374268667192,
+   "spearman_diff": 0.0
+  },
+  "supported": true
+ },
+ "12_B10_range": {
+  "B10_range80": {
+   "n": 279,
+   "coverage": 0.7598566308243727,
+   "mean_width_pp": 7.131602867383513,
+   "by_rarity": {
+    "common": 0.7605633802816901,
+    "land": 1.0,
+    "mythic": 0.7741935483870968,
+    "rare": 0.7966101694915254,
+    "uncommon": 0.7129629629629629
+   }
+  },
+  "production_range80": {
+   "n": 279,
+   "coverage": 0.7598566308243727,
+   "mean_width_pp": 7.550001433691755,
+   "by_rarity": {
+    "common": 0.8028169014084507,
+    "land": 1.0,
+    "mythic": 0.7419354838709677,
+    "rare": 0.7796610169491526,
+    "uncommon": 0.7037037037037037
+   }
+  },
+  "target": 0.8
+ },
+ "8_pairs": {
+  "actual_centred_pp": {
+   "WU": 2.391,
+   "WB": -0.842,
+   "WR": -0.635,
+   "WG": -0.268,
+   "UB": 0.833,
+   "UR": 1.414,
+   "UG": -3.205,
+   "BR": -0.303,
+   "BG": -0.567,
+   "RG": 1.183
+  },
+  "F0_scale_26sets": 696.0720302062157,
+  "D_B5": {
+   "spearman": -0.06666666666666665,
+   "mae_pp": 1.4167562635777853
+  },
+  "F0_A": {
+   "spearman": 0.19999999999999998,
+   "mae_pp": 1.0436031348809656
+  },
+  "zero_prediction_mae_pp": 1.164109949908329
+ },
+ "9_AI_pairs": {
+  "pred_AI": -0.13939393939393938,
+  "pred_D_B5": -0.06666666666666665,
+  "F0_A": 0.19999999999999998,
+  "mean_z_AI_DB5": -0.18787878787878787,
+  "ranks": {
+   "actual": {
+    "WU": 1,
+    "WB": 9,
+    "WR": 8,
+    "WG": 5,
+    "UB": 4,
+    "UR": 2,
+    "UG": 10,
+    "BR": 6,
+    "BG": 7,
+    "RG": 3
+   },
+   "AI": {
+    "WU": 6,
+    "WB": 2,
+    "WR": 4,
+    "WG": 9,
+    "UB": 3,
+    "UR": 8,
+    "UG": 10,
+    "BR": 1,
+    "BG": 5,
+    "RG": 7
+   },
+   "D_B5": {
+    "WU": 7,
+    "WB": 4,
+    "WR": 3,
+    "WG": 2,
+    "UB": 10,
+    "UR": 8,
+    "UG": 9,
+    "BR": 6,
+    "BG": 5,
+    "RG": 1
+   },
+   "F0_A": {
+    "WU": 7,
+    "WB": 8,
+    "WR": 10,
+    "WG": 9,
+    "UB": 1,
+    "UR": 6,
+    "UG": 4,
+    "BR": 3,
+    "BG": 5,
+    "RG": 2
+   }
+  }
+ }
+}
