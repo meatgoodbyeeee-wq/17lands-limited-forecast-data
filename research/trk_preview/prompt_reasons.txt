@@ -1,25 +1,36 @@
-You write the one-line reason shown next to a Magic: The Gathering Limited card's pre-release win-rate forecast (GIH WR) on a Japanese website.
+You write the short reason shown next to a Magic: The Gathering Limited card's pre-release win-rate forecast (GIH WR) on a Japanese website for Limited players.
 Work only from the file below; do not use the web or your memory of these cards or this set.
 
 File: {DIR}/research/trk_preview/reasons/input/{BATCH}.txt
 
 Each card block gives the card (name | mana cost | type, P/T, rules text), "予測" (how the forecast compares with this set's average card),
-and the factors the model used: "押し上げ" (raised the forecast) and "押し下げ" (lowered it), each with a strength (強く / 中程度 / やや) and a factor name.
-"ルールテキストの語句" lists the English words of the rules text that moved the forecast ("type ..." words come from the type line,
-e.g. "type sorcery" = it is a sorcery). Mana symbols may be written like {o1oW} (= {1}{W}).
+and the factors behind the forecast: "押し上げ" (raised it) and "押し下げ" (lowered it), each with a strength (強く / 中程度 / やや), a factor name,
+and in ［ ］ the concrete evidence for this card (a property and its value: あり / なし, or high / low compared with this set's cards).
+For "ルールテキストの内容" the evidence is English words from the rules text ("type ..." words come from the type line, e.g. "type sorcery" = it is a sorcery).
+Mana symbols may be written like {o1oW} (= {1}{W}).
 
 For every card write:
-- "ja": Japanese, one or two sentences, in the form 「〇〇だから、〇〇。」 (the cause, then the forecast). At most 90 characters. Must contain 「から」 and end with 「。」.
-  Example: 「除去としての性能が高く、どの色のデッキにも入りやすいから、平均より高い勝率が見込まれる。」
+- "ja": Japanese, one or two sentences, in the form 「〜ため、〜。」 (the reason, then the forecast), at most 90 characters, ending with 「。」.
+  Do not use 「から」 for the reason.
+  Good: 「軽いマナで条件なくクリーチャーを追放できる除去のため、平均を上回る勝率が見込まれる。」
+  Good: 「飛行と絆魂を持つ大型で盤面を支配しやすい一方、マナ総量が重いため、平均をやや上回る程度と予測される。」
 - "en": the same content in natural English, one or two sentences.
 
-Rules:
-- Use only the listed factors as reasons, starting with the strongest. Do not add any reason that is not listed (no synergies, archetypes, comparisons with other cards, or opinions of your own).
-  You may use the card's text to say concretely what a listed factor refers to (e.g. 「飛行を持つから」 for 攻撃力・回避能力 when the card has flying).
-- The conclusion must agree with 「予測」 (higher / about average / lower). If both raising and lowering factors are listed, you may mention one of each.
-- No numbers of any kind (no digits, no percentages, no counts written as words). Do not mention the model, SHAP, features, or "AI" except as the factor name 「AIの総合評価」 when it is listed.
-- 「レアリティ」 and 「セットの種類」 are not reasons a player understands; if one is the only factor, say the forecast is close to this set's typical card of that kind instead.
-- If the card says 「目立つ要因なし」, write that it has no stand-out strengths or weaknesses, so the forecast is about average.
+How to write:
+- Write like a concise note from an experienced Limited reviewer: say concretely what the card does (cheap removal, a large flyer, draws extra cards,
+  needs artifacts to work, is slow, ...), using the card's own text and the evidence. Do not copy the factor names or the evidence labels word for word,
+  and never mention "語句", features, SHAP, the model, raising/lowering factors, or rarity.
+  Exception: 「AIの総合評価」 is a real factor (an AI grade modelled on expert reviews); when it is the main factor you may say e.g. 「AIによる評価が高い」 / 「AIの評価が低い」,
+  ideally together with a concrete property of the card.
+- Use only the listed factors and evidence as reasons, starting with the strongest. Evidence marked 標準的 is not a reason. Do not add reasons that are not listed
+  (no synergies, archetypes, comparisons with other cards, or opinions of your own).
+- The conclusion must agree with 「予測」 (かなり高い / やや高い / 平均並み / やや低い / かなり低い); vary the wording of the conclusion naturally
+  (e.g. 平均を大きく上回る勝率が見込まれる / 平均並みの勝率と予測される / 平均をやや下回る見込み).
+- If both raising and lowering factors matter, you may contrast one of each (「〜一方、〜ため、〜。」).
+- No numbers of any kind: no digits, no percentages, and no numbers written in kanji (not 「二マナ」「三枚」); say 軽い / 重い / 複数 instead.
+- Every card's sentence must be specific to that card: no two cards in the file may get the same sentence.
+- 「レアリティ」 and 「セットの種類」 are not reasons; if nothing else is listed, or the card says 「目立つ要因なし」, say that it has no stand-out strengths or weaknesses,
+  so the forecast is close to average.
 
 Write a JSON object {"<number after #>": {"ja": "...", "en": "..."}, ...} with every card in the file to
 {DIR}/research/trk_preview/reasons/raw/{BATCH}.json. Check that it parses and has one key per card.
