@@ -67,9 +67,10 @@ def main():
     ap.add_argument('--rounds', type=int, default=13); ap.add_argument('--per-round', type=int, default=2)
     ap.add_argument('--workers', type=int, default=3); ap.add_argument('--mc', default='off'); ap.add_argument('--ai', default='')
     ap.add_argument('--seed', type=int, default=1); ap.add_argument('--clock', type=int, default=120)
-    ap.add_argument('--seen', action='store_true')
+    ap.add_argument('--seen', action='store_true'); ap.add_argument('--jar', help='Forge jar (default: the one built in --forge)')
     a = ap.parse_args()
-    jar = next((Path(a.forge) / 'forge-gui-desktop/target').glob('forge-gui-desktop-*-jar-with-dependencies.jar')).resolve()
+    jar = Path(a.jar).resolve() if a.jar else \
+        next((Path(a.forge) / 'forge-gui-desktop/target').glob('forge-gui-desktop-*-jar-with-dependencies.jar')).resolve()
     out = Path(a.out); new = not out.exists()
     sout = out.with_name(out.stem + '_seen.csv'); snew = not sout.exists()
     with open(out, 'a', newline='') as fh, open(sout, 'a', newline='') if a.seen else open(os.devnull, 'w') as sh, \
