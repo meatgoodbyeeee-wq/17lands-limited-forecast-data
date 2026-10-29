@@ -222,7 +222,8 @@ def problems(n, r):
         out.append(f'#{n}: ja mentions the model or the factor material')
     if not 1 <= ja.count('。') <= 2 or len(ja) > 90:
         out.append(f'#{n}: ja must be 1-2 sentences, at most 90 characters')
-    if DIGIT.search(ja) or re.search(r'[0-9]|percent|%', en):
+    term = lambda x: re.sub(r'[+＋\-－−]1/[+＋\-－−]1', '', x)  # '+1/+1 counter' is a card term, not a number
+    if DIGIT.search(term(ja)) or re.search(r'[0-9]|percent|%', term(en)):
         out.append(f'#{n}: numbers are not allowed')
     if len(en) > 220:
         out.append(f'#{n}: en too long')
