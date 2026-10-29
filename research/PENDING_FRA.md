@@ -16,6 +16,16 @@ Data status: `live/fra-public-game.json`, updated daily by `.github/workflows/fr
 | 8 | **Colour-pair strength D_B5 (deck model with B5 card predictions; best pair model on 26 sets, Spearman 0.457, reported arm of D9)** | `research/d9_colour_strength/fra_frozen_pairs.csv` (sha256 in `fra_frozen_pairs.json`), column `pred_D_B5` vs `F0_A` (current site formula) | `F0_A` | Reported: within-set Spearman of the 10 pairs and MAE (scale fitted on the 26 sets) against the centred FRA pair win rate. Pair win rates: Premier Draft, 28-day window, non-splash two-colour decks, computed like `scripts/deck_pair_aggregate.py` (that script refuses FRA by design; at verification allow FRA explicitly, after the 28-day window is complete) | `research/d9_colour_strength/RESULTS.md` |
 | 9 | **AI reading of the whole FRA set: colour-pair strength (D10)** | `research/d10_fra_set_reading/fra_frozen_ai_pairs.csv` (sha256 in `fra_frozen_ai_pairs.json`), column `pred_AI` (mean of 3 independent readers) | `pred_D_B5`, `F0_A` (item 8) | Reported: within-set Spearman of the 10 pairs vs the centred FRA pair win rate (same data as item 8), for pred_AI, pred_D_B5, F0_A and the mean of within-set z-scores of pred_AI and pred_D_B5 | `research/d10_fra_set_reading/PLAN.md` |
 | 10 | **C9 power questions ×3 passes (Rule F10 passed on 28 sets)** | `research/c9_power_questions/fra_frozen_predictions.csv` (sha256 in the `.json`), columns `pred_B10` vs `pred_B5`, `pred_A` | `pred_B5`, `pred_A` | B10 beats B5 and A on MAE and within-set Spearman (indicative, one set; FRA is the clean test because the labellers may remember past cards) | `research/c9_power_questions/RESULTS.md` |
+| 11 | **B10 spread correction S (Rule F22 passed on 28 sets, gain 0.012 pp)** | branch `research/g1-grade-diagnosis`: `research/g2_bias_spread/fra_frozen_predictions.csv` (sha256 in the `.json`), column `pred_B10S` vs `pred_B10` | `pred_B10` | S beats B10 on MAE (Spearman identical by construction); also report predicted-top-10% mean(actual − pred) (indicative, one set) | `research/g2_bias_spread/RESULTS.md` on that branch |
+| 12 | B10 80% range (M5) coverage, reported only | branch `research/fra-b10-range`: `research/fra_b10_range/fra_b10_range.json` (sha256 in `fra_b10_range.meta.json`) | production range (item 5) | Reported: coverage overall and by rarity, mean width; target 80% | `research/fra_b10_range/PLAN.md` on that branch |
+
+## Status (scored once on 2026-10-29) — all items done
+Scored with 17Lands Card Data and Color Ratings (2026-09-29..10-26, final) instead of Public Game Data, by user decision on 2026-10-29
+(the stored Public Game Data stops at the file of 2026-10-19 and S3 returns 403). Results: `research/fra_check/RESULTS.md`, `result.json`.
+1 C3 supported · 2 reference (both worse) · 3 Case 2b Rule P-FRA not supported · 4 reported (adjusted closer on all 4 scored cards) ·
+5 reported (MAE 2.605, ρ 0.583, range coverage 76.0%) · 6 C4 not supported · 7 C5 not supported · 8 D_B5 below F0_A (ρ −0.07 vs +0.20) ·
+9 AI set reading below F0_A (ρ −0.14) · 10 C9 (B10) supported · 11 B10S supported · 12 reported (coverage 76.0%, width 7.13pp) ·
+G1 v2 (branch research/g1-set-context-fra): F2 false, adoption not proposed.
 
 Case 2 sha256 at freeze: `9d1d0e692764f91f353913b775647cceb4db881c389a5e8f19f9cfdfd65d309b`.
 
