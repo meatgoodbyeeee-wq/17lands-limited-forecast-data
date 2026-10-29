@@ -20,6 +20,7 @@ jobs:
       - name: Fetch Color Ratings (combine_splash=true)
         run: |
           out=research/forge_sim/actual/fra-color-ratings-splash-combined.json
+          mkdir -p "$(dirname "$out")"
           curl -sS --fail -m 90 -H 'User-Agent: Sakiyomi/1.0 (limited forecast research; one call)' -H 'Accept: application/json' \
             'https://www.17lands.com/color_ratings/data?expansion=FRA&event_type=PremierDraft&start_date=2026-09-29&end_date=2026-10-26&combine_splash=true' \
             -o "$out.raw"
