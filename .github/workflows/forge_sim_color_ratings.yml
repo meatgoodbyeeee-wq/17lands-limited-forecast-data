@@ -1,0 +1,44 @@
+name: Forge sim - FRA Color Ratings with splash combined
+# Branch research/forge-sim only. One call to 17Lands Color Ratings for FRA Premier Draft 2026-09-29..10-26 with
+# combine_splash=true (two-colour decks with and without a splash), saved raw for research/forge_sim/analyze.py.
+# The sandbox cannot reach 17Lands, so this runs on GitHub Actions; it re-runs only when this file changes.
+on:
+  push:
+    branches: [research/forge-sim]
+    paths:
+      - '.github/workflows/forge_sim_color_ratings.yml'
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/forge-sim
+      - name: Fetch Color Ratings (combine_splash=true)
+        run: |
+          out=research/forge_sim/actual/fra-color-ratings-splash-combined.json
+          curl -sS --fail -m 90 -H 'User-Agent: Sakiyomi/1.0 (limited forecast research; one call)' -H 'Accept: application/json' \
+            'https://www.17lands.com/color_ratings/data?expansion=FRA&event_type=PremierDraft&start_date=2026-09-29&end_date=2026-10-26&combine_splash=true' \
+            -o "$out.raw"
+          python3 - "$out" <<'PY'
+          import json, sys, datetime
+          out = sys.argv[1]
+          rows = json.load(open(out + '.raw'))
+          json.dump({'source': '17Lands Color Ratings', 'expansion': 'FRA', 'event_type': 'PremierDraft', 'start_date': '2026-09-29',
+                     'end_date': '2026-10-26', 'combine_splash': True,
+                     'fetched_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'rows': rows},
+                    open(out, 'w'), ensure_ascii=False, indent=1)
+          PY
+          rm "$out.raw"
+      - name: Save
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/forge_sim/actual
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Forge sim: FRA Color Ratings with splash combined'
+          git pull --rebase origin research/forge-sim
+          git push origin HEAD:research/forge-sim
