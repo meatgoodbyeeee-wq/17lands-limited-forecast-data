@@ -28,6 +28,17 @@ No Admittance, Academic Ascent, Violent Echoes, Tam's Resistance and Counterscul
 (all cards: 17%). Decks average 3.2 (BR) to 8.1 (UG) Empower cards; UG, WU and UR are the pairs with most and rank at the bottom
 of the baseline. Card win rate when drawn agrees little with 17Lands GIH WR (Spearman +0.11, within-deck IWD +0.07, 108 cards).
 
+## AI fixes (`forge_ai_fixes.patch`, forge-ai; apply with `forge_seen.patch`)
+1. `SpellApiToAi`: Empower → `AlwaysPlayAi` (was unassigned → `CannotPlayAi`).
+2. `AiController.checkETBEffects`: a creature whose mandatory ETB the AI would skip if it were optional (no good target, self-mill,
+   loot) is still cast when the ETB can resolve (`doTrigger(..., mandatory=true)`); before, Mabel, Bitter Recluse, Primal
+   Witchstalker, Yoshimaru, Seasoned Cryomancer and others stayed in hand 31–85% of the games they were drawn.
+3. `CountersPutAllAi.chkDrawback`: a beneficial counter sweep as a spell's rider is fine unless it helps the opponent more
+   (Command the Stage was refused with no other Wizard tokens: 94% held).
+Probe (66 games, 12 decks): share of drawn spells held to the end 17.0% → 8.9%; Empower spells 85–92% → 4–8% (Countersculpt 55%,
+a counterspell waiting for a target). Known leftovers: Sublime Epiphany's copy mode has no drawback AI (`CopyPermanentAi`);
+Violent Echoes' `Excess` SVar warns before resolution (it is cast).
+
 Comparison target (user request): two-colour decks with and without a splash, `actual/fra-color-ratings-splash-combined.json`
 (17Lands Color Ratings, combine_splash=true, fetched by `.github/workflows/forge_sim_color_ratings.yml`). Splash-combined actual order: WU, UB, RG, UR, BG, WG, BR, WB, WR, UG.
 

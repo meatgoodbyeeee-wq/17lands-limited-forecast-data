@@ -1,0 +1,48 @@
+diff --git a/forge-ai/src/main/java/forge/ai/AiController.java b/forge-ai/src/main/java/forge/ai/AiController.java
+index fccc96d3..ac8bb406 100644
+--- a/forge-ai/src/main/java/forge/ai/AiController.java
++++ b/forge-ai/src/main/java/forge/ai/AiController.java
+@@ -437,6 +437,11 @@ public class AiController {
+                     // trigger will not run due to lack of targets and we 1. desperately need a creature or 2. are happy about that
+                     continue;
+                 }
++                if (api == null && card.isCreature() && doTrigger(exSA.copy(activator), true)) {
++                    // research fix: a creature is worth casting for its body when its mandatory ETB can still resolve
++                    // (e.g. no good targets, or a self-mill/loot the AI would skip if it were optional)
++                    continue;
++                }
+                 return false;
+             }
+         }
+diff --git a/forge-ai/src/main/java/forge/ai/SpellApiToAi.java b/forge-ai/src/main/java/forge/ai/SpellApiToAi.java
+index 4040d73f..a3e2ddf9 100644
+--- a/forge-ai/src/main/java/forge/ai/SpellApiToAi.java
++++ b/forge-ai/src/main/java/forge/ai/SpellApiToAi.java
+@@ -93,6 +93,7 @@ public enum SpellApiToAi {
+             .put(ApiType.Effect, EffectAi.class)
+             .put(ApiType.Encode, EncodeAi.class)
+             .put(ApiType.Endure, EndureAi.class)
++            .put(ApiType.Empower, AlwaysPlayAi.class) // research fix: no AI was assigned, so Empower spells were never cast
+             .put(ApiType.EndCombatPhase, EndTurnAi.class)
+             .put(ApiType.EndTurn, EndTurnAi.class)
+             .put(ApiType.ExchangeLife, LifeExchangeAi.class)
+diff --git a/forge-ai/src/main/java/forge/ai/ability/CountersPutAllAi.java b/forge-ai/src/main/java/forge/ai/ability/CountersPutAllAi.java
+index 7d3380cd..a29e4474 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/CountersPutAllAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/CountersPutAllAi.java
+@@ -115,6 +115,15 @@ public class CountersPutAllAi extends SpellAbilityAi {
+ 
+     @Override
+     public AiAbilityDecision chkDrawback(Player ai, SpellAbility sa) {
++        // research fix: as a rider of a spell, a beneficial counter sweep only has to not help the opponent more
++        // (before, no valid cards on either side refused the whole spell, e.g. Command the Stage)
++        if (!sa.isCurse() && !sa.usesTargeting()) {
++            final Card source = sa.getHostCard();
++            final String valid = sa.getParam("ValidCards");
++            int opp = CardLists.getValidCards(ai.getWeakestOpponent().getCardsIn(ZoneType.Battlefield), valid, ai, source, sa).size();
++            int own = CardLists.getValidCards(ai.getCardsIn(ZoneType.Battlefield), valid, ai, source, sa).size();
++            return opp > own ? new AiAbilityDecision(0, AiPlayDecision.CantPlayAi) : new AiAbilityDecision(100, AiPlayDecision.WillPlay);
++        }
+         return canPlay(ai, sa);
+     }
+     /* (non-Javadoc)
