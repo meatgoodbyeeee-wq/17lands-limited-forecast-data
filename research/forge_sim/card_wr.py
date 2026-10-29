@@ -4,7 +4,7 @@
   python3 research/forge_sim/card_wr.py research/forge_sim/runs/<games>.csv [--gih research/fra_check/fra_actual_gih500.csv]
          [--min-games 150] [--out <cards.csv>]
 
-Reads <games>.csv and <games>_seen.csv (run_sim.py --seen). Per card (basics left out), over decided games:
+Reads <games>.csv and <games>_seen.csv or .csv.gz (run_sim.py --seen). Per card (basics left out), over decided games:
   sim_gih  win rate of the player-games where at least one copy left the library (opening hand or drawn; mill counts too)
   sim_gns  win rate of the player-games where the card was in the deck but not drawn
   sim_iwd  sim_gih - sim_gns (within the same decks, so the deck and colour-pair strength cancel)
@@ -42,7 +42,8 @@ def main():
     ap.add_argument('--out')
     a = ap.parse_args()
     games = pd.read_csv(a.games)
-    seen = pd.read_csv(Path(a.games).with_name(Path(a.games).stem + '_seen.csv'))
+    sp = Path(a.games).with_name(Path(a.games).stem + '_seen.csv')
+    seen = pd.read_csv(sp if sp.exists() else sp.with_name(sp.name + '.gz'))
     games = games[games.winner.notna() & (games.winner != '')]
     pg = pd.concat([games.assign(deck=games.deck1), games.assign(deck=games.deck2)])
     pg['win'] = (pg.winner == pg.deck).astype(int)
