@@ -14,7 +14,7 @@ Labels: C3, C4, C5 (Sonnet) from label/cards.csv.gz by card name; C9 is not used
 G3: research/g3_expert_grade/TRK_full/pass{1,2,3}.json (Opus, build_trk.py) via keys_trk/TRK.csv; g3 = mean of the 3 passes,
 g3_z = within-set z-score, cards not judged (basic lands, blank text) are filled like training (research/g3_retrain/b11.py).
 Spread (B10S-style factor): Rule F22 arm S on the B11g OOF is NOT supported (research/g3_retrain/spread_b11g.json: gain 0.004pp < 0.01pp),
-so no factor is applied by default; --spread applies the 28-set factor anyway (user decision).
+so no factor is applied: the user decided on 2026-10-29 that B11g for TRK has no spread factor (--spread is kept for research only).
 FIN, MH3, FRA outcomes are not used. MTGAZone's TRK review is not used.
 """
 import argparse, gzip, json, sys
