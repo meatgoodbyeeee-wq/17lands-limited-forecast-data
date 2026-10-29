@@ -4,10 +4,10 @@
   python3 research/forge_sim/analyze.py research/forge_sim/runs/<games>.csv [--actual research/fra_check/fra-actual-color-ratings.json]
 
 Pair win rate = wins / decided games of that pair's decks against other pairs (mirror games and draws left out).
-Agreement: Spearman over the 10 pairs with the centred 17Lands Color Ratings win rate (FRA: 28 days, non-splash two-colour),
+Agreement: Spearman over the 10 pairs with the centred 17Lands Color Ratings win rate (FRA: 28 days; --actual picks non-splash two-colour or splash combined),
 with a 95% interval from resampling rounds (bootstrap, 2000 draws).
 """
-import argparse, json
+import argparse, json, re
 from pathlib import Path
 import numpy as np, pandas as pd
 from scipy.stats import spearmanr
@@ -25,14 +25,31 @@ def pair_wr(g):
     return pd.DataFrame(rows).set_index('pair')
 
 
+def actual_pairs(path):
+    """Pair win rates (pp) from either the site snapshot ({'pairs': {...}}) or a raw Color Ratings fetch ({'rows': [...]})."""
+    cr = json.loads(path.read_text())
+    if 'pairs' in cr:
+        return pd.Series({k: v['wr_pct'] for k, v in cr['pairs'].items()})
+    out = {}
+    for r in cr['rows']:
+        if r.get('is_summary'):
+            continue
+        m = re.search(r'\(([WUBRG]{2})\)\s*$', str(r.get('color_name') or r.get('short_name') or ''))
+        if not m:
+            continue
+        pair = next(p for p in PAIRS if set(p) == set(m.group(1)))
+        out[pair] = r['wins'] / r['games'] * 100
+    assert set(out) == set(PAIRS), sorted(out)
+    return pd.Series(out)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('games')
     ap.add_argument('--actual', default=str(Path(__file__).resolve().parents[1] / 'fra_check/fra-actual-color-ratings.json'))
     a = ap.parse_args()
     g = pd.read_csv(a.games, keep_default_na=False)
-    cr = json.loads(Path(a.actual).read_text())
-    y = pd.Series({k: v['wr_pct'] for k, v in cr['pairs'].items()}).loc[PAIRS]; y = y - y.mean()
+    y = actual_pairs(Path(a.actual)).loc[PAIRS]; y = y - y.mean()
     t = pair_wr(g)
     t['sim_centred'] = t.wr - t.wr.mean(); t['actual_centred'] = y
     t['sim_rank'] = t.wr.rank(ascending=False).astype(int); t['actual_rank'] = y.rank(ascending=False).astype(int)
