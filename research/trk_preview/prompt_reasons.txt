@@ -5,7 +5,8 @@ File: {DIR}/research/trk_preview/reasons/input/{BATCH}.txt
 
 Each card block gives the card (name | mana cost | type, P/T, rules text), "予測" (how the forecast compares with this set's average card),
 and the factors the model used: "押し上げ" (raised the forecast) and "押し下げ" (lowered it), each with a strength (強く / 中程度 / やや) and a factor name.
-"ルールテキストの語句" lists the English words of the rules text that moved the forecast.
+"ルールテキストの語句" lists the English words of the rules text that moved the forecast ("type ..." words come from the type line,
+e.g. "type sorcery" = it is a sorcery). Mana symbols may be written like {o1oW} (= {1}{W}).
 
 For every card write:
 - "ja": Japanese, one or two sentences, in the form 「〇〇だから、〇〇。」 (the cause, then the forecast). At most 90 characters. Must contain 「から」 and end with 「。」.
