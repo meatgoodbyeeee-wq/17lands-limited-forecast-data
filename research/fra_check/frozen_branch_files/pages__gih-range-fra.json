@@ -1,0 +1,2431 @@
+{
+ "version": "gih-range-m5-c3-28set-20260929",
+ "method": "M5 normalized conformal (method unchanged from research/gih_interval): ExtraTrees predicts |residual| of the final GIH model; range = pred ± q·sigma",
+ "target_coverage": 0.8,
+ "fin_used": false,
+ "mh3_used": false,
+ "gih_model_version": "gih-c3-28set-20260929",
+ "training_sets": [
+  "AFR",
+  "BLB",
+  "BRO",
+  "DFT",
+  "DMU",
+  "DSK",
+  "ECL",
+  "EOE",
+  "FDN",
+  "HOB",
+  "KHM",
+  "LCI",
+  "LTR",
+  "MID",
+  "MKM",
+  "MOM",
+  "MSH",
+  "NEO",
+  "ONE",
+  "OTJ",
+  "SNC",
+  "SOS",
+  "STX",
+  "TDM",
+  "TLA",
+  "TMT",
+  "VOW",
+  "WOE"
+ ],
+ "q": 1.590515,
+ "sigma_floor": 0.5,
+ "loso": {
+  "coverage": 0.8004,
+  "coverage_by_rarity": {
+   "common": 0.8006,
+   "uncommon": 0.8024,
+   "rare": 0.8016,
+   "mythic": 0.7864
+  },
+  "coverage_by_type": {
+   "creature": 0.8022,
+   "spell": 0.7968,
+   "other_permanent": 0.7974,
+   "land": 0.8048
+  },
+  "per_set_coverage_min_max": [
+   0.6862,
+   0.8915
+  ],
+  "mean_width": 7.6685,
+  "mean_interval_score": 10.5279
+ },
+ "loso_fallback_m4": {
+  "coverage": 0.8025,
+  "coverage_by_rarity": {
+   "common": 0.8021,
+   "uncommon": 0.802,
+   "rare": 0.8035,
+   "mythic": 0.8049
+  },
+  "coverage_by_type": {
+   "creature": 0.8025,
+   "spell": 0.7962,
+   "other_permanent": 0.7956,
+   "land": 0.8364
+  },
+  "per_set_coverage_min_max": [
+   0.6923,
+   0.8931
+  ],
+  "mean_width": 7.6868,
+  "mean_interval_score": 10.6258
+ },
+ "fallback_note": "M4 rarity x type radius (FRA 'land' rarity counts as common); used when a card's text no longer matches this file",
+ "fallback": {
+  "common": {
+   "creature": 2.8298,
+   "spell": 3.3023,
+   "other_permanent": 3.188,
+   "land": 2.0482
+  },
+  "uncommon": {
+   "creature": 3.3794,
+   "spell": 3.9551,
+   "other_permanent": 4.6463,
+   "land": 3.7851
+  },
+  "rare": {
+   "creature": 4.761,
+   "spell": 5.8519,
+   "other_permanent": 6.5708,
+   "land": 3.2043
+  },
+  "mythic": {
+   "creature": 5.0282,
+   "spell": 6.6434,
+   "other_permanent": 6.2815,
+   "land": 5.5098
+  }
+ },
+ "cards": [
+  {
+   "id": "2Pc8VA6hnbDVsh7tZfiQvS",
+   "name": "Jace, Reality Sculptor",
+   "oracle_text": "+1: Empower Jace X, where X is the number of Islands you control.\r\n−3: Until your next turn, whenever a creature attacks you or a planeswalker you control, it gets -5/-0 until end of turn.\r\n0: Exile all but the bottom card of each opponent’s library. Activate only if there are twenty-five or more loyalty counters among Jaces you control.",
+   "type_line": "Legendary Planeswalker — Jace",
+   "mana_cost": "{3}{U}{U}",
+   "radius": 5.2946
+  },
+  {
+   "id": "1921LkjXbumPpQHH6TFQ6l",
+   "name": "Marwyn, the Clearcutter",
+   "oracle_text": "{o2}, {oT}, Sacrifice an artifact or land: Draw a card.",
+   "type_line": "Legendary Creature — Elf Warrior",
+   "mana_cost": "{R}",
+   "radius": 3.2335
+  },
+  {
+   "id": "3TOLH91GVNchxAhp5QROez",
+   "name": "Marwyn, the Preserver",
+   "oracle_text": "Lands you control have hexproof. (They can’t be the targets of spells or abilities your opponents control.)\r\n{o2}: Return target land card from your graveyard to your hand.",
+   "type_line": "Legendary Creature — Elf Druid",
+   "mana_cost": "{1}{G}",
+   "radius": 2.9159
+  },
+  {
+   "id": "6QcUCUaFQeSddN5ToJYHJ0",
+   "name": "Tam, the Possibility",
+   "oracle_text": "Planeswalker spells you cast cost {o1} less to cast.\r\n{oWoUoBoRoG}, {oT}: Proliferate X times, where X is the number of planeswalker types among planeswalkers you control. (To proliferate, choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+   "type_line": "Legendary Creature — Gorgon Wizard",
+   "mana_cost": "{1}{G}{U}",
+   "radius": 4.7956
+  },
+  {
+   "id": "5wHXP6TFgZqQfgqqybSLVf",
+   "name": "Guiding Hydra",
+   "oracle_text": "This creature enters with X +1/+1 counters on it.\r\nAt the beginning of combat on your turn, you may remove a +1/+1 counter from this creature. If you do, put a +1/+1 counter on each other creature you control.",
+   "type_line": "Creature — Hydra Horror",
+   "mana_cost": "{X}{W}",
+   "radius": 4.1821
+  },
+  {
+   "id": "4zdOnHzlVGFaK5FbrGM3OP",
+   "name": "Lich's Relic",
+   "oracle_text": "When this Equipment enters, you may pay {o2}. When you do, for each opponent, destroy up to one target creature or planeswalker that player controls.\r\nEquipped creature gets +2/+1.\r\nEquip {o2}",
+   "type_line": "Artifact — Equipment",
+   "mana_cost": "{B}",
+   "radius": 5.0962
+  },
+  {
+   "id": "QwA7P3d38hWjZXaU2PPlT",
+   "name": "Verdant Kraken",
+   "oracle_text": "At the beginning of each player’s upkeep, you create a 3/3 green Forest Tentacle land creature token. (It has “{oT}: Add {oG}.” It’s affected by summoning sickness until your next turn.)",
+   "type_line": "Creature — Plant Kraken",
+   "mana_cost": "{4}{G}{G}{G}",
+   "radius": 6.2239
+  },
+  {
+   "id": "2Vd8gM17A8YxqyXABFkKGY",
+   "name": "Hall of Echoes",
+   "oracle_text": "{oT}: Add {oC}.\r\n{o5}: This land becomes a copy of target creature you control until end of turn. The “legend rule” doesn’t apply to permanents you control this turn.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 3.1056
+  },
+  {
+   "id": "5w87iskMh2ySglp8wDcEqC",
+   "name": "Rescue Girl, First Responder",
+   "oracle_text": "Flying\r\n{oT}: Return another target permanent you control to its owner’s hand. Activate only during your turn.",
+   "type_line": "Legendary Creature — Human Cleric",
+   "mana_cost": "{2}{W}",
+   "radius": 3.544
+  },
+  {
+   "id": "5MXF7kBU8WBanqhtxgRjwV",
+   "name": "Saheeli, Consul of Oversight",
+   "oracle_text": "Flying\r\nWhenever you scry or surveil, create a 1/1 colorless Thopter artifact creature token with flying. This ability triggers only once each turn.",
+   "type_line": "Legendary Creature — Human Advisor",
+   "mana_cost": "{3}{W}{W}",
+   "radius": 3.6689
+  },
+  {
+   "id": "1oXTmASohfNTgaubCKUjsC",
+   "name": "Massacre Girl, Most Wanted",
+   "oracle_text": "Whenever another creature or planeswalker you control dies, Massacre Girl deals 1 damage to target opponent and you gain 1 life.\r\nWhenever an opponent is dealt noncombat damage, put a +1/+1 counter on Massacre Girl.",
+   "type_line": "Legendary Creature — Human Assassin",
+   "mana_cost": "{4}{B}",
+   "radius": 3.5404
+  },
+  {
+   "id": "N5gg4F6noYEvnjEgAjD2n",
+   "name": "Saheeli, Jewel of Avishkar",
+   "oracle_text": "Thopters you control have haste.\r\nWhenever you cast a noncreature spell, create a 1/1 colorless Thopter artifact creature token with flying.",
+   "type_line": "Legendary Creature — Human Artificer",
+   "mana_cost": "{2}{U}{R}",
+   "radius": 3.8505
+  },
+  {
+   "id": "64xk9oArbBqObSOmkZjRSM",
+   "name": "Blossom-Blessed Angel",
+   "oracle_text": "Flying, vigilance\r\nThis creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nSeed Suture\r\n{o(g/w)}\r\nSorcery\r\nPut a +1/+1 counter on target creature. You gain 1 life.",
+   "type_line": "Creature — Angel Cleric",
+   "mana_cost": "{3}{W}",
+   "radius": 2.5724
+  },
+  {
+   "id": "754dKLWKVPEUfS8kfO48Xi",
+   "name": "Germinate Recruits",
+   "oracle_text": "Create X 2/2 colorless Wizard Soldier creature tokens named Cadet, where X is the amount of life you gained this turn.",
+   "type_line": "Instant",
+   "mana_cost": "{2}{W}",
+   "radius": 5.8999
+  },
+  {
+   "id": "2pYLLmTvztHdWqLo6XphC5",
+   "name": "Graft Surgeon",
+   "oracle_text": "This creature enters with a +1/+1 counter on it.\r\nWhen this creature dies, put its counters on up to one target creature you control.",
+   "type_line": "Creature — Human Cleric",
+   "mana_cost": "{2}{W}",
+   "radius": 2.8504
+  },
+  {
+   "id": "3dYsf7AmgITXEeAnqZgFkT",
+   "name": "Sphinx's Approach",
+   "oracle_text": "Draw two cards. Then you may exile this spell and four cards named Sphinx’s Approach from your graveyard. If you do, search your library for a Sphinx creature card, put it onto the battlefield, then shuffle.\r\nA deck can have any number of cards named Sphinx’s Approach.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{U}{U}",
+   "radius": 2.9704
+  },
+  {
+   "id": "01ps6syclnZ8wqYe25ttqG",
+   "name": "Multiply by Zero",
+   "oracle_text": "Target creature has base power and toughness 0/0 until end of turn.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{B}",
+   "radius": 2.9734
+  },
+  {
+   "id": "6qcSTAUIxz5DTrJs7IXqLz",
+   "name": "Command the Stage",
+   "oracle_text": "Create a 2/2 colorless Wizard Soldier creature token named Cadet, then put a +1/+1 counter on each other Wizard token you control.\r\nAt the beginning of each upkeep, if an opponent was dealt noncombat damage last turn, return this card from your graveyard to your hand.",
+   "type_line": "Sorcery",
+   "mana_cost": "{2}{R}",
+   "radius": 3.7045
+  },
+  {
+   "id": "vG1ZnMOmXzdT16Vq79BGQ",
+   "name": "Gardenize",
+   "oracle_text": "Whenever a creature you control dies, put a charge counter on this enchantment.\r\nAt the beginning of your first main phase, add {oG} for each charge counter on this enchantment.",
+   "type_line": "Enchantment",
+   "mana_cost": "{1}{G}{G}",
+   "radius": 7.0421
+  },
+  {
+   "id": "4l7GHVCIGPEVMHCVGDVPXP",
+   "name": "Bloombrute",
+   "oracle_text": "Whenever you gain life, draw a card. This ability triggers only once each turn.\r\n{o4oGoW}: Target creature gains trample and lifelink until end of turn.",
+   "type_line": "Creature — Plant Elemental",
+   "mana_cost": "{2}{G}{W}",
+   "radius": 3.241
+  },
+  {
+   "id": "6XHW8FlNM5zlMdOzvdq4r8",
+   "name": "Desperate Futurescribe",
+   "oracle_text": "Flying\r\nAt the beginning of combat on your turn, another target creature you control gets +1/+1 until end of turn. If you’ve scried or surveilled this turn, put a +1/+1 counter on that creature instead.",
+   "type_line": "Creature — Kor Scout",
+   "mana_cost": "{2}{W}{U}",
+   "radius": 3.3456
+  },
+  {
+   "id": "318z1ECdskbYTdVIqqfMVf",
+   "name": "Ferocity of the Hunt",
+   "oracle_text": "Flash\r\nEnchant creature\r\nEnchanted creature gets +1/+0 and has deathtouch.\r\nWhen enchanted creature dies, return that card to the battlefield tapped under its owner’s control.",
+   "type_line": "Enchantment — Aura",
+   "mana_cost": "{1}{B/G}",
+   "radius": 3.3378
+  },
+  {
+   "id": "rYzRRrhPcHiXoKMI1TnL9",
+   "name": "Primal Witchstalker",
+   "oracle_text": "Menace (This creature can’t be blocked except by two or more creatures.)\r\nWhen this creature enters, mill four cards. When you do, return target land card from your graveyard to the battlefield tapped. (To mill four cards, put the top four cards of your library into your graveyard.)",
+   "type_line": "Creature — Wolf",
+   "mana_cost": "{1}{B}{G}",
+   "radius": 3.0515
+  },
+  {
+   "id": "2Hycax93GHZsqwLEuJlcNL",
+   "name": "Codie, Ravenous Codex",
+   "oracle_text": "Whenever you cast a prepared spell, copy it. You may choose new targets for the copy.\r\n{oWoUoBoRoG}, {oT}: Each creature you control becomes prepared. (Only creatures with prepare spells can become prepared.)",
+   "type_line": "Legendary Artifact Creature — Book Construct",
+   "mana_cost": "{3}",
+   "radius": 5.6754
+  },
+  {
+   "id": "4atYzJut2UR58s15I9DHha",
+   "name": "Plan for All Outcomes",
+   "oracle_text": "When this enchantment enters, the owner of up to one other target nonland permanent puts it on their choice of the top or bottom of their library.\r\nWhenever you cast your first noncreature spell each turn, empower Jace 1. (Put a loyalty counter on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Enchantment",
+   "mana_cost": "{3}{U}",
+   "radius": 4.3216
+  },
+  {
+   "id": "3bn0EKxv8kIUilRY8tF9tU",
+   "name": "Yoshimaru, Beloved Companion",
+   "oracle_text": "If one or more +1/+1 counters would be put on a creature you control, that many plus one +1/+1 counters are put on it instead.\r\n{o6}: Put a +1/+1 counter on target legendary creature.",
+   "type_line": "Legendary Creature — Dog",
+   "mana_cost": "{2}{W}",
+   "radius": 3.0971
+  },
+  {
+   "id": "4ocLwS2MVTRC4WD1Nt2aKT",
+   "name": "Entrust the Spark",
+   "oracle_text": "You may sacrifice a planeswalker. If you do, search your library for a planeswalker card, put it onto the battlefield, then shuffle.",
+   "type_line": "Sorcery",
+   "mana_cost": "{3}{G}{U}",
+   "radius": 7.6449
+  },
+  {
+   "id": "SmTxH2Qd9Cl38B16kYot6",
+   "name": "Sanctum Lurker",
+   "oracle_text": "When this creature enters, empower Jace 1.\r\nPlaneswalkers you control aren’t put into their owners’ graveyards for having 0 loyalty.\r\nPlaneswalkers you control have “[+2]: This planeswalker deals 1 damage to each opponent and you gain 1 life.”",
+   "type_line": "Creature — Horror",
+   "mana_cost": "{2}{B}",
+   "radius": 4.6182
+  },
+  {
+   "id": "7c7tMkOAdNEmrW8LWdsAW8",
+   "name": "Vigorbloom Annex",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oG} or {oW}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "7iFwiCeI8XrTMBU0xgLBon",
+   "name": "Divining Duelist",
+   "oracle_text": "Flash\r\nWhen this creature enters, choose one —\r\n• Tap target creature.\r\n• Untap target creature.\r\n• Draw a card, then discard a card.",
+   "type_line": "Creature — Merfolk Wizard",
+   "mana_cost": "{2}{U}",
+   "radius": 2.5635
+  },
+  {
+   "id": "6K7E87Yldqz0CqiUZTO8sx",
+   "name": "Mindseeker Oculus",
+   "oracle_text": "When this creature enters, empower Jace 4. (Put four loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Creature — Homunculus",
+   "mana_cost": "{2}{U}",
+   "radius": 3.5992
+  },
+  {
+   "id": "0io1bgNAJWAzmMziOHXXq",
+   "name": "Undulating Witness",
+   "oracle_text": "Flying\r\n{o2}: This creature gets +1/-1 until end of turn.\r\nBasic landcycling {o2} ({o2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
+   "type_line": "Creature — Serpent",
+   "mana_cost": "{4}{U}",
+   "radius": 2.4151
+  },
+  {
+   "id": "2Y8lW8IxZvS38v91tj4iIM",
+   "name": "Unsummon",
+   "oracle_text": "Return target creature to its owner’s hand.",
+   "type_line": "Instant",
+   "mana_cost": "{U}",
+   "radius": 2.7322
+  },
+  {
+   "id": "1TNgAqW8mvqwHPDAVu9LsP",
+   "name": "Apex Witchstalker",
+   "oracle_text": "Menace (This creature can’t be blocked except by two or more creatures.)\r\nWhen this creature enters or dies, you gain 2 life.\r\nBasic landcycling {o2} ({o2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
+   "type_line": "Creature — Wolf",
+   "mana_cost": "{4}{B}{B}",
+   "radius": 2.3853
+  },
+  {
+   "id": "2NAxN8TCtSr5K3mjIZhdSs",
+   "name": "Extended Absence",
+   "oracle_text": "Exile target creature or planeswalker. Extended Absence deals 1 damage to each opponent and you gain 1 life.",
+   "type_line": "Instant",
+   "mana_cost": "{3}{B}",
+   "radius": 2.5762
+  },
+  {
+   "id": "msLNjbIGytCyY5cAHmgbB",
+   "name": "Rank Rat",
+   "oracle_text": "When this creature enters, each opponent discards a card.",
+   "type_line": "Creature — Zombie Rat",
+   "mana_cost": "{1}{B}",
+   "radius": 2.1626
+  },
+  {
+   "id": "2WbywA7HPn6wdGmyAWYFkj",
+   "name": "Theoretical Necromancer",
+   "oracle_text": "{o3oB}, Exile this card from your graveyard: Return another target creature card from your graveyard to your hand.",
+   "type_line": "Creature — Vampire Warlock",
+   "mana_cost": "{2}{B}",
+   "radius": 2.1481
+  },
+  {
+   "id": "4lIfShNHUQyOmOLR9Qi0in",
+   "name": "Void Extrapolator",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\nThreshold — This creature gets +1/+1 as long as there are seven or more cards in your graveyard.\r\n//Prep//\r\nOmit Variables\r\n{o(u/b)}\r\nSorcery\r\nMill three cards. (Put the top three cards of your library into your graveyard.)",
+   "type_line": "Creature — Aetherborn Warlock",
+   "mana_cost": "{1}{B}",
+   "radius": 2.5408
+  },
+  {
+   "id": "6OURQ6p9ieXfSlsvSnvRUu",
+   "name": "Awaken the Inferno",
+   "oracle_text": "Awaken the Inferno deals 6 damage to target creature or planeswalker an opponent controls. Put a +1/+1 counter on up to one target creature you control.\r\nBasic landcycling {o2} ({o2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
+   "type_line": "Sorcery",
+   "mana_cost": "{4}{R}",
+   "radius": 4.0052
+  },
+  {
+   "id": "7rp09NHYYZXFX397nDtwjJ",
+   "name": "Fulminous Forte",
+   "oracle_text": "Choose one —\r\n• Fulminous Forte deals 1 damage to each creature and planeswalker your opponents control.\r\n• Fulminous Forte deals 5 damage to target creature or planeswalker.",
+   "type_line": "Instant",
+   "mana_cost": "{2}{R}",
+   "radius": 2.7944
+  },
+  {
+   "id": "3OOq0ro4r8o4Iqy7AheXT3",
+   "name": "Heartstring Puller",
+   "oracle_text": "Trample\r\nWhen this creature enters, create a 2/2 colorless Wizard Soldier creature token named Cadet.",
+   "type_line": "Creature — Elf Sorcerer",
+   "mana_cost": "{3}{R}",
+   "radius": 2.866
+  },
+  {
+   "id": "23Z9eE2i4DaGlbgjMBDaM3",
+   "name": "Skilled Battlecarver",
+   "oracle_text": "During your turn, this creature has first strike.\r\n{o1oR}: This creature gets +1/+0 until end of turn.",
+   "type_line": "Creature — Human Warrior",
+   "mana_cost": "{1}{R}",
+   "radius": 2.4332
+  },
+  {
+   "id": "2jwtB8FM1GC2exxMOaO7TE",
+   "name": "Tether Technician",
+   "oracle_text": "Reach\r\nWhen this creature enters, you may discard a card. When you do, this creature deals 2 damage to any target.",
+   "type_line": "Creature — Minotaur Artificer",
+   "mana_cost": "{4}{R}",
+   "radius": 3.222
+  },
+  {
+   "id": "1KI7gUbJxeMs4RSoOEvRgP",
+   "name": "Hunter's Axe",
+   "oracle_text": "Equipped creature gets +2/+0 and has “Whenever this creature attacks, it gains your choice of trample or deathtouch until end of turn.”\r\nEquip {o2} ({o2}: Attach to target creature you control. Equip only as a sorcery.)",
+   "type_line": "Artifact — Equipment",
+   "mana_cost": "{G}",
+   "radius": 4.7603
+  },
+  {
+   "id": "1sXU1GPyJTOl95XKQ9uQSS",
+   "name": "Sureshot Sower",
+   "oracle_text": "Reach\r\n{o3oG}, Discard this card: Destroy target creature with flying.",
+   "type_line": "Creature — Human Archer",
+   "mana_cost": "{1}{G}",
+   "radius": 2.155
+  },
+  {
+   "id": "XwsiiGuD7T8vt5O8ZtUcR",
+   "name": "Vinelasher Adept",
+   "oracle_text": "Reach\r\nWhen this creature enters, put three +1/+1 counters on target creature.\r\nBasic landcycling {o2} ({o2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
+   "type_line": "Creature — Rhino Soldier",
+   "mana_cost": "{4}{G}{G}",
+   "radius": 2.7013
+  },
+  {
+   "id": "5JsAyopuDedjZcFthhssOE",
+   "name": "Blessed Ghoul",
+   "oracle_text": "Lifelink\r\n{o2o(w/b)}: Return this card from your graveyard to your hand.",
+   "type_line": "Creature — Zombie Cleric",
+   "mana_cost": "{W/B}",
+   "radius": 2.5735
+  },
+  {
+   "id": "1GTF4neNvfvkYb0mrwZlF9",
+   "name": "Konstrari Improviser",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nSoul Tether\r\n{o2o(r/g)}\r\nSorcery\r\nCreate a Heartwood token. (It’s a red and green artifact with “{oT}: Add {oR} or {oG}.”)",
+   "type_line": "Creature — Human Artificer",
+   "mana_cost": "{1}{R/G}",
+   "radius": 2.9045
+  },
+  {
+   "id": "75mR8O7cgTMcf2oiWIT81j",
+   "name": "Recursive Recruitment",
+   "oracle_text": "Create two 2/2 colorless Wizard Soldier creature tokens named Cadet. If this spell was cast from a graveyard, put a +1/+1 counter on each of them for every three cards in your graveyard.\r\nFlashback {o6oUoB} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+   "type_line": "Sorcery",
+   "mana_cost": "{2}{U}{B}",
+   "radius": 3.7938
+  },
+  {
+   "id": "3dWYnO5iF3wku32B79p4zM",
+   "name": "Theorix Metamage",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\nThreshold — This creature gets +1/+0 and has flying as long as there are seven or more cards in your graveyard.\r\n//Prep//\r\nOmit Variables\r\n{o(u/b)}\r\nSorcery\r\nMill three cards. (Put the top three cards of your library into your graveyard.)",
+   "type_line": "Creature — Shade Wizard",
+   "mana_cost": "{2}{U/B}",
+   "radius": 2.3491
+  },
+  {
+   "id": "6gvmaMh8qu2lTLABlZZ4x6",
+   "name": "Twinned Vision",
+   "oracle_text": "Draw a card. If this spell wasn’t cast from your hand, draw two cards instead.\r\nFlashback—{o1o(u/r)o(u/r)}, Discard a card. (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+   "type_line": "Instant",
+   "mana_cost": "{1}{U/R}",
+   "radius": 3.4888
+  },
+  {
+   "id": "2f3TAXX94XJIIs7phl0wUr",
+   "name": "Twisted Fates",
+   "oracle_text": "Destroy target nonland permanent. Put a +1/+1 counter on each creature target player controls.",
+   "type_line": "Sorcery",
+   "mana_cost": "{2}{W}{W}{B}",
+   "radius": 4.1965
+  },
+  {
+   "id": "csS3I1pPWwPcKJveOLIYR",
+   "name": "Archive Arbiter",
+   "oracle_text": "Flying\r\nWhen this creature enters, choose one —\r\n• Destroy target noncreature, nonland permanent.\r\n• You gain 4 life.",
+   "type_line": "Artifact Creature — Sphinx",
+   "mana_cost": "{6}",
+   "radius": 3.7207
+  },
+  {
+   "id": "2WFCZ6iXPDyj4bh3GKkmT4",
+   "name": "Eye of Jace",
+   "oracle_text": "At the beginning of your upkeep, surveil 1. Then if there are seven or more cards in your graveyard, sacrifice this artifact, it deals 2 damage to each opponent, and you gain 2 life. (To surveil 1, look at the top card of your library. You may put it into your graveyard.)",
+   "type_line": "Artifact",
+   "mana_cost": "{1}",
+   "radius": 5.3114
+  },
+  {
+   "id": "5rkRApZkwiNP98fUAHv1Oa",
+   "name": "Living Library",
+   "oracle_text": "{o6}, Sacrifice this creature: Choose target creature or planeswalker an opponent controls. Its owner shuffles it into their library.",
+   "type_line": "Artifact Creature — Book Illusion",
+   "mana_cost": "{2}",
+   "radius": 3.5227
+  },
+  {
+   "id": "2r8mYaPs0Dt5XjzbyjaaLL",
+   "name": "Medic's Kitesail",
+   "oracle_text": "Equipped creature gets +1/+0 and has flying and “Whenever this creature attacks, you gain 1 life.”\r\nEquip {o2} ({o2}: Attach to target creature you control. Equip only as a sorcery.)",
+   "type_line": "Artifact — Equipment",
+   "mana_cost": "{2}",
+   "radius": 3.4565
+  },
+  {
+   "id": "52NjWBUcJKqlMuAdy2McTF",
+   "name": "Dedicated Commons",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oR} or {oW}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "68vuPm1RRDP6p1VjAOJeZP",
+   "name": "Fatehold Annex",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oW} or {oU}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "HNxBirUa5aXiugkuBwY4E",
+   "name": "Formidable Commons",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oB} or {oG}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "pAITiWY0WKS1mVRDDn4EB",
+   "name": "Hexhaven Dueling Arena",
+   "oracle_text": "{oT}: Add {oC}.\r\n{o2}, {oT}: Target creature that attacked this turn becomes prepared. Activate only as a sorcery. (Only creatures with prepare spells can become prepared.)\r\n{o4}, {oT}: Target creature becomes prepared.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 3.7408
+  },
+  {
+   "id": "5HoiybVIX8hZyojjiLfSZL",
+   "name": "Innovative Commons",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oU} or {oR}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "2J7kCwHodme1eJhXvgTIfY",
+   "name": "Konstrari Annex",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oR} or {oG}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "3mqhZCy4su5QeglSgT0VG",
+   "name": "Meticulous Commons",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oW} or {oB}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "M2HDFPtRN9BnQytDvG4xI",
+   "name": "Room of Refuge",
+   "oracle_text": "This land enters tapped. As it enters, choose a color.\r\n{oT}: Add one mana of the chosen color.\r\n{o5}, {oT}, Sacrifice this land: Put two +1/+1 counters on target creature. Activate only as a sorcery.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.1646
+  },
+  {
+   "id": "1ZwjoEmoDS1Lb3d7L8RNwE",
+   "name": "Stingerquill Annex",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oB} or {oR}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "nfTtWSzeUtfQ9eHnFi62N",
+   "name": "Theorix Annex",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oU} or {oB}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "5DitpRTcsFBteJf5GpX1fv",
+   "name": "Transformative Commons",
+   "oracle_text": "This land enters tapped unless you control a planeswalker.\r\n{oT}: Add {oG} or {oU}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.3455
+  },
+  {
+   "id": "22FMxZx1wUBQIXWkaPlVuV",
+   "name": "Arni, Humble Scribe",
+   "oracle_text": "Whenever another nontoken creature you control enters, untap Arni.\r\n{oT}: Draw a card, then discard a card.",
+   "type_line": "Legendary Creature — Human Wizard",
+   "mana_cost": "{2}{U}",
+   "radius": 3.3267
+  },
+  {
+   "id": "yN4n3saXLaTeFvQFarYXP",
+   "name": "Traxos, Academy Guardian",
+   "oracle_text": "This spell costs {o2} less to cast if you’ve cast a noncreature spell this turn.\r\nFlying, vigilance\r\nProwess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)",
+   "type_line": "Legendary Artifact Creature — Dragon Construct",
+   "mana_cost": "{3}{U}",
+   "radius": 3.2142
+  },
+  {
+   "id": "7gqL20kK7zOZl1wzgCvqVC",
+   "name": "Loot, the Anomaly",
+   "oracle_text": "If Loot’s power is negative, he assigns combat damage as though his power were positive.\r\nThreshold — Sacrifice another creature or planeswalker: Loot gets -2/-0 until end of turn. Activate only if there are seven or more cards in your graveyard.",
+   "type_line": "Legendary Creature — Beast Horror",
+   "mana_cost": "{2}{B}",
+   "radius": 2.9389
+  },
+  {
+   "id": "27JrxXIdyYWyKqHdzg4iT7",
+   "name": "Arni, Renowned Champion",
+   "oracle_text": "Trample\r\nWhenever another creature you control enters, Arni gets +X/+0 until end of turn, where X is that creature’s power.",
+   "type_line": "Legendary Creature — Human Berserker",
+   "mana_cost": "{3}{R}",
+   "radius": 3.828
+  },
+  {
+   "id": "oAeSKOm0SvpSofHlIVR0i",
+   "name": "Loot, the Nexus",
+   "oracle_text": "{oT}: Choose a color. Add one mana of that color for each different power among creatures you control.",
+   "type_line": "Legendary Creature — Beast Noble",
+   "mana_cost": "{2}{G}",
+   "radius": 4.3497
+  },
+  {
+   "id": "4sDw85hczTmzgzaeqlWSGh",
+   "name": "Traxos, Scourge Eternal",
+   "oracle_text": "Trample\r\nTraxos doesn’t untap during your untap step.\r\nWhenever you cast an artifact or creature spell, untap Traxos.",
+   "type_line": "Legendary Artifact Creature — Dragon Construct",
+   "mana_cost": "{4}",
+   "radius": 2.9812
+  },
+  {
+   "id": "21XISFuIDPHNKjrYzfOA3I",
+   "name": "Fateshaper Aspirant",
+   "oracle_text": "When this creature enters, choose one —\r\n• Return target legendary card from your graveyard to your hand.\r\n• Put a +1/+1 counter on target creature. It gains vigilance and indestructible until end of turn. (Damage and effects that say “destroy” don’t destroy it.)",
+   "type_line": "Creature — Rhino Cleric",
+   "mana_cost": "{4}{W}",
+   "radius": 2.5523
+  },
+  {
+   "id": "0L6J4fHJE2u1yiCcVwEZl",
+   "name": "Hexhaven Battalion",
+   "oracle_text": "Create three 2/2 colorless Wizard Soldier creature tokens named Cadet. Empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nBasic landcycling {o2} ({o2}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
+   "type_line": "Sorcery",
+   "mana_cost": "{4}{W}{W}",
+   "radius": 3.6129
+  },
+  {
+   "id": "2cesSRgvrE9QddG3e7K6pE",
+   "name": "Predictive Preparations",
+   "oracle_text": "Put a +1/+1 counter on each of one or two target creatures.\r\nFlashback {o3oW} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+   "type_line": "Sorcery",
+   "mana_cost": "{1}{W}",
+   "radius": 3.5118
+  },
+  {
+   "id": "3zKk0ZOcr6OZVboGebf5DV",
+   "name": "Unflinching Hortimancer",
+   "oracle_text": "Ward {o1} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {o1}.)\r\nWhenever you gain life, put a +1/+1 counter on this creature.",
+   "type_line": "Creature — Human Cleric",
+   "mana_cost": "{1}{W}",
+   "radius": 2.3724
+  },
+  {
+   "id": "1s9yeBVNbq49DQ6JPLi93O",
+   "name": "Cryotheory Adept",
+   "oracle_text": "Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)\r\n{o3oU}, Exile this card from your graveyard: Tap target creature and put a stun counter on it. Activate only as a sorcery. (If a permanent with a stun counter would become untapped, remove one from it instead.)",
+   "type_line": "Creature — Human Wizard",
+   "mana_cost": "{1}{U}",
+   "radius": 2.4554
+  },
+  {
+   "id": "5lOh9STU2OnanS2NEsq9wf",
+   "name": "Kindred Judgment",
+   "oracle_text": "Choose a creature type. Destroy all creatures that aren’t of the chosen type.",
+   "type_line": "Sorcery",
+   "mana_cost": "{5}{W}{W}",
+   "radius": 4.6502
+  },
+  {
+   "id": "77Dqj4t9np4LWYCX1IqEQB",
+   "name": "Darklight Phoenix",
+   "oracle_text": "Flying, haste\r\nAt the beginning of combat on your turn, if two or more creatures died this turn, return this card from your graveyard to the battlefield.",
+   "type_line": "Creature — Phoenix",
+   "mana_cost": "{3}{B}",
+   "radius": 4.4546
+  },
+  {
+   "id": "7LQEGY3ROl962RLo4SriCM",
+   "name": "Curse-Marred Demon",
+   "oracle_text": "Flying, trample\r\nWhen this creature enters, search your library for a card, put it into your hand, shuffle, then discard a card at random.",
+   "type_line": "Creature — Demon",
+   "mana_cost": "{2}{R}{R}",
+   "radius": 4.5379
+  },
+  {
+   "id": "2WAUFOA4beLXtZlo3R0NwX",
+   "name": "Frostbite Pyromental",
+   "oracle_text": "Trample, haste\r\nWhenever this creature deals combat damage to a player, draw two cards.\r\nAt the beginning of the end step, sacrifice this creature.",
+   "type_line": "Creature — Elemental",
+   "mana_cost": "{U}{R}{R}",
+   "radius": 4.4487
+  },
+  {
+   "id": "69JEJGOv5ke8NLdp8IvxcH",
+   "name": "Flickering Hound",
+   "oracle_text": "Whenever you cast a creature spell, exile up to one other target creature you control, then return that card to the battlefield under its owner’s control.",
+   "type_line": "Creature — Dog",
+   "mana_cost": "{3}{W}",
+   "radius": 5.1323
+  },
+  {
+   "id": "7FVGUea9EnsTl1Y6Tg0O6R",
+   "name": "Ajani's Anguish",
+   "oracle_text": "When this enchantment enters, it deals X damage to any target.\r\nCreatures you control have trample.",
+   "type_line": "Enchantment",
+   "mana_cost": "{X}{R}",
+   "radius": 5.6536
+  },
+  {
+   "id": "2i6yC0WeocN71c3QsvTJh",
+   "name": "Draconic Visitor",
+   "oracle_text": "Flying\r\nIf one or more artifact tokens would be created under your control, that many 5/5 red Dragon creature tokens with flying are created instead.",
+   "type_line": "Creature — Dragon",
+   "mana_cost": "{3}{R}{R}",
+   "radius": 5.4684
+  },
+  {
+   "id": "3Koiz1rMKrQA0DLPWMFKF6",
+   "name": "Essence Burn",
+   "oracle_text": "Essence Burn deals 5 damage to target black or green creature or planeswalker. If that permanent would die this turn, exile it instead.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{R}",
+   "radius": 3.9784
+  },
+  {
+   "id": "EgOVmnO8jCQNWv9lCnfh7",
+   "name": "Flourishing Grapple",
+   "oracle_text": "Target creature or planeswalker an opponent controls that’s red or white loses all abilities until end of turn. Target creature you control deals damage equal to its power to that permanent.",
+   "type_line": "Instant",
+   "mana_cost": "{G}",
+   "radius": 3.0757
+  },
+  {
+   "id": "5xa3UHGDm9oXxBJJ4hyjVN",
+   "name": "Craftwork Crusher",
+   "oracle_text": "Trample\r\nWhen this creature enters, choose two —\r\n• This creature deals 4 damage to target creature or planeswalker.\r\n• Create a 2/2 colorless Wizard Soldier creature token named Cadet.\r\n• Draw a card.",
+   "type_line": "Artifact Creature — Boar Construct",
+   "mana_cost": "{3}{R}{R}{G}{G}",
+   "radius": 3.0505
+  },
+  {
+   "id": "6pt0iJ70B3Jb6YqDqg8eri",
+   "name": "Grim Repriser",
+   "oracle_text": "Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)\r\n{oBoR}: Return this card from your graveyard to the battlefield with a finality counter on it. Activate only if an opponent has been dealt noncombat damage this turn. (If a creature with a finality counter on it would die, exile it instead.)",
+   "type_line": "Creature — Zombie Bard",
+   "mana_cost": "{B}{R}",
+   "radius": 2.4705
+  },
+  {
+   "id": "7szC7LkmxtItSH7bDmkbZg",
+   "name": "Yoshimaru, Scrappy Stray",
+   "oracle_text": "When Yoshimaru enters, another target creature you control fights up to one target creature an opponent controls. (Each deals damage equal to its power to the other.)\r\n{o6}: Put a +1/+1 counter on target nonlegendary creature.",
+   "type_line": "Legendary Creature — Dog",
+   "mana_cost": "{1}{G}",
+   "radius": 3.8714
+  },
+  {
+   "id": "3coQsAuRpkBoxb2HeeEeI0",
+   "name": "Seasoned Cryomancer",
+   "oracle_text": "When this creature enters, draw two cards, then discard two cards. When you discard one or more nonland cards this way, tap up to that many target creatures and put a stun counter on each of them.\r\n{o3oUoU}, Exile this card from your graveyard: Draw two cards.",
+   "type_line": "Creature — Human Wizard",
+   "mana_cost": "{1}{U}{U}",
+   "radius": 4.1245
+  },
+  {
+   "id": "5SCq705omR4jWNnp7z5JQo",
+   "name": "Rise of the Deathbringer",
+   "oracle_text": "Choose one —\r\n• Draw cards equal to the greatest power among creatures you control. You lose life equal to the number of cards drawn this way.\r\n• All creatures get -3/-3 until end of turn.",
+   "type_line": "Instant",
+   "mana_cost": "{4}{B}",
+   "radius": 4.6766
+  },
+  {
+   "id": "78Budn5GOm04yJXZ4ERrhC",
+   "name": "Omnipresence",
+   "oracle_text": "You may cast spells with mana value less than or equal to the number of creatures you control from your hand without paying their mana costs.",
+   "type_line": "Enchantment",
+   "mana_cost": "{5}{G}{G}{G}",
+   "radius": 7.4581
+  },
+  {
+   "id": "5pqCWvhVzLY0oI3AbdSy1J",
+   "name": "Simulacrum Shaper",
+   "oracle_text": "When this creature enters, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.\r\nWhen this creature dies, draw a card.",
+   "type_line": "Creature — Elf Druid",
+   "mana_cost": "{1}{G}{G}",
+   "radius": 4.2958
+  },
+  {
+   "id": "1y1uAx8oL3qbVEEdEaos6M",
+   "name": "Teyo, Lightshield Expert",
+   "oracle_text": "Flash\r\nWhen Teyo enters, target permanent you control gains hexproof until end of turn. Put a +1/+1 counter on it if it’s a creature. Put a loyalty counter on it if it’s a planeswalker. (It can’t be the target of spells or abilities your opponents control.)",
+   "type_line": "Legendary Creature — Human Cleric",
+   "mana_cost": "{1}{W}",
+   "radius": 4.2273
+  },
+  {
+   "id": "5B1aVZDWx0GR7c92OAU7Yn",
+   "name": "Teyo, Diamondblade Mage",
+   "oracle_text": "Flash\r\nWhen Teyo enters, target permanent you control gains deathtouch until end of turn. Put a +1/+1 counter on it if it’s a creature. Put a loyalty counter on it if it’s a planeswalker.",
+   "type_line": "Legendary Creature — Human Warlock",
+   "mana_cost": "{3}{B}",
+   "radius": 3.5369
+  },
+  {
+   "id": "4t7oOoLZqtrGwocvJ8H6kj",
+   "name": "Refute Destiny",
+   "oracle_text": "Exile target creature or planeswalker that’s green or blue. Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+   "type_line": "Sorcery",
+   "mana_cost": "{1}{W}",
+   "radius": 3.5675
+  },
+  {
+   "id": "5MljzqPnj7I9Nakf2HatM5",
+   "name": "Precise Redaction",
+   "oracle_text": "Counter target white or black spell.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{U}",
+   "radius": 4.1057
+  },
+  {
+   "id": "7hm542uQ8Tm0dOoPQX4FRN",
+   "name": "Terminal Criticism",
+   "oracle_text": "Destroy target creature or planeswalker that’s blue or red. You gain 1 life.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{B}",
+   "radius": 2.8565
+  },
+  {
+   "id": "6zZPkXpKpi4P4fEJXuA1E7",
+   "name": "Puppet Crafting",
+   "oracle_text": "Enchant artifact or non-Aura enchantment\r\nEnchanted permanent is a Construct creature with base power and toughness 5/5 in addition to its other types.\r\n{o4oG}: Return this card from your graveyard to your hand.",
+   "type_line": "Enchantment — Aura",
+   "mana_cost": "{1}{G}",
+   "radius": 6.3484
+  },
+  {
+   "id": "4ycH2BNlRja3D2AMLh0Jyy",
+   "name": "Roiling Canopy",
+   "oracle_text": "This land enters tapped.\r\nWhenever a Forest you control enters, if you control at least five other Forests, target creature you control gets +3/+3 until end of turn.\r\n{oT}: Add {oG}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.6411
+  },
+  {
+   "id": "6LEwwUZDfrE1QcoIhoGTNc",
+   "name": "Koth of the Homestead",
+   "oracle_text": "Landfall — Whenever a land you control enters, you gain 1 life.\r\nWhenever a Plains you control enters, put a +1/+1 counter on target creature.",
+   "type_line": "Legendary Creature — Human Citizen",
+   "mana_cost": "{2}{W}",
+   "radius": 3.482
+  },
+  {
+   "id": "7dWdTUWildvlc6IXNMpgV6",
+   "name": "Koth, the Geomancer",
+   "oracle_text": "Reach\r\nLandfall — Whenever a land you control enters, Koth deals 1 damage to each opponent. If that land is a Mountain, add {oR}.",
+   "type_line": "Legendary Creature — Human Warrior",
+   "mana_cost": "{2}{R}",
+   "radius": 3.6292
+  },
+  {
+   "id": "4nOztdyBCKQg3PcJnu7kzI",
+   "name": "Variable Chaser",
+   "oracle_text": "Flying, prowess\r\nThis creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nArc of Fortune\r\n{o2oU}\r\nSorcery\r\nEach player may discard their hand and draw seven cards.",
+   "type_line": "Creature — Human Wizard",
+   "mana_cost": "{2}{U}",
+   "radius": 3.9448
+  },
+  {
+   "id": "AMQdUSA0TrtEdeWFVi3Ko",
+   "name": "Pyre Rhymer",
+   "oracle_text": "Prowess\r\nThis creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nMolten Tide\r\n{oR}\r\nInstant\r\nUntil end of turn, whenever you tap a Mountain for mana, add an additional {oR}.",
+   "type_line": "Creature — Elemental Sorcerer",
+   "mana_cost": "{1}{R}{R}",
+   "radius": 4.5683
+  },
+  {
+   "id": "4HQx1KRu1HGGqm2FNrHkL7",
+   "name": "Mind Meanderer",
+   "oracle_text": "Flying\r\nThis creature has vigilance as long as you control a Jace planeswalker.\r\nWhen this creature enters, it fights up to one target creature an opponent controls. (Each deals damage equal to its power to the other.)",
+   "type_line": "Creature — Bird Fish Illusion",
+   "mana_cost": "{3}{G}{U}{U}",
+   "radius": 3.478
+  },
+  {
+   "id": "7fCYjKuNbdvA0VV2DUujHX",
+   "name": "Identity Echo",
+   "oracle_text": "{o3oR}: Exile target creature or planeswalker you control. Reveal cards from the top of your library until you reveal a creature or planeswalker card. Put that card onto the battlefield and the rest on the bottom of your library in a random order. Activate only as a sorcery.",
+   "type_line": "Enchantment",
+   "mana_cost": "{2}{R}",
+   "radius": 6.1374
+  },
+  {
+   "id": "7JFO3e0BzIByjlx8D18TXz",
+   "name": "The Echoverse Fulcrum",
+   "oracle_text": "When The Echoverse Fulcrum enters, draw a card, then discard a card.\r\n{o5}, {oT}, Exile The Echoverse Fulcrum: Destroy all creatures. Activate only as a sorcery.",
+   "type_line": "Legendary Artifact",
+   "mana_cost": "{2}",
+   "radius": 5.7475
+  },
+  {
+   "id": "3fw5dvAUnVZCKV5lnWwlXF",
+   "name": "Hapatra, the Desert Frost",
+   "oracle_text": "When Hapatra enters, for each opponent, tap up to one target creature that player controls. Put a stun counter on each of those creatures. (If a permanent with a stun counter would become untapped, remove one from it instead.)\r\n{o2oU}: Untap target creature.",
+   "type_line": "Legendary Creature — Human Wizard",
+   "mana_cost": "{3}{U}",
+   "radius": 3.1474
+  },
+  {
+   "id": "2vXQxX16MbbkbDanHnLXZy",
+   "name": "Gallia, Tragic Host",
+   "oracle_text": "Menace (This creature can’t be blocked except by two or more creatures.)\r\n{o4oB}, Exile another creature card from your graveyard: Return this card from your graveyard to the battlefield tapped with a +1/+1 counter on her.",
+   "type_line": "Legendary Creature — Zombie Satyr",
+   "mana_cost": "{1}{B}",
+   "radius": 2.4265
+  },
+  {
+   "id": "5ZQTrpjME2Gfq5xDktuGIj",
+   "name": "Mabel, Bitter Recluse",
+   "oracle_text": "Deathtouch\r\nWhen Mabel enters, remove up to three counters from another target creature or planeswalker.",
+   "type_line": "Legendary Creature — Mouse Warlock",
+   "mana_cost": "{B}",
+   "radius": 4.2554
+  },
+  {
+   "id": "6iUqbVRUTNkAq1ITqtDjhq",
+   "name": "Gallia, the Merrymaker",
+   "oracle_text": "Haste\r\nEach other creature you control with +1/+1 counter on it has haste.\r\n{o1oR}, {oT}: Put a +1/+1 counter on target creature that entered this turn.",
+   "type_line": "Legendary Creature — Satyr",
+   "mana_cost": "{1}{R}",
+   "radius": 3.5205
+  },
+  {
+   "id": "4ozKigwiKgfNPIj4Y1pehz",
+   "name": "Hapatra, the Desert Fang",
+   "oracle_text": "When Hapatra enters, for each opponent, put X -1/-1 counters on up to one target creature that player controls, where X is the greatest mana value among cards in your graveyard.",
+   "type_line": "Legendary Creature — Human Cleric",
+   "mana_cost": "{2}{B}{B}{G}",
+   "radius": 3.152
+  },
+  {
+   "id": "6wNmh5sA8RWzk71Y2aX3xQ",
+   "name": "Mabel, Valley Hero",
+   "oracle_text": "Whenever Mabel or another creature you control enters, put a +1/+1 counter on target creature that entered this turn.",
+   "type_line": "Legendary Creature — Mouse Soldier",
+   "mana_cost": "{1}{R}{W}",
+   "radius": 3.7931
+  },
+  {
+   "id": "51HQ48dK15wNrNjLO64zNE",
+   "name": "Shatterwing Pegasus",
+   "oracle_text": "Flying\r\n{o4oW}: Creatures you control get +1/+1 until end of turn.",
+   "type_line": "Creature — Pegasus",
+   "mana_cost": "{2}{W}",
+   "radius": 2.7882
+  },
+  {
+   "id": "5iwv1eyO69ZShIMMLJ3uwn",
+   "name": "Surgical Precision",
+   "oracle_text": "Choose one —\r\n• Destroy target creature with toughness 4 or greater. You gain 1 life.\r\n• You draw a card and gain 2 life.",
+   "type_line": "Sorcery",
+   "mana_cost": "{1}{W}",
+   "radius": 3.6251
+  },
+  {
+   "id": "3mVfPICYiXUYCaUVxqCuy4",
+   "name": "Sphinx of False Conclusions",
+   "oracle_text": "Flash\r\nFlying\r\nWhenever this creature attacks, draw a card, then discard a card.\r\nWhen this creature dies, if it isn’t a token, create a token that’s a copy of it.",
+   "type_line": "Creature — Sphinx Illusion",
+   "mana_cost": "{2}{U}{U}",
+   "radius": 4.0268
+  },
+  {
+   "id": "4N0FeZH17fYj1GBO2eH3Tj",
+   "name": "Surveillance Phantasm",
+   "oracle_text": "Defender, flying, vigilance\r\nAs long as you’ve scried or surveilled this turn, this creature can attack as though it didn’t have defender.\r\n{o3oU}: Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+   "type_line": "Creature — Bird Illusion",
+   "mana_cost": "{1}{U}",
+   "radius": 2.5102
+  },
+  {
+   "id": "5V1NoDjWAvXts35cMA5pW9",
+   "name": "Silence the Echo",
+   "oracle_text": "As an additional cost to cast this spell, sacrifice a creature or planeswalker or pay {o3}.\r\nDestroy target creature or planeswalker.",
+   "type_line": "Sorcery",
+   "mana_cost": "{1}{B}",
+   "radius": 3.3978
+  },
+  {
+   "id": "6CfKJ0G5TzRVBht2pXJcL3",
+   "name": "Vraska's Final Mercy",
+   "oracle_text": "Choose one —\r\n• You lose 2 life. Destroy target creature or planeswalker.\r\n• You lose 2 life. Empower Jace 6. (Put six loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Sorcery",
+   "mana_cost": "{B}{B}",
+   "radius": 4.9038
+  },
+  {
+   "id": "aNHlouqO1a4AdvwcDoJ5L",
+   "name": "Chandra's Emberling",
+   "oracle_text": "Haste\r\nWhenever you cast a noncreature spell, put a +1/+1 counter on this creature.",
+   "type_line": "Creature — Gremlin Elemental",
+   "mana_cost": "{2}{R}",
+   "radius": 2.6719
+  },
+  {
+   "id": "1o209RwudUeX7QbSB1ZvYb",
+   "name": "Wrath of the Bloodmane",
+   "oracle_text": "This spell costs {o1} less to cast if you control a legendary creature.\r\nWrath of the Bloodmane deals 4 damage to target creature or planeswalker.",
+   "type_line": "Instant",
+   "mana_cost": "{2}{R}",
+   "radius": 1.9138
+  },
+  {
+   "id": "55aoTeerYN3dGdcqKj5F86",
+   "name": "Carnivorous Cultivator",
+   "oracle_text": "Deathtouch\r\nThis creature enters prepared.\r\nWhenever this creature deals combat damage to a player, return target land card from your graveyard to your hand.\r\n//Prep//\r\nEnroot\r\n{oG}\r\nSorcery\r\nSearch your library for a land card, put it into your graveyard, then shuffle.",
+   "type_line": "Creature — Elf Warlock",
+   "mana_cost": "{1}{G}",
+   "radius": 4.3775
+  },
+  {
+   "id": "RVpTg0HiztNaboiL1FVlY",
+   "name": "Wrecking Gecko",
+   "oracle_text": "Ward {o2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {o2}.)\r\n{o6oGoG}: This creature gets +4/+4 and gains trample until end of turn.",
+   "type_line": "Artifact Creature — Lizard Construct",
+   "mana_cost": "{4}{G}",
+   "radius": 2.6718
+  },
+  {
+   "id": "606zEw5ow82RqZ6kIeGpt1",
+   "name": "Stinging Vitriol",
+   "oracle_text": "Stinging Vitriol deals 2 damage to target opponent. That player reveals their hand. You choose a nonland card from it. They discard that card.",
+   "type_line": "Sorcery",
+   "mana_cost": "{B}{R}",
+   "radius": 6.6232
+  },
+  {
+   "id": "3SPfsdrk5Ffj2tANlyN07J",
+   "name": "Tenured Tethermage",
+   "oracle_text": "When this creature enters, you may sacrifice a land. If you do, create two tapped Heartwood tokens. (They’re red and green artifacts with “{oT}: Add {oR} or {oG}.”)\r\nTap two untapped artifacts you control: Put two +1/+1 counters on this creature.",
+   "type_line": "Creature — Human Artificer",
+   "mana_cost": "{1}{R}{G}",
+   "radius": 4.1021
+  },
+  {
+   "id": "2gnXGJHeMgogx3jEH98J4R",
+   "name": "Murmuring Volume",
+   "oracle_text": "{oT}: Add one mana of any color.\r\n{o2}, {oT}, Discard a card: Draw a card.",
+   "type_line": "Artifact — Book",
+   "mana_cost": "{3}",
+   "radius": 4.2537
+  },
+  {
+   "id": "4GdfgMLPyrd2hgpvli0FVD",
+   "name": "Dark Matter Manipulator",
+   "oracle_text": "When this creature enters, mill three cards.\r\nThis creature gets +2/+0 for every seven cards in your graveyard.",
+   "type_line": "Creature — Human Warlock",
+   "mana_cost": "{B}",
+   "radius": 4.5072
+  },
+  {
+   "id": "4mYl5mptSC5SzW3MJ9kPSv",
+   "name": "Pia, Determined Rebuilder",
+   "oracle_text": "When Pia enters, create a 1/1 colorless Thopter artifact creature token with flying.\r\n{o5oR}: Target creature gets +X/+0 until end of turn, where X is the number of artifacts you control.",
+   "type_line": "Legendary Creature — Human Artificer",
+   "mana_cost": "{2}{R}",
+   "radius": 3.5038
+  },
+  {
+   "id": "36kYnOrl6xMEdItoBKCu1N",
+   "name": "Pia, Aether Ascetic",
+   "oracle_text": "When Pia enters, you may discard a card. If you do, search your library for an enchantment card, reveal it, put it into your hand, then shuffle.",
+   "type_line": "Legendary Creature — Human Druid",
+   "mana_cost": "{2}{G}",
+   "radius": 4.0931
+  },
+  {
+   "id": "1Ogjka7QEYkvL7X81cJZmk",
+   "name": "Break Under Pressure",
+   "oracle_text": "Target opponent sacrifices a creature or planeswalker with the greatest mana value among creatures and planeswalkers they control. You gain 2 life.",
+   "type_line": "Instant",
+   "mana_cost": "{2}{B}",
+   "radius": 3.9405
+  },
+  {
+   "id": "6yWyPmP0WkhcGn6B42plIw",
+   "name": "Screeching Soulbreaker",
+   "oracle_text": "Flying\r\nWhenever this creature attacks, it deals 1 damage to each opponent and you gain 1 life.",
+   "type_line": "Creature — Siren Bard",
+   "mana_cost": "{2}{B}",
+   "radius": 2.8865
+  },
+  {
+   "id": "0vCZnJs6j9wLVBZXRxRRs",
+   "name": "Afterthought Sentry",
+   "oracle_text": "{o2}: This creature gains flying until end of turn.\r\nWhenever this creature attacks, exile up to one target card from a graveyard.",
+   "type_line": "Artifact Creature — Gargoyle",
+   "mana_cost": "{2}",
+   "radius": 2.2389
+  },
+  {
+   "id": "3SmHGBKWlXwh914lHA3IQq",
+   "name": "Bestial Incursion",
+   "oracle_text": "Create a 4/4 green Beast creature token with trample.\r\nFlashback {o5oG} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+   "type_line": "Sorcery",
+   "mana_cost": "{3}{G}",
+   "radius": 3.3991
+  },
+  {
+   "id": "2XfrAG26AQnGO3ONvxNVPR",
+   "name": "Face Yourself",
+   "oracle_text": "For each creature target player controls, create a token that’s a copy of that creature, except it has haste and “At the beginning of the end step, if you don’t control a planeswalker, sacrifice this creature.”",
+   "type_line": "Sorcery",
+   "mana_cost": "{5}{R}{R}",
+   "radius": 7.8052
+  },
+  {
+   "id": "3t0kFQmd0TpDolqwKD1Hcf",
+   "name": "Violent Echoes",
+   "oracle_text": "Violent Echoes deals 6 damage to target creature or planeswalker. If excess damage was dealt to that permanent this way, empower Jace X, where X is that excess damage. (Put that many loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Instant",
+   "mana_cost": "{2}{R}{R}",
+   "radius": 4.201
+  },
+  {
+   "id": "7bI0PcRzkk2ZTgefeSVKCo",
+   "name": "Emrakul, the Exigent Doom",
+   "oracle_text": "When you cast this spell, untap all lands you control.\r\nFlying, trample\r\nWard—Sacrifice three permanents.\r\n{o3}, Exile this card from your hand: Target land gains “{oT}: Add {oCoC}” until this card is cast from exile. You may cast this card for as long as it remains exiled.",
+   "type_line": "Legendary Creature — Eldrazi",
+   "mana_cost": "{10}",
+   "radius": 5.6922
+  },
+  {
+   "id": "1jkxvobDvxP9Z0dOiD5L2W",
+   "name": "Blazing Crescendo",
+   "oracle_text": "Target creature gets +3/+1 until end of turn. Exile the top card of your library. Until the end of your next turn, you may play that card.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{R}",
+   "radius": 3.6644
+  },
+  {
+   "id": "1pfCR0TujmQ9S8bCjUkZr6",
+   "name": "Gideon's Memorial",
+   "oracle_text": "Creature tokens you control get +1/+0 and have vigilance.\r\n{oT}: Add one mana of any color. Spend this mana only to cast a planeswalker spell.\r\n{o1oW}, Discard this card: It deals 4 damage to target attacking or blocking creature.",
+   "type_line": "Legendary Artifact",
+   "mana_cost": "{1}{W}",
+   "radius": 7.2929
+  },
+  {
+   "id": "6p6rnfinjCDMZ6NOxhlbKU",
+   "name": "Lyra, Archangel of Dawn",
+   "oracle_text": "Flying\r\nWhenever you gain life, put a +1/+1 counter on each Angel you control.",
+   "type_line": "Legendary Creature — Angel Knight",
+   "mana_cost": "{2}{W}",
+   "radius": 4.947
+  },
+  {
+   "id": "J7B8KO0ICskxpERiQgnGd",
+   "name": "Thalia, the Survivor",
+   "oracle_text": "Lifelink\r\nNoncreature spells your opponents cast cost {o1} more to cast.",
+   "type_line": "Legendary Creature — Human Soldier",
+   "mana_cost": "{3}{W}",
+   "radius": 3.0576
+  },
+  {
+   "id": "6Mlt7guXlD89f8xvYM83pP",
+   "name": "Fblthp, Impossibly Lost",
+   "oracle_text": "When one or more of your opponents are dealt combat damage during your turn, draw two cards. If your library has no cards in it, you win the game. Fblthp’s owner shuffles him into their library. (If you draw from an empty library this way, you still win the game.)",
+   "type_line": "Legendary Creature — Homunculus",
+   "mana_cost": "{1}{U}",
+   "radius": 4.0111
+  },
+  {
+   "id": "3fvrH1WgOL5ZmG9ficftD3",
+   "name": "Geist of Saint Thalia",
+   "oracle_text": "Flying\r\nNoncreature spells you cast cost {o1} less to cast.",
+   "type_line": "Legendary Creature — Spirit Cleric",
+   "mana_cost": "{1}{U}",
+   "radius": 3.7056
+  },
+  {
+   "id": "22affqlk1QIPZyf58INMlr",
+   "name": "Lyra, Tolarian Archangel",
+   "oracle_text": "Flying\r\nAt the beginning of each end step, if you’ve drawn three or more cards this turn, create a 3/3 blue Angel creature token with flying.\r\n{o3oUoU}: Until end of turn, whenever Lyra deals combat damage to a player, draw two cards.",
+   "type_line": "Legendary Creature — Angel Wizard",
+   "mana_cost": "{1}{U}{U}",
+   "radius": 4.0612
+  },
+  {
+   "id": "4C7cvBCH1YijrWNsu7juNr",
+   "name": "Gideon the Oathless",
+   "oracle_text": "Ward—Discard a card.\r\nWhenever a creature an opponent controls enters, Gideon deals 1 damage to that player.\r\nWhenever an opponent activates a loyalty ability, Gideon deals 1 damage to that player.",
+   "type_line": "Legendary Creature — Human Mercenary",
+   "mana_cost": "{2}{B}",
+   "radius": 4.6662
+  },
+  {
+   "id": "6j40KM8VxCnHqQkfsr4PTw",
+   "name": "Winter, Tormented Loner",
+   "oracle_text": "When Winter enters, you may sacrifice a creature or planeswalker. When you do, each opponent sacrifices a creature of their choice.\r\nWinter gets +1/+0 for each creature and planeswalker card in your graveyard.",
+   "type_line": "Legendary Creature — Human Warlock",
+   "mana_cost": "{2}{B}",
+   "radius": 3.2192
+  },
+  {
+   "id": "7BoE8OIg05BuR8L17V6Doz",
+   "name": "Winter, Team Player",
+   "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {o1} or one mana of that creature’s color.)\r\nWhenever you cast a noncreature spell, creatures you control get +1/+0 until end of turn.",
+   "type_line": "Legendary Creature — Human Warrior",
+   "mana_cost": "{4}{R}",
+   "radius": 2.8453
+  },
+  {
+   "id": "6aE39fIf0YXzbXJ4P7mS4r",
+   "name": "Fblthp, Knows the Way",
+   "oracle_text": "Domain — Fblthp’s power is equal to the number of basic land types among lands you control.\r\nWhen Fblthp enters, search your library for up to X basic land cards with different names, reveal them, put them into your hand, then shuffle.",
+   "type_line": "Legendary Creature — Homunculus Scout",
+   "mana_cost": "{X}{G}{G}",
+   "radius": 3.6638
+  },
+  {
+   "id": "4mJWapp0OTYJY9am4J7rVC",
+   "name": "Vraska, Soul of Stone",
+   "oracle_text": "Artifact creatures you control have vigilance.\r\nWhenever you cast a noncreature spell, create a 1/1 colorless Sculpture Treasure artifact creature token with “{oT}, Sacrifice this token: Add one mana of any color.”",
+   "type_line": "Legendary Creature — Gorgon Wizard",
+   "mana_cost": "{U}{R}{W}",
+   "radius": 4.511
+  },
+  {
+   "id": "3fR7zpxwQDq5ne4YdiDTuy",
+   "name": "Vraska, the Cutting Glare",
+   "oracle_text": "Deathtouch\r\nWhen Vraska enters, if you control six or more lands, destroy target permanent an opponent controls. They create a Treasure token. (It’s an artifact with “{oT}, Sacrifice this token: Add one mana of any color.”)",
+   "type_line": "Legendary Creature — Gorgon Assassin",
+   "mana_cost": "{B}{B}{G}",
+   "radius": 4.2021
+  },
+  {
+   "id": "1nits8MTUmbOC942HGgenf",
+   "name": "Tarmogoyf",
+   "oracle_text": "Tarmogoyf’s power is equal to the number of card types among cards in all graveyards and its toughness is equal to that number plus 1.",
+   "type_line": "Creature — Lhurgoyf",
+   "mana_cost": "{1}{G}",
+   "radius": 5.3087
+  },
+  {
+   "id": "4Up1Eo0DmaoNooLlYMy19x",
+   "name": "Solarium Sentry",
+   "oracle_text": "Whenever an opponent casts a spell with mana value 2 or less, you gain 2 life.",
+   "type_line": "Creature — Cat Soldier",
+   "mana_cost": "{G}{W}",
+   "radius": 4.8473
+  },
+  {
+   "id": "66tvLegghgS0kkUTisH0MU",
+   "name": "Vindictive Triumph",
+   "oracle_text": "Exile target creature or planeswalker. If that permanent’s mana value was 3 or less, return it to the battlefield tapped under your control. Exile it at the beginning of the next end step.",
+   "type_line": "Instant",
+   "mana_cost": "{W}{B}{B}",
+   "radius": 4.6913
+  },
+  {
+   "id": "343KeVg4Hq9aKEARevJPDY",
+   "name": "Danitha, Sword of Hope",
+   "oracle_text": "First strike\r\nWhenever you cast an Equipment spell or a spell that targets a creature you control, draw a card. This ability triggers only once each turn.",
+   "type_line": "Legendary Creature — Human Knight",
+   "mana_cost": "{2}{W}",
+   "radius": 3.263
+  },
+  {
+   "id": "6fJtgDDl4gZhHKm4tLlk25",
+   "name": "Yuriko, Blade of the Mighty",
+   "oracle_text": "During combat, players can’t cast spells or activate abilities that aren’t mana abilities.\r\nWhenever a creature you control attacks a player alone, it gains double strike until end of turn.",
+   "type_line": "Legendary Creature — Human Samurai",
+   "mana_cost": "{3}{W}",
+   "radius": 3.4701
+  },
+  {
+   "id": "NYBSq1n942QYP8U2We6cu",
+   "name": "Proft, Consulting Detective",
+   "oracle_text": "Whenever you scry or surveil, you may pay {o2}. If you do, put a +1/+1 counter on Proft and draw a card. (Draw after you scry or surveil.)",
+   "type_line": "Legendary Creature — Human Detective",
+   "mana_cost": "{1}{U}",
+   "radius": 3.4245
+  },
+  {
+   "id": "7nx6DCh2ZovsLWoKi7Uik9",
+   "name": "Ruric Thar, Biomagus",
+   "oracle_text": "Flying\r\nProwess, prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn twice.)\r\nWhenever Ruric Thar becomes the target of a spell or ability an opponent controls, draw a card.",
+   "type_line": "Legendary Creature — Ogre Crab Wizard",
+   "mana_cost": "{4}{U}{U}",
+   "radius": 3.2896
+  },
+  {
+   "id": "71ExJyKQYBEpfEViXysu8r",
+   "name": "Tetsuko Umezawa, Fugitive",
+   "oracle_text": "Creatures you control with power or toughness 1 or less can’t be blocked.",
+   "type_line": "Legendary Creature — Human Rogue",
+   "mana_cost": "{1}{U}",
+   "radius": 4.1394
+  },
+  {
+   "id": "7CzAM3ftb2eS5bDgjM7LBd",
+   "name": "Yargle, Goliath of Otaria",
+   "oracle_text": "",
+   "type_line": "Legendary Creature — Frog Spirit",
+   "mana_cost": "{4}{U}",
+   "radius": 3.359
+  },
+  {
+   "id": "H9zXrP5gNfpTlRw1nwkod",
+   "name": "Yuriko, Hope from the Shadows",
+   "oracle_text": "Flash\r\nWhen Yuriko enters, choose one —\r\n• Target creature gets -X/-0 until end of turn, where X is the number of cards in your graveyard.\r\n• Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)",
+   "type_line": "Legendary Creature — Human Ninja",
+   "mana_cost": "{U}",
+   "radius": 3.122
+  },
+  {
+   "id": "SRn9Q6qYyzYPlNg9l2mFH",
+   "name": "Danitha, Spear of Agony",
+   "oracle_text": "First strike\r\nWhenever you cast a spell that targets an opponent or a creature an opponent controls, put a +1/+1 counter on Danitha.",
+   "type_line": "Legendary Creature — Human Knight",
+   "mana_cost": "{2}{B}",
+   "radius": 3.3796
+  },
+  {
+   "id": "6MWt45jeYA9iT5rwzEypA6",
+   "name": "Proft, Sinister Mastermind",
+   "oracle_text": "Threshold — You can’t cast this spell unless there are seven or more cards in your graveyard.\r\nMenace\r\n{oB}, Discard this card: Target creature gets -3/-1 until end of turn.",
+   "type_line": "Legendary Creature — Human Rogue",
+   "mana_cost": "{2}{B}",
+   "radius": 3.0069
+  },
+  {
+   "id": "1rvD0pusoUDZuVkPnz40Ky",
+   "name": "Yargle, Glutton of Urborg",
+   "oracle_text": "",
+   "type_line": "Legendary Creature — Frog Spirit",
+   "mana_cost": "{4}{B}",
+   "radius": 3.2125
+  },
+  {
+   "id": "2iR1aNLutU1ypfkxUjZ5Kz",
+   "name": "Kiora of Fire and Ashes",
+   "oracle_text": "When Kiora enters, create a 5/5 red Dragon creature token with flying.\r\n{o8}: Create a 5/5 red Dragon creature token with flying.",
+   "type_line": "Legendary Creature — Merfolk Noble",
+   "mana_cost": "{4}{R}{R}",
+   "radius": 3.8151
+  },
+  {
+   "id": "2r1e81JGBicHWVD5s1FhWA",
+   "name": "Tetsuko Umezawa, Pursuer",
+   "oracle_text": "Double strike\r\nProwess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)\r\nWhenever a creature an opponent controls with power or toughness 1 or less blocks, Tetsuko Umezawa deals 1 damage to that creature’s controller.",
+   "type_line": "Legendary Creature — Human Mercenary",
+   "mana_cost": "{3}{R}",
+   "radius": 3.4356
+  },
+  {
+   "id": "2dlMnshzWOo2dfyDwcSPlP",
+   "name": "Edgar, Moonlit Sovereign",
+   "oracle_text": "Flash\r\nAt the beginning of your end step, if you didn’t cast a spell this turn, put two +1/+1 counters on Edgar.\r\n{o4oG}: Put a +1/+1 counter on each creature you control with a +1/+1 counter on it.",
+   "type_line": "Legendary Creature — Werewolf Noble",
+   "mana_cost": "{3}{G}{G}",
+   "radius": 3.0605
+  },
+  {
+   "id": "6rcCFanvi95Fc1nd3gd0YV",
+   "name": "Ruric Thar, Magecrusher",
+   "oracle_text": "This spell can’t be countered.\r\nReach, vigilance, trample\r\nRuric Thar has hexproof as long as they haven’t dealt combat damage yet. (They can’t be the target of spells or abilities your opponents control.)",
+   "type_line": "Legendary Creature — Ogre Warrior",
+   "mana_cost": "{5}{G}{G}",
+   "radius": 3.617
+  },
+  {
+   "id": "5KNlewWNvJncO4o4Ac5trq",
+   "name": "Edgar, Ancient Bloodlord",
+   "oracle_text": "Whenever another creature or planeswalker you control dies, you gain 1 life.\r\n{o2}, Sacrifice another creature or planeswalker: Put a +1/+1 counter on Edgar. He gains menace until end of turn. (He can’t be blocked except by two or more creatures.)",
+   "type_line": "Legendary Creature — Vampire Noble",
+   "mana_cost": "{W}{B}",
+   "radius": 3.5146
+  },
+  {
+   "id": "3jA5koQ6d1Mk8sSJuJMEb",
+   "name": "Kiora of Salt and Sand",
+   "oracle_text": "Whenever you attack, if you’ve activated a loyalty ability this turn, untap target attacking creature. It can’t be blocked this turn.﻿\r\nPlaneswalkers you control have “[−8]: Create an 8/8 blue Leviathan creature token with hexproof.”",
+   "type_line": "Legendary Creature — Merfolk Noble",
+   "mana_cost": "{1}{G}{U}",
+   "radius": 3.3071
+  },
+  {
+   "id": "1hIuDJFkptxtWMbBi4i7Cb",
+   "name": "Cruel Calculations",
+   "oracle_text": "Draw X cards, where X is the number of cards that were put into target player’s graveyard from their library this turn.",
+   "type_line": "Sorcery",
+   "mana_cost": "{2}{U}",
+   "radius": 6.1766
+  },
+  {
+   "id": "4QM1ZfUrhx1fRVEy0XGFm7",
+   "name": "Infinite Coursework",
+   "oracle_text": "Enchant creature\r\nWhen this Aura enters, tap enchanted creature. It becomes unprepared.\r\nEnchanted creature loses all abilities and doesn’t untap during its controller’s untap step.",
+   "type_line": "Enchantment — Aura",
+   "mana_cost": "{2}{U}",
+   "radius": 3.0206
+  },
+  {
+   "id": "7dBhvmHWrfE0gsCCuLdvPQ",
+   "name": "Semester Foreseer",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\nWhen this creature enters, surveil 1.\r\n//Prep//\r\nPeer Review\r\n{o2o(w/u)}\r\nSorcery\r\nCreate a 2/2 colorless Wizard Soldier creature token named Cadet. Surveil 1.",
+   "type_line": "Creature — Human Wizard",
+   "mana_cost": "{3}{U}",
+   "radius": 2.8593
+  },
+  {
+   "id": "6RGGXKbrpW5GdEzsSbHqTW",
+   "name": "Last Gasp",
+   "oracle_text": "Target creature gets -3/-3 until end of turn.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{B}",
+   "radius": 3.4695
+  },
+  {
+   "id": "01yiF3Bie7XkNBnDmcCbxR",
+   "name": "Rampart Hunter",
+   "oracle_text": "Deathtouch\r\nWhen this creature enters, target creature gets +2/+2 and gains deathtouch until end of turn.",
+   "type_line": "Creature — Horror",
+   "mana_cost": "{3}{B}",
+   "radius": 3.1244
+  },
+  {
+   "id": "5R5WIip9BDjtgRMkzEZxJe",
+   "name": "Hallway Heckler",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n{oT}, Discard a card: Draw a card.\r\n//Prep//\r\nVicious Verse\r\n{o(b/r)}\r\nSorcery\r\nVicious Verse deals 1 damage to target opponent.",
+   "type_line": "Creature — Elemental Sorcerer",
+   "mana_cost": "{2}{R}",
+   "radius": 3.0197
+  },
+  {
+   "id": "4nUKpGIGiHcFC0cLO7eYQm",
+   "name": "Master of Barbs",
+   "oracle_text": "Menace\r\nWhenever one or more opponents are dealt noncombat damage, creatures you control get +1/+0 until end of turn.",
+   "type_line": "Creature — Lizard Bard",
+   "mana_cost": "{1}{R}",
+   "radius": 5.0731
+  },
+  {
+   "id": "2DjYznMWeDfbETlQSOlO62",
+   "name": "Greenhouse Propagator",
+   "oracle_text": "Whenever another creature you control enters, you gain 1 life.\r\n{oT}: Add {oG}.",
+   "type_line": "Creature — Cat Druid",
+   "mana_cost": "{2}{G}",
+   "radius": 3.2396
+  },
+  {
+   "id": "6MpKKH71ix8PIkI2KwetCZ",
+   "name": "Heartwood Crafter",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n{oT}: Add {oC}. This mana can’t be spent to cast spells from your hand.\r\n//Prep//\r\nSoul Tether\r\n{o2o(r/g)}\r\nSorcery\r\nCreate a Heartwood token. (It’s a red and green artifact with “{oT}: Add {oR} or {oG}.”)",
+   "type_line": "Creature — Elf Artificer",
+   "mana_cost": "{G}",
+   "radius": 4.1104
+  },
+  {
+   "id": "2sW7B8vcAbQKzDwgQHvRaq",
+   "name": "Hungering Puppetbeast",
+   "oracle_text": "When this creature enters, create a Heartwood token. (It’s a red and green artifact with “{oT}: Add {oR} or {oG}.”)\r\n{o1}, Sacrifice another artifact: Put a +1/+1 counter on this creature. It gains your choice of trample, hexproof, or haste until end of turn.",
+   "type_line": "Artifact Creature — Beast Construct",
+   "mana_cost": "{3}{G}{G}",
+   "radius": 5.0636
+  },
+  {
+   "id": "11ApfUR9m3Mj473Y42h6wj",
+   "name": "Emergency Phytomedic",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nSeed Suture\r\n{o(g/w)}\r\nSorcery\r\nPut a +1/+1 counter on target creature. You gain 1 life.",
+   "type_line": "Creature — Dryad Cleric",
+   "mana_cost": "{G/W}",
+   "radius": 2.6515
+  },
+  {
+   "id": "5sX4NAsuGUngbdAzYnaLkj",
+   "name": "Fatehold Charm",
+   "oracle_text": "Choose one —\r\n• Draw a card. Empower Jace 2.\r\n• Return target spell or creature to its owner’s hand.\r\n• Creatures you control get +1/+2 until end of turn.",
+   "type_line": "Instant",
+   "mana_cost": "{W}{U}",
+   "radius": 3.5871
+  },
+  {
+   "id": "17eamr9q0Jx6bWvB78cSjb",
+   "name": "Konstrari Charm",
+   "oracle_text": "Choose one —\r\n• Konstrari Charm deals 6 damage to target creature with flying.\r\n• Put two +1/+1 counters on target creature. It gains trample until end of turn.\r\n• Add {oCoCoC}.",
+   "type_line": "Instant",
+   "mana_cost": "{R}{G}",
+   "radius": 3.5609
+  },
+  {
+   "id": "35mcRpZ7Fo3KD4Y1kfDgAQ",
+   "name": "Null Summoner",
+   "oracle_text": "When this creature enters, if you cast it, target opponent reveals their hand. You choose a nonland card from it. Exile that card.\r\nThreshold — As long as there are seven or more cards in your graveyard, you may cast the exiled card, and mana of any type can be spent to cast that spell.",
+   "type_line": "Creature — Human Warlock",
+   "mana_cost": "{2}{U}{B}",
+   "radius": 3.9165
+  },
+  {
+   "id": "7vI2uebT67Q7SciKhRu19A",
+   "name": "Proctor of Potential",
+   "oracle_text": "Whenever this creature or another creature you control enters, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)\r\n{oWoU}: Return this card from your graveyard to the battlefield with a finality counter on it. Activate only if you’ve scried or surveilled this turn. (If a creature with a finality counter on it would die, exile it instead.)",
+   "type_line": "Creature — Human Cleric",
+   "mana_cost": "{W}{U}",
+   "radius": 3.9257
+  },
+  {
+   "id": "6zxnp6jAshvrs7iIUQcRmR",
+   "name": "Stingerquill Charm",
+   "oracle_text": "Choose one —\r\n• Stingerquill Charm deals 3 damage to any target.\r\n• Target creature gains first strike and deathtouch until end of turn.\r\n• Create a 2/2 colorless Wizard Soldier creature token named Cadet. It gains haste until end of turn.",
+   "type_line": "Instant",
+   "mana_cost": "{B}{R}",
+   "radius": 3.6501
+  },
+  {
+   "id": "3QS1Pd0g7D8qtsbjlc7sja",
+   "name": "Theorix Charm",
+   "oracle_text": "Choose one —\r\n• Counter target noncreature spell unless its controller pays {o2}.\r\n• Target creature gets -2/-2 until end of turn.\r\n• Mill three cards, then draw a card. (To mill three cards, put the top three cards of your library into your graveyard.)",
+   "type_line": "Instant",
+   "mana_cost": "{U}{B}",
+   "radius": 3.8915
+  },
+  {
+   "id": "2mtJ0uY7x8P6FY1mvgySx9",
+   "name": "Vigorbloom Charm",
+   "oracle_text": "Choose one —\r\n• Target permanent you control gains hexproof and indestructible until end of turn.\r\n• You draw a card and gain 3 life.\r\n• Put a +1/+1 counter on target creature you control. Then it fights target creature an opponent controls. (Each deals damage equal to its power to the other.)",
+   "type_line": "Instant",
+   "mana_cost": "{G}{W}",
+   "radius": 4.1243
+  },
+  {
+   "id": "w4p1Mr7VevyaDJXhAQgXP",
+   "name": "Whiplash Wordsmith",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\nAs long as an opponent was dealt noncombat damage this turn, this creature has flying and haste.\r\n//Prep//\r\nVicious Verse\r\n{o(b/r)}\r\nSorcery\r\nVicious Verse deals 1 damage to target opponent.",
+   "type_line": "Creature — Vampire Sorcerer",
+   "mana_cost": "{3}{B/R}",
+   "radius": 2.5314
+  },
+  {
+   "id": "1YqmpbGEIaQSUvgJC3uGnN",
+   "name": "Overwrite the Multiverse",
+   "oracle_text": "Exile all creatures. Empower Jace X, where X is the number of creatures exiled this way. (Put that many loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Sorcery",
+   "mana_cost": "{4}{B}{B}",
+   "radius": 7.0775
+  },
+  {
+   "id": "1fejIWqePFNPqcjQhhsLB3",
+   "name": "Prophesied End",
+   "oracle_text": "Destroy target creature. If it wasn’t attacking, its controller draws a card.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{W}",
+   "radius": 2.9554
+  },
+  {
+   "id": "47sfuLAEVm8uuCnRSkfkMI",
+   "name": "Fatehold Chronologist",
+   "oracle_text": "Flying\r\nThis creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nPeer Review\r\n{o2o(w/u)}\r\nSorcery\r\nCreate a 2/2 colorless Wizard Soldier creature token named Cadet. Surveil 1.",
+   "type_line": "Creature — Bird Wizard",
+   "mana_cost": "{1}{W/U}",
+   "radius": 2.8515
+  },
+  {
+   "id": "6rhrUvULK909WgGd4uqsbX",
+   "name": "Eardrum Rattler",
+   "oracle_text": "{o1}, {oT}: Another target creature you control with power 2 or less can’t be blocked this turn.",
+   "type_line": "Creature — Human Bard",
+   "mana_cost": "{1}{R}",
+   "radius": 2.1458
+  },
+  {
+   "id": "1bGXN6CUCC0pfqPnNQ9fp7",
+   "name": "Budding Insurgent",
+   "oracle_text": "Vigilance\r\nSacrifice this creature: Destroy target artifact or enchantment. If that permanent was a legendary enchantment, draw a card. Activate only as a sorcery.",
+   "type_line": "Creature — Dryad Scout",
+   "mana_cost": "{2}{G}",
+   "radius": 2.2579
+  },
+  {
+   "id": "6nsSpy0F1koxSR6xUUqRGL",
+   "name": "Warrior's Blades",
+   "oracle_text": "When this Equipment enters, it deals 3 damage to any target and you gain 3 life.\r\nEquipped creature gets +2/+1.\r\nEquip {o3}. This ability costs {o1} less to activate for each +1/+1 counter on the creature it targets.",
+   "type_line": "Artifact — Equipment",
+   "mana_cost": "{2}{R}{W}",
+   "radius": 4.1241
+  },
+  {
+   "id": "2x1IneGosfjbHgd6o4kanM",
+   "name": "Tethermage's Advantage",
+   "oracle_text": "Target creature gets +2/+2 and gains reach until end of turn. Untap it.",
+   "type_line": "Instant",
+   "mana_cost": "{G}",
+   "radius": 2.6561
+  },
+  {
+   "id": "2BpKme5faR6oKC31XmJBiO",
+   "name": "Solitary Cell",
+   "oracle_text": "When this artifact enters, exile target nonland permanent an opponent controls with mana value 3 or less until this artifact leaves the battlefield.\r\n{o1}, {oT}, Discard a legendary card: Draw a card.",
+   "type_line": "Artifact",
+   "mana_cost": "{R}{W}",
+   "radius": 5.923
+  },
+  {
+   "id": "1YPVhItf9FTyUC2XlLIhJb",
+   "name": "Hexhaven Invigorator",
+   "oracle_text": "Vigilance\r\nWhenever this creature is dealt damage, you may search your library for up to that many land cards, put them onto the battlefield tapped, then shuffle.",
+   "type_line": "Creature — Chimera Horror",
+   "mana_cost": "{G}{G}{G}{G}",
+   "radius": 5.5816
+  },
+  {
+   "id": "5Ptiqs88EALICfVG0fgFCl",
+   "name": "Karn, Gilded Guardian",
+   "oracle_text": "Vigilance, trample\r\nWhen Karn enters, draw a card for each color among other artifacts you control.",
+   "type_line": "Legendary Artifact Creature — Golem",
+   "mana_cost": "{2/W}{2/U}{2/B}{2/R}{2/G}",
+   "radius": 5.4977
+  },
+  {
+   "id": "1uJUI3r4afmMIWSNIWlC4U",
+   "name": "Karn, Argent Defender",
+   "oracle_text": "Artifacts and creatures entering the battlefield don’t cause abilities to trigger.",
+   "type_line": "Legendary Artifact Creature — Golem",
+   "mana_cost": "{2}",
+   "radius": 5.8864
+  },
+  {
+   "id": "4aX71Lu65JuwsiLzGGKBpa",
+   "name": "Deserted Beach",
+   "oracle_text": "This land enters tapped unless you control two or more other lands.\r\n{oT}: Add {oW} or {oU}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.9083
+  },
+  {
+   "id": "6WqdeMTwdPjccoEEoQDULQ",
+   "name": "Haunted Ridge",
+   "oracle_text": "This land enters tapped unless you control two or more other lands.\r\n{oT}: Add {oB} or {oR}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 3.1152
+  },
+  {
+   "id": "46h6OWfqJlLScW857kIKWq",
+   "name": "Overgrown Farmland",
+   "oracle_text": "This land enters tapped unless you control two or more other lands.\r\n{oT}: Add {oG} or {oW}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.9083
+  },
+  {
+   "id": "7cbcKRJKvctEusRS33CGJ9",
+   "name": "Ghalta the Immovable",
+   "oracle_text": "This spell costs {oX} less to cast, where X is the greatest toughness among creatures you control.\r\nCreatures you control can attack as though they didn’t have defender.\r\nEach creature you control with toughness greater than its power assigns combat damage equal to its toughness rather than its power.",
+   "type_line": "Legendary Creature — Elder Dinosaur",
+   "mana_cost": "{8}{W}",
+   "radius": 3.4696
+  },
+  {
+   "id": "4NNKRfOfuwj3cAe2G2V9w9",
+   "name": "Jiang Yanggu, Alone",
+   "oracle_text": "Menace (This creature can’t be blocked except by two or more creatures.)\r\nWhenever a creature you control attacks a player alone, discard a card, then draw a card. Then put a +1/+1 counter on that creature for each card you’ve discarded this turn.",
+   "type_line": "Legendary Creature — Human Berserker",
+   "mana_cost": "{4}{R}",
+   "radius": 3.0685
+  },
+  {
+   "id": "6xvbg9nNOrz5S19KKiCgNx",
+   "name": "Ghalta the Unstoppable",
+   "oracle_text": "This spell costs {oX} less to cast, where X is the greatest power among creatures you control.\r\nTrample\r\nOther creatures you control have trample.",
+   "type_line": "Legendary Creature — Elder Dinosaur",
+   "mana_cost": "{8}{G}",
+   "radius": 3.1674
+  },
+  {
+   "id": "1ZOFpcq8mz3ZyMUhtuiHub",
+   "name": "Jiang Yanggu, Never Alone",
+   "oracle_text": "When Jiang Yanggu enters, create Mowu, a legendary 3/3 green Dog creature token.\r\nAt the beginning of your end step, untap all tokens you control.",
+   "type_line": "Legendary Creature — Human Druid",
+   "mana_cost": "{3}{G}",
+   "radius": 3.8895
+  },
+  {
+   "id": "3HAQD1yonKA23EhkP2Hfwo",
+   "name": "Academic Ascent",
+   "oracle_text": "Target creature gets +2/+2 and gains flying until end of turn.\r\nEmpower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Instant",
+   "mana_cost": "{1}{W}",
+   "radius": 2.9432
+  },
+  {
+   "id": "7zwnWgc2oP4J0Kcmbx2poO",
+   "name": "Campus Crier",
+   "oracle_text": "{o1}, Exile this card from your graveyard: Empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Creature — Human Advisor",
+   "mana_cost": "{1}{W}",
+   "radius": 2.3173
+  },
+  {
+   "id": "5dZz7O2PjwfQwEcKKFFJg2",
+   "name": "Loyal Tutor",
+   "oracle_text": "Search your library for a planeswalker card, reveal it, then shuffle and put that card on top.",
+   "type_line": "Instant",
+   "mana_cost": "{W}",
+   "radius": 5.7139
+  },
+  {
+   "id": "7mo8ZE818h5oKynkPnaAzk",
+   "name": "Countersculpt",
+   "oracle_text": "As an additional cost to cast this spell, behold a Jace or pay {o1}. (To behold a Jace, choose a Jace you control or reveal a Jace card from your hand.)\r\nCounter target spell. Empower Jace 1. (Put a loyalty counter on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Instant",
+   "mana_cost": "{U}{U}",
+   "radius": 4.5295
+  },
+  {
+   "id": "2xgF9Cn9tZjdSa4e0JASFw",
+   "name": "Diviner of Victory",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\nWhenever you scry or surveil, this creature gets +1/+1 until end of turn.\r\n//Prep//\r\nUnwind History\r\n{o1oU}\r\nSorcery\r\nReturn target creature an opponent controls with mana value 3 or less to its owner’s hand. Surveil 1.",
+   "type_line": "Creature — Dwarf Wizard",
+   "mana_cost": "{U}",
+   "radius": 4.0022
+  },
+  {
+   "id": "659LYTXO4cqaSSONOBpaFK",
+   "name": "Jace's Machinations",
+   "oracle_text": "Until end of turn, you may activate loyalty abilities of Jace planeswalkers you control on any player’s turn any time you could cast an instant.\r\nEmpower Jace 8. (Put eight loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Instant",
+   "mana_cost": "{2}{U}",
+   "radius": 4.9082
+  },
+  {
+   "id": "2oZf62Upza01G6IfqTbf1M",
+   "name": "No Admittance",
+   "oracle_text": "No Admittance deals 3 damage to any target.\r\nEmpower Jace 1. (Put a loyalty counter on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Sorcery",
+   "mana_cost": "{1}{R}",
+   "radius": 3.4958
+  },
+  {
+   "id": "7nNL946Kz9UgLwqhy2194e",
+   "name": "Arcane Amphisbaena",
+   "oracle_text": "Deathtouch\r\nWhen this creature enters, empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Creature — Snake",
+   "mana_cost": "{1}{G}",
+   "radius": 3.5523
+  },
+  {
+   "id": "5CpNCmB8CexpfP0Pj5mH9j",
+   "name": "Inspired Tethermage",
+   "oracle_text": "Whenever you put one or more loyalty counters on a planeswalker, put a +1/+1 counter on this creature.\r\n{o6}: Empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Creature — Elf Warrior",
+   "mana_cost": "{2}{G}",
+   "radius": 2.4603
+  },
+  {
+   "id": "63my35ShXTsFtP2bgTd1B1",
+   "name": "Aerid Konstrari",
+   "oracle_text": "Flying\r\nWhen Aerid Konstrari enters or dies, create a Heartwood token. (It’s a red and green artifact with “{oT}: Add {oR} or {oG}.”)\r\n{o6}: Create a Heartwood token. Then Aerid Konstrari gets +X/+0 until end of turn, where X is the number of artifacts you control.",
+   "type_line": "Legendary Creature — Elder Sphinx",
+   "mana_cost": "{1}{R}{G}{G}",
+   "radius": 4.2948
+  },
+  {
+   "id": "40pvsInwq2a57dNvuEWucM",
+   "name": "Avatar of Burgeoning Echoes",
+   "oracle_text": "Landfall — Whenever a land you control enters, empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nPlaneswalkers you control have “[−10]: Put a +1/+1 counter on target creature for each land you control.”",
+   "type_line": "Creature — Avatar",
+   "mana_cost": "{G}{U}",
+   "radius": 4.6508
+  },
+  {
+   "id": "2poiwYjFkcVUpU2WCChrEL",
+   "name": "Clash of Elements",
+   "oracle_text": "Choose target nonland permanent. Its owner may put it on the top of their library. If they do, Clash of Elements deals 2 damage to them. If they didn’t put the card on top of their library, they put it on the bottom.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{U}{R}",
+   "radius": 4.3678
+  },
+  {
+   "id": "5OcrIN4krPTptOYChcPshI",
+   "name": "Denzilore Fatehold",
+   "oracle_text": "Flash\r\nFlying\r\nWhenever you scry or surveil, put a +1/+1 counter on each creature you control.",
+   "type_line": "Legendary Creature — Elder Sphinx",
+   "mana_cost": "{1}{W}{U}{U}",
+   "radius": 4.4895
+  },
+  {
+   "id": "1AG7mLwvPLS5NrJ1WGb5xA",
+   "name": "Ingris Stingerquill",
+   "oracle_text": "Flying\r\nWhenever a creature you control attacks, that creature deals 1 damage to each opponent.\r\n{o4}: Create a 2/2 colorless Wizard Soldier creature token named Cadet. Then creatures you control gain haste until end of turn.",
+   "type_line": "Legendary Creature — Elder Sphinx",
+   "mana_cost": "{B}{R}{R}",
+   "radius": 5.2338
+  },
+  {
+   "id": "3cHbMaU0u0qtkDCL5K8Br2",
+   "name": "Kwia Vigorbloom",
+   "oracle_text": "Flying, vigilance, lifelink, ward {o2}\r\nWhenever you gain life, create a colorless artifact token named Lotus with “{oT}, Sacrifice this token: Add three mana of any one color.” This ability triggers only once each turn.",
+   "type_line": "Legendary Creature — Elder Sphinx",
+   "mana_cost": "{3}{G}{W}{W}",
+   "radius": 5.7712
+  },
+  {
+   "id": "5hDVau0UptgG5DhIXvgYd0",
+   "name": "Keeper of the Quiet Hour",
+   "oracle_text": "When this creature enters, empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Artifact Creature — Chimera",
+   "mana_cost": "{3}",
+   "radius": 3.3342
+  },
+  {
+   "id": "2fcXebVvfitzyrRn40HGGS",
+   "name": "Eye of Ugin",
+   "oracle_text": "Colorless Eldrazi spells you cast cost {o2} less to cast.\r\n{o7}, {oT}: Search your library for a colorless creature card, reveal it, put it into your hand, then shuffle.",
+   "type_line": "Legendary Land",
+   "mana_cost": "",
+   "radius": 4.1261
+  },
+  {
+   "id": "7F2PSFKgdFt3W3BEn0gqeJ",
+   "name": "Austere Command",
+   "oracle_text": "Choose two —\r\n• Destroy all artifacts.\r\n• Destroy all enchantments.\r\n• Destroy all creatures with mana value 3 or less.\r\n• Destroy all creatures with mana value 4 or greater.",
+   "type_line": "Sorcery",
+   "mana_cost": "{4}{W}{W}",
+   "radius": 5.5181
+  },
+  {
+   "id": "3HCWsIrUaZ452EPAa2JtMO",
+   "name": "Flesh Duplicate",
+   "oracle_text": "You may have this creature enter as a copy of any creature on the battlefield, except it has vanishing 3 if that creature doesn’t have vanishing.",
+   "type_line": "Creature — Shapeshifter Rebel",
+   "mana_cost": "{U}{U}",
+   "radius": 5.4741
+  },
+  {
+   "id": "3UMNyipZjHPeGEvAHpLkEt",
+   "name": "Consign to Memory",
+   "oracle_text": "Replicate {o1}\r\nCounter target triggered ability or colorless spell.",
+   "type_line": "Instant",
+   "mana_cost": "{U}",
+   "radius": 5.78
+  },
+  {
+   "id": "a2wtVX3AxRbppK1FvItjB",
+   "name": "Sublime Epiphany",
+   "oracle_text": "Choose one or more —\r\n• Counter target spell.\r\n• Counter target activated or triggered ability.\r\n• Return target nonland permanent to its owner’s hand.\r\n• Create a token that’s a copy of target creature you control.\r\n• Target player draws a card.",
+   "type_line": "Instant",
+   "mana_cost": "{4}{U}{U}",
+   "radius": 5.5344
+  },
+  {
+   "id": "3HmPdLDlPCQLQICwaE8vE3",
+   "name": "Consider",
+   "oracle_text": "Surveil 1.\r\nDraw a card.",
+   "type_line": "Instant",
+   "mana_cost": "{U}",
+   "radius": 5.7336
+  },
+  {
+   "id": "HaxxU3G2a9bAJpPSqzFXV",
+   "name": "Necrodominance",
+   "oracle_text": "Skip your draw step.\r\nAt the beginning of your end step, you may pay any amount of life. If you do, draw that many cards.\r\nYour maximum hand size is five.\r\nIf a card or token would be put into your graveyard from anywhere, exile it instead.",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{B}{B}{B}",
+   "radius": 6.4663
+  },
+  {
+   "id": "2OEk60qFM8Cu4aU3VieIYy",
+   "name": "Mind Twist",
+   "oracle_text": "Target player discards X cards at random.",
+   "type_line": "Sorcery",
+   "mana_cost": "{X}{B}",
+   "radius": 6.0009
+  },
+  {
+   "id": "1Zy1zzCYdzZ7LaDq4pgMqR",
+   "name": "Splinter Twin",
+   "oracle_text": "Enchant creature\r\nEnchanted creature has “{oT}: Create a token that’s a copy of this creature, except it has haste. Exile that token at the beginning of the next end step.”",
+   "type_line": "Enchantment — Aura",
+   "mana_cost": "{2}{R}{R}",
+   "radius": 7.033
+  },
+  {
+   "id": "6a1uYz4LT49NjnfASJ4f16",
+   "name": "Root Maze",
+   "oracle_text": "Artifacts and lands enter tapped.",
+   "type_line": "Enchantment",
+   "mana_cost": "{G}",
+   "radius": 6.8268
+  },
+  {
+   "id": "7Ert3SGOU0S4keqPs1eypm",
+   "name": "Memory Trap",
+   "oracle_text": "When this enchantment enters, exile target nonland permanent an opponent controls until this enchantment leaves the battlefield.",
+   "type_line": "Enchantment",
+   "mana_cost": "{2}{W}",
+   "radius": 2.5922
+  },
+  {
+   "id": "43xm5ij0zbxQD2phKosbFg",
+   "name": "Icy Reception",
+   "oracle_text": "Choose one —\r\n• Counter target creature or legendary spell unless its controller pays {o3}.\r\n• Target creature gets -5/-0 until end of turn.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{U}",
+   "radius": 2.9078
+  },
+  {
+   "id": "2PFrxLGZjAK2WaafNCtYOa",
+   "name": "Return to the Light Realms",
+   "oracle_text": "Return all nonland permanent cards from your graveyard to the battlefield.",
+   "type_line": "Sorcery",
+   "mana_cost": "{7}{W}{W}",
+   "radius": 6.8573
+  },
+  {
+   "id": "7dYgaZtxDFZDhkk3TwU9Zu",
+   "name": "Rockfall Vale",
+   "oracle_text": "This land enters tapped unless you control two or more other lands.\r\n{oT}: Add {oR} or {oG}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 3.1152
+  },
+  {
+   "id": "3LgP47myneWXQkvCMzXdCB",
+   "name": "Shipwreck Marsh",
+   "oracle_text": "This land enters tapped unless you control two or more other lands.\r\n{oT}: Add {oU} or {oB}.",
+   "type_line": "Land",
+   "mana_cost": "",
+   "radius": 2.9083
+  },
+  {
+   "id": "2lONoVBKtW0NjuvMhHIzw4",
+   "name": "Theorist's Sanctum",
+   "oracle_text": "({oT}: Add {oU}.)\r\nAs this land enters, you may behold a Jace. If you don’t, this land enters tapped. (To behold a Jace, choose a Jace you control or reveal a Jace card from your hand.)\r\n{o2oU}, {oT}: Empower Jace 2.",
+   "type_line": "Land — Island",
+   "mana_cost": "",
+   "radius": 2.7449
+  },
+  {
+   "id": "641HivQCOqeNAc24SAFYGP",
+   "name": "Way of the Cryomancer",
+   "oracle_text": "When Way of the Cryomancer enters, empower Jace 5. (Put five loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nPlaneswalkers you control have “[−3]: When you next cast an instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy.”",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{2}{U}",
+   "radius": 3.8236
+  },
+  {
+   "id": "6XZZySmoxxQHW62w0s3Jf0",
+   "name": "Way of the Pyromancer",
+   "oracle_text": "When Way of the Pyromancer enters, empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nPlaneswalkers you control have “[+1]: Add {oR}.”",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{1}{R}",
+   "radius": 3.4283
+  },
+  {
+   "id": "1WY0Q5EkTi18JwRubxLyAr",
+   "name": "Repurposed Enforcer",
+   "oracle_text": "Whenever this creature attacks, empower Jace X, where X is the number of creatures you control. (Put that many loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Creature — Human Soldier",
+   "mana_cost": "{1}{W}",
+   "radius": 3.7842
+  },
+  {
+   "id": "lMub2eaP7E1amklpSDRgb",
+   "name": "Protege's Awakening",
+   "oracle_text": "Empower Jace 6. (Put six loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nDraw a card.",
+   "type_line": "Sorcery",
+   "mana_cost": "{3}{U}",
+   "radius": 3.3491
+  },
+  {
+   "id": "2HLTckp5zpiD5GSr1sURNS",
+   "name": "Theorist's Proxy",
+   "oracle_text": "Flash\r\nWhen this creature enters, empower Jace 3. (Put three loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\n{oU}, Sacrifice this creature: The next spell you cast this turn can’t be countered.",
+   "type_line": "Creature — Illusion",
+   "mana_cost": "{1}{U}",
+   "radius": 4.2881
+  },
+  {
+   "id": "2kYq1UDIejUuBLr06wX6FI",
+   "name": "Rewrite Regrets",
+   "oracle_text": "Return target creature or planeswalker card with mana value 6 or less from your graveyard to the battlefield.\r\nEmpower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[-1]: Surveil 1” and “[-3]: Draw a card.”)",
+   "type_line": "Sorcery",
+   "mana_cost": "{3}{B}",
+   "radius": 4.0592
+  },
+  {
+   "id": "6UDoGhwf35CBPlFo2m5Z7R",
+   "name": "Solve for Disappointment",
+   "oracle_text": "Target opponent reveals their hand. You choose a nonland permanent card from it. That player discards that card.\r\nEmpower Jace 1. (Put a loyalty counter on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Sorcery",
+   "mana_cost": "{1}{B}",
+   "radius": 3.9988
+  },
+  {
+   "id": "1vtyrCY2U0A7TdgmvsFb4A",
+   "name": "Pompous Battlemage",
+   "oracle_text": "Prowess\r\nThis creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nImprovised Act\r\n{oR}\r\nSorcery\r\nYou may discard a card. If you do, draw a card.",
+   "type_line": "Creature — Goblin Sorcerer",
+   "mana_cost": "{R}",
+   "radius": 3.5115
+  },
+  {
+   "id": "3mLlh2dZW0XzdUyfShJBhL",
+   "name": "Something Worth Saving",
+   "oracle_text": "Mill four cards. You may put a permanent card from among them into your hand. You gain 1 life. (To mill four cards, put the top four cards of your library into your graveyard.)",
+   "type_line": "Instant",
+   "mana_cost": "{1}{G}",
+   "radius": 2.8207
+  },
+  {
+   "id": "1o56Gd6Dn6rT5EyjTifk3y",
+   "name": "Tam's Resistance",
+   "oracle_text": "Put a +1/+1 counter on up to one target creature. It gains vigilance until end of turn.\r\nEmpower Jace 4. (Put four loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)",
+   "type_line": "Sorcery",
+   "mana_cost": "{1}{G/U}",
+   "radius": 3.3571
+  },
+  {
+   "id": "2OcyZ5ibfKhNjhLDATVVhm",
+   "name": "Uldaros Theorix",
+   "oracle_text": "Flying\r\nWhen Uldaros Theorix enters, if you cast him, exile up to one target nonland card of each card type from your graveyard. Copy those cards. You may cast any number of spells with total mana value 6 or less from among the copies without paying their mana costs. (Permanent spells cast this way become tokens.)",
+   "type_line": "Legendary Creature — Elder Sphinx",
+   "mana_cost": "{3}{U}{B}{B}",
+   "radius": 4.7199
+  },
+  {
+   "id": "1ZNR1IotKdOQsL8a1YSjYq",
+   "name": "Restore with Empathy",
+   "oracle_text": "Return target permanent card from your graveyard to your hand. You gain 4 life.",
+   "type_line": "Instant",
+   "mana_cost": "{2}{G}",
+   "radius": 3.737
+  },
+  {
+   "id": "7egJhQ3jQxqxoHdOudqNTW",
+   "name": "Charge the Sanctum",
+   "oracle_text": "Choose one —\r\n• Creatures you control get +2/+0 until end of turn.\r\n• Target creature gets +2/+0 and gains first strike until end of turn. Put a +1/+1 counter on it.",
+   "type_line": "Instant",
+   "mana_cost": "{2}{R/W}",
+   "radius": 3.0684
+  },
+  {
+   "id": "3C9jOUOowb3gV0yB9bWvUK",
+   "name": "Compel Brutality",
+   "oracle_text": "Choose one —\r\n• Target creature you control deals damage equal to its power to target creature or planeswalker an opponent controls.\r\n• Target planeswalker you control deals damage equal its loyalty to target creature or planeswalker an opponent controls.",
+   "type_line": "Instant",
+   "mana_cost": "{1}{G}",
+   "radius": 2.1012
+  },
+  {
+   "id": "zIO406uJacZgxyYL5tMCF",
+   "name": "Generous Revival",
+   "oracle_text": "Return target creature card with mana value 3 or less from your graveyard to the battlefield with an additional +1/+1 counter on it.\r\nFlashback {o4oW} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+   "type_line": "Sorcery",
+   "mana_cost": "{2}{W}",
+   "radius": 3.5527
+  },
+  {
+   "id": "2phGCulknqharBSezBhLPa",
+   "name": "Cast Away Doubt",
+   "oracle_text": "Draw two cards. Cast Away Doubt deals 2 damage to each player.",
+   "type_line": "Sorcery",
+   "mana_cost": "{2}{B}",
+   "radius": 3.4084
+  },
+  {
+   "id": "1hZRR2jqtju34l63vTvCQU",
+   "name": "Perfected Theory",
+   "oracle_text": "Choose one —\r\n• Target creature has base power and toughness 1/1 until end of turn.\r\n• Target creature has base power and toughness 4/5 until end of turn.",
+   "type_line": "Instant",
+   "mana_cost": "{U}",
+   "radius": 2.9479
+  },
+  {
+   "id": "livjfLCIoggT140o7ZDXE",
+   "name": "Ajani Resolute",
+   "oracle_text": "Whenever you gain life, put a loyalty counter on Ajani.\r\n0: You gain 1 life.\r\n−4: Create a 2/2 white Cat Soldier creature token named Ajani’s Pridemate with “Whenever you gain life, put a +1/+1 counter on this token.”\r\n−10: You get an emblem with “Creatures you control get +2/+2.”",
+   "type_line": "Legendary Planeswalker — Ajani",
+   "mana_cost": "{W}{1}",
+   "radius": 5.0962
+  },
+  {
+   "id": "o2MTvw1YXYEnrn80lHRH8",
+   "name": "Ajani Unrelenting",
+   "oracle_text": "Whenever you activate a loyalty ability, create a 2/2 colorless Wizard Soldier creature token named Cadet.\r\n+1: Creatures you control get +1/+0 and gain haste until end of turn.\r\n−2: Discard your hand, then draw a card for each creature you control.\r\n−3: Ajani deals 4 damage to each creature except for tokens you control.",
+   "type_line": "Legendary Planeswalker — Ajani",
+   "mana_cost": "{R}{R}{4}",
+   "radius": 4.7774
+  },
+  {
+   "id": "3rWcRPhY1R5vJr6O9kjykY",
+   "name": "Chandra, Chill of Compliance",
+   "oracle_text": "+1: Surveil 1. If you put a noncreature, nonland card into your graveyard this way, put that card into your hand.\r\n+1: Add {oU}. Spend this mana only to cast a noncreature spell.\r\n−X: Tap target artifact or creature. Put X stun counters on it.\r\n−6: You get an emblem with “Whenever you cast a spell, draw a card.”",
+   "type_line": "Legendary Planeswalker — Chandra",
+   "mana_cost": "{U}{U}{1}",
+   "radius": 4.873
+  },
+  {
+   "id": "5niZtBBA6SUmKDx6znNInK",
+   "name": "Chandra, Torch of Defiance",
+   "oracle_text": "+1: Exile the top card of your library. You may cast that card. If you don’t, Chandra deals 2 damage to each opponent.\r\n+1: Add {oRoR}.\r\n−3: Chandra deals 4 damage to target creature.\r\n−7: You get an emblem with “Whenever you cast a spell, this emblem deals 5 damage to any target.”",
+   "type_line": "Legendary Planeswalker — Chandra",
+   "mana_cost": "{R}{R}{2}",
+   "radius": 4.4066
+  },
+  {
+   "id": "1BrzcBFb7SkHGrJRjP1CYi",
+   "name": "Craterclaw Colossus",
+   "oracle_text": "Haste\r\nWhen this creature enters, creatures you control gain trample and get +X/+0 until end of turn, where X is the number of artifacts you control.",
+   "type_line": "Artifact Creature — Beast Construct",
+   "mana_cost": "{R}{R}{R}{4}",
+   "radius": 5.5836
+  },
+  {
+   "id": "1AdYdIsiGlq6dNtICkGA4G",
+   "name": "Enlightened Confidant",
+   "oracle_text": "Lifelink\r\nAt the beginning of your end step, if you gained life this turn, surveil 1. If you put a card with mana value less than or equal to the amount of life you gained this turn into your graveyard this way, put that card into your hand.",
+   "type_line": "Creature — Kor Cleric",
+   "mana_cost": "{W}{1}",
+   "radius": 5.0801
+  },
+  {
+   "id": "7o0hjTMVT5Z2jHz68mAFMS",
+   "name": "Garruk, Curse Breaker",
+   "oracle_text": "Whenever a creature you control with power 4 or greater enters, draw a card.\r\n+2: Untap up to two target lands.\r\n−3: Create a 4/4 green Beast creature token with trample.\r\n−4: Until your next turn, whenever one or more creatures attack one of your opponents, those creatures get +2/+2 and gain trample until end of turn.",
+   "type_line": "Legendary Planeswalker — Garruk",
+   "mana_cost": "{G}{G}{3}",
+   "radius": 4.8536
+  },
+  {
+   "id": "2GMDnbW2UC34yxJTD6fieG",
+   "name": "Garruk, Veiled Butcher",
+   "oracle_text": "If a creature an opponent controls would die, exile it instead.\r\n+2: Up to one target creature gets -4/-1 until your next turn.\r\n−2: Each player sacrifices a creature of their choice. If you sacrificed a creature this way, create a 4/4 green Beast creature token with trample.\r\n−3: Each opponent discards two cards. For each opponent who didn't discard two nonland cards this way, you draw a card.",
+   "type_line": "Legendary Planeswalker — Garruk",
+   "mana_cost": "{B}{B}{3}",
+   "radius": 4.5068
+  },
+  {
+   "id": "HIoEt2llUxWzRD9TwUiSb",
+   "name": "Liliana the Faultless",
+   "oracle_text": "Whenever another creature or planeswalker you control enters, you gain 1 life.\r\n{o1}, {oT}, Discard a card: Another target creature or planeswalker you control gains hexproof until end of turn.",
+   "type_line": "Legendary Creature — Human Cleric",
+   "mana_cost": "{W}",
+   "radius": 4.0632
+  },
+  {
+   "id": "oGYUKdDZ04rzrVl1OulSW",
+   "name": "Liliana the Repentant",
+   "oracle_text": "Whenever another creature or planeswalker you control enters, mill two cards.\r\nExhaust — {o5oB}: Return target creature or planeswalker card from your graveyard to the battlefield. Put a +1/+1 counter on Liliana. Activate only as a sorcery. (Activate each exhaust ability only once.)",
+   "type_line": "Legendary Creature — Human Warlock",
+   "mana_cost": "{B}{1}",
+   "radius": 3.9682
+  },
+  {
+   "id": "4Y3nmHJpU2y1PxHYg3WMkE",
+   "name": "Paradox Shaper",
+   "oracle_text": "At the beginning of your upkeep, if this creature isn’t prepared, it becomes prepared.\r\n{o2}: Put target card from your graveyard on the bottom of your library.\r\n//Prep//\r\nOmit Variables\r\n{o(u/b)}\r\nSorcery\r\nMill three cards. (Put the top three cards of your library into your graveyard.)",
+   "type_line": "Creature — Octopus Wizard",
+   "mana_cost": "{U/B}{1}",
+   "radius": 3.0211
+  },
+  {
+   "id": "3WNAfUbYGesC4XhvfHBd0B",
+   "name": "Prudent Fateseer",
+   "oracle_text": "This creature enters prepared.\r\nWhenever you scry or surveil, creatures you control get +1/+0 until end of turn. This ability triggers only once each turn.\r\n//Prep//\r\nPeer Review\r\n{o2o(w/u)}\r\nSorcery\r\nCreate a 2/2 colorless Wizard Soldier creature token named Cadet. Surveil 1.",
+   "type_line": "Creature — Dwarf Wizard",
+   "mana_cost": "{W/U}{W/U}{1}",
+   "radius": 3.3374
+  },
+  {
+   "id": "3TXol4pgk9OATdQJyTobWd",
+   "name": "Stingcaster Mage",
+   "oracle_text": "Haste\r\nWhen this creature enters, target instant or sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost. (You may cast that card from your graveyard for its flashback cost. Then exile it.)",
+   "type_line": "Creature — Human Wizard",
+   "mana_cost": "{R}{1}",
+   "radius": 5.0277
+  },
+  {
+   "id": "616VHndNcFzVDmiKypVy4s",
+   "name": "Stingerquill Voxmancer",
+   "oracle_text": "At the beginning of your upkeep, if this creature isn’t prepared, it becomes prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nVicious Verse\r\n{o(b/r)}\r\nSorcery\r\nVicious Verse deals 1 damage to target opponent.",
+   "type_line": "Creature — Goblin Sorcerer",
+   "mana_cost": "{B/R}",
+   "radius": 3.4652
+  },
+  {
+   "id": "7cDrYpDwTS5QdkXomnVhg0",
+   "name": "The Theorist, Jace Beleren",
+   "oracle_text": "At the beginning of each opponent’s draw step, you draw a card.\r\n+1: Create a 1/1 blue Illusion creature token.\r\n−2: For each opponent, return up to one target artifact or creature that player controls to its owner’s hand.\r\n−6: Draw three cards. Then put X +1/+1 counters on each creature you control, where X is the number of cards in your hand.",
+   "type_line": "Legendary Planeswalker — Jace",
+   "mana_cost": "{U}{U}{2}",
+   "radius": 4.7492
+  },
+  {
+   "id": "4YEfhDhuiXf2E33adoW1nd",
+   "name": "Tinybones, Pocket Nuisance",
+   "oracle_text": "When Tinybones enters, each opponent discards a card.\r\nWhenever a player discards one or more cards, Tinybones deals 1 damage to each opponent.",
+   "type_line": "Legendary Creature — Skeleton Rogue",
+   "mana_cost": "{B}{2}",
+   "radius": 3.8622
+  },
+  {
+   "id": "5gMkskrNqKXd7aOJbIBuLn",
+   "name": "Titanbones, Towering Heart",
+   "oracle_text": "Reach\r\nWhenever you gain life, put two +1/+1 counters on Titanbones.\r\nWhen you discard this card, you gain 3 life.",
+   "type_line": "Legendary Creature — Skeleton Druid",
+   "mana_cost": "{G}{3}",
+   "radius": 3.3907
+  },
+  {
+   "id": "eVxZHr4AbNLagh6jrrTWk",
+   "name": "Vigorbloom Vanguard",
+   "oracle_text": "This creature enters prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\nEach creature you control with a +1/+1 counter on it has vigilance.\r\n//Prep//\r\nSeed Suture\r\n{o(g/w)}\r\nSorcery\r\nPut a +1/+1 counter on target creature. You gain 1 life.",
+   "type_line": "Creature — Troll Druid",
+   "mana_cost": "{G/W}{1}",
+   "radius": 3.0607
+  },
+  {
+   "id": "4ZDOVzQS93fgnqXfYi0D0Y",
+   "name": "Woodwork Prodigy",
+   "oracle_text": "At the beginning of your upkeep, if this creature isn’t prepared, it becomes prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nSoul Tether\r\n{o2o(r/g)}\r\nSorcery\r\nCreate a Heartwood token. (It’s a red and green artifact with “{oT}: Add {oR} or {oG}.”)",
+   "type_line": "Creature — Cat Druid",
+   "mana_cost": "{R/G}{2}",
+   "radius": 2.9951
+  },
+  {
+   "id": "5zeRaetWPR4svp68oYNOGR",
+   "name": "Bloodline Recollector",
+   "oracle_text": "At the beginning of each end step, if three or more creatures died this turn, this creature becomes prepared. (While it’s prepared, you may cast a copy of its spell. Doing so unprepares it.)\r\n//Prep//\r\nAncestral Craving\r\n{oB}\r\nInstant\r\nTarget player draws three cards and loses 3 life.",
+   "type_line": "Creature — Vampire Warlock",
+   "mana_cost": "{B}{1}",
+   "radius": 4.089
+  },
+  {
+   "id": "ZWSaj3ESS3wGuFQdx5tYL",
+   "name": "Tomik, Orzhov Lawmage",
+   "oracle_text": "Flying\r\nPlaneswalkers you control have “No more than one creature can attack this planeswalker each combat.”\r\n{oT}: Target creature with a +1/+1 counter on it gains flying until end of turn.",
+   "type_line": "Legendary Creature — Human Advisor",
+   "mana_cost": "{1}{W}",
+   "radius": 3.9092
+  },
+  {
+   "id": "21sQpQVWWzfOnrBBABvPp2",
+   "name": "Samut, Hazoret's Champion",
+   "oracle_text": "Creatures you control have haste.",
+   "type_line": "Legendary Creature — Human Warrior Cleric",
+   "mana_cost": "{1}{R}",
+   "radius": 5.4496
+  },
+  {
+   "id": "7GLLpPealdPbZQfjfNKVYi",
+   "name": "Way of the Wildspeaker",
+   "oracle_text": "When Way of the Wildspeaker enters, empower Jace 7. (Put seven loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nPlaneswalkers you control have “[−4]: Create a 4/4 green Beast creature token with trample.”",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{4}{G}",
+   "radius": 3.6082
+  },
+  {
+   "id": "7Av8PIQ6QEKjakby6MgU8L",
+   "name": "Extrapolate the Impossible",
+   "oracle_text": "You may reveal exactly two cards you own with different names from outside the game. An opponent chooses one of them. You put that card into your hand.",
+   "type_line": "Sorcery",
+   "mana_cost": "{1}{B}",
+   "radius": 5.8129
+  },
+  {
+   "id": "6B6Iu3esxCTKYypqbOz7eO",
+   "name": "Samut, Tyrant of Naktamun",
+   "oracle_text": "Instant and sorcery spells you control have split second. (As long as a spell with split second is on the stack, players can’t cast spells or activate abilities that aren’t mana abilities.)",
+   "type_line": "Legendary Creature — Human Wizard",
+   "mana_cost": "{1}{U}",
+   "radius": 5.1394
+  },
+  {
+   "id": "6JBxrgSNR3vWI5LqjKtVaP",
+   "name": "Way of the Warlord",
+   "oracle_text": "When Way of the Warlord enters, empower Jace 5. (Put five loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nPlaneswalkers you control have “[−4]: This planeswalker deals 2 damage to up to one target creature or planeswalker and 2 damage to target player.”",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{2}{R}",
+   "radius": 3.9386
+  },
+  {
+   "id": "56SeTApCEkocHh73LyW6ah",
+   "name": "Way of the Mentor",
+   "oracle_text": "When Way of the Mentor enters, empower Jace 5. (Put five loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nWhenever you gain life, put a loyalty counter on each planeswalker you control.",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{2}{W}",
+   "radius": 3.5627
+  },
+  {
+   "id": "4tZCwc5wmWPkGMm8DtM3tA",
+   "name": "Artifist Acumen",
+   "oracle_text": "Creatures you control gain first strike until end of turn.\r\nDraw a card.",
+   "type_line": "Sorcery",
+   "mana_cost": "{R}",
+   "radius": 3.9857
+  },
+  {
+   "id": "3UxvNkhPUZAqpHxkPDdIjY",
+   "name": "Your Fate Ends Here",
+   "oracle_text": "Destroy target creature or planeswalker with mana value 3 or greater. Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+   "type_line": "Instant",
+   "mana_cost": "{2}{W}",
+   "radius": 3.5529
+  },
+  {
+   "id": "3iGR8M4dTEqrzJVQ8f2fv9",
+   "name": "Way of the Healer",
+   "oracle_text": "When Way of the Healer enters, empower Jace 5. (Put five loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nPlaneswalkers you control have “[−2]: Create a 2/2 colorless Wizard Soldier creature token named Cadet. Surveil 1.”",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{3}{W}",
+   "radius": 3.647
+  },
+  {
+   "id": "3gEXa0yrZZMBskpskvAb1T",
+   "name": "Way of the Deathbringer",
+   "oracle_text": "When Way of the Deathbringer enters, empower Jace 5. (Put five loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nPlaneswalkers you control have “[−2]: You may sacrifice a creature. If you do, create a 4/4 green Beast creature token with trample.”",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{2}{B}",
+   "radius": 5.0021
+  },
+  {
+   "id": "2OFlhAnCYxJINEOdiIshD6",
+   "name": "Tomik, Izzet Sparkmage",
+   "oracle_text": "Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)\r\nIf a source you control would deal noncombat damage to an opponent or a permanent an opponent controls, it deals that much damage plus 1 instead.",
+   "type_line": "Legendary Creature — Human Wizard",
+   "mana_cost": "{1}{R}",
+   "radius": 3.6165
+  },
+  {
+   "id": "2Ner66o65BhFl29j54KvE5",
+   "name": "Way of the Paradox",
+   "oracle_text": "When Way of the Paradox enters, empower Jace 5. (Put five loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nWhenever you activate a loyalty ability, you gain 1 life. You may play an additional land this turn.",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{2}{G}",
+   "radius": 3.5785
+  },
+  {
+   "id": "24flJHTthDzlDMy0IGLs0R",
+   "name": "Way of the Mind Sculptor",
+   "oracle_text": "When Way of the Mind Sculptor enters, empower Jace 5. (Put five loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nWhenever you activate a loyalty ability, if you removed two or more loyalty counters to activate it, draw a card.",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{4}{U}",
+   "radius": 3.6314
+  },
+  {
+   "id": "120nE5l6PDh10RqvHUiedW",
+   "name": "Way of the Necromancer",
+   "oracle_text": "When Way of the Necromancer enters, empower Jace 2. (Put two loyalty counters on a Jace token you control. If you don’t control one, first create a blue Jace planeswalker token with “[−1]: Surveil 1” and “[−3]: Draw a card.”)\r\nWhenever a creature you control dies, put a loyalty counter on each planeswalker you control.",
+   "type_line": "Legendary Enchantment",
+   "mana_cost": "{1}{B}",
+   "radius": 3.7244
+  }
+ ]
+}
