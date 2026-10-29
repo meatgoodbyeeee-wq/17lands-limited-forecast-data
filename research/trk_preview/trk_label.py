@@ -120,8 +120,9 @@ def cmd_check(_a):
         raise SystemExit(1)
 
 
-def label_tables(done, raws):
-    """C3/C4/C5/C9 feature tables (same construction as the production extractions) for rows with .id .auto .mv .type_line."""
+def label_tables(done, raws, with_c9=True):
+    """C3/C4/C5/C9 feature tables (same construction as the production extractions) for rows with .id .auto .mv .type_line.
+    with_c9=False: no C9 passes needed (B11g, where G3 replaces C9); t9 is then empty."""
     import c9
     c5 = c9.c5
     import c3_research as c3
@@ -143,14 +144,17 @@ def label_tables(done, raws):
         else:
             v, role = raws['c4'][r.id]
             sc5, tg = raws['c5'][r.id]
-            a = np.array([raws[p][r.id] for p in ('c9p1', 'c9p2', 'c9p3')], float)
-            m, s = a.mean(0).tolist(), a.std(0).tolist()
+            if with_c9:
+                a = np.array([raws[p][r.id] for p in ('c9p1', 'c9p2', 'c9p3')], float)
+                m, s = a.mean(0).tolist(), a.std(0).tolist()
         t4r.append({**dict(zip(c5.C4_NUM, v)), **{f'c4_role_{k}': float(role == k) for k in 'ADVFRTSNO'}})
         d5 = {f'c5_{t}': tg.get(t, 0) for t in c5.cr.TAGS}
         d5.update(dict(zip(c5.SCALE, sc5)))
         d5['c5_ntags'] = len(tg); d5['c5_nlvl2'] = sum(1 for z in tg.values() if z == 2)
         d5['c5_ngroups'] = sum(any(t in tg for t in g.split()) for g in c5.GROUPS.values())
         t5r.append(d5)
+        if not with_c9:
+            continue
         d9 = dict(zip(c9.MEAN, m)); d9.update(dict(zip(c9.SD, s)))
         d9['c9_impuna'] = m[0] + m[1]; d9['c9_valfloor'] = m[2] + m[3]; d9['c9_bomb'] = m[6] - 1.25 * m[5]
         t9r.append(d9)

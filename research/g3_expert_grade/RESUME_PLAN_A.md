@@ -10,8 +10,14 @@ Agent(model=opus) に prompt_judge_all.txt を読ませ {SET} を指定。出力
 ## Step 2: 検証 (全セット完了後、または非教訓17セットが揃った時点)
 G3特徴表 = all/<SET>/pass1.json × keys_all/<SET>.csv (key, g3)。c9_features.csv.gz の c9_m_GRADE を g3 に置換した B10 ("B11g") を、B10 と同じ28セット LOSO で学習 (research/c9_power_questions/c9.py を参照)。
 比較は B10 と、教訓リストに使っていない17セットで判断 (MAE, within-set Spearman, 上位カードの過小予測)。採用基準は事前に PLAN に書いてから実行。
-## Step 3: TRK
-全カード公開 (10/31) 後に TRK を G3 で判定 (3パス; build.py の FRA 同様に target を作る) → B11g を TRK に適用 (B10S 同様のスケーリング) → export (research/trk_preview/export_b10.py の VERSION 名変更) → forecast-trk.json → 非公開アーティファクト再構築 (JS を再生成) → freeze。公開 (available:true, 11/3 頃) はユーザー確認後。
+## Step 3: TRK（スクリプト準備済み 2026-10-29）
+全カード公開 (10/31、JSTで11/1にずれる可能性) 後。`P` = limited-forecast-pages のチェックアウト（`data/trk/target.json.gz` が全カード版になっていること）。
+1. ラベル (C3〜C5 Sonnet。C9 は不要): `cd research/trk_preview && python3 trk_label.py queue --gallery $P/data/trk/target.json.gz` → 新しい分の c3/c4/c5 を Sonnet で判定 → `python3 trk_label.py check`
+2. G3 (Opus・3パス): `cd research/g3_expert_grade && python3 build_trk.py --cards $P/data/trk/target.json.gz` → Opus エージェント3つ（`prompt_judge_trk.txt` の {DIR} と {K}=1,2,3 を置換、互いの出力は見せない）→ `TRK_full/pass{1,2,3}.json`（gitignore、公開リポジトリに push しない）
+3. 書き出し: `cd research/trk_preview && python3 export_b11g.py --cards $P/data/trk/target.json.gz --out-dir $P/data/trk --explain export_tmp/trk_b11g_explain.json.gz --check`
+   広がり補正: B11g では Rule F22 の S は不支持（`research/g3_retrain/spread_b11g.json`、改善 0.004pp < 0.01pp、b=1.074）。既定は補正なし。ユーザーが補正を選んだときだけ `--spread`。
+4. 予測理由: `python3 reasons_b11g.py prepare --explain export_tmp/trk_b11g_explain.json.gz --cards $P/data/trk/target.json.gz` → バッチごとに Sonnet エージェント（`prompt_reasons.txt` の {DIR} と {BATCH}）→ `python3 reasons_b11g.py check` → `python3 reasons_b11g.py merge --out $P/data/trk/gih-reasons.json`
+5. Pages: `BUILD_UNPUBLISHED=1 node scripts/build-set-forecast.mjs TRK` → 非公開アーティファクトでプレビュー確認 → freeze。公開 (`lib/set-config.mjs` の `available: true`, 11/3 頃) はユーザー確認後。
 ## 予備 (案B)
 上限に当たった場合: B5 + G3 の一次式 (FRAでは B10 より MAE +0.03pp, 3セット平均 +0.05pp 悪い=改善なし) を暫定版として使用。
 ## 注意
