@@ -1,0 +1,25 @@
+      games  wins     wr  sim_centred  actual_centred  sim_rank  actual_rank
+pair                                                                        
+WU      467   215  46.04        -3.96            2.39         9            1
+WB      466   245  52.58         2.57           -0.84         3            9
+WR      467   234  50.11         0.10           -0.64         6            8
+WG      466   228  48.93        -1.08           -0.27         7            5
+UB      468   256  54.70         4.70            0.83         2            4
+UR      468   188  40.17        -9.83            1.41        10            2
+UG      467   220  47.11        -2.89           -3.20         8           10
+BR      468   246  52.56         2.56           -0.30         4            6
+BG      465   264  56.77         6.77           -0.57         1            7
+RG      468   239  51.07         1.06            1.18         5            3
+{
+ "games": 2470,
+ "decided_cross_pair_games": 2335,
+ "draws": 5,
+ "mean_game_s": 5.76,
+ "spearman_vs_17lands": -0.358,
+ "spearman_95ci": [
+  -0.612,
+  0.079
+ ],
+ "sim_sd_pp": 4.76,
+ "actual_sd_pp": 1.55
+}
