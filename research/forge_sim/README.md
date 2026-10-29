@@ -4,6 +4,7 @@ User request 2026-10-29: raise the play strength of Forge's AI and estimate colo
 (about 10 per pair, mostly commons and uncommons), best of one like Premier Draft. Started on FRA. Research only; Pages unchanged.
 
 - `build_decks.py` — 10 decks per pair (pools of 45 weighted by booster frequency, 23 best spells by the frozen B10 prediction, 17 basics) → `decks_fra/`
+- `build_pool_decks.py` — alternative (user request): one whole-colour-pool deck per pair, every common ×2 and uncommon ×1 (or ×2) + lands at 17:23 → `decks_fra_pool_c2u1/` (≈162 cards), `decks_fra_pool_c2u2/` (≈228 cards)
 - `run_sim.py` — Forge `sim -t RoundRobin -m 1` on random subsets (2 decks per pair per round) → `runs/<name>.csv` (one row per game)
 - `card_wr.py` — card win rate when drawn (needs `run_sim.py --seen` and `forge_seen.patch` applied to Forge) against 17Lands GIH WR
 - `analyze.py` — pair win rates and Spearman with 17Lands Color Ratings (`research/fra_check/fra-actual-color-ratings.json`)
