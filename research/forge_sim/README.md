@@ -21,6 +21,16 @@ Forge: Card-Forge/forge master (2.0.16-SNAPSHOT, 2026-10-29), built with `mvn -p
 Re-running the same seeds moved Spearman from −0.02 to +0.27: Forge games are not reproducible across runs and 467 games per pair
 (±2.3pp) are not enough to order pairs whose actual spread is 1.2pp.
 
+## Before and after the AI fixes (two runs each, seeds 1 and 2, 4,940 games per setting; FRA splash combined)
+| setting | runs | pair Spearman vs 17Lands (95% CI) | sim pair SD (actual 1.2pp) | run-to-run Spearman | card GIH vs 17Lands GIH (IWD) | held |
+|---|---|---|---|---|---|---|
+| unfixed | `fra_default_mcoff_seen`, `fra_default_mcoff_s2` | +0.02 (−0.20..0.39) | 5.1pp | 0.70 | +0.16 (+0.23), 146 cards | 16.9% |
+| fixed | `fra_fixed_mcoff_s1`, `fra_fixed_mcoff_s2` | +0.02 (−0.33..0.38) | 3.4pp | 0.66 | +0.32 (+0.29), 152 cards | 11.8% |
+
+Card tables: `runs/fra_default_pool_cards.csv`, `runs/fra_fixed_pool_cards.csv`. The fixes bring card results closer to 17Lands and
+shrink the pair spread, but the pair order still does not match (fixed: WR 1st vs actual 9th, RG 9th vs 3rd, UR 10th vs 4th).
+Runs agree with each other (run-to-run Spearman 0.66–0.81), so the mismatch is systematic (AI play or the fixed-rule decks), not noise.
+
 ## Cards the AI misplays (`runs/fra_default_mcoff_seen_cards.csv`, card_wr.py)
 Forge's AI has no logic for FRA's Empower Jace (`ApiType.Empower` is missing from forge-ai `SpellApiToAi`, so it falls back to
 `CannotPlayAi`): any spell with Empower, even as a rider, is never cast. 35 FRA cards use Empower; Protege's Awakening,
