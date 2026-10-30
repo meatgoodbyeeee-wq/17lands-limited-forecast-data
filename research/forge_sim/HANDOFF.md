@@ -43,6 +43,7 @@
 | (常に有効) | Empower を AI に割り当て / 出たときの効果を嫌ってクリーチャーを出さない問題 / カウンターを置く全体効果のおまけ / Jace's Machinations の AILogic |
 | L2_PATCH, L3_PATCH, L4_PATCH, L5A_PATCH, L5B_PATCH | 以前の L 系列の修正(L4 には「1 ターン待っても使えなければ通常どおり唱える」上限を今回追加) |
 | S2_PATCH | 今回の修正: 瞬速の強化オーラ / 「1 枚引く」付きの無害な呪文 / 打ち消し呪文のマナを残す / 価値の低いクリーチャーでの相打ちブロック |
+| INS1_PATCH | セッション 1: インスタントの改善 P1〜P3(L5B の除去の対象を広げる / Flourishing Grapple 型の対象選び / 打ち消しの確率の抽選をやめる、`PLAN_instants1.md`)。`INS_DIAG=1` で判断の記録 |
 | ATK1_PATCH | セッション 1: 攻撃の判断の第一段階(余りの攻撃・数の圧力・価値に応じた相打ち、`PLAN_attack1.md`、`ResearchAttack.java`) |
 | (常に有効、セッション 1) | `sim -t RoundRobin` で `-a` の AI プロファイルが無視されていた不具合の修正 / 研究用プロファイル Trade30.ai |
 | FORGE_SIM_SEEN | 試合ごとに引いたカード(最終の置き場)と打ち切り回数を出力 |

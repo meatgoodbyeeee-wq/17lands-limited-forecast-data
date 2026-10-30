@@ -181,7 +181,7 @@ index be04e602..99709a18 100644
 +    }
  }
 diff --git a/forge-ai/src/main/java/forge/ai/SpellAbilityAi.java b/forge-ai/src/main/java/forge/ai/SpellAbilityAi.java
-index 68f20dc2..a64aaeb7 100644
+index 68f20dc2..6cee2ba2 100644
 --- a/forge-ai/src/main/java/forge/ai/SpellAbilityAi.java
 +++ b/forge-ai/src/main/java/forge/ai/SpellAbilityAi.java
 @@ -55,6 +55,9 @@ public abstract class SpellAbilityAi extends SpellAbilityEffect {
@@ -207,7 +207,7 @@ index 68f20dc2..a64aaeb7 100644
          if (sa.hasParam("AILogic")) {
              final String logic = sa.getParam("AILogic");
              final boolean alwaysOnDiscard = "AlwaysOnDiscard".equals(logic) && ai.getGame().getPhaseHandler().is(PhaseType.END_OF_TURN, ai)
-@@ -523,4 +532,89 @@ public abstract class SpellAbilityAi extends SpellAbilityEffect {
+@@ -523,4 +532,92 @@ public abstract class SpellAbilityAi extends SpellAbilityEffect {
          // TODO addChangedSVars if Remembered is simply used to substitute some other non-Card field
          return true;
      }
@@ -246,10 +246,13 @@ index 68f20dc2..a64aaeb7 100644
 +                || !sa.usesTargeting() || isSorcerySpeed(sa, ai)) {
 +            return false;
 +        }
++        final forge.game.ability.ApiType api = sa.getApi();
++        if (ResearchFixes.instantsEnabled()) {
++            return ResearchFixes.isInstantRemoval(sa, api);
++        }
 +        if (!"Creature".equals(sa.getParamOrDefault("ValidTgts", "").split(",")[0].trim())) {
 +            return false;
 +        }
-+        final forge.game.ability.ApiType api = sa.getApi();
 +        if (api == forge.game.ability.ApiType.Destroy || api == forge.game.ability.ApiType.DealDamage) {
 +            return true;
 +        }
@@ -309,6 +312,21 @@ index 4040d73f..a3e2ddf9 100644
              .put(ApiType.EndCombatPhase, EndTurnAi.class)
              .put(ApiType.EndTurn, EndTurnAi.class)
              .put(ApiType.ExchangeLife, LifeExchangeAi.class)
+diff --git a/forge-ai/src/main/java/forge/ai/ability/AnimateAi.java b/forge-ai/src/main/java/forge/ai/ability/AnimateAi.java
+index 75a27066..d665dba8 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/AnimateAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/AnimateAi.java
+@@ -164,6 +164,10 @@ public class AnimateAi extends SpellAbilityAi {
+ 
+         if (sa.usesTargeting()) {
+             sa.resetTargets();
++            if (ResearchFixes.instantsEnabled() && ResearchFixes.isPowerDamageCurse(sa)) {
++                return ResearchFixes.choosePowerDamageCurse(aiPlayer, sa)
++                        ? new AiAbilityDecision(100, AiPlayDecision.WillPlay) : new AiAbilityDecision(0, AiPlayDecision.TargetingFailed);
++            }
+             return animateTgtAI(sa);
+         }
+ 
 diff --git a/forge-ai/src/main/java/forge/ai/ability/AttachAi.java b/forge-ai/src/main/java/forge/ai/ability/AttachAi.java
 index 06c93201..677edad9 100644
 --- a/forge-ai/src/main/java/forge/ai/ability/AttachAi.java
@@ -342,7 +360,7 @@ index 06c93201..677edad9 100644
          if (!mandatory && card.isEquipment() && !targets.isEmpty()) {
              Card newTarget = (Card) targets.get(0);
 diff --git a/forge-ai/src/main/java/forge/ai/ability/CounterAi.java b/forge-ai/src/main/java/forge/ai/ability/CounterAi.java
-index 8597aaa6..9e03691c 100644
+index 8597aaa6..59116c69 100644
 --- a/forge-ai/src/main/java/forge/ai/ability/CounterAi.java
 +++ b/forge-ai/src/main/java/forge/ai/ability/CounterAi.java
 @@ -37,6 +37,9 @@ public class CounterAi extends SpellAbilityAi {
@@ -355,7 +373,57 @@ index 8597aaa6..9e03691c 100644
              return new AiAbilityDecision(0, AiPlayDecision.TargetingFailed);
          }
  
-@@ -388,4 +391,23 @@ public class CounterAi extends SpellAbilityAi {
+@@ -50,6 +53,7 @@ public class CounterAi extends SpellAbilityAi {
+             final SpellAbility topSA = ComputerUtilAbility.getTopSpellAbilityOnStack(game, sa);
+             if ((topSA.isSpell() && !topSA.isCounterableBy(sa)) || ai.getYourTeam().contains(topSA.getActivatingPlayer())) {
+                 // might as well check for player's friendliness
++                ResearchFixes.diag("Counter", source, ai.getYourTeam().contains(topSA.getActivatingPlayer()) ? "own-spell" : "uncounterable");
+                 return new AiAbilityDecision(0, AiPlayDecision.CantPlayAi);
+             }
+             if (sa.hasParam("ConditionWouldDestroy") && !CounterEffect.checkForConditionWouldDestroy(sa, topSA)) {
+@@ -84,6 +88,7 @@ public class CounterAi extends SpellAbilityAi {
+                     tgtCMC += topSA.getPayCosts().getTotalMana().countX() > 0 ? 3 : 0; // TODO: somehow determine the value of X paid and account for it?
+                 }
+             } else {
++                ResearchFixes.diag("Counter", source, "invalid-target");
+                 return new AiAbilityDecision(0, AiPlayDecision.TargetingFailed);
+             }
+         } else {
+@@ -113,6 +118,7 @@ public class CounterAi extends SpellAbilityAi {
+             if (toPay <= usableManaSources) {
+                 // If this is a reusable Resource, feel free to play it most of the time
+                 if (!playReusable(ai, sa)) {
++                    ResearchFixes.diag("Counter", source, "opp-can-pay");
+                     return new AiAbilityDecision(0, AiPlayDecision.CantAfford);
+                 }
+             }
+@@ -156,7 +162,12 @@ public class CounterAi extends SpellAbilityAi {
+         String ctrNamed = AiProfileUtil.getProperty(ai, AiProps.ALWAYS_COUNTER_SPELLS_FROM_NAMED_CARDS);
+         boolean dontCounter = false;
+ 
+-        if (tgtCMC == 1 && !MyRandom.percentTrue(ctrChanceCMC1)) {
++        // research fix (INS1_PATCH): no random refusal against creature spells or spells of mana value 2 or more
++        final boolean insNoRoll = ResearchFixes.instantsEnabled() && tgtSA != null
++                && (tgtCMC >= 2 || (tgtSA.getHostCard() != null && tgtSA.getHostCard().isCreature()));
++        if (insNoRoll) {
++            // keep dontCounter false
++        } else if (tgtCMC == 1 && !MyRandom.percentTrue(ctrChanceCMC1)) {
+             dontCounter = true;
+         } else if (tgtCMC == 2 && !MyRandom.percentTrue(ctrChanceCMC2)) {
+             dontCounter = true;
+@@ -217,9 +228,11 @@ public class CounterAi extends SpellAbilityAi {
+         }
+ 
+         if (dontCounter) {
++            ResearchFixes.diag("Counter", source, "refuse-cmc" + tgtCMC);
+             return new AiAbilityDecision(0, AiPlayDecision.CantPlayAi);
+         }
+ 
++        ResearchFixes.diag("Counter", source, "cast-cmc" + tgtCMC);
+         return new AiAbilityDecision(100, AiPlayDecision.WillPlay);
+     }
+ 
+@@ -388,4 +401,26 @@ public class CounterAi extends SpellAbilityAi {
  
          return super.willPayUnlessCost(payer, sa, cost, alreadyPaid, payers);
      }
@@ -376,6 +444,9 @@ index 8597aaa6..9e03691c 100644
 +        final int theirs = ComputerUtil.countUsefulCreatures(ai.getWeakestOpponent());
 +        if (lands >= cost + 2 || mine >= theirs) {
 +            ((PlayerControllerAi) ai.getController()).getAi().reserveManaSources(sa, forge.game.phase.PhaseType.COMBAT_DECLARE_BLOCKERS, true);
++            ResearchFixes.diag("CounterReserve", sa.getHostCard(), "reserve");
++        } else {
++            ResearchFixes.diag("CounterReserve", sa.getHostCard(), "no-reserve");
 +        }
 +    }
  }
@@ -562,6 +633,22 @@ index f5db465e..667a5493 100644
 +        return held != null && ph.getTurn() >= held + 2 && ph.isPlayerTurn(ai) && ph.getPhase().isAfter(PhaseType.DRAW);
 +    }
  }
+diff --git a/forge-ai/src/main/java/forge/ai/ability/PumpAi.java b/forge-ai/src/main/java/forge/ai/ability/PumpAi.java
+index cc8e6881..6dea43e2 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/PumpAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/PumpAi.java
+@@ -657,6 +657,11 @@ public class PumpAi extends PumpAiBase {
+     public AiAbilityDecision chkDrawback(Player ai, SpellAbility sa) {
+         final SpellAbility root = sa.getRootAbility();
+         final Card source = sa.getHostCard();
++        // research fix (INS1_PATCH): the root curse already chose this creature to deal the damage
++        if (ResearchFixes.instantsEnabled() && ResearchFixes.isPowerDamageCurse(root) && root.getSubAbility() == sa
++                && sa.getTargets().size() > 0) {
++            return new AiAbilityDecision(100, AiPlayDecision.WillPlay);
++        }
+ 
+         final String numDefense = sa.getParamOrDefault("NumDef", "");
+         final String numAttack = sa.getParamOrDefault("NumAtt", "");
 diff --git a/forge-core/src/main/java/forge/util/AITimeoutTracker.java b/forge-core/src/main/java/forge/util/AITimeoutTracker.java
 index 91db58b1..961b2477 100644
 --- a/forge-core/src/main/java/forge/util/AITimeoutTracker.java
