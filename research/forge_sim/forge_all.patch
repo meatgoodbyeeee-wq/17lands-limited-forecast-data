@@ -1,3 +1,36 @@
+diff --git a/forge-ai/src/main/java/forge/ai/AiAttackController.java b/forge-ai/src/main/java/forge/ai/AiAttackController.java
+index bfc470fc..44ee587a 100644
+--- a/forge-ai/src/main/java/forge/ai/AiAttackController.java
++++ b/forge-ai/src/main/java/forge/ai/AiAttackController.java
+@@ -1313,6 +1313,9 @@ public class AiAttackController {
+             if ( LOG_AI_ATTACKS )
+                 System.out.println("attackersLeft = " + left);
+ 
++            // Research (ATK1_PATCH): creatures not needed as blockers, for the extra attack pass below
++            final List<Card> spareForResearch = new ArrayList<>(left);
++
+             FCollection<GameEntity> possibleDefenders = new FCollection<>(defendingOpponent);
+             possibleDefenders.addAll(defendingOpponent.getPlaneswalkersInPlay());
+ 
+@@ -1372,6 +1375,18 @@ public class AiAttackController {
+                 }
+             }
+ 
++            if (ResearchAttack.enabled() && aiAggression < 5 && ai.getController().isAI()) {
++                final List<Card> spare = new ArrayList<>();
++                for (final Card c : spareForResearch) {
++                    if (!combat.isAttacking(c) && canAttackWrapper(c, defendingOpponent)) {
++                        spare.add(c);
++                    }
++                }
++                for (final Card c : ResearchAttack.extraAttackers(ai, defendingOpponent, combat, spare, this.blockers)) {
++                    combat.addAttacker(c, defendingOpponent);
++                }
++            }
++
+             return aiAggression;
+         } finally {
+             if (trackTimer) {
 diff --git a/forge-ai/src/main/java/forge/ai/AiBlockController.java b/forge-ai/src/main/java/forge/ai/AiBlockController.java
 index 8d5d6a7b..65025d79 100644
 --- a/forge-ai/src/main/java/forge/ai/AiBlockController.java

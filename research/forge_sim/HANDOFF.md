@@ -25,7 +25,7 @@
 ## 環境(コンテナは使い捨て。Forge は毎回作り直す)
 - Forge: `git clone --depth 1 --filter=blob:none https://github.com/Card-Forge/forge.git`。基準のコミットは **7b9f0542**(2026-10-29 の master)。
   - master は日々変わるので、`git -C forge fetch --depth 1 origin 7b9f05426ee11f4b9b78a7ca017cc6416abdbc54 && git -C forge checkout FETCH_HEAD` で同じコミットにそろえる。
-- 研究用の変更: `research/forge_sim/forge_all.patch` を当て、`research/forge_sim/ResearchFixes.java` を
+- 研究用の変更: `research/forge_sim/forge_all.patch` を当て、`research/forge_sim/ResearchFixes.java` と `ResearchAttack.java` を
   `forge-ai/src/main/java/forge/ai/` にコピーする(パッチに含まれない新規ファイル)。7b9f0542 にそのまま当たることを確認済み。
 - ビルド: `mvn -q -B -pl forge-gui-desktop -am -DskipTests -Dcheckstyle.skip package`(約 2 分)。
   jar は `forge-gui-desktop/target/forge-gui-desktop-2.0.16-SNAPSHOT-jar-with-dependencies.jar`。sim は `forge-gui` ディレクトリで実行。
@@ -43,6 +43,8 @@
 | (常に有効) | Empower を AI に割り当て / 出たときの効果を嫌ってクリーチャーを出さない問題 / カウンターを置く全体効果のおまけ / Jace's Machinations の AILogic |
 | L2_PATCH, L3_PATCH, L4_PATCH, L5A_PATCH, L5B_PATCH | 以前の L 系列の修正(L4 には「1 ターン待っても使えなければ通常どおり唱える」上限を今回追加) |
 | S2_PATCH | 今回の修正: 瞬速の強化オーラ / 「1 枚引く」付きの無害な呪文 / 打ち消し呪文のマナを残す / 価値の低いクリーチャーでの相打ちブロック |
+| ATK1_PATCH | セッション 1: 攻撃の判断の第一段階(余りの攻撃・数の圧力・価値に応じた相打ち、`PLAN_attack1.md`、`ResearchAttack.java`) |
+| (常に有効、セッション 1) | `sim -t RoundRobin` で `-a` の AI プロファイルが無視されていた不具合の修正 / 研究用プロファイル Trade30.ai |
 | FORGE_SIM_SEEN | 試合ごとに引いたカード(最終の置き場)と打ち切り回数を出力 |
 | BLOCK_AUDIT | ブロック宣言ごとに、見送ったブロックの種類を出力 |
 | FORGE_SIM_AI_TIMEOUT | AI の 1 回の判断の時間上限(既定 5 秒) |
