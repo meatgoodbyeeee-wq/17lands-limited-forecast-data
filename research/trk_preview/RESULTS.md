@@ -32,3 +32,13 @@ User decision 2026-10-22: run the recommended split on the previewed cards. Labe
 - Cards: Scryfall `e:trk` at 2026-10-22 05:00 UTC, 165 cards; 5 basic lands set to zero labels, 160 labelled; all 960 label lines valid on the first read (`trk_label.py check`).
 - Prediction: B10 with the production 28-set training pool and seeds (FRA not used), `pred_b10.csv`, 160 non-basic cards. Mean 55.79, SD 2.13, range 49.68–63.75 (pre-registered sanity range for the set SD is 1.5–3.0; FRA 2.22).
 - Caveats: previews over-represent rares and mythics, so the mean is not a set mean; Spacecraft, Sagas and other new TRK mechanics lie outside what the model was trained on; the labels mix Sonnet (C3–C5) and Opus (C9), which Step 1 showed shifts B10 by about 0.23 pp on average relative to all-Opus. These are preliminary; the full-set run after 10/31 replaces them. Not published; Pages and production unchanged.
+
+# Step 3: TRK full set, B11g + one-line reasons (2026-10-31)
+- Cards: official gallery 296 (2026-10-30 21:39 UTC, not marked complete) + 15 cards that Scryfall lists but the gallery does not yet
+  (added to the Pages card list as manual entries, no image) = 311. Scryfall's 17 missing collector numbers are exactly the 17 gallery-only main-set cards.
+- Labels: batch 5, C3/C4/C5 by Sonnet for 71 new cards (311 labelled, all valid). C9 not used.
+- G3 full run: 3 Opus passes on all 311 cards (whole-set context); pass agreement Pearson 0.926 / 0.928 / 0.905.
+- B11g export (no spread factor, user decision 2026-10-29): 311 cards, set mean 55.40, median 55.23, range 48.12-63.76, SD 2.34; identical to e.predict;
+  SHAP reconstruction error 1e-9. Range M5 (28-set coverage 0.80).
+- Reasons: 8 Opus batches, 311 sentences "〜ため、〜。"; 5 sentences lacked the comma after ため (fixed by hand), then check ok.
+- Pages: private preview artifact updated (version 12). Not published (TRK available:false). Predictions, G3 passes and reasons stay local (gitignored).
