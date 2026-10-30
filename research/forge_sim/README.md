@@ -38,6 +38,15 @@ sim pair SD 3.0pp, split-half (odd vs even rounds) 0.38, mean game 9.7 s. Blue p
 UG 9th, UR 7th); RG, WG, WB on top. For reference, the copy-weighted mean 17Lands GIH WR of each pool deck, with no games at all,
 has Spearman +0.35 with the actual pair order, and −0.24 with the sim order: the AI, not the card choice, now drives the mismatch.
 
+## Why the blue pairs lose (pool decks; 180 games with full logs, `log_metrics.py`)
+- UB and UG win 14–18% of games of 12 turns or fewer and 37–48% of 13–20 turns, but 49–55% of longer games.
+- Mana use per turn (lands tapped / lands) and casts per turn are about the same for every pair: blue decks do not leave more mana idle.
+- Instants are played like sorceries: only 13% of instant / flash casts happen on the opponent's turn; removal and bounce are cast
+  mostly in the AI's own upkeep or draw step (Wrath of the Bloodmane 23 of 39, Unsummon 26 of 39), almost never against attackers.
+  Countersculpt was cast 6 times in 180 games. Every deck blocks only about 20% of the attackers it faces.
+- Across the 10 pool decks, the share of instants has Spearman −0.60 with the sim win rate (UR 20%, UG 18%, UB 18% instants are
+  7th, 9th and 10th); creature count +0.39. The AI's sorcery-speed use of instants is the main weakness left.
+
 ## Why UR is last (fixed runs, `fra_fixed_mcoff_s1/s2`)
 - Short games: UR wins 32% of games of 12 turns or fewer (both players' turns; WR and WB win 77% of them) vs 42–49% of longer games.
 - Decks: the fixed-rule builder gives UR the fewest creatures of mana value ≤ 2 (3.5 per deck; RG 7.0, WB and WG 6.3) and the highest
