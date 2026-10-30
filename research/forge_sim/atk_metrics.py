@@ -40,7 +40,8 @@ def main():
     for spec in a.runs:
         name, path = spec.split('=', 1)
         g = pd.read_csv(path, keep_default_na=False)
-        s = pd.read_csv(Path(path).with_name(Path(path).stem + '_seen.csv'), keep_default_na=False)
+        sp = Path(path).with_name(Path(path).stem + '_seen.csv')
+        s = pd.read_csv(sp if sp.exists() else sp.with_suffix('.csv.gz'), keep_default_na=False)
         b = s[s.zone == 'BlockAudit'].card.str.split('|', expand=True).astype(int)
         turns = s[s.zone != 'BlockAudit'].groupby('game').turns.max()
         t = pair_wr(g)
