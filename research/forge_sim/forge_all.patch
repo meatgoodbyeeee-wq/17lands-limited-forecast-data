@@ -48,7 +48,7 @@ index 8d5d6a7b..65025d79 100644
          boolean powerParityOrHigher = blocker.getNetPower() <= attacker.getNetPower();
          boolean creatureParityOrAllowedDiff = aiCreatureCount
 diff --git a/forge-ai/src/main/java/forge/ai/AiController.java b/forge-ai/src/main/java/forge/ai/AiController.java
-index fccc96d3..59bfc54c 100644
+index fccc96d3..36418113 100644
 --- a/forge-ai/src/main/java/forge/ai/AiController.java
 +++ b/forge-ai/src/main/java/forge/ai/AiController.java
 @@ -437,6 +437,11 @@ public class AiController {
@@ -107,7 +107,26 @@ index fccc96d3..59bfc54c 100644
      }
  
      /** In a simulated game: the attack to declare instead of asking the heuristics (set by a rollout, used once). */
-@@ -2507,6 +2549,7 @@ public class AiController {
+@@ -1640,6 +1682,18 @@ public class AiController {
+         // Reset priority mana reservation that's meant to work for one spell only
+         memory.clearMemorySet(AiCardMemory.MemorySet.HELD_MANA_SOURCES_FOR_NEXT_SPELL);
+ 
++        // research fix (INS1_PATCH): keep the lands for counterspells in hand untapped on the AI's own main phases (S2's
++        // hold, which counterspell logic alone rarely reached because counterspells are not considered on an empty stack)
++        if (ResearchFixes.instantsEnabled() && ResearchFixes.enabled() && game.getStack().isEmpty()
++                && game.getPhaseHandler().isPlayerTurn(player) && game.getPhaseHandler().getPhase().isMain()) {
++            for (final SpellAbility csa : ComputerUtilAbility.getSpellAbilities(
++                    CardLists.filter(player.getCardsIn(ZoneType.Hand), Card::isInstant), player)) {
++                if (csa.isSpell() && csa.getApi() == ApiType.Counter) {
++                    forge.ai.ability.CounterAi.reserveManaForCounter(player, csa);
++                }
++            }
++        }
++
+         if (usesFullSimulation()) {
+             return singleSpellAbilityList(simPicker.chooseSpellAbilityToPlay(null));
+         }
+@@ -2507,6 +2561,7 @@ public class AiController {
          } catch (InterruptedException | ExecutionException | TimeoutException e) {
              e.printStackTrace();
              if (e instanceof TimeoutException) {
@@ -180,6 +199,23 @@ index be04e602..99709a18 100644
 +        return value > ComputerUtilCard.evaluateCreature(source);
 +    }
  }
+diff --git a/forge-ai/src/main/java/forge/ai/ComputerUtilMana.java b/forge-ai/src/main/java/forge/ai/ComputerUtilMana.java
+index be1f3a0d..b66a2501 100644
+--- a/forge-ai/src/main/java/forge/ai/ComputerUtilMana.java
++++ b/forge-ai/src/main/java/forge/ai/ComputerUtilMana.java
+@@ -1322,6 +1322,12 @@ public class ComputerUtilMana {
+                 AiCardMemory.clearMemorySet(ai, AiCardMemory.MemorySet.HELD_MANA_SOURCES_FOR_ENEMY_DECLBLK);
+                 AiCardMemory.clearMemorySet(ai, AiCardMemory.MemorySet.CHOSEN_FOG_EFFECT);
+             }
++        } else if (ResearchFixes.instantsEnabled() && !ai.getGame().getPhaseHandler().isPlayerTurn(ai)
++                && !ai.getGame().getStack().isEmpty() && ai.getGame().getStack().peekAbility().getActivatingPlayer() != null
++                && ai.getGame().getStack().peekAbility().getActivatingPlayer().isOpponentOf(ai)
++                && AiCardMemory.isRememberedCard(ai, sourceCard, AiCardMemory.MemorySet.HELD_MANA_SOURCES_FOR_ENEMY_DECLBLK)) {
++            // research fix (INS1_PATCH): mana held for the opponent's turn may answer an opposing spell or ability on the stack
++            return false;
+         } else if (AiCardMemory.isRememberedCard(ai, sourceCard, AiCardMemory.MemorySet.HELD_MANA_SOURCES_FOR_DECLBLK) ||
+                 AiCardMemory.isRememberedCard(ai, sourceCard, AiCardMemory.MemorySet.HELD_MANA_SOURCES_FOR_ENEMY_DECLBLK)) {
+             // This mana source is held elsewhere for a combat trick.
 diff --git a/forge-ai/src/main/java/forge/ai/SpellAbilityAi.java b/forge-ai/src/main/java/forge/ai/SpellAbilityAi.java
 index 68f20dc2..6cee2ba2 100644
 --- a/forge-ai/src/main/java/forge/ai/SpellAbilityAi.java
@@ -360,7 +396,7 @@ index 06c93201..677edad9 100644
          if (!mandatory && card.isEquipment() && !targets.isEmpty()) {
              Card newTarget = (Card) targets.get(0);
 diff --git a/forge-ai/src/main/java/forge/ai/ability/CounterAi.java b/forge-ai/src/main/java/forge/ai/ability/CounterAi.java
-index 8597aaa6..59116c69 100644
+index 8597aaa6..cd48b619 100644
 --- a/forge-ai/src/main/java/forge/ai/ability/CounterAi.java
 +++ b/forge-ai/src/main/java/forge/ai/ability/CounterAi.java
 @@ -37,6 +37,9 @@ public class CounterAi extends SpellAbilityAi {
@@ -431,7 +467,7 @@ index 8597aaa6..59116c69 100644
 +    // research fix (S2_PATCH): on its own turn, keep the lands for a counterspell in hand untapped for the opponent's
 +    // turn (as Fog effects and the L5b removal hold do), unless that would stall the AI: only when it has at least two
 +    // more lands than the counterspell needs or is not behind on creatures, and its life is not in danger
-+    private static void reserveManaForCounter(final Player ai, final SpellAbility sa) {
++    public static void reserveManaForCounter(final Player ai, final SpellAbility sa) {
 +        final Game game = ai.getGame();
 +        if (!sa.isSpell() || !ai.getController().isAI() || !game.getPhaseHandler().isPlayerTurn(ai)
 +                || !game.getPhaseHandler().getPhase().isMain() || !sa.getHostCard().isInZone(ZoneType.Hand)
@@ -649,6 +685,30 @@ index cc8e6881..6dea43e2 100644
  
          final String numDefense = sa.getParamOrDefault("NumDef", "");
          final String numAttack = sa.getParamOrDefault("NumAtt", "");
+diff --git a/forge-ai/src/main/java/forge/ai/ability/SacrificeAi.java b/forge-ai/src/main/java/forge/ai/ability/SacrificeAi.java
+index bcd94dee..3518d274 100644
+--- a/forge-ai/src/main/java/forge/ai/ability/SacrificeAi.java
++++ b/forge-ai/src/main/java/forge/ai/ability/SacrificeAi.java
+@@ -1,5 +1,7 @@
+ package forge.ai.ability;
+ 
++import forge.ai.ResearchFixes;
++
+ import forge.ai.AiAbilityDecision;
+ import forge.ai.AiPlayDecision;
+ import forge.ai.ComputerUtilCard;
+@@ -28,6 +30,11 @@ public class SacrificeAi extends SpellAbilityAi {
+ 
+     @Override
+     protected AiAbilityDecision canPlay(Player ai, SpellAbility sa) {
++        // research fix (INS1_PATCH): edicts wait for the opponent's turn like other instant removal (L5B)
++        if (ResearchFixes.instantsEnabled() && "1".equals(System.getenv("L5B_PATCH"))
++                && l5bIsPlainInstantRemoval(ai, sa) && !l5bWindowOpen(ai, sa)) {
++            return new AiAbilityDecision(0, AiPlayDecision.MissingPhaseRestrictions);
++        }
+         return sacrificeTgtAI(ai, sa, false);
+     }
+ 
 diff --git a/forge-core/src/main/java/forge/util/AITimeoutTracker.java b/forge-core/src/main/java/forge/util/AITimeoutTracker.java
 index 91db58b1..961b2477 100644
 --- a/forge-core/src/main/java/forge/util/AITimeoutTracker.java
