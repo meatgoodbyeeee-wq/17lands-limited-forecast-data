@@ -32,6 +32,12 @@ Card tables: `runs/fra_default_pool_cards.csv`, `runs/fra_fixed_pool_cards.csv`.
 shrink the pair spread, but the pair order still does not match (fixed: WR 1st vs actual 9th, RG 9th vs 3rd, UR 10th vs 4th).
 Runs agree with each other (run-to-run Spearman 0.66–0.81), so the mismatch is systematic (AI play or the fixed-rule decks), not noise.
 
+## Whole-colour-pool decks (`runs/fra_pool_c2u1`, fixed AI incl. fix 4, 55 rounds × 45 games = 2,475)
+One deck per pair (commons ×2, uncommons ×1, ≈162 cards). Spearman vs 17Lands splash combined +0.12 (95% CI −0.48..0.33),
+sim pair SD 3.0pp, split-half (odd vs even rounds) 0.38, mean game 9.7 s. Blue pairs are still at the bottom (UB 10th vs actual 2nd,
+UG 9th, UR 7th); RG, WG, WB on top. For reference, the copy-weighted mean 17Lands GIH WR of each pool deck, with no games at all,
+has Spearman +0.35 with the actual pair order, and −0.24 with the sim order: the AI, not the card choice, now drives the mismatch.
+
 ## Why UR is last (fixed runs, `fra_fixed_mcoff_s1/s2`)
 - Short games: UR wins 32% of games of 12 turns or fewer (both players' turns; WR and WB win 77% of them) vs 42–49% of longer games.
 - Decks: the fixed-rule builder gives UR the fewest creatures of mana value ≤ 2 (3.5 per deck; RG 7.0, WB and WG 6.3) and the highest
