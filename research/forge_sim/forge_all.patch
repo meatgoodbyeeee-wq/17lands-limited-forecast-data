@@ -15,7 +15,7 @@ index 8d5d6a7b..65025d79 100644
          boolean powerParityOrHigher = blocker.getNetPower() <= attacker.getNetPower();
          boolean creatureParityOrAllowedDiff = aiCreatureCount
 diff --git a/forge-ai/src/main/java/forge/ai/AiController.java b/forge-ai/src/main/java/forge/ai/AiController.java
-index fccc96d3..90051345 100644
+index fccc96d3..59bfc54c 100644
 --- a/forge-ai/src/main/java/forge/ai/AiController.java
 +++ b/forge-ai/src/main/java/forge/ai/AiController.java
 @@ -437,6 +437,11 @@ public class AiController {
@@ -49,7 +49,7 @@ index fccc96d3..90051345 100644
 +                continue;
 +            }
 +            attackers++;
-+            if (combat.isBlocked(a)) {
++            if (!combat.getBlockers(a).isEmpty()) {
 +                blocked++;
 +                continue;
 +            }
@@ -74,6 +74,14 @@ index fccc96d3..90051345 100644
      }
  
      /** In a simulated game: the attack to declare instead of asking the heuristics (set by a rollout, used once). */
+@@ -2507,6 +2549,7 @@ public class AiController {
+         } catch (InterruptedException | ExecutionException | TimeoutException e) {
+             e.printStackTrace();
+             if (e instanceof TimeoutException) {
++                AITimeoutTracker.EXPIRED_COUNT.incrementAndGet(); // research counter (forge_sim)
+                 // log where the eval thread currently is - each timeout doubles as a
+                 // profiler sample for diagnosing remaining AI slowdowns from user logs
+                 StringBuilder sb = new StringBuilder("AI eval thread at timeout:");
 diff --git a/forge-ai/src/main/java/forge/ai/ComputerUtilCost.java b/forge-ai/src/main/java/forge/ai/ComputerUtilCost.java
 index be04e602..99709a18 100644
 --- a/forge-ai/src/main/java/forge/ai/ComputerUtilCost.java
