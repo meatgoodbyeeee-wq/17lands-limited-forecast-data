@@ -8,7 +8,10 @@ Each round is a round robin (Forge `sim -t RoundRobin -m 1`, best of one like Pr
 --per-round decks per colour pair (2 -> 20 decks, 190 games), so every pair meets the whole field evenly.
 A game that reaches Forge's clock (-c, default 120 s) is recorded as a draw and left out of win rates.
 --seen (needs the research hook in Forge's SimulateMatch, env FORGE_SIM_SEEN) also writes <out>_seen.csv: per game and player,
-every own card that left the library (opening hand and draws) with its final zone, for card win rates when drawn (card_wr.py).
+every own card that left the library (opening hand and draws) with its final zone, for card win rates when drawn (card_wr.py);
+with Forge env BLOCK_AUDIT=1 also one row per block declaration (zone 'BlockAudit', card = attackers|blocked|missed safe-kill|
+missed safe|missed favourable trade|missed even trade, turns = defender's life). The games CSV gets the number of AI decisions
+cut short by the time limit per game (--env FORGE_SIM_AI_TIMEOUT=<s> raises the limit, Forge default 5 s).
 """
 import argparse, csv, os, random, re, shutil, subprocess, tempfile
 from concurrent.futures import ThreadPoolExecutor
@@ -17,6 +20,8 @@ from pathlib import Path
 PAIRS = ['WU', 'WB', 'WR', 'WG', 'UB', 'UR', 'UG', 'BR', 'BG', 'RG']
 RES = re.compile(r'^Match Result: (\S+): (\d+) (\S+): (\d+)')
 GAME = re.compile(r'^Game Result: Game \d+ ended in (\d+) ms\.')
+TIMEOUTS = re.compile(r'^Timeouts: \d+\t(\d+)$')
+BLOCKS = re.compile(r'^BlockAudit:\t(\S+)\t(-?\d+)\t(\d+)\t(\d+)\t(\d+)\t(\d+)\t(\d+)\t(\d+)$')
 SEEN = re.compile(r'^Seen: \d+\t(\S+)\t(play|draw)\t(\d+)\t(.*)$')
 
 
@@ -32,14 +37,22 @@ def run_round(a, jar, k):
            '-q', '-s', str(a.seed * 1000 + k), '-c', str(a.clock), '-mc', a.mc]
     if a.ai:
         cmd += ['-a'] + [a.ai] * len(pick)
-    env = dict(os.environ, FORGE_SIM_SEEN='1') if a.seen else None
+    env = dict(os.environ, **dict(kv.split('=', 1) for kv in a.env))
+    if a.seen:
+        env['FORGE_SIM_SEEN'] = '1'
     out = subprocess.run(cmd, cwd=Path(a.forge) / 'forge-gui', capture_output=True, text=True, timeout=6 * 3600, env=env).stdout.splitlines()
     shutil.rmtree(tmp, ignore_errors=True)
-    rows, seen, pend, last = [], [], [], None
+    rows, seen, pend, last, tmo, blocks = [], [], [], None, '', []
     for line in out:
         m = RES.match(line)
         if m:
             last = m.groups(); continue
+        t = TIMEOUTS.match(line)
+        if t:
+            tmo = int(t.group(1)); continue
+        b = BLOCKS.match(line)
+        if b:
+            blocks.append(b.groups()); continue
         s = SEEN.match(line)
         if s:
             pend.append(s.groups()); continue
@@ -54,10 +67,12 @@ def run_round(a, jar, k):
                     if c:
                         name, zone = c.rsplit('@', 1)
                         seen.append({'game': gid, 'deck': deck, 'order': order, 'turns': int(turns), 'card': name, 'zone': zone})
-            pend = []
-            rows.append({'round': k, 'game': gid, 'deck1': d1, 'deck2': d2, 'pair1': d1.split('_')[1], 'pair2': d2.split('_')[1],
+            for bl in blocks:
+                seen.append({'game': gid, 'deck': bl[0], 'order': 'block', 'turns': int(bl[1]), 'card': '|'.join(bl[2:]), 'zone': 'BlockAudit'})
+            pend, blocks = [], []
+            rows.append({'round': k, 'game': gid, 'timeouts': tmo, 'deck1': d1, 'deck2': d2, 'pair1': d1.split('_')[1], 'pair2': d2.split('_')[1],
                          'winner': '' if draw else (d1 if w1 > w2 else d2), 'ms': ms, 'mc': a.mc, 'ai': a.ai or 'Default'})
-            last = None
+            last, tmo = None, ''
     return rows, seen
 
 
@@ -67,6 +82,7 @@ def main():
     ap.add_argument('--rounds', type=int, default=13); ap.add_argument('--per-round', type=int, default=2)
     ap.add_argument('--workers', type=int, default=3); ap.add_argument('--mc', default='off'); ap.add_argument('--ai', default='')
     ap.add_argument('--seed', type=int, default=1); ap.add_argument('--clock', type=int, default=120)
+    ap.add_argument('--env', action='append', default=[], help='KEY=VALUE for Forge (e.g. S2_PATCH=1), repeatable')
     ap.add_argument('--seen', action='store_true'); ap.add_argument('--jar', help='Forge jar (default: the one built in --forge)')
     a = ap.parse_args()
     jar = Path(a.jar).resolve() if a.jar else \
@@ -75,7 +91,7 @@ def main():
     sout = out.with_name(out.stem + '_seen.csv'); snew = not sout.exists()
     with open(out, 'a', newline='') as fh, open(sout, 'a', newline='') if a.seen else open(os.devnull, 'w') as sh, \
             ThreadPoolExecutor(a.workers) as ex:
-        w = csv.DictWriter(fh, ['round', 'game', 'deck1', 'deck2', 'pair1', 'pair2', 'winner', 'ms', 'mc', 'ai'])
+        w = csv.DictWriter(fh, ['round', 'game', 'deck1', 'deck2', 'pair1', 'pair2', 'winner', 'ms', 'mc', 'ai', 'timeouts'])
         sw = csv.DictWriter(sh, ['game', 'deck', 'order', 'turns', 'card', 'zone'])
         if new:
             w.writeheader()
