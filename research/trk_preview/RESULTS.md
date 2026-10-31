@@ -42,3 +42,12 @@ User decision 2026-10-22: run the recommended split on the previewed cards. Labe
   SHAP reconstruction error 1e-9. Range M5 (28-set coverage 0.80).
 - Reasons: 8 Opus batches, 311 sentences "〜ため、〜。"; 5 sentences lacked the comma after ため (fixed by hand), then check ok.
 - Pages: private preview artifact updated (version 12). Not published (TRK available:false). Predictions, G3 passes and reasons stay local (gitignored).
+
+# Step 4: TRK full set with the 25 bonus-sheet cards (2026-10-31, user decision: "リミテッドで出るカードなので含めて")
+- Cause: 25 mythics (collector numbers 1-30, Play Booster) had the gallery date 2027-10-28 (a year ahead) and were skipped as "not yet revealed";
+  the Pages collection now accepts dates more than ~208 days ahead as an entry typo, and gallery data replaces scryfall-only manual cards (15 cards, now with images). Pages card list = 336.
+- Labels: batch 6, C3/C4/C5 by Sonnet for the 25 new cards (all valid; 336 labelled).
+- G3 full run redone on all 336 cards (3 Opus passes, whole-set context; the 311-card run is kept in the scratchpad backup only); pass Pearson 0.924 / 0.938 / 0.932.
+- B11g export (no spread factor): 336 cards, mean 55.40, median 55.16, range 48.28-63.65, SD 2.36; identical to e.predict; SHAP reconstruction error 1e-9.
+- Reasons: all 336 rewritten (set-centred contributions changed with the new G3); two batches had to be rerun after a usage-limit stop; one sentence hand-edited ("一点" counted as a number). check ok.
+- Private preview artifact: version 13. Not published (TRK available:false).
