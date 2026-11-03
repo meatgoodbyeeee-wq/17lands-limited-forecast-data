@@ -1,0 +1,6 @@
+variant,filters,n,mae,r,same_class,mv_diff
+"old: production cos (22 sets), no labels",0,4919,2.437,0.478,0.991,0.759
+"new: production + 0.5 x labels + filters, target C9 present",1,4919,2.351,0.514,1.0,0.727
+"new: same, target C9 = 0 (neutral)",1,4919,2.386,0.486,1.0,0.735
+"new: same, target C9 = raw 0 (sensitivity)",1,4919,2.447,0.453,1.0,0.743
+"new: production + 0.5 x labels + filters, all 7 C9 dims dropped on both sides",1,4919,2.372,0.496,1.0,0.736
