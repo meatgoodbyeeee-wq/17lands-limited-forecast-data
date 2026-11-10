@@ -18,7 +18,8 @@ import subprocess
 import sys
 import time
 
-REPO, DECKS, OUT, WORKERS = sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[4])
+REPO, DECKS, OUT, WORKERS = (os.path.abspath(sys.argv[1]), os.path.abspath(sys.argv[2]), os.path.abspath(sys.argv[3]),
+                              int(sys.argv[4]))
 JOBS = sys.argv[5:]
 JAR = os.path.join(REPO, "forge-gui-desktop/target/forge-gui-desktop-2.0.16-SNAPSHOT-jar-with-dependencies.jar")
 JOB_LIMIT_S = int(os.environ.get("JOB_LIMIT_S", str(113 * 60)))
