@@ -1,0 +1,90 @@
+diff --git a/forge-core/src/main/java/forge/util/AITimeoutTracker.java b/forge-core/src/main/java/forge/util/AITimeoutTracker.java
+index 91db58b1..1d13036a 100644
+--- a/forge-core/src/main/java/forge/util/AITimeoutTracker.java
++++ b/forge-core/src/main/java/forge/util/AITimeoutTracker.java
+@@ -208,9 +208,13 @@ public final class AITimeoutTracker {
+     }
+ 
+     /** Cheap: call it inside AI loops. Throws {@link Expired} once the armed deadline passed (no-op when not armed). */
++    /** Research counter (forge-debias, observation only): AI decisions cut short by the deadline in this JVM. */
++    public static final java.util.concurrent.atomic.AtomicInteger EXPIRED_COUNT = new java.util.concurrent.atomic.AtomicInteger();
++
+     public static void check() {
+         final Limit l = LIMIT.get();
+         if (l.armed && (System.nanoTime() - l.deadlineNanos >= 0 || (l.honourInterrupt && Thread.currentThread().isInterrupted()))) {
++            EXPIRED_COUNT.incrementAndGet();
+             throw new Expired();
+         }
+     }
+diff --git a/forge-game/src/main/java/forge/game/GameLogFormatter.java b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+index f782187d..8974bf75 100644
+--- a/forge-game/src/main/java/forge/game/GameLogFormatter.java
++++ b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+@@ -32,8 +32,28 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+                 : String.format("%dm : %02ds", minutes, seconds);
+     }
+ 
++    // L1/L2' research helper (observation only): append one line to the file named by env L1_LOG.
++    private static void l1Write(final String line) {
++        try {
++            final String path = System.getenv("L1_LOG");
++            if (path != null) {
++                java.nio.file.Files.write(java.nio.file.Paths.get(path), (line + "\n").getBytes(java.nio.charset.StandardCharsets.UTF_8),
++                        java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND);
++            }
++        } catch (Throwable t) {
++            // never affect the game
++        }
++    }
++
++    @Override
++    public GameLogEntry visit(GameEventGameStarted ev) {
++        l1Write("START");
++        return null;
++    }
++
+     @Override
+     public GameLogEntry visit(GameEventGameOutcome ev) {
++        l1Write("END|" + ev.winningPlayerName());
+         // Match Duration
+         if (log.getMatchStartMillis() >= 0) { // defend against it somehow still never being set
+             long durationMillis = System.currentTimeMillis() - log.getMatchStartMillis();
+@@ -309,6 +329,9 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+         }
+         final ZoneType from = ev.from().zoneType();
+         final ZoneType to = ev.to().zoneType();
++        if (from == ZoneType.Library && to == ZoneType.Hand && ev.card() != null) {
++            l1Write("DRAW|" + ev.card().getName() + "|" + ev.card().getOwner().getName());
++        }
+         // Log mid-game ante additions (e.g. Contract from Below, Demonic Attorney)
+         if (to == ZoneType.Ante && from != ZoneType.Ante) {
+             final CardView c = ev.card();
+diff --git a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
+index 66fde34d..9bc5678e 100644
+--- a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
++++ b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
+@@ -275,6 +275,24 @@ public class SimulateMatch {
+             System.out.println(l);
+         }
+ 
++        // Research hook (FORGE_SIM_SEEN=1): per player, every own non-token card that left the library during the game
++        // (opening hand and draws, approximately: mill and library exile count too), with its final zone.
++        if (System.getenv("FORGE_SIM_SEEN") != null) {
++            System.out.printf("Timeouts: %d\t%d%n", 1 + iGame, forge.util.AITimeoutTracker.EXPIRED_COUNT.getAndSet(0));
++            for (forge.game.player.Player p : g1.getRegisteredPlayers()) {
++                StringBuilder seen = new StringBuilder();
++                for (forge.game.card.Card c : p.getAllCards()) {
++                    if (c.isToken() || c.getOwner() != p || c.getPaperCard() == null || c.getZone() == null
++                            || c.getZone().getZoneType() == forge.game.zone.ZoneType.Library) {
++                        continue;
++                    }
++                    seen.append(c.getPaperCard().getName()).append('@').append(c.getZone().getZoneType()).append('|');
++                }
++                System.out.printf("Seen: %d\t%s\t%s\t%d\t%s%n", 1 + iGame, p.getName(),
++                        p.equals(g1.getStartingPlayer()) ? "play" : "draw", g1.getPhaseHandler().getTurn(), seen);
++            }
++        }
++
+         // If both players life totals to 0 in a single turn, the game should end in a draw
+         if (g1.getOutcome().isDraw()) {
+             System.out.printf("\nGame Result: Game %d ended in a Draw! Took %d ms.%n", 1 + iGame, sw.getTime());
