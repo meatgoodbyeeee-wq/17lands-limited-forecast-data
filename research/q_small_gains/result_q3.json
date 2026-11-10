@@ -1,0 +1,338 @@
+{
+ "n_reprint": 138,
+ "per_set_n": {
+  "KHM": 0,
+  "STX": 0,
+  "AFR": 0,
+  "MID": 2,
+  "VOW": 3,
+  "NEO": 0,
+  "SNC": 2,
+  "DMU": 1,
+  "BRO": 2,
+  "ONE": 1,
+  "MOM": 11,
+  "LTR": 0,
+  "WOE": 5,
+  "LCI": 1,
+  "MKM": 1,
+  "OTJ": 4,
+  "BLB": 2,
+  "DSK": 2,
+  "FDN": 51,
+  "DFT": 13,
+  "TDM": 12,
+  "EOE": 2,
+  "TLA": 2,
+  "ECL": 3,
+  "TMT": 3,
+  "SOS": 10,
+  "MSH": 5,
+  "HOB": 0
+ },
+ "by_rarity_ord": {
+  "0": 112,
+  "1": 18,
+  "2": 8
+ },
+ "k_range": [
+  0.4853274595963789,
+  0.5499689417323632
+ ],
+ "k_mean": 0.5218238767547817,
+ "k_per_set": {
+  "BLB": 0.5300526354129786,
+  "BRO": 0.5239697984899516,
+  "DFT": 0.5173776873747555,
+  "DMU": 0.522298481397103,
+  "DSK": 0.5205166851474414,
+  "ECL": 0.5240086502001088,
+  "EOE": 0.5250331792799465,
+  "FDN": 0.4924779556595494,
+  "LCI": 0.5243143550883577,
+  "MID": 0.53115294298695,
+  "MKM": 0.5234871561318932,
+  "MOM": 0.517215740165457,
+  "MSH": 0.5381321385304845,
+  "ONE": 0.5274461168767217,
+  "OTJ": 0.5142621968881071,
+  "SNC": 0.5499689417323632,
+  "SOS": 0.4853274595963789,
+  "TDM": 0.5252942376699862,
+  "TLA": 0.5252569943171846,
+  "TMT": 0.5159275896889648,
+  "VOW": 0.5105812485850314,
+  "WOE": 0.5360230973854825
+ },
+ "reprint_mae_before": 1.5944492430184336,
+ "reprint_mae_after": 1.4085478039162538,
+ "overall_mean_over_sets_before": 2.2384385615668245,
+ "overall_mean_over_sets_after": 2.234857596332668,
+ "overall_pooled_before": 2.2316290820488267,
+ "overall_pooled_after": 2.228003018643017,
+ "n_sets_ge3": 11,
+ "share_sets_improved": 0.9090909090909091,
+ "n_sets_improved": 10,
+ "per_set_reprint_mae": {
+  "BLB": [
+   0.7290879933797356,
+   1.3508899592264818
+  ],
+  "BRO": [
+   0.8347123583184946,
+   0.9368338655640542
+  ],
+  "DFT": [
+   1.4030374962937957,
+   1.4719644371456762
+  ],
+  "DMU": [
+   0.6369889970291283,
+   0.11643162958866782
+  ],
+  "DSK": [
+   0.8444241802982404,
+   0.6311256945568324
+  ],
+  "ECL": [
+   0.7870541104207996,
+   0.6919129031886205
+  ],
+  "EOE": [
+   0.5549259697756668,
+   0.6473748943167372
+  ],
+  "FDN": [
+   1.7294794472159858,
+   1.4602481247148005
+  ],
+  "LCI": [
+   2.0643216965229527,
+   0.2081783209962822
+  ],
+  "MID": [
+   1.6662570571627597,
+   1.419085912572914
+  ],
+  "MKM": [
+   1.8939236782845583,
+   2.0194951045668574
+  ],
+  "MOM": [
+   1.39631111914203,
+   1.1626546314192476
+  ],
+  "MSH": [
+   2.17758576860077,
+   2.172522940105375
+  ],
+  "ONE": [
+   3.8946473501100485,
+   4.206177371814995
+  ],
+  "OTJ": [
+   1.7622024064037358,
+   1.0443233180465636
+  ],
+  "SNC": [
+   1.2633231525410658,
+   2.3691894462396625
+  ],
+  "SOS": [
+   2.8245790203081986,
+   2.3332139822525955
+  ],
+  "TDM": [
+   0.7010972698341362,
+   0.630969811998718
+  ],
+  "TLA": [
+   0.912897605930489,
+   0.9330611324820985
+  ],
+  "TMT": [
+   2.5399512443781496,
+   2.107054826520629
+  ],
+  "VOW": [
+   1.4885607444335396,
+   1.3998683653585242
+  ],
+  "WOE": [
+   1.417620280395886,
+   1.263321178034262
+  ]
+ },
+ "spearman_d_resid": 0.49587775035446097,
+ "rule": {
+  "c1_reprint_mae_drop_ge_0.10": true,
+  "reprint_mae_drop": 0.18590143910217982,
+  "c2_overall_not_worse": true,
+  "c3_share_ge_0.6": true
+ },
+ "verdict": "supported",
+ "split_gap_1_4": {
+  "n": 46,
+  "before": 1.0335871551318923,
+  "after": 1.055790794344311
+ },
+ "split_gap_older": {
+  "n": 92,
+  "before": 1.8748802869617045,
+  "after": 1.5849263087022254
+ },
+ "sanity": {
+  "B11g_pooled_mae": 2.2316290820488267,
+  "B11g_mean_over_sets": 2.2384385615668245,
+  "B10_mean_over_sets": 2.237302637873666
+ },
+ "trk_total": 336,
+ "trk_match": 19,
+ "trk_match_by_rarity": {
+  "rare": 10,
+  "mythic": 8,
+  "common": 1
+ },
+ "trk_total_by_rarity": {
+  "uncommon": 110,
+  "common": 81,
+  "rare": 80,
+  "mythic": 55,
+  "land": 10
+ },
+ "trk_matches": [
+  {
+   "name": "Reckless Impulse",
+   "rarity": "common",
+   "sets": [
+    "VOW"
+   ]
+  },
+  {
+   "name": "Hallowed Fountain",
+   "rarity": "rare",
+   "sets": [
+    "ECL"
+   ]
+  },
+  {
+   "name": "Blood Crypt",
+   "rarity": "rare",
+   "sets": [
+    "ECL"
+   ]
+  },
+  {
+   "name": "Godless Shrine",
+   "rarity": "rare",
+   "sets": [
+    "EOE"
+   ]
+  },
+  {
+   "name": "Overgrown Tomb",
+   "rarity": "rare",
+   "sets": [
+    "ECL"
+   ]
+  },
+  {
+   "name": "Sacred Foundry",
+   "rarity": "rare",
+   "sets": [
+    "EOE"
+   ]
+  },
+  {
+   "name": "Breeding Pool",
+   "rarity": "rare",
+   "sets": [
+    "EOE"
+   ]
+  },
+  {
+   "name": "Bristly Bill, Spine Sower",
+   "rarity": "mythic",
+   "sets": [
+    "OTJ"
+   ]
+  },
+  {
+   "name": "Sheoldred, the Apocalypse",
+   "rarity": "mythic",
+   "sets": [
+    "DMU"
+   ]
+  },
+  {
+   "name": "Watery Grave",
+   "rarity": "rare",
+   "sets": [
+    "EOE"
+   ]
+  },
+  {
+   "name": "Stomping Ground",
+   "rarity": "rare",
+   "sets": [
+    "EOE"
+   ]
+  },
+  {
+   "name": "Temple Garden",
+   "rarity": "rare",
+   "sets": [
+    "ECL"
+   ]
+  },
+  {
+   "name": "Steam Vents",
+   "rarity": "rare",
+   "sets": [
+    "ECL"
+   ]
+  },
+  {
+   "name": "Loot, Exuberant Explorer",
+   "rarity": "mythic",
+   "sets": [
+    "FDN"
+   ]
+  },
+  {
+   "name": "Drivnod, Carnage Dominus",
+   "rarity": "mythic",
+   "sets": [
+    "ONE"
+   ]
+  },
+  {
+   "name": "Ertai Resurrected",
+   "rarity": "mythic",
+   "sets": [
+    "DMU"
+   ]
+  },
+  {
+   "name": "Riku of Many Paths",
+   "rarity": "mythic",
+   "sets": [
+    "OTJ"
+   ]
+  },
+  {
+   "name": "Isshin, Two Heavens as One",
+   "rarity": "mythic",
+   "sets": [
+    "NEO"
+   ]
+  },
+  {
+   "name": "Tatyova, Benthic Druid",
+   "rarity": "mythic",
+   "sets": [
+    "FDN"
+   ]
+  }
+ ]
+}
