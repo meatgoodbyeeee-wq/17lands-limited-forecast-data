@@ -1,0 +1,94 @@
+{
+ "frozen_at_utc": "2026-11-10T08:19:14+00:00",
+ "cards": 336,
+ "trk_frozen_csv_sha256": "59efd4e0226f873c003e717650b0a7ffa415798e6740c8aa03ffbc7fc9c69161",
+ "inputs": {
+  "pages_target_json_gz": "8eb762b13cc2dc79fca2dd0e41e7ba11274f64dc1871197802b2b2c40cdeca1c",
+  "pages_adopted_gih_json_gz": "11d763acd952b575dc66e78bb1b970d1da4bf14929a864dd3ef7c8d5c67b08f7",
+  "published_version": "gih-b11g-28set-20261029-trk",
+  "c9_raw": {
+   "b01_c9p1.txt": "005b29aa960638b726bb4e7abbce200c2842969dbc73bbd118e806b788e4aaf9",
+   "b01_c9p2.txt": "4425adc69cb7f746e39e0cedbd6458426eae05d8b5fad6d85810f4359fc8f664",
+   "b01_c9p3.txt": "d1d1be0a314f9cbd29d634d186df54486c149b63dd729b9ffaa4d7a8f90b86e9",
+   "b02_c9p1.txt": "a27dd7c55abc5eac73dca690558341122d8202eb8ba49f4b3b75c99dbff4ee0b",
+   "b02_c9p2.txt": "b9b61523aa2904d6071fe3145633ff05bd30ef5e8b42c8bbd7d1b81f71f76afc",
+   "b02_c9p3.txt": "da0fc518e2eba226b9bf47b34a3e62a6c6c4efa242621e4edd3d0ef995660aa4",
+   "b03_c9p1.txt": "611d459249ca6437a118fa02df6af31fb7019cccdeb8678ad059455ebeb2c7fc",
+   "b03_c9p2.txt": "2f7c935286ee352a25e9669982edcdb439f2a622a80c73e4a43e8b7cf223035c",
+   "b03_c9p3.txt": "19189c4ca0df5ec62c4749b553a882fbe4a2bd7896e93aac7d47a0c5f4a6b258",
+   "b04_c9p1.txt": "ce1ab3d99c0e06120829161ad01a19266b25ec7265b1cf12a79b568fbcf6ed63",
+   "b04_c9p2.txt": "44cf095538e008f5d4c2f6e46977b618b56e47f14a666429c403e53095cb6875",
+   "b04_c9p3.txt": "def6da49c2248262f49ebb2e734550a7d3d1b9d626af70d84116612a3ada22ed",
+   "b05_c9p1.txt": "4ca23f1c08ee8756c13c9ee0e103004b192df74bf0c577730545eae16106167a",
+   "b05_c9p2.txt": "4490dd985b7749a9794aef1a137444d80b0c5880e400aa4e6e293acb6f934251",
+   "b05_c9p3.txt": "e4994de2616c59e5a1492ef951e5b95c95bb89bf895ce617c7eb04253167d08c",
+   "b06_c9p1.txt": "1e35c8be8a10f35b6ea294e3a3efd99221e0380e3f397062f992b28a7f231f94",
+   "b06_c9p2.txt": "d09472440b7ac4007672a2db0164708c31897d5a4d7eddee18ed0ac45ff16fd4",
+   "b06_c9p3.txt": "aada96fcfbe0e55758fa899c91fc2b86bd82b6255c80b1e5dcad8870ee7fd3b5"
+  }
+ },
+ "spread_b": 1.0738921258189766,
+ "training_sets": [
+  "AFR",
+  "BLB",
+  "BRO",
+  "DFT",
+  "DMU",
+  "DSK",
+  "ECL",
+  "EOE",
+  "FDN",
+  "HOB",
+  "KHM",
+  "LCI",
+  "LTR",
+  "MID",
+  "MKM",
+  "MOM",
+  "MSH",
+  "NEO",
+  "ONE",
+  "OTJ",
+  "SNC",
+  "SOS",
+  "STX",
+  "TDM",
+  "TLA",
+  "TMT",
+  "VOW",
+  "WOE"
+ ],
+ "seeds": [
+  20260922,
+  20260923,
+  20260924
+ ],
+ "summary": {
+  "G": {
+   "mean": 55.434,
+   "sd": 2.357,
+   "min": 48.28,
+   "max": 63.65
+  },
+  "S": {
+   "mean": 55.434,
+   "sd": 2.532,
+   "min": 47.75,
+   "max": 64.26
+  },
+  "T": {
+   "mean": 55.756,
+   "sd": 2.331,
+   "min": 49.16,
+   "max": 63.75
+  },
+  "A": {
+   "mean": 55.595,
+   "sd": 2.305,
+   "min": 48.93,
+   "max": 63.7
+  }
+ },
+ "corr_T_G": 0.9342,
+ "mean_abs_T_minus_G": 0.669
+}
