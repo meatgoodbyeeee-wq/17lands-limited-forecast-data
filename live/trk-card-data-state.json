@@ -1,10 +1,9 @@
 {
- "last_attempt_date_jst": "2026-11-11",
- "last_attempt_at": "2026-11-11T04:53:40+00:00",
+ "last_attempt_date_jst": "2026-11-12",
+ "last_attempt_at": "2026-11-11T22:14:38+00:00",
  "requests": [
   "filters",
-  "card_data_window",
-  "card_data_all_time"
+  "card_data_window"
  ],
  "card_data_called": true,
  "filters_has_trk": true,
@@ -88,8 +87,12 @@
   "Chaos",
   "Remix - Artifacts"
  ],
- "rows": null,
- "games_sum": 0,
- "url": "https://www.17lands.com/api/card_data?expansion=TRK&event_type=PremierDraft&time_period=ALL_TIME",
- "result": "no games yet; snapshot not written"
+ "window_answer": {
+  "rows": 336,
+  "games_sum": 224014
+ },
+ "rows": 336,
+ "games_sum": 224014,
+ "url": "https://www.17lands.com/api/card_data?expansion=TRK&event_type=PremierDraft&start_date=2026-11-10&end_date=2026-11-11",
+ "result": "saved 336 rows (window 2026-11-10..2026-11-11)"
 }
