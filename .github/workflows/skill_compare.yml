@@ -1,0 +1,81 @@
+name: Skill comparison data (top players vs everyone else, past sets)
+on:
+  push:
+    branches: [research/top-player]
+    paths:
+      - scripts/skill_compare_aggregate.py
+      - scripts/skill_site_fetch.py
+      - .github/workflows/skill_compare.yml
+permissions:
+  contents: write
+concurrency:
+  group: skill-compare
+  cancel-in-progress: false
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit test (mock data)
+        run: cd scripts && python -m unittest test_skill_site_fetch.py
+      - name: Fetch site groups and Scryfall attributes
+        run: python scripts/skill_site_fetch.py --out-dir out --sets NEO SNC DMU BRO ONE MOM LTR WOE LCI MKM OTJ BLB DSK FDN DFT TDM EOE TLA ECL TMT SOS MSH HOB
+      - uses: actions/upload-artifact@v4
+        with:
+          name: skill-site
+          path: out/
+          retention-days: 14
+  aggregate:
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix:
+        set: [NEO, SNC, DMU, BRO, ONE, MOM, LTR, WOE, LCI, MKM, OTJ, BLB, DSK, FDN, DFT, TDM, EOE, TLA, ECL, TMT, SOS, MSH, HOB]
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - name: Unit test (mock data)
+        run: cd scripts && python -m unittest test_skill_compare_aggregate.py
+      - run: python scripts/skill_compare_aggregate.py --set ${{ matrix.set }} --out-dir out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: skill-${{ matrix.set }}
+          path: |
+            out/${{ matrix.set }}_cards.csv.gz
+            out/${{ matrix.set }}_games.csv.gz
+            out/${{ matrix.set }}_sums.csv
+            out/${{ matrix.set }}_skill_manifest.json
+          retention-days: 14
+  collect:
+    needs: [site, aggregate]
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/top-player
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: skill-*
+          merge-multiple: true
+          path: research/top_player/skill_compare/data
+      - name: Commit data to the research branch
+        run: |
+          ls -la research/top_player/skill_compare/data
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/top_player/skill_compare/data
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m 'Skill comparison data: per-group card and game aggregates, site groups (past sets)'
+          git pull --rebase origin research/top-player
+          git push origin HEAD:research/top-player
