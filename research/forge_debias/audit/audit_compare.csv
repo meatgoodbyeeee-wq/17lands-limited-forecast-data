@@ -1,0 +1,934 @@
+set,name,rate_a1,rate_d0,top_d0,cls_d0,rate_f1,top_f1,cls_f1,etb_blocked
+ECL,Pitiless Fists,1.0,1.0,BadEtbEffects:111;CantPlayAi:8,never,0.083,CantAfford:6;CantPlayAi:3,often,True
+ECL,Gilt-Leaf's Embrace,1.0,1.0,CantPlayAi:1740;BadEtbEffects:189,never,0.214,CantPlayAi:863;CantAfford:70,often,True
+ECL,Shimmerwilds Growth,1.0,1.0,,no_eval,0.938,,no_eval,False
+ECL,Run Away Together,0.9473684210526316,0.947,,no_eval,1.0,,no_eval,False
+ECL,Winnowing,0.9130434782608696,0.913,,no_eval,0.75,,no_eval,False
+ECL,Mirrorform,0.8947368421052632,0.895,CantPlayAi:818,never,0.8,CantPlayAi:599,never,False
+ECL,Glen Elendra's Answer,0.8928571428571429,0.893,CantPlayAi:297,never,0.919,CantPlayAi:303,never,False
+ECL,Soul Immolation,0.8571428571428571,0.857,CantPlayAi:136,never,0.87,CantPlayAi:256,never,False
+ECL,Curious Colossus,0.85,0.85,BadEtbEffects:48;CantPlayAi:47,never,0.421,CantPlayAi:17;CantAfford:1,often,True
+ECL,Aquitect's Defenses,0.85,0.85,CantPlayAi:1796;BadEtbEffects:156,never,0.048,CantPlayAi:1190;CantAfford:39,often,True
+ECL,"Abigale, Eloquent First-Year",0.7692307692307693,0.769,BadEtbEffects:334;CantPlayAi:39,never,0.053,CantPlayAi:12;CantAfford:6,often,True
+ECL,Springleaf Drum,0.7368421052631579,0.737,,no_eval,0.9,,no_eval,False
+ECL,Explosive Prodigy,0.6470588235294118,0.647,CantPlayAi:94;BadEtbEffects:59;CantAfford:23,rare,0.062,CantPlayAi:36;CantAfford:20,often,True
+ECL,Thoughtweft Lieutenant,0.6470588235294118,0.647,CantPlayAi:65;BadEtbEffects:64;CantAfford:1,rare,0.571,BadEtbEffects:71;CantPlayAi:61,rare,True
+ECL,Darkness Descends,0.5789473684210527,0.579,CantPlayAi:189,rare,0.571,CantPlayAi:142;CantAfford:2,rare,False
+ECL,Spell Snare,0.5714285714285714,0.571,CantPlayAi:146;CantAfford:13,often,0.4,CantPlayAi:74;CantAfford:6,often,False
+ECL,Impolite Entrance,0.5333333333333333,0.533,CantPlayAi:135;CantAfford:18,rare,0.667,CantPlayAi:111;CantAfford:14,rare,False
+ECL,Sunderflock,0.5135135135135135,0.514,CantPlayAi:15;BadEtbEffects:9;CantAfford:1,often,0.5,CantPlayAi:4,often,True
+ECL,Gloom Ripper,0.5,0.5,BadEtbEffects:71;CantPlayAi:8;CantAfford:7,often,0.421,BadEtbEffects:98;CantAfford:9;CantPlayAi:2,often,True
+ECL,Celestial Reunion,0.5,0.5,CantPlayAi:179,often,0.6,CantPlayAi:148,often,False
+ECL,Champions of the Shoal,0.45,0.45,CantPlayAi:24;CantAfford:11;BadEtbEffects:9,often,0.381,CantPlayAi:29;CantAfford:14,often,True
+ECL,Chomping Changeling,0.4444444444444444,0.444,CantPlayAi:68;BadEtbEffects:62;CantAfford:10,often,0.167,CantPlayAi:42;CantAfford:32,often,True
+ECL,Rime Chill,0.4375,0.438,CantPlayAi:179;CantAfford:27,often,0.526,CantPlayAi:307;CantAfford:52,often,False
+ECL,Morningtide's Light,0.4,0.4,CantPlayAi:154;CantAfford:25,often,0.316,CantPlayAi:65;CantAfford:9,often,False
+ECL,Reckless Ransacking,0.4,0.4,CantPlayAi:1533;CantAfford:16,often,0.294,CantPlayAi:855;CantAfford:5,often,False
+ECL,Bloodline Bidding,0.3684210526315789,0.368,AnotherTime:1,often,0.35,,often,False
+ECL,Moon-Vigil Adherents,0.3636363636363636,0.364,CantPlayAi:30;CantAfford:20,often,0.214,CantPlayAi:49;CantAfford:37,often,False
+ECL,Wanderwine Farewell,0.3636363636363636,0.364,CantPlayAi:6,often,0.316,CantPlayAi:5;AnotherTime:2;CantAfford:1,often,False
+ECL,Pyrrhic Strike,0.3333333333333333,0.333,CantPlayAi:414;CantAfford:305,often,0.158,CantPlayAi:540;CantAfford:271,often,False
+ECL,Stratosoarer,0.3333333333333333,0.333,BadEtbEffects:20;CantPlayAi:19,never,0.692,BadEtbEffects:38;CantPlayAi:28,never,True
+ECL,Omni-Changeling,0.3333333333333333,0.333,CantAfford:26;CantPlayAi:26;AnotherTime:3,often,0.16,CantPlayAi:40;CantAfford:29;AnotherTime:2,often,False
+ECL,Summit Sentinel,0.3333333333333333,0.333,CantPlayAi:35;CantAfford:23,often,0.045,CantPlayAi:40;CantAfford:24,often,False
+ECL,Dream Harvest,0.3333333333333333,0.333,CantAfford:2,often,0.25,CantAfford:4,often,False
+ECL,"Ajani, Outland Chaperone",0.3333333333333333,0.333,CantPlayAi:54;CantAfford:33,often,0.429,CantPlayAi:108;CantAfford:89,often,False
+ECL,Pummeler for Hire,0.3333333333333333,0.333,CantPlayAi:27;CantAfford:8,often,0.167,CantPlayAi:20;CantAfford:12,often,False
+ECL,Boggart Cursecrafter,0.3333333333333333,0.333,CantPlayAi:43;CantAfford:25,often,0.0,CantPlayAi:37;CantAfford:18,often,False
+ECL,Bristlebane Outrider,0.3157894736842105,0.316,CantPlayAi:46;CantAfford:34,often,0.238,CantPlayAi:34;CantAfford:21,often,False
+ECL,Kithkeeper,0.3157894736842105,0.316,CantPlayAi:14;CantAfford:4,often,0.471,CantPlayAi:9;CantAfford:3;BadEtbEffects:1,often,False
+ECL,Aurora Awakener,0.2962962962962963,0.296,CantPlayAi:22;CantAfford:8,often,0.241,CantPlayAi:18;CantAfford:3,often,False
+ECL,Mistmeadow Council,0.2941176470588235,0.294,CantPlayAi:23;CantAfford:8,often,0.286,CantPlayAi:22;CantAfford:11,often,False
+ECL,Blossoming Defense,0.2941176470588235,0.294,CantPlayAi:1231;CantAfford:13,often,0.067,CantPlayAi:766;CantAfford:6,often,False
+ECL,Firdoch Core,0.2916666666666667,0.292,CantPlayAi:73;CantAfford:42,often,0.174,CantPlayAi:73;CantAfford:43,often,False
+ECL,Scarblade Scout,0.2857142857142857,0.286,CantPlayAi:31;CantAfford:16,often,0.267,CantPlayAi:27;CantAfford:16,often,False
+ECL,Protective Response,0.2857142857142857,0.286,CantPlayAi:912;CantAfford:17,often,0.056,CantPlayAi:744;CantAfford:5,often,False
+ECL,Sun-Dappled Celebrant,0.28125,0.281,CantPlayAi:35;CantAfford:19,often,0.458,CantPlayAi:33;CantAfford:25,often,False
+ECL,Rooftop Percher,0.2777777777777778,0.278,CantPlayAi:36;CantAfford:17,often,0.125,CantPlayAi:20;CantAfford:7,often,False
+ECL,Scarblade's Malice,0.2692307692307692,0.269,CantPlayAi:1697;CantAfford:3,often,0.071,CantPlayAi:2593;CantAfford:5,often,False
+ECL,Thirst for Identity,0.2631578947368421,0.263,CantPlayAi:561;CantAfford:130,often,0.188,CantPlayAi:412;CantAfford:93,often,False
+ECL,Dream Seizer,0.2631578947368421,0.263,CantPlayAi:33;CantAfford:17,often,0.211,CantPlayAi:27;CantAfford:15,often,False
+ECL,Shinestriker,0.2631578947368421,0.263,CantPlayAi:24;CantAfford:10;BadEtbEffects:8,often,0.25,CantPlayAi:23;CantAfford:15;BadEtbEffects:1,often,True
+ECL,Boulder Dash,0.2592592592592592,0.259,CantPlayAi:119;CantAfford:12,often,0.0,CantPlayAi:37;CantAfford:7,often,False
+ECL,Eclipsed Kithkin,0.25,0.25,CantPlayAi:30;CantAfford:18,often,0.105,CantPlayAi:39;CantAfford:22,often,False
+ECL,Thoughtweft Imbuer,0.25,0.25,CantPlayAi:35;CantAfford:18,often,0.267,CantPlayAi:38;CantAfford:20,often,False
+ECL,Rimekin Recluse,0.25,0.25,CantPlayAi:51;CantAfford:42;BadEtbEffects:12,often,0.048,CantPlayAi:46;CantAfford:30,often,True
+ECL,Perfect Intimidation,0.24,0.24,CantPlayAi:92;CantAfford:30,often,0.182,CantPlayAi:89;CantAfford:40,often,False
+ECL,Champion of the Path,0.2222222222222222,0.222,CantPlayAi:19;CantAfford:5,often,0.286,CantPlayAi:23;CantAfford:8,often,False
+ECL,Kinbinding,0.2222222222222222,0.222,CantAfford:11;CantPlayAi:4,often,0.091,CantAfford:22,often,False
+ECL,Sourbread Auntie,0.2142857142857142,0.214,CantPlayAi:30;CantAfford:28,often,0.231,CantPlayAi:56;CantAfford:40,often,False
+ECL,Trystan's Command,0.2142857142857142,0.214,CantAfford:7,often,,,,False
+ECL,Elder Auntie,0.2,0.2,CantPlayAi:45;CantAfford:28,often,0.182,CantPlayAi:51;CantAfford:29,often,False
+ECL,Bloom Tender,0.2,0.2,CantPlayAi:26;CantAfford:25,often,0.1,CantPlayAi:26;CantAfford:14,often,False
+ECL,Nightmare Sower,0.2,0.2,CantPlayAi:24;CantAfford:20,often,0.118,CantPlayAi:25;CantAfford:8,often,False
+ECL,Lasting Tarfire,0.2,0.2,CantPlayAi:37;CantAfford:25,often,0.071,CantPlayAi:26;CantAfford:16,often,False
+ECL,Formidable Speaker,0.2,0.2,CantPlayAi:72;CantAfford:29,often,0.077,CantPlayAi:47;CantAfford:21,often,False
+ECL,Temporal Cleansing,0.1904761904761904,0.19,CantPlayAi:58,often,0.167,CantPlayAi:32;CantAfford:5;AnotherTime:1,often,False
+ECL,Appeal to Eirdu,0.1875,0.188,CantPlayAi:703;CantAfford:3,often,0.167,CantPlayAi:1280;CantAfford:6,often,False
+ECL,Flamekin Gildweaver,0.1875,0.188,CantPlayAi:42;CantAfford:22,often,0.222,CantPlayAi:41;CantAfford:24,often,False
+ECL,Flock Impostor,0.1875,0.188,BadEtbEffects:844;CantPlayAi:84;CantAfford:20,often,0.0,CantAfford:61;CantPlayAi:12,often,True
+ECL,Illusion Spinners,0.1875,0.188,CantPlayAi:57;CantAfford:8,often,0.1,CantPlayAi:132;CantAfford:14,often,False
+ECL,Personify,0.1875,0.188,CantPlayAi:393;CantAfford:48,often,0.056,CantPlayAi:949;CantAfford:125,often,False
+ECL,Dose of Dawnglow,0.1875,0.188,CantPlayAi:331;CantAfford:18,often,0.059,CantPlayAi:224;CantAfford:7,often,False
+ECL,Sygg's Command,0.1818181818181818,0.182,CantAfford:24;CantPlayAi:11,often,,,,False
+ECL,Swat Away,0.1818181818181818,0.182,CantPlayAi:613;CantAfford:77,often,0.176,CantPlayAi:323;CantAfford:35,often,False
+ECL,Wild Unraveling,0.1818181818181818,0.182,CantPlayAi:157;CantAfford:137,often,0.4,CantPlayAi:143;CantAfford:99,often,False
+ECL,Midnight Tilling,0.1764705882352941,0.176,CantPlayAi:900;CantAfford:35,often,0.292,CantPlayAi:1219;CantAfford:49,often,False
+ECL,Burning Curiosity,0.1764705882352941,0.176,CantAfford:13,often,0.0,CantAfford:8,often,False
+ECL,Wanderwine Distracter,0.1764705882352941,0.176,CantPlayAi:34;CantAfford:28,often,0.25,CantPlayAi:36;CantAfford:26,often,False
+ECL,Sizzling Changeling,0.1764705882352941,0.176,CantPlayAi:40;CantAfford:34,often,0.15,CantPlayAi:51;CantAfford:35,often,False
+ECL,Enraged Flamecaster,0.1764705882352941,0.176,CantPlayAi:45;CantAfford:26,often,0.222,CantPlayAi:39;CantAfford:20,often,False
+ECL,Boggart Mischief,0.1739130434782608,0.174,CantPlayAi:49;CantAfford:38,often,0.111,CantPlayAi:38;CantAfford:23,often,False
+ECL,Puca's Eye,0.1666666666666666,0.167,CantPlayAi:41;CantAfford:25,often,0.214,CantPlayAi:27;CantAfford:11,often,False
+ECL,Dawnhand Eulogist,0.1666666666666666,0.167,CantPlayAi:35;CantAfford:20,often,0.0,CantPlayAi:23;CantAfford:6,often,False
+ECL,Tributary Vaulter,0.1666666666666666,0.167,CantPlayAi:55;CantAfford:32,often,0.062,CantPlayAi:54;CantAfford:34,often,False
+ECL,Gristle Glutton,0.1666666666666666,0.167,CantPlayAi:18;CantAfford:10,often,,,,False
+ECL,Boneclub Berserker,0.1666666666666666,0.167,CantAfford:23;CantPlayAi:22,often,0.133,CantPlayAi:28;CantAfford:13,often,False
+ECL,Soulbright Seeker,0.1578947368421052,0.158,CantPlayAi:82;CantAfford:62,often,0.133,CantPlayAi:36;CantAfford:18,often,False
+ECL,Warren Torchmaster,0.1578947368421052,0.158,CantAfford:42;CantPlayAi:39,often,0.167,CantPlayAi:37;CantAfford:28,often,False
+ECL,Unexpected Assistance,0.1578947368421052,0.158,CantPlayAi:126;CantAfford:32,often,0.136,CantPlayAi:259;CantAfford:41,often,False
+ECL,Crib Swap,0.1578947368421052,0.158,CantPlayAi:456;CantAfford:5,often,0.05,CantPlayAi:377;CantAfford:72,often,False
+ECL,Glen Elendra Guardian,0.1538461538461538,0.154,CantPlayAi:487;CantAfford:27,often,0.133,CantPlayAi:744;CantAfford:45,often,False
+ECL,Voracious Tome-Skimmer,0.15,0.15,CantPlayAi:43;CantAfford:21,often,0.111,CantPlayAi:29;CantAfford:9,often,False
+ECL,Sapling Nursery,0.15,0.15,CantPlayAi:6,often,0.143,CantPlayAi:2,often,False
+ECL,Shore Lurker,0.15,0.15,CantPlayAi:37;CantAfford:19,often,0.067,CantPlayAi:20;CantAfford:7,often,False
+ECL,Unforgiving Aim,0.15,0.15,CantPlayAi:457;CantAfford:155,often,0.053,CantPlayAi:267;CantAfford:98,often,False
+ECL,Dundoolin Weaver,0.15,0.15,CantPlayAi:26;CantAfford:15,often,0.059,CantPlayAi:39;CantAfford:25;BadEtbEffects:1,often,False
+ECL,Wary Farmer,0.15,0.15,CantPlayAi:49;CantAfford:25,often,0.211,CantPlayAi:37;CantAfford:18,often,False
+ECL,Lofty Dreams,0.15,0.15,CantAfford:10;CantPlayAi:6;AnotherTime:1,often,0.045,CantAfford:17;AnotherTime:4;CantPlayAi:4,often,False
+ECL,Evershrike's Gift,0.15,0.15,CantPlayAi:28;CantAfford:19,often,0.235,CantPlayAi:67;CantAfford:34,often,False
+ECL,Surly Farrier,0.1470588235294117,0.147,CantPlayAi:66;CantAfford:32,often,0.156,CantPlayAi:39;CantAfford:19,often,False
+ECL,Cinder Strike,0.1428571428571428,0.143,CantPlayAi:96;CantAfford:8,often,0.048,CantPlayAi:48;CantAfford:2,often,False
+ECL,Mutable Explorer,0.1428571428571428,0.143,CantPlayAi:65;CantAfford:40,often,0.067,CantPlayAi:67;CantAfford:43,often,False
+ECL,"Sanar, Innovative First-Year",0.1428571428571428,0.143,CantPlayAi:50;CantAfford:36,often,0.091,CantPlayAi:39;CantAfford:31,often,False
+ECL,Clachan Festival,0.1363636363636363,0.136,CantPlayAi:63;CantAfford:35,often,0.067,CantPlayAi:43;CantAfford:29,often,False
+ECL,Adept Watershaper,0.1363636363636363,0.136,CantPlayAi:58;CantAfford:31,often,0.056,CantPlayAi:34;CantAfford:21,often,False
+ECL,Requiting Hex,0.1363636363636363,0.136,CantPlayAi:1502;CantAfford:9,often,0.136,CantPlayAi:886;CantAfford:18,often,False
+ECL,Morcant's Loyalist,0.1363636363636363,0.136,CantPlayAi:35;CantAfford:20,often,0.067,CantPlayAi:25;CantAfford:16,often,False
+ECL,Mudbutton Cursetosser,0.1363636363636363,0.136,CantPlayAi:67;CantAfford:37,often,0.059,CantPlayAi:36;CantAfford:17,often,False
+ECL,Unbury,0.1363636363636363,0.136,CantPlayAi:1015;CantAfford:165,often,0.211,CantPlayAi:1146;CantAfford:30,often,False
+ECL,Timid Shieldbearer,0.1333333333333333,0.133,CantPlayAi:38;CantAfford:20,often,0.048,CantPlayAi:49;CantAfford:30,often,False
+ECL,Bristlebane Battler,0.1333333333333333,0.133,CantPlayAi:22;CantAfford:6,often,0.048,CantPlayAi:25;CantAfford:15,often,False
+ECL,Goatnap,0.1333333333333333,0.133,CantPlayAi:15;CantAfford:8,often,0.0,CantPlayAi:5;CantAfford:1,often,False
+ECL,Keep Out,0.1304347826086956,0.13,CantPlayAi:519;CantAfford:93,often,0.211,CantPlayAi:799;CantAfford:172,often,False
+ECL,Grub's Command,0.1304347826086956,0.13,CantAfford:6;CantPlayAi:2,often,0.0,CantAfford:9;CantPlayAi:1,often,False
+ECL,Silvergill Peddler,0.1304347826086956,0.13,CantPlayAi:47;CantAfford:30,often,0.211,CantPlayAi:31;CantAfford:17,often,False
+ECL,Tanufel Rimespeaker,0.125,0.125,CantPlayAi:47;CantAfford:28,often,0.133,CantPlayAi:40;CantAfford:23,often,False
+ECL,Bre of Clan Stoutarm,0.125,0.125,CantPlayAi:21;CantAfford:4,often,0.2,CantPlayAi:39;CantAfford:23,often,False
+ECL,Thoughtweft Charge,0.125,0.125,CantPlayAi:928;CantAfford:10,often,0.111,CantPlayAi:1134;CantAfford:5,often,False
+ECL,Blossombind,0.125,0.125,CantPlayAi:19;CantAfford:13,often,0.118,CantPlayAi:12;CantAfford:8,often,False
+ECL,Bitterbloom Bearer,0.125,0.125,CantPlayAi:1014;CantAfford:44,often,0.294,CantPlayAi:766;CantAfford:42,often,False
+ECL,Kindle the Inner Flame,0.12,0.12,CantAfford:28;CantPlayAi:11,often,0.1,CantAfford:10;CantPlayAi:8,often,False
+ECL,Gathering Stone,0.1176470588235294,0.118,CantPlayAi:38;CantAfford:19,often,0.067,CantPlayAi:30;CantAfford:13,often,False
+ECL,Meanders Guide,0.1176470588235294,0.118,CantPlayAi:23;CantAfford:7,often,0.091,CantPlayAi:30;CantAfford:22,often,False
+ECL,Tweeze,0.1176470588235294,0.118,CantPlayAi:164;CantAfford:35,often,0.0,CantPlayAi:218;CantAfford:13,often,False
+ECL,Prismatic Undercurrents,0.1176470588235294,0.118,CantPlayAi:32;CantAfford:20,often,0.095,CantPlayAi:53;CantAfford:35,often,False
+ECL,Catharsis,0.1176470588235294,0.118,CantPlayAi:28;CantAfford:5,often,0.0,CantPlayAi:2,often,False
+ECL,Feed the Flames,0.1176470588235294,0.118,CantPlayAi:191;CantAfford:70,often,0.059,CantPlayAi:93;CantAfford:31,often,False
+ECL,Blighted Blackthorn,0.1176470588235294,0.118,CantPlayAi:32;CantAfford:14,often,0.136,CantPlayAi:47;CantAfford:28,often,False
+ECL,Hovel Hurler,0.1153846153846153,0.115,CantPlayAi:37;CantAfford:11,often,0.062,CantPlayAi:26;CantAfford:12,often,False
+ECL,Deceit,0.1111111111111111,0.111,CantPlayAi:16;CantAfford:4,often,0.067,CantPlayAi:18;CantAfford:9,often,False
+ECL,Unwelcome Sprite,0.1111111111111111,0.111,CantPlayAi:27;CantAfford:19,often,0.118,CantPlayAi:26;CantAfford:21,often,False
+ECL,Champions of the Perfect,0.1111111111111111,0.111,CantPlayAi:25;CantAfford:8,often,0.333,CantPlayAi:10;CantAfford:2,often,False
+ECL,Moonlit Lamenter,0.1111111111111111,0.111,CantPlayAi:45;CantAfford:18,often,0.077,CantPlayAi:49;CantAfford:24,often,False
+ECL,Virulent Emissary,0.1111111111111111,0.111,CantPlayAi:38;CantAfford:19,often,0.167,CantPlayAi:40;CantAfford:26,often,False
+ECL,Ashling's Command,0.1111111111111111,0.111,CantPlayAi:310;CantAfford:160,often,0.182,CantPlayAi:203;CantAfford:77,often,False
+ECL,Champion of the Weird,0.1071428571428571,0.107,CantAfford:11;CantPlayAi:5,often,0.467,CantAfford:5;CantPlayAi:2,often,False
+ECL,Goldmeadow Nomad,0.1052631578947368,0.105,CantPlayAi:34;CantAfford:15,often,0.0,CantPlayAi:34;CantAfford:18,often,False
+ECL,Kulrath Zealot,0.1052631578947368,0.105,CantPlayAi:18;CantAfford:6,often,0.125,CantPlayAi:16;CantAfford:6,often,False
+ECL,Champion of the Clachan,0.1052631578947368,0.105,CantPlayAi:278;CantAfford:35,often,0.182,CantPlayAi:203;CantAfford:26,often,False
+ECL,Pestered Wellguard,0.1052631578947368,0.105,CantPlayAi:23;CantAfford:13,often,0.125,CantAfford:18;CantPlayAi:16,often,False
+ECL,Kinscaer Sentry,0.1,0.1,CantPlayAi:36;CantAfford:17,often,0.059,CantPlayAi:39;CantAfford:18,often,False
+ECL,Shimmercreep,0.1,0.1,CantPlayAi:32;CantAfford:23,often,0.15,CantPlayAi:21;CantAfford:12,often,False
+ECL,Gangly Stompling,0.1,0.1,CantPlayAi:11;CantAfford:3,often,,,,False
+ECL,Eclipsed Elf,0.1,0.1,CantPlayAi:15;CantAfford:8,often,0.0,CantPlayAi:22;CantAfford:12,often,False
+ECL,Iron-Shield Elf,0.1,0.1,CantPlayAi:30;CantAfford:11,often,0.231,CantPlayAi:27;CantAfford:18,often,False
+ECL,Merrow Skyswimmer,0.1,0.1,CantPlayAi:15;CantAfford:8,often,0.154,CantPlayAi:17;CantAfford:5,often,False
+ECL,Wanderbrine Preacher,0.0952380952380952,0.095,CantPlayAi:48;CantAfford:27,often,0.143,CantPlayAi:54;CantAfford:34,often,False
+ECL,Burdened Stoneback,0.0952380952380952,0.095,CantPlayAi:35;CantAfford:12,often,0.083,CantPlayAi:16;CantAfford:5,often,False
+ECL,Gutsplitter Gang,0.0952380952380952,0.095,CantPlayAi:23;CantAfford:4,often,0.167,CantPlayAi:20;CantAfford:6,often,False
+ECL,Kulrath Mystic,0.0952380952380952,0.095,CantPlayAi:30;CantAfford:28,often,0.1,CantPlayAi:24;CantAfford:15,often,False
+ECL,Silvergill Mentor,0.0952380952380952,0.095,CantPlayAi:100;CantAfford:65,often,0.294,CantPlayAi:93;CantAfford:64,often,False
+ECL,Figure of Fable,0.0952380952380952,0.095,CantPlayAi:24;CantAfford:4,often,0.05,CantPlayAi:21;CantAfford:5,often,False
+ECL,Moonglove Extractor,0.0952380952380952,0.095,CantPlayAi:66;CantAfford:40,often,0.286,CantPlayAi:73;CantAfford:48,often,False
+ECL,Twilight Diviner,0.0952380952380952,0.095,CantPlayAi:83;CantAfford:65,often,0.111,CantPlayAi:33;CantAfford:18,often,False
+ECL,Chitinous Graspling,0.0909090909090909,0.091,CantPlayAi:15;CantAfford:8,often,,,,False
+ECL,Creakwood Safewright,0.0909090909090909,0.091,CantPlayAi:58;CantAfford:26,often,0.138,CantPlayAi:47;CantAfford:14,often,False
+ECL,End-Blaze Epiphany,0.0833333333333333,0.083,CantPlayAi:1282,often,0.05,CantPlayAi:779,often,False
+ECL,Assert Perfection,0.0833333333333333,0.083,CantPlayAi:50;CantAfford:13,often,0.059,CantPlayAi:57;CantAfford:15,often,False
+ECL,Boldwyr Aggressor,0.0833333333333333,0.083,CantAfford:10;CantPlayAi:2,often,0.062,CantAfford:15;CantPlayAi:3,often,False
+ECL,Gnarlbark Elm,0.0833333333333333,0.083,CantPlayAi:25;CantAfford:20,often,0.105,CantPlayAi:27;CantAfford:10,often,False
+ECL,Vibrance,0.0833333333333333,0.083,CantPlayAi:12;CantAfford:2,often,,,,False
+ECL,Stoic Grove-Guide,0.0769230769230769,0.077,CantPlayAi:25;CantAfford:8,often,0.091,CantPlayAi:13;CantAfford:4,often,False
+ECL,Flame-Chain Mauler,0.0769230769230769,0.077,CantPlayAi:17;CantAfford:1,often,0.059,CantPlayAi:34;CantAfford:18,often,False
+ECL,High Perfect Morcant,0.0769230769230769,0.077,CantPlayAi:24;CantAfford:11,often,0.083,CantPlayAi:15;CantAfford:7,often,False
+ECL,Lys Alana Dignitary,0.0769230769230769,0.077,CantPlayAi:37;CantAfford:22,often,0.0,CantPlayAi:32;CantAfford:4,often,False
+ECL,Encumbered Reejerey,0.0769230769230769,0.077,CantPlayAi:14;CantAfford:2,often,0.0,CantPlayAi:41;CantAfford:26,often,False
+ECL,Lys Alana Informant,0.0714285714285714,0.071,CantPlayAi:21;CantAfford:8,often,0.167,CantPlayAi:31;CantAfford:16,often,False
+ECL,Brambleback Brute,0.0714285714285714,0.071,CantPlayAi:18;CantAfford:7,often,,,,False
+ECL,Graveshifter,0.0714285714285714,0.071,CantPlayAi:39;CantAfford:32,often,0.091,CantPlayAi:48;CantAfford:38,often,False
+ECL,Foraging Wickermaw,0.0666666666666666,0.067,CantPlayAi:28;CantAfford:11,often,0.0,CantPlayAi:30;CantAfford:11,often,False
+ECL,Crossroads Watcher,0.0625,0.062,CantPlayAi:31;CantAfford:14,often,0.211,CantPlayAi:38;CantAfford:19,often,False
+ECL,Prismabasher,0.0625,0.062,BadEtbEffects:5;CantAfford:2,often,0.118,CantAfford:4,often,True
+ECL,Glamer Gifter,0.0625,0.062,CantAfford:163;BadEtbEffects:163;CantPlayAi:38,often,0.045,CantAfford:148;CantPlayAi:20,often,True
+ECL,Goliath Daydreamer,0.0625,0.062,CantPlayAi:35;CantAfford:18,often,0.133,CantPlayAi:19;CantAfford:10,often,False
+ECL,"Rhys, the Evermore",0.0588235294117647,0.059,BadEtbEffects:266;CantAfford:75;CantPlayAi:40,often,0.0,BadEtbEffects:246;CantAfford:59;CantPlayAi:40,often,True
+ECL,Harmonized Crescendo,0.0588235294117647,0.059,CantPlayAi:76;CantAfford:25;AnotherTime:5,often,0.375,CantPlayAi:38;CantAfford:21,often,False
+ECL,Mischievous Sneakling,0.0588235294117647,0.059,CantPlayAi:683;CantAfford:28,often,0.143,CantPlayAi:527;CantAfford:28,often,False
+ECL,Loch Mare,0.0588235294117647,0.059,CantPlayAi:34;CantAfford:21,often,0.0,CantPlayAi:26;CantAfford:9,often,False
+ECL,Collective Inferno,0.0588235294117647,0.059,CantAfford:5;CantPlayAi:2;AnotherTime:1,often,0.0,CantAfford:8;CantPlayAi:6,often,False
+ECL,Chronicle of Victory,0.0555555555555555,0.056,CantPlayAi:2;CantAfford:2,often,0.133,CantAfford:5;CantPlayAi:3,often,False
+ECL,Selfless Safewright,0.0555555555555555,0.056,CantAfford:136;CantPlayAi:15;AnotherTime:5,often,0.0,CantAfford:50;CantPlayAi:9;AnotherTime:4,often,False
+ECL,Wildvine Pummeler,0.0555555555555555,0.056,CantAfford:3;CantPlayAi:2,often,0.158,CantPlayAi:5,often,False
+ECL,Bile-Vial Boggart,0.0555555555555555,0.056,CantPlayAi:50;CantAfford:34,often,0.133,CantPlayAi:40;CantAfford:23,often,False
+ECL,Nameless Inversion,0.0555555555555555,0.056,CantPlayAi:327;CantAfford:52,often,0.13,CantPlayAi:413;CantAfford:46,often,False
+ECL,Scuzzback Scrounger,0.0555555555555555,0.056,CantPlayAi:40;CantAfford:18,often,0.0,CantPlayAi:31;CantAfford:15,often,False
+ECL,Flitterwing Nuisance,0.0526315789473684,0.053,CantPlayAi:31;CantAfford:13,often,0.111,CantPlayAi:21;CantAfford:5,often,False
+ECL,Riverguard's Reflexes,0.0526315789473684,0.053,CantPlayAi:791;CantAfford:3,often,0.095,CantPlayAi:957;CantAfford:5,often,False
+ECL,Bogslither's Embrace,0.0526315789473684,0.053,CantPlayAi:72;CantAfford:7,often,0.118,CantPlayAi:90;CantAfford:14,often,False
+ECL,Disruptor of Currents,0.0526315789473684,0.053,CantPlayAi:2;CantAfford:2,often,0.12,CantAfford:72;CantPlayAi:16;AnotherTime:4,often,False
+ECL,Brigid's Command,0.0526315789473684,0.053,CantAfford:26;CantPlayAi:26,often,0.056,CantAfford:37;CantPlayAi:29,often,False
+ECL,Morcant's Eyes,0.0526315789473684,0.053,CantPlayAi:35;CantAfford:16,often,0.048,CantPlayAi:43;CantAfford:25,often,False
+ECL,Reluctant Dounguard,0.0526315789473684,0.053,CantPlayAi:22;CantAfford:14,often,0.059,CantPlayAi:27;CantAfford:13,often,False
+ECL,Chaos Spewer,0.0526315789473684,0.053,CantPlayAi:30;CantAfford:5,often,0.05,CantPlayAi:26;CantAfford:7,often,False
+ECL,Feisty Spikeling,0.0526315789473684,0.053,CantPlayAi:32;CantAfford:10,often,0.0,CantPlayAi:51;CantAfford:30,often,False
+ECL,Wanderbrine Trapper,0.0526315789473684,0.053,CantPlayAi:41;CantAfford:21,often,0.042,CantPlayAi:47;CantAfford:31,often,False
+ECL,Squawkroaster,0.05,0.05,CantPlayAi:37;CantAfford:16,often,0.25,CantPlayAi:31;CantAfford:20,often,False
+ECL,Luminollusk,0.05,0.05,CantPlayAi:35;CantAfford:21,often,0.062,CantPlayAi:30;CantAfford:15,often,False
+ECL,"Kirol, Attentive First-Year",0.05,0.05,CantPlayAi:45;CantAfford:13,often,0.053,CantPlayAi:43;CantAfford:15,often,False
+ECL,Slumbering Walker,0.05,0.05,CantPlayAi:35;CantAfford:19,often,0.045,CantPlayAi:41;CantAfford:23,often,False
+ECL,Sting-Slinger,0.05,0.05,CantPlayAi:34;CantAfford:14,often,0.05,CantPlayAi:31;CantAfford:15,often,False
+ECL,Heirloom Auntie,0.05,0.05,CantPlayAi:36;CantAfford:12,often,0.105,CantPlayAi:37;CantAfford:10,often,False
+ECL,Auntie's Sentence,0.0476190476190476,0.048,CantPlayAi:18;CantAfford:7,often,0.0,CantPlayAi:11;CantAfford:8,often,False
+ECL,Changeling Wayfinder,0.0476190476190476,0.048,CantPlayAi:38;CantAfford:23,often,0.05,CantPlayAi:59;CantAfford:41,often,False
+ECL,Taster of Wares,0.0476190476190476,0.048,CantPlayAi:34;CantAfford:13;BadEtbEffects:7,often,0.067,CantPlayAi:28;CantAfford:14,often,True
+ECL,Bark of Doran,0.0476190476190476,0.048,CantAfford:16;CantPlayAi:10,often,0.0,CantAfford:33;CantPlayAi:14,often,False
+ECL,Great Forest Druid,0.0454545454545454,0.045,CantPlayAi:34;CantAfford:13,often,0.118,CantPlayAi:27;CantAfford:11,often,False
+ECL,Sear,0.0416666666666666,0.042,CantPlayAi:265;CantAfford:54,often,0.0,CantPlayAi:185;CantAfford:14,often,False
+ECL,Gravelgill Scoundrel,0.0416666666666666,0.042,CantPlayAi:46;CantAfford:18,often,0.091,CantPlayAi:34;CantAfford:13,often,False
+ECL,Tend the Sprigs,0.0416666666666666,0.042,CantAfford:5,often,0.0,CantAfford:3,often,False
+ECL,Lavaleaper,0.04,0.04,CantPlayAi:31;CantAfford:15,often,0.038,CantPlayAi:46;CantAfford:22,often,False
+ECL,Noggle the Mind,0.0384615384615384,0.038,CantAfford:238;CantPlayAi:137,often,0.059,CantPlayAi:270;CantAfford:71,often,False
+ECL,Emptiness,0.0,0.0,CantPlayAi:6;CantAfford:2,often,0.0,CantPlayAi:8;CantAfford:3,often,False
+ECL,Glamermite,0.0,0.0,CantAfford:55;CantPlayAi:13,often,0.0,CantAfford:188;CantPlayAi:29;BadEtbEffects:17,often,False
+ECL,Kinsbaile Aspirant,0.0,0.0,CantPlayAi:37;CantAfford:16,often,0.0,CantPlayAi:39;CantAfford:17,often,False
+ECL,Dawnhand Dissident,0.0,0.0,CantPlayAi:21;CantAfford:5,often,0.222,CantPlayAi:27;CantAfford:12,often,False
+ECL,Spiral into Solitude,0.0,0.0,CantPlayAi:16;CantAfford:4,often,0.067,CantPlayAi:13;CantAfford:6,often,False
+ECL,Gallant Fowlknight,0.0,0.0,CantPlayAi:7;CantAfford:3,often,0.071,CantAfford:2;CantPlayAi:1,often,False
+ECL,Barbed Bloodletter,0.0,0.0,CantPlayAi:1,often,0.0,CantPlayAi:2,often,False
+ECL,Flamebraider,0.0,0.0,CantPlayAi:12;CantAfford:2,often,0.125,CantPlayAi:22;CantAfford:6,often,False
+ECL,Spinerock Tyrant,0.0,0.0,CantPlayAi:12;CantAfford:5,often,0.158,CantPlayAi:19;CantAfford:5,often,False
+ECL,Shadow Urchin,0.0,0.0,CantPlayAi:35;CantAfford:15,often,0.0,CantPlayAi:31;CantAfford:15,often,False
+ECL,Giantfall,0.0,0.0,CantPlayAi:420;CantAfford:86,often,0.053,CantPlayAi:412;CantAfford:107,often,False
+ECL,Moonshadow,0.0,0.0,CantPlayAi:24;CantAfford:4,often,0.0,CantPlayAi:19;CantAfford:2,often,False
+ECL,Liminal Hold,0.0,0.0,CantAfford:12;CantPlayAi:6,often,0.062,CantAfford:14;CantPlayAi:9,often,False
+ECL,Safewright Cavalry,0.0,0.0,CantPlayAi:5,often,0.05,CantAfford:8;CantPlayAi:3,often,False
+ECL,Retched Wretch,0.0,0.0,CantPlayAi:22;CantAfford:7,often,0.053,CantPlayAi:35;CantAfford:14,often,False
+ECL,"Tam, Mindful First-Year",0.0,0.0,CantPlayAi:9;CantAfford:2,often,,,,False
+ECL,Deepchannel Duelist,0.0,0.0,CantAfford:12;CantPlayAi:8,often,0.083,CantPlayAi:6;CantAfford:5,often,False
+ECL,Stalactite Dagger,0.0,0.0,CantPlayAi:14;CantAfford:12,often,0.077,CantPlayAi:22;CantAfford:16,often,False
+ECL,Hexing Squelcher,0.0,0.0,CantAfford:20;CantPlayAi:9,often,0.0,CantAfford:21;CantPlayAi:12,often,False
+ECL,Dawn-Blessed Pennant,0.0,0.0,CantPlayAi:22;CantAfford:5,often,0.0,CantPlayAi:20;CantAfford:3,often,False
+ECL,Boggart Prankster,0.0,0.0,CantPlayAi:37;CantAfford:20,often,0.0,CantPlayAi:22;CantAfford:6,often,False
+ECL,Blight Rot,0.0,0.0,CantPlayAi:132;CantAfford:41,often,0.056,CantPlayAi:154;CantAfford:41,often,False
+ECL,Dawn's Light Archer,0.0,0.0,CantPlayAi:707;CantAfford:56,often,0.188,CantPlayAi:792;CantAfford:45,often,False
+ECL,Spry and Mighty,0.0,0.0,CantAfford:2,often,0.059,CantAfford:8,often,False
+ECL,Vinebred Brawler,0.0,0.0,CantPlayAi:22;CantAfford:7,often,0.071,CantPlayAi:38;CantAfford:16,often,False
+TLA,How to Start a Riot,1.0,0.929,CantPlayAi:1377,never,0.947,CantPlayAi:2282;CantAfford:2,rare,False
+TLA,Dai Li Agents,1.0,1.0,BadEtbEffects:53;CantPlayAi:40,never,,,,True
+TLA,Fatal Fissure,1.0,1.0,CantPlayAi:1381;CantAfford:502;TargetingFailed:86,often,0.944,CantPlayAi:1591;CantAfford:684;TargetingFailed:71,often,False
+TLA,Earth Rumble,0.9523809523809524,0.905,CantPlayAi:316,never,1.0,CantPlayAi:216,never,False
+TLA,Redirect Lightning,0.9473684210526316,0.938,CantPlayAi:3979,never,0.895,CantPlayAi:4032,never,False
+TLA,Energybending,0.9444444444444444,1.0,CantPlayAi:3946,never,1.0,CantPlayAi:3018,never,False
+TLA,Spirit Water Revival,0.9444444444444444,0.85,CantPlayAi:250,never,1.0,CantPlayAi:274,never,False
+TLA,Airbender Ascension,0.9411764705882352,1.0,CantPlayAi:89;BadEtbEffects:77,never,0.16,CantPlayAi:43;CantAfford:19,often,True
+TLA,Destined Confrontation,0.9333333333333332,0.895,,no_eval,0.895,,no_eval,False
+TLA,Secret of Bloodbending,0.92,0.938,CantPlayAi:129,never,0.958,CantPlayAi:334,never,False
+TLA,Avatar's Wrath,0.8947368421052632,0.952,CantPlayAi:229,never,0.955,CantPlayAi:283,never,False
+TLA,Crashing Wave,0.8947368421052632,0.778,CantPlayAi:176,never,0.947,CantPlayAi:254,never,False
+TLA,Enter the Avatar State,0.875,0.941,CantPlayAi:2385,never,0.929,CantPlayAi:1907,never,False
+TLA,Day of Black Sun,0.8666666666666667,0.923,CantPlayAi:134,never,0.938,CantPlayAi:158,never,False
+TLA,Sokka's Haiku,0.8181818181818182,0.944,CantPlayAi:211;CantAfford:1,never,0.882,CantPlayAi:229,never,False
+TLA,Crescent Island Temple,0.7727272727272727,1.0,BadEtbEffects:139;CantPlayAi:65,never,0.85,BadEtbEffects:122;CantPlayAi:71,never,True
+TLA,Ozai's Cruelty,0.75,0.842,CantPlayAi:224;CantAfford:9,rare,0.773,CantPlayAi:201;CantAfford:3,rare,False
+TLA,Ruinous Waterbending,0.7368421052631579,0.714,CantPlayAi:98;CantAfford:2,rare,0.5,CantPlayAi:107;CantAfford:2,often,False
+TLA,"Aang, the Last Airbender",0.6666666666666666,0.458,BadEtbEffects:102;CantPlayAi:102;CantAfford:3,often,0.125,CantPlayAi:35;CantAfford:24,often,True
+TLA,It'll Quench Ya!,0.6470588235294118,0.632,CantPlayAi:126;CantAfford:28,rare,0.421,CantPlayAi:76;CantAfford:17,often,False
+TLA,The Spirit Oasis,0.6111111111111112,0.667,BadEtbEffects:225;CantPlayAi:100,never,0.737,BadEtbEffects:141;CantPlayAi:51,never,True
+TLA,Cat-Gator,0.5454545454545454,0.455,CantPlayAi:20;CantAfford:6,often,0.476,CantPlayAi:13;CantAfford:3,often,False
+TLA,True Ancestry,0.5384615384615384,0.529,CantPlayAi:140;CantAfford:8,often,0.333,CantPlayAi:111;CantAfford:13,often,False
+TLA,The Unagi of Kyoshi Island,0.5294117647058824,0.353,CantPlayAi:717;CantAfford:64,often,0.375,CantPlayAi:577;CantAfford:39,often,False
+TLA,"Appa, Steadfast Guardian",0.5263157894736842,0.737,BadEtbEffects:1723;CantPlayAi:157;CantAfford:8,rare,0.056,CantAfford:62;CantPlayAi:18,often,True
+TLA,Combustion Man,0.5,0.312,CantPlayAi:17;CantAfford:10,often,0.333,CantPlayAi:53;CantAfford:40,often,False
+TLA,Foggy Swamp Visions,0.5,0.632,CantPlayAi:114;CantAfford:40,rare,0.471,CantPlayAi:126;CantAfford:40,often,False
+TLA,"Bumi, King of Three Trials",0.4705882352941176,0.35,CantPlayAi:19;CantAfford:4,often,0.6,CantPlayAi:20;CantAfford:10,often,False
+TLA,Benevolent River Spirit,0.45,0.292,CantAfford:169;CantPlayAi:160,often,0.211,CantPlayAi:83;CantAfford:80,often,False
+TLA,Pillar Launch,0.4285714285714285,0.2,CantPlayAi:920;CantAfford:8,often,0.188,CantPlayAi:1139;CantAfford:1,often,False
+TLA,Zuko's Conviction,0.4285714285714285,0.312,CantPlayAi:904;CantAfford:40,often,0.235,CantPlayAi:1261;CantAfford:68,often,False
+TLA,"Ozai, the Phoenix King",0.4210526315789473,0.353,CantAfford:19,often,0.1,CantAfford:5,often,False
+TLA,"Katara, Water Tribe's Hope",0.4166666666666667,,,,0.154,CantPlayAi:17;CantAfford:7,often,False
+TLA,"Appa, Loyal Sky Bison",0.4117647058823529,0.3,CantPlayAi:25;CantAfford:10,often,0.375,CantPlayAi:31;CantAfford:24;BadEtbEffects:4,often,False
+TLA,The Earth King,0.4,0.4,CantPlayAi:71;CantAfford:48,often,0.545,CantPlayAi:33;CantAfford:28,often,False
+TLA,"Koh, the Face Stealer",0.3888888888888889,0.4,CantPlayAi:42;CantAfford:21;BadEtbEffects:6,often,0.333,CantPlayAi:22;CantAfford:12,often,True
+TLA,The Fire Nation Drill,0.3809523809523809,0.273,CantPlayAi:68;CantAfford:58,often,0.222,CantPlayAi:56;CantAfford:51,often,False
+TLA,Obsessive Pursuit,0.3636363636363636,0.545,CantPlayAi:78;CantAfford:48,often,0.125,CantPlayAi:49;CantAfford:25;BadEtbEffects:2,often,False
+TLA,Glider Kids,0.36,0.13,CantPlayAi:56;CantAfford:29,often,0.182,CantPlayAi:60;CantAfford:29,often,False
+TLA,Gather the White Lotus,0.3571428571428571,0.071,CantPlayAi:26;CantAfford:10,often,0.333,CantPlayAi:28;CantAfford:12,often,False
+TLA,Earth Kingdom Soldier,0.3571428571428571,0.333,CantPlayAi:53;CantAfford:20,often,0.4,CantPlayAi:40;CantAfford:23,often,False
+TLA,Fire Nation Raider,0.3333333333333333,0.35,CantPlayAi:47;CantAfford:37,often,0.3,CantPlayAi:32;CantAfford:16,often,False
+TLA,Rowdy Snowballers,0.3225806451612903,0.167,CantPlayAi:91;CantAfford:33;BadEtbEffects:32,often,0.083,CantPlayAi:79;CantAfford:48,often,True
+TLA,Airbender's Reversal,0.3157894736842105,0.278,CantPlayAi:1172;CantAfford:49,often,0.176,CantPlayAi:930;CantAfford:73,often,False
+TLA,Rough Rhino Cavalry,0.3125,0.421,CantPlayAi:30;CantAfford:21,often,0.182,CantPlayAi:35;CantAfford:14,often,False
+TLA,Fire Nation Cadets,0.3125,0.316,CantPlayAi:28;CantAfford:14,often,0.176,CantPlayAi:23;CantAfford:10,often,False
+TLA,Phoenix Fleet Airship,0.3125,0.333,CantPlayAi:61;CantAfford:44,often,0.409,CantPlayAi:80;CantAfford:66,often,False
+TLA,Waterbending Lesson,0.3125,0.417,CantPlayAi:42;CantAfford:17,often,0.048,CantPlayAi:74;CantAfford:33,often,False
+TLA,"Hei Bai, Spirit of Balance",0.3076923076923077,0.231,CantPlayAi:33;CantAfford:16,often,,,,False
+TLA,"Lo and Li, Twin Tutors",0.2941176470588235,0.417,CantPlayAi:26;CantAfford:17,often,0.19,CantPlayAi:54;CantAfford:27;BadEtbEffects:2,often,False
+TLA,Fire Nation Attacks,0.2941176470588235,0.375,CantPlayAi:487;CantAfford:107,often,0.5,CantPlayAi:694;CantAfford:199,often,False
+TLA,"Hakoda, Selfless Commander",0.2941176470588235,0.438,CantPlayAi:43;CantAfford:20,often,0.158,CantPlayAi:45;CantAfford:25,often,False
+TLA,Serpent of the Pass,0.2941176470588235,0.318,CantPlayAi:15,often,0.091,CantPlayAi:18;CantAfford:3,often,False
+TLA,Avatar Destiny,0.2857142857142857,0.333,CantAfford:37;CantPlayAi:22;CurseEffects:2,often,0.182,CantPlayAi:23;CantAfford:22,often,False
+TLA,The Last Agni Kai,0.2777777777777778,0.045,CantPlayAi:669;CantAfford:99,often,0.231,CantPlayAi:626;CantAfford:91,often,False
+TLA,Earth Kingdom General,0.2777777777777778,0.278,CantPlayAi:44;CantAfford:26,often,0.214,CantPlayAi:30;CantAfford:22,often,False
+TLA,Saber-Tooth Moose-Lion,0.2727272727272727,0.316,CantPlayAi:14;CantAfford:9,often,0.133,CantPlayAi:7;CantAfford:1,often,False
+TLA,"Toph, Hardheaded Teacher",0.2727272727272727,0.231,CantPlayAi:38;CantAfford:22,often,,,,False
+TLA,Accumulate Wisdom,0.2727272727272727,0.176,CantPlayAi:604;CantAfford:23,often,0.087,CantPlayAi:865;CantAfford:34,often,False
+TLA,Diligent Zookeeper,0.2727272727272727,0.048,CantPlayAi:51;CantAfford:24,often,0.111,CantPlayAi:31;CantAfford:12,often,False
+TLA,Planetarium of Wan Shi Tong,0.2666666666666666,0.238,CantPlayAi:39;CantAfford:16,often,0.182,CantPlayAi:24;CantAfford:16,often,False
+TLA,Raucous Audience,0.2631578947368421,0.0,CantPlayAi:29;CantAfford:9,often,0.25,CantPlayAi:30;CantAfford:11,often,False
+TLA,Razor Rings,0.2631578947368421,0.312,CantPlayAi:1264;CantAfford:46,often,0.125,CantPlayAi:1671;CantAfford:61,often,False
+TLA,Flexible Waterbender,0.2631578947368421,0.353,CantPlayAi:42;CantAfford:31,often,0.125,CantPlayAi:32;CantAfford:14,often,False
+TLA,Merchant of Many Hats,0.25,0.118,CantPlayAi:48;CantAfford:22,often,0.214,CantPlayAi:33;CantAfford:15,often,False
+TLA,Guru Pathik,0.25,0.3,CantPlayAi:14;CantAfford:7,often,0.083,CantPlayAi:24;CantAfford:17,often,False
+TLA,Iguana Parrot,0.25,0.176,CantPlayAi:22;CantAfford:6,often,0.087,CantPlayAi:33;CantAfford:16,often,False
+TLA,"Flopsie, Bumi's Buddy",0.25,0.261,CantAfford:14;CantPlayAi:1,often,0.188,CantAfford:2;CantPlayAi:1,often,False
+TLA,Cruel Administrator,0.25,0.267,CantPlayAi:26;CantAfford:16,often,0.059,CantPlayAi:18;CantAfford:6,often,False
+TLA,Leaves from the Vine,0.2352941176470588,0.071,CantPlayAi:27;CantAfford:12,often,0.417,CantPlayAi:29;CantAfford:13,often,False
+TLA,"Sokka, Bold Boomeranger",0.2352941176470588,0.067,CantPlayAi:44;CantAfford:30,often,0.211,CantPlayAi:40;CantAfford:28,often,False
+TLA,Wolfbat,0.2352941176470588,0.174,CantPlayAi:54;CantAfford:33,often,0.0,CantPlayAi:29;CantAfford:12,often,False
+TLA,"Zuko, Conflicted",0.2352941176470588,0.267,CantPlayAi:50;CantAfford:33,often,0.056,CantPlayAi:37;CantAfford:16,often,False
+TLA,Epic Downfall,0.2307692307692307,0.071,CantPlayAi:48;CantAfford:3,often,0.0,CantPlayAi:79;CantAfford:3,often,False
+TLA,"Ty Lee, Artful Acrobat",0.2272727272727272,0.214,CantPlayAi:46;CantAfford:26,often,0.062,CantPlayAi:30;CantAfford:12,often,False
+TLA,South Pole Voyager,0.2222222222222222,0.2,CantPlayAi:20;CantAfford:15,often,0.042,CantPlayAi:38;CantAfford:17;BadEtbEffects:1,often,False
+TLA,Vengeful Villagers,0.2222222222222222,0.188,CantPlayAi:27;CantAfford:10,often,0.059,CantPlayAi:47;CantAfford:28,often,False
+TLA,United Front,0.2222222222222222,0.429,CantPlayAi:157,often,0.214,CantPlayAi:106,often,False
+TLA,Cunning Maneuver,0.217391304347826,0.211,CantPlayAi:1321;CantAfford:4,often,0.118,CantPlayAi:1007;CantAfford:7,often,False
+TLA,Rebellious Captives,0.2142857142857142,0.143,CantPlayAi:26;CantAfford:10,often,0.2,CantPlayAi:37;CantAfford:20,often,False
+TLA,Meteor Sword,0.2105263157894736,0.3,CantPlayAi:3;CantAfford:2,often,0.478,CantAfford:2,often,False
+TLA,Boar-q-pine,0.2105263157894736,0.143,CantPlayAi:62;CantAfford:39,often,0.105,CantPlayAi:50;CantAfford:25,often,False
+TLA,Kyoshi Island Plaza,0.2,0.333,CantPlayAi:43;CantAfford:32,often,0.071,CantPlayAi:25;CantAfford:9,often,False
+TLA,Badgermole,0.2,0.241,CantPlayAi:48;CantAfford:17,often,0.136,CantPlayAi:44;CantAfford:18,often,False
+TLA,Abandon Attachments,0.2,,,,0.2,CantPlayAi:213;CantAfford:46,often,False
+TLA,"Mai, Jaded Edge",0.2,0.176,CantPlayAi:42;CantAfford:26,often,0.077,CantPlayAi:22;CantAfford:9,often,False
+TLA,Jeong Jeong's Deserters,0.2,0.091,CantAfford:46;CantPlayAi:19;BadEtbEffects:13,often,0.042,CantAfford:26;CantPlayAi:17;BadEtbEffects:11,often,True
+TLA,Yuyan Archers,0.2,0.053,CantPlayAi:25;CantAfford:9,often,0.133,CantPlayAi:35;CantAfford:20,often,False
+TLA,"Jet, Freedom Fighter",0.2,0.318,CantPlayAi:41;CantAfford:23;BadEtbEffects:14,often,0.15,CantPlayAi:29;CantAfford:21,often,True
+TLA,Fire Nation Warship,0.1923076923076923,0.071,CantPlayAi:80;CantAfford:44,often,0.136,CantPlayAi:56;CantAfford:32,often,False
+TLA,Earthen Ally,0.1904761904761904,0.136,CantPlayAi:31;CantAfford:11,often,0.071,CantPlayAi:27;CantAfford:15,often,False
+TLA,North Pole Patrol,0.1904761904761904,0.174,CantPlayAi:69;CantAfford:39,often,0.111,CantPlayAi:73;CantAfford:41,often,False
+TLA,Earth Rumble Wrestlers,0.1875,0.353,CantPlayAi:32;CantAfford:19,often,0.143,CantPlayAi:34;CantAfford:16,often,False
+TLA,Tiger-Seal,0.1875,0.111,CantPlayAi:21;CantAfford:7,often,0.048,CantPlayAi:34;CantAfford:11,often,False
+TLA,Trusty Boomerang,0.1851851851851851,0.423,CantPlayAi:22;CantAfford:18,often,0.125,CantPlayAi:20;CantAfford:16,often,False
+TLA,Earth King's Lieutenant,0.1818181818181818,0.25,CantPlayAi:40;BadEtbEffects:25;CantAfford:10,often,0.263,CantPlayAi:51;CantAfford:26;BadEtbEffects:24,often,True
+TLA,Beetle-Headed Merchants,0.1818181818181818,0.062,CantPlayAi:30;CantAfford:8,often,0.227,CantPlayAi:30;CantAfford:15,often,False
+TLA,Invasion Submersible,0.1764705882352941,0.333,CantPlayAi:55;CantAfford:32;BadEtbEffects:13,often,0.227,CantPlayAi:69;CantAfford:45,often,True
+TLA,"Momo, Playful Pet",0.1764705882352941,0.188,CantPlayAi:25;CantAfford:11,often,0.0,CantPlayAi:24;CantAfford:13,often,False
+TLA,Firebending Student,0.1764705882352941,0.056,CantPlayAi:39;CantAfford:19,often,0.136,CantPlayAi:43;CantAfford:23,often,False
+TLA,Seismic Sense,0.1666666666666666,0.0,CantPlayAi:17;CantAfford:7,often,0.0,CantPlayAi:14;CantAfford:4,often,False
+TLA,Combustion Technique,0.1666666666666666,0.143,CantPlayAi:205;CantAfford:15,often,0.056,CantPlayAi:303;CantAfford:23,often,False
+TLA,Compassionate Healer,0.1578947368421052,0.045,CantPlayAi:28;CantAfford:13,often,0.154,CantPlayAi:27;CantAfford:18,often,False
+TLA,Yip Yip!,0.1578947368421052,0.059,CantPlayAi:1002;CantAfford:4,often,0.105,CantPlayAi:1814;CantAfford:8,often,False
+TLA,Price of Freedom,0.1578947368421052,0.2,CantPlayAi:47;CantAfford:3,often,0.273,CantPlayAi:71;CantAfford:7,often,False
+TLA,Curious Farm Animals,0.1538461538461538,0.045,CantPlayAi:33;CantAfford:7,often,0.053,CantPlayAi:49;CantAfford:28,often,False
+TLA,Turtle-Duck,0.1538461538461538,0.056,CantPlayAi:26;CantAfford:10,often,0.143,CantPlayAi:37;CantAfford:19,often,False
+TLA,Hog-Monkey,0.1538461538461538,0.059,CantPlayAi:29;CantAfford:10,often,0.0,CantPlayAi:34;CantAfford:14,often,False
+TLA,Foggy Swamp Hunters,0.15,0.111,CantPlayAi:66;CantAfford:34,often,0.0,CantPlayAi:20;CantAfford:9,often,False
+TLA,Raven Eagle,0.15,0.167,CantPlayAi:51;BadEtbEffects:23;CantAfford:11,often,0.059,CantPlayAi:44;CantAfford:19,often,True
+TLA,"Azula, On the Hunt",0.15,0.2,CantPlayAi:53;CantAfford:23,often,0.158,CantPlayAi:34;CantAfford:30,often,False
+TLA,Ran and Shaw,0.1428571428571428,0.091,CantPlayAi:39;CantAfford:11,often,0.154,CantPlayAi:20;CantAfford:10,often,False
+TLA,Fire Nation Engineer,0.1428571428571428,0.056,CantPlayAi:37;CantAfford:17,often,0.158,CantPlayAi:63;CantAfford:40,often,False
+TLA,Master Piandao,0.1428571428571428,0.308,CantPlayAi:11;CantAfford:7,often,0.091,CantPlayAi:31;CantAfford:13,often,False
+TLA,Zuko's Exile,0.1428571428571428,0.095,CantPlayAi:169;CantAfford:12,often,0.136,CantPlayAi:252;CantAfford:23,often,False
+TLA,"Katara, Bending Prodigy",0.1428571428571428,0.048,CantPlayAi:49;CantAfford:27,often,0.167,CantPlayAi:35;CantAfford:11,often,False
+TLA,"Azula, Cunning Usurper",0.1428571428571428,0.167,CantPlayAi:20;CantAfford:5,often,0.074,CantPlayAi:47;CantAfford:31,often,False
+TLA,Fire Navy Trebuchet,0.1363636363636363,0.25,CantPlayAi:72;CantAfford:54,often,0.25,CantPlayAi:115;CantAfford:78,often,False
+TLA,Dai Li Indoctrination,0.1333333333333333,0.176,CantAfford:13,often,0.0,CantAfford:2,often,False
+TLA,Master Pakku,0.1333333333333333,0.167,CantPlayAi:54;CantAfford:33,often,0.222,CantPlayAi:53;CantAfford:33,often,False
+TLA,Wandering Musicians,0.1333333333333333,0.105,CantPlayAi:36;CantAfford:18,often,0.231,CantPlayAi:26;CantAfford:13,often,False
+TLA,"Zuko, Exiled Prince",0.1333333333333333,0.263,CantPlayAi:39;CantAfford:25,often,0.364,CantPlayAi:32;CantAfford:24,often,False
+TLA,Invasion Tactics,0.1333333333333333,0.111,CantAfford:15,often,0.0,CantAfford:4,often,False
+TLA,Rabaroo Troop,0.1333333333333333,0.219,CantPlayAi:54;CantAfford:30,often,0.238,CantPlayAi:44;CantAfford:31,often,False
+TLA,Foggy Swamp Spirit Keeper,0.1304347826086956,0.19,CantPlayAi:35;CantAfford:13,often,0.053,CantPlayAi:27;CantAfford:6,often,False
+TLA,Mongoose Lizard,0.125,0.059,CantPlayAi:3;CantAfford:1,often,0.176,CantPlayAi:4,often,False
+TLA,Fancy Footwork,0.125,0.182,CantPlayAi:736;CantAfford:200,often,0.273,CantPlayAi:903;CantAfford:133,often,False
+TLA,"Zhao, Ruthless Admiral",0.125,0.0,CantPlayAi:20;CantAfford:3,often,0.0,CantPlayAi:24;CantAfford:8,often,False
+TLA,Forecasting Fortune Teller,0.125,0.043,CantPlayAi:40;CantAfford:17,often,0.32,CantPlayAi:77;CantAfford:50,often,False
+TLA,"Momo, Friendly Flier",0.125,0.118,CantPlayAi:29;CantAfford:19,often,0.179,CantPlayAi:43;CantAfford:23,often,False
+TLA,"June, Bounty Hunter",0.125,0.111,CantPlayAi:39;CantAfford:17,often,0.0,CantPlayAi:22;CantAfford:5,often,False
+TLA,Ember Island Production,0.125,0.059,CantAfford:10;CantPlayAi:1,often,0.0,CantAfford:4,often,False
+TLA,Sparring Dummy,0.125,0.1,CantPlayAi:42;CantAfford:17,often,0.118,CantPlayAi:42;CantAfford:20,often,False
+TLA,"Hama, the Bloodbender",0.1176470588235294,0.292,CantPlayAi:44;CantAfford:29,often,0.263,CantPlayAi:41;CantAfford:26,often,False
+TLA,Buzzard-Wasp Colony,0.1176470588235294,0.125,CantPlayAi:31;CantAfford:16,often,0.071,CantPlayAi:18;CantAfford:4,often,False
+TLA,Path to Redemption,0.1176470588235294,0.053,CantPlayAi:22;CantAfford:4,often,0.0,CantPlayAi:35;CantAfford:5,often,False
+TLA,Giant Koi,0.1176470588235294,0.125,CantPlayAi:14;CantAfford:8,often,0.0,CantPlayAi:20;CantAfford:10,often,False
+TLA,Fire Sages,0.1176470588235294,0.0,CantPlayAi:22;CantAfford:9,often,0.222,CantPlayAi:27;CantAfford:8,often,False
+TLA,Glider Staff,0.1142857142857142,0.182,BadEtbEffects:44;CantAfford:19;CantPlayAi:14,often,0.0,CantAfford:19;CantPlayAi:12,often,True
+TLA,Boiling Rock Rioter,0.1111111111111111,0.0,CantPlayAi:20;CantAfford:2,often,0.118,CantPlayAi:51;CantAfford:20,often,False
+TLA,War Balloon,0.1111111111111111,0.062,CantPlayAi:41;CantAfford:31,often,0.154,CantPlayAi:28;CantAfford:26,often,False
+TLA,Jet's Brainwashing,0.1111111111111111,0.1,CantPlayAi:70;CantAfford:2,often,,,,False
+TLA,Walltop Sentries,0.1111111111111111,0.143,CantPlayAi:45;CantAfford:25,often,0.083,CantPlayAi:42;CantAfford:15,often,False
+TLA,Bumi Bash,0.1111111111111111,0.0,CantAfford:4,often,0.0,CantPlayAi:8,often,False
+TLA,"Haru, Hidden Talent",0.1071428571428571,0.031,CantPlayAi:48;CantAfford:26,often,0.125,CantPlayAi:63;CantAfford:43,often,False
+TLA,The Lion-Turtle,0.1052631578947368,0.105,CantPlayAi:26;CantAfford:12,often,0.043,CantPlayAi:48;CantAfford:22,often,False
+TLA,"The Boulder, Ready to Rumble",0.1052631578947368,0.05,CantPlayAi:41;CantAfford:17,often,0.167,CantPlayAi:40;CantAfford:23,often,False
+TLA,Watery Grasp,0.1052631578947368,0.1,CantPlayAi:51;CantAfford:5,often,0.0,CantAfford:29;CantPlayAi:20,often,False
+TLA,"Suki, Kyoshi Warrior",0.1,0.154,CantPlayAi:25;CantAfford:15,often,0.2,CantPlayAi:54;CantAfford:34,often,False
+TLA,Boomerang Basics,0.1,0.043,CantPlayAi:68;CantAfford:8,often,0.111,CantPlayAi:41;CantAfford:4,often,False
+TLA,"Wan Shi Tong, Librarian",0.1,0.056,CantPlayAi:456,often,0.042,CantPlayAi:566,often,False
+TLA,"Yue, the Moon Spirit",0.1,0.167,CantPlayAi:35;CantAfford:15,often,0.188,CantPlayAi:28;CantAfford:13,often,False
+TLA,Earthbender Ascension,0.0952380952380952,0.056,CantPlayAi:53;CantAfford:45,often,0.316,CantPlayAi:56;CantAfford:51,often,False
+TLA,First-Time Flyer,0.0952380952380952,0.136,CantPlayAi:36;CantAfford:16,often,0.0,CantPlayAi:26;CantAfford:6,often,False
+TLA,Geyser Leaper,0.0952380952380952,0.0,CantPlayAi:18;CantAfford:6,often,0.263,CantPlayAi:32;CantAfford:16,often,False
+TLA,Bender's Waterskin,0.0952380952380952,0.091,CantPlayAi:44;CantAfford:26,often,0.083,CantPlayAi:30;CantAfford:15,often,False
+TLA,Octopus Form,0.0952380952380952,0.13,CantPlayAi:1857;CantAfford:6,often,0.154,CantPlayAi:945;CantAfford:6,often,False
+TLA,Sold Out,0.0909090909090909,0.235,CantPlayAi:269;CantAfford:23,often,0.0,CantPlayAi:344;CantAfford:11,often,False
+TLA,Waterbender Ascension,0.0869565217391304,0.143,CantPlayAi:65;CantAfford:45,often,0.158,CantPlayAi:25;CantAfford:9,often,False
+TLA,Deserter's Disciple,0.0869565217391304,0.04,CantPlayAi:47;CantAfford:24,often,0.0,CantPlayAi:25;CantAfford:4,often,False
+TLA,The Cave of Two Lovers,0.0833333333333333,0.2,CantPlayAi:25;CantAfford:18,often,0.188,CantPlayAi:24;CantAfford:20,often,False
+TLA,Northern Air Temple,0.0833333333333333,0.25,CantPlayAi:37;CantAfford:23,often,0.048,CantPlayAi:32;CantAfford:13,often,False
+TLA,"Suki, Courageous Rescuer",0.0833333333333333,0.188,CantPlayAi:54;CantAfford:30,often,0.286,CantPlayAi:50;CantAfford:46,often,False
+TLA,Corrupt Court Official,0.0833333333333333,0.083,CantPlayAi:17;CantAfford:5,often,0.19,CantPlayAi:33;CantAfford:15,often,False
+TLA,"Zhao, the Moon Slayer",0.0769230769230769,0.0,CantPlayAi:26;CantAfford:10,often,0.125,CantPlayAi:36;CantAfford:20,often,False
+TLA,Twin Blades,0.0769230769230769,0.0,CantAfford:199;CantPlayAi:9,often,0.0,CantAfford:103;CantPlayAi:1,often,False
+TLA,Gran-Gran,0.074074074074074,0.083,CantPlayAi:39;CantAfford:16,often,0.1,CantPlayAi:33;CantAfford:14,often,False
+TLA,"Mai, Scornful Striker",0.0714285714285714,0.1,CantPlayAi:37;CantAfford:20,often,0.125,CantPlayAi:24;CantAfford:10,often,False
+TLA,Shared Roots,0.0714285714285714,0.167,CantAfford:15,often,0.0,CantAfford:3,often,False
+TLA,Messenger Hawk,0.0714285714285714,0.2,CantPlayAi:37;CantAfford:25,often,0.0,CantPlayAi:17;CantAfford:2,often,False
+TLA,Iroh's Demonstration,0.0714285714285714,0.077,CantPlayAi:31;CantAfford:1,often,0.077,CantPlayAi:25;CantAfford:5,often,False
+TLA,Great Divide Guide,0.0666666666666666,0.2,CantPlayAi:31;CantAfford:16,often,0.053,CantPlayAi:34;CantAfford:14,often,False
+TLA,Knowledge Seeker,0.0666666666666666,0.105,CantPlayAi:39;CantAfford:19,often,0.048,CantPlayAi:35;CantAfford:12,often,False
+TLA,Firebender Ascension,0.0666666666666666,0.095,CantPlayAi:45;CantAfford:25,often,0.294,CantPlayAi:56;CantAfford:39,often,False
+TLA,Earth Kingdom Jailer,0.0625,0.111,BadEtbEffects:33;CantAfford:11;CantPlayAi:9,often,0.0,CantAfford:20;CantPlayAi:15,often,True
+TLA,Waterbending Scroll,0.0625,0.208,CantPlayAi:42;CantAfford:29,often,0.062,CantPlayAi:24;CantAfford:12,often,False
+TLA,Team Avatar,0.0588235294117647,0.067,CantAfford:16;CantPlayAi:7,often,0.067,CantAfford:13;CantPlayAi:11,often,False
+TLA,Canyon Crawler,0.0588235294117647,0.048,CantPlayAi:14;CantAfford:12,often,0.278,CantPlayAi:14;CantAfford:9,often,False
+TLA,Callous Inspector,0.0588235294117647,0.059,CantPlayAi:22;CantAfford:2,often,0.125,CantPlayAi:30;CantAfford:12,often,False
+TLA,"Joo Dee, One of Many",0.0588235294117647,0.235,CantPlayAi:43;CantAfford:19,often,0.15,CantPlayAi:35;CantAfford:22,often,False
+TLA,Southern Air Temple,0.0571428571428571,0.2,CantAfford:26;CantPlayAi:9;BadEtbEffects:8,often,0.034,CantAfford:31;CantPlayAi:22;BadEtbEffects:5,often,True
+TLA,Unlucky Cabbage Merchant,0.0555555555555555,0.0,CantPlayAi:31;CantAfford:13,often,0.087,CantPlayAi:45;CantAfford:21,often,False
+TLA,Platypus-Bear,0.0555555555555555,0.0,CantPlayAi:40;CantAfford:18,often,0.2,CantPlayAi:25;CantAfford:14,often,False
+TLA,Rocky Rebuke,0.0555555555555555,0.067,CantPlayAi:250;CantAfford:18,often,0.05,CantPlayAi:395;CantAfford:71,often,False
+TLA,Airbending Lesson,0.0526315789473684,0.056,CantPlayAi:227;CantAfford:19,often,0.133,CantPlayAi:243;CantAfford:16,often,False
+TLA,Avatar Enthusiasts,0.0526315789473684,0.125,CantPlayAi:59;CantAfford:38,often,0.348,CantPlayAi:25;CantAfford:21,often,False
+TLA,Firebending Lesson,0.0526315789473684,0.071,CantPlayAi:408;CantAfford:119,often,0.0,CantPlayAi:299;CantAfford:1,often,False
+TLA,Lost Days,0.0526315789473684,0.04,CantPlayAi:218;CantAfford:15,often,0.053,CantPlayAi:58;CantAfford:3,often,False
+TLA,Tundra Tank,0.0526315789473684,0.053,BadEtbEffects:26;CantPlayAi:12;CantAfford:6,often,0.111,BadEtbEffects:24;CantPlayAi:12;CantAfford:4,often,True
+TLA,Barrels of Blasting Jelly,0.0526315789473684,0.043,CantPlayAi:25;CantAfford:2,often,0.0,CantPlayAi:32;CantAfford:11,often,False
+TLA,Aang's Journey,0.05,0.118,CantPlayAi:37;CantAfford:21,often,0.077,CantPlayAi:42;CantAfford:29,often,False
+TLA,White Lotus Reinforcements,0.05,0.071,CantAfford:20;CantPlayAi:10,often,0.062,CantAfford:21;CantPlayAi:10,often,False
+TLA,Sun Warriors,0.05,0.0,CantPlayAi:23;CantAfford:9,often,0.125,CantPlayAi:31;CantAfford:17,often,False
+TLA,Water Tribe Captain,0.05,0.0,CantPlayAi:27;CantAfford:11,often,0.208,CantPlayAi:45;CantAfford:23,often,False
+TLA,Foggy Swamp Vinebender,0.05,0.143,CantPlayAi:38;CantAfford:19,often,0.333,CantPlayAi:45;CantAfford:24,often,False
+TLA,Vindictive Warden,0.05,0.08,CantPlayAi:38;CantAfford:12,often,0.143,CantPlayAi:24;CantAfford:12,often,False
+TLA,Otter-Penguin,0.0476190476190476,0.103,CantPlayAi:48;CantAfford:21,often,0.0,CantPlayAi:41;CantAfford:23,often,False
+TLA,Kyoshi Battle Fan,0.0454545454545454,0.038,CantPlayAi:25;CantAfford:19,often,0.071,CantAfford:29;CantPlayAi:16,often,False
+TLA,Ostrich-Horse,0.0434782608695652,0.167,CantPlayAi:40;CantAfford:22,often,0.095,CantPlayAi:49;CantAfford:31,often,False
+TLA,"The Mechanist, Aerial Artisan",0.0434782608695652,0.0,CantAfford:12;CantPlayAi:9,often,0.087,CantAfford:20;CantPlayAi:7,often,False
+TLA,Invasion Reinforcements,0.0434782608695652,0.0,CantAfford:37;CantPlayAi:22,often,0.16,CantAfford:312;CantPlayAi:37,often,False
+TLA,Water Tribe Rallier,0.0416666666666666,0.118,CantPlayAi:27;CantAfford:14,often,0.087,CantPlayAi:31;CantAfford:17,often,False
+TLA,Rockalanche,0.0,0.0,CantAfford:2,often,0.045,CantAfford:19,often,False
+TLA,"Ty Lee, Chi Blocker",0.0,0.087,BadEtbEffects:96;CantAfford:59;CantPlayAi:24,often,0.0,CantAfford:36;CantPlayAi:8,often,True
+TLA,Fated Firepower,0.0,0.111,CantPlayAi:555,often,0.0,CantPlayAi:409,often,False
+TLA,Earthbending Lesson,0.0,0.0,CantAfford:4,often,0.0,CantAfford:6,often,False
+TLA,Tiger-Dillo,0.0,0.211,CantPlayAi:36;CantAfford:15,often,0.222,CantPlayAi:46;CantAfford:20,often,False
+TLA,Deadly Precision,0.0,0.105,CantPlayAi:110;CantAfford:25;CurseEffects:1,often,0.143,CantPlayAi:71;CantAfford:19,often,False
+TLA,Origin of Metalbending,0.0,0.042,CantPlayAi:506;CantAfford:172,often,0.0,CantPlayAi:146;CantAfford:46,often,False
+TLA,Heartless Act,0.0,0.0,CantPlayAi:180;CantAfford:112,often,0.0,CantPlayAi:126;CantAfford:12,often,False
+TLA,Kyoshi Warriors,0.0,0.214,CantPlayAi:41;CantAfford:31,often,0.188,CantPlayAi:36;CantAfford:21,often,False
+TLA,Solstice Revelations,0.0,0.0,CantAfford:30,often,0.0,CantAfford:53,often,False
+TLA,Sandbenders' Storm,0.0,0.0,CantAfford:1,often,0.053,CantAfford:60,often,False
+TLA,Wartime Protestors,0.0,0.0,CantAfford:3,often,0.0,CantAfford:6,often,False
+TLA,Swampsnare Trap,0.0,0.042,CantPlayAi:8;CantAfford:3,often,0.0,CantPlayAi:4,often,False
+TLA,"Teo, Spirited Glider",0.0,0.0,CantAfford:10;CantPlayAi:5,often,0.0,CantAfford:26;CantPlayAi:15,often,False
+TLA,"Jeong Jeong, the Deserter",0.0,0.176,CantPlayAi:28;CantAfford:13,often,0.267,CantPlayAi:27;CantAfford:13,often,False
+TLA,Hermitic Herbalist,0.0,0.182,CantPlayAi:46;CantAfford:26,often,0.053,CantPlayAi:18;CantAfford:2,often,False
+TLA,Cycle of Renewal,0.0,0.0,CantAfford:74,often,0.048,CantAfford:56,often,False
+TLA,Aang's Iceberg,0.0,0.0,BadEtbEffects:79;CantAfford:13;CantPlayAi:3,often,0.059,CantAfford:108;CantPlayAi:10,often,True
+TLA,Azula Always Lies,0.0,0.118,CantPlayAi:238;CantAfford:34,often,0.062,CantPlayAi:285;CantAfford:62,often,False
+TLA,Earth Kingdom Protectors,0.0,0.0,CantPlayAi:22;CantAfford:1,often,0.056,CantPlayAi:28;CantAfford:8,often,False
+TLA,Pirate Peddlers,0.0,0.0,CantPlayAi:22;CantAfford:15,often,0.125,CantPlayAi:34;CantAfford:14,often,False
+TLA,"Iroh, Tea Master",0.0,0.0,CantAfford:16;CantPlayAi:7,often,0.05,CantAfford:13;CantPlayAi:9,often,False
+TLA,"Toph, the Blind Bandit",0.0,0.091,CantPlayAi:56;CantAfford:32,often,0.125,CantPlayAi:22;CantAfford:18,often,False
+TLA,Honest Work,0.0,0.105,CantPlayAi:14;CantAfford:9;CurseEffects:1,often,0.0,CantPlayAi:25;CantAfford:9,often,False
+TLA,Badgermole Cub,0.0,0.095,CantPlayAi:39;CantAfford:16,often,0.176,CantPlayAi:46;CantAfford:25,often,False
+TLA,Lightning Strike,0.0,0.143,CantPlayAi:259;CantAfford:43,often,0.0,CantPlayAi:270;CantAfford:22,often,False
+TLA,Treetop Freedom Fighters,0.0,0.0,CantAfford:14,often,0.056,CantAfford:1,often,False
+TLA,Allies at Last,0.0,0.0,CantPlayAi:248;CantAfford:45,often,0.105,CantPlayAi:525;CantAfford:75,often,False
+EOE,Close Encounter,0.9642857142857144,0.964,,no_eval,1.0,,no_eval,False
+EOE,Cut Propulsion,0.95,0.95,CantPlayAi:1645,never,0.947,CantPlayAi:2194,never,False
+EOE,Exosuit Savior,0.9411764705882352,0.941,CantPlayAi:113;BadEtbEffects:112,never,0.125,CantPlayAi:40;CantAfford:21,often,True
+EOE,Depressurize,0.9333333333333332,0.933,CantPlayAi:2008,never,1.0,CantPlayAi:1588,never,False
+EOE,Pull Through the Weft,0.9333333333333332,0.933,CantPlayAi:96;CantAfford:4,never,0.889,CantPlayAi:151;CantAfford:4,never,False
+EOE,Sinister Cryologist,0.9,0.9,BadEtbEffects:295;CantPlayAi:263;CantAfford:1,never,0.174,CantPlayAi:68;CantAfford:45,often,True
+EOE,Blooming Stinger,0.8666666666666667,0.867,BadEtbEffects:81;CantPlayAi:75,never,0.895,BadEtbEffects:137;CantPlayAi:112;CantAfford:1,never,True
+EOE,Embrace Oblivion,0.8666666666666667,0.867,CantPlayAi:152,never,0.952,CantPlayAi:213,never,False
+EOE,Terrapact Intimidator,0.8571428571428571,0.857,CantPlayAi:118;BadEtbEffects:114,never,0.25,CantPlayAi:26;CantAfford:14,often,True
+EOE,Meltstrider's Resolve,0.7916666666666666,0.792,BadEtbEffects:238;CantPlayAi:73,never,0.0,CantPlayAi:63;CantAfford:21,often,True
+EOE,Moonlit Meditation,0.782608695652174,0.783,CantPlayAi:225,never,0.882,CantPlayAi:148,never,False
+EOE,Scout for Survivors,0.7777777777777778,0.778,CantPlayAi:235,rare,0.667,CantPlayAi:140;CantAfford:6,rare,False
+EOE,Cerebral Download,0.7222222222222222,0.722,CantPlayAi:1224;CantAfford:47,rare,0.667,CantPlayAi:814;CantAfford:44,rare,False
+EOE,Mouth of the Storm,0.6956521739130435,0.696,BadEtbEffects:127;CantPlayAi:9,never,0.842,BadEtbEffects:179;CantPlayAi:14,never,True
+EOE,Astelli Reclaimer,0.65,0.65,BadEtbEffects:231;CantPlayAi:185,rare,0.467,BadEtbEffects:233;CantPlayAi:208;CantAfford:2,often,True
+EOE,Scrounge for Eternity,0.6428571428571429,0.643,CantPlayAi:90,rare,0.895,CantPlayAi:218,never,False
+EOE,Mental Modulation,0.6111111111111112,0.611,CantPlayAi:1030;CantAfford:169,often,0.4,CantPlayAi:1271;CantAfford:224,often,False
+EOE,Beyond the Quiet,0.5882352941176471,0.588,CantPlayAi:111;CantAfford:3,often,0.632,CantPlayAi:162;CantAfford:2,rare,False
+EOE,Monoist Circuit-Feeder,0.5517241379310345,0.552,BadEtbEffects:155;CantPlayAi:16;CantAfford:3,often,0.25,BadEtbEffects:152;CantPlayAi:24;CantAfford:3,often,True
+EOE,The Endstone,0.55,0.55,CantPlayAi:20;CantAfford:18,often,0.435,CantPlayAi:23;CantAfford:16,often,False
+EOE,Station Monitor,0.5454545454545454,0.545,CantPlayAi:34;CantAfford:29,often,0.462,CantPlayAi:24;CantAfford:13,often,False
+EOE,Lashwhip Predator,0.5,0.5,CantPlayAi:26;CantAfford:7,often,0.385,CantPlayAi:22;CantAfford:8,often,False
+EOE,Decode Transmissions,0.4782608695652174,0.478,CantPlayAi:98;CantAfford:56,often,0.235,CantPlayAi:75;CantAfford:41,often,False
+EOE,Unravel,0.4782608695652174,0.478,CantPlayAi:103;CantAfford:57,rare,0.391,CantPlayAi:101;CantAfford:51,often,False
+EOE,Zero Point Ballad,0.4736842105263157,0.474,CantPlayAi:209,often,0.636,CantPlayAi:169,rare,False
+EOE,"Sothera, the Supervoid",0.4705882352941176,0.471,CantPlayAi:52;CantAfford:39,rare,0.438,CantPlayAi:47;CantAfford:37,rare,False
+EOE,The Seriema,0.4705882352941176,0.471,CantPlayAi:82;BadEtbEffects:59;CantAfford:19,often,0.474,CantPlayAi:104;BadEtbEffects:55;CantAfford:37,often,True
+EOE,Dawnstrike Vanguard,0.4705882352941176,0.471,CantPlayAi:37;CantAfford:22,often,0.238,CantPlayAi:28;CantAfford:10,often,False
+EOE,Nebula Dragon,0.4285714285714285,0.429,CantPlayAi:10;CantAfford:2,often,0.5,CantPlayAi:12;CantAfford:6,often,False
+EOE,Extinguisher Battleship,0.4117647058823529,0.412,BadEtbEffects:2;CantPlayAi:1,often,0.667,BadEtbEffects:3;CantPlayAi:1,often,True
+EOE,Icetill Explorer,0.4117647058823529,0.412,CantPlayAi:41;CantAfford:24,often,0.15,CantPlayAi:48;CantAfford:32,often,False
+EOE,Nova Hellkite,0.4090909090909091,0.409,BadEtbEffects:301;CantAfford:2,often,0.0,CantAfford:10,often,True
+EOE,Pinnacle Starcage,0.4,0.4,CantPlayAi:107;BadEtbEffects:73;CantAfford:7,often,0.5,CantPlayAi:136;BadEtbEffects:77;CantAfford:39,often,True
+EOE,Archenemy's Charm,0.3684210526315789,0.368,CantAfford:1072;CantPlayAi:173,often,0.13,CantAfford:1038;CantPlayAi:253,often,False
+EOE,Terminal Velocity,0.3636363636363636,0.364,CantPlayAi:7;CantAfford:2,often,0.2,CantPlayAi:16;CantAfford:4,often,False
+EOE,Biosynthic Burst,0.3571428571428571,0.357,CantPlayAi:931;CantAfford:18,often,0.25,CantPlayAi:645;CantAfford:5,often,False
+EOE,Warmaker Gunship,0.3571428571428571,0.357,CantPlayAi:56;BadEtbEffects:33;CantAfford:13,often,0.154,CantPlayAi:20;CantAfford:8,often,True
+EOE,Sunstar Lightsmith,0.3529411764705882,0.353,CantPlayAi:52;CantAfford:31,often,0.067,CantPlayAi:44;CantAfford:28,often,False
+EOE,Rescue Skiff,0.3529411764705882,0.353,CantPlayAi:20;BadEtbEffects:16;CantAfford:10,often,0.348,CantPlayAi:20;CantAfford:4;BadEtbEffects:3,often,True
+EOE,Gravpack Monoist,0.3529411764705882,0.353,CantPlayAi:35;CantAfford:21,often,0.111,CantPlayAi:36;CantAfford:19,often,False
+EOE,Divert Disaster,0.35,0.35,CantPlayAi:104;CantAfford:24,often,0.5,CantPlayAi:66;CantAfford:33,often,False
+EOE,"Haliya, Ascendant Cadet",0.35,0.35,CantPlayAi:64;CantAfford:36;BadEtbEffects:11,often,0.474,CantPlayAi:32;CantAfford:15;BadEtbEffects:2,often,True
+EOE,Lithobraking,0.35,0.35,CantPlayAi:759;CantAfford:144,often,0.357,CantPlayAi:728;CantAfford:127,often,False
+EOE,Focus Fire,0.3478260869565217,0.348,CantPlayAi:1217;CantAfford:12,often,0.429,CantPlayAi:1733;CantAfford:36,often,False
+EOE,Annul,0.3478260869565217,0.348,CantPlayAi:135;CantAfford:4,often,0.333,CantPlayAi:124;CantAfford:7,often,False
+EOE,Weftwalking,0.3478260869565217,0.348,CantPlayAi:40;CantAfford:19;BadEtbEffects:10,often,0.294,CantPlayAi:38;CantAfford:23,often,True
+EOE,Pinnacle Kill-Ship,0.3333333333333333,0.333,CantPlayAi:3;BadEtbEffects:2;CantAfford:1,often,0.316,CantPlayAi:17;CantAfford:7,often,True
+EOE,Seedship Broodtender,0.3333333333333333,0.333,CantPlayAi:41;CantAfford:28,often,0.211,CantPlayAi:50;CantAfford:33,often,False
+EOE,Blade of the Swarm,0.3333333333333333,0.333,CantPlayAi:69;CantAfford:54,often,0.217,CantPlayAi:48;CantAfford:28,often,False
+EOE,Glacier Godmaw,0.3333333333333333,0.333,CantPlayAi:19;CantAfford:7,often,0.455,CantPlayAi:14;CantAfford:2,often,False
+EOE,Singularity Rupture,0.3333333333333333,0.333,CantPlayAi:54;CantAfford:2,often,0.294,CantPlayAi:48;CantAfford:9,often,False
+EOE,Famished Worldsire,0.3125,0.312,CantPlayAi:11;CantAfford:8,often,0.238,CantPlayAi:13;CantAfford:12,often,False
+EOE,Specimen Freighter,0.3076923076923077,0.308,BadEtbEffects:17;CantAfford:15;CantPlayAi:11,often,0.222,CantAfford:15;CantPlayAi:1,often,True
+EOE,Kav Landseeker,0.2941176470588235,0.294,CantAfford:31;CantPlayAi:23,often,0.182,CantAfford:15;CantPlayAi:11,often,False
+EOE,Galvanizing Sawship,0.2916666666666667,0.292,CantPlayAi:25;CantAfford:17,often,0.278,CantPlayAi:34;CantAfford:21,often,False
+EOE,Thrumming Hivepool,0.2857142857142857,0.286,CantAfford:15;CantPlayAi:4,often,0.053,CantAfford:11;CantPlayAi:4,often,False
+EOE,Seedship Agrarian,0.2857142857142857,0.286,CantAfford:16;CantPlayAi:14,often,0.05,CantPlayAi:44;CantAfford:25,often,False
+EOE,Memorial Vault,0.2857142857142857,0.286,CantAfford:35;CantPlayAi:34,often,0.182,CantPlayAi:41;CantAfford:20,often,False
+EOE,"Dawnsire, Sunstar Dreadnought",0.2777777777777778,0.278,CantPlayAi:36;CantAfford:26,often,0.059,CantPlayAi:37;CantAfford:26,often,False
+EOE,Voidforged Titan,0.2777777777777778,0.278,CantPlayAi:36;CantAfford:18,often,0.235,CantPlayAi:41;CantAfford:22,often,False
+EOE,Debris Field Crusher,0.2727272727272727,0.273,CantPlayAi:53;CantAfford:39,often,0.2,CantPlayAi:40;CantAfford:31,often,False
+EOE,Lumen-Class Frigate,0.2666666666666666,0.267,CantPlayAi:30;CantAfford:18,often,0.333,CantPlayAi:38;CantAfford:33,often,False
+EOE,Ouroboroid,0.2631578947368421,0.263,CantPlayAi:60;CantAfford:46,often,0.421,CantPlayAi:54;CantAfford:32,often,False
+EOE,Chorale of the Void,0.25,0.25,CantAfford:19;CantPlayAi:10,often,0.091,CantAfford:21;CantPlayAi:9,often,False
+EOE,Requiem Monolith,0.25,0.25,CantPlayAi:38;CantAfford:30,often,0.25,CantPlayAi:41;CantAfford:27,often,False
+EOE,Dark Endurance,0.24,0.24,CantPlayAi:1804;CantAfford:24,often,0.267,CantPlayAi:1549;CantAfford:14,often,False
+EOE,Emissary Escort,0.238095238095238,0.238,CantAfford:21;CantPlayAi:18,often,0.062,CantAfford:19;CantPlayAi:18,often,False
+EOE,Bioengineered Future,0.2352941176470588,0.235,CantPlayAi:41;CantAfford:29,often,0.368,CantPlayAi:68;CantAfford:53,often,False
+EOE,Gravkill,0.2352941176470588,0.235,CantPlayAi:328;CantAfford:34,often,0.176,CantPlayAi:316;CantAfford:65,often,False
+EOE,Wurmwall Sweeper,0.2352941176470588,0.235,CantPlayAi:36;CantAfford:26,often,0.471,CantAfford:50;CantPlayAi:50,often,False
+EOE,Space-Time Anomaly,0.2307692307692307,0.231,CantPlayAi:40;CantAfford:29,often,0.4,CantPlayAi:55;CantAfford:45,often,False
+EOE,Tragic Trajectory,0.2272727272727272,0.227,CantPlayAi:55;CantAfford:17,often,0.16,CantPlayAi:112;CantAfford:18,often,False
+EOE,Reroute Systems,0.2272727272727272,0.227,CantPlayAi:1043;CantAfford:104,often,0.067,CantPlayAi:656;CantAfford:47,often,False
+EOE,Territorial Bruntar,0.217391304347826,0.217,CantPlayAi:20;CantAfford:9,often,0.316,CantPlayAi:18;CantAfford:8,often,False
+EOE,Wedgelight Rammer,0.2142857142857142,0.214,CantPlayAi:24;CantAfford:13,often,0.067,CantPlayAi:31;CantAfford:13,often,False
+EOE,Zealous Display,0.2105263157894736,0.211,CantPlayAi:963;CantAfford:5,often,0.071,CantPlayAi:796;CantAfford:3,often,False
+EOE,Illvoi Galeblade,0.2105263157894736,0.211,CantPlayAi:479;CantAfford:29,often,0.278,CantPlayAi:669;CantAfford:41,often,False
+EOE,"Mm'menon, the Right Hand",0.2068965517241379,0.207,CantPlayAi:57;CantAfford:24,often,0.185,CantPlayAi:37;CantAfford:20,often,False
+EOE,"Ragost, Deft Gastronaut",0.2,0.2,CantPlayAi:41;CantAfford:24,often,0.182,CantPlayAi:37;CantAfford:24,often,False
+EOE,Roving Actuator,0.2,0.2,CantPlayAi:18;CantAfford:9;BadEtbEffects:2,often,0.118,CantPlayAi:27;CantAfford:13,often,True
+EOE,Kavaron Skywarden,0.2,0.2,CantPlayAi:27;CantAfford:7,often,0.417,CantPlayAi:16;CantAfford:8,often,False
+EOE,Plasma Bolt,0.2,0.2,CantPlayAi:53;CantAfford:11,often,0.091,CantPlayAi:53;CantAfford:7,often,False
+EOE,Codecracker Hound,0.2,0.2,CantPlayAi:122;CantAfford:76,often,0.1,CantPlayAi:68;CantAfford:46,often,False
+EOE,Biomechan Engineer,0.1904761904761904,0.19,CantPlayAi:36;CantAfford:21,often,0.125,CantPlayAi:45;CantAfford:26,often,False
+EOE,Bygone Colossus,0.1875,0.188,CantPlayAi:2,often,0.0,,no_eval,False
+EOE,Atmospheric Greenhouse,0.1875,0.188,CantPlayAi:33;CantAfford:21;BadEtbEffects:8,often,0.333,CantPlayAi:30;CantAfford:16;BadEtbEffects:1,often,True
+EOE,Rayblade Trooper,0.1818181818181818,0.182,CantPlayAi:42;CantAfford:19;BadEtbEffects:2,often,,,,True
+EOE,Genemorph Imago,0.1818181818181818,0.182,CantPlayAi:27;CantAfford:18,often,,,,False
+EOE,"Syr Vondam, the Lucent",0.1818181818181818,0.182,CantPlayAi:14;CantAfford:7,often,,,,False
+EOE,"Tezzeret, Cruel Captain",0.1818181818181818,0.182,CantPlayAi:47;CantAfford:30,often,0.222,CantPlayAi:56;CantAfford:36,often,False
+EOE,Elegy Acolyte,0.1785714285714285,0.179,CantPlayAi:52;CantAfford:45,often,0.364,CantPlayAi:22;CantAfford:18,often,False
+EOE,Orbital Plunge,0.1764705882352941,0.176,CantPlayAi:22;CantAfford:9,often,0.125,CantPlayAi:34;CantAfford:21,often,False
+EOE,"Alpharael, Dreaming Acolyte",0.1764705882352941,0.176,CantPlayAi:43;CantAfford:26;BadEtbEffects:1,often,0.28,CantPlayAi:69;CantAfford:36;BadEtbEffects:9,often,True
+EOE,Entropic Battlecruiser,0.1764705882352941,0.176,CantPlayAi:39;CantAfford:28,often,0.167,CantAfford:35;CantPlayAi:35,often,False
+EOE,Hullcarver,0.1764705882352941,0.176,CantPlayAi:29;CantAfford:28,often,0.19,CantPlayAi:48;CantAfford:33,often,False
+EOE,Hemosymbic Mite,0.1764705882352941,0.176,CantPlayAi:37;CantAfford:27,often,0.095,CantPlayAi:36;CantAfford:21,often,False
+EOE,Larval Scoutlander,0.1739130434782608,0.174,CantPlayAi:56;CantAfford:46,often,0.12,CantPlayAi:65;CantAfford:49,often,False
+EOE,Shattered Wings,0.1739130434782608,0.174,CantPlayAi:91;CantAfford:3,often,0.074,CantPlayAi:105;CantAfford:7,often,False
+EOE,Melded Moxite,0.1739130434782608,0.174,CantPlayAi:84;CantAfford:64,often,0.294,CantPlayAi:45;CantAfford:32,often,False
+EOE,Cryogen Relic,0.1739130434782608,0.174,CantPlayAi:47;CantAfford:37;BadEtbEffects:9,often,0.273,CantPlayAi:27;CantAfford:14;BadEtbEffects:6,often,True
+EOE,Broodguard Elite,0.1666666666666666,0.167,CantPlayAi:50,often,0.133,CantPlayAi:44,often,False
+EOE,Susurian Dirgecraft,0.1666666666666666,0.167,CantPlayAi:15;CantAfford:9,often,0.222,CantPlayAi:20;CantAfford:12,often,False
+EOE,Meltstrider Eulogist,0.1666666666666666,0.167,CantPlayAi:54;CantAfford:29,often,0.083,CantPlayAi:26;CantAfford:15,often,False
+EOE,Quantum Riddler,0.1666666666666666,0.167,CantPlayAi:48;BadEtbEffects:28;CantAfford:10,often,0.133,CantPlayAi:16;BadEtbEffects:8;CantAfford:5,often,True
+EOE,Frenzied Baloth,0.1666666666666666,0.167,CantAfford:43,often,0.071,CantAfford:57,often,False
+EOE,Swarm Culler,0.1578947368421052,0.158,CantPlayAi:36;CantAfford:22,often,0.462,CantPlayAi:36;CantAfford:22,often,False
+EOE,Rig for War,0.1578947368421052,0.158,CantPlayAi:1008;CantAfford:9,often,0.2,CantPlayAi:510;CantAfford:3,often,False
+EOE,Scour for Scrap,0.1578947368421052,0.158,CantPlayAi:559;CantAfford:161,often,0.182,CantPlayAi:613;CantAfford:228,often,False
+EOE,Frontline War-Rager,0.1578947368421052,0.158,CantPlayAi:44;CantAfford:20,often,0.2,CantPlayAi:42;CantAfford:25,often,False
+EOE,Consult the Star Charts,0.1578947368421052,0.158,CantPlayAi:986;CantAfford:43,often,0.192,CantPlayAi:1081;CantAfford:53,often,False
+EOE,Monoist Sentry,0.15625,0.156,CantPlayAi:53;CantAfford:49,often,0.04,CantPlayAi:35;CantAfford:14,often,False
+EOE,Starfield Vocalist,0.1538461538461538,0.154,CantPlayAi:38;CantAfford:16,often,0.105,CantAfford:15;CantPlayAi:14,often,False
+EOE,Lightless Evangel,0.1538461538461538,0.154,CantPlayAi:45;CantAfford:30,often,0.25,CantPlayAi:28;CantAfford:14,often,False
+EOE,Luxknight Breacher,0.15,0.15,CantPlayAi:53;CantAfford:32,often,0.333,CantPlayAi:47;CantAfford:31,often,False
+EOE,Sledge-Class Seedship,0.15,0.15,CantPlayAi:55;CantAfford:44,often,0.25,CantPlayAi:39;CantAfford:31,often,False
+EOE,Diplomatic Relations,0.15,0.15,CantPlayAi:451;CantAfford:138,often,0.208,CantPlayAi:762;CantAfford:152,often,False
+EOE,Full Bore,0.15,0.15,CantPlayAi:1051;CantAfford:12,often,0.375,CantPlayAi:1306;CantAfford:8,often,False
+EOE,Sunset Saboteur,0.1428571428571428,0.143,CantPlayAi:41;CantAfford:22,often,0.056,CantPlayAi:28;CantAfford:8,often,False
+EOE,Uthros Scanship,0.1363636363636363,0.136,CantPlayAi:37;CantAfford:29,often,0.176,CantPlayAi:30;CantAfford:22,often,False
+EOE,Dual-Sun Technique,0.1333333333333333,0.133,CantPlayAi:1111;CantAfford:4,often,0.222,CantPlayAi:723;CantAfford:3,often,False
+EOE,Galactic Wayfarer,0.1333333333333333,0.133,CantPlayAi:32;CantAfford:19,often,0.176,CantPlayAi:31;CantAfford:14,often,False
+EOE,Mightform Harmonizer,0.1333333333333333,0.133,CantPlayAi:20;CantAfford:12,often,0.211,CantPlayAi:62;CantAfford:32,often,False
+EOE,Intrepid Tenderfoot,0.1333333333333333,0.133,CantPlayAi:19;CantAfford:5,often,0.083,CantPlayAi:23;CantAfford:10,often,False
+EOE,Virulent Silencer,0.1333333333333333,0.133,CantPlayAi:26;CantAfford:17,often,0.294,CantPlayAi:36;CantAfford:24,often,False
+EOE,Exalted Sunborn,0.1304347826086956,0.13,CantPlayAi:16,often,0.056,CantPlayAi:6;CantAfford:2,often,False
+EOE,Anticausal Vestige,0.1304347826086956,0.13,CantPlayAi:30;CantAfford:9,often,0.077,CantPlayAi:24;CantAfford:12,often,False
+EOE,Pulsar Squadron Ace,0.1304347826086956,0.13,CantPlayAi:45;CantAfford:16,often,0.222,CantPlayAi:37;CantAfford:21,often,False
+EOE,"Xu-Ifit, Osteoharmonist",0.1290322580645161,0.129,CantPlayAi:59;CantAfford:54,often,0.286,CantPlayAi:79;CantAfford:71,often,False
+EOE,Illvoi Infiltrator,0.125,0.125,CantPlayAi:47;CantAfford:33,often,0.143,CantPlayAi:50;CantAfford:44,often,False
+EOE,Possibility Technician,0.125,0.125,CantPlayAi:25;CantAfford:10,often,0.0,CantPlayAi:10;CantAfford:6,often,False
+EOE,Oreplate Pangolin,0.125,0.125,CantPlayAi:29;CantAfford:16,often,0.111,CantPlayAi:27;CantAfford:14,often,False
+EOE,Terrasymbiosis,0.125,0.125,CantPlayAi:41;CantAfford:24,often,0.167,CantPlayAi:43;CantAfford:27,often,False
+EOE,Cosmogrand Zenith,0.125,0.125,CantPlayAi:40;CantAfford:20,often,0.1,CantPlayAi:48;CantAfford:29,often,False
+EOE,Cryoshatter,0.125,0.125,CantPlayAi:55;CantAfford:35,often,0.182,CantPlayAi:60;CantAfford:10,often,False
+EOE,Auxiliary Boosters,0.125,0.125,CantAfford:13;CantPlayAi:10,often,0.188,CantAfford:8;CantPlayAi:3,often,False
+EOE,Seedship Impact,0.125,0.125,CantPlayAi:454;CantAfford:39,often,0.0,CantPlayAi:408;CantAfford:20,often,False
+EOE,Fungal Colossus,0.12,0.12,CantPlayAi:7;CantAfford:1,often,0.182,CantPlayAi:11;CantAfford:2,often,False
+EOE,Vote Out,0.1176470588235294,0.118,CantPlayAi:35;CantAfford:2,often,0.143,CantPlayAi:42;AnotherTime:4;CantAfford:1,often,False
+EOE,Brightspear Zealot,0.1176470588235294,0.118,CantPlayAi:38;CantAfford:21,often,0.048,CantPlayAi:50;CantAfford:22,often,False
+EOE,Starport Security,0.1176470588235294,0.118,CantPlayAi:22;CantAfford:6,often,0.1,CantPlayAi:19;CantAfford:7,often,False
+EOE,"Dyadrine, Synthesis Amalgam",0.1176470588235294,0.118,CantPlayAi:44,often,0.125,CantPlayAi:61,often,False
+EOE,Remnant Elemental,0.1176470588235294,0.118,CantPlayAi:17;CantAfford:11,often,0.174,CantPlayAi:57;CantAfford:43,often,False
+EOE,Tractor Beam,0.1153846153846153,0.115,CantPlayAi:27;CantAfford:24,often,0.125,CantAfford:30;CantPlayAi:18,often,False
+EOE,All-Fates Stalker,0.1111111111111111,0.111,BadEtbEffects:40;CantPlayAi:18;CantAfford:15,often,0.0,CantAfford:4;CantPlayAi:2,often,True
+EOE,Hymn of the Faller,0.1111111111111111,0.111,CantPlayAi:36;CantAfford:5,often,0.053,CantPlayAi:30;CantAfford:4,often,False
+EOE,Insatiable Skittermaw,0.1111111111111111,0.111,CantPlayAi:37;CantAfford:13,often,0.091,CantPlayAi:43;CantAfford:16,often,False
+EOE,Umbral Collar Zealot,0.1071428571428571,0.107,CantPlayAi:54;CantAfford:28,often,0.121,CantPlayAi:60;CantAfford:25,often,False
+EOE,Mechan Shieldmate,0.1052631578947368,0.105,CantPlayAi:50;CantAfford:47,often,0.1,CantPlayAi:27;CantAfford:15,often,False
+EOE,Temporal Intervention,0.1052631578947368,0.105,CantPlayAi:58;CantAfford:24,often,0.2,CantPlayAi:45;CantAfford:27,often,False
+EOE,Mechan Navigator,0.1052631578947368,0.105,CantAfford:13;CantPlayAi:13,often,0.105,CantPlayAi:40;CantAfford:26,often,False
+EOE,Susurian Voidborn,0.1052631578947368,0.105,CantAfford:10;CantPlayAi:4,often,0.0,CantPlayAi:4;CantAfford:4,often,False
+EOE,Mechan Assembler,0.1052631578947368,0.105,CantPlayAi:44;CantAfford:31,often,0.2,CantPlayAi:22;CantAfford:14,often,False
+EOE,Weftblade Enhancer,0.1,0.1,CantPlayAi:14;CantAfford:2,often,0.0,CantPlayAi:14;CantAfford:2,often,False
+EOE,Icecave Crasher,0.1,0.1,CantPlayAi:30;CantAfford:12,often,0.067,CantPlayAi:47;CantAfford:20,often,False
+EOE,Dubious Delicacy,0.1,0.1,BadEtbEffects:259;CantAfford:45;CantPlayAi:25,often,0.0,CantAfford:146;CantPlayAi:12,often,True
+EOE,Mechanozoa,0.1,0.1,CantPlayAi:20;BadEtbEffects:14;CantAfford:9,often,0.053,CantAfford:15;CantPlayAi:14,often,True
+EOE,Dual-Sun Adepts,0.0967741935483871,0.097,CantPlayAi:55;CantAfford:25,often,0.0,CantPlayAi:49;CantAfford:12,often,False
+EOE,Hardlight Containment,0.0952380952380952,0.095,CantPlayAi:66;BadEtbEffects:16;CantAfford:4,often,0.158,CantPlayAi:114;MissingNeededCards:14;CantAfford:9,often,True
+EOE,Radiant Strike,0.0952380952380952,0.095,CantPlayAi:234;CantAfford:35,often,0.167,CantPlayAi:461;CantAfford:45,often,False
+EOE,Eusocial Engineering,0.0952380952380952,0.095,CantPlayAi:41;CantAfford:30,often,0.071,CantAfford:10;CantPlayAi:8,often,False
+EOE,Knight Luminary,0.0909090909090909,0.091,CantPlayAi:49;CantAfford:17,often,0.033,CantPlayAi:81;CantAfford:36,often,False
+EOE,Gene Pollinator,0.0909090909090909,0.091,CantPlayAi:26;CantAfford:11,often,0.125,CantPlayAi:13;CantAfford:2,often,False
+EOE,Starfighter Pilot,0.0909090909090909,0.091,CantPlayAi:20;CantAfford:7,often,0.067,CantPlayAi:36;CantAfford:18,often,False
+EOE,Illvoi Operative,0.0909090909090909,0.091,CantPlayAi:36;CantAfford:17,often,0.2,CantPlayAi:70;CantAfford:46,often,False
+EOE,Gravblade Heavy,0.0909090909090909,0.091,CantPlayAi:47;CantAfford:31,often,0.158,CantPlayAi:36;CantAfford:13,often,False
+EOE,Vaultguard Trooper,0.0869565217391304,0.087,CantPlayAi:32;CantAfford:16,often,0.15,CantPlayAi:29;CantAfford:28,often,False
+EOE,Bombard,0.0869565217391304,0.087,CantPlayAi:369;CantAfford:114,often,0.1,CantPlayAi:285;CantAfford:10,often,False
+EOE,Molecular Modifier,0.0833333333333333,0.083,CantPlayAi:5;CantAfford:4,often,0.059,CantPlayAi:8;CantAfford:5,often,False
+EOE,"Haliya, Guided by Light",0.0833333333333333,0.083,CantPlayAi:26;CantAfford:17,often,0.071,CantPlayAi:32;CantAfford:17,often,False
+EOE,Perigee Beckoner,0.0833333333333333,0.083,BadEtbEffects:2;CantPlayAi:2;CantAfford:1,often,0.0,BadEtbEffects:15;CantPlayAi:6;CantAfford:2,often,True
+EOE,Invasive Maneuvers,0.08,0.08,CantPlayAi:430;CantAfford:30,often,0.053,CantPlayAi:605;CantAfford:120,often,False
+EOE,Rust Harvester,0.0769230769230769,0.077,CantPlayAi:16;CantAfford:5,often,0.25,CantPlayAi:26;CantAfford:15,often,False
+EOE,Banishing Light,0.0769230769230769,0.077,CantPlayAi:19;CantAfford:18,often,0.158,CantAfford:30;CantPlayAi:14,often,False
+EOE,Weftstalker Ardent,0.0666666666666666,0.067,CantPlayAi:28;CantAfford:19,often,0.0,CantPlayAi:27;CantAfford:7,often,False
+EOE,Sunstar Chaplain,0.0666666666666666,0.067,CantPlayAi:35;CantAfford:14,often,0.188,CantPlayAi:20;CantAfford:5,often,False
+EOE,Loading Zone,0.0666666666666666,0.067,CantPlayAi:58;CantAfford:43,often,0.0,CantPlayAi:28;CantAfford:12,often,False
+EOE,Comet Crawler,0.0666666666666666,0.067,CantPlayAi:23;CantAfford:16,often,0.235,CantPlayAi:41;CantAfford:23,often,False
+EOE,Drill Too Deep,0.0625,0.062,CantPlayAi:601;CantAfford:24,often,0.231,CantPlayAi:462;CantAfford:31,often,False
+EOE,Weapons Manufacturing,0.0625,0.062,CantPlayAi:37;CantAfford:22,often,0.167,CantPlayAi:36;CantAfford:25,often,False
+EOE,Dauntless Scrapbot,0.0625,0.062,CantPlayAi:32;CantAfford:17,often,0.154,CantPlayAi:40;CantAfford:32,often,False
+EOE,All-Fates Scroll,0.0625,0.062,CantPlayAi:46;CantAfford:38,often,0.0,CantPlayAi:26;CantAfford:12,often,False
+EOE,Flight-Deck Coordinator,0.0588235294117647,0.059,CantPlayAi:37;CantAfford:22,often,0.0,CantPlayAi:50;CantAfford:19,often,False
+EOE,Sunstar Expansionist,0.0588235294117647,0.059,CantPlayAi:26;CantAfford:7,often,0.067,CantPlayAi:36;CantAfford:14,often,False
+EOE,Beamsaw Prospector,0.0588235294117647,0.059,CantPlayAi:31;CantAfford:18,often,0.059,CantPlayAi:31;CantAfford:19,often,False
+EOE,Starbreach Whale,0.0588235294117647,0.059,CantPlayAi:10,often,0.211,CantPlayAi:17;CantAfford:2,often,False
+EOE,Kavaron Turbodrone,0.0588235294117647,0.059,CantAfford:14,often,0.062,CantAfford:24,often,False
+EOE,Lightstall Inquisitor,0.0555555555555555,0.056,CantPlayAi:28;CantAfford:11,often,0.062,CantPlayAi:28;CantAfford:9,often,False
+EOE,"Alpharael, Stonechosen",0.0555555555555555,0.056,CantPlayAi:41;CantAfford:31,often,0.133,CantPlayAi:31;CantAfford:17,often,False
+EOE,Sami's Curiosity,0.0555555555555555,0.056,CantPlayAi:32;CantAfford:15,often,0.154,CantPlayAi:13;CantAfford:1,often,False
+EOE,Starfield Shepherd,0.0555555555555555,0.056,CantPlayAi:14;CantAfford:8,often,0.111,CantPlayAi:14;CantAfford:2,often,False
+EOE,Fell Gravship,0.0555555555555555,0.056,CantPlayAi:48;CantAfford:30,often,0.174,CantPlayAi:75;CantAfford:51,often,False
+EOE,Slagdrill Scrapper,0.0526315789473684,0.053,CantPlayAi:29;CantAfford:19,often,0.091,CantAfford:46;CantPlayAi:20,often,False
+EOE,Seam Rip,0.0526315789473684,0.053,CantPlayAi:82;CantAfford:6,often,0.167,CantPlayAi:87;CantAfford:2,often,False
+EOE,Memorial Team Leader,0.0526315789473684,0.053,CantPlayAi:18;CantAfford:13,often,0.308,CantPlayAi:26;CantAfford:9,often,False
+EOE,Honored Knight-Captain,0.0526315789473684,0.053,CantPlayAi:49;CantAfford:31,often,0.0,CantPlayAi:43;CantAfford:27,often,False
+EOE,Drix Fatemaker,0.0526315789473684,0.053,CantAfford:17;CantPlayAi:14;BadEtbEffects:13,often,0.0,CantAfford:6;BadEtbEffects:1,often,True
+EOE,"Tannuk, Steadfast Second",0.05,0.05,CantAfford:15;CantPlayAi:8,often,0.231,CantAfford:29;CantPlayAi:3,often,False
+EOE,Hylderblade,0.05,0.05,CantAfford:25;CantPlayAi:19,often,0.087,CantAfford:38;CantPlayAi:26,often,False
+EOE,Starwinder,0.05,0.05,CantAfford:3;CantPlayAi:2,often,0.048,CantAfford:6,often,False
+EOE,Steelswarm Operator,0.0476190476190476,0.048,CantPlayAi:37;CantAfford:15,often,0.211,CantPlayAi:58;CantAfford:46,often,False
+EOE,Nutrient Block,0.0454545454545454,0.045,CantPlayAi:26;CantAfford:8,often,0.043,CantPlayAi:29;CantAfford:14,often,False
+EOE,Dockworker Drone,0.0454545454545454,0.045,CantPlayAi:83;CantAfford:48,often,0.15,CantPlayAi:48;CantAfford:29,often,False
+EOE,Survey Mechan,0.0454545454545454,0.045,CantPlayAi:49;CantAfford:26,often,0.0,CantPlayAi:31;CantAfford:11,often,False
+EOE,Selfcraft Mechan,0.0416666666666666,0.042,CantPlayAi:31;CantAfford:24,often,0.05,CantAfford:21;CantPlayAi:17,often,False
+EOE,Edge Rover,0.0357142857142857,0.036,CantPlayAi:34;CantAfford:19,often,0.077,CantPlayAi:37;CantAfford:22,often,False
+EOE,Nanoform Sentinel,0.0,0.0,CantPlayAi:29;CantAfford:18,often,0.053,CantPlayAi:42;CantAfford:19,often,False
+EOE,Timeline Culler,0.0,0.0,CantAfford:9,often,0.067,CantAfford:14,often,False
+EOE,Devastating Onslaught,0.0,0.0,CantPlayAi:22;CantAfford:5,often,0.0,CantPlayAi:52;CantAfford:11,often,False
+EOE,Atomic Microsizer,0.0,0.0,CantPlayAi:20;CantAfford:10,often,0.0,CantAfford:17;CantPlayAi:16,often,False
+EOE,Virus Beetle,0.0,0.0,CantPlayAi:27;CantAfford:15,often,0.105,CantPlayAi:45;CantAfford:22,often,False
+EOE,The Dominion Bracelet,0.0,0.0,CantAfford:34;CantPlayAi:23,often,0.04,CantAfford:33;CantPlayAi:13,often,False
+EOE,Meltstrider's Gear,0.0,0.0,CantPlayAi:11;CantAfford:6,often,0.053,CantPlayAi:13;CantAfford:7,often,False
+EOE,Tapestry Warden,0.0,0.0,CantAfford:10;CantPlayAi:5,often,0.0,CantPlayAi:4;CantAfford:2,often,False
+EOE,Systems Override,0.0,0.0,CantPlayAi:19;CantAfford:3,often,0.083,CantPlayAi:25;CantAfford:6,often,False
+EOE,Red Tiger Mechan,0.0,0.0,CantAfford:12,often,0.0,CantAfford:8,often,False
+EOE,Chrome Companion,0.0,0.0,CantPlayAi:28;CantAfford:9,often,0.118,CantPlayAi:36;CantAfford:19,often,False
+EOE,Skystinger,0.0,0.0,CantPlayAi:21;CantAfford:13,often,0.045,CantPlayAi:37;CantAfford:17,often,False
+EOE,Eumidian Terrabotanist,0.0,0.0,CantPlayAi:41;CantAfford:18,often,0.095,CantPlayAi:28;CantAfford:11,often,False
+EOE,Synthesizer Labship,0.0,0.0,CantAfford:18;CantPlayAi:14,often,0.0,CantAfford:10;CantPlayAi:9,often,False
+EOE,Faller's Faithful,0.0,0.0,BadEtbEffects:12;CantAfford:4;CantPlayAi:4,often,0.0,CantAfford:10;CantPlayAi:8,often,True
+EOE,Pain for All,0.0,0.0,CantAfford:38;CantPlayAi:13,often,0.231,CantPlayAi:16;CantAfford:13,often,False
+EOE,Illvoi Light Jammer,0.0,0.0,CantAfford:57;CantPlayAi:3,often,,,,False
+EOE,Uthros Psionicist,0.0,0.0,CantAfford:16;CantPlayAi:10,often,0.042,CantAfford:12;CantPlayAi:8,often,False
+EOE,Desculpting Blast,0.0,0.0,CantPlayAi:347;CantAfford:60,often,0.0,CantPlayAi:398;CantAfford:79,often,False
+EOE,Lost in Space,0.0,0.0,CantPlayAi:342;CantAfford:29,often,0.115,CantPlayAi:475;CantAfford:77,often,False
+EOE,Gigastorm Titan,0.0,0.0,CantPlayAi:23;CantAfford:8,often,0.176,CantPlayAi:25;CantAfford:12,often,False
+EOE,Squire's Lightblade,0.0,0.0,CantAfford:104;CantPlayAi:18,often,0.0,CantAfford:20;CantPlayAi:3,often,False
+EOE,Zookeeper Mechan,0.0,0.0,CantPlayAi:15;CantAfford:3,often,0.167,CantPlayAi:33;CantAfford:18,often,False
+EOE,Emergency Eject,0.0,0.0,CantPlayAi:188;CantAfford:8,often,0.059,CantPlayAi:187;CantAfford:43,often,False
+EOE,Thaumaton Torpedo,0.0,0.0,CantPlayAi:29;CantAfford:14,often,0.0,CantPlayAi:21;CantAfford:7,often,False
+EOE,Honor,0.0,0.0,CantPlayAi:8;CantAfford:6,often,0.0,CantPlayAi:37;CantAfford:13,often,False
+EOE,Thawbringer,0.0,0.0,CantPlayAi:27;CantAfford:10,often,0.105,CantPlayAi:31;CantAfford:20,often,False
+EOE,Cloudsculpt Technician,0.0,0.0,CantPlayAi:38;CantAfford:18,often,0.2,CantPlayAi:40;CantAfford:25,often,False
+EOE,Harmonious Grovestrider,0.0,0.0,CantPlayAi:18;CantAfford:10,often,0.222,CantPlayAi:20;CantAfford:13,often,False
+EOE,Kavaron Harrier,0.0,0.0,CantAfford:34;CantPlayAi:27,often,0.118,CantAfford:35;CantPlayAi:35,often,False
+EOE,Germinating Wurm,0.0,0.0,CantPlayAi:19;CantAfford:4,often,0.0,CantPlayAi:7;CantAfford:3,often,False
+TRK,Decree of Pain,0.95,0.762,,no_eval,0.826,,no_eval,False
+TRK,The Destruction of Praxis,0.9473684210526316,1.0,CantPlayAi:285,never,0.882,CantPlayAi:216,never,False
+TRK,"Kai Winn, Faithless Leader",0.9130434782608696,0.909,BadEtbEffects:190;CantPlayAi:188,never,0.864,BadEtbEffects:185;CantPlayAi:171,never,True
+TRK,Mirror Universe Intrusion,0.9090909090909092,,,,0.9,CantPlayAi:100,never,False
+TRK,Brazen Bluff,0.9,0.96,CantPlayAi:3021,never,0.917,CantPlayAi:2459,never,False
+TRK,"Q, Stacking the Deck",0.8947368421052632,0.864,BadEtbEffects:129;CantPlayAi:91,never,0.941,BadEtbEffects:93;CantPlayAi:75,never,True
+TRK,Infinite Diversity,0.8823529411764706,0.867,CantPlayAi:12,never,0.8,CantPlayAi:37,never,False
+TRK,Tell Me What You See,0.8823529411764706,0.895,CantPlayAi:174;BadEtbEffects:168,never,0.304,CantPlayAi:90;CantAfford:58,often,True
+TRK,"Nyota Uhura, Communications",0.85,0.833,BadEtbEffects:115;CantPlayAi:83,never,0.727,BadEtbEffects:123;CantPlayAi:95,never,True
+TRK,Captain's Tutelage,0.8461538461538461,0.824,CantPlayAi:1271;BadEtbEffects:109,never,0.286,CantPlayAi:1217;CantAfford:47,often,True
+TRK,Genesis Effect,0.8333333333333334,,,,1.0,CantPlayAi:684,never,False
+TRK,"Miles O'Brien, Transporter Ops",0.8333333333333334,0.833,CantPlayAi:60;BadEtbEffects:60;CantAfford:1,never,0.136,CantPlayAi:57;CantAfford:22,often,True
+TRK,Salt Vampire,0.8333333333333334,1.0,BadEtbEffects:119;CantPlayAi:97,never,0.0,CantPlayAi:33;CantAfford:22,often,True
+TRK,The Needs of the Many,0.8,0.647,CantPlayAi:1238;CantAfford:4,rare,0.737,CantPlayAi:1973;CantAfford:4,rare,False
+TRK,Make It So,0.7894736842105263,0.864,,no_eval,1.0,,no_eval,False
+TRK,Highly Illogical,0.7777777777777778,0.714,CantPlayAi:258;CantAfford:12,often,0.714,CantPlayAi:219;CantAfford:8,rare,False
+TRK,"H.M.S. Bounty, Unlikely Timeship",0.7391304347826086,0.875,CantPlayAi:85;BadEtbEffects:83,never,0.789,BadEtbEffects:80;CantPlayAi:70,never,True
+TRK,Blastoneuron,0.7368421052631579,0.875,BadEtbEffects:86;CantPlayAi:79;CantAfford:3,never,0.941,BadEtbEffects:106;CantPlayAi:78;CantAfford:4,rare,True
+TRK,Shields Up!,0.7,,,,,,,False
+TRK,Engineered Explosives,0.6470588235294118,0.773,,no_eval,0.818,,no_eval,False
+TRK,Federation Resupply,0.6363636363636364,0.692,CantPlayAi:126,rare,0.714,CantPlayAi:127;CantAfford:3,rare,False
+TRK,Crystalline Entity,0.5555555555555556,0.652,CantPlayAi:29;BadEtbEffects:10;CantAfford:4,often,0.812,CantPlayAi:41;BadEtbEffects:34;CantAfford:1,never,True
+TRK,Death Is Irrelevant,0.55,0.5,CantPlayAi:1,often,0.647,CantAfford:1,often,False
+TRK,Support Mission,0.5454545454545454,0.3,CantPlayAi:37;CantAfford:27,often,,,,False
+TRK,"Gul Dukat, Colonial Prefect",0.5294117647058824,0.261,CantPlayAi:14;CantAfford:3,often,0.412,CantPlayAi:16;CantAfford:9,often,False
+TRK,"U.S.S. Reliant, From Hell's Heart",0.5,0.636,CantPlayAi:46;BadEtbEffects:25;CantAfford:10,rare,0.182,CantPlayAi:46;CantAfford:23;BadEtbEffects:16,often,True
+TRK,Captain Sisay,0.5,,,,0.231,CantPlayAi:32;CantAfford:15,often,False
+TRK,Deep Space 9,0.5,0.476,CantAfford:1;CantPlayAi:1,often,0.55,CantPlayAi:8;CantAfford:3,often,False
+TRK,The Inner Light,0.4761904761904761,0.118,CantPlayAi:34;BadEtbEffects:20;CantAfford:10,often,0.526,CantPlayAi:36;BadEtbEffects:19;CantAfford:9,often,True
+TRK,Photosynthetic Physician,0.4736842105263157,0.059,CantPlayAi:17;CantAfford:5,often,0.333,CantPlayAi:22;CantAfford:12,often,False
+TRK,Species 8472,0.4705882352941176,0.071,CantPlayAi:22;CantAfford:7,often,0.125,CantPlayAi:26;CantAfford:7,often,False
+TRK,"Armus, Skin of Evil",0.4444444444444444,0.438,CantPlayAi:9;CantAfford:2,often,0.357,CantPlayAi:13;CantAfford:3,often,False
+TRK,Empress Galina,0.4444444444444444,0.28,CantPlayAi:70;CantAfford:44,often,0.571,CantPlayAi:61;CantAfford:41,rare,False
+TRK,Consider the Prime Directive,0.4375,0.36,CantPlayAi:1027;CantAfford:644,often,0.368,CantPlayAi:513;CantAfford:352,often,False
+TRK,Red Alert!,0.4375,0.381,CantPlayAi:1696;CantAfford:3,often,0.154,CantPlayAi:782;CantAfford:1,often,False
+TRK,"Tatyova, Benthic Druid",0.4166666666666667,0.2,CantPlayAi:36;CantAfford:24,often,,,,False
+TRK,Borg Cube,0.4166666666666667,0.3,CantPlayAi:8;CantAfford:5,often,0.2,CantPlayAi:6;CantAfford:6,often,False
+TRK,Dominion Saboteur,0.4166666666666667,0.273,CantPlayAi:14;CantAfford:8,often,,,,False
+TRK,Deep Space Scan,0.4,0.381,CantPlayAi:22;CantAfford:7,often,0.55,CantPlayAi:29;CantAfford:20,often,False
+TRK,Federation Field Medic,0.4,0.182,CantPlayAi:41;CantAfford:24,often,0.136,CantPlayAi:26;CantAfford:6,often,False
+TRK,Moopsy,0.3846153846153846,0.227,CantPlayAi:48;CantAfford:28,often,0.174,CantPlayAi:39;CantAfford:19,often,False
+TRK,"The Doctor, EMH",0.3636363636363636,,,,0.2,BadEtbEffects:23;CantAfford:9,often,False
+TRK,"Sarcophagus, Ship of the Dead",0.3529411764705882,0.222,CantPlayAi:30;CantAfford:19,often,0.25,CantPlayAi:35;CantAfford:22,often,False
+TRK,"Hoshi Sato, Exolinguist",0.35,0.278,CantPlayAi:31;CantAfford:24,often,0.294,CantPlayAi:41;CantAfford:19,often,False
+TRK,Andromedan Automatons,0.3478260869565217,0.059,CantPlayAi:37;CantAfford:23,often,0.105,CantPlayAi:50;CantAfford:29,often,False
+TRK,Enterprise NX-01,0.3333333333333333,0.235,CantPlayAi:59;CantAfford:16;BadEtbEffects:16,often,0.409,CantPlayAi:76;CantAfford:29,often,True
+TRK,Captain Kathryn Janeway,0.3333333333333333,0.304,CantPlayAi:74;CantAfford:47,often,0.2,CantPlayAi:45;CantAfford:27,often,False
+TRK,Ensign Pavel Chekov,0.3333333333333333,0.1,CantPlayAi:26;CantAfford:16,often,,,,False
+TRK,There's Coffee in that Nebula,0.3333333333333333,0.222,CantPlayAi:60;CantAfford:38,often,0.214,CantPlayAi:20;CantAfford:7,often,False
+TRK,A Good Day to Die,0.3333333333333333,0.429,CantPlayAi:1752;CantAfford:4,often,0.333,CantPlayAi:1533;CantAfford:2,often,False
+TRK,Romulan Bird-of-Prey,0.3333333333333333,0.077,CantPlayAi:53;CantAfford:21,often,0.19,CantPlayAi:57;CantAfford:33,often,False
+TRK,Cloak and Phaser,0.3125,0.286,,no_eval,0.444,CantPlayAi:2,often,False
+TRK,"Drivnod, Carnage Dominus",0.3076923076923077,0.222,CantPlayAi:30;CantAfford:13,often,0.2,CantPlayAi:37;CantAfford:25,often,False
+TRK,MACO Strike Team,0.3076923076923077,,,,0.1,CantPlayAi:19;CantAfford:9,often,False
+TRK,Rules of Acquisition,0.3043478260869565,0.13,CantPlayAi:34;CantAfford:23,often,0.333,CantPlayAi:24;CantAfford:22,often,False
+TRK,"U.S.S. Cerritos, Following Up",0.3043478260869565,0.333,CantPlayAi:61;CantAfford:48,often,0.158,CantPlayAi:44;CantAfford:28,often,False
+TRK,Excalbian Gamemaster,0.3043478260869565,0.062,CantPlayAi:21;CantAfford:8,often,0.125,CantPlayAi:26;CantAfford:11,often,False
+TRK,"U.S.S. Voyager, Lone Wanderer",0.3,,,,,,,False
+TRK,The Holodeck,0.3,0.4,CantPlayAi:21;CantAfford:6,often,0.333,CantPlayAi:17;CantAfford:13,often,False
+TRK,"Quark, Humble Proprietor",0.3,0.083,CantPlayAi:30;CantAfford:19,often,0.176,CantPlayAi:58;CantAfford:36,often,False
+TRK,Xenobotanist,0.2941176470588235,0.0,CantPlayAi:39;CantAfford:24,often,0.35,CantPlayAi:64;CantAfford:41,often,False
+TRK,Lieutenant Commander Data,0.2941176470588235,0.083,CantPlayAi:56;CantAfford:29,often,0.25,CantPlayAi:54;CantAfford:32,often,False
+TRK,Melkotian Adjudicator,0.2941176470588235,0.235,CantPlayAi:47;CantAfford:21,often,0.278,CantPlayAi:38;CantAfford:21,often,False
+TRK,Humpback Whales,0.2941176470588235,0.095,CantPlayAi:15;CantAfford:3,often,0.19,CantPlayAi:43;CantAfford:18,often,False
+TRK,Cha'DIch Investigator,0.2857142857142857,0.158,CantPlayAi:24;CantAfford:11,often,0.12,CantPlayAi:34;CantAfford:9,often,False
+TRK,Lt. Cmdr. Geordi La Forge,0.2857142857142857,0.13,CantPlayAi:36;CantAfford:20,often,0.208,CantPlayAi:48;CantAfford:21,often,False
+TRK,Interstellar Effigy,0.2857142857142857,0.5,CantPlayAi:21;CantAfford:10;BadEtbEffects:2,often,,,,True
+TRK,Genesis Device,0.2857142857142857,0.273,CantPlayAi:44;CantAfford:27,often,0.062,CantPlayAi:36;CantAfford:24,often,False
+TRK,Planetary Bombardment,0.2727272727272727,0.0,CantPlayAi:39;CantAfford:2,often,0.24,CantPlayAi:114;CantAfford:3,often,False
+TRK,"Georgiou, Terran Emperor",0.2727272727272727,,,,0.462,CantPlayAi:15;CantAfford:5,often,False
+TRK,"Daniels, Temporal Agent",0.2727272727272727,0.273,CantPlayAi:35;BadEtbEffects:33;CantAfford:1,often,0.308,CantPlayAi:34;BadEtbEffects:31;CantAfford:6,often,True
+TRK,Cetacean Ops,0.2727272727272727,0.222,CantPlayAi:40;CantAfford:25,often,0.524,CantPlayAi:45;CantAfford:24,often,False
+TRK,"D'Vana Tendi, Optimistic Ensign",0.2727272727272727,0.182,CantPlayAi:9;CantAfford:2,often,,,,False
+TRK,Adversary by Algorithm,0.2666666666666666,0.318,CantPlayAi:76;CantAfford:43,often,0.176,CantPlayAi:51;CantAfford:22,often,False
+TRK,"V'Ger, the Intruder",0.2631578947368421,0.238,CantPlayAi:21;CantAfford:10,often,0.412,CantPlayAi:7;CantAfford:5,often,False
+TRK,Xindi Surveyors,0.25,0.111,CantPlayAi:24;CantAfford:6,often,0.167,CantPlayAi:35;CantAfford:25,often,False
+TRK,"Rok-Tahk, Budding Scientist",0.25,0.091,CantPlayAi:14;CantAfford:7,often,0.2,CantPlayAi:7;CantAfford:3,often,False
+TRK,Grand Nagus Zek,0.25,0.167,CantPlayAi:41;CantAfford:26,often,0.095,CantPlayAi:84;CantAfford:53,often,False
+TRK,"Beckett Mariner, Impetuous Ensign",0.25,0.0,CantPlayAi:41;CantAfford:18,often,0.0,CantPlayAi:31;CantAfford:13,often,False
+TRK,Year of Hell,0.25,0.222,CantPlayAi:45;CantAfford:26;BadEtbEffects:2,often,0.167,CantPlayAi:38;CantAfford:21;BadEtbEffects:4,often,True
+TRK,Dahar Master,0.238095238095238,0.389,CantPlayAi:59;CantAfford:40,often,0.333,CantPlayAi:33;CantAfford:17,often,False
+TRK,Hive Mind Coprocessor,0.2352941176470588,0.0,CantAfford:3;CantPlayAi:1,often,0.105,CantAfford:2;CantPlayAi:1,often,False
+TRK,Ghost of Illyria,0.2272727272727272,0.267,CantPlayAi:36;BadEtbEffects:14;CantAfford:11,often,0.391,CantPlayAi:72;CantAfford:36,often,True
+TRK,Conquest Mission,0.2272727272727272,0.125,CantPlayAi:70;CantAfford:48,often,0.308,CantPlayAi:33;CantAfford:22,often,False
+TRK,Anthropological Mission,0.217391304347826,0.364,CantPlayAi:54;CantAfford:43,often,0.3,CantPlayAi:43;CantAfford:19,often,False
+TRK,Dominion Supervisor,0.2142857142857142,0.211,CantPlayAi:38;CantAfford:29;BadEtbEffects:6,often,0.3,CantPlayAi:79;CantAfford:57;BadEtbEffects:11,often,True
+TRK,"Prosper, Tome-Bound",0.2142857142857142,0.167,CantPlayAi:40;CantAfford:27,often,,,,False
+TRK,Marooned,0.2105263157894736,0.0,CantPlayAi:30;CantAfford:3,often,0.0,CantPlayAi:45;CantAfford:2,often,False
+TRK,Exploratory Mission,0.2105263157894736,0.158,CantPlayAi:32;CantAfford:14,often,0.118,CantPlayAi:47;CantAfford:25,often,False
+TRK,First Contact,0.2105263157894736,0.158,CantPlayAi:1080;CantAfford:38,often,0.25,CantPlayAi:617;CantAfford:18,often,False
+TRK,"U.S.S. Excelsior, Cutting Edge",0.2105263157894736,0.263,BadEtbEffects:92;CantAfford:5;CantPlayAi:5,often,0.0,CantAfford:12;CantPlayAi:2,often,True
+TRK,Academy Instructor,0.2105263157894736,0.13,CantPlayAi:65;CantAfford:36,often,0.375,CantPlayAi:55;CantAfford:27,often,False
+TRK,Bruvac the Grandiloquent,0.2,0.167,CantPlayAi:36;CantAfford:18,often,0.25,CantPlayAi:39;CantAfford:23,often,False
+TRK,The Wrath of Khan,0.2,0.25,BadEtbEffects:27;CantAfford:12;CantPlayAi:11,often,0.091,BadEtbEffects:21;CantAfford:10;CantPlayAi:4,often,True
+TRK,Hologram Janeway,0.2,0.118,CantPlayAi:56;CantAfford:33,often,0.211,CantPlayAi:43;CantAfford:17,often,False
+TRK,Those Old Scientists,0.2,0.294,CantPlayAi:53;CantAfford:38,often,0.167,CantPlayAi:82;CantAfford:53,often,False
+TRK,"Thada Adel, Acquisitor",0.2,0.421,CantPlayAi:65;CantAfford:44,often,0.25,CantPlayAi:47;CantAfford:29,often,False
+TRK,"Gabriel Lorca, Mirror Menace",0.2,0.125,CantPlayAi:32;CantAfford:21,often,0.25,CantPlayAi:29;CantAfford:17,often,False
+TRK,Emergency Medical Hologram,0.2,0.067,CantPlayAi:58;CantAfford:25;BadEtbEffects:18,often,0.227,CantPlayAi:88;CantAfford:43;BadEtbEffects:23,often,True
+TRK,Dr. Beverly Crusher,0.2,,,,0.364,CantPlayAi:14;CantAfford:6,often,False
+TRK,Open Communications,0.2,0.053,CantPlayAi:29;CantAfford:6,often,0.25,CantPlayAi:51;CantAfford:30,often,False
+TRK,The Measure of a Man,0.1904761904761904,0.267,CantPlayAi:28;CantAfford:10;BadEtbEffects:3,often,0.222,CantPlayAi:50;CantAfford:22;BadEtbEffects:11,often,True
+TRK,Assault Drone,0.1904761904761904,0.188,CantPlayAi:32;CantAfford:20,often,0.118,CantPlayAi:36;CantAfford:24,often,False
+TRK,"Jett Reno, Problem Solver",0.1904761904761904,0.048,CantPlayAi:39;CantAfford:14,often,0.333,CantPlayAi:55;CantAfford:38,often,False
+TRK,Collation Trimatrix,0.1875,0.105,CantPlayAi:31;CantAfford:15,often,0.0,CantPlayAi:43;CantAfford:22,often,False
+TRK,Suus Mahna Practitioner,0.1875,,,,,,,False
+TRK,Rogue Artificial Intelligence,0.1875,0.095,CantPlayAi:13;CantAfford:4,often,0.278,CantPlayAi:13;CantAfford:12,often,False
+TRK,Suurok-Class Science Vessel,0.1818181818181818,0.235,CantPlayAi:52;CantAfford:38;BadEtbEffects:2,often,0.3,CantPlayAi:43;CantAfford:27,often,True
+TRK,Sickbay,0.1818181818181818,0.056,CantAfford:2;CantPlayAi:1,often,0.16,CantPlayAi:9;CantAfford:6,often,False
+TRK,Saurian Explorer,0.1818181818181818,,,,,,,False
+TRK,"Una Chin-Riley, Number One",0.1764705882352941,0.053,CantPlayAi:3;CantAfford:1,often,0.048,CantAfford:5;CantPlayAi:1,often,False
+TRK,Pet Sehlat,0.1764705882352941,0.091,CantPlayAi:31;CantAfford:5,often,0.0,CantPlayAi:18;CantAfford:8,often,False
+TRK,"Culber and Stamets, Star-Crossed",0.1739130434782608,0.053,CantPlayAi:31;CantAfford:13,often,0.176,CantPlayAi:27;CantAfford:14,often,False
+TRK,"Sheoldred, the Apocalypse",0.1739130434782608,0.312,CantPlayAi:43;CantAfford:34,often,0.353,CantPlayAi:41;CantAfford:29,often,False
+TRK,Command Subadjunct,0.1666666666666666,,,,0.0,CantAfford:10;CantPlayAi:9,often,False
+TRK,"U.S.S. Discovery, at Black Alert",0.1666666666666666,0.2,CantPlayAi:29;CantAfford:13,often,0.217,CantPlayAi:49;CantAfford:26,often,False
+TRK,"Torbran, Thane of Red Fell",0.1666666666666666,,,,,,,False
+TRK,"Sylvia Tilly, Joy of Discovery",0.1666666666666666,0.286,CantPlayAi:25;CantAfford:14,often,0.154,CantPlayAi:34;CantAfford:24,often,False
+TRK,Syndicate Liquidators,0.1578947368421052,0.25,CantPlayAi:48;CantAfford:21,often,0.222,CantPlayAi:28;CantAfford:8,often,False
+TRK,"Rishkar, Peema Renegade",0.1578947368421052,0.105,CantPlayAi:37;CantAfford:20,often,0.095,CantPlayAi:36;CantAfford:21,often,False
+TRK,The Caretaker,0.1578947368421052,0.227,CantPlayAi:16;CantAfford:13,often,0.238,CantAfford:6;CantPlayAi:6,often,False
+TRK,Mugato,0.1538461538461538,0.0,CantPlayAi:14;CantAfford:7,often,,,,False
+TRK,Dr. Joseph M'Benga,0.1538461538461538,0.059,CantPlayAi:47;CantAfford:27,often,0.333,CantPlayAi:58;CantAfford:36,often,False
+TRK,Final Frontier,0.15,0.048,CantAfford:29,often,0.25,CantAfford:32,often,False
+TRK,Class-F Shuttlecraft,0.15,0.043,CantPlayAi:38;CantAfford:29,often,0.13,CantPlayAi:45;CantAfford:39,often,False
+TRK,"Zefram Cochrane, Warp Pioneer",0.15,0.182,CantPlayAi:46;CantAfford:26,often,0.429,CantPlayAi:51;CantAfford:30,often,False
+TRK,"Picard, Leading by Example",0.15,0.095,CantPlayAi:51;CantAfford:34,often,0.045,CantPlayAi:43;CantAfford:22,often,False
+TRK,Set Phasers to . . .,0.1428571428571428,0.118,CantPlayAi:588;CantAfford:258,often,0.056,CantPlayAi:790;CantAfford:144,often,False
+TRK,Combadge,0.1428571428571428,0.067,CantAfford:27;CantPlayAi:5,often,0.0,CantAfford:6;CantPlayAi:5,often,False
+TRK,In the Pale Moonlight,0.1428571428571428,0.176,CantPlayAi:38;CantAfford:29,often,0.111,CantPlayAi:35;CantAfford:31,often,False
+TRK,Collective Drone,0.1428571428571428,0.105,CantPlayAi:29;CantAfford:10,often,0.0,CantPlayAi:37;CantAfford:21,often,False
+TRK,Arcum Dagsson,0.1428571428571428,0.167,CantPlayAi:51;CantAfford:30,often,0.19,CantPlayAi:62;CantAfford:41,often,False
+TRK,"Mikaeus, the Lunarch",0.1428571428571428,0.0,CantPlayAi:26,often,0.222,CantPlayAi:37,often,False
+TRK,Silicate Surveyor,0.1428571428571428,0.235,CantPlayAi:23;CantAfford:14,often,0.125,CantPlayAi:31;CantAfford:16,often,False
+TRK,Captain James T. Kirk,0.1304347826086956,0.167,CantPlayAi:40;CantAfford:19,often,0.273,CantPlayAi:51;CantAfford:27,often,False
+TRK,Test of Courage,0.1304347826086956,0.083,CantPlayAi:570;CantAfford:114,often,0.174,CantPlayAi:580;CantAfford:99,often,False
+TRK,"U.S.S. Enterprise-D, Galaxy-Class",0.125,0.158,CantPlayAi:42;CantAfford:28,often,0.167,CantPlayAi:47;CantAfford:37,often,False
+TRK,Dominion Infiltration,0.125,0.125,CantPlayAi:52;CantAfford:17,often,0.143,CantPlayAi:32;CantAfford:19,often,False
+TRK,"Sulu, Space Swashbuckler",0.125,0.105,CantPlayAi:32;CantAfford:9,often,0.067,CantPlayAi:32;CantAfford:12,often,False
+TRK,Eject the Warp Core,0.125,0.278,CantPlayAi:743;CantAfford:103,often,0.4,CantPlayAi:650;CantAfford:130,often,False
+TRK,Federation Probe,0.125,0.333,CantPlayAi:12;CantAfford:8,often,0.053,CantPlayAi:18;CantAfford:14,often,False
+TRK,"Khan, Vengeful Heart",0.125,0.062,CantPlayAi:34;CantAfford:22,often,0.25,CantPlayAi:62;CantAfford:47,often,False
+TRK,Assembly Specialist,0.12,0.261,CantPlayAi:54;CantAfford:33,often,0.174,CantPlayAi:37;CantAfford:17,often,False
+TRK,Captain Jean-Luc Picard,0.1176470588235294,0.045,CantPlayAi:12;CantAfford:3,often,0.0,CantPlayAi:11;CantAfford:8,often,False
+TRK,Emergency Holographic Crew,0.1176470588235294,0.222,CantPlayAi:37;CantAfford:11,often,0.292,CantPlayAi:45;CantAfford:28,often,False
+TRK,Command Decision,0.1176470588235294,0.077,CantPlayAi:33;CantAfford:23,often,0.056,CantPlayAi:39;CantAfford:33,often,False
+TRK,Test of Identity,0.1176470588235294,0.059,CantPlayAi:551;CantAfford:163,often,0.222,CantPlayAi:497;CantAfford:151,often,False
+TRK,Commander Raffi Musiker,0.1111111111111111,0.056,CantPlayAi:60;CantAfford:30,often,0.174,CantPlayAi:56;CantAfford:31,often,False
+TRK,"Seven of Nine, Unassimilated",0.1111111111111111,0.125,CantPlayAi:44;CantAfford:21,often,0.25,CantPlayAi:26;CantAfford:17,often,False
+TRK,Tal Shiar Operative,0.1111111111111111,0.0,CantPlayAi:42;CantAfford:19,often,0.263,CantPlayAi:48;CantAfford:25,often,False
+TRK,Captain Jonathan Archer,0.1111111111111111,0.045,CantPlayAi:51;CantAfford:24,often,0.211,CantPlayAi:41;CantAfford:18,often,False
+TRK,"Erica Ortegas, Plucky Pilot",0.1052631578947368,0.0,CantAfford:2,often,0.062,CantAfford:9,often,False
+TRK,"Cleveland Booker, Empath",0.1052631578947368,0.105,CantPlayAi:42;CantAfford:30,often,0.176,CantPlayAi:27;CantAfford:16,often,False
+TRK,Type-2 Phaser,0.1052631578947368,0.0,BadEtbEffects:29;CantPlayAi:16;CantAfford:6,often,0.111,CantPlayAi:23;CantAfford:14,often,True
+TRK,The Traveler,0.1,0.0,CantPlayAi:23;CantAfford:3,often,,,,False
+TRK,The Duras Sisters,0.1,0.091,CantPlayAi:20;CantAfford:6,often,,,,False
+TRK,Tal Shiar Analyst,0.1,0.091,CantPlayAi:22;CantAfford:6,often,0.083,CantPlayAi:28;CantAfford:12,often,False
+TRK,Test of Conviction,0.1,0.087,CantPlayAi:64;CantAfford:38,often,0.043,CantPlayAi:31;CantAfford:28,often,False
+TRK,"Dal R'El, Augment Orphan",0.1,0.0,CantPlayAi:20;CantAfford:14,often,,,,False
+TRK,Warp Core,0.1,0.056,CantPlayAi:28;CantAfford:13,often,0.1,CantPlayAi:43;CantAfford:19,often,False
+TRK,"Tea, Earl Grey, Hot",0.1,0.105,CantPlayAi:36;CantAfford:20,often,0.077,CantPlayAi:29;CantAfford:13,often,False
+TRK,D'Ghor Bloodletter,0.0909090909090909,,,,0.3,CantPlayAi:31;CantAfford:18,often,False
+TRK,"General Chang, Cold Warrior",0.0909090909090909,0.15,CantPlayAi:29;CantAfford:11,often,0.048,CantPlayAi:28;CantAfford:10,often,False
+TRK,"Lore, Positronic Provocateur",0.0909090909090909,,,,,,,False
+TRK,"Gowron, Eager for Battle",0.0909090909090909,0.1,CantPlayAi:25;CantAfford:13,often,0.308,CantPlayAi:43;CantAfford:22,often,False
+TRK,The Naked Time,0.0833333333333333,0.188,CantPlayAi:40;CantAfford:25,often,0.071,CantPlayAi:49;CantAfford:23;BadEtbEffects:7,often,False
+TRK,Oberth-Class Starship,0.0833333333333333,0.091,CantPlayAi:23;CantAfford:12,often,,,,False
+TRK,"Khan, Despot by Design",0.0769230769230769,0.167,CantPlayAi:35;CantAfford:19,often,0.053,CantPlayAi:31;CantAfford:15,often,False
+TRK,"Rutherford, Upgraded Ensign",0.0769230769230769,0.125,CantPlayAi:32;CantAfford:22,often,0.167,CantPlayAi:57;CantAfford:39,often,False
+TRK,Cold-Blooded Crew,0.074074074074074,0.045,CantPlayAi:5;CantAfford:4,often,0.13,CantPlayAi:22;CantAfford:12,often,False
+TRK,Savvy Profiteer,0.0714285714285714,0.0,CantPlayAi:27;CantAfford:5,often,0.056,CantPlayAi:20;CantAfford:6,often,False
+TRK,Organic Avulsion Unit,0.0666666666666666,0.2,CantPlayAi:26;CantAfford:12,often,0.071,CantPlayAi:30;CantAfford:15,often,False
+TRK,Planetary Patrol,0.0666666666666666,0.188,CantPlayAi:32;CantAfford:12,often,0.118,CantPlayAi:50;CantAfford:30,often,False
+TRK,Test of Priorities,0.0625,0.118,CantPlayAi:199;CantAfford:49,often,0.0,CantPlayAi:256;CantAfford:99,often,False
+TRK,Horta,0.0625,0.158,CantPlayAi:16;CantAfford:11,often,0.05,CantPlayAi:19;CantAfford:10,often,False
+TRK,Munitions Enthusiast,0.0625,0.125,CantPlayAi:30;CantAfford:11,often,0.045,CantPlayAi:44;CantAfford:15,often,False
+TRK,Test of Loyalty,0.0625,0.059,CantPlayAi:67;CantAfford:10,often,0.143,CantPlayAi:105;CantAfford:31,often,False
+TRK,"Phlox, Unorthodox Doctor",0.0588235294117647,0.0,CantPlayAi:9;CantAfford:8,often,0.0,CantAfford:4;CantPlayAi:1,often,False
+TRK,"70,000 Light-Years from Home",0.0588235294117647,0.087,CantPlayAi:50;CantAfford:13,often,0.2,CantPlayAi:68;CantAfford:11,often,False
+TRK,Storied Veteran,0.0588235294117647,0.0,CantPlayAi:22;CantAfford:8,often,0.105,CantPlayAi:27;CantAfford:10,often,False
+TRK,Ravenous Cosmozoan,0.0588235294117647,0.133,CantAfford:2,often,0.133,CantAfford:7,often,False
+TRK,Bat'leth,0.0555555555555555,0.2,BadEtbEffects:31;CantPlayAi:13;CantAfford:8,often,0.053,CantAfford:12;CantPlayAi:8,often,True
+TRK,Kobayashi Maru Scenario,0.0555555555555555,0.167,CantPlayAi:72;CantAfford:56,often,0.389,CantPlayAi:42;CantAfford:34,often,False
+TRK,DOT-7 Repair Squad,0.0555555555555555,0.053,CantPlayAi:30;CantAfford:10,often,0.19,CantPlayAi:33;CantAfford:11,often,False
+TRK,Isolinear Processor,0.0555555555555555,0.136,CantPlayAi:49;CantAfford:29,often,0.0,CantPlayAi:34;CantAfford:19,often,False
+TRK,Vexing Drone,0.0555555555555555,0.13,BadEtbEffects:31;CantPlayAi:21;CantAfford:12,often,0.1,CantAfford:27;CantPlayAi:17,often,True
+TRK,"He's Dead, Jim",0.0555555555555555,0.05,CantPlayAi:190;CantAfford:16,often,0.042,CantPlayAi:221;CantAfford:9,often,False
+TRK,Primary Unimatrix Adjunct,0.0526315789473684,0.038,CantAfford:13;CantPlayAi:4,often,0.056,CantAfford:6;CantPlayAi:4,often,False
+TRK,"Kenrith, the Returned King",0.0526315789473684,0.154,CantPlayAi:17;CantAfford:3,often,0.056,CantPlayAi:21;CantAfford:11,often,False
+TRK,Starfleet Security,0.0526315789473684,0.069,CantAfford:36,often,0.067,CantAfford:11,often,False
+TRK,Pattern Buffer Preservation,0.0526315789473684,0.045,CantAfford:30,often,0.037,CantAfford:10,often,False
+TRK,"Saru, Unthreatened",0.0526315789473684,0.13,BadEtbEffects:366;CantAfford:135;CantPlayAi:69,often,0.235,BadEtbEffects:247;CantAfford:103;CantPlayAi:39,often,True
+TRK,Khaaaaaaaaaaaannn!,0.0526315789473684,0.143,CantPlayAi:341;CantAfford:3,often,0.0,CantPlayAi:377;CantAfford:9,often,False
+TRK,Battle-Scarred Survivalist,0.05,0.048,CantPlayAi:41;CantAfford:18,often,0.133,CantPlayAi:29;CantAfford:13,often,False
+TRK,"Worf, Honor-Bound Warrior",0.05,0.111,CantPlayAi:39;CantAfford:17,often,0.15,CantPlayAi:43;CantAfford:23,often,False
+TRK,Guidance Failure,0.0476190476190476,0.067,CantPlayAi:167;CantAfford:3,often,0.0,CantPlayAi:137;CantAfford:12,often,False
+TRK,"Loot, Exuberant Explorer",0.0476190476190476,0.174,CantPlayAi:46;CantAfford:30,often,0.133,CantPlayAi:41;CantAfford:17,often,False
+TRK,"Jake Sisko, War Correspondent",0.0476190476190476,0.174,CantPlayAi:41;CantAfford:18,often,0.08,CantPlayAi:53;CantAfford:25,often,False
+TRK,"Lwaxana Troi, Charming Guest",0.0454545454545454,0.0,CantPlayAi:44;CantAfford:22,often,0.118,CantPlayAi:37;CantAfford:16,often,False
+TRK,"I'm a Doctor, Not a . . .",0.0454545454545454,0.15,CantPlayAi:1022;CantAfford:22,often,0.312,CantPlayAi:1190;CantAfford:22,often,False
+TRK,Targ Wrangler,0.0454545454545454,0.0,CantPlayAi:21;CantAfford:6,often,0.211,CantPlayAi:25;CantAfford:9,often,False
+TRK,Vulcan Mind-Meld,0.037037037037037,0.12,CantAfford:19,often,0.053,CantAfford:15,often,False
+TRK,Tactical Officer,0.0344827586206896,0.05,CantAfford:20;CantPlayAi:17,often,0.111,CantAfford:13;CantPlayAi:10,often,False
+TRK,De-evolve,0.0,0.042,CantPlayAi:27;CantAfford:12,often,0.0,CantPlayAi:20;CantAfford:2,often,False
+TRK,Overflow Submatrix,0.0,0.273,CantPlayAi:20;CantAfford:8,often,0.091,CantPlayAi:25;CantAfford:12,often,False
+TRK,"Worf, Intelligence Contractor",0.0,0.0,CantPlayAi:16;CantAfford:8,often,0.0,CantAfford:11;CantPlayAi:8,often,False
+TRK,"Kirk, Commanding Officer",0.0,0.0,CantAfford:8;CantPlayAi:5,often,0.05,CantAfford:15;CantPlayAi:8,often,False
+TRK,"Zero, Incorporeal Sensate",0.0,0.071,CantPlayAi:17;CantAfford:8,often,,,,False
+TRK,Resistance Is Futile,0.0,0.0,CantPlayAi:17;CantAfford:4,often,0.182,CantPlayAi:64;CantAfford:11,often,False
+TRK,Automated Warfare System,0.0,0.042,CantPlayAi:50;CantAfford:17,often,0.05,CantPlayAi:38;CantAfford:18,often,False
+TRK,Cantankerous Captain,0.0,0.0,CantAfford:13;CantPlayAi:4,often,0.105,CantAfford:10;CantPlayAi:5,often,False
+TRK,Encounter the Unknown,0.0,0.0,CantAfford:262,often,0.059,CantAfford:174,often,False
+TRK,Energize,0.0,0.2,CantPlayAi:35;CantAfford:5,often,0.182,CantPlayAi:37;CantAfford:8,often,False
+TRK,Plasma Cascade,0.0,0.056,CantPlayAi:218;CantAfford:38,often,0.048,CantPlayAi:377;CantAfford:52,often,False
+TRK,Troubling Tribbles,0.0,0.1,CantPlayAi:28;CantAfford:19,often,,,,False
+TRK,"Will Riker, First in the Field",0.0,0.0,CantAfford:6;CantPlayAi:4,often,0.071,CantAfford:4;CantPlayAi:3,often,False
+TRK,Holo-Engineer,0.0,0.368,CantPlayAi:48;CantAfford:39,often,0.167,CantPlayAi:54;CantAfford:51,often,False
+TRK,Stray from History,0.0,0.0,CantAfford:9,often,0.0,CantAfford:1;CantPlayAi:1,often,False
+TRK,Peace in Our Time,0.0,0.15,CantAfford:12;CantPlayAi:10,often,0.188,CantPlayAi:8;CantAfford:6,often,False
+TRK,Ertai Resurrected,0.0,,,,,,,False
+TRK,Tricorder,0.0,0.053,CantPlayAi:6;CantAfford:2,often,0.0,CantPlayAi:12;CantAfford:6,often,False
+TRK,Replicator,0.0,0.136,CantPlayAi:60;CantAfford:38,often,0.0,CantPlayAi:29;CantAfford:14,often,False
+TRK,Stable Wormhole,0.0,0.0,CantAfford:7;CantPlayAi:6,often,0.174,CantAfford:38;CantPlayAi:19,often,False
+TRK,Cybernetic Specialist,0.0,0.0,CantPlayAi:34;CantAfford:13,often,0.0,CantPlayAi:10;CantAfford:2,often,False
+TRK,"Brad Boimler, Eager Ensign",0.0,0.083,CantPlayAi:30;CantAfford:18,often,0.167,CantPlayAi:25;CantAfford:15,often,False
+TRK,Cloistered Telepath,0.0,0.0,CantAfford:153;CantPlayAi:26,often,0.053,BadEtbEffects:36;CantAfford:34;CantPlayAi:16,often,False
+TRK,Captain Michael Burnham,0.0,0.1,CantPlayAi:30;CantAfford:11,often,0.059,CantPlayAi:23;CantAfford:6,often,False
+TRK,Perils of the Past,0.0,,,,,,,False
+TRK,Pure Energy,0.0,0.062,CantPlayAi:19;CantAfford:15,often,0.0,CantAfford:18;CantPlayAi:15,often,False
+TRK,Starfleet Spanner Jockey,0.0,,,,0.083,CantPlayAi:37;CantAfford:26,often,False
+TRK,Boarding Action,0.0,,,,0.0,CantAfford:21;CantPlayAi:10,often,False
+TRK,"Neelix, Moral Support",0.0,0.0,CantPlayAi:22;CantAfford:10,often,0.4,CantPlayAi:36;CantAfford:22,often,False

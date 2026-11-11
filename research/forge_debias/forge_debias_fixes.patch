@@ -1,0 +1,184 @@
+diff --git a/forge-ai/src/main/java/forge/ai/AiController.java b/forge-ai/src/main/java/forge/ai/AiController.java
+index 0fd6cee9..215b1ad3 100644
+--- a/forge-ai/src/main/java/forge/ai/AiController.java
++++ b/forge-ai/src/main/java/forge/ai/AiController.java
+@@ -307,6 +307,38 @@ public class AiController {
+         }
+     }
+ 
++    /**
++     * forge-debias fix (research build): an enters-the-battlefield effect the AI would rather not run is still no reason to
++     * keep the permanent in hand when every targeted part either may choose no target or can only target opponents and
++     * their permanents. Untargeted parts count as harmless here only when they are choices (name, number, color, type).
++     */
++    private static boolean etbEffectCannotHurtAi(final SpellAbility exSA, final Card host) {
++        for (SpellAbility cur = exSA; cur != null; cur = cur.getSubAbility()) {
++            if (cur.usesTargeting()) {
++                final forge.game.spellability.TargetRestrictions tr = cur.getTargetRestrictions();
++                if (tr.getMinTargets(host, cur) == 0) {
++                    continue;
++                }
++                for (final String v : tr.getValidTgts()) {
++                    if (!(v.startsWith("Opponent") || v.contains("OppCtrl") || v.contains("OppOwn"))) {
++                        return false;
++                    }
++                }
++            } else if (cur == exSA) {
++                final ApiType a = cur.getApi();
++                if (a != ApiType.NameCard && a != ApiType.ChooseNumber && a != ApiType.ChooseColor && a != ApiType.ChooseType
++                        && !cur.hasParam("Defined") && a != ApiType.Earthbend) {
++                    return false;
++                }
++                if (cur.hasParam("Defined") && !cur.getParam("Defined").startsWith("Enchanted")
++                        && !cur.getParam("Defined").startsWith("Self")) {
++                    return false;
++                }
++            }
++        }
++        return true;
++    }
++
+     private boolean checkETBEffectsPreparedCard(final Card card, final SpellAbility sa, final ApiType api) {
+         final Player activator = sa.getActivatingPlayer();
+ 
+@@ -350,7 +382,8 @@ public class AiController {
+                 exSA = exSA.copy(activator);
+ 
+                 // These checks only work if the Executing SpellAbility is an Ability_Sub.
+-                if (exSA instanceof AbilitySub && !doTrigger(exSA, false)) {
++                if (exSA instanceof AbilitySub && !doTrigger(exSA, false)
++                        && !(api == null && etbEffectCannotHurtAi(exSA, card))) {
+                     return false;
+                 }
+             }
+@@ -444,6 +477,10 @@ public class AiController {
+                     // trigger will not run due to lack of targets and we 1. desperately need a creature or 2. are happy about that
+                     continue;
+                 }
++                if (api == null && etbEffectCannotHurtAi(exSA, card)) {
++                    // forge-debias fix: declining an optional or opponent-only effect is no reason to keep the permanent in hand
++                    continue;
++                }
+                 return false;
+             }
+         }
+@@ -943,7 +980,24 @@ public class AiController {
+         }
+     }
+ 
++    /** Research diagnostic (forge-debias audit only, observation): decisions for spells in hand. Off unless FORGE_DIAG is set. */
++    public static final java.util.concurrent.ConcurrentHashMap<String, java.util.concurrent.atomic.AtomicInteger> DIAG =
++            new java.util.concurrent.ConcurrentHashMap<>();
++    private static final boolean DIAG_ON = System.getenv("FORGE_DIAG") != null;
++
+     private AiPlayDecision canPlayAndPayFor(final SpellAbility sa) {
++        final Card diagHost = sa.getHostCard();
++        final boolean diag = DIAG_ON && sa.isSpell() && diagHost != null && diagHost.isInZone(forge.game.zone.ZoneType.Hand);
++        final AiPlayDecision d = canPlayAndPayForDiag(sa);
++        if (diag) {
++            final boolean lands = player.getLandsInPlay().size() >= diagHost.getCMC();
++            DIAG.computeIfAbsent(diagHost.getName() + "\t" + d + "\t" + (lands ? "L" : "l"),
++                    k -> new java.util.concurrent.atomic.AtomicInteger()).incrementAndGet();
++        }
++        return d;
++    }
++
++    private AiPlayDecision canPlayAndPayForDiag(final SpellAbility sa) {
+         AITimeoutTracker.check();
+         final Card host = sa.getHostCard();
+ 
+diff --git a/forge-core/src/main/java/forge/util/AITimeoutTracker.java b/forge-core/src/main/java/forge/util/AITimeoutTracker.java
+index 91db58b1..1d13036a 100644
+--- a/forge-core/src/main/java/forge/util/AITimeoutTracker.java
++++ b/forge-core/src/main/java/forge/util/AITimeoutTracker.java
+@@ -208,9 +208,13 @@ public final class AITimeoutTracker {
+     }
+ 
+     /** Cheap: call it inside AI loops. Throws {@link Expired} once the armed deadline passed (no-op when not armed). */
++    /** Research counter (forge-debias, observation only): AI decisions cut short by the deadline in this JVM. */
++    public static final java.util.concurrent.atomic.AtomicInteger EXPIRED_COUNT = new java.util.concurrent.atomic.AtomicInteger();
++
+     public static void check() {
+         final Limit l = LIMIT.get();
+         if (l.armed && (System.nanoTime() - l.deadlineNanos >= 0 || (l.honourInterrupt && Thread.currentThread().isInterrupted()))) {
++            EXPIRED_COUNT.incrementAndGet();
+             throw new Expired();
+         }
+     }
+diff --git a/forge-game/src/main/java/forge/game/GameLogFormatter.java b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+index f782187d..8974bf75 100644
+--- a/forge-game/src/main/java/forge/game/GameLogFormatter.java
++++ b/forge-game/src/main/java/forge/game/GameLogFormatter.java
+@@ -32,8 +32,28 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+                 : String.format("%dm : %02ds", minutes, seconds);
+     }
+ 
++    // L1/L2' research helper (observation only): append one line to the file named by env L1_LOG.
++    private static void l1Write(final String line) {
++        try {
++            final String path = System.getenv("L1_LOG");
++            if (path != null) {
++                java.nio.file.Files.write(java.nio.file.Paths.get(path), (line + "\n").getBytes(java.nio.charset.StandardCharsets.UTF_8),
++                        java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND);
++            }
++        } catch (Throwable t) {
++            // never affect the game
++        }
++    }
++
++    @Override
++    public GameLogEntry visit(GameEventGameStarted ev) {
++        l1Write("START");
++        return null;
++    }
++
+     @Override
+     public GameLogEntry visit(GameEventGameOutcome ev) {
++        l1Write("END|" + ev.winningPlayerName());
+         // Match Duration
+         if (log.getMatchStartMillis() >= 0) { // defend against it somehow still never being set
+             long durationMillis = System.currentTimeMillis() - log.getMatchStartMillis();
+@@ -309,6 +329,9 @@ public class GameLogFormatter extends IGameEventVisitor.Base<GameLogEntry> {
+         }
+         final ZoneType from = ev.from().zoneType();
+         final ZoneType to = ev.to().zoneType();
++        if (from == ZoneType.Library && to == ZoneType.Hand && ev.card() != null) {
++            l1Write("DRAW|" + ev.card().getName() + "|" + ev.card().getOwner().getName());
++        }
+         // Log mid-game ante additions (e.g. Contract from Below, Demonic Attorney)
+         if (to == ZoneType.Ante && from != ZoneType.Ante) {
+             final CardView c = ev.card();
+diff --git a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
+index 66fde34d..fda0d9fa 100644
+--- a/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
++++ b/forge-gui-desktop/src/main/java/forge/view/SimulateMatch.java
+@@ -275,6 +275,29 @@ public class SimulateMatch {
+             System.out.println(l);
+         }
+ 
++        // Research hook (FORGE_SIM_SEEN=1): per player, every own non-token card that left the library during the game
++        // (opening hand and draws, approximately: mill and library exile count too), with its final zone.
++        if (System.getenv("FORGE_SIM_SEEN") != null) {
++            System.out.printf("Timeouts: %d\t%d%n", 1 + iGame, forge.util.AITimeoutTracker.EXPIRED_COUNT.getAndSet(0));
++            if (System.getenv("FORGE_DIAG") != null) {
++                for (String key : new java.util.ArrayList<>(forge.ai.AiController.DIAG.keySet())) {
++                    System.out.printf("Diag:\t%d\t%s\t%d%n", 1 + iGame, key, forge.ai.AiController.DIAG.remove(key).get());
++                }
++            }
++            for (forge.game.player.Player p : g1.getRegisteredPlayers()) {
++                StringBuilder seen = new StringBuilder();
++                for (forge.game.card.Card c : p.getAllCards()) {
++                    if (c.isToken() || c.getOwner() != p || c.getPaperCard() == null || c.getZone() == null
++                            || c.getZone().getZoneType() == forge.game.zone.ZoneType.Library) {
++                        continue;
++                    }
++                    seen.append(c.getPaperCard().getName()).append('@').append(c.getZone().getZoneType()).append('|');
++                }
++                System.out.printf("Seen: %d\t%s\t%s\t%d\t%s%n", 1 + iGame, p.getName(),
++                        p.equals(g1.getStartingPlayer()) ? "play" : "draw", g1.getPhaseHandler().getTurn(), seen);
++            }
++        }
++
+         // If both players life totals to 0 in a single turn, the game should end in a draw
+         if (g1.getOutcome().isDraw()) {
+             System.out.printf("\nGame Result: Game %d ended in a Draw! Took %d ms.%n", 1 + iGame, sw.getTime());

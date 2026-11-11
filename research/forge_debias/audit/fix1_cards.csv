@@ -1,0 +1,939 @@
+set,name,drawn,kept,rate,g_eval,g_will,cls,top
+ECL,High Perfect Morcant,12,1,0.083,12,10,often,CantPlayAi:15;CantAfford:7
+ECL,Morcant's Loyalist,15,1,0.067,14,13,often,CantPlayAi:25;CantAfford:16
+ECL,Luminollusk,16,1,0.062,15,14,often,CantPlayAi:30;CantAfford:15
+ECL,Sapling Nursery,14,2,0.143,2,10,often,CantPlayAi:2
+ECL,Dream Seizer,19,4,0.211,16,12,often,CantPlayAi:27;CantAfford:15
+ECL,Great Forest Druid,17,2,0.118,16,14,often,CantPlayAi:27;CantAfford:11
+ECL,Changeling Wayfinder,20,1,0.05,20,20,often,CantPlayAi:59;CantAfford:41
+ECL,Perfect Intimidation,22,4,0.182,21,17,often,CantPlayAi:89;CantAfford:40
+ECL,Prismatic Undercurrents,21,2,0.095,19,20,often,CantPlayAi:53;CantAfford:35
+ECL,Bogslither's Embrace,17,2,0.118,17,15,often,CantPlayAi:90;CantAfford:14
+ECL,Barbed Bloodletter,14,0,0.0,14,14,often,CantPlayAi:2
+ECL,Feisty Spikeling,15,0,0.0,14,14,often,CantPlayAi:51;CantAfford:30
+ECL,Gallant Fowlknight,14,1,0.071,13,13,often,CantAfford:2;CantPlayAi:1
+ECL,Timid Shieldbearer,21,1,0.048,21,19,often,CantPlayAi:49;CantAfford:30
+ECL,Wanderbrine Trapper,24,1,0.042,23,21,often,CantPlayAi:47;CantAfford:31
+ECL,"Kirol, Attentive First-Year",19,1,0.053,18,18,often,CantPlayAi:43;CantAfford:15
+ECL,End-Blaze Epiphany,20,1,0.05,19,18,often,CantPlayAi:779
+ECL,"Rhys, the Evermore",20,0,0.0,19,18,often,BadEtbEffects:246;CantAfford:59;CantPlayAi:40
+ECL,Flame-Chain Mauler,17,1,0.059,16,14,often,CantPlayAi:34;CantAfford:18
+ECL,Mistmeadow Council,21,6,0.286,15,15,often,CantPlayAi:22;CantAfford:11
+ECL,Virulent Emissary,18,3,0.167,17,15,often,CantPlayAi:40;CantAfford:26
+ECL,Bristlebane Outrider,21,5,0.238,21,17,often,CantPlayAi:34;CantAfford:21
+ECL,Pitiless Fists,12,1,0.083,10,10,often,CantAfford:6;CantPlayAi:3
+ECL,Surly Farrier,32,5,0.156,31,26,often,CantPlayAi:39;CantAfford:19
+ECL,Figure of Fable,20,1,0.05,20,19,often,CantPlayAi:21;CantAfford:5
+ECL,Mutable Explorer,30,2,0.067,28,24,often,CantPlayAi:67;CantAfford:43
+ECL,Rooftop Percher,16,2,0.125,13,13,often,CantPlayAi:20;CantAfford:7
+ECL,Assert Perfection,17,1,0.059,14,13,often,CantPlayAi:57;CantAfford:15
+ECL,Flamebraider,16,2,0.125,15,13,often,CantPlayAi:22;CantAfford:6
+ECL,Reckless Ransacking,17,5,0.294,15,11,often,CantPlayAi:855;CantAfford:5
+ECL,Bloom Tender,20,2,0.1,20,19,often,CantPlayAi:26;CantAfford:14
+ECL,Sizzling Changeling,20,3,0.15,19,15,often,CantPlayAi:51;CantAfford:35
+ECL,Giantfall,19,1,0.053,19,18,often,CantPlayAi:412;CantAfford:107
+ECL,Bristlebane Battler,21,1,0.048,20,19,often,CantPlayAi:25;CantAfford:15
+ECL,Spiral into Solitude,15,1,0.067,15,14,often,CantPlayAi:13;CantAfford:6
+ECL,Glamer Gifter,22,1,0.045,22,21,often,CantAfford:148;CantPlayAi:20
+ECL,Eclipsed Merrow,11,3,0.273,10,6,often,CantPlayAi:20;CantAfford:10
+ECL,Mirrorform,15,12,0.8,8,0,never,CantPlayAi:599
+ECL,Kinscaer Sentry,17,1,0.059,17,16,often,CantPlayAi:39;CantAfford:18
+ECL,Unexpected Assistance,22,3,0.136,17,18,often,CantPlayAi:259;CantAfford:41
+ECL,Disruptor of Currents,25,3,0.12,14,18,often,CantAfford:72;CantPlayAi:16;AnotherTime:4
+ECL,Merrow Skyswimmer,13,2,0.154,9,10,often,CantPlayAi:17;CantAfford:5
+ECL,Noggle the Mind,34,2,0.059,30,28,often,CantPlayAi:270;CantAfford:71
+ECL,Stratosoarer,13,9,0.692,8,0,never,BadEtbEffects:38;CantPlayAi:28
+ECL,Ashling's Command,22,4,0.182,19,17,often,CantPlayAi:203;CantAfford:77
+ECL,Boneclub Berserker,15,2,0.133,14,12,often,CantPlayAi:28;CantAfford:13
+ECL,Burning Curiosity,17,0,0.0,17,17,often,CantAfford:8
+ECL,Sourbread Auntie,13,3,0.231,12,9,often,CantPlayAi:56;CantAfford:40
+ECL,Lasting Tarfire,14,1,0.071,14,13,often,CantPlayAi:26;CantAfford:16
+ECL,Sear,18,0,0.0,15,15,often,CantPlayAi:185;CantAfford:14
+ECL,Kulrath Mystic,20,2,0.1,20,18,often,CantPlayAi:24;CantAfford:15
+ECL,Rime Chill,19,10,0.526,11,6,often,CantPlayAi:307;CantAfford:52
+ECL,Boldwyr Aggressor,16,1,0.062,14,13,often,CantAfford:15;CantPlayAi:3
+ECL,Omni-Changeling,25,4,0.16,24,19,often,CantPlayAi:40;CantAfford:29;AnotherTime:2
+ECL,Shimmercreep,20,3,0.15,14,12,often,CantPlayAi:21;CantAfford:12
+ECL,Dose of Dawnglow,17,1,0.059,15,14,often,CantPlayAi:224;CantAfford:7
+ECL,Prismabasher,17,2,0.118,11,11,often,CantAfford:4
+ECL,"Lluwen, Imperfect Naturalist",14,1,0.071,14,13,often,CantPlayAi:22;CantAfford:8
+ECL,Scarblade Scout,15,4,0.267,12,10,often,CantPlayAi:27;CantAfford:16
+ECL,Boggart Mischief,18,2,0.111,16,13,often,CantPlayAi:38;CantAfford:23
+ECL,Dundoolin Weaver,17,1,0.059,16,15,often,CantPlayAi:39;CantAfford:25;BadEtbEffects:1
+ECL,Safewright Cavalry,20,1,0.05,17,18,often,CantAfford:8;CantPlayAi:3
+ECL,Shadow Urchin,16,0,0.0,13,12,often,CantPlayAi:31;CantAfford:15
+ECL,Unbury,19,4,0.211,17,13,often,CantPlayAi:1146;CantAfford:30
+ECL,Enraged Flamecaster,18,4,0.222,17,14,often,CantPlayAi:39;CantAfford:20
+ECL,Warren Torchmaster,18,3,0.167,18,16,often,CantPlayAi:37;CantAfford:28
+ECL,Graveshifter,22,2,0.091,19,18,often,CantPlayAi:48;CantAfford:38
+ECL,Twilight Diviner,18,2,0.111,16,14,often,CantPlayAi:33;CantAfford:18
+ECL,Scuzzback Scrounger,14,0,0.0,12,12,often,CantPlayAi:31;CantAfford:15
+ECL,Creakwood Safewright,29,4,0.138,23,21,often,CantPlayAi:47;CantAfford:14
+ECL,Hexing Squelcher,15,0,0.0,15,15,often,CantAfford:21;CantPlayAi:12
+ECL,Cinder Strike,21,1,0.048,20,19,often,CantPlayAi:48;CantAfford:2
+ECL,Tanufel Rimespeaker,15,2,0.133,15,12,often,CantPlayAi:40;CantAfford:23
+ECL,Champions of the Shoal,21,8,0.381,14,10,often,CantPlayAi:29;CantAfford:14
+ECL,Summit Sentinel,22,1,0.045,18,18,often,CantPlayAi:40;CantAfford:24
+ECL,Lavaleaper,26,1,0.038,23,21,often,CantPlayAi:46;CantAfford:22
+ECL,"Sanar, Innovative First-Year",22,2,0.091,20,18,often,CantPlayAi:39;CantAfford:31
+ECL,Feed the Flames,17,1,0.059,16,16,often,CantPlayAi:93;CantAfford:31
+ECL,Spinerock Tyrant,19,3,0.158,12,10,often,CantPlayAi:19;CantAfford:5
+ECL,Flamekin Gildweaver,18,4,0.222,18,14,often,CantPlayAi:41;CantAfford:24
+ECL,Elder Auntie,22,4,0.182,21,17,often,CantPlayAi:51;CantAfford:29
+ECL,Twinflame Travelers,13,5,0.385,13,8,often,CantPlayAi:27;CantAfford:13
+ECL,Thirst for Identity,16,3,0.188,16,13,often,CantPlayAi:412;CantAfford:93
+ECL,Heirloom Auntie,19,2,0.105,18,17,often,CantPlayAi:37;CantAfford:10
+ECL,Deceit,15,1,0.067,6,14,often,CantPlayAi:18;CantAfford:9
+ECL,Gravelgill Scoundrel,22,2,0.091,20,16,often,CantPlayAi:34;CantAfford:13
+ECL,Nameless Inversion,23,3,0.13,23,19,often,CantPlayAi:413;CantAfford:46
+ECL,Mischievous Sneakling,14,2,0.143,13,7,often,CantPlayAi:527;CantAfford:28
+ECL,Dawnhand Eulogist,14,0,0.0,13,13,often,CantPlayAi:23;CantAfford:6
+ECL,Champion of the Weird,15,7,0.467,9,8,often,CantAfford:5;CantPlayAi:2
+ECL,Moonglove Extractor,21,6,0.286,20,16,often,CantPlayAi:73;CantAfford:48
+ECL,Harmonized Crescendo,16,6,0.375,4,10,often,CantPlayAi:38;CantAfford:21
+ECL,Gutsplitter Gang,18,3,0.167,15,15,often,CantPlayAi:20;CantAfford:6
+ECL,Voracious Tome-Skimmer,18,2,0.111,16,15,often,CantPlayAi:29;CantAfford:9
+ECL,Glamermite,23,0,0.0,22,22,often,CantAfford:188;CantPlayAi:29;BadEtbEffects:17
+ECL,Glen Elendra's Answer,37,34,0.919,28,0,never,CantPlayAi:303
+ECL,Emptiness,10,0,0.0,3,10,often,CantPlayAi:8;CantAfford:3
+ECL,Retched Wretch,19,1,0.053,18,18,often,CantPlayAi:35;CantAfford:14
+ECL,Chronicle of Victory,15,2,0.133,13,13,often,CantAfford:5;CantPlayAi:3
+ECL,Meanders Guide,22,2,0.091,18,17,often,CantPlayAi:30;CantAfford:22
+ECL,"Abigale, Eloquent First-Year",19,1,0.053,18,17,often,CantPlayAi:12;CantAfford:6
+ECL,Kinsbaile Aspirant,14,0,0.0,14,14,often,CantPlayAi:39;CantAfford:17
+ECL,Reaping Willow,10,0,0.0,9,9,often,CantPlayAi:10;CantAfford:3
+ECL,Slumbering Walker,22,1,0.045,18,17,often,CantPlayAi:41;CantAfford:23
+ECL,Scarblade's Malice,28,2,0.071,23,21,often,CantPlayAi:2593;CantAfford:5
+ECL,Morningtide's Light,19,6,0.316,19,13,often,CantPlayAi:65;CantAfford:9
+ECL,Personify,18,1,0.056,18,17,often,CantPlayAi:949;CantAfford:125
+ECL,Crib Swap,20,1,0.05,18,17,often,CantPlayAi:377;CantAfford:72
+ECL,Requiting Hex,22,3,0.136,18,14,often,CantPlayAi:886;CantAfford:18
+ECL,Dawnhand Dissident,18,4,0.222,17,14,often,CantPlayAi:27;CantAfford:12
+ECL,Bile-Vial Boggart,15,2,0.133,14,12,often,CantPlayAi:40;CantAfford:23
+ECL,Bitterbloom Bearer,17,5,0.294,16,11,often,CantPlayAi:766;CantAfford:42
+ECL,Bloodline Bidding,20,7,0.35,6,7,often,
+ECL,Blight Rot,18,1,0.056,17,16,often,CantPlayAi:154;CantAfford:41
+ECL,Squawkroaster,16,4,0.25,12,11,often,CantPlayAi:31;CantAfford:20
+ECL,Boggart Cursecrafter,19,0,0.0,18,18,often,CantPlayAi:37;CantAfford:18
+ECL,Auntie's Sentence,17,0,0.0,15,15,often,CantPlayAi:11;CantAfford:8
+ECL,Grub's Command,22,0,0.0,19,20,often,CantAfford:9;CantPlayAi:1
+ECL,Spell Snare,20,8,0.4,17,8,often,CantPlayAi:74;CantAfford:6
+ECL,Pestered Wellguard,16,2,0.125,13,12,often,CantAfford:18;CantPlayAi:16
+ECL,Keep Out,19,4,0.211,18,14,often,CantPlayAi:799;CantAfford:172
+ECL,Unwelcome Sprite,17,2,0.118,15,13,often,CantPlayAi:26;CantAfford:21
+ECL,Chomping Changeling,18,3,0.167,17,14,often,CantPlayAi:42;CantAfford:32
+ECL,Tend the Sprigs,16,0,0.0,15,15,often,CantAfford:3
+ECL,Crossroads Watcher,19,4,0.211,18,14,often,CantPlayAi:38;CantAfford:19
+ECL,Wildvine Pummeler,19,3,0.158,5,16,often,CantPlayAi:5
+ECL,Pummeler for Hire,18,3,0.167,17,14,often,CantPlayAi:20;CantAfford:12
+ECL,Aquitect's Defenses,21,1,0.048,20,19,often,CantPlayAi:1190;CantAfford:39
+ECL,Spry and Mighty,17,1,0.059,14,14,often,CantAfford:8
+ECL,Pyrrhic Strike,19,3,0.158,19,15,often,CantPlayAi:540;CantAfford:271
+ECL,Firdoch Core,23,4,0.174,21,17,often,CantPlayAi:73;CantAfford:43
+ECL,Wary Farmer,19,4,0.211,18,15,often,CantPlayAi:37;CantAfford:18
+ECL,Brigid's Command,18,1,0.056,17,16,often,CantAfford:37;CantPlayAi:29
+ECL,Eclipsed Kithkin,19,2,0.105,17,15,often,CantPlayAi:39;CantAfford:22
+ECL,Thoughtweft Charge,18,2,0.111,18,16,often,CantPlayAi:1134;CantAfford:5
+ECL,Bark of Doran,18,0,0.0,18,18,often,CantAfford:33;CantPlayAi:14
+ECL,Evershrike's Gift,17,4,0.235,18,16,often,CantPlayAi:67;CantAfford:34
+ECL,Champion of the Clachan,22,4,0.182,17,14,often,CantPlayAi:203;CantAfford:26
+ECL,Celestial Reunion,15,9,0.6,13,12,often,CantPlayAi:148
+ECL,Liminal Hold,16,1,0.062,15,14,often,CantAfford:14;CantPlayAi:9
+ECL,Dawn-Blessed Pennant,17,0,0.0,17,17,often,CantPlayAi:20;CantAfford:3
+ECL,Stalactite Dagger,26,2,0.077,26,24,often,CantPlayAi:22;CantAfford:16
+ECL,Appeal to Eirdu,24,4,0.167,22,18,often,CantPlayAi:1280;CantAfford:6
+ECL,Loch Mare,15,0,0.0,15,15,often,CantPlayAi:26;CantAfford:9
+ECL,Sunderflock,24,12,0.5,4,8,often,CantPlayAi:4
+ECL,Flitterwing Nuisance,18,2,0.111,18,16,often,CantPlayAi:21;CantAfford:5
+ECL,Gnarlbark Elm,19,2,0.105,18,17,often,CantPlayAi:27;CantAfford:10
+ECL,Wanderwine Farewell,19,6,0.316,9,11,often,CantPlayAi:5;AnotherTime:2;CantAfford:1
+ECL,Lofty Dreams,22,1,0.045,16,19,often,CantAfford:17;AnotherTime:4;CantPlayAi:4
+ECL,Springleaf Drum,20,18,0.9,0,0,no_eval,
+ECL,Silvergill Peddler,19,4,0.211,17,15,often,CantPlayAi:31;CantAfford:17
+ECL,Selfless Safewright,19,0,0.0,12,18,often,CantAfford:50;CantPlayAi:9;AnotherTime:4
+ECL,Midnight Tilling,24,7,0.292,23,16,often,CantPlayAi:1219;CantAfford:49
+ECL,Goliath Daydreamer,15,2,0.133,15,13,often,CantPlayAi:19;CantAfford:10
+ECL,Explosive Prodigy,16,1,0.062,16,14,often,CantPlayAi:36;CantAfford:20
+ECL,Formidable Speaker,26,2,0.077,24,22,often,CantPlayAi:47;CantAfford:21
+ECL,Gloom Ripper,19,8,0.421,17,10,often,BadEtbEffects:98;CantAfford:9;CantPlayAi:2
+ECL,Blighted Blackthorn,22,3,0.136,21,17,often,CantPlayAi:47;CantAfford:28
+ECL,Reluctant Dounguard,17,1,0.059,15,15,often,CantPlayAi:27;CantAfford:13
+ECL,Moonshadow,20,0,0.0,18,18,often,CantPlayAi:19;CantAfford:2
+ECL,Eclipsed Elf,10,0,0.0,9,9,often,CantPlayAi:22;CantAfford:12
+ECL,Darkness Descends,21,12,0.571,19,7,rare,CantPlayAi:142;CantAfford:2
+ECL,Goatnap,14,0,0.0,13,13,often,CantPlayAi:5;CantAfford:1
+ECL,Clachan Festival,15,1,0.067,14,12,often,CantPlayAi:43;CantAfford:29
+ECL,Riverguard's Reflexes,21,2,0.095,18,16,often,CantPlayAi:957;CantAfford:5
+ECL,Curious Colossus,19,8,0.421,11,9,often,CantPlayAi:17;CantAfford:1
+ECL,Thoughtweft Imbuer,15,4,0.267,14,10,often,CantPlayAi:38;CantAfford:20
+ECL,Wanderbrine Preacher,21,3,0.143,21,16,often,CantPlayAi:54;CantAfford:34
+ECL,Protective Response,18,1,0.056,17,16,often,CantPlayAi:744;CantAfford:5
+ECL,Catharsis,17,0,0.0,1,16,often,CantPlayAi:2
+ECL,Kithkeeper,17,8,0.471,8,7,often,CantPlayAi:9;CantAfford:3;BadEtbEffects:1
+ECL,Bre of Clan Stoutarm,15,3,0.2,15,12,often,CantPlayAi:39;CantAfford:23
+ECL,Soul Immolation,23,20,0.87,20,0,never,CantPlayAi:256
+ECL,Foraging Wickermaw,15,0,0.0,15,13,often,CantPlayAi:30;CantAfford:11
+ECL,Impolite Entrance,12,8,0.667,10,1,rare,CantPlayAi:111;CantAfford:14
+ECL,Puca's Eye,14,3,0.214,13,10,often,CantPlayAi:27;CantAfford:11
+ECL,Collective Inferno,18,0,0.0,12,17,often,CantAfford:8;CantPlayAi:6
+ECL,Eclipsed Boggart,10,2,0.2,10,9,often,CantPlayAi:37;CantAfford:25
+ECL,Run Away Together,21,21,1.0,0,0,no_eval,
+ECL,Adept Watershaper,18,1,0.056,17,16,often,CantPlayAi:34;CantAfford:21
+ECL,Moonlit Lamenter,26,2,0.077,23,22,often,CantPlayAi:49;CantAfford:24
+ECL,Iron-Shield Elf,13,3,0.231,12,9,often,CantPlayAi:27;CantAfford:18
+ECL,Taster of Wares,15,1,0.067,14,14,often,CantPlayAi:28;CantAfford:14
+ECL,Unforgiving Aim,19,1,0.053,17,16,often,CantPlayAi:267;CantAfford:98
+ECL,Soulbright Seeker,15,2,0.133,14,10,often,CantPlayAi:36;CantAfford:18
+ECL,Chaos Spewer,20,1,0.05,19,18,often,CantPlayAi:26;CantAfford:7
+ECL,Nightmare Sower,17,2,0.118,14,13,often,CantPlayAi:25;CantAfford:8
+ECL,Sting-Slinger,20,1,0.05,17,15,often,CantPlayAi:31;CantAfford:15
+ECL,Champion of the Path,21,6,0.286,15,14,often,CantPlayAi:23;CantAfford:8
+ECL,Wanderwine Distracter,16,4,0.25,13,9,often,CantPlayAi:36;CantAfford:26
+ECL,Kindle the Inner Flame,20,2,0.1,15,12,often,CantAfford:10;CantPlayAi:8
+ECL,Swat Away,17,3,0.176,16,13,often,CantPlayAi:323;CantAfford:35
+ECL,Tweeze,20,0,0.0,17,17,often,CantPlayAi:218;CantAfford:13
+ECL,Dawn's Light Archer,16,3,0.188,14,12,often,CantPlayAi:792;CantAfford:45
+ECL,Shinestriker,20,5,0.25,16,14,often,CantPlayAi:23;CantAfford:15;BadEtbEffects:1
+ECL,Temporal Cleansing,18,3,0.167,14,12,often,CantPlayAi:32;CantAfford:5;AnotherTime:1
+ECL,Shimmerwilds Growth,16,15,0.938,0,0,no_eval,
+ECL,Gathering Stone,15,1,0.067,14,12,often,CantPlayAi:30;CantAfford:13
+ECL,Deepchannel Duelist,12,1,0.083,10,9,often,CantPlayAi:6;CantAfford:5
+ECL,Glen Elendra Guardian,15,2,0.133,15,13,often,CantPlayAi:744;CantAfford:45
+ECL,"Ajani, Outland Chaperone",28,12,0.429,27,14,often,CantPlayAi:108;CantAfford:89
+ECL,Encumbered Reejerey,19,0,0.0,19,19,often,CantPlayAi:41;CantAfford:26
+ECL,Aurora Awakener,29,7,0.241,17,20,often,CantPlayAi:18;CantAfford:3
+ECL,Rimekin Recluse,21,1,0.048,21,19,often,CantPlayAi:46;CantAfford:30
+ECL,Thoughtweft Lieutenant,14,8,0.571,13,4,rare,BadEtbEffects:71;CantPlayAi:61
+ECL,Tributary Vaulter,16,1,0.062,16,16,often,CantPlayAi:54;CantAfford:34
+ECL,Kulrath Zealot,16,2,0.125,9,11,often,CantPlayAi:16;CantAfford:6
+ECL,Dream Harvest,12,3,0.25,7,7,often,CantAfford:4
+ECL,Blossombind,17,2,0.118,17,14,often,CantPlayAi:12;CantAfford:8
+ECL,Shore Lurker,15,1,0.067,14,14,often,CantPlayAi:20;CantAfford:7
+ECL,Mudbutton Cursetosser,17,1,0.059,16,16,often,CantPlayAi:36;CantAfford:17
+ECL,Blossoming Defense,15,1,0.067,15,14,often,CantPlayAi:766;CantAfford:6
+ECL,Boggart Prankster,15,0,0.0,14,14,often,CantPlayAi:22;CantAfford:6
+ECL,Stoic Grove-Guide,11,1,0.091,9,10,often,CantPlayAi:13;CantAfford:4
+ECL,Boulder Dash,15,0,0.0,11,11,often,CantPlayAi:37;CantAfford:7
+ECL,Goldmeadow Nomad,15,0,0.0,15,14,often,CantPlayAi:34;CantAfford:18
+ECL,Hovel Hurler,16,1,0.062,14,13,often,CantPlayAi:26;CantAfford:12
+ECL,Lys Alana Informant,18,3,0.167,16,12,often,CantPlayAi:31;CantAfford:16
+ECL,Silvergill Mentor,17,5,0.294,17,11,often,CantPlayAi:93;CantAfford:64
+ECL,Flock Impostor,15,0,0.0,14,13,often,CantAfford:61;CantPlayAi:12
+ECL,Moon-Vigil Adherents,14,3,0.214,13,11,often,CantPlayAi:49;CantAfford:37
+ECL,Illusion Spinners,20,2,0.1,17,18,often,CantPlayAi:132;CantAfford:14
+ECL,Morcant's Eyes,21,1,0.048,20,18,often,CantPlayAi:43;CantAfford:25
+ECL,Lys Alana Dignitary,16,0,0.0,16,16,often,CantPlayAi:32;CantAfford:4
+ECL,Burdened Stoneback,12,1,0.083,12,11,often,CantPlayAi:16;CantAfford:5
+ECL,Kinbinding,11,1,0.091,10,9,often,CantAfford:22
+ECL,Winnowing,12,9,0.75,0,0,no_eval,
+ECL,Wild Unraveling,15,6,0.4,15,9,often,CantPlayAi:143;CantAfford:99
+ECL,Sun-Dappled Celebrant,24,11,0.458,16,11,often,CantPlayAi:33;CantAfford:25
+ECL,Champions of the Perfect,12,4,0.333,8,7,often,CantPlayAi:10;CantAfford:2
+ECL,Vinebred Brawler,14,1,0.071,14,12,often,CantPlayAi:38;CantAfford:16
+ECL,Gilt-Leaf's Embrace,14,3,0.214,14,10,often,CantPlayAi:863;CantAfford:70
+ECL,Wistfulness,10,1,0.1,4,7,often,CantPlayAi:8;CantAfford:1
+ECL,Flaring Cinder,10,1,0.1,10,8,often,CantAfford:19;CantPlayAi:17
+TLA,Airbender's Reversal,17,3,0.176,15,12,often,CantPlayAi:930;CantAfford:73
+TLA,Team Avatar,15,1,0.067,11,6,often,CantAfford:13;CantPlayAi:11
+TLA,"Jet, Freedom Fighter",20,3,0.15,16,14,often,CantPlayAi:29;CantAfford:21
+TLA,"Mai, Jaded Edge",13,1,0.077,11,10,often,CantPlayAi:22;CantAfford:9
+TLA,Energybending,23,23,1.0,22,0,never,CantPlayAi:3018
+TLA,Gather the White Lotus,12,4,0.333,10,7,often,CantPlayAi:28;CantAfford:12
+TLA,Compassionate Healer,13,2,0.154,13,11,often,CantPlayAi:27;CantAfford:18
+TLA,Deserter's Disciple,21,0,0.0,19,19,often,CantPlayAi:25;CantAfford:4
+TLA,Crescent Island Temple,20,17,0.85,19,0,never,BadEtbEffects:122;CantPlayAi:71
+TLA,"Yue, the Moon Spirit",16,3,0.188,14,11,often,CantPlayAi:28;CantAfford:13
+TLA,Geyser Leaper,19,5,0.263,17,13,often,CantPlayAi:32;CantAfford:16
+TLA,"The Mechanist, Aerial Artisan",23,2,0.087,21,20,often,CantAfford:20;CantPlayAi:7
+TLA,Benevolent River Spirit,19,4,0.211,18,13,often,CantPlayAi:83;CantAfford:80
+TLA,Firebending Student,22,3,0.136,20,18,often,CantPlayAi:43;CantAfford:23
+TLA,Combustion Man,24,8,0.333,21,14,often,CantPlayAi:53;CantAfford:40
+TLA,Abandon Attachments,10,2,0.2,9,7,often,CantPlayAi:213;CantAfford:46
+TLA,Fire Sages,18,4,0.222,17,14,often,CantPlayAi:27;CantAfford:8
+TLA,"Sokka, Bold Boomeranger",19,4,0.211,18,14,often,CantPlayAi:40;CantAfford:28
+TLA,Obsessive Pursuit,16,2,0.125,15,13,often,CantPlayAi:49;CantAfford:25;BadEtbEffects:2
+TLA,Wolfbat,19,0,0.0,17,17,often,CantPlayAi:29;CantAfford:12
+TLA,"Zuko, Conflicted",18,1,0.056,18,17,often,CantPlayAi:37;CantAfford:16
+TLA,Fire Navy Trebuchet,32,8,0.25,30,24,often,CantPlayAi:115;CantAfford:78
+TLA,"Ozai, the Phoenix King",20,2,0.1,12,12,often,CantAfford:5
+TLA,Epic Downfall,17,0,0.0,16,16,often,CantPlayAi:79;CantAfford:3
+TLA,Dai Li Indoctrination,22,0,0.0,19,19,often,CantAfford:2
+TLA,Vindictive Warden,14,2,0.143,13,11,often,CantPlayAi:24;CantAfford:12
+TLA,"Zhao, the Moon Slayer",16,2,0.125,16,14,often,CantPlayAi:36;CantAfford:20
+TLA,"Momo, Friendly Flier",28,5,0.179,25,20,often,CantPlayAi:43;CantAfford:23
+TLA,Trusty Boomerang,32,4,0.125,30,30,often,CantPlayAi:20;CantAfford:16
+TLA,"Haru, Hidden Talent",32,4,0.125,30,26,often,CantPlayAi:63;CantAfford:43
+TLA,Leaves from the Vine,12,5,0.417,12,7,often,CantPlayAi:29;CantAfford:13
+TLA,White Lotus Reinforcements,16,1,0.062,16,15,often,CantAfford:21;CantPlayAi:10
+TLA,Origin of Metalbending,14,0,0.0,14,14,often,CantPlayAi:146;CantAfford:46
+TLA,Avatar Destiny,22,4,0.182,17,15,often,CantPlayAi:23;CantAfford:22
+TLA,Invasion Reinforcements,25,4,0.16,23,20,often,CantAfford:312;CantPlayAi:37
+TLA,"Aang, the Last Airbender",24,3,0.125,17,18,often,CantPlayAi:35;CantAfford:24
+TLA,Iguana Parrot,23,2,0.087,21,19,often,CantPlayAi:33;CantAfford:16
+TLA,Crashing Wave,19,18,0.947,18,0,never,CantPlayAi:254
+TLA,Enter the Avatar State,14,13,0.929,14,0,never,CantPlayAi:1907
+TLA,South Pole Voyager,24,1,0.042,21,17,often,CantPlayAi:38;CantAfford:17;BadEtbEffects:1
+TLA,Water Tribe Captain,24,5,0.208,22,18,often,CantPlayAi:45;CantAfford:23
+TLA,Path to Redemption,18,0,0.0,15,15,often,CantPlayAi:35;CantAfford:5
+TLA,Avatar Enthusiasts,23,8,0.348,13,9,often,CantPlayAi:25;CantAfford:21
+TLA,"Teo, Spirited Glider",24,0,0.0,23,23,often,CantAfford:26;CantPlayAi:15
+TLA,"Sokka, Lateral Strategist",12,1,0.083,12,11,often,CantPlayAi:18;CantAfford:9
+TLA,Cat-Owl,11,2,0.182,9,7,often,CantPlayAi:19;CantAfford:9
+TLA,Ember Island Production,21,0,0.0,18,18,often,CantAfford:4
+TLA,Waterbending Lesson,21,1,0.048,20,19,often,CantPlayAi:74;CantAfford:33
+TLA,Raven Eagle,17,1,0.059,16,15,often,CantPlayAi:44;CantAfford:19
+TLA,The Fire Nation Drill,18,4,0.222,18,14,often,CantPlayAi:56;CantAfford:51
+TLA,"June, Bounty Hunter",20,0,0.0,18,18,often,CantPlayAi:22;CantAfford:5
+TLA,Cat-Gator,21,10,0.476,10,10,often,CantPlayAi:13;CantAfford:3
+TLA,Azula Always Lies,16,1,0.062,13,13,often,CantPlayAi:285;CantAfford:62
+TLA,Iroh's Demonstration,13,1,0.077,10,9,often,CantPlayAi:25;CantAfford:5
+TLA,"Joo Dee, One of Many",20,3,0.15,16,14,often,CantPlayAi:35;CantAfford:22
+TLA,Firebending Lesson,17,0,0.0,16,16,often,CantPlayAi:299;CantAfford:1
+TLA,Cruel Administrator,17,1,0.059,13,13,often,CantPlayAi:18;CantAfford:6
+TLA,Fated Firepower,15,0,0.0,12,12,often,CantPlayAi:409
+TLA,Corrupt Court Official,21,4,0.19,19,16,often,CantPlayAi:33;CantAfford:15
+TLA,"Lo and Li, Twin Tutors",21,4,0.19,19,15,often,CantPlayAi:54;CantAfford:27;BadEtbEffects:2
+TLA,Rockalanche,22,1,0.045,21,20,often,CantAfford:19
+TLA,Zuko's Exile,22,3,0.136,19,18,often,CantPlayAi:252;CantAfford:23
+TLA,Hog-Monkey,18,0,0.0,18,18,often,CantPlayAi:34;CantAfford:14
+TLA,Earthbender Ascension,19,6,0.316,18,11,often,CantPlayAi:56;CantAfford:51
+TLA,Fire Nation Engineer,19,3,0.158,17,14,often,CantPlayAi:63;CantAfford:40
+TLA,Walltop Sentries,24,2,0.083,21,21,often,CantPlayAi:42;CantAfford:15
+TLA,Phoenix Fleet Airship,22,9,0.409,21,12,often,CantPlayAi:80;CantAfford:66
+TLA,Callous Inspector,16,2,0.125,16,14,often,CantPlayAi:30;CantAfford:12
+TLA,Rocky Rebuke,20,1,0.05,19,18,often,CantPlayAi:395;CantAfford:71
+TLA,Saber-Tooth Moose-Lion,15,2,0.133,5,6,often,CantPlayAi:7;CantAfford:1
+TLA,Deadly Precision,14,2,0.143,14,12,often,CantPlayAi:71;CantAfford:19
+TLA,Boiling Rock Rioter,17,2,0.118,17,15,often,CantPlayAi:51;CantAfford:20
+TLA,Badgermole Cub,17,3,0.176,17,14,often,CantPlayAi:46;CantAfford:25
+TLA,Raucous Audience,16,4,0.25,16,12,often,CantPlayAi:30;CantAfford:11
+TLA,Price of Freedom,22,6,0.273,21,16,often,CantPlayAi:71;CantAfford:7
+TLA,Meteor Sword,23,11,0.478,13,14,often,CantAfford:2
+TLA,Firebender Ascension,17,5,0.294,17,12,often,CantPlayAi:56;CantAfford:39
+TLA,Earthen Ally,14,1,0.071,12,11,often,CantPlayAi:27;CantAfford:15
+TLA,Earth Rumble Wrestlers,14,2,0.143,15,13,often,CantPlayAi:34;CantAfford:16
+TLA,"Bumi, King of Three Trials",15,9,0.6,9,5,often,CantPlayAi:20;CantAfford:10
+TLA,"Ty Lee, Artful Acrobat",16,1,0.062,15,14,often,CantPlayAi:30;CantAfford:12
+TLA,Aang's Journey,13,1,0.077,13,11,often,CantPlayAi:42;CantAfford:29
+TLA,Earthbending Lesson,19,0,0.0,17,19,often,CantAfford:6
+TLA,Great Divide Guide,19,1,0.053,18,17,often,CantPlayAi:34;CantAfford:14
+TLA,"Appa, Steadfast Guardian",18,1,0.056,18,17,often,CantAfford:62;CantPlayAi:18
+TLA,"Appa, Loyal Sky Bison",24,9,0.375,21,15,often,CantPlayAi:31;CantAfford:24;BadEtbEffects:4
+TLA,Seismic Sense,12,0,0.0,11,11,often,CantPlayAi:14;CantAfford:4
+TLA,Fire Nation Cadets,17,3,0.176,14,12,often,CantPlayAi:23;CantAfford:10
+TLA,Twin Blades,23,0,0.0,23,23,often,CantAfford:103;CantPlayAi:1
+TLA,Flexible Waterbender,16,2,0.125,15,14,often,CantPlayAi:32;CantAfford:14
+TLA,"Zuko, Exiled Prince",11,4,0.364,11,6,often,CantPlayAi:32;CantAfford:24
+TLA,Treetop Freedom Fighters,18,1,0.056,16,15,often,CantAfford:1
+TLA,Accumulate Wisdom,23,2,0.087,20,18,often,CantPlayAi:865;CantAfford:34
+TLA,"Hama, the Bloodbender",19,5,0.263,18,13,often,CantPlayAi:41;CantAfford:26
+TLA,Messenger Hawk,16,0,0.0,15,15,often,CantPlayAi:17;CantAfford:2
+TLA,Serpent of the Pass,22,2,0.091,10,19,often,CantPlayAi:18;CantAfford:3
+TLA,Foggy Swamp Spirit Keeper,19,1,0.053,19,18,often,CantPlayAi:27;CantAfford:6
+TLA,Knowledge Seeker,21,1,0.048,19,18,often,CantPlayAi:35;CantAfford:12
+TLA,Fatal Fissure,18,17,0.944,17,17,often,CantPlayAi:1591;CantAfford:684;TargetingFailed:71
+TLA,Bender's Waterskin,12,1,0.083,12,11,often,CantPlayAi:30;CantAfford:15
+TLA,"Azula, Cunning Usurper",27,2,0.074,25,26,often,CantPlayAi:47;CantAfford:31
+TLA,Pillar Launch,16,3,0.188,14,11,often,CantPlayAi:1139;CantAfford:1
+TLA,"Suki, Kyoshi Warrior",20,4,0.2,19,15,often,CantPlayAi:54;CantAfford:34
+TLA,"The Boulder, Ready to Rumble",18,3,0.167,14,12,often,CantPlayAi:40;CantAfford:23
+TLA,Unlucky Cabbage Merchant,23,2,0.087,22,20,often,CantPlayAi:45;CantAfford:21
+TLA,Earth King's Lieutenant,19,5,0.263,15,11,often,CantPlayAi:51;CantAfford:26;BadEtbEffects:24
+TLA,Fire Nation Warship,22,3,0.136,20,17,often,CantPlayAi:56;CantAfford:32
+TLA,Earth Kingdom Soldier,10,4,0.4,10,7,often,CantPlayAi:40;CantAfford:23
+TLA,Master Piandao,22,2,0.091,18,15,often,CantPlayAi:31;CantAfford:13
+TLA,"Azula, On the Hunt",19,3,0.158,17,16,often,CantPlayAi:34;CantAfford:30
+TLA,"Momo, Playful Pet",11,0,0.0,10,10,often,CantPlayAi:24;CantAfford:13
+TLA,Sandbenders' Storm,19,1,0.053,18,18,often,CantAfford:60
+TLA,Foggy Swamp Hunters,15,0,0.0,13,13,often,CantPlayAi:20;CantAfford:9
+TLA,Day of Black Sun,16,15,0.938,15,0,never,CantPlayAi:158
+TLA,Ozai's Cruelty,22,17,0.773,20,5,rare,CantPlayAi:201;CantAfford:3
+TLA,Sold Out,17,0,0.0,16,16,often,CantPlayAi:344;CantAfford:11
+TLA,United Front,14,3,0.214,13,10,often,CantPlayAi:106
+TLA,Rabaroo Troop,21,5,0.238,13,10,often,CantPlayAi:44;CantAfford:31
+TLA,Destined Confrontation,19,17,0.895,0,0,no_eval,
+TLA,Yip Yip!,19,2,0.105,18,16,often,CantPlayAi:1814;CantAfford:8
+TLA,Vengeful Villagers,17,1,0.059,16,15,often,CantPlayAi:47;CantAfford:28
+TLA,"Hakoda, Selfless Commander",19,3,0.158,14,12,often,CantPlayAi:45;CantAfford:25
+TLA,Southern Air Temple,29,1,0.034,25,24,often,CantAfford:31;CantPlayAi:22;BadEtbEffects:5
+TLA,Ran and Shaw,13,2,0.154,10,8,often,CantPlayAi:20;CantAfford:10
+TLA,How to Start a Riot,19,18,0.947,17,5,rare,CantPlayAi:2282;CantAfford:2
+TLA,Yuyan Archers,15,2,0.133,15,13,often,CantPlayAi:35;CantAfford:20
+TLA,Airbending Lesson,15,2,0.133,14,13,often,CantPlayAi:243;CantAfford:16
+TLA,Solstice Revelations,16,0,0.0,14,15,often,CantAfford:53
+TLA,The Earth King,11,6,0.545,10,4,often,CantPlayAi:33;CantAfford:28
+TLA,Earth Kingdom General,14,3,0.214,11,9,often,CantPlayAi:30;CantAfford:22
+TLA,Foggy Swamp Visions,17,8,0.471,15,7,often,CantPlayAi:126;CantAfford:40
+TLA,Waterbending Scroll,16,1,0.062,15,13,often,CantPlayAi:24;CantAfford:12
+TLA,Giant Koi,22,0,0.0,14,14,often,CantPlayAi:20;CantAfford:10
+TLA,Pirate Peddlers,16,2,0.125,16,14,often,CantPlayAi:34;CantAfford:14
+TLA,"Katara, Bending Prodigy",18,3,0.167,16,14,often,CantPlayAi:35;CantAfford:11
+TLA,Sokka's Haiku,17,15,0.882,15,0,never,CantPlayAi:229
+TLA,Invasion Submersible,22,5,0.227,20,16,often,CantPlayAi:69;CantAfford:45
+TLA,Spirit Water Revival,22,22,1.0,21,0,never,CantPlayAi:274
+TLA,Waterbender Ascension,19,3,0.158,17,16,often,CantPlayAi:25;CantAfford:9
+TLA,Swampsnare Trap,24,0,0.0,24,24,often,CantPlayAi:4
+TLA,Honest Work,19,0,0.0,19,18,often,CantPlayAi:25;CantAfford:9
+TLA,Planetarium of Wan Shi Tong,22,4,0.182,16,10,often,CantPlayAi:24;CantAfford:16
+TLA,Avatar's Wrath,22,21,0.955,20,0,never,CantPlayAi:283
+TLA,Forecasting Fortune Teller,25,8,0.32,23,16,often,CantPlayAi:77;CantAfford:50
+TLA,North Pole Patrol,18,2,0.111,17,15,often,CantPlayAi:73;CantAfford:41
+TLA,Water Tribe Rallier,23,2,0.087,20,18,often,CantPlayAi:31;CantAfford:17
+TLA,Fancy Footwork,22,6,0.273,20,14,often,CantPlayAi:903;CantAfford:133
+TLA,Master Pakku,18,4,0.222,18,14,often,CantPlayAi:53;CantAfford:33
+TLA,Lost Days,19,1,0.053,14,17,often,CantPlayAi:58;CantAfford:3
+TLA,"Suki, Courageous Rescuer",21,6,0.286,17,11,often,CantPlayAi:50;CantAfford:46
+TLA,Glider Kids,22,4,0.182,21,16,often,CantPlayAi:60;CantAfford:29
+TLA,Earth Kingdom Protectors,18,1,0.056,17,16,often,CantPlayAi:28;CantAfford:8
+TLA,Kyoshi Battle Fan,28,2,0.071,28,27,often,CantAfford:29;CantPlayAi:16
+TLA,Tundra Tank,18,2,0.111,17,16,often,BadEtbEffects:24;CantPlayAi:12;CantAfford:4
+TLA,Tolls of War,10,2,0.2,9,7,often,CantPlayAi:18;CantAfford:10
+TLA,Beetle-Headed Merchants,22,5,0.227,17,15,often,CantPlayAi:30;CantAfford:15
+TLA,Northern Air Temple,21,1,0.048,19,19,often,CantPlayAi:32;CantAfford:13
+TLA,Zuko's Conviction,17,4,0.235,17,13,often,CantPlayAi:1261;CantAfford:68
+TLA,Airbender Ascension,25,4,0.16,23,19,often,CantPlayAi:43;CantAfford:19
+TLA,Cycle of Renewal,21,1,0.048,16,18,often,CantAfford:56
+TLA,Otter-Penguin,16,0,0.0,15,14,often,CantPlayAi:41;CantAfford:23
+TLA,It'll Quench Ya!,19,8,0.421,16,9,often,CantPlayAi:76;CantAfford:17
+TLA,Badgermole,22,3,0.136,18,17,often,CantPlayAi:44;CantAfford:18
+TLA,Hermitic Herbalist,19,1,0.053,17,17,often,CantPlayAi:18;CantAfford:2
+TLA,Turtle-Duck,21,3,0.143,21,18,often,CantPlayAi:37;CantAfford:19
+TLA,"Toph, the Blind Bandit",16,2,0.125,13,13,often,CantPlayAi:22;CantAfford:18
+TLA,The Unagi of Kyoshi Island,16,6,0.375,13,8,often,CantPlayAi:577;CantAfford:39
+TLA,"Ty Lee, Chi Blocker",18,0,0.0,15,15,often,CantAfford:36;CantPlayAi:8
+TLA,Gran-Gran,20,2,0.1,20,18,often,CantPlayAi:33;CantAfford:14
+TLA,Platypus-Bear,15,3,0.2,12,9,often,CantPlayAi:25;CantAfford:14
+TLA,Rowdy Snowballers,36,3,0.083,34,30,often,CantPlayAi:79;CantAfford:48
+TLA,The Lion-Turtle,23,1,0.043,22,21,often,CantPlayAi:48;CantAfford:22
+TLA,Foggy Swamp Vinebender,21,7,0.333,18,14,often,CantPlayAi:45;CantAfford:24
+TLA,Guru Pathik,12,1,0.083,10,10,often,CantPlayAi:24;CantAfford:17
+TLA,The Spirit Oasis,19,14,0.737,17,0,never,BadEtbEffects:141;CantPlayAi:51
+TLA,"Iroh, Tea Master",20,1,0.05,18,17,often,CantAfford:13;CantPlayAi:9
+TLA,Secret of Bloodbending,24,23,0.958,21,0,never,CantPlayAi:334
+TLA,Mongoose Lizard,17,3,0.176,4,4,often,CantPlayAi:4
+TLA,Combustion Technique,18,1,0.056,16,15,often,CantPlayAi:303;CantAfford:23
+TLA,Boomerang Basics,18,2,0.111,16,15,often,CantPlayAi:41;CantAfford:4
+TLA,"Long Feng, Grand Secretariat",11,3,0.273,10,7,often,CantPlayAi:46;CantAfford:33
+TLA,Ruinous Waterbending,18,9,0.5,17,8,often,CantPlayAi:107;CantAfford:2
+TLA,"Flopsie, Bumi's Buddy",16,3,0.188,9,13,often,CantAfford:2;CantPlayAi:1
+TLA,True Ancestry,18,6,0.333,17,11,often,CantPlayAi:111;CantAfford:13
+TLA,Allies at Last,19,2,0.105,14,13,often,CantPlayAi:525;CantAfford:75
+TLA,Earth Rumble,17,17,1.0,18,0,never,CantPlayAi:216
+TLA,Rough Rhino Cavalry,22,4,0.182,19,15,often,CantPlayAi:35;CantAfford:14
+TLA,Redirect Lightning,19,17,0.895,17,0,never,CantPlayAi:4032
+TLA,Boar-q-pine,19,2,0.105,18,16,often,CantPlayAi:50;CantAfford:25
+TLA,Tiger-Dillo,18,4,0.222,17,13,often,CantPlayAi:46;CantAfford:20
+TLA,Merchant of Many Hats,14,3,0.214,13,10,often,CantPlayAi:33;CantAfford:15
+TLA,Canyon Crawler,18,5,0.278,12,8,often,CantPlayAi:14;CantAfford:9
+TLA,"Koh, the Face Stealer",15,5,0.333,12,9,often,CantPlayAi:22;CantAfford:12
+TLA,Barrels of Blasting Jelly,20,0,0.0,18,18,often,CantPlayAi:32;CantAfford:11
+TLA,Razor Rings,16,2,0.125,15,13,often,CantPlayAi:1671;CantAfford:61
+TLA,Aang's Iceberg,17,1,0.059,16,16,often,CantAfford:108;CantPlayAi:10
+TLA,Curious Farm Animals,19,1,0.053,19,18,often,CantPlayAi:49;CantAfford:28
+TLA,Invasion Tactics,16,0,0.0,14,16,often,CantAfford:4
+TLA,Tiger-Seal,21,1,0.048,19,17,often,CantPlayAi:34;CantAfford:11
+TLA,Sandbender Scavengers,11,1,0.091,11,10,often,CantPlayAi:28;CantAfford:17
+TLA,"Mai, Scornful Striker",16,2,0.125,13,11,often,CantPlayAi:24;CantAfford:10
+TLA,Heartless Act,21,0,0.0,20,20,often,CantPlayAi:126;CantAfford:12
+TLA,Kyoshi Warriors,16,3,0.188,14,13,often,CantPlayAi:36;CantAfford:21
+TLA,Jeong Jeong's Deserters,24,1,0.042,21,21,often,CantAfford:26;CantPlayAi:17;BadEtbEffects:11
+TLA,Wartime Protestors,19,0,0.0,20,20,often,CantAfford:6
+TLA,"Jeong Jeong, the Deserter",15,4,0.267,15,11,often,CantPlayAi:27;CantAfford:13
+TLA,Earth Kingdom Jailer,21,0,0.0,20,20,often,CantAfford:20;CantPlayAi:15
+TLA,Glider Staff,23,0,0.0,22,21,often,CantAfford:19;CantPlayAi:12
+TLA,Watery Grasp,18,0,0.0,16,15,often,CantAfford:29;CantPlayAi:20
+TLA,Ostrich-Horse,21,2,0.095,19,17,often,CantPlayAi:49;CantAfford:31
+TLA,Octopus Form,13,2,0.154,13,11,often,CantPlayAi:945;CantAfford:6
+TLA,Cunning Maneuver,17,2,0.118,15,13,often,CantPlayAi:1007;CantAfford:7
+TLA,"Zhao, Ruthless Admiral",22,0,0.0,18,20,often,CantPlayAi:24;CantAfford:8
+TLA,The Last Agni Kai,13,3,0.231,12,9,often,CantPlayAi:626;CantAfford:91
+TLA,"Katara, Water Tribe's Hope",13,2,0.154,9,6,often,CantPlayAi:17;CantAfford:7
+TLA,Sun Warriors,16,2,0.125,14,12,often,CantPlayAi:31;CantAfford:17
+TLA,Wandering Musicians,13,3,0.231,12,11,often,CantPlayAi:26;CantAfford:13
+TLA,Sparring Dummy,17,2,0.118,16,14,often,CantPlayAi:42;CantAfford:20
+TLA,Fire Nation Attacks,12,6,0.5,14,7,often,CantPlayAi:694;CantAfford:199
+TLA,War Balloon,13,2,0.154,12,9,often,CantPlayAi:28;CantAfford:26
+TLA,The Cave of Two Lovers,16,3,0.188,12,10,often,CantPlayAi:24;CantAfford:20
+TLA,Beifong's Bounty Hunters,10,0,0.0,10,10,often,CantPlayAi:34;CantAfford:20
+TLA,First-Time Flyer,17,0,0.0,16,16,often,CantPlayAi:26;CantAfford:6
+TLA,Rebellious Captives,15,3,0.2,15,12,often,CantPlayAi:37;CantAfford:20
+TLA,Kyoshi Island Plaza,14,1,0.071,14,13,often,CantPlayAi:25;CantAfford:9
+TLA,Diligent Zookeeper,18,2,0.111,16,14,often,CantPlayAi:31;CantAfford:12
+TLA,Shared Roots,12,0,0.0,12,12,often,CantAfford:3
+TLA,"Wan Shi Tong, Librarian",24,1,0.042,22,21,often,CantPlayAi:566
+TLA,Bumi Bash,12,0,0.0,11,11,often,CantPlayAi:8
+TLA,Buzzard-Wasp Colony,14,1,0.071,12,12,often,CantPlayAi:18;CantAfford:4
+TLA,Air Nomad Legacy,14,1,0.071,10,9,often,CantAfford:14;CantPlayAi:4
+TLA,Lightning Strike,14,0,0.0,13,13,often,CantPlayAi:270;CantAfford:22
+TLA,Fire Nation Raider,10,3,0.3,11,8,often,CantPlayAi:32;CantAfford:16
+EOE,Pinnacle Kill-Ship,19,6,0.316,9,10,often,CantPlayAi:17;CantAfford:7
+EOE,Rust Harvester,12,3,0.25,11,9,often,CantPlayAi:26;CantAfford:15
+EOE,Molecular Modifier,17,1,0.059,14,14,often,CantPlayAi:8;CantAfford:5
+EOE,Full Bore,16,6,0.375,16,10,often,CantPlayAi:1306;CantAfford:8
+EOE,Galvanizing Sawship,18,5,0.278,13,10,often,CantPlayAi:34;CantAfford:21
+EOE,Nova Hellkite,18,0,0.0,8,17,often,CantAfford:10
+EOE,Memorial Team Leader,13,4,0.308,9,7,often,CantPlayAi:26;CantAfford:9
+EOE,Kavaron Skywarden,12,5,0.417,10,7,often,CantPlayAi:16;CantAfford:8
+EOE,"Mm'menon, the Right Hand",27,5,0.185,23,20,often,CantPlayAi:37;CantAfford:20
+EOE,Mechan Navigator,19,2,0.105,19,17,often,CantPlayAi:40;CantAfford:26
+EOE,Invasive Maneuvers,19,1,0.053,19,17,often,CantPlayAi:605;CantAfford:120
+EOE,Vaultguard Trooper,20,3,0.15,16,15,often,CantPlayAi:29;CantAfford:28
+EOE,Elegy Acolyte,11,4,0.364,7,4,often,CantPlayAi:22;CantAfford:18
+EOE,Red Tiger Mechan,19,0,0.0,12,19,often,CantAfford:8
+EOE,Temporal Intervention,15,3,0.2,15,12,often,CantPlayAi:45;CantAfford:27
+EOE,Weapons Manufacturing,12,2,0.167,12,10,often,CantPlayAi:36;CantAfford:25
+EOE,Zero Point Ballad,11,7,0.636,11,4,rare,CantPlayAi:169
+EOE,Roving Actuator,17,2,0.118,14,14,often,CantPlayAi:27;CantAfford:13
+EOE,Scrounge for Eternity,19,17,0.895,19,1,never,CantPlayAi:218
+EOE,Territorial Bruntar,19,6,0.316,10,5,often,CantPlayAi:18;CantAfford:8
+EOE,Mutinous Massacre,10,8,0.8,0,0,no_eval,
+EOE,Weftstalker Ardent,15,0,0.0,11,15,often,CantPlayAi:27;CantAfford:7
+EOE,"Xu-Ifit, Osteoharmonist",28,8,0.286,26,18,often,CantPlayAi:79;CantAfford:71
+EOE,Systems Override,24,2,0.083,23,21,often,CantPlayAi:25;CantAfford:6
+EOE,Chrome Companion,17,2,0.118,15,14,often,CantPlayAi:36;CantAfford:19
+EOE,Meltstrider Eulogist,12,1,0.083,11,10,often,CantPlayAi:26;CantAfford:15
+EOE,Pull Through the Weft,18,16,0.889,16,1,never,CantPlayAi:151;CantAfford:4
+EOE,Wedgelight Rammer,15,1,0.067,14,14,often,CantPlayAi:31;CantAfford:13
+EOE,Dockworker Drone,20,3,0.15,20,17,often,CantPlayAi:48;CantAfford:29
+EOE,Loading Zone,18,0,0.0,11,17,often,CantPlayAi:28;CantAfford:12
+EOE,Seedship Impact,14,0,0.0,13,13,often,CantPlayAi:408;CantAfford:20
+EOE,Exosuit Savior,16,2,0.125,15,13,often,CantPlayAi:40;CantAfford:21
+EOE,Glacier Godmaw,22,10,0.455,15,13,often,CantPlayAi:14;CantAfford:2
+EOE,Brightspear Zealot,21,1,0.048,21,19,often,CantPlayAi:50;CantAfford:22
+EOE,Reroute Systems,15,1,0.067,14,13,often,CantPlayAi:656;CantAfford:47
+EOE,Possibility Technician,18,0,0.0,6,16,often,CantPlayAi:10;CantAfford:6
+EOE,Remnant Elemental,23,4,0.174,23,19,often,CantPlayAi:57;CantAfford:43
+EOE,Dauntless Scrapbot,13,2,0.154,12,9,often,CantPlayAi:40;CantAfford:32
+EOE,Diplomatic Relations,24,5,0.208,22,17,often,CantPlayAi:762;CantAfford:152
+EOE,Broodguard Elite,15,2,0.133,14,12,often,CantPlayAi:44
+EOE,Sami's Curiosity,13,2,0.154,13,11,often,CantPlayAi:13;CantAfford:1
+EOE,Atmospheric Greenhouse,15,5,0.333,11,9,often,CantPlayAi:30;CantAfford:16;BadEtbEffects:1
+EOE,Galactic Wayfarer,17,3,0.176,16,13,often,CantPlayAi:31;CantAfford:14
+EOE,Memorial Vault,11,2,0.182,9,8,often,CantPlayAi:41;CantAfford:20
+EOE,Biotech Specialist,12,1,0.083,8,7,often,CantAfford:26;CantPlayAi:25
+EOE,Pain for All,13,3,0.231,11,7,often,CantPlayAi:16;CantAfford:13
+EOE,Plasma Bolt,11,1,0.091,11,10,often,CantPlayAi:53;CantAfford:7
+EOE,Weftwalking,17,5,0.294,15,10,often,CantPlayAi:38;CantAfford:23
+EOE,"Tezzeret, Cruel Captain",18,4,0.222,16,12,often,CantPlayAi:56;CantAfford:36
+EOE,Cerebral Download,15,10,0.667,13,3,rare,CantPlayAi:814;CantAfford:44
+EOE,Mechan Shieldmate,20,2,0.1,20,18,often,CantPlayAi:27;CantAfford:15
+EOE,Lithobraking,14,5,0.357,13,7,often,CantPlayAi:728;CantAfford:127
+EOE,Mechanozoa,19,1,0.053,14,18,often,CantAfford:15;CantPlayAi:14
+EOE,"Tannuk, Steadfast Second",13,3,0.231,12,11,often,CantAfford:29;CantPlayAi:3
+EOE,Voidforged Titan,17,4,0.235,13,8,often,CantPlayAi:41;CantAfford:22
+EOE,Close Encounter,20,20,1.0,0,0,no_eval,
+EOE,Mightform Harmonizer,19,4,0.211,10,13,often,CantPlayAi:62;CantAfford:32
+EOE,Archenemy's Charm,23,3,0.13,22,19,often,CantAfford:1038;CantPlayAi:253
+EOE,Perigee Beckoner,12,0,0.0,6,12,often,BadEtbEffects:15;CantPlayAi:6;CantAfford:2
+EOE,Edge Rover,26,2,0.077,24,20,often,CantPlayAi:37;CantAfford:22
+EOE,Fungal Colossus,22,4,0.182,7,17,often,CantPlayAi:11;CantAfford:2
+EOE,Decode Transmissions,17,4,0.235,17,13,often,CantPlayAi:75;CantAfford:41
+EOE,Station Monitor,13,6,0.462,11,6,often,CantPlayAi:24;CantAfford:13
+EOE,Wurmwall Sweeper,17,8,0.471,16,8,often,CantAfford:50;CantPlayAi:50
+EOE,The Dominion Bracelet,25,1,0.04,23,22,often,CantAfford:33;CantPlayAi:13
+EOE,Exalted Sunborn,18,1,0.056,5,17,often,CantPlayAi:6;CantAfford:2
+EOE,Virulent Silencer,17,5,0.294,16,11,often,CantPlayAi:36;CantAfford:24
+EOE,Focus Fire,21,9,0.429,20,12,often,CantPlayAi:1733;CantAfford:36
+EOE,Thrumming Hivepool,19,1,0.053,18,17,often,CantAfford:11;CantPlayAi:4
+EOE,Lumen-Class Frigate,21,7,0.333,20,12,often,CantPlayAi:38;CantAfford:33
+EOE,Anticausal Vestige,26,2,0.077,8,20,often,CantPlayAi:24;CantAfford:12
+EOE,Auxiliary Boosters,16,3,0.188,12,11,often,CantAfford:8;CantPlayAi:3
+EOE,Sunstar Expansionist,15,1,0.067,15,14,often,CantPlayAi:36;CantAfford:14
+EOE,Honor,15,0,0.0,13,13,often,CantPlayAi:37;CantAfford:13
+EOE,Sunstar Chaplain,16,3,0.188,15,12,often,CantPlayAi:20;CantAfford:5
+EOE,Luxknight Breacher,15,5,0.333,15,10,often,CantPlayAi:47;CantAfford:31
+EOE,Zealous Display,14,1,0.071,13,12,often,CantPlayAi:796;CantAfford:3
+EOE,"Ragost, Deft Gastronaut",11,2,0.182,11,9,often,CantPlayAi:37;CantAfford:24
+EOE,All-Fates Stalker,16,0,0.0,5,14,often,CantAfford:4;CantPlayAi:2
+EOE,Thaumaton Torpedo,18,0,0.0,18,18,often,CantPlayAi:21;CantAfford:7
+EOE,Lashwhip Predator,13,5,0.385,6,6,often,CantPlayAi:22;CantAfford:8
+EOE,Intrepid Tenderfoot,12,1,0.083,11,10,often,CantPlayAi:23;CantAfford:10
+EOE,Virus Beetle,19,2,0.105,18,14,often,CantPlayAi:45;CantAfford:22
+EOE,Frenzied Baloth,14,1,0.071,11,10,often,CantAfford:57
+EOE,Dark Endurance,30,8,0.267,29,20,often,CantPlayAi:1549;CantAfford:14
+EOE,Meltstrider's Gear,19,1,0.053,19,18,often,CantPlayAi:13;CantAfford:7
+EOE,Monoist Circuit-Feeder,32,8,0.25,27,19,often,BadEtbEffects:152;CantPlayAi:24;CantAfford:3
+EOE,Mouth of the Storm,19,16,0.842,15,0,never,BadEtbEffects:179;CantPlayAi:14
+EOE,Steelswarm Operator,19,4,0.211,18,13,often,CantPlayAi:58;CantAfford:46
+EOE,Fell Gravship,23,4,0.174,23,18,often,CantPlayAi:75;CantAfford:51
+EOE,Umbral Collar Zealot,33,4,0.121,30,26,often,CantPlayAi:60;CantAfford:25
+EOE,Scour for Scrap,22,4,0.182,19,14,often,CantPlayAi:613;CantAfford:228
+EOE,Atomic Microsizer,18,0,0.0,15,15,often,CantAfford:17;CantPlayAi:16
+EOE,"Alpharael, Dreaming Acolyte",25,7,0.28,24,18,often,CantPlayAi:69;CantAfford:36;BadEtbEffects:9
+EOE,Selfcraft Mechan,20,1,0.05,20,19,often,CantAfford:21;CantPlayAi:17
+EOE,Lost in Space,26,3,0.115,25,22,often,CantPlayAi:475;CantAfford:77
+EOE,Singularity Rupture,17,5,0.294,15,11,often,CantPlayAi:48;CantAfford:9
+EOE,Uthros Scanship,17,3,0.176,15,12,often,CantPlayAi:30;CantAfford:22
+EOE,Quantum Riddler,15,2,0.133,10,13,often,CantPlayAi:16;BadEtbEffects:8;CantAfford:5
+EOE,Cloudsculpt Technician,20,4,0.2,19,15,often,CantPlayAi:40;CantAfford:25
+EOE,Swarm Culler,13,6,0.462,12,7,often,CantPlayAi:36;CantAfford:22
+EOE,Pinnacle Starcage,24,12,0.5,23,12,often,CantPlayAi:136;BadEtbEffects:77;CantAfford:39
+EOE,Knight Luminary,30,1,0.033,22,27,often,CantPlayAi:81;CantAfford:36
+EOE,Lightstall Inquisitor,16,1,0.062,14,13,often,CantPlayAi:28;CantAfford:9
+EOE,Hardlight Containment,19,3,0.158,19,16,often,CantPlayAi:114;MissingNeededCards:14;CantAfford:9
+EOE,Devastating Onslaught,15,0,0.0,15,15,often,CantPlayAi:52;CantAfford:11
+EOE,Banishing Light,19,3,0.158,18,15,often,CantAfford:30;CantPlayAi:14
+EOE,Bombard,20,2,0.1,20,18,often,CantPlayAi:285;CantAfford:10
+EOE,Beyond the Quiet,19,12,0.632,17,6,rare,CantPlayAi:162;CantAfford:2
+EOE,Squire's Lightblade,13,0,0.0,13,13,often,CantAfford:20;CantPlayAi:3
+EOE,Embrace Oblivion,21,20,0.952,19,0,never,CantPlayAi:213
+EOE,Interceptor Mechan,11,2,0.182,10,8,often,CantPlayAi:30;BadEtbEffects:14;CantAfford:4
+EOE,Oreplate Pangolin,18,2,0.111,15,13,often,CantPlayAi:27;CantAfford:14
+EOE,Hylderblade,23,2,0.087,22,20,often,CantAfford:38;CantPlayAi:26
+EOE,Lightless Evangel,12,3,0.25,12,10,often,CantPlayAi:28;CantAfford:14
+EOE,Dubious Delicacy,18,0,0.0,16,16,often,CantAfford:146;CantPlayAi:12
+EOE,Icetill Explorer,20,3,0.15,18,13,often,CantPlayAi:48;CantAfford:32
+EOE,Skystinger,22,1,0.045,22,21,often,CantPlayAi:37;CantAfford:17
+EOE,Tractor Beam,24,3,0.125,21,19,often,CantAfford:30;CantPlayAi:18
+EOE,Terrasymbiosis,18,3,0.167,17,13,often,CantPlayAi:43;CantAfford:27
+EOE,Consult the Star Charts,26,5,0.192,26,21,often,CantPlayAi:1081;CantAfford:53
+EOE,Biomechan Engineer,24,3,0.125,23,21,often,CantPlayAi:45;CantAfford:26
+EOE,Nanoform Sentinel,19,1,0.053,18,17,often,CantPlayAi:42;CantAfford:19
+EOE,Starbreach Whale,19,4,0.211,8,15,often,CantPlayAi:17;CantAfford:2
+EOE,Eusocial Engineering,14,1,0.071,7,12,often,CantAfford:10;CantPlayAi:8
+EOE,Blooming Stinger,19,17,0.895,19,1,never,BadEtbEffects:137;CantPlayAi:112;CantAfford:1
+EOE,Shattered Wings,27,2,0.074,26,24,often,CantPlayAi:105;CantAfford:7
+EOE,Emergency Eject,17,1,0.059,17,16,often,CantPlayAi:187;CantAfford:43
+EOE,"Haliya, Ascendant Cadet",19,9,0.474,17,9,often,CantPlayAi:32;CantAfford:15;BadEtbEffects:2
+EOE,Starfield Shepherd,18,2,0.111,6,16,often,CantPlayAi:14;CantAfford:2
+EOE,Sledge-Class Seedship,16,4,0.25,15,10,often,CantPlayAi:39;CantAfford:31
+EOE,"Dyadrine, Synthesis Amalgam",16,2,0.125,14,12,often,CantPlayAi:61
+EOE,Germinating Wurm,16,0,0.0,4,16,often,CantPlayAi:7;CantAfford:3
+EOE,All-Fates Scroll,15,0,0.0,14,14,often,CantPlayAi:26;CantAfford:12
+EOE,Tapestry Warden,13,0,0.0,11,11,often,CantPlayAi:4;CantAfford:2
+EOE,Seedship Agrarian,20,1,0.05,17,18,often,CantPlayAi:44;CantAfford:25
+EOE,Sunstar Lightsmith,15,1,0.067,13,11,often,CantPlayAi:44;CantAfford:28
+EOE,Divert Disaster,20,10,0.5,18,10,often,CantPlayAi:66;CantAfford:33
+EOE,Specimen Freighter,18,4,0.222,13,14,often,CantAfford:15;CantPlayAi:1
+EOE,Moonlit Meditation,17,15,0.882,17,0,never,CantPlayAi:148
+EOE,Synthesizer Labship,17,0,0.0,16,15,often,CantAfford:10;CantPlayAi:9
+EOE,Codecracker Hound,20,2,0.1,20,16,often,CantPlayAi:68;CantAfford:46
+EOE,Susurian Dirgecraft,18,4,0.222,16,15,often,CantPlayAi:20;CantAfford:12
+EOE,Gigastorm Titan,17,3,0.176,17,16,often,CantPlayAi:25;CantAfford:12
+EOE,Unravel,23,9,0.391,19,12,often,CantPlayAi:101;CantAfford:51
+EOE,Illvoi Infiltrator,21,3,0.143,20,16,often,CantPlayAi:50;CantAfford:44
+EOE,Gravblade Heavy,19,3,0.158,18,17,often,CantPlayAi:36;CantAfford:13
+EOE,Annul,15,5,0.333,15,11,often,CantPlayAi:124;CantAfford:7
+EOE,Depressurize,13,13,1.0,13,0,never,CantPlayAi:1588
+EOE,Requiem Monolith,16,4,0.25,15,12,often,CantPlayAi:41;CantAfford:27
+EOE,Entropic Battlecruiser,18,3,0.167,18,13,often,CantAfford:35;CantPlayAi:35
+EOE,Hymn of the Faller,19,1,0.053,18,17,often,CantPlayAi:30;CantAfford:4
+EOE,Sunset Saboteur,18,1,0.056,18,17,often,CantPlayAi:28;CantAfford:8
+EOE,Kav Landseeker,11,2,0.182,10,9,often,CantAfford:15;CantPlayAi:11
+EOE,Debris Field Crusher,15,3,0.2,15,12,often,CantPlayAi:40;CantAfford:31
+EOE,Kavaron Turbodrone,16,1,0.062,16,15,often,CantAfford:24
+EOE,Nebula Dragon,14,7,0.5,8,6,often,CantPlayAi:12;CantAfford:6
+EOE,Cut Propulsion,19,18,0.947,19,0,never,CantPlayAi:2194
+EOE,Slagdrill Scrapper,22,2,0.091,21,19,often,CantAfford:46;CantPlayAi:20
+EOE,Honored Knight-Captain,17,0,0.0,16,16,often,CantPlayAi:43;CantAfford:27
+EOE,Flight-Deck Coordinator,22,0,0.0,22,22,often,CantPlayAi:50;CantAfford:19
+EOE,Gravkill,17,3,0.176,15,12,often,CantPlayAi:316;CantAfford:65
+EOE,Weftblade Enhancer,22,0,0.0,6,19,often,CantPlayAi:14;CantAfford:2
+EOE,Nutrient Block,23,1,0.043,19,18,often,CantPlayAi:29;CantAfford:14
+EOE,Timeline Culler,15,1,0.067,8,13,often,CantAfford:14
+EOE,Meltstrider's Resolve,20,0,0.0,19,19,often,CantPlayAi:63;CantAfford:21
+EOE,Thawbringer,19,2,0.105,17,16,often,CantPlayAi:31;CantAfford:20
+EOE,Desculpting Blast,26,0,0.0,25,25,often,CantPlayAi:398;CantAfford:79
+EOE,Sinister Cryologist,23,4,0.174,19,19,often,CantPlayAi:68;CantAfford:45
+EOE,Uthros Psionicist,24,1,0.042,24,23,often,CantAfford:12;CantPlayAi:8
+EOE,Illvoi Operative,25,5,0.2,22,15,often,CantPlayAi:70;CantAfford:46
+EOE,Survey Mechan,18,0,0.0,17,16,often,CantPlayAi:31;CantAfford:11
+EOE,Starwinder,21,1,0.048,8,20,often,CantAfford:6
+EOE,Eumidian Terrabotanist,21,2,0.095,21,19,often,CantPlayAi:28;CantAfford:11
+EOE,Cryoshatter,22,4,0.182,21,15,often,CantPlayAi:60;CantAfford:10
+EOE,Larval Scoutlander,25,3,0.12,24,21,often,CantPlayAi:65;CantAfford:49
+EOE,Cryogen Relic,22,6,0.273,19,12,often,CantPlayAi:27;CantAfford:14;BadEtbEffects:6
+EOE,Famished Worldsire,21,5,0.238,13,12,often,CantPlayAi:13;CantAfford:12
+EOE,Ouroboroid,19,8,0.421,14,7,often,CantPlayAi:54;CantAfford:32
+EOE,"Haliya, Guided by Light",14,1,0.071,7,13,often,CantPlayAi:32;CantAfford:17
+EOE,Starport Security,10,1,0.1,10,9,often,CantPlayAi:19;CantAfford:7
+EOE,Scout for Survivors,15,10,0.667,14,4,rare,CantPlayAi:140;CantAfford:6
+EOE,Drix Fatemaker,16,0,0.0,13,16,often,CantAfford:6;BadEtbEffects:1
+EOE,Dual-Sun Technique,18,4,0.222,16,12,often,CantPlayAi:723;CantAfford:3
+EOE,Frontline War-Rager,15,3,0.2,14,12,often,CantPlayAi:42;CantAfford:25
+EOE,Warmaker Gunship,13,2,0.154,12,9,often,CantPlayAi:20;CantAfford:8
+EOE,Orbital Plunge,16,2,0.125,16,15,often,CantPlayAi:34;CantAfford:21
+EOE,Kavaron Harrier,17,2,0.118,17,15,often,CantAfford:35;CantPlayAi:35
+EOE,The Endstone,23,10,0.435,15,9,often,CantPlayAi:23;CantAfford:16
+EOE,Emissary Escort,16,1,0.062,15,14,often,CantAfford:19;CantPlayAi:18
+EOE,Faller's Faithful,14,0,0.0,14,14,often,CantAfford:10;CantPlayAi:8
+EOE,Terminal Velocity,15,3,0.2,12,12,often,CantPlayAi:16;CantAfford:4
+EOE,Chorale of the Void,11,1,0.091,10,9,often,CantAfford:21;CantPlayAi:9
+EOE,Monoist Sentry,25,1,0.04,22,21,often,CantPlayAi:35;CantAfford:14
+EOE,Drill Too Deep,13,3,0.231,13,10,often,CantPlayAi:462;CantAfford:31
+EOE,Space-Time Anomaly,15,6,0.4,15,9,often,CantPlayAi:55;CantAfford:45
+EOE,Radiant Strike,18,3,0.167,18,15,often,CantPlayAi:461;CantAfford:45
+EOE,Mechan Assembler,20,4,0.2,14,15,often,CantPlayAi:22;CantAfford:14
+EOE,Illvoi Galeblade,18,5,0.278,17,12,often,CantPlayAi:669;CantAfford:41
+EOE,Melded Moxite,17,5,0.294,16,11,often,CantPlayAi:45;CantAfford:32
+EOE,Gravpack Monoist,18,2,0.111,17,15,often,CantPlayAi:36;CantAfford:19
+EOE,Seedship Broodtender,19,4,0.211,17,14,often,CantPlayAi:50;CantAfford:33
+EOE,Insatiable Skittermaw,22,2,0.091,22,20,often,CantPlayAi:43;CantAfford:16
+EOE,Hemosymbic Mite,21,2,0.095,20,18,often,CantPlayAi:36;CantAfford:21
+EOE,Astelli Reclaimer,15,7,0.467,14,7,often,BadEtbEffects:233;CantPlayAi:208;CantAfford:2
+EOE,Susurian Voidborn,16,0,0.0,9,16,often,CantPlayAi:4;CantAfford:4
+EOE,Vote Out,21,3,0.143,19,17,often,CantPlayAi:42;AnotherTime:4;CantAfford:1
+EOE,Starfighter Pilot,15,1,0.067,15,15,often,CantPlayAi:36;CantAfford:18
+EOE,The Seriema,19,9,0.474,19,10,often,CantPlayAi:104;BadEtbEffects:55;CantAfford:37
+EOE,Hullcarver,21,4,0.19,21,17,often,CantPlayAi:48;CantAfford:33
+EOE,Zookeeper Mechan,12,2,0.167,11,10,often,CantPlayAi:33;CantAfford:18
+EOE,Rescue Skiff,23,8,0.348,18,13,often,CantPlayAi:20;CantAfford:4;BadEtbEffects:3
+EOE,Blade of the Swarm,23,5,0.217,21,17,often,CantPlayAi:48;CantAfford:28
+EOE,Beamsaw Prospector,17,1,0.059,14,12,often,CantPlayAi:31;CantAfford:19
+EOE,Gene Pollinator,16,2,0.125,15,13,often,CantPlayAi:13;CantAfford:2
+EOE,Dawnstrike Vanguard,21,5,0.238,16,14,often,CantPlayAi:28;CantAfford:10
+EOE,Pulsar Squadron Ace,18,4,0.222,18,14,often,CantPlayAi:37;CantAfford:21
+EOE,Cosmogrand Zenith,20,2,0.1,19,17,often,CantPlayAi:48;CantAfford:29
+EOE,Seam Rip,12,2,0.167,12,10,often,CantPlayAi:87;CantAfford:2
+EOE,Tragic Trajectory,25,4,0.16,25,21,often,CantPlayAi:112;CantAfford:18
+EOE,"Sothera, the Supervoid",16,7,0.438,13,4,rare,CantPlayAi:47;CantAfford:37
+EOE,Comet Crawler,17,4,0.235,15,12,often,CantPlayAi:41;CantAfford:23
+EOE,Dual-Sun Adepts,29,0,0.0,29,29,often,CantPlayAi:49;CantAfford:12
+EOE,Harmonious Grovestrider,18,4,0.222,16,15,often,CantPlayAi:20;CantAfford:13
+EOE,"Alpharael, Stonechosen",15,2,0.133,13,11,often,CantPlayAi:31;CantAfford:17
+EOE,Starfield Vocalist,19,2,0.105,9,16,often,CantAfford:15;CantPlayAi:14
+EOE,"Dawnsire, Sunstar Dreadnought",17,1,0.059,16,15,often,CantPlayAi:37;CantAfford:26
+EOE,Bioengineered Future,19,7,0.368,17,11,often,CantPlayAi:68;CantAfford:53
+EOE,Mental Modulation,20,8,0.4,19,12,often,CantPlayAi:1271;CantAfford:224
+EOE,Bygone Colossus,11,0,0.0,0,9,no_eval,
+EOE,Extinguisher Battleship,12,8,0.667,3,3,often,BadEtbEffects:3;CantPlayAi:1
+EOE,Biosynthic Burst,16,4,0.25,16,12,often,CantPlayAi:645;CantAfford:5
+EOE,Terrapact Intimidator,12,3,0.25,11,9,often,CantPlayAi:26;CantAfford:14
+EOE,Rig for War,10,2,0.2,9,7,often,CantPlayAi:510;CantAfford:3
+EOE,Icecave Crasher,15,1,0.067,18,17,often,CantPlayAi:47;CantAfford:20
+TRK,Final Frontier,20,5,0.25,20,15,often,CantAfford:32
+TRK,Dr. Beverly Crusher,11,4,0.364,10,8,often,CantPlayAi:14;CantAfford:6
+TRK,First Contact,16,4,0.25,16,12,often,CantPlayAi:617;CantAfford:18
+TRK,"Saru, Unthreatened",17,4,0.235,17,13,often,BadEtbEffects:247;CantAfford:103;CantPlayAi:39
+TRK,"Phlox, Unorthodox Doctor",19,0,0.0,18,18,often,CantAfford:4;CantPlayAi:1
+TRK,"Bristly Bill, Spine Sower",13,0,0.0,13,13,often,CantPlayAi:11
+TRK,Crystalline Entity,16,13,0.812,7,0,never,CantPlayAi:41;BadEtbEffects:34;CantAfford:1
+TRK,"U.S.S. Excelsior, Cutting Edge",19,0,0.0,18,18,often,CantAfford:12;CantPlayAi:2
+TRK,Temporal Conqueror,11,5,0.455,11,7,often,CantPlayAi:63;CantAfford:38
+TRK,"Captain Pike, Fullness of Time",10,7,0.7,10,3,rare,CantPlayAi:47;CantAfford:36
+TRK,"U.S.S. Enterprise-A, Free Spirit",10,3,0.3,10,7,often,CantPlayAi:22;CantAfford:20
+TRK,Test of Conviction,23,1,0.043,23,22,often,CantPlayAi:31;CantAfford:28
+TRK,"Una Chin-Riley, Number One",21,1,0.048,20,19,often,CantAfford:5;CantPlayAi:1
+TRK,Captain Jonathan Archer,19,4,0.211,19,15,often,CantPlayAi:41;CantAfford:18
+TRK,"Miles O'Brien, Transporter Ops",22,3,0.136,23,20,often,CantPlayAi:57;CantAfford:22
+TRK,"Neelix, Moral Support",10,4,0.4,10,6,often,CantPlayAi:36;CantAfford:22
+TRK,Captain Sisay,13,3,0.231,14,12,often,CantPlayAi:32;CantAfford:15
+TRK,Xindi Surveyors,18,3,0.167,16,14,often,CantPlayAi:35;CantAfford:25
+TRK,In the Pale Moonlight,18,2,0.111,16,14,often,CantPlayAi:35;CantAfford:31
+TRK,Battle-Scarred Survivalist,15,2,0.133,15,13,often,CantPlayAi:29;CantAfford:13
+TRK,Genesis Device,16,1,0.062,16,15,often,CantPlayAi:36;CantAfford:24
+TRK,"General Chang, Cold Warrior",21,1,0.048,20,19,often,CantPlayAi:28;CantAfford:10
+TRK,De-evolve,14,0,0.0,13,12,often,CantPlayAi:20;CantAfford:2
+TRK,"U.S.S. Discovery, at Black Alert",23,5,0.217,20,16,often,CantPlayAi:49;CantAfford:26
+TRK,Tell Me What You See,23,7,0.304,20,16,often,CantPlayAi:90;CantAfford:58
+TRK,Decree of Pain,23,19,0.826,0,0,no_eval,
+TRK,"Daniels, Temporal Agent",13,4,0.308,13,9,often,CantPlayAi:34;BadEtbEffects:31;CantAfford:6
+TRK,"Rishkar, Peema Renegade",21,2,0.095,20,18,often,CantPlayAi:36;CantAfford:21
+TRK,Collation Trimatrix,23,0,0.0,21,20,often,CantPlayAi:43;CantAfford:22
+TRK,Hive Mind Coprocessor,19,2,0.105,13,15,often,CantAfford:2;CantPlayAi:1
+TRK,The Destruction of Praxis,17,15,0.882,17,0,never,CantPlayAi:216
+TRK,"Culber and Stamets, Star-Crossed",17,3,0.176,15,13,often,CantPlayAi:27;CantAfford:14
+TRK,Moopsy,23,4,0.174,22,19,often,CantPlayAi:39;CantAfford:19
+TRK,The Holodeck,21,7,0.333,11,7,often,CantPlayAi:17;CantAfford:13
+TRK,"Jake Sisko, War Correspondent",25,2,0.08,24,23,often,CantPlayAi:53;CantAfford:25
+TRK,"Sheoldred, the Apocalypse",17,6,0.353,17,12,often,CantPlayAi:41;CantAfford:29
+TRK,The Needs of the Many,19,14,0.737,18,4,rare,CantPlayAi:1973;CantAfford:4
+TRK,"Tea, Earl Grey, Hot",13,1,0.077,12,10,often,CantPlayAi:29;CantAfford:13
+TRK,Borg Cube,10,2,0.2,5,5,often,CantPlayAi:6;CantAfford:6
+TRK,Command Decision,18,1,0.056,18,17,often,CantPlayAi:39;CantAfford:33
+TRK,Pet Sehlat,10,0,0.0,9,9,often,CantPlayAi:18;CantAfford:8
+TRK,"Sulu, Space Swashbuckler",15,1,0.067,14,13,often,CantPlayAi:32;CantAfford:12
+TRK,Cloistered Telepath,19,1,0.053,18,18,often,BadEtbEffects:36;CantAfford:34;CantPlayAi:16
+TRK,Mirror Universe Intrusion,10,9,0.9,10,0,never,CantPlayAi:100
+TRK,"Armus, Skin of Evil",14,5,0.357,11,10,often,CantPlayAi:13;CantAfford:3
+TRK,Automated Warfare System,20,1,0.05,17,17,often,CantPlayAi:38;CantAfford:18
+TRK,Lieutenant Commander Data,12,3,0.25,12,9,often,CantPlayAi:54;CantAfford:32
+TRK,Cloak and Phaser,18,8,0.444,1,5,often,CantPlayAi:2
+TRK,Grand Nagus Zek,21,2,0.095,21,18,often,CantPlayAi:84;CantAfford:53
+TRK,Test of Loyalty,21,3,0.143,20,16,often,CantPlayAi:105;CantAfford:31
+TRK,Guidance Failure,17,0,0.0,13,14,often,CantPlayAi:137;CantAfford:12
+TRK,Humpback Whales,21,4,0.19,13,8,often,CantPlayAi:43;CantAfford:18
+TRK,Year of Hell,12,2,0.167,11,8,often,CantPlayAi:38;CantAfford:21;BadEtbEffects:4
+TRK,"Tasha Yar, Out of Time",12,0,0.0,12,12,often,CantAfford:5
+TRK,"Will Riker, First in the Field",14,1,0.071,13,13,often,CantAfford:4;CantPlayAi:3
+TRK,Make It So,18,18,1.0,0,0,no_eval,
+TRK,Enterprise NX-01,22,9,0.409,21,12,often,CantPlayAi:76;CantAfford:29
+TRK,Munitions Enthusiast,22,1,0.045,23,22,often,CantPlayAi:44;CantAfford:15
+TRK,Captain's Tutelage,21,6,0.286,18,10,often,CantPlayAi:1217;CantAfford:47
+TRK,Dominion Supervisor,20,6,0.3,20,11,often,CantPlayAi:79;CantAfford:57;BadEtbEffects:11
+TRK,"I'm a Doctor, Not a . . .",16,5,0.312,15,10,often,CantPlayAi:1190;CantAfford:22
+TRK,Targ Wrangler,19,4,0.211,19,16,often,CantPlayAi:25;CantAfford:9
+TRK,"Sylvia Tilly, Joy of Discovery",13,2,0.154,12,10,often,CantPlayAi:34;CantAfford:24
+TRK,"V'Ger, the Intruder",17,7,0.412,7,5,often,CantPlayAi:7;CantAfford:5
+TRK,"Thada Adel, Acquisitor",16,4,0.25,16,12,often,CantPlayAi:47;CantAfford:29
+TRK,Astute Terraformer,11,2,0.182,11,9,often,CantPlayAi:21;CantAfford:7
+TRK,Deep Space Scan,20,11,0.55,12,7,often,CantPlayAi:29;CantAfford:20
+TRK,Xenobotanist,20,7,0.35,20,13,often,CantPlayAi:64;CantAfford:41
+TRK,Lt. Cmdr. Geordi La Forge,24,5,0.208,22,17,often,CantPlayAi:48;CantAfford:21
+TRK,Holo-Engineer,24,4,0.167,21,18,often,CantPlayAi:54;CantAfford:51
+TRK,The Caretaker,21,5,0.238,9,10,often,CantAfford:6;CantPlayAi:6
+TRK,Suurok-Class Science Vessel,20,6,0.3,20,14,often,CantPlayAi:43;CantAfford:27
+TRK,Dr. Joseph M'Benga,21,7,0.333,20,14,often,CantPlayAi:58;CantAfford:36
+TRK,Class-F Shuttlecraft,23,3,0.13,22,19,often,CantPlayAi:45;CantAfford:39
+TRK,Captain Jean-Luc Picard,17,0,0.0,15,15,often,CantPlayAi:11;CantAfford:8
+TRK,Vexing Drone,20,2,0.1,20,19,often,CantAfford:27;CantPlayAi:17
+TRK,MACO Strike Team,10,1,0.1,10,9,often,CantPlayAi:19;CantAfford:9
+TRK,Stable Wormhole,23,4,0.174,23,19,often,CantAfford:38;CantPlayAi:19
+TRK,"Loot, Exuberant Explorer",15,2,0.133,14,12,often,CantPlayAi:41;CantAfford:17
+TRK,Genesis Effect,12,12,1.0,10,0,never,CantPlayAi:684
+TRK,"Sarcophagus, Ship of the Dead",12,3,0.25,11,7,often,CantPlayAi:35;CantAfford:22
+TRK,"Quark, Humble Proprietor",17,3,0.176,14,11,often,CantPlayAi:58;CantAfford:36
+TRK,Combadge,17,0,0.0,16,16,often,CantAfford:6;CantPlayAi:5
+TRK,Warp Core,20,2,0.1,19,16,often,CantPlayAi:43;CantAfford:19
+TRK,Savvy Profiteer,18,1,0.056,16,16,often,CantPlayAi:20;CantAfford:6
+TRK,"Q, Stacking the Deck",17,16,0.941,17,0,never,BadEtbEffects:93;CantPlayAi:75
+TRK,Starfleet Spanner Jockey,12,1,0.083,12,11,often,CantPlayAi:37;CantAfford:26
+TRK,Cha'DIch Investigator,25,3,0.12,22,21,often,CantPlayAi:34;CantAfford:9
+TRK,Test of Priorities,17,0,0.0,16,16,often,CantPlayAi:256;CantAfford:99
+TRK,Melkotian Adjudicator,18,5,0.278,17,12,often,CantPlayAi:38;CantAfford:21
+TRK,"Gul Dukat, Colonial Prefect",17,7,0.412,11,9,often,CantPlayAi:16;CantAfford:9
+TRK,Arcum Dagsson,21,4,0.19,19,14,often,CantPlayAi:62;CantAfford:41
+TRK,Cantankerous Captain,19,2,0.105,17,17,often,CantAfford:10;CantPlayAi:5
+TRK,Starfleet Security,15,1,0.067,15,15,often,CantAfford:11
+TRK,"Gray and Adira, Forever Joined",11,0,0.0,9,9,often,CantPlayAi:4;CantAfford:3
+TRK,Captain James T. Kirk,22,6,0.273,19,14,often,CantPlayAi:51;CantAfford:27
+TRK,Resistance Is Futile,22,4,0.182,21,17,often,CantPlayAi:64;CantAfford:11
+TRK,Khaaaaaaaaaaaannn!,15,0,0.0,14,14,often,CantPlayAi:377;CantAfford:9
+TRK,Ravenous Cosmozoan,15,2,0.133,7,11,often,CantAfford:7
+TRK,Pattern Buffer Preservation,27,1,0.037,26,25,often,CantAfford:10
+TRK,Infinite Diversity,15,12,0.8,5,0,never,CantPlayAi:37
+TRK,"Gabriel Lorca, Mirror Menace",16,4,0.25,13,11,often,CantPlayAi:29;CantAfford:17
+TRK,Death Is Irrelevant,17,11,0.647,5,5,often,CantAfford:1
+TRK,"Mogis, God of Slaughter",10,3,0.3,9,7,often,CantPlayAi:30;CantAfford:15
+TRK,DOT-7 Repair Squad,21,4,0.19,19,15,often,CantPlayAi:33;CantAfford:11
+TRK,Exploratory Mission,17,2,0.118,15,13,often,CantPlayAi:47;CantAfford:25
+TRK,Set Phasers to . . .,18,1,0.056,16,15,often,CantPlayAi:790;CantAfford:144
+TRK,"Lwaxana Troi, Charming Guest",17,2,0.118,18,16,often,CantPlayAi:37;CantAfford:16
+TRK,Command Subadjunct,13,0,0.0,13,13,often,CantAfford:10;CantPlayAi:9
+TRK,"Deanna Troi, Psychic Counsel",10,1,0.1,10,9,often,CantPlayAi:17;CantAfford:10
+TRK,The Measure of a Man,18,4,0.222,15,10,often,CantPlayAi:50;CantAfford:22;BadEtbEffects:11
+TRK,"Worf, Honor-Bound Warrior",20,3,0.15,19,16,often,CantPlayAi:43;CantAfford:23
+TRK,"Rutherford, Upgraded Ensign",24,4,0.167,22,18,often,CantPlayAi:57;CantAfford:39
+TRK,Rogue Artificial Intelligence,18,5,0.278,5,4,often,CantPlayAi:13;CantAfford:12
+TRK,"He's Dead, Jim",24,1,0.042,19,19,often,CantPlayAi:221;CantAfford:9
+TRK,Assault Drone,17,2,0.118,15,15,often,CantPlayAi:36;CantAfford:24
+TRK,Storied Veteran,19,2,0.105,19,17,often,CantPlayAi:27;CantAfford:10
+TRK,A Good Day to Die,18,6,0.333,19,13,often,CantPlayAi:1533;CantAfford:2
+TRK,Engineered Explosives,22,18,0.818,0,0,no_eval,
+TRK,"Picard, Leading by Example",22,1,0.045,21,20,often,CantPlayAi:43;CantAfford:22
+TRK,Collective Drone,15,0,0.0,13,12,often,CantPlayAi:37;CantAfford:21
+TRK,Encounter the Unknown,17,1,0.059,17,16,often,CantAfford:174
+TRK,Test of Identity,18,4,0.222,16,12,often,CantPlayAi:497;CantAfford:151
+TRK,"Kirk, Commanding Officer",20,1,0.05,19,18,often,CantAfford:15;CantPlayAi:8
+TRK,Federation Resupply,14,10,0.714,14,3,rare,CantPlayAi:127;CantAfford:3
+TRK,The Naked Time,14,1,0.071,14,11,often,CantPlayAi:49;CantAfford:23;BadEtbEffects:7
+TRK,Planetary Bombardment,25,6,0.24,21,16,often,CantPlayAi:114;CantAfford:3
+TRK,Ghost of Illyria,23,9,0.391,23,14,often,CantPlayAi:72;CantAfford:36
+TRK,Tactical Officer,18,2,0.111,17,15,often,CantAfford:13;CantPlayAi:10
+TRK,Pure Energy,21,0,0.0,21,21,often,CantAfford:18;CantPlayAi:15
+TRK,Rules of Acquisition,21,7,0.333,15,11,often,CantPlayAi:24;CantAfford:22
+TRK,"Zefram Cochrane, Warp Pioneer",21,9,0.429,20,11,often,CantPlayAi:51;CantAfford:30
+TRK,Romulan Bird-of-Prey,21,4,0.19,19,14,often,CantPlayAi:57;CantAfford:33
+TRK,Tricorder,17,0,0.0,16,16,often,CantPlayAi:12;CantAfford:6
+TRK,"Jett Reno, Problem Solver",18,6,0.333,16,12,often,CantPlayAi:55;CantAfford:38
+TRK,"Khan, Despot by Design",19,1,0.053,18,17,often,CantPlayAi:31;CantAfford:15
+TRK,Commander Raffi Musiker,23,4,0.174,23,21,often,CantPlayAi:56;CantAfford:31
+TRK,"Drivnod, Carnage Dominus",25,5,0.2,20,16,often,CantPlayAi:37;CantAfford:25
+TRK,"U.S.S. Reliant, From Hell's Heart",11,2,0.182,9,5,often,CantPlayAi:46;CantAfford:23;BadEtbEffects:16
+TRK,Silicate Surveyor,16,2,0.125,13,12,often,CantPlayAi:31;CantAfford:16
+TRK,Blastoneuron,17,16,0.941,16,2,rare,BadEtbEffects:106;CantPlayAi:78;CantAfford:4
+TRK,Vengeance Mission,10,1,0.1,9,6,often,CantPlayAi:58;CantAfford:43
+TRK,Plasma Cascade,21,1,0.048,20,19,often,CantPlayAi:377;CantAfford:52
+TRK,Brazen Bluff,24,22,0.917,24,0,never,CantPlayAi:2459
+TRK,D'Ghor Bloodletter,10,3,0.3,10,8,often,CantPlayAi:31;CantAfford:18
+TRK,Highly Illogical,14,10,0.714,12,4,rare,CantPlayAi:219;CantAfford:8
+TRK,Marooned,18,0,0.0,16,15,often,CantPlayAi:45;CantAfford:2
+TRK,"H.M.S. Bounty, Unlikely Timeship",19,15,0.789,16,0,never,BadEtbEffects:80;CantPlayAi:70
+TRK,Replicator,19,0,0.0,13,12,often,CantPlayAi:29;CantAfford:14
+TRK,Emergency Holographic Crew,24,7,0.292,21,13,often,CantPlayAi:45;CantAfford:28
+TRK,Constable Odo,13,1,0.077,12,11,often,CantAfford:5;CantPlayAi:3
+TRK,"Wesley Crusher, Starfleet Cadet",14,1,0.071,12,11,often,CantAfford:134;CantPlayAi:16
+TRK,Those Old Scientists,24,4,0.167,21,16,often,CantPlayAi:82;CantAfford:53
+TRK,Assembly Specialist,23,4,0.174,21,16,often,CantPlayAi:37;CantAfford:17
+TRK,"Hoshi Sato, Exolinguist",17,5,0.294,13,9,often,CantPlayAi:41;CantAfford:19
+TRK,There's Coffee in that Nebula,14,3,0.214,14,11,often,CantPlayAi:20;CantAfford:7
+TRK,"70,000 Light-Years from Home",20,4,0.2,19,15,often,CantPlayAi:68;CantAfford:11
+TRK,Photosynthetic Physician,12,4,0.333,11,8,often,CantPlayAi:22;CantAfford:12
+TRK,"The Doctor, EMH",10,2,0.2,9,8,often,BadEtbEffects:23;CantAfford:9
+TRK,Emergency Medical Hologram,22,5,0.227,22,17,often,CantPlayAi:88;CantAfford:43;BadEtbEffects:23
+TRK,The Inner Light,19,10,0.526,15,6,often,CantPlayAi:36;BadEtbEffects:19;CantAfford:9
+TRK,Cold-Blooded Crew,23,3,0.13,11,9,often,CantPlayAi:22;CantAfford:12
+TRK,Syndicate Liquidators,18,4,0.222,16,13,often,CantPlayAi:28;CantAfford:8
+TRK,"Elim Garak, Simple Tailor",10,2,0.2,9,9,often,CantPlayAi:19;CantAfford:5
+TRK,Fugitive Listener,10,1,0.1,9,8,often,CantPlayAi:21;CantAfford:10
+TRK,Species 8472,16,2,0.125,15,13,often,CantPlayAi:26;CantAfford:7
+TRK,Dominion Assault Force,11,2,0.182,9,8,often,CantPlayAi:19;CantAfford:5
+TRK,Sickbay,25,4,0.16,20,18,often,CantPlayAi:9;CantAfford:6
+TRK,Type-2 Phaser,18,2,0.111,15,14,often,CantPlayAi:23;CantAfford:14
+TRK,Federation Probe,19,1,0.053,19,18,often,CantPlayAi:18;CantAfford:14
+TRK,Academy Instructor,16,6,0.375,14,9,often,CantPlayAi:55;CantAfford:27
+TRK,Energize,11,2,0.182,10,9,often,CantPlayAi:37;CantAfford:8
+TRK,Vulcan Mind-Meld,19,1,0.053,18,17,often,CantAfford:15
+TRK,Organic Avulsion Unit,14,1,0.071,13,12,often,CantPlayAi:30;CantAfford:15
+TRK,Cetacean Ops,21,11,0.524,19,11,often,CantPlayAi:45;CantAfford:24
+TRK,Kobayashi Maru Scenario,18,7,0.389,16,8,often,CantPlayAi:42;CantAfford:34
+TRK,"Kai Winn, Faithless Leader",22,19,0.864,20,0,never,BadEtbEffects:185;CantPlayAi:171
+TRK,Stray from History,16,0,0.0,13,13,often,CantAfford:1;CantPlayAi:1
+TRK,Tal Shiar Operative,19,5,0.263,19,14,often,CantPlayAi:48;CantAfford:25
+TRK,"Jadzia Dax, Living Legacy",11,2,0.182,10,8,often,CantPlayAi:25;CantAfford:14
+TRK,"Cleveland Booker, Empath",17,3,0.176,14,13,often,CantPlayAi:27;CantAfford:16
+TRK,Horta,20,1,0.05,8,9,often,CantPlayAi:19;CantAfford:10
+TRK,"Beckett Mariner, Impetuous Ensign",16,0,0.0,16,16,often,CantPlayAi:31;CantAfford:13
+TRK,Captain Michael Burnham,17,1,0.059,16,16,often,CantPlayAi:23;CantAfford:6
+TRK,Pah-Wraith,11,3,0.273,7,7,often,
+TRK,The Wrath of Khan,11,1,0.091,9,8,often,BadEtbEffects:21;CantAfford:10;CantPlayAi:4
+TRK,"Worf, Intelligence Contractor",13,0,0.0,13,13,often,CantAfford:11;CantPlayAi:8
+TRK,"U.S.S. Enterprise-D, Galaxy-Class",18,3,0.167,17,13,often,CantPlayAi:47;CantAfford:37
+TRK,Isolinear Processor,17,0,0.0,17,15,often,CantPlayAi:34;CantAfford:19
+TRK,"Mikaeus, the Lunarch",18,4,0.222,16,14,often,CantPlayAi:37
+TRK,"Kenrith, the Returned King",18,1,0.056,10,11,often,CantPlayAi:21;CantAfford:11
+TRK,Federation Field Medic,22,3,0.136,20,17,often,CantPlayAi:26;CantAfford:6
+TRK,"Brad Boimler, Eager Ensign",12,2,0.167,11,9,often,CantPlayAi:25;CantAfford:15
+TRK,Test of Courage,23,4,0.174,21,18,often,CantPlayAi:580;CantAfford:99
+TRK,Dahar Master,15,5,0.333,14,10,often,CantPlayAi:33;CantAfford:17
+TRK,Conquest Mission,13,4,0.308,12,8,often,CantPlayAi:33;CantAfford:22
+TRK,Peace in Our Time,16,3,0.188,12,11,often,CantPlayAi:8;CantAfford:6
+TRK,Primary Unimatrix Adjunct,18,1,0.056,16,16,often,CantAfford:6;CantPlayAi:4
+TRK,Overflow Submatrix,11,1,0.091,11,10,often,CantPlayAi:25;CantAfford:12
+TRK,Open Communications,20,5,0.25,19,14,often,CantPlayAi:51;CantAfford:30
+TRK,Bat'leth,19,1,0.053,17,16,often,CantAfford:12;CantPlayAi:8
+TRK,Bruvac the Grandiloquent,12,3,0.25,12,9,often,CantPlayAi:39;CantAfford:23
+TRK,"Khan, Vengeful Heart",20,5,0.25,21,16,often,CantPlayAi:62;CantAfford:47
+TRK,Salt Vampire,13,0,0.0,13,13,often,CantPlayAi:33;CantAfford:22
+TRK,Hologram Janeway,19,4,0.211,17,14,often,CantPlayAi:43;CantAfford:17
+TRK,Planetary Patrol,17,2,0.118,16,14,often,CantPlayAi:50;CantAfford:30
+TRK,"U.S.S. Cerritos, Following Up",19,3,0.158,15,13,often,CantPlayAi:44;CantAfford:28
+TRK,"Gowron, Eager for Battle",13,4,0.308,12,8,often,CantPlayAi:43;CantAfford:22
+TRK,Tal Shiar Analyst,12,1,0.083,11,10,often,CantPlayAi:28;CantAfford:12
+TRK,Deep Space 9,20,11,0.55,4,5,often,CantPlayAi:8;CantAfford:3
+TRK,"Dr. Leonard ""Bones"" McCoy",10,0,0.0,10,10,often,CantAfford:54;CantPlayAi:13
+TRK,Empress Galina,21,12,0.571,17,4,rare,CantPlayAi:61;CantAfford:41
+TRK,"Mr. Spock, Science Officer",12,6,0.5,11,5,often,CantPlayAi:44;CantAfford:32
+TRK,Consider the Prime Directive,19,7,0.368,18,11,often,CantPlayAi:513;CantAfford:352
+TRK,"Hemmer, Fixing What Is Broken",14,4,0.286,12,10,often,CantPlayAi:35;CantAfford:13
+TRK,"Georgiou, Terran Emperor",13,6,0.462,10,6,often,CantPlayAi:15;CantAfford:5
+TRK,Andromedan Automatons,19,2,0.105,18,16,often,CantPlayAi:50;CantAfford:29
+TRK,Boarding Action,11,0,0.0,11,10,often,CantAfford:21;CantPlayAi:10
+TRK,"Rok-Tahk, Budding Scientist",10,2,0.2,4,5,often,CantPlayAi:7;CantAfford:3
+TRK,Dominion Infiltration,14,2,0.143,14,12,often,CantPlayAi:32;CantAfford:19
+TRK,Red Alert!,13,2,0.154,11,7,often,CantPlayAi:782;CantAfford:1
+TRK,"Erica Ortegas, Plucky Pilot",16,1,0.062,13,13,often,CantAfford:9
+TRK,Excalbian Gamemaster,16,2,0.125,16,15,often,CantPlayAi:26;CantAfford:11
+TRK,"Sela, Tal Shiar Paradox",10,1,0.1,10,9,often,CantPlayAi:25;CantAfford:13
+TRK,Eject the Warp Core,15,6,0.4,15,8,often,CantPlayAi:650;CantAfford:130
+TRK,"Nyota Uhura, Communications",22,16,0.727,17,0,never,BadEtbEffects:123;CantPlayAi:95
+TRK,Live Long and Prosper,12,10,0.833,7,0,never,CantPlayAi:22
+TRK,Captain Benjamin Sisko,11,1,0.091,10,10,often,CantPlayAi:28;CantAfford:16
+TRK,Flare of Fortitude,12,11,0.917,11,0,never,CantPlayAi:1488;CantPlaySa:110
+TRK,Captain Kathryn Janeway,15,3,0.2,16,13,often,CantPlayAi:45;CantAfford:27
+TRK,"Data, New Life",10,2,0.2,8,5,often,CantPlayAi:17;CantAfford:12
+TRK,Anthropological Mission,20,6,0.3,18,11,often,CantPlayAi:43;CantAfford:19
+TRK,Cybernetic Specialist,10,0,0.0,11,10,often,CantPlayAi:10;CantAfford:2
+TRK,D-7 Battle Cruiser,10,0,0.0,9,9,often,CantAfford:5;CantPlayAi:2
+TRK,Adversary by Algorithm,17,3,0.176,17,14,often,CantPlayAi:51;CantAfford:22
+TRK,"Seven of Nine, Unassimilated",12,3,0.25,12,8,often,CantPlayAi:26;CantAfford:17
