@@ -1,0 +1,36 @@
+name: Top-player check (17Lands site "Top" group vs Case 6 aggregate)
+on:
+  push:
+    branches: [research/top-player]
+    paths:
+      - scripts/top_site_fetch.py
+      - .github/workflows/top_site_fetch.yml
+permissions:
+  contents: write
+concurrency:
+  group: top-site-fetch
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/top-player
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit test (mock data)
+        run: cd scripts && python -m unittest test_top_site_fetch.py
+      - name: Fetch past sets (2 requests per set, spaced)
+        run: python scripts/top_site_fetch.py
+      - name: Commit results to the research branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/top_player/site_top
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m 'Top-player check: 17Lands site card ratings for past sets (all users and top group)'
+          git pull --rebase origin research/top-player
+          git push origin HEAD:research/top-player
