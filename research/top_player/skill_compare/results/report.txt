@@ -1,0 +1,234 @@
+sets with data: 23 ['BLB', 'BRO', 'DFT', 'DMU', 'DSK', 'ECL', 'EOE', 'FDN', 'HOB', 'LCI', 'LTR', 'MKM', 'MOM', 'MSH', 'NEO', 'ONE', 'OTJ', 'SNC', 'SOS', 'TDM', 'TLA', 'TMT', 'WOE']
+
+=== 0. checks
+set  cards  top_games_equal  top_wins_equal
+BLB    270              270             270
+BRO    313              313             313
+DFT    279              279             279
+DMU    263              263             263
+DSK    276              276             276
+ECL    269              269             269
+EOE    291              291             291
+FDN    282              282             282
+HOB    184                0               0
+LCI    287              287             287
+LTR    260              260             260
+MKM    298              298             298
+MOM    344              344             344
+MSH    278              278             278
+NEO    284              284             284
+ONE    262              262             262
+OTJ    361              361             361
+SNC    260              260             260
+SOS    320              320             320
+TDM    278              278             278
+TLA    282              282             282
+TMT    190              190             190
+WOE    296              296             296
+type known for 90.9% of cards in the attribute table
+
+=== 1. games and win rate by group (mean over sets)
+grp  share     wr
+  L  0.148 53.711
+ B1  0.107 44.351
+  N  0.540 54.691
+ B2  0.237 51.563
+ B3  0.304 57.115
+  T  0.205 63.856
+ B4  0.131 62.003
+ B5  0.073 67.203
+games with n >= 50 but no win-rate bucket (excluded): 0
+
+=== 2. how much of the top-normal difference is built into the definition?
+                                 comparison  sets   cards     gap  slope  sd_ratio  spearman
+                             public: T vs N    23 251.435   8.829  0.875     0.954     0.901
+                            public: B5 vs N    23 196.522  12.075  0.830     0.960     0.829
+                            public: B1 vs N    23 240.739 -10.071  0.969     1.090     0.862
+                 public: L (<50 games) vs N    23 254.304  -1.172  1.101     1.200     0.908
+public heavy players (n>=500): T500 vs N500    17  71.529  10.035  0.613     1.107     0.540
+public light players (n 50-100): T50 vs N50    23 249.565  10.551  0.839     0.917     0.898
+             site (all time): top vs middle    23 248.261   3.909  0.876     0.982     0.883
+          site (all time): bottom vs middle    23 239.391  -6.799  0.929     1.054     0.865
+             site (all time): top vs bottom    23 237.522  10.701  0.797     0.938     0.827
+                site (all time): top vs all    23 250.348   4.649  0.912     0.966     0.936
+if a card's effect were the same in log-odds for everyone, the slope T on N would be p(1-p) ratio: mean 0.931 (range 0.919-0.938)
+
+=== 3. game characteristics by group (mean over sets)
+                what grp  share     wr  wr_other  wr_diff
+         on the play   L  0.499 56.196    51.236    4.960
+         on the play  B1  0.499 46.813    41.902    4.911
+         on the play   N  0.500 57.313    52.069    5.243
+         on the play  B2  0.500 54.139    48.993    5.146
+         on the play  B3  0.501 59.767    54.457    5.310
+         on the play   T  0.502 66.400    61.292    5.108
+         on the play  B4  0.501 64.585    59.407    5.178
+         on the play  B5  0.502 69.667    64.711    4.956
+     mulliganed (me)   L  0.124 40.756    55.621  -14.865
+     mulliganed (me)  B1  0.127 32.021    46.166  -14.145
+     mulliganed (me)   N  0.108 41.452    56.348  -14.897
+     mulliganed (me)  B2  0.114 38.650    53.271  -14.621
+     mulliganed (me)  B3  0.103 43.798    58.703  -14.905
+     mulliganed (me)   T  0.093 50.756    65.257  -14.501
+     mulliganed (me)  B4  0.095 48.942    63.443  -14.501
+     mulliganed (me)  B5  0.090 54.269    68.515  -14.245
+ opponent mulliganed   L  0.132 67.211    51.665   15.546
+ opponent mulliganed  B1  0.119 58.200    42.478   15.722
+ opponent mulliganed   N  0.119 68.174    52.876   15.298
+ opponent mulliganed  B2  0.118 65.351    49.713   15.638
+ opponent mulliganed  B3  0.119 70.352    55.327   15.024
+ opponent mulliganed   T  0.123 76.037    62.152   13.885
+ opponent mulliganed  B4  0.121 74.561    60.279   14.282
+ opponent mulliganed  B5  0.126 78.594    65.556   13.038
+    mono-colour main   L  0.019 55.526    53.686    1.840
+    mono-colour main  B1  0.019 45.236    44.323    0.913
+    mono-colour main   N  0.019 55.423    54.667    0.756
+    mono-colour main  B2  0.019 51.594    51.549    0.045
+    mono-colour main  B3  0.019 58.334    57.084    1.250
+    mono-colour main   T  0.021 64.454    63.826    0.628
+    mono-colour main  B4  0.021 62.870    61.971    0.898
+    mono-colour main  B5  0.021 66.537    67.181   -0.644
+     3+ main colours   L  0.185 49.930    54.296   -4.365
+     3+ main colours  B1  0.204 41.471    44.912   -3.441
+     3+ main colours   N  0.181 52.069    55.077   -3.008
+     3+ main colours  B2  0.187 49.021    51.941   -2.920
+     3+ main colours  B3  0.177 54.618    57.470   -2.852
+     3+ main colours   T  0.174 61.427    64.168   -2.741
+     3+ main colours  B4  0.175 59.635    62.321   -2.686
+     3+ main colours  B5  0.171 64.827    67.484   -2.657
+              splash   L  0.329 52.690    54.098   -1.408
+              splash  B1  0.347 43.109    44.923   -1.814
+              splash   N  0.367 53.441    55.292   -1.851
+              splash  B2  0.361 50.231    52.202   -1.972
+              splash  B3  0.371 55.860    57.734   -1.875
+              splash   T  0.375 62.697    64.460   -1.763
+              splash  B4  0.375 60.792    62.649   -1.857
+              splash  B5  0.376 66.148    67.749   -1.602
+ game ends by turn 7   L  0.284 56.482    52.611    3.871
+ game ends by turn 7  B1  0.280 45.603    43.854    1.749
+ game ends by turn 7   N  0.285 56.696    53.873    2.823
+ game ends by turn 7  B2  0.283 53.298    50.861    2.437
+ game ends by turn 7  B3  0.287 59.299    56.217    3.082
+ game ends by turn 7   T  0.293 66.143    62.865    3.278
+ game ends by turn 7  B4  0.292 64.284    61.021    3.263
+ game ends by turn 7  B5  0.296 69.474    66.207    3.267
+game lasts 12+ turns   L  0.180 50.600    54.392   -3.793
+game lasts 12+ turns  B1  0.186 43.693    44.506   -0.813
+game lasts 12+ turns   N  0.183 52.212    55.240   -3.028
+game lasts 12+ turns  B2  0.184 49.683    51.986   -2.303
+game lasts 12+ turns  B3  0.182 54.192    57.755   -3.563
+game lasts 12+ turns   T  0.176 60.002    64.656   -4.654
+game lasts 12+ turns  B4  0.178 58.389    62.769   -4.380
+game lasts 12+ turns  B5  0.173 63.024    68.041   -5.017
+play advantage (pp, WR on play - on draw): N 5.24, T 5.11; T-N -0.14 (same sign in 14/23 sets)
+mulligan penalty (pp, WR after 1 mulligan - no mulligan): N -14.25, T -13.95; T-N +0.30 (same sign in 15/23 sets)
+grp  deck_size  sb_size  oh_cards  drawn_cards  turns_n
+  L     40.143   16.280     6.928        9.905    9.228
+ B1     40.159   16.277     6.926        9.891    9.266
+  N     40.096   16.245     6.938       10.023    9.233
+ B2     40.108   16.269     6.934        9.982    9.246
+ B3     40.087   16.226     6.941       10.054    9.223
+  T     40.071   16.195     6.947       10.115    9.171
+ B4     40.073   16.197     6.946       10.107    9.187
+ B5     40.067   16.187     6.949       10.128    9.142
+grp bucket  share     wr
+ B1    <=6  0.140 46.673
+ B1    7-8  0.302 44.306
+ B1   9-10  0.279 43.885
+ B1  11-12  0.159 43.585
+ B1    13+  0.120 43.830
+ B5    <=6  0.148 69.535
+ B5    7-8  0.315 69.022
+ B5   9-10  0.274 66.876
+ B5  11-12  0.151 65.009
+ B5    13+  0.111 62.238
+  N    <=6  0.143 57.368
+  N    7-8  0.306 55.646
+  N   9-10  0.276 54.308
+  N  11-12  0.156 53.081
+  N    13+  0.119 51.913
+  T    <=6  0.147 66.298
+  T    7-8  0.312 65.502
+  T   9-10  0.274 63.564
+  T  11-12  0.153 61.698
+  T    13+  0.114 59.408
+grp      dim  bronze  silver  gold  platinum  diamond  mythic  unknown
+  L     rank   0.115   0.302 0.272     0.226    0.031   0.009    0.044
+  L opp_rank   0.018   0.028 0.022     0.016    0.002   0.001    0.913
+ B1     rank   0.015   0.116 0.236     0.498    0.098   0.027    0.010
+ B1 opp_rank   0.004   0.011 0.022     0.042    0.006   0.002    0.913
+  N     rank   0.017   0.086 0.173     0.456    0.177   0.083    0.009
+  N opp_rank   0.003   0.009 0.018     0.041    0.012   0.004    0.913
+  T     rank   0.035   0.121 0.172     0.375    0.174   0.114    0.010
+  T opp_rank   0.005   0.010 0.017     0.035    0.014   0.005    0.913
+ B5     rank   0.054   0.160 0.186     0.339    0.150   0.098    0.012
+ B5 opp_rank   0.007   0.013 0.018     0.032    0.012   0.004    0.914
+mean match number within a draft run (games-weighted): L 3.66, B1 3.37, N 3.81, T 4.13, B5 4.23
+
+=== 4. deck building by group (mean over sets; per game)
+grp  lands  creatures  instants  sorceries  other_spells  unknown_type  commons  uncommons  rares  mythics  deck_quality  blue_cards
+  L 16.764     13.742     3.727      2.290         2.657         1.164   13.886      7.171  1.905    0.393         0.566       4.698
+ B1 16.759     13.671     3.717      2.329         2.698         1.181   13.708      7.338  1.921    0.406         0.537       4.649
+  N 16.737     13.577     3.757      2.343         2.698         1.177   13.790      7.275  1.884    0.396         0.860       4.810
+ B2 16.745     13.629     3.725      2.333         2.690         1.181   13.730      7.314  1.903    0.400         0.754       4.750
+ B3 16.732     13.537     3.782      2.350         2.704         1.174   13.835      7.245  1.869    0.392         0.942       4.855
+  T 16.729     13.404     3.856      2.380         2.721         1.172   13.987      7.151  1.813    0.381         1.164       5.043
+ B4 16.731     13.424     3.844      2.374         2.718         1.172   13.958      7.166  1.824    0.383         1.119       5.004
+ B5 16.726     13.368     3.879      2.391         2.724         1.171   14.036      7.125  1.794    0.377         1.244       5.103
+deck quality index (copies-weighted mean of the cards' overall GIH, centred in the set): T - N +0.30pp (same sign 23/23); B5 - N +0.38; B1 - N -0.32; L - N -0.29
+colour pairs (2-colour decks, 10 pairs, Spearman with the pair's all-player WR, mean over sets): share(N) 0.70, share(T) 0.73, share(T)-share(N) 0.49
+share of 2-colour games with blue: N 0.389, T 0.409
+colour-pair WR spread across the 10 pairs: SD N 1.91, T 2.05; slope of T on N 0.84
+
+=== 5. which cards make the deck (maindeck rate when the card is in the pool, game-weighted)
+      n  corr_q_rate_B1  corr_q_rate_N  corr_q_rate_T  mean_rate_N  mean_rate_T  corr_q_rate_diff
+255.304           0.739          0.785           0.82        0.625        0.607             0.645
+sets where top players' maindeck choices follow card strength more closely than N's: 23/23
+
+=== 6. card performance by group: where does the top-normal difference come from?
+metric  sets   cards  gap_T_minus_N  slope  sd_ratio  spearman
+   gih    23 251.435          8.829  0.875     0.954     0.901
+    oh    23 238.087          8.885  0.864     0.969     0.878
+    gd    23 250.957          8.767  0.867     0.992     0.855
+   gns    23 266.739          9.215  0.850     1.054     0.771
+   iwd    23 251.435         -0.398  0.870     0.975     0.871
+    gp    23 267.696          9.076  0.865     1.006     0.860
+  top-specific residual on gih: cards 5783, slope 0.875, observed SD 1.162, true SD (independent halves) 0.343, true share 0.087
+  top-specific residual on gns: cards 6135, slope 0.850, observed SD 1.204, true SD (independent halves) 0.290, true share 0.058
+  top-specific residual on iwd: cards 5783, slope 0.870, observed SD 1.634, true SD (independent halves) 0.407, true share 0.062
+  top-specific residual on oh: cards 5476, slope 0.864, observed SD 1.652, true SD (independent halves) 0.142, true share 0.007
+  top-specific residual on gd: cards 5772, slope 0.867, observed SD 1.485, true SD (independent halves) 0.146, true share 0.010
+  true covariance GIH vs GNS (the deck wins more even when the card is not drawn): 0.011 (true var gih 0.117, gns 0.099); true correlation 0.10; cards 5783
+  true covariance GIH vs IWD (drawing the card matters more): 0.097 (true var gih 0.117, iwd 0.166); true correlation 0.69; cards 5783
+  true covariance opening hand vs drawn later: 0.209 (true var oh 0.020, gd 0.079); true correlation 5.21; cards 5476
+
+=== 7. what goes with the top-specific GIH difference (cards pooled)
+  Spearman(top-specific GIH residual, T-N maindeck-rate difference): 0.142 (n 5355); half-0 residual vs rate diff 0.114
+  Spearman(top-specific GIH residual, normal players' GIH from the other half of the games): 0.076 / 0.059
+                                       category    n    gih  gih_h0  gih_h1    gns    iwd  sets_same_sign  sets  rate_diff
+                                           blue 1114  0.347   0.322   0.376  0.222  0.117              22    23     -0.009
+                                        instant  678  0.077   0.054   0.103  0.010  0.078              16    23     -0.013
+                                        sorcery  520  0.091   0.076   0.113 -0.026  0.147              15    23     -0.016
+                                       creature 3088 -0.067  -0.059  -0.075  0.038 -0.081              20    23     -0.017
+                                      equipment  120 -0.210  -0.097  -0.333 -0.005 -0.187              15    22     -0.015
+                                           aura  116 -0.025  -0.213   0.150  0.175 -0.184              11    22     -0.021
+                                         common 2156 -0.072  -0.068  -0.074 -0.024 -0.027              18    23     -0.018
+                                       uncommon 2014  0.023   0.029   0.017  0.026  0.015              14    23     -0.020
+                                           rare 1196  0.072   0.072   0.071  0.082  0.012              14    23     -0.008
+                                         mythic  382  0.036  -0.021   0.091  0.078 -0.019              10    23     -0.004
+   maindecked more by T (rate diff top quarter) 1339  0.178   0.203   0.154  0.182  0.025              21    23      0.022
+maindecked less by T (rate diff bottom quarter) 1339 -0.243  -0.279  -0.211 -0.105 -0.134              22    23     -0.060
+
+=== 8. over the format (days 0-13 vs 14-27)
+period  sets   gap  slope  spearman
+     0    23 8.901  0.858     0.863
+     1    23 8.697  0.803     0.773
+top-specific residual, first vs second period: covariance 0.144 (true variance within the full window is about 0.19), Spearman 0.078
+do normal players move toward the top players' view? Spearman(first-period residual from draft-half 0, change in N's GIH measured on draft-half 1) 0.007; same for T -0.009
+
+=== 9. draft picks and play by site group (17Lands site, all time)
+ group  sets  spearman_pick_order_vs_all_GIH  mean_ATA  gih_wr
+bottom    23                           0.675     6.110  49.404
+middle    23                           0.703     6.177  56.709
+   top    23                           0.736     6.272  60.745
+   all    23                           0.687     6.158  56.221
+share of all-user GIH games by site group: {"all": 1.0, "bottom": 0.064, "middle": 0.114, "top": 0.143}
