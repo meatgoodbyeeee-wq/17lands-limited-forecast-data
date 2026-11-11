@@ -1,0 +1,40 @@
+name: TRK Card Data (private comparison)
+# All users only, at most one 17Lands attempt per JST day (enforced by scripts/trk_card_data.py).
+# push: runs on the branch it was pushed to (to refresh, edit live/trk-card-data.request).
+# schedule: only takes effect once this file is on the default branch.
+on:
+  push:
+    paths:
+      - '.github/workflows/trk-card-data.yml'
+      - 'scripts/trk_card_data.py'
+      - 'live/trk-card-data.request'
+  schedule:
+    - cron: '41 15 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: trk-card-data
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/trk_card_data.py
+      - name: Save snapshot and state
+        run: |
+          for f in live/trk-card-data.json live/trk-card-data-state.json; do [ -f "$f" ] && git add "$f"; done
+          if git diff --cached --quiet; then echo 'nothing to save'; exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update TRK Card Data snapshot'
+          for i in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo 'push failed after retries' >&2; exit 1
