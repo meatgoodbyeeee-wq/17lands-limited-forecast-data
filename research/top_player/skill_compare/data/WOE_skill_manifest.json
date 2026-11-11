@@ -1,0 +1,33 @@
+{
+  "set": "WOE",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.WOE.PremierDraft.csv.gz",
+  "sha256": "3d9a55acb2846905ea7fc930c6ec0b5954d1e6ff78187936b4db8da3baa8b8a6",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2023-08-31T17:12:20+00:00",
+  "window_end": "2023-09-28T17:12:20+00:00",
+  "last_draft_time_in_window": "2023-09-28T17:08:40+00:00",
+  "games": 683618,
+  "wins": 378083,
+  "band_games": {
+    "B1": 65735,
+    "B2": 174486,
+    "B3": 229605,
+    "B4": 95676,
+    "B5": 42037,
+    "L": 76079
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 329
+}

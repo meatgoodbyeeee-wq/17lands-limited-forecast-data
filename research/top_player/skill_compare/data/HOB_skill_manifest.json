@@ -1,0 +1,33 @@
+{
+  "set": "HOB",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.HOB.PremierDraft.csv.gz",
+  "sha256": "1ca977bb415ac8fce04b889b9b2d93a6540cf21a033dfa9fb0907af443000676",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2026-08-11T15:43:42+00:00",
+  "window_end": "2026-09-08T15:43:42+00:00",
+  "last_draft_time_in_window": "2026-09-08T15:41:39+00:00",
+  "games": 284304,
+  "wins": 159511,
+  "band_games": {
+    "B1": 24626,
+    "B2": 47195,
+    "B3": 68811,
+    "B4": 32560,
+    "B5": 28186,
+    "L": 82926
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 193
+}

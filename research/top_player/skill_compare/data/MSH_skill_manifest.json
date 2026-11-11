@@ -1,0 +1,33 @@
+{
+  "set": "MSH",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.MSH.PremierDraft.csv.gz",
+  "sha256": "8a6bd93a5d50554a3d87703e93624d09e638dc6dd03eda12be9c3f2925484edf",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2026-06-23T15:51:03+00:00",
+  "window_end": "2026-07-21T15:51:03+00:00",
+  "last_draft_time_in_window": "2026-07-21T15:50:51+00:00",
+  "games": 359432,
+  "wins": 201639,
+  "band_games": {
+    "B1": 40274,
+    "B2": 74626,
+    "B3": 97029,
+    "B4": 48068,
+    "B5": 35902,
+    "L": 63533
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 339
+}

@@ -1,0 +1,33 @@
+{
+  "set": "LCI",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.LCI.PremierDraft.csv.gz",
+  "sha256": "8c3a02c441b3741ab1f335d978fe842b8b9d030ae06e63a291b8f8b259b9c947",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2023-11-09T18:06:26+00:00",
+  "window_end": "2023-12-07T18:06:26+00:00",
+  "last_draft_time_in_window": "2023-12-07T18:05:58+00:00",
+  "games": 659552,
+  "wins": 365195,
+  "band_games": {
+    "B1": 66880,
+    "B2": 145506,
+    "B3": 199901,
+    "B4": 94586,
+    "B5": 50053,
+    "L": 102626
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 291
+}

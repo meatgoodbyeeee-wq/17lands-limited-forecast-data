@@ -1,0 +1,33 @@
+{
+  "set": "BLB",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.BLB.PremierDraft.csv.gz",
+  "sha256": "61fed2a4db5854ca9f247eba9ea4176cf70a25ee253024928963335d32dbf281",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2024-07-30T15:19:12+00:00",
+  "window_end": "2024-08-27T15:19:12+00:00",
+  "last_draft_time_in_window": "2024-08-27T15:18:38+00:00",
+  "games": 825445,
+  "wins": 450641,
+  "band_games": {
+    "B1": 92691,
+    "B2": 212128,
+    "B3": 253336,
+    "B4": 95019,
+    "B5": 46858,
+    "L": 125413
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 276
+}

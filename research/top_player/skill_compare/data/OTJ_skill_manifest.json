@@ -1,0 +1,33 @@
+{
+  "set": "OTJ",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.OTJ.PremierDraft.csv.gz",
+  "sha256": "e8c4bfe8482710a59411c7e1f5b5e35e3583f4c7ff7b46f1702b2d95356acee6",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2024-04-16T15:08:24+00:00",
+  "window_end": "2024-05-14T15:08:24+00:00",
+  "last_draft_time_in_window": "2024-05-14T15:07:28+00:00",
+  "games": 941904,
+  "wins": 510782,
+  "band_games": {
+    "B1": 123747,
+    "B2": 264569,
+    "B3": 301629,
+    "B4": 111999,
+    "B5": 45267,
+    "L": 94693
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 381
+}

@@ -1,0 +1,33 @@
+{
+  "set": "DFT",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.DFT.PremierDraft.csv.gz",
+  "sha256": "734325afbe5c023245e7769fab66c88dcf241407666becb06b956d7fee13a28b",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2025-02-11T16:42:40+00:00",
+  "window_end": "2025-03-11T16:42:40+00:00",
+  "last_draft_time_in_window": "2025-03-11T16:42:19+00:00",
+  "games": 770970,
+  "wins": 423653,
+  "band_games": {
+    "B1": 84813,
+    "B2": 188008,
+    "B3": 233905,
+    "B4": 101217,
+    "B5": 54483,
+    "L": 108544
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 286
+}

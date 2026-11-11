@@ -1,0 +1,33 @@
+{
+  "set": "SNC",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.SNC.PremierDraft.csv.gz",
+  "sha256": "c0e5f3c087889ef2ea38c5a8ac4cc68ba43b83db5b7c0c204d4dee0200379fdd",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2022-04-28T15:27:01+00:00",
+  "window_end": "2022-05-26T15:27:01+00:00",
+  "last_draft_time_in_window": "2022-05-26T15:26:32+00:00",
+  "games": 617897,
+  "wins": 340787,
+  "band_games": {
+    "B1": 69808,
+    "B2": 152004,
+    "B3": 196194,
+    "B4": 81895,
+    "B5": 45048,
+    "L": 72948
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 266
+}
