@@ -40,6 +40,28 @@ def get(url, fake_name):
         return json.load(r)
 
 
+def shape(x):
+    """Short description of an answer that is not a list of rows (kept in the state file for diagnosis)."""
+    if isinstance(x, dict):
+        return {'type': 'object', 'keys': list(x)[:12], 'text': json.dumps(x, ensure_ascii=False)[:300]}
+    return {'type': type(x).__name__, 'text': json.dumps(x, ensure_ascii=False)[:300]}
+
+
+def as_rows(x):
+    """Rows as a list: bare, or under data/cards/rows/results. Anything else gives None."""
+    if isinstance(x, list):
+        return x
+    if isinstance(x, dict):
+        for k in ('data', 'cards', 'rows', 'results'):
+            if isinstance(x.get(k), list):
+                return x[k]
+    return None
+
+
+def games_of(rows):
+    return sum(int(r.get('game_count') or 0) for r in rows if isinstance(r, dict)) if rows else 0
+
+
 def main():
     t = now()
     jst = (t + timedelta(hours=9)).date().isoformat()
@@ -70,16 +92,16 @@ def main():
         q = {'expansion': code, 'event_type': 'PremierDraft', 'start_date': start, 'end_date': end}
         url = 'https://www.17lands.com/api/card_data?' + urllib.parse.urlencode(q)
         state['card_data_called'] = True
-        rows = get(url, 'card_data.json'); state['requests'].append('card_data_window')
-        games = sum(int(r.get('game_count') or 0) for r in rows) if isinstance(rows, list) else 0
-        period = 'window'
+        raw = get(url, 'card_data.json'); state['requests'].append('card_data_window')
+        rows = as_rows(raw); games = games_of(rows); period = 'window'
+        state['window_answer'] = {'rows': len(rows), 'games_sum': games} if rows is not None else shape(raw)
         if games == 0:
             url = 'https://www.17lands.com/api/card_data?' + urllib.parse.urlencode({'expansion': code, 'event_type': 'PremierDraft', 'time_period': 'ALL_TIME'})
-            rows = get(url, 'card_data.json'); state['requests'].append('card_data_all_time')
-            games = sum(int(r.get('game_count') or 0) for r in rows) if isinstance(rows, list) else 0
-            period = 'all_time'
-        state.update(rows=len(rows) if isinstance(rows, list) else None, games_sum=games, url=url)
-        if not isinstance(rows, list) or games == 0:
+            raw = get(url, 'card_data.json'); state['requests'].append('card_data_all_time')
+            rows = as_rows(raw); games = games_of(rows); period = 'all_time'
+            state['all_time_answer'] = {'rows': len(rows), 'games_sum': games} if rows is not None else shape(raw)
+        state.update(rows=len(rows) if rows is not None else None, games_sum=games, url=url)
+        if not rows or games == 0:
             state['result'] = 'no games yet; snapshot not written'
             print(state['result'])
             return 0
