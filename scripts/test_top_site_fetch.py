@@ -18,24 +18,34 @@ class T(unittest.TestCase):
         def getter(url):
             seen.append(url)
             return 200, fake_json(1 if "user_group=top" in url else 4)
-        log, rows = t.run(["XXX"], self.d, getter=getter, pause=0)
-        self.assertEqual(len(seen), 2)
-        self.assertIn("expansion=XXX", seen[0]); self.assertIn("start_date=2026-06-23", seen[0]); self.assertIn("end_date=2026-07-21", seen[0])
-        self.assertNotIn("user_group", seen[0]); self.assertIn("user_group=top", seen[1])
+        log, rows, chosen = t.run(["XXX"], self.d, getter=getter, pause=0)
+        self.assertEqual(chosen, {"base": "ratings_nodates", "group_param": ["user_group", "top"]})
+        self.assertEqual(len(seen), 4)  # probe all + probe top, then set all + set top
+        self.assertIn("expansion=XXX", seen[0]); self.assertNotIn("start_date", seen[0])
+        self.assertNotIn("user_group", seen[2]); self.assertIn("user_group=top", seen[3])
         self.assertEqual(len(rows), 2)
         self.assertEqual(rows[0]["all_gih_n"], 160); self.assertEqual(rows[0]["top_gih_n"], 40)
         self.assertFalse(log[-1]["user_group_ignored"])
         self.assertIn("color", log[0]["keys"])
 
-    def test_ignored_param_detected(self):
-        log, rows = t.run(["XXX"], self.d, getter=lambda url: (200, fake_json(1)), pause=0)
-        self.assertTrue(log[-1]["user_group_ignored"])
+    def test_ignored_param_gives_no_variant(self):
+        log, rows, chosen = t.run(["XXX"], self.d, getter=lambda url: (200, fake_json(1)), pause=0)
+        self.assertIsNone(chosen); self.assertEqual(rows, [])
+
+    def test_falls_through_to_working_variant(self):
+        def getter(url):
+            if "/api/card_data" not in url:
+                return 200, fake_json(0)      # zero game counts, as in the first run
+            return 200, fake_json(1 if "player_group=top" in url else 4)
+        log, rows, chosen = t.run(["XXX"], self.d, getter=getter, pause=0)
+        self.assertEqual(chosen, {"base": "api_alltime", "group_param": ["player_group", "top"]})
+        self.assertEqual(rows[0]["top_gih_n"], 40)
 
     def test_failure_is_logged_not_raised(self):
         def getter(url):
             raise urllib.error.HTTPError(url, 403, "Forbidden", None, None)
-        log, rows = t.run(["XXX"], self.d, getter=getter, pause=0, retry_wait=0)
-        self.assertEqual(log[0]["error"], "HTTP 403"); self.assertEqual(rows, [])
+        log, rows, chosen = t.run(["XXX"], self.d, getter=getter, pause=0, retry_wait=0)
+        self.assertEqual(log[0]["error"], "HTTP 403"); self.assertEqual(rows, []); self.assertIsNone(chosen)
 
     def test_refused(self):
         with self.assertRaises(SystemExit):
