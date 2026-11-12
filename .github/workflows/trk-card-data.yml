@@ -1,5 +1,5 @@
 name: TRK Card Data (private comparison)
-# All users only, at most one 17Lands attempt per JST day (enforced by scripts/trk_card_data.py).
+# All users only, at most one 17Lands attempt per daily cycle starting 14:00 JST (enforced by scripts/trk_card_data.py).
 # push: runs on the branch it was pushed to (to refresh, edit live/trk-card-data.request).
 # schedule: only takes effect once this file is on the default branch.
 on:
@@ -9,7 +9,7 @@ on:
       - 'scripts/trk_card_data.py'
       - 'live/trk-card-data.request'
   schedule:
-    - cron: '41 15 * * *'
+    - cron: '0 5 * * *'  # 14:00 JST
 permissions:
   contents: write
 concurrency:

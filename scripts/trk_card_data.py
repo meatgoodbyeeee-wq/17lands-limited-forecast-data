@@ -3,8 +3,9 @@
 
 Rules (user decision 2026-11-11):
 - All users only. Never sends user_group (the top-player TRK values stay unseen until top forecasts are frozen).
-- At most one card-data attempt per JST calendar day; the state file records every attempt, so a rerun on the same day does
-  nothing. If the filters list shows no TRK, no card-data request is made and the day stays open (fix the code, push again).
+- At most one card-data attempt per daily cycle. A cycle starts at 14:00 JST (user decision 2026-11-12: update daily at
+  14:00 JST); the state file records every attempt, so a rerun in the same cycle does nothing. If the filters list shows no
+  TRK, no card-data request is made and the cycle stays open (fix the code, push again).
 - At most 3 HTTP requests per attempt: the filters list (to confirm the 17Lands set code), the card data for the window,
   and, only if the window query returns no games at all, the same card data with time_period=ALL_TIME.
 - The result is for private comparison only. Nothing here touches forecasts.
@@ -65,11 +66,12 @@ def games_of(rows):
 def main():
     t = now()
     jst = (t + timedelta(hours=9)).date().isoformat()
+    cycle = (t + timedelta(hours=9) - timedelta(hours=14)).date().isoformat()  # the cycle that began at 14:00 JST on this date
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
-    if state.get('last_attempt_date_jst') == jst and state.get('card_data_called'):
-        print(f'no request: already attempted on {jst} (JST)')
+    if state.get('last_attempt_cycle') == cycle and state.get('card_data_called'):
+        print(f'no request: already attempted in the cycle that began {cycle} 14:00 JST')
         return 0
-    state = {'last_attempt_date_jst': jst, 'last_attempt_at': t.isoformat(timespec='seconds'), 'requests': [], 'card_data_called': False}
+    state = {'last_attempt_cycle': cycle, 'last_attempt_date_jst': jst, 'last_attempt_at': t.isoformat(timespec='seconds'), 'requests': [], 'card_data_called': False}
     try:
         code = CODE
         try:
@@ -119,7 +121,7 @@ def main():
     except Exception as e:
         state['result'] = 'error: ' + repr(e)[:300]
         print(state['result'], file=sys.stderr)
-        return 0  # the state must still be saved so the same JST day is not retried
+        return 0  # the state must still be saved so the same cycle is not retried
     finally:
         STATE.parent.mkdir(exist_ok=True)
         STATE.write_text(json.dumps(state, ensure_ascii=False, indent=1) + '\n')
