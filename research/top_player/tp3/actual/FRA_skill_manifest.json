@@ -1,0 +1,33 @@
+{
+  "set": "FRA",
+  "source_url": "https://17lands-public.s3.amazonaws.com/analysis_data/game_data/game_data_public.FRA.PremierDraft.csv.gz",
+  "sha256": "a350666bfd293bd14601105af0187f13353b16fa86e81307432a7b3a9a0bbfdc",
+  "format": "PremierDraft",
+  "window_days": 28,
+  "window_start": "2026-09-29T16:22:24+00:00",
+  "window_end": "2026-10-27T16:22:24+00:00",
+  "last_draft_time_in_window": "2026-10-16T23:30:49+00:00",
+  "games": 297964,
+  "wins": 165143,
+  "band_games": {
+    "B1": 32225,
+    "B2": 54302,
+    "B3": 66837,
+    "B4": 33518,
+    "B5": 21952,
+    "L": 89130
+  },
+  "meta_columns_used": [
+    "on_play",
+    "num_mulligans",
+    "opp_num_mulligans",
+    "num_turns",
+    "rank",
+    "opp_rank",
+    "main_colors",
+    "splash_colors",
+    "opp_colors",
+    "match_number"
+  ],
+  "cards": 295
+}
