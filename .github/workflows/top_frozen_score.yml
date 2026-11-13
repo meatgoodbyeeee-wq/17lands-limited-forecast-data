@@ -1,0 +1,38 @@
+name: TP3 stage 2 - aggregate a set after its top-player forecast is frozen
+on:
+  push:
+    branches: [research/top-player]
+    paths:
+      - research/top_player/tp3/aggregate.request
+permissions:
+  contents: write
+concurrency:
+  group: top-frozen-score
+  cancel-in-progress: false
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/top-player
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy
+      - name: Aggregate the requested sets (frozen forecasts only)
+        run: |
+          for s in $(head -1 research/top_player/tp3/aggregate.request); do
+            python scripts/top_frozen_aggregate.py --set "$s" --out-dir research/top_player/tp3/actual
+          done
+      - name: Commit the aggregates to the research branch
+        run: |
+          ls -la research/top_player/tp3/actual
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/top_player/tp3/actual
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m 'TP3 stage 2: public game data aggregate by player group (after the freeze)'
+          git pull --rebase origin research/top-player
+          git push origin HEAD:research/top-player

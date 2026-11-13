@@ -1,0 +1,68 @@
+{
+ "frozen_at": "2026-11-13T11:14:33+00:00",
+ "inputs": {
+  "cards_23sets": "1ad0c1215011f18be74f81e263a1ff6e8ed0b8c937a1ab2d898995e64fa6ef94",
+  "oof_B11g": "98a60e307e456745f25b08dcc67dfd35d0f022946e375dff86807deff370190b",
+  "oof_B10": "416a6b0f317fcf1b2f6f1399605fa997b621fc8ecbece1b2eb54704255baccb8",
+  "fra_pred": "b53b21493e4d21022adf9e48df313f2b2307e6ee645dd54e6a9a055758f041dc",
+  "trk_cards": "3b140e95681352fbfa57b8241ecbe33a1ad9437f301d65da098ae51a8669f2e4"
+ },
+ "tp3_columns": [
+  "intercept",
+  "col_U",
+  "col_G",
+  "creature",
+  "instant",
+  "sorcery",
+  "RM",
+  "FX",
+  "LOOT",
+  "RC2",
+  "RE2",
+  "EQ",
+  "HS2",
+  "IN",
+  "BIG"
+ ],
+ "tp3_beta": [
+  -0.093593,
+  0.487691,
+  -0.090657,
+  -0.09721,
+  0.066708,
+  0.05904,
+  0.260226,
+  0.106294,
+  0.251177,
+  0.323696,
+  0.391684,
+  -0.237508,
+  -0.285733,
+  -0.061882,
+  -0.175202
+ ],
+ "sets": {
+  "FRA": {
+   "file": "fra_frozen_top.csv",
+   "sha256": "d0ac0ab2c392bf88efb8c09b4e6a2aa8b816927ee0a03530f6919a3f787cff58",
+   "cards": 290,
+   "tagged_nonland": 269,
+   "k": 0.820064,
+   "c": 0.353702,
+   "base_fit_cards": 5405,
+   "base": "pred_B10 (frozen 2026-10)",
+   "corr_TP3_sd": 0.2676
+  },
+  "TRK": {
+   "file": "trk_frozen_top.csv",
+   "sha256": "310faf03f837c65a91dad58b6ef617ddf9d75554877412c6058fd710bc5211f0",
+   "cards": 336,
+   "tagged_nonland": 300,
+   "k": 0.808344,
+   "c": 0.353702,
+   "base_fit_cards": 5405,
+   "base": "published B11g (trk_frozen.csv G)",
+   "corr_TP3_sd": 0.2472
+  }
+ }
+}
