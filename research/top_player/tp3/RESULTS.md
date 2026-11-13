@@ -1,5 +1,6 @@
 # TP3:top player の「上手い人補正」— 結果(2026-11-13)
 
+リポジトリ meatgoodbyeeee-wq/17lands-limited-forecast-data、ブランチ research/top-player、フォルダ `research/top_player/tp3/`。設計と実行は Fable 5.2。AI 判定のトークンは 0。
 計画は `PLAN.md`(コミット 1bc2df0、計算の前に登録)。凍結は 69c4abc8、FRA の集計の依頼は 55d2bce8、集計の結果は 9c0214f6。
 公開中の予測、サイト、本番モデルは変えていない。
 
