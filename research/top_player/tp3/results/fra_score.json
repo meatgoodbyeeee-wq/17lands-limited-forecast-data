@@ -1,0 +1,95 @@
+{
+ "set": "FRA",
+ "window": [
+  "2026-09-29T16:22:24+00:00",
+  "2026-10-27T16:22:24+00:00"
+ ],
+ "last_draft_time_in_window": "2026-10-16T23:30:49+00:00",
+ "games": 297964,
+ "band_games": {
+  "B1": 32225,
+  "B2": 54302,
+  "B3": 66837,
+  "B4": 33518,
+  "B5": 21952,
+  "L": 89130
+ },
+ "scored_cards_actual": 226,
+ "matched": 221,
+ "unmatched_actual": [
+  "Forest",
+  "Island",
+  "Mountain",
+  "Plains",
+  "Swamp"
+ ],
+ "slope_b": 0.8359266274207363,
+ "k": 0.820064,
+ "c": 0.353702,
+ "true_variance_tau2": 0.22078238848456866,
+ "r_sd": 1.2704961945164395,
+ "arms": {
+  "TP3": {
+   "pearson": 0.0948042882758543,
+   "perm_p_one_sided": 0.07979202079792021,
+   "spearman": 0.09902785986241562,
+   "pred_sd": 0.2745637946491843,
+   "calibration_slope": 0.4406843981662364,
+   "share_of_true_variance": 0.06630976058652688,
+   "mae_base_K": 1.7586816253309128,
+   "mae_base_K_plus_corr": 1.68806768752159,
+   "mae_diff": -0.07061393780932268,
+   "mae_diff_ci95": [
+    -0.10466164621717147,
+    -0.036301415923242666
+   ],
+   "spearman_top_base_K": 0.5704523610862617,
+   "spearman_top_base_K_plus_corr": 0.6177144923439855,
+   "mae_base_L": 1.760157272712219,
+   "mae_base_L_plus_corr": 1.688024669220252
+  },
+  "TP3basic": {
+   "pearson": 0.12252361406419016,
+   "perm_p_one_sided": 0.0367963203679632,
+   "spearman": 0.11875806085521325,
+   "pred_sd": 0.2830303695424426,
+   "calibration_slope": 0.5524967423517244,
+   "share_of_true_variance": 0.11075442655075747,
+   "mae_base_K": 1.7586816253309128,
+   "mae_base_K_plus_corr": 1.669134204616583,
+   "mae_diff": -0.08954742071432986,
+   "mae_diff_ci95": [
+    -0.12446974116688596,
+    -0.05425459013562709
+   ],
+   "spearman_top_base_K": 0.5704523610862617,
+   "spearman_top_base_K_plus_corr": 0.6226496221802029,
+   "mae_base_L": 1.760157272712219,
+   "mae_base_L_plus_corr": 1.6796041858947657
+  },
+  "TP3all": {
+   "pearson": 0.07695221797707298,
+   "perm_p_one_sided": 0.12658734126587343,
+   "spearman": 0.06197836060779455,
+   "pred_sd": 0.31638805319017665,
+   "calibration_slope": 0.31041594913876774,
+   "share_of_true_variance": 0.04368816254333474,
+   "mae_base_K": 1.7586816253309128,
+   "mae_base_K_plus_corr": 1.675384086112602,
+   "mae_diff": -0.08329753921831085,
+   "mae_diff_ci95": [
+    -0.12013655359869096,
+    -0.04318767872594401
+   ],
+   "spearman_top_base_K": 0.5704523610862617,
+   "spearman_top_base_K_plus_corr": 0.6132896631599021,
+   "mae_base_L": 1.760157272712219,
+   "mae_base_L_plus_corr": 1.6895340770366352
+  }
+ },
+ "rules": {
+  "F1_supported": false,
+  "F2_mae_lower": true
+ },
+ "window_closed": false
+}

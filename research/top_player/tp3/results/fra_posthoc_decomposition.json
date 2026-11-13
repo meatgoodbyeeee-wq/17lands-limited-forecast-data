@@ -1,0 +1,34 @@
+{
+ "note": "post hoc, exploratory (not in PLAN.md): where the MAE gain of F2 comes from",
+ "k": 0.820064,
+ "b": 0.8359266274207363,
+ "arms": {
+  "corr_TP3": {
+   "corr_with_r": 0.0948,
+   "corr_with_overall_forecast_error": 0.3428,
+   "corr_with_base_error": 0.3382,
+   "mae_overall_base": 1.7947,
+   "mae_overall_plus_corr": 1.7305,
+   "mae_top_if_overall_known": 0.956,
+   "mae_top_if_overall_known_plus_corr": 0.957
+  },
+  "corr_TP3basic": {
+   "corr_with_r": 0.1225,
+   "corr_with_overall_forecast_error": 0.3777,
+   "corr_with_base_error": 0.3854,
+   "mae_overall_base": 1.7947,
+   "mae_overall_plus_corr": 1.7172,
+   "mae_top_if_overall_known": 0.956,
+   "mae_top_if_overall_known_plus_corr": 0.9537
+  },
+  "corr_TP3all": {
+   "corr_with_r": 0.077,
+   "corr_with_overall_forecast_error": 0.3285,
+   "corr_with_base_error": 0.32,
+   "mae_overall_base": 1.7947,
+   "mae_overall_plus_corr": 1.7224,
+   "mae_top_if_overall_known": 0.956,
+   "mae_top_if_overall_known_plus_corr": 0.9606
+  }
+ }
+}
