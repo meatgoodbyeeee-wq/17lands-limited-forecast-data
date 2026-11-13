@@ -1,0 +1,143 @@
+=== joint model (all features together + set fixed effects; baseline = common creature, none of the listed features)
+                              feature    n   GIH   se     t   IWD  t_iwd   GNS  t_gns  vs normal   t_n
+                                 blue 1114  0.49 0.05  9.18  0.11   1.91  0.31   5.12       0.45 10.38
+                                green 1119 -0.11 0.04 -2.80  0.04   0.82 -0.20  -3.59      -0.11 -2.39
+                                white 1156 -0.03 0.05 -0.58 -0.03  -0.63 -0.02  -0.31      -0.05 -1.21
+                                  red 1095 -0.04 0.06 -0.58 -0.06  -1.16  0.03   0.51      -0.08 -1.13
+                                black 1139  0.02 0.07  0.31  0.05   0.90 -0.07  -1.13      -0.00 -0.05
+                              instant  678  0.17 0.06  3.08  0.22   2.69 -0.10  -1.88       0.14  2.60
+                              sorcery  520  0.08 0.04  1.95  0.16   2.23 -0.11  -2.08       0.06  1.44
+                noncreature permanent  739 -0.01 0.04 -0.27  0.03   0.47 -0.07  -1.47      -0.01 -0.12
+                             uncommon 1811  0.21 0.02 11.56  0.16   5.57 -0.02  -0.70       0.15  7.56
+                                 rare  979  0.35 0.05  7.54  0.09   1.32  0.03   0.71       0.16  3.30
+                               mythic  319  0.48 0.11  4.24  0.09   0.96  0.03   0.45       0.17  1.56
+             ramp / mana ability (RM)  162  0.25 0.08  3.34  0.38   3.71 -0.14  -2.33       0.22  3.02
+            fixing / land search (FX)  216  0.13 0.07  1.74  0.26   2.54 -0.15  -2.22       0.12  1.66
+                         cycling (CY)   96  0.20 0.07  3.08  0.33   2.63 -0.11  -1.37       0.16  2.15
+                             treasure  109  0.21 0.05  4.19  0.24   1.82 -0.03  -0.20       0.16  2.59
+            loot or discard as a cost  239  0.22 0.07  3.02  0.20   2.35 -0.01  -0.13       0.25  3.23
+selection: scry / surveil / loot (SC)  548  0.04 0.05  0.81  0.12   3.05 -0.09  -2.03       0.03  0.73
+                            draw (DR)  663 -0.01 0.04 -0.24  0.05   0.89 -0.06  -1.42       0.02  0.51
+                recursion, main (RC2)  128  0.27 0.08  3.26  0.30   2.41  0.02   0.28       0.25  2.60
+     reuse from graveyard, main (RE2)   59  0.36 0.12  3.07  0.54   3.96 -0.19  -2.14       0.36  2.64
+                        lifelink (LL)  159  0.25 0.07  3.57  0.17   1.59 -0.00  -0.02       0.19  2.59
+                           flash (FH)  179  0.18 0.06  3.09  0.17   2.13  0.03   0.43       0.11  1.92
+                    counterspell (CS)   74 -0.20 0.09 -2.27 -0.14  -1.20 -0.09  -1.06      -0.16 -2.03
+                          bounce (BN)  119 -0.05 0.10 -0.52 -0.02  -0.20 -0.05  -0.69       0.03  0.32
+                      kill spell (KD)  168  0.05 0.05  1.01  0.06   0.67 -0.08  -1.29       0.13  2.68
+                  damage removal (DM)  195 -0.01 0.06 -0.16 -0.09  -1.00  0.03   0.51       0.04  0.67
+                     tap ability {T}:  442 -0.01 0.05 -0.12  0.12   2.26 -0.12  -2.90       0.03  0.62
+            optional effect (you may) 1162  0.05 0.03  1.64  0.16   4.46 -0.09  -4.54       0.07  2.37
+          equipment / aura bonus (EQ)  270 -0.17 0.06 -2.81 -0.22  -2.83  0.06   1.22      -0.10 -1.52
+                    haste, main (HS2)   87 -0.27 0.09 -2.85 -0.26  -1.58  0.02   0.19      -0.35 -3.52
+                menace / trample (MN)  516 -0.02 0.05 -0.37 -0.11  -1.53  0.09   2.11      -0.05 -1.02
+                          flying (FL)  662 -0.03 0.05 -0.47 -0.08  -1.24  0.03   0.99      -0.04 -0.75
+hexproof / indestructible / ward (IN)  322 -0.10 0.04 -2.33 -0.19  -3.12  0.08   2.59      -0.10 -2.41
+                  temporary pump (PT)  494  0.03 0.04  0.78 -0.02  -0.33  0.07   1.26       0.06  1.52
+             role: trick / protection  239 -0.09 0.06 -1.44 -0.05  -0.73 -0.00  -0.05      -0.13 -2.15
+                       creature mv<=2 1048  0.02 0.03  0.52  0.01   0.16 -0.00  -0.04       0.03  0.99
+                       creature mv>=5  619 -0.14 0.07 -1.97 -0.16  -1.66 -0.00  -0.08      -0.15 -2.00
+                    creature power>=4  727  0.01 0.05  0.11  0.01   0.25  0.00   0.11       0.05  0.97
+          clue / investigate (3 sets)   60 -0.35 0.07 -5.05 -0.23  -4.30 -0.15  -2.95      -0.29 -4.35
+             pressure CLK (per level) 4977 -0.07 0.03 -2.53 -0.06  -1.71 -0.02  -1.21      -0.04 -1.53
+
+=== spot checks of the text features (random cards)
+x_loot n 131
+    HOB Celebrate the Mountain-king | When this enchantment enters, for each opponent, exile up to one target nonland permanent that player controls until this enchantment leaves
+    NEO Akki Ronin | Whenever a Samurai or Warrior you control attacks alone, you may discard a card. If you do, draw a card.
+    TDM Focus the Mind | This spell costs {2} less to cast if you've cast another spell this turn. / Draw three cards, then discard a card.
+    SOS Rapturous Moment | Draw three cards, then discard two cards. Add {U}{U}{R}{R}{R}.
+x_discard_self n 238
+    MSH Hawkeye, Master Marksman | Reach, first strike / Trick Arrows — Whenever ~ becomes tapped, you may pay {1} up to three times. When you do, choose up to that many — / •
+    MKM Furtive Courier | This creature can't be blocked as long as you've sacrificed an artifact this turn. / Whenever this creature attacks, draw a card, then disca
+    WOE Talion's Messenger | Flying / Whenever you attack with one or more Faeries, draw a card, then discard a card. When you discard a card this way, put a +1/+1 count
+    HOB Great Gilded Boat | Whenever you attack, recruit. (Draw a card, then discard a card. If you discarded a nonland card, create a 1/1 white Human Soldier creature 
+x_tap_ability n 571
+    LTR Inherited Envelope | When this artifact enters, the Ring tempts you. / {T}: Add one mana of any color.
+    SOS Ark of Hunger | Whenever one or more cards leave your graveyard, this artifact deals 1 damage to each opponent and you gain 1 life. / {T}: Mill a card. You 
+    OTJ Wanted Griffin | Flying / When this creature dies, create a 1/1 red Mercenary creature token with "{T}: Target creature you control gets +1/+0 until end of t
+    WOE Night of the Sweets' Revenge | When this enchantment enters, create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this token: You gain 3 life.") / Foods you co
+x_you_may n 1162
+    EOE Consult the Star Charts | Kicker {1}{U} (You may pay an additional {1}{U} as you cast this spell.) / Look at the top X cards of your library, where X is the number of
+    OTJ Railway Brawler | Reach, trample / Whenever another creature you control enters, put X +1/+1 counters on it, where X is its power. / Plot {3}{G} (You may pay 
+    TDM Boulderborn Dragon | Flying, vigilance / Whenever this creature attacks, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+    DFT Lumbering Worldwagon | This Vehicle's power is equal to the number of lands you control. / Whenever this Vehicle enters or attacks, you may search your library for
+c5_RM=2 n 82
+    TMT Weather Maker | Artifact | Landfall — Whenever a land you control enters, put a charge counter on this artifact. / {T}: Add one mana of any color. 
+    EOE Steelswarm Operator | Artifact Creature — Robot | Flying / {T}: Add {U}. Spend this mana only to cast an artifact spell. / {T}: Add {U}{U}. Spend this mana only to activa
+    TLA Great Divide Guide | Creature — Human Scout Al | Each land and Ally you control has "{T}: Add one mana of any color."
+c5_FX=2 n 67
+    ECL Firdoch Core | Kindred Artifact — Shapes | Changeling (This card is every creature type.) / {T}: Add one mana of any color. / {4}: This artifact becomes a 4/4 arti
+    TLA Shared Roots | Sorcery — Lesson | Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.
+    TDM Sultai Monument | Artifact | When this artifact enters, search your library for a basic Swamp, Forest, or Island card, reveal it, put it into your ha
+c5_EQ=2 n 153
+    HOB Dwarven Mattock | Artifact — Equipment | When this Equipment enters, attach it to target Dwarf you control. / Equipped creature gets +2/+2 and has ward {1}. (Whe
+    DMU Hammerhand | Enchantment — Aura | Enchant creature / When this Aura enters, target creature can't block this turn. / Enchanted creature gets +1/+1 and has
+    SNC Citizen's Crowbar | Artifact — Equipment | When this Equipment enters, create a 1/1 green and white Citizen creature token, then attach this Equipment to it. / Equ
+c5_IN=2 n 54
+    BRO Loran's Escape | Instant | Target artifact or creature gains hexproof and indestructible until end of turn. Scry 1.
+    FDN Zul Ashur, Lich Lord | Legendary Creature — Zomb | Ward—Pay 2 life. (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unles
+    TMT Saved by the Shell | Instant | This spell costs {1} less to cast if you control a Turtle. / Put a +1/+1 counter on target creature you control. It gain
+c5_RC=2 n 128
+    BLB Peerless Recycling | Instant | Gift a card (You may promise an opponent a gift as you cast this spell. If you do, they draw a card before its other eff
+    DMU The Cruelty of Gix | Enchantment — Saga | Read ahead (Choose a chapter and start with that many lore counters. Add one after your draw step. Skipped chapters don'
+    DSK Savior of the Small | Creature — Kor Survivor | Survival — At the beginning of your second main phase, if this creature is tapped, return target creature card with mana
+c5_RE=2 n 59
+    BRO Razorlash Transmogrant | Artifact Creature — Zombi | This creature can't block. / {4}{B}{B}: Return this card from your graveyard to the battlefield with a +1/+1 counter on 
+    FDN Self-Reflection | Sorcery | Create a token that's a copy of target creature you control. / Flashback {3}{U} (You may cast this card from your gravey
+    TLA Solstice Revelations | Instant — Lesson | Exile cards from the top of your library until you exile a nonland card. You may cast that card without paying its mana 
+agreement: c5_LL vs text lifelink [[4802, 16], [9, 150]] | c5_FH vs text flash [[4795, 3], [1, 178]] | c5_FL vs text flying [[4239, 76], [0, 662]]
+
+=== cards with the largest estimated difference (shrunk), both directions
+set                  card_name                                          type  mv colors  est  e_gih_A  T_gih_g
+MOM      Unseal the Necropolis                                       Instant 3.0      B 0.83     1.74    13982
+LTR             Hithlain Knots                                       Instant 2.0      U 0.81     2.07    10068
+LTR          Pelargir Survivor                      Creature — Human Peasant 2.0      U 0.80     1.52    18514
+LTR              The Bath Song                            Enchantment — Saga 4.0      U 0.79     2.32     8179
+TMT            Manhole Missile                                       Instant 2.0      R 0.79     2.37     7559
+LCI            Deep-Cavern Bat                                Creature — Bat 2.0      B 0.76     2.37     6605
+OTJ       Slickshot Lockpicker                        Creature — Human Rogue 3.0      U 0.76     2.22     7450
+DSK          Fear of Isolation              Enchantment Creature — Nightmare 2.0      U 0.75     1.85     9740
+MOM            Deadly Derision                                       Instant 4.0      B 0.73     1.33    17914
+FDN        Dreadwing Scavenger                     Creature — Nightmare Bird 3.0     UB 0.70     1.91     8163
+LTR                     Nazgûl                      Creature — Wraith Knight 3.0      B 0.69     1.80     9577
+FDN            Tolarian Terror                            Creature — Serpent 7.0      U 0.69     1.84     8895
+LTR            Lórien Revealed                                       Sorcery 5.0      U 0.69     1.27    19277
+LTR              Glorious Gale                                       Instant 2.0      U 0.69     1.27    19053
+LTR Breaking of the Fellowship                                       Sorcery 2.0      R 0.67     1.83     9015
+FDN              Strix Lookout                               Creature — Bird 2.0      U 0.67     1.41    13020
+DMU       Clockwork Drawbridge                      Artifact Creature — Wall 1.0      W 0.66     2.21     6756
+TMT                     Nobody                Artifact Creature — Human Hero 3.0     UR 0.66     1.92     8200
+LTR        Treason of Isengard                                       Sorcery 3.0      U 0.64     1.78     8753
+OTJ      Intimidation Campaign                                   Enchantment 3.0     UB 0.64     2.20     5902
+DMU Vohar, Vodalian Desecrator Legendary Creature — Phyrexian Merfolk Wizard 2.0     UB 0.62     1.92     8078
+DMU               Academy Wall                               Creature — Wall 3.0      U 0.62     1.56    10718
+FDN            Spectral Sailor                      Creature — Spirit Pirate 1.0      U 0.61     1.59     8996
+LCI           Staunch Crewmate                       Creature — Human Pirate 2.0      U 0.61     1.43    11009
+SNC         Witness Protection                            Enchantment — Aura 1.0      U 0.59     2.58     4344
+set             card_name                          type  mv colors   est  e_gih_A  T_gih_g
+BLB         Glidedive Duo         Creature — Bat Lizard 5.0      B -1.03    -2.05    15430
+BLB   Whiskerquill Scribe      Creature — Mouse Citizen 2.0      R -0.91    -3.42     5500
+LCI      Triumphant Chomp                       Sorcery 1.0      R -0.85    -3.08     5805
+TLA     Kyoshi Battle Fan          Artifact — Equipment 2.0    NaN -0.76    -1.81    12153
+SNC       Run Out of Town                       Instant 4.0      U -0.75    -1.38    20750
+DMU      Meria's Outrider         Creature — Elf Archer 5.0      R -0.74    -1.46    16726
+WOE  Redtooth Genealogist        Creature — Elf Advisor 3.0      G -0.73    -1.75    11074
+OTJ    Spinewoods Paladin       Creature — Human Knight 5.0      G -0.72    -1.26    19500
+HOB     Goblin Plate Mail          Artifact — Equipment 2.0     BR -0.72    -1.63    12037
+FDN  Soul-Shackled Zombie             Creature — Zombie 4.0      B -0.71    -1.89     9101
+OTJ        Snakeskin Veil                       Instant 1.0      G -0.70    -1.26    18212
+NEO        Shrine Steward Artifact Creature — Construct 5.0    NaN -0.70    -2.81     5461
+TLA Pretending Poxbearers Creature — Human Citizen Ally 2.0     WB -0.68    -1.73    10026
+ECL  Changeling Wayfinder       Creature — Shapeshifter 3.0    NaN -0.67    -1.85     8766
+ONE   Zealot's Conviction            Enchantment — Aura 1.0      W -0.66    -2.87     4690
+NEO  Harmonious Emergence            Enchantment — Aura 4.0      G -0.66    -1.75    10072
+LCI    Rumbling Rockslide                       Sorcery 4.0      R -0.63    -1.67     9091
+FDN    Vampire Soulcaller    Creature — Vampire Warlock 5.0      B -0.62    -1.69     8783
+BRO      Aeronaut Cavalry      Creature — Human Soldier 5.0      W -0.61    -1.41    12210
+ECL      Gangly Stompling       Creature — Shapeshifter 3.0     RG -0.61    -1.93     7014
+MSH        Agent of Atlas     Creature — Human Spy Hero 2.0      W -0.60    -1.81     7973
+DSK  Diversion Specialist      Creature — Human Warrior 4.0      R -0.60    -2.71     4360
+LTR        Westfold Rider       Creature — Human Knight 2.0      W -0.60    -1.58     9509
+BLB        Bakersbane Duo   Creature — Squirrel Raccoon 2.0      G -0.59    -1.01    20939
+WOE        Hamlet Glutton              Creature — Giant 7.0      G -0.59    -1.09    18137
