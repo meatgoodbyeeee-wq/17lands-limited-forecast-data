@@ -1,8 +1,12 @@
 name: TRK Card Data (private comparison)
 # All users only, at most one 17Lands attempt per daily cycle starting 14:00 JST (enforced by scripts/trk_card_data.py).
 # push: runs on the branch it was pushed to (to refresh, edit live/trk-card-data.request).
-# schedule: only takes effect once this file is on the default branch.
+# schedule: only takes effect once this file is on the default branch. GitHub's schedule has been starting this
+#   4-8 hours late, so it is only a backup now.
+# workflow_dispatch: the main trigger. The daily Claude task presses it at 14:05 JST (user decision 2026-11-14).
+#   Pressing it again, or the late scheduled run, makes no 17Lands request in a cycle that was already attempted.
 on:
+  workflow_dispatch:
   push:
     paths:
       - '.github/workflows/trk-card-data.yml'
