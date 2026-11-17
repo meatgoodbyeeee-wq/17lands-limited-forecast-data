@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Deck colour step 1: pair win rates and per-card GIH by deck pair from 17Lands Public Game Data (Premier Draft).
-Window and card logic as scripts/case6_aggregate.py. FIN, MH3 and FRA are refused. See research/deck_pair/PLAN.md."""
+Window and card logic as scripts/case6_aggregate.py. FIN and MH3 are refused. FRA was refused while it was the held-out test set; allowed from 2026-11-17 (released, scored). See research/deck_pair/PLAN.md."""
 import argparse, json, sys
 from pathlib import Path
 import numpy as np, pandas as pd
@@ -8,7 +8,7 @@ import numpy as np, pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from case6_aggregate import download, header, first_window, sha256_file, url_for, PREFIXES, FMT  # noqa: E402
 
-REFUSE = {"FIN", "MH3", "FRA"}
+REFUSE = {"FIN", "MH3"}
 ORDER = "WUBRG"
 PAIRS = ["WU", "WB", "WR", "WG", "UB", "UR", "UG", "BR", "BG", "RG"]
 GROUPS = PAIRS + ["other"]
