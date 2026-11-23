@@ -31,7 +31,7 @@ jobs:
       - run: python scripts/trk_card_data.py
       - name: Save snapshot and state
         run: |
-          for f in live/trk-card-data.json live/trk-card-data-state.json; do [ -f "$f" ] && git add "$f"; done
+          for f in live/trk-card-data.json live/trk-color-ratings.json live/trk-card-data-state.json; do [ -f "$f" ] && git add "$f"; done
           if git diff --cached --quiet; then echo 'nothing to save'; exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
